@@ -15,6 +15,7 @@
 #include "esp_event.h"
 #include "esp_log.h"
 #include "nvs_flash.h"
+#include "driver/gpio.h"
 
 #include "lwip/err.h"
 #include "lwip/sys.h"
@@ -64,11 +65,19 @@ static EventGroupHandle_t s_wifi_event_group;
  * - we failed to connect after the maximum amount of retries */
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
+#define LED_GPIO_PIN 2
 
 static const char *TAG = "wifi station";
 
 static int s_retry_num = 0;
 
+
+void blinkLED(void){
+    gpio_set_level(LED_GPIO_PIN, 1);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+    gpio_set_level(LED_GPIO_PIN, 0);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+}
 
 static void event_handler(void* arg, esp_event_base_t event_base,
                                 int32_t event_id, void* event_data)
@@ -77,6 +86,7 @@ static void event_handler(void* arg, esp_event_base_t event_base,
         esp_wifi_connect();
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
         if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {
+            blinkLED();
             esp_wifi_connect();
             s_retry_num++;
             ESP_LOGI(TAG, "retry to connect to the AP");
@@ -161,7 +171,9 @@ void wifi_init_sta(void)
 }
 
 void app_main(void)
-{
+{   
+    esp_rom_gpio_pad_select_gpio(LED_GPIO_PIN);
+    gpio_set_direction(LED_GPIO_PIN, GPIO_MODE_OUTPUT);
     //Initialize NVS
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
