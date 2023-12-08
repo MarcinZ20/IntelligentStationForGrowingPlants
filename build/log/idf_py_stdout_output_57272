@@ -1,0 +1,175 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Nov 27 2023 21:56:21[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26950h (158032) map[0m
+[0;32mI (157) esp_image: segment 1: paddr=00036978 vaddr=3ffb0000 size=03c14h ( 15380) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=0003a594 vaddr=40080000 size=05a84h ( 23172) load[0m
+[0;32mI (172) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8ee94h (585364) map[0m
+[0;32mI (373) esp_image: segment 4: paddr=000ceebc vaddr=40085a84 size=10640h ( 67136) load[0m
+[0;32mI (411) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (411) boot: Disabling RNG early entropy source...[0m
+[0;32mI (422) cpu_start: Multicore app[0m
+[0;32mI (431) cpu_start: Pro cpu start user code[0m
+[0;32mI (431) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (431) cpu_start: Application information:[0m
+[0;32mI (434) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (441) cpu_start: App version:      1[0m
+[0;32mI (446) cpu_start: Compile time:     Nov 27 2023 21:56:12[0m
+[0;32mI (452) cpu_start: ELF file SHA256:  ff1a3dc7d...[0m
+[0;32mI (457) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (464) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (468) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (473) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (478) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (485) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (491) heap_init: At 3FFB82A8 len 00027D58 (159 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (504) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 400960C4 len 00009F3C (39 KiB): IRAM[0m
+[0;32mI (518) spi_flash: detected chip: winbond[0m
+[0;32mI (521) spi_flash: flash io: dio[0m
+[0;32mI (526) main_task: Started on CPU0[0m
+[0;32mI (536) main_task: Calling app_main()[0m
+I (576) wifi:wifi driver task: 3ffc0878, prio:23, stack:6656, core=0
+I (596) wifi:wifi firmware version: a194738
+I (596) wifi:wifi certification version: v7.0
+I (596) wifi:config NVS flash: enabled
+I (596) wifi:config nano formating: disabled
+I (596) wifi:Init data frame dynamic rx buffer num: 32
+I (606) wifi:Init static rx mgmt buffer num: 5
+I (606) wifi:Init management short buffer num: 32
+I (606) wifi:Init dynamic tx buffer num: 32
+I (616) wifi:Init static rx buffer size: 1600
+I (616) wifi:Init static rx buffer num: 10
+I (626) wifi:Init dynamic rx buffer num: 32
+[0;32mI (626) wifi_init: rx ba win: 6[0m
+[0;32mI (626) wifi_init: tcpip mbox: 32[0m
+[0;32mI (636) wifi_init: udp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp tx win: 5760[0m
+[0;32mI (646) wifi_init: tcp rx win: 5760[0m
+[0;32mI (646) wifi_init: tcp mss: 1440[0m
+[0;32mI (656) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (656) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (666) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (746) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (746) wifi:enable tsf
+[0;32mI (756) WI-FI STATION: wifi_init_sta finished.[0m
+I (766) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (766) wifi:state: init -> auth (b0)
+I (776) wifi:state: auth -> init (1c0)
+I (776) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (1776) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (1776) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (5186) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (5186) WI-FI STATION: Nie połączono z siecią[0m
+I (5186) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (5196) wifi:state: init -> auth (b0)
+I (5246) wifi:state: auth -> assoc (0)
+I (5256) wifi:state: assoc -> run (10)
+I (5276) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = d6:1c:2b:89:2c:7e
+I (5286) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (5286) wifi:pm start, type: 1
+
+I (5286) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5296) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5306) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (6316) esp_netif_handlers: sta ip: 192.168.24.8, mask: 255.255.255.0, gw: 192.168.24.134[0m
+[0;32mI (6316) WI-FI STATION: GOT IP: 192.168.24.8[0m
+[0;32mI (6316) WI-FI STATION: CONNECTED[0m
+
+Połączono z siecią:
+=====
+SSID: supertajnasiec
+Password: supertajnehaslo
+
+[0;32mI (6326) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (6336) main_task: Returned from app_main()[0m
+I (6566) wifi:<ba-add>idx:0 (ifx:0, d6:1c:2b:89:2c:7e), tid:0, ssn:3, winSize:64
+[0;32mI (6836) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6836) MQTT_EXAMPLE: sent publish successful, msg_id=38681[0m
+[0;32mI (6836) MQTT_EXAMPLE: sent subscribe successful, msg_id=34341[0m
+[0;32mI (6836) MQTT_EXAMPLE: sent subscribe successful, msg_id=116[0m
+[0;32mI (6846) MQTT_EXAMPLE: sent unsubscribe successful, msg_id=24305[0m
+[0;32mI (7006) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=38681[0m
+[0;32mI (7046) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=34341[0m
+[0;32mI (7046) MQTT_EXAMPLE: sent publish successful, msg_id=0[0m
+[0;32mI (7056) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=116[0m
+[0;32mI (7056) MQTT_EXAMPLE: sent publish successful, msg_id=0[0m
+[0;32mI (7066) MQTT_EXAMPLE: MQTT_EVENT_UNSUBSCRIBED, msg_id=24305[0m
+[0;32mI (7226) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (7566) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (140566) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (140566) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (212036) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (212046) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (288536) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (288536) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (365126) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (365136) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (405476) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (405486) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (435986) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (435996) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (453396) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (453406) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (529786) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data
+[0;32mI (529796) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/topic/qos0
+DATA=data

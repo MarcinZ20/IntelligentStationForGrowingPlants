@@ -1,0 +1,315 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec  5 2023 21:13:00[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26cb0h (158896) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00036cd8 vaddr=3ffbdb60 size=05444h ( 21572) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=0003c124 vaddr=40080000 size=03ef4h ( 16116) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8fc80h (588928) map[0m
+[0;32mI (271) esp_image: segment 4: paddr=000cfca8 vaddr=40083ef4 size=134cch ( 79052) load[0m
+[0;32mI (304) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (304) boot: Disabling RNG early entropy source...[0m
+[0;32mI (315) cpu_start: Multicore app[0m
+[0;32mI (324) cpu_start: Pro cpu start user code[0m
+[0;32mI (324) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (324) cpu_start: Application information:[0m
+[0;32mI (327) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (334) cpu_start: App version:      1[0m
+[0;32mI (339) cpu_start: Compile time:     Dec  6 2023 12:32:34[0m
+[0;32mI (345) cpu_start: ELF file SHA256:  30c352837...[0m
+[0;32mI (350) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (357) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (361) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (366) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (371) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (378) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (384) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (390) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (396) heap_init: At 3FFC7680 len 00018980 (98 KiB): DRAM[0m
+[0;32mI (403) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (409) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 400973C0 len 00008C40 (35 KiB): IRAM[0m
+[0;32mI (423) spi_flash: detected chip: winbond[0m
+[0;32mI (426) spi_flash: flash io: dio[0m
+[0;32mI (431) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (436) main_task: Started on CPU0[0m
+[0;32mI (446) main_task: Calling app_main()[0m
+I (486) wifi:wifi driver task: 3ffcbbe0, prio:23, stack:6656, core=0
+I (506) wifi:wifi firmware version: a194738
+I (506) wifi:wifi certification version: v7.0
+I (506) wifi:config NVS flash: enabled
+I (506) wifi:config nano formating: disabled
+I (506) wifi:Init data frame dynamic rx buffer num: 32
+I (516) wifi:Init static rx mgmt buffer num: 5
+I (516) wifi:Init management short buffer num: 32
+I (516) wifi:Init dynamic tx buffer num: 32
+I (526) wifi:Init static rx buffer size: 1600
+I (526) wifi:Init static rx buffer num: 10
+I (536) wifi:Init dynamic rx buffer num: 32
+[0;32mI (536) wifi_init: rx ba win: 6[0m
+[0;32mI (536) wifi_init: tcpip mbox: 32[0m
+[0;32mI (546) wifi_init: udp mbox: 6[0m
+[0;32mI (546) wifi_init: tcp mbox: 6[0m
+[0;32mI (546) wifi_init: tcp tx win: 5760[0m
+[0;32mI (556) wifi_init: tcp rx win: 5760[0m
+[0;32mI (556) wifi_init: tcp mss: 1440[0m
+[0;32mI (566) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (566) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (576) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (666) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (666) wifi:enable tsf
+[0;32mI (666) WI-FI STATION: wifi_init_sta finished.[0m
+I (676) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (686) wifi:state: init -> auth (b0)
+I (686) wifi:state: auth -> init (1c0)
+I (696) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+[0;32mI (1696) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (1696) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (5106) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (5106) WI-FI STATION: Nie połączono z siecią[0m
+I (5106) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (5116) wifi:state: init -> auth (b0)
+I (5116) wifi:state: auth -> assoc (0)
+I (5126) wifi:state: assoc -> run (10)
+I (5156) wifi:connected with supertajnasiec, aid = 5, channel 7, BW20, bssid = 72:fc:a6:96:6f:36
+I (5156) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (5166) wifi:pm start, type: 1
+
+I (5166) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5166) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5176) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (6186) esp_netif_handlers: sta ip: 192.168.103.8, mask: 255.255.255.0, gw: 192.168.103.246[0m
+[0;32mI (6186) WI-FI STATION: GOT IP: 192.168.103.8[0m
+[0;32mI (6186) WI-FI STATION: CONNECTED[0m
+
+Połączono z siecią:
+=====
+SSID: supertajnasiec
+Password: supertajnehaslo
+
+[0;32mI (6196) MQTT: Other event id: 7[0m
+[0;32mI (6206) main_task: Returned from app_main()[0m
+I (6216) wifi:<ba-add>idx:0 (ifx:0, 72:fc:a6:96:6f:36), tid:0, ssn:3, winSize:64
+[0;33mW (8986) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (8996) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (8996) mqtt_client: MQTT connect failed[0m
+[0;32mI (8996) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (23996) MQTT: Other event id: 7[0m
+[0;33mW (24926) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (24936) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (24936) mqtt_client: MQTT connect failed[0m
+[0;32mI (24936) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (39936) MQTT: Other event id: 7[0m
+[0;33mW (40296) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (40296) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (40296) mqtt_client: MQTT connect failed[0m
+[0;32mI (40296) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (55296) MQTT: Other event id: 7[0m
+[0;33mW (56476) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (56476) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (56476) mqtt_client: MQTT connect failed[0m
+[0;32mI (56476) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (71476) MQTT: Other event id: 7[0m
+[0;33mW (71836) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (71836) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (71836) mqtt_client: MQTT connect failed[0m
+[0;32mI (71836) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (86836) MQTT: Other event id: 7[0m
+[0;31mE (96846) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (96846) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (96846) mqtt_client: Error transport connect[0m
+[0;32mI (96846) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (96856) MQTT: Last error reported from esp-tls: 0x8006[0m
+[0;32mI (96856) MQTT: Last errno string (Success)[0m
+[0;32mI (96866) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111866) MQTT: Other event id: 7[0m
+[0;33mW (119956) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (119956) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (119956) mqtt_client: MQTT connect failed[0m
+[0;32mI (119966) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (134966) MQTT: Other event id: 7[0m
+[0;33mW (135316) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (135316) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (135316) mqtt_client: MQTT connect failed[0m
+[0;32mI (135326) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (150326) MQTT: Other event id: 7[0m
+[0;33mW (150676) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (150676) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (150676) mqtt_client: MQTT connect failed[0m
+[0;32mI (150686) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (165686) MQTT: Other event id: 7[0m
+[0;33mW (167066) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (167066) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (167066) mqtt_client: MQTT connect failed[0m
+[0;32mI (167076) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (182076) MQTT: Other event id: 7[0m
+[0;33mW (186726) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (186726) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (186726) mqtt_client: MQTT connect failed[0m
+[0;32mI (186726) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (196736) MQTT: Other event id: 7[0m
+[0;33mW (197576) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (197576) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (197576) mqtt_client: MQTT connect failed[0m
+[0;32mI (197586) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (212586) MQTT: Other event id: 7[0m
+[0;33mW (213346) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (213346) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (213346) mqtt_client: MQTT connect failed[0m
+[0;32mI (213356) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (228356) MQTT: Other event id: 7[0m
+[0;33mW (228706) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (228706) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (228706) mqtt_client: MQTT connect failed[0m
+[0;32mI (228716) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (243716) MQTT: Other event id: 7[0m
+[0;33mW (244476) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (244476) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (244476) mqtt_client: MQTT connect failed[0m
+[0;32mI (244486) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (259486) MQTT: Other event id: 7[0m
+[0;33mW (259836) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (259836) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (259836) mqtt_client: MQTT connect failed[0m
+[0;32mI (259846) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (274846) MQTT: Other event id: 7[0m
+[0;33mW (275196) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (275196) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (275196) mqtt_client: MQTT connect failed[0m
+[0;32mI (275206) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (290206) MQTT: Other event id: 7[0m
+[0;33mW (291786) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (291786) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (291786) mqtt_client: MQTT connect failed[0m
+[0;32mI (291796) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (306796) MQTT: Other event id: 7[0m
+[0;33mW (307146) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (307146) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (307146) mqtt_client: MQTT connect failed[0m
+[0;32mI (307156) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (322156) MQTT: Other event id: 7[0m
+[0;33mW (322506) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (322506) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (322506) mqtt_client: MQTT connect failed[0m
+[0;32mI (322516) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (337516) MQTT: Other event id: 7[0m
+[0;33mW (337866) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (337866) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (337866) mqtt_client: MQTT connect failed[0m
+[0;32mI (337876) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (352876) MQTT: Other event id: 7[0m
+[0;33mW (354256) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (354256) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (354256) mqtt_client: MQTT connect failed[0m
+[0;32mI (354256) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (364266) MQTT: Other event id: 7[0m
+[0;33mW (365926) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (365926) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (365926) mqtt_client: MQTT connect failed[0m
+[0;32mI (365936) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (380936) MQTT: Other event id: 7[0m
+[0;33mW (382306) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (382306) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (382306) mqtt_client: MQTT connect failed[0m
+[0;32mI (382316) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (397316) MQTT: Other event id: 7[0m
+[0;33mW (397666) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (397666) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (397666) mqtt_client: MQTT connect failed[0m
+[0;32mI (397676) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (412676) MQTT: Other event id: 7[0m
+[0;33mW (414056) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (414056) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (414056) mqtt_client: MQTT connect failed[0m
+[0;32mI (414056) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (424066) MQTT: Other event id: 7[0m
+[0;33mW (424906) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (424906) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (424906) mqtt_client: MQTT connect failed[0m
+[0;32mI (424906) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (434916) MQTT: Other event id: 7[0m
+[0;33mW (435356) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (435356) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (435356) mqtt_client: MQTT connect failed[0m
+[0;32mI (435356) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (445366) MQTT: Other event id: 7[0m
+[0;33mW (445996) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (445996) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (445996) mqtt_client: MQTT connect failed[0m
+[0;32mI (446006) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (461006) MQTT: Other event id: 7[0m
+[0;33mW (461366) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (461366) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (461366) mqtt_client: MQTT connect failed[0m
+[0;32mI (461366) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (471376) MQTT: Other event id: 7[0m
+[0;33mW (471806) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (471806) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (471806) mqtt_client: MQTT connect failed[0m
+[0;32mI (471816) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (486816) MQTT: Other event id: 7[0m
+[0;33mW (487776) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (487776) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (487776) mqtt_client: MQTT connect failed[0m
+[0;32mI (487786) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (502786) MQTT: Other event id: 7[0m
+[0;33mW (503346) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (503346) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (503346) mqtt_client: MQTT connect failed[0m
+[0;32mI (503356) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (518356) MQTT: Other event id: 7[0m
+[0;33mW (518706) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (518706) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (518706) mqtt_client: MQTT connect failed[0m
+[0;32mI (518706) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (528716) MQTT: Other event id: 7[0m
+[0;33mW (529146) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (529156) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (529156) mqtt_client: MQTT connect failed[0m
+[0;32mI (529156) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (544156) MQTT: Other event id: 7[0m
+[0;33mW (545126) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (545126) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (545126) mqtt_client: MQTT connect failed[0m
+[0;32mI (545126) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (555136) MQTT: Other event id: 7[0m
+[0;33mW (555566) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (555566) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (555566) mqtt_client: MQTT connect failed[0m
+[0;32mI (555576) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (570576) MQTT: Other event id: 7[0m
+[0;33mW (571136) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (571136) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (571136) mqtt_client: MQTT connect failed[0m
+[0;32mI (571146) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (586146) MQTT: Other event id: 7[0m
+[0;33mW (586896) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (586906) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (586906) mqtt_client: MQTT connect failed[0m
+[0;32mI (586906) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (601906) MQTT: Other event id: 7[0m
+[0;33mW (602876) mqtt_client: Connection refused, not authorized[0m
+[0;32mI (602876) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (602876) mqtt_client: MQTT connect failed[0m
+[0;32mI (602886) MQTT: MQTT_EVENT_DISCONNECTED[0m

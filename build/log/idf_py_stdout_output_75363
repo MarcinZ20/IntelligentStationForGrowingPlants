@@ -1,0 +1,111 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.12_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/bootloader.bin
+Bootloader binary size 0x67f0 bytes. 0x810 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:9:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c: In function 'ble_server_run':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c:700:5: warning: 'esp_bluedroid_init' is deprecated: Please use esp_bluedroid_init_with_cfg [-Wdeprecated-declarations]
+  700 |     ret = esp_bluedroid_init();
+      |     ^~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c:32:
+/Users/marcin/esp/esp-idf/components/bt/host/bluedroid/api/include/api/esp_bt_main.h:73:11: note: declared here
+   73 | esp_err_t esp_bluedroid_init(void) __attribute__((deprecated("Please use esp_bluedroid_init_with_cfg")));
+      |           ^~~~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable InteligentStationForGrowingPlants.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+[9/10] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.12_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/marcin/esp/IntelligentStationForGrowingPlants/build/partition_table/partition-table.bin /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+InteligentStationForGrowingPlants.bin binary size 0x14e2d0 bytes. Smallest app partition is 0x200000 bytes. 0xb1d30 bytes (35%) free.
+[9/10] cd /Users/marcin/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/marcin/esp/esp-idf -D "SERIAL_TOOL=/Users/marcin/.espressif/python_env/idf5.3_py3.12_env/bin/python;;/Users/marcin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/marcin/esp/IntelligentStationForGrowingPlants/build -P /Users/marcin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-01A178B2 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 InteligentStationForGrowingPlants.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port /dev/cu.usbserial-01A178B2
+Connecting.......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b4:e6:2d:ea:62:f5
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0015efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash params set to 0x0220
+Compressed 26608 bytes to 16301...
+Writing at 0x00001000... (100 %)
+Wrote 26608 bytes (16301 compressed) at 0x00001000 in 0.8 seconds (effective 274.3 kbit/s)...
+Hash of data verified.
+Compressed 1368784 bytes to 835456...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001f1f8... (3 %)
+Writing at 0x0002dcd1... (5 %)
+Writing at 0x00038e8c... (7 %)
+Writing at 0x0003f4e8... (9 %)
+Writing at 0x00044542... (11 %)
+Writing at 0x00050e4a... (13 %)
+Writing at 0x00056986... (15 %)
+Writing at 0x0005c51e... (17 %)
+Writing at 0x000624ce... (19 %)
+Writing at 0x00067ee3... (21 %)
+Writing at 0x0006da7d... (23 %)
+Writing at 0x000735e4... (25 %)
+Writing at 0x0007a0ae... (27 %)
+Writing at 0x0007ffb2... (29 %)
+Writing at 0x000862c3... (31 %)
+Writing at 0x0008c3d1... (33 %)
+Writing at 0x000922c6... (35 %)
+Writing at 0x00098470... (37 %)
+Writing at 0x0009e4cc... (39 %)
+Writing at 0x000a43ce... (41 %)
+Writing at 0x000aa73c... (43 %)
+Writing at 0x000b06bd... (45 %)
+Writing at 0x000b6574... (47 %)
+Writing at 0x000bbf01... (49 %)
+Writing at 0x000c1d5d... (50 %)
+Writing at 0x000c79d3... (52 %)
+Writing at 0x000cd651... (54 %)
+Writing at 0x000d3509... (56 %)
+Writing at 0x000d8eb3... (58 %)
+Writing at 0x000df228... (60 %)
+Writing at 0x000e5336... (62 %)
+Writing at 0x000eb12b... (64 %)
+Writing at 0x000f0b2d... (66 %)
+Writing at 0x000f5dc6... (68 %)
+Writing at 0x000fb22a... (70 %)
+Writing at 0x001007aa... (72 %)
+Writing at 0x00105fb4... (74 %)
+Writing at 0x0010b909... (76 %)
+Writing at 0x00111458... (78 %)
+Writing at 0x00116fa7... (80 %)
+Writing at 0x0011caae... (82 %)
+Writing at 0x00122a6b... (84 %)
+Writing at 0x0012d2a1... (86 %)
+Writing at 0x00134aaf... (88 %)
+Writing at 0x0013abaf... (90 %)
+Writing at 0x00141e19... (92 %)
+Writing at 0x001472e1... (94 %)
+Writing at 0x0014d2e5... (96 %)
+Writing at 0x00152db6... (98 %)
+Writing at 0x00158a47... (100 %)
+Wrote 1368784 bytes (835456 compressed) at 0x00010000 in 21.9 seconds (effective 499.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00008000 in 0.1 seconds (effective 292.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
