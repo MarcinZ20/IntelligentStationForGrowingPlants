@@ -24,10 +24,10 @@
 #define ESP_MAXIMUM_RETRY   10000
 #define LED_GPIO_PIN        2
 #define PORT                80
-//#define ESP_WIFI_SSID       "Guest_Wifi_2.4GHz"
-//#define ESP_WIFI_PASS       "bc3vmep6743c3dkp"
-#define ESP_WIFI_PASS "supertajnehaslo"
-#define ESP_WIFI_SSID "supertajnasiec"
+#define ESP_WIFI_SSID       "Guest_Wifi_2.4GHz"
+#define ESP_WIFI_PASS       "bc3vmep6743c3dkp"
+//#define ESP_WIFI_PASS "supertajnehaslo"
+//#define ESP_WIFI_SSID "supertajnasiec"
 #define LED_GPIO_PIN         2
 #define MAX_BUFFER_SIZE      1000
 
