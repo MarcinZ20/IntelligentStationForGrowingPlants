@@ -81,6 +81,7 @@ app.post('/api/register', async (req, res) => {
 })
 
 app.post('/api/login', async (req, res) => {
+  console.log(req)
   const { email, password } = req.body
 
   const user = await User.findOne({ email })
@@ -343,7 +344,7 @@ client.on('message', (topic, message) => {
   if ( split.at(-1) === "temperature" )
     sendDataToServer(message.toString(), split[3])
   else if ( split.at(-1) === "reset" )
-    resetDevice(split[2], split[3])
+    resetDevice(split[3])
 })
 
 async function sendDataToServer(data, deviceId) {
@@ -366,13 +367,17 @@ async function sendDataToServer(data, deviceId) {
   }
 }
 
-async function resetDevice(userId, deviceId) {
+async function resetDevice(deviceId) {
   await Reading.deleteMany({ deviceId }) // remove reading history for the device
 
-  const user = await User.findById(userId) // remove device from last user
-  const index = user.devicesIds.findIndex(x => x === deviceId)
-  if (index !== -1) {
-    user.devicesIds.splice(index, 1)
-    await user.save()
+  const user = await User.findOne({ // remove device from user it's linked to
+    devicesIds: { $in: [deviceId] }
+  })
+  if (user) {
+    const index = user.devicesIds.findIndex(x => x === deviceId)
+    if (index !== -1) {
+      user.devicesIds.splice(index, 1)
+      await user.save()
+    }
   }
 }
