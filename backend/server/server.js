@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const cors = require('cors')
+const mqtt = require('mqtt')
 const { expressjwt } = require('express-jwt')
 const { User, Reading } = require('./models')
 
@@ -323,3 +324,55 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(5000, () => console.log('Server started and listening on port 5000'))
+
+// ------------ MQTT ------------ //
+
+const brokerUrl = 'mqtt://test.mosquitto.org'
+const clientId = 'server-mqtt'
+
+const client = mqtt.connect(brokerUrl, {clientId, port: 1883 })
+
+client.on('connect', () => {
+  console.log('Connected to MQTT broker at '+brokerUrl)
+  client.subscribe('agh/iot/+/+/temperature')
+  client.subscribe('agh/iot/+/+/reset')
+})
+
+client.on('message', (topic, message) => {
+  let split = topic.split("/")
+  if ( split.at(-1) === "temperature" )
+    sendDataToServer(message.toString(), split[3])
+  else if ( split.at(-1) === "reset" )
+    resetDevice(split[2], split[3])
+})
+
+async function sendDataToServer(data, deviceId) {
+  let json = JSON.parse(data)
+  let modified = 
+  { deviceId , 
+    temperature: json.data.temperature, 
+    humidity: json.data.humidity, 
+    light_intensity: json.data.light, 
+    timestamp: new Date() 
+  }
+
+  const existingUser = await User.findOne({ // Check if device used by someone
+    devicesIds: { $in: [deviceId] }
+  })
+
+  if (deviceId && modified.timestamp && existingUser){
+    const newReading = await Reading.create({ ...modified }) 
+    currentReadings[deviceId] = newReading
+  }
+}
+
+async function resetDevice(userId, deviceId) {
+  await Reading.deleteMany({ deviceId }) // remove reading history for the device
+
+  const user = await User.findById(userId) // remove device from last user
+  const index = user.devicesIds.findIndex(x => x === deviceId)
+  if (index !== -1) {
+    user.devicesIds.splice(index, 1)
+    await user.save()
+  }
+}
