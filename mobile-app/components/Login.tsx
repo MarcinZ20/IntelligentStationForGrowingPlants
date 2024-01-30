@@ -1,10 +1,10 @@
-import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native'
-import React, { useState } from 'react'
-import Config from '../utils/Config'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
+import React, { useState } from 'react'
+import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native'
+import Config from '../Config'
 import { StackParamList } from '../navigation/types'
-import API from '../utils/API'
 import { Device } from '../types/Device'
+import API from '../utils/API'
 
 type LoginProps = NativeStackScreenProps<StackParamList, 'Login'>
 

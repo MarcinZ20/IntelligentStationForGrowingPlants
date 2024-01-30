@@ -1,4 +1,4 @@
-import Config from './Config'
+import Config from '../Config'
 
 let accessToken = ''
 
@@ -6,6 +6,7 @@ export default {
   setAccessToken: (token: string) => {
     accessToken = token
   },
+  getAccessToken: () => accessToken,
   register: async (username: string, email: string, password: string) => {
     const response = await fetch(Config.BASE_URL + '/register', {
       method: 'POST',

@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
-import React, { useEffect, useState } from 'react'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
+import React, { useEffect, useState } from 'react'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import Config from '../Config'
 import { StackParamList } from '../navigation/types'
 import { Device, Reading } from '../types/Device'
-import Config from '../utils/Config'
 
 type CurrentReadingsProps = NativeStackScreenProps<StackParamList, 'CurrentReadings'>
 
@@ -109,21 +109,21 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   text: {
-    color: 'white'
+    color: Config.COLOR_TEXT
   },
   textSmall: {
-    color: 'white',
+    color: Config.COLOR_TEXT,
     position: 'absolute',
     top: 25,
     left: 25
   },
   textBig: {
     fontSize: 25,
-    color: 'white'
+    color: Config.COLOR_TEXT
   },
   textBigNumber: {
     fontSize: 60,
-    color: 'white'
+    color: Config.COLOR_TEXT
   },
   history: {
     backgroundColor: Config.COLOR_CONTENT,

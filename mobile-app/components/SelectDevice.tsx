@@ -1,12 +1,13 @@
-import { Alert, Button, FlatList, ScrollView, StyleSheet, View } from 'react-native'
-import React, { useEffect, useState } from 'react'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
-import DeviceListItem from './DeviceListItem'
+import React, { useEffect, useState } from 'react'
+import { Alert, Button, PermissionsAndroid, Platform, ScrollView, StyleSheet, Text, View } from 'react-native'
+import Dialog from 'react-native-dialog'
+import Config from '../Config'
 import { StackParamList } from '../navigation/types'
 import { Device } from '../types/Device'
-import Config from '../utils/Config'
 import API from '../utils/API'
-import Dialog from 'react-native-dialog'
+import useBLE from '../utils/ble'
+import DeviceListItem from './DeviceListItem'
 
 type SelectDeviceProps = NativeStackScreenProps<StackParamList, 'SelectDevice'>
 
@@ -14,6 +15,17 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
   const [deviceId, setDeviceId] = useState<string>('')
   const [devices, setDevices] = useState<Device[]>([])
+
+  const {
+    requestPermissions,
+    scanForPeripherals,
+    connectToDevice,
+    sendData,
+    disconnectFromDevice,
+    enableBluetooth,
+    allDevices,
+    connectedDevice,
+  } = useBLE()
 
   useEffect(() => {
     setDevices(route.params.deviceIds.map(id => new Device(id)))
@@ -35,8 +47,49 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
     }
   }
 
+  const scanDevices = async () => {
+    const permissions = await requestPermissions()
+    if (!permissions)
+      return
+
+    await enableBluetooth()
+    navigation.navigate('AddDevice')
+  }
+
+  const requestBluetoothPermission = async () => {
+    if (Platform.OS === 'ios') {
+      return true
+    }
+    if (Platform.OS === 'android' && PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION) {
+      const apiLevel = parseInt(Platform.Version.toString(), 10)
+
+      if (apiLevel < 31) {
+        const granted = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION)
+        return granted === PermissionsAndroid.RESULTS.GRANTED
+      }
+      if (PermissionsAndroid.PERMISSIONS.BLUETOOTH_SCAN && PermissionsAndroid.PERMISSIONS.BLUETOOTH_CONNECT) {
+        const result = await PermissionsAndroid.requestMultiple([
+          PermissionsAndroid.PERMISSIONS.BLUETOOTH_SCAN,
+          PermissionsAndroid.PERMISSIONS.BLUETOOTH_CONNECT,
+          PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION
+        ])
+  
+        return (
+          result['android.permission.BLUETOOTH_CONNECT'] === PermissionsAndroid.RESULTS.GRANTED &&
+          result['android.permission.BLUETOOTH_SCAN'] === PermissionsAndroid.RESULTS.GRANTED &&
+          result['android.permission.ACCESS_FINE_LOCATION'] === PermissionsAndroid.RESULTS.GRANTED
+        )
+      }
+    }
+  
+    return false
+  }
+
   const addDevice = async () => {
     try {
+      const result = await requestBluetoothPermission()
+      console.log(result)
+
       const response = await API.addDevice(deviceId)
       if (response.error)
         return Alert.alert(response.error)
@@ -60,9 +113,15 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
         {
           devices.map((device, i) => <DeviceListItem key={i} device={device} onPress={chooseDevice} onDelete={deleteDevice} />)
         }
-        <View style={styles.buttonContainer}>
+        {/* <View style={styles.buttonContainer}>
           <Button title='Add a device' color={Config.COLOR_CONTENT} onPress={() => setIsModalOpen(true)}></Button>
+        </View> */}
+        <View style={styles.buttonContainer}>
+          <Button title='Add a device' color={Config.COLOR_CONTENT} onPress={scanDevices}></Button>
         </View>
+        {/* {
+          allDevices.map((device, i) => <Text key={i}>{device.name} - {device.id}</Text>)
+        } */}
       </ScrollView>
     </>
   )
@@ -72,7 +131,7 @@ export default SelectDevice
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#121212',
+    backgroundColor: Config.COLOR_BACKGROUND,
   },
   contentContainer: {
     alignItems: 'center'
