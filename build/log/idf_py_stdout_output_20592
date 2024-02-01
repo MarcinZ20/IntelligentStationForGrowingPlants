@@ -1,0 +1,174 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24110h (147728) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=00034138 vaddr=3ffbdb60 size=05424h ( 21540) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=00039564 vaddr=40080000 size=06ab4h ( 27316) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=84708h (542472) map[0m
+[0;32mI (260) esp_image: segment 4: paddr=000c4730 vaddr=40086ab4 size=11d20h ( 72992) load[0m
+[0;32mI (291) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (291) boot: Disabling RNG early entropy source...[0m
+[0;32mI (302) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (321) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (327) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (333) cpu_start: ELF file SHA256:  a08764766...[0m
+[0;32mI (338) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (345) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (349) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (354) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (359) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (372) heap_init: At 3FFC7100 len 00018F00 (99 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (385) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (391) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (399) spi_flash: detected chip: winbond[0m
+[0;32mI (402) spi_flash: flash io: dio[0m
+[0;33mW (406) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (417) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (426) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (431) main_task: Started on CPU0[0m
+[0;32mI (441) main_task: Calling app_main()[0m
+[0;32mI (471) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (471) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (471) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (491) I2C: Module configuration successful![0m
+I (24501) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (24511) wifi:wifi firmware version: a194738
+I (24521) wifi:wifi certification version: v7.0
+I (24521) wifi:config NVS flash: enabled
+I (24521) wifi:config nano formating: disabled
+I (24521) wifi:Init data frame dynamic rx buffer num: 32
+I (24531) wifi:Init static rx mgmt buffer num: 5
+I (24531) wifi:Init management short buffer num: 32
+I (24531) wifi:Init dynamic tx buffer num: 32
+I (24541) wifi:Init static rx buffer size: 1600
+I (24541) wifi:Init static rx buffer num: 10
+I (24551) wifi:Init dynamic rx buffer num: 32
+[0;32mI (24551) wifi_init: rx ba win: 6[0m
+[0;32mI (24551) wifi_init: tcpip mbox: 32[0m
+[0;32mI (24561) wifi_init: udp mbox: 6[0m
+[0;32mI (24561) wifi_init: tcp mbox: 6[0m
+[0;32mI (24571) wifi_init: tcp tx win: 5760[0m
+[0;32mI (24571) wifi_init: tcp rx win: 5760[0m
+[0;32mI (24581) wifi_init: tcp mss: 1440[0m
+[0;32mI (24581) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (24581) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (24591) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (24681) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (24681) wifi:enable tsf
+[0;32mI (24681) WI-FI: Wifi started![0m
+I (24701) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (24701) wifi:state: init -> auth (b0)
+I (24731) wifi:state: auth -> assoc (0)
+I (24741) wifi:state: assoc -> run (10)
+I (24801) wifi:connected with supertajnasiec, aid = 2, channel 8, BW20, bssid = 8e:41:e2:00:54:d6
+I (24801) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (24811) wifi:pm start, type: 1
+
+I (24811) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (24861) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (24861) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (25821) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (25821) WI-FI: CONNECTED TO IP: 192.168.163.8[0m
+Połączono z wifi[0;32mI (25821) main_task: Returned from app_main()[0m
+I (52411) wifi:state: run -> init (1a0)
+I (52411) wifi:pm stop, total sleep time: 24422419 us / 27597360 us
+
+I (52411) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (52411) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (54831) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (57251) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (59661) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (62071) WI-FI: Ponowna próba połączenia do sieci ...[0m
+I (62091) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (62091) wifi:state: init -> auth (b0)
+I (62091) wifi:state: auth -> assoc (0)
+I (62111) wifi:state: assoc -> run (10)
+I (62131) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 46:de:33:ef:fd:3e
+I (62131) wifi:security: WPA2-PSK, phy: bgn, rssi: -67
+I (62131) wifi:pm start, type: 1
+
+I (62131) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (62141) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (62151) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (63161) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (63161) WI-FI: CONNECTED TO IP: 192.168.163.8[0m
+I (70021) wifi:state: run -> init (1a0)
+I (70031) wifi:pm stop, total sleep time: 6660307 us / 7891480 us
+
+I (70031) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (70031) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (72451) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (74861) WI-FI: Ponowna próba połączenia do sieci ...[0m
+I (74941) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (74941) wifi:state: init -> auth (b0)
+I (74991) wifi:state: auth -> assoc (0)
+I (75001) wifi:state: assoc -> run (10)
+I (75021) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 26:71:94:42:ef:32
+I (75021) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (75031) wifi:pm start, type: 1
+
+I (75031) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (75041) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (75041) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (76051) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (76051) WI-FI: CONNECTED TO IP: 192.168.163.8[0m
+I (80361) wifi:state: run -> init (1a0)
+I (80371) wifi:pm stop, total sleep time: 3247273 us / 5335920 us
+
+I (80371) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (80371) WI-FI: Ponowna próba połączenia do sieci ...[0m
+I (80391) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (80391) wifi:state: init -> auth (b0)
+I (81391) wifi:state: auth -> init (200)
+I (81391) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (81391) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (83811) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (86221) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (88631) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (91051) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (93461) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (95881) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (98291) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (100701) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (103121) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (105531) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (107951) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (110361) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (112771) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (115191) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (117601) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (120021) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (122431) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (124841) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (127261) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (129671) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (132091) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (134501) WI-FI: Ponowna próba połączenia do sieci ...[0m

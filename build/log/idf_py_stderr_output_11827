@@ -1,0 +1,47 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40162db7: uint8ToString at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:21
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40162db4: uint8ToString at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:21
+[0m
+[0;33m0x400d8611: am2320_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:35
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40162db7: uint8ToString at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:21
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40162db4: uint8ToString at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:21
+[0m
+[0;33m0x400d8611: am2320_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:35
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40162db7: uint8ToString at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:21
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40162db4: uint8ToString at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:21
+[0m
+[0;33m0x400d8611: am2320_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:35
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

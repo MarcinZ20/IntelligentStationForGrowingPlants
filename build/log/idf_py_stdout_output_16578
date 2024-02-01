@@ -1,0 +1,68 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/bootloader.bin
+Bootloader binary size 0x67f0 bytes. 0x810 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:9:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c: In function 'blink_led_task':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:39:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   39 |     int8_t gpio_pin = (int8_t)pvParameters;
+      |                       ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c: In function 'beam_led_task':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:57:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   57 |     int8_t gpio_pin = (int8_t)pvParameters;
+      |                       ^
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:12:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c: In function 'get_mac_address':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:16:12: warning: returning 'uint8_t' {aka 'unsigned char'} from a function with return type 'char *' makes pointer from integer without a cast [-Wint-conversion]
+   16 |     return *mac;
+      |            ^~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c: In function 'config_wifi':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:176:17: warning: unused variable 'bits' [-Wunused-variable]
+  176 |     EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+      |                 ^~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:1,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/mqtt.h:16,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:1,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:13:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/utils.h: At top level:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/utils.h:18:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+   18 | static const struct measurement get_measurement();
+      |        ^~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:3:8: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]
+    3 | static const struct measurement get_measurement () {
+      |        ^~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:84:13: warning: 'config_mqtt' defined but not used [-Wunused-function]
+   84 | static void config_mqtt(void) {
+      |             ^~~~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/display.h:9,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:1,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:11:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:17:17: warning: '_pow' defined but not used [-Wunused-function]
+   17 | static uint32_t _pow(uint8_t m, uint8_t n)
+      |                 ^~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable InteligentStationForGrowingPlants.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+[9/10] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/marcin/esp/IntelligentStationForGrowingPlants/build/partition_table/partition-table.bin /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+InteligentStationForGrowingPlants.bin binary size 0xc6830 bytes. Smallest app partition is 0x200000 bytes. 0x1397d0 bytes (61%) free.
+[9/10] cd /Users/marcin/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/marcin/esp/esp-idf -D "SERIAL_TOOL=/Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python;;/Users/marcin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/marcin/esp/IntelligentStationForGrowingPlants/build -P /Users/marcin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-01A178B2 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 InteligentStationForGrowingPlants.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/cu.usbserial-01A178B2
+
+A fatal error occurred: Could not open /dev/cu.usbserial-01A178B2, the port is busy or doesn't exist.
+([Errno 2] could not open port /dev/cu.usbserial-01A178B2: [Errno 2] No such file or directory: '/dev/cu.usbserial-01A178B2')
+
+Hint: Check if the port is correct and ESP connected
+
+FAILED: CMakeFiles/flash /Users/marcin/esp/IntelligentStationForGrowingPlants/build/CMakeFiles/flash 
+cd /Users/marcin/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/marcin/esp/esp-idf -D "SERIAL_TOOL=/Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python;;/Users/marcin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/marcin/esp/IntelligentStationForGrowingPlants/build -P /Users/marcin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

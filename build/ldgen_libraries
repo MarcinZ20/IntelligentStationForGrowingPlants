@@ -66,4 +66,6 @@
 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/perfmon/libperfmon.a
 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/spiffs/libspiffs.a
 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/espressif__ssd1306/libespressif__ssd1306.a
+/Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/suda-morris__am2302_rmt/libsuda-morris__am2302_rmt.a
 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/main/libmain.a

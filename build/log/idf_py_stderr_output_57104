@@ -1,0 +1,28 @@
+CMake Error at /Users/marcin/esp/esp-idf/tools/cmake/build.cmake:544 (message):
+  ERROR: A problem was found in the manifest file
+  /Users/marcin/esp/IntelligentStationForGrowingPlants/main/idf_component.yml:
+
+
+  List of dependencies should be a dictionary.  For example:
+
+  dependencies:
+
+    some-component: ">=1.2.3,!=1.2.5"
+
+  
+
+  SUGGESTION: This component may be using a newer version of the component
+  manager.
+
+  You can try to update the component manager by running:
+
+      /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python -m pip install --upgrade idf-component-manager
+
+  
+
+Call Stack (most recent call first):
+  /Users/marcin/esp/esp-idf/tools/cmake/project.cmake:605 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

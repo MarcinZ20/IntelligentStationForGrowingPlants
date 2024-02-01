@@ -1,0 +1,304 @@
+[0;32mI (414) boot: L�L����[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pr�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3c478h (246904) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004c4a0 vaddr=3ffbdb60 size=03b78h ( 15224) load[0m
+[0;32mI (159) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=ec874h (968820) map[0m
+[0;32mI (360) esp_image: segment 3: paddr=0013c89c vaddr=3ffc16d8 size=01dd0h (  7632) load[0m
+[0;32mI (362) esp_image: segment 4: paddr=0013e674 vaddr=40080000 size=1f368h (127848) load[0m
+[0;32mI (414) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (414) boot: Disabling RNG early entropy source...[0m
+[0;32mI (426) cpu_start: Multicore app[0m
+[0;32mI (435) cpu_start: Pro cpu start user code[0m
+[0;32mI (435) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (435) cpu_start: Application information:[0m
+[0;32mI (438) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (445) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (450) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (456) cpu_start: ELF file SHA256:  d8685ce01...[0m
+[0;32mI (462) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (468) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (473) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (478) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (490) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (496) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (502) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (508) heap_init: At 3FFCBB48 len 000144B8 (81 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 4009F368 len 00000C98 (3 KiB): IRAM[0m
+[0;32mI (534) spi_flash: detected chip: generic[0m
+[0;32mI (538) spi_flash: flash io: dio[0m
+[0;32mI (542) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (547) main_task: Started on CPU0[0m
+[0;32mI (557) main_task: Calling app_main()[0m
+I (607) wifi:wifi driver task: 3ffd00dc, prio:23, stack:6656, core=0
+I (627) wifi:wifi firmware version: a194738
+I (627) wifi:wifi certification version: v7.0
+I (627) wifi:config NVS flash: enabled
+I (627) wifi:config nano formating: disabled
+I (637) wifi:Init data frame dynamic rx buffer num: 32
+I (637) wifi:Init static rx mgmt buffer num: 5
+I (647) wifi:Init management short buffer num: 32
+I (647) wifi:Init dynamic tx buffer num: 32
+I (647) wifi:Init static rx buffer size: 1600
+I (657) wifi:Init static rx buffer num: 10
+I (657) wifi:Init dynamic rx buffer num: 32
+[0;32mI (667) wifi_init: rx ba win: 6[0m
+[0;32mI (667) wifi_init: tcpip mbox: 32[0m
+[0;32mI (667) wifi_init: udp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp mbox: 6[0m
+[0;32mI (677) wifi_init: tcp tx win: 5760[0m
+[0;32mI (687) wifi_init: tcp rx win: 5760[0m
+[0;32mI (687) wifi_init: tcp mss: 1440[0m
+[0;32mI (687) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (697) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (707) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (787) wifi:mode : sta (7c:87:ce:2f:58:60)
+I (787) wifi:enable tsf
+[0;32mI (797) WI-FI STATION: wifi_init_sta finished.[0m
+I (807) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (807) wifi:state: init -> auth (b0)
+I (817) wifi:state: auth -> assoc (0)
+I (827) wifi:state: assoc -> run (10)
+I (837) wifi:connected with supertajnasiec, aid = 9, channel 7, BW20, bssid = 9e:5d:b7:cd:98:a6
+I (837) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (847) wifi:pm start, type: 1
+
+I (847) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (897) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (897) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1857) esp_netif_handlers: sta ip: 192.168.148.184, mask: 255.255.255.0, gw: 192.168.148.6[0m
+[0;32mI (1857) WI-FI STATION: GOT IP: 192.168.148.184[0m
+[0;32mI (1857) WI-FI STATION: CONNECTED[0m
+
+Połączono z siecią:
+=====
+SSID: supertajnasiec
+Password: supertajnehaslo
+
+[0;32mI (1867) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;32mI (1877) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (1887) BTDM_INIT: Bluetooth MAC: 7c:87:ce:2f:58:62[0m
+I (1887) wifi:<ba-add>idx:0 (ifx:0, 9e:5d:b7:cd:98:a6), tid:0, ssn:3, winSize:64
+[0;32mI (2227) GATTC_DEMO: REG_EVT[0m
+[0;32mI (2237) GATTC_DEMO: scan start success[0m
+[0;32mI (2237) main_task: Returned from app_main()[0m
+[0;32mI (2237) MQTT: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (2247) MQTT: Sent publish successful, msg_id: 1[0m
+[0;32mI (2397) GATTC_DEMO: 00 e1 22 f5 9e 90 [0m
+[0;32mI (2397) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2397) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2407) GATTC_DEMO:  [0m
+[0;32mI (2407) GATTC_DEMO: 21 22 35 8d 59 7b [0m
+[0;32mI (2417) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2417) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2427) GATTC_DEMO:  [0m
+[0;32mI (2427) GATTC_DEMO: 65 27 67 48 3b d7 [0m
+[0;32mI (2437) GATTC_DEMO: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2437) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2447) GATTC_DEMO:  [0m
+[0;32mI (2447) GATTC_DEMO: 53 a3 9b 5c d8 15 [0m
+[0;32mI (2457) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2457) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2467) GATTC_DEMO:  [0m
+[0;32mI (2467) GATTC_DEMO: 46 0d 78 36 40 b2 [0m
+[0;32mI (2477) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2477) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2487) GATTC_DEMO:  [0m
+[0;32mI (2487) GATTC_DEMO: 6b 8c ce 7f 7c 1c [0m
+[0;32mI (2487) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2497) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2507) GATTC_DEMO:  [0m
+[0;32mI (2507) GATTC_DEMO: 49 65 24 d0 a7 69 [0m
+[0;32mI (2517) GATTC_DEMO: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (2517) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2527) GATTC_DEMO:  [0m
+[0;32mI (2527) GATTC_DEMO: 0a 2c 69 97 70 9d [0m
+[0;32mI (2537) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2537) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2547) GATTC_DEMO:  [0m
+[0;32mI (2547) GATTC_DEMO: 74 f9 7a 73 71 f6 [0m
+[0;32mI (2547) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2557) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2567) GATTC_DEMO:  [0m
+[0;32mI (2567) GATTC_DEMO: 51 c1 1d 9f 45 0d [0m
+[0;32mI (2567) GATTC_DEMO: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2577) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2587) GATTC_DEMO:  [0m
+[0;32mI (2587) GATTC_DEMO: 22 a4 17 38 9b 62 [0m
+[0;32mI (2587) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2597) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2607) GATTC_DEMO:  [0m
+[0;32mI (2607) GATTC_DEMO: 00 e1 22 f5 9e 90 [0m
+[0;32mI (2607) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2617) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2617) GATTC_DEMO:  [0m
+[0;32mI (2627) GATTC_DEMO: 46 0d 78 36 40 b2 [0m
+[0;32mI (2627) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2637) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2647) GATTC_DEMO:  [0m
+[0;32mI (2647) GATTC_DEMO: 74 80 16 2c 13 69 [0m
+[0;32mI (2647) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2657) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2657) GATTC_DEMO:  [0m
+[0;32mI (2667) GATTC_DEMO: 6b 8c ce 7f 7c 1c [0m
+[0;32mI (2667) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2677) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2677) GATTC_DEMO:  [0m
+[0;32mI (2687) GATTC_DEMO: 64 aa 08 b0 1c 4a [0m
+[0;32mI (2687) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2697) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2697) GATTC_DEMO:  [0m
+[0;32mI (2707) GATTC_DEMO: 5e 0e ca f0 1a 71 [0m
+[0;32mI (2707) GATTC_DEMO: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (2717) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2717) GATTC_DEMO:  [0m
+[0;32mI (2727) GATTC_DEMO: b4 e6 2d ea 62 f7 [0m
+[0;32mI (2727) GATTC_DEMO: searched Adv Data Len 22, Scan Response Len 25[0m
+[0;32mI (2737) GATTC_DEMO: searched Device Name Len 5[0m
+[0;32mI (2747) GATTC_DEMO: ISfGP[0m
+[0;32mI (2747) GATTC_DEMO:  [0m
+[0;32mI (2747) GATTC_DEMO: searched device ISfGP[0m
+[0;32mI (2747) GATTC_DEMO: connect to the remote device.[0m
+[0;32mI (2757) GATTC_DEMO: 6e 93 4e 71 67 d2 [0m
+[0;32mI (2757) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2767) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2777) GATTC_DEMO:  [0m
+[0;32mI (2777) GATTC_DEMO: 7a ff a0 43 23 58 [0m
+[0;32mI (2777) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2787) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2797) GATTC_DEMO:  [0m
+[0;32mI (2797) GATTC_DEMO: 58 47 d7 ee b8 cb [0m
+[0;32mI (2797) GATTC_DEMO: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (2807) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2807) GATTC_DEMO:  [0m
+[0;32mI (2817) GATTC_DEMO: dc 3e e5 7f a6 68 [0m
+[0;32mI (2817) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2827) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2827) GATTC_DEMO:  [0m
+[0;32mI (2847) GATTC_DEMO: stop scan successfully[0m
+[0;32mI (2847) GATTC_DEMO: 6b 8c ce 7f 7c 1c [0m
+[0;32mI (2847) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2857) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2857) GATTC_DEMO:  [0m
+[0;32mI (2867) GATTC_DEMO: 46 0d 78 36 40 b2 [0m
+[0;32mI (2867) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2877) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2877) GATTC_DEMO:  [0m
+[0;32mI (2887) GATTC_DEMO: 5d 32 16 d6 31 42 [0m
+[0;32mI (2887) GATTC_DEMO: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (2897) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2897) GATTC_DEMO:  [0m
+[0;32mI (2897) GATTC_DEMO: 6e 48 45 a8 c2 59 [0m
+[0;32mI (2907) GATTC_DEMO: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (2917) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2917) GATTC_DEMO:  [0m
+[0;32mI (2917) GATTC_DEMO: 21 22 35 8d 59 7b [0m
+[0;32mI (2927) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2937) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2937) GATTC_DEMO:  [0m
+[0;32mI (2937) GATTC_DEMO: 64 aa 08 b0 1c 4a [0m
+[0;32mI (2947) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2957) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2957) GATTC_DEMO:  [0m
+[0;32mI (2957) GATTC_DEMO: 22 a4 17 38 9b 62 [0m
+[0;32mI (2967) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2967) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (2977) GATTC_DEMO:  [0m
+[0;32mI (2977) GATTC_DEMO: 6e 93 4e 71 67 d2 [0m
+[0;32mI (2987) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2987) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3007) GATTC_DEMO:  [0m
+[0;32mI (3007) GATTC_DEMO: 61 c6 e8 52 9d 1b [0m
+[0;32mI (3007) GATTC_DEMO: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3017) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3017) GATTC_DEMO:  [0m
+[0;32mI (3017) GATTC_DEMO: 68 b9 50 c0 a0 a1 [0m
+[0;32mI (3027) GATTC_DEMO: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3027) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3037) GATTC_DEMO:  [0m
+[0;32mI (3047) GATTC_DEMO: ESP_GATTC_CONNECT_EVT conn_id 0, if 3[0m
+[0;32mI (3047) GATTC_DEMO: REMOTE BDA:[0m
+[0;32mI (3047) GATTC_DEMO: b4 e6 2d ea 62 f7 [0m
+[0;32mI (3057) GATTC_DEMO: open success[0m
+[0;32mI (3057) GATTC_DEMO: 46 cb 07 f4 78 f3 [0m
+[0;32mI (3057) GATTC_DEMO: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3077) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3077) GATTC_DEMO:  [0m
+[0;32mI (3077) GATTC_DEMO: 00 e1 22 f5 9e 90 [0m
+[0;32mI (3077) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3087) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3097) GATTC_DEMO:  [0m
+[0;32mI (3107) GATTC_DEMO: 40 8c 7f a1 3d 6a [0m
+[0;32mI (3107) GATTC_DEMO: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3107) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3117) GATTC_DEMO:  [0m
+[0;32mI (3117) GATTC_DEMO: 21 22 35 8d 59 7b [0m
+[0;32mI (3117) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3127) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3137) GATTC_DEMO:  [0m
+[0;32mI (3137) GATTC_DEMO: 5d 32 16 d6 31 42 [0m
+[0;32mI (3137) GATTC_DEMO: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3147) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3157) GATTC_DEMO:  [0m
+[0;32mI (3157) GATTC_DEMO: 0a 2c 69 97 70 9d [0m
+[0;32mI (3157) GATTC_DEMO: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3167) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3177) GATTC_DEMO:  [0m
+[0;32mI (3177) GATTC_DEMO: 6e 48 45 a8 c2 59 [0m
+[0;32mI (3177) GATTC_DEMO: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (3187) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3197) GATTC_DEMO:  [0m
+[0;32mI (3197) GATTC_DEMO: 74 53 36 32 fc 62 [0m
+[0;32mI (3197) GATTC_DEMO: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3207) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3207) GATTC_DEMO:  [0m
+[0;32mI (3217) GATTC_DEMO: 77 78 03 65 50 17 [0m
+[0;32mI (3217) GATTC_DEMO: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3227) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3227) GATTC_DEMO:  [0m
+[0;32mI (3237) GATTC_DEMO: 66 bf 07 d9 e4 d3 [0m
+[0;32mI (3237) GATTC_DEMO: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (3247) GATTC_DEMO: searched Device Name Len 0[0m
+[0;32mI (3247) GATTC_DEMO:  [0m
+[0;32mI (3257) GATTC_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 32,latency = 0, timeout = 400[0m
+[0;32mI (4517) GATTC_DEMO: discover service complete conn_id 0[0m
+[0;32mI (4517) GATTC_DEMO: Get service information from remote device[0m
+[0;32mI (4517) GATTC_DEMO: ESP_GATTC_SEARCH_CMPL_EVT[0m
+[0;32mI (4597) GATTC_DEMO: ESP_GATTC_CFG_MTU_EVT, Status 0, MTU 500, conn_id 0[0m
+[0;32mI (5247) MQTT: Sent publish successful, msg_id: 2[0m
+[0;32mI (8247) MQTT: Sent publish successful, msg_id: 3[0m
+[0;32mI (11247) MQTT: Sent publish successful, msg_id: 4[0m
+[0;32mI (14247) MQTT: Sent publish successful, msg_id: 5[0m
+[0;32mI (17247) MQTT: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (17257) MQTT: EVENT_PUBLISHED, msg_id: 2[0m
+[0;32mI (17257) MQTT: EVENT_PUBLISHED, msg_id: 3[0m
+[0;32mI (17257) MQTT: EVENT_PUBLISHED, msg_id: 4[0m
+[0;32mI (17267) MQTT: EVENT_PUBLISHED, msg_id: 5[0m

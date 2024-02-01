@@ -1,0 +1,73 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4012ea8b: task_wdt_timeout_handling at /Users/marcin/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+[0m
+[0;33m0x4012ec36: task_wdt_isr at /Users/marcin/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+[0m
+[0;33m0x4008b219: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400d708b: uart_ll_get_txfifo_len at /Users/marcin/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at /Users/marcin/esp/esp-idf/components/vfs/vfs_uart.c:164
+[0m
+[0;33m0x400d7867: uart_write at /Users/marcin/esp/esp-idf/components/vfs/vfs_uart.c:217
+[0m
+[0;33m0x400d66b3: console_write at /Users/marcin/esp/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+[0m
+[0;33m0x400d623e: esp_vfs_write at /Users/marcin/esp/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+[0m
+[0;33m0x4000bd83: _write_r in ROM
+[0m
+[0;33m0x4000117d: __swrite in ROM
+[0m
+[0;33m0x400592fe: __sflush_r in ROM
+[0m
+[0;33m0x4005937a: _fflush_r in ROM
+[0m
+[0;33m0x40188495: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+[0m
+[0;33m0x40193e37: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+[0m
+[0;33m0x401937fa: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+[0m
+[0;33m0x40188939: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+[0m
+[0;33m0x401a3455: esp_log_writev at /Users/marcin/esp/esp-idf/components/log/log.c:215
+[0m
+[0;33m0x4009789d: esp_log_write at /Users/marcin/esp/esp-idf/components/log/log.c:225
+[0m
+[0;33m0x400d820e: esp_gap_cb at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:336 (discriminator 1)
+[0m
+[0;33m0x400db181: btc_gap_ble_cb_to_app at /Users/marcin/esp/esp-idf/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_ble.c:73
+[0m
+[0;33m0x400dbbb5: btc_gap_ble_adv_pkt_handler at /Users/marcin/esp/esp-idf/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_ble.c:632
+[0m
+[0;33m0x400ff4f2: osi_thread_generic_event_handler at /Users/marcin/esp/esp-idf/components/bt/common/osi/thread.c:425
+[0m
+[0;33m0x400ff3c3: osi_thread_run at /Users/marcin/esp/esp-idf/components/bt/common/osi/thread.c:165
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x4012ea8b: task_wdt_timeout_handling at /Users/marcin/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:414
+[0m
+[0;33m0x4012ec36: task_wdt_isr at /Users/marcin/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:536
+[0m
+[0;33m0x4008b219: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x401561d9: ieee80211_parse_beacon at ??:?
+[0m
+[0;33m0x40161825: sta_recv_mgmt at ??:?
+[0m
+[0;33m0x40098c76: sta_input at ??:?
+[0m
+[0;33m0x40098cd9: sta_rx_cb at ??:?
+[0m
+[0;33m0x4009cd15: ppRxPkt at ??:?
+[0m
+[0;33m0x4009a920: ppTask at ??:?
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0m

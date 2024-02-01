@@ -1,0 +1,335 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=292b4h (168628) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000392dc vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003e758 vaddr=40080000 size=018c0h (  6336) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9c698h (640664) map[0m
+[0;32mI (284) esp_image: segment 4: paddr=000dc6c0 vaddr=400818c0 size=16f14h ( 93972) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (321) boot: Disabling RNG early entropy source...[0m
+[0;32mI (332) cpu_start: Multicore app[0m
+[0;32mI (341) cpu_start: Pro cpu start user code[0m
+[0;32mI (341) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (341) cpu_start: Application information:[0m
+[0;32mI (344) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (351) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (363) cpu_start: ELF file SHA256:  ad878f131...[0m
+[0;32mI (368) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (379) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (384) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (389) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (396) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 3FFC7730 len 000188D0 (98 KiB): DRAM[0m
+[0;32mI (408) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (421) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (429) spi_flash: detected chip: winbond[0m
+[0;32mI (432) spi_flash: flash io: dio[0m
+[0;33mW (436) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (447) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (493) I2C: Module configuration successful![0m
+[0;32mI (493) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (543) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (553) wifi:wifi firmware version: a194738
+I (563) wifi:wifi certification version: v7.0
+I (563) wifi:config NVS flash: enabled
+I (563) wifi:config nano formating: disabled
+I (563) wifi:Init data frame dynamic rx buffer num: 32
+I (563) wifi:Init static rx mgmt buffer num: 5
+I (573) wifi:Init management short buffer num: 32
+I (573) wifi:Init dynamic tx buffer num: 32
+I (583) wifi:Init static rx buffer size: 1600
+I (583) wifi:Init static rx buffer num: 10
+I (583) wifi:Init dynamic rx buffer num: 32
+[0;32mI (593) wifi_init: rx ba win: 6[0m
+[0;32mI (593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (603) wifi_init: udp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp tx win: 5760[0m
+[0;32mI (613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (613) wifi_init: tcp mss: 1440[0m
+[0;32mI (623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (623) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (633) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (713) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (713) wifi:enable tsf
+[0;32mI (723) [WI-FI]: Wifi started![0m
+[0;32mI (3133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (3143) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (5553) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (5553) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (7973) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (7973) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (10383) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (10383) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (12803) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (12803) [APP]: WIFI DISCONNECTED[0m
+I (12813) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (12813) wifi:state: init -> auth (b0)
+I (12823) wifi:state: auth -> assoc (0)
+I (12843) wifi:state: assoc -> run (10)
+I (12863) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 66:13:00:70:30:9f
+I (12863) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (12873) wifi:pm start, type: 1
+
+I (12873) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (12923) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (12923) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (13883) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (13883) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (13883) [APP]: WIFI CONNECTED[0m
+[0;32mI (13893) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (13923) wifi:<ba-add>idx:0 (ifx:0, 66:13:00:70:30:9f), tid:0, ssn:3, winSize:64
+[0;32mI (14023) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (14023) [APP]: MQTT CONNECTED[0m
+[0;32mI (14063) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (96383) wifi:state: run -> init (1a0)
+I (96383) wifi:pm stop, total sleep time: 73020820 us / 83513167 us
+
+I (96383) wifi:<ba-del>idx:0, tid:0
+I (96383) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (96393) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (96393) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (96403) mqtt_client: Poll read error: 119, aborting connection[0m
+I (96403) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (96413) [MQTT]: EVENT_DISCONNECTED[0m
+I (96423) wifi:state: init -> auth (b0)
+[0;31mE (96403) [APP]: WIFI DISCONNECTED[0m
+I (97433) wifi:state: auth -> init (200)
+I (97433) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (97433) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (97433) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (99853) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (99853) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (102263) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (102263) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (104683) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (104683) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (106423) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (106423) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (106423) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (106423) mqtt_client: Error transport connect[0m
+[0;32mI (106433) [MQTT]: EVENT_ERROR[0m
+[0;31mE (106433) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (106443) [MQTT]: Last errno string (Success)[0m
+[0;32mI (106443) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (107093) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (107103) [APP]: WIFI DISCONNECTED[0m
+I (107103) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (107103) wifi:state: init -> auth (b0)
+I (107113) wifi:state: auth -> assoc (0)
+I (107123) wifi:state: assoc -> run (10)
+I (107153) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 76:60:01:1e:87:ca
+I (107153) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (107163) wifi:pm start, type: 1
+
+I (107163) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (107233) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (107233) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (108173) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (108173) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (108173) [APP]: WIFI CONNECTED[0m
+[0;32mI (108183) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (108363) wifi:<ba-add>idx:0 (ifx:0, 76:60:01:1e:87:ca), tid:0, ssn:3, winSize:64
+[0;32mI (108423) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (108433) [APP]: MQTT CONNECTED[0m
+[0;32mI (108473) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (116453) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (116763) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;32mI (116773) [MQTT]: EVENT_ERROR[0m
+[0;32mI (116763) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (116773) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (116783) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (116783) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (116793) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (116803) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (116833) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;32mI (131803) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (131903) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (131903) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (131903) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (131903) [MQTT]: EVENT_ERROR[0m
+[0;31mE (131913) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (131923) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (131933) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (131933) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (131943) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (132223) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;32mI (141953) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (142673) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (143393) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;31mE (150143) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (150153) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (150153) [MQTT]: EVENT_ERROR[0m
+[0;31mE (150153) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (150163) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (150173) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (150173) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (150183) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (160193) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (160293) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (160343) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;31mE (263583) mqtt_client: No PING_RESP, disconnected[0m
+[0;32mI (263583) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (278583) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (278973) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;32mI (278973) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (278973) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (278983) [MQTT]: EVENT_ERROR[0m
+[0;31mE (278983) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (278993) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (279003) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (279003) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (279023) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (279023) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;32mI (294023) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (294163) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (294173) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (294173) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (294173) [MQTT]: EVENT_ERROR[0m
+[0;31mE (294183) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (294183) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (294193) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (294203) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (294213) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (294213) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;32mI (309213) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (309733) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (309733) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (309743) [MQTT]: EVENT_ERROR[0m
+[0;31mE (309743) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (309743) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (309753) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (309763) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (309773) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (309783) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (309803) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;32mI (324783) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (324893) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (324893) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (324903) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (324903) [MQTT]: EVENT_ERROR[0m
+[0;31mE (324913) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (324913) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (324923) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (324933) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (324943) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (325253) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;32mI (339943) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (341223) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (341233) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (341233) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (341243) [MQTT]: EVENT_ERROR[0m
+[0;31mE (341243) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (341243) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (341253) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (341263) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (341273) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (341273) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;32mI (356273) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (356793) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (356793) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (356793) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (356803) [MQTT]: EVENT_ERROR[0m
+[0;31mE (356803) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (356813) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (356823) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (356823) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (356833) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (356893) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;32mI (366843) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (367233) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;32mI (367243) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (367243) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (367253) [MQTT]: EVENT_ERROR[0m
+[0;31mE (367253) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (367263) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (367263) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (367273) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (367283) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (367433) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;32mI (382283) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (382433) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (382443) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (382443) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (382443) [MQTT]: EVENT_ERROR[0m
+[0;31mE (382453) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (382463) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (382463) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (382473) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (382483) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (382493) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;32mI (397483) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (397953) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (397953) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (397963) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (397973) [MQTT]: EVENT_ERROR[0m
+[0;31mE (397973) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (397983) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (397983) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (397993) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (398003) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (398013) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;32mI (413003) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (413153) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (413163) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (413163) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (413173) [MQTT]: EVENT_ERROR[0m
+[0;31mE (413173) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (413183) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (413183) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (413193) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (413203) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (413213) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;32mI (428203) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (428513) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (428513) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (428513) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (428523) [MQTT]: EVENT_ERROR[0m
+[0;31mE (428533) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (428533) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (428543) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (428553) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (428563) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (428573) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+[0;32mI (443563) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (444853) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (444853) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (444853) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (444863) [MQTT]: EVENT_ERROR[0m
+[0;31mE (444873) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (444873) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (444883) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (444893) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (444903) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (444903) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m

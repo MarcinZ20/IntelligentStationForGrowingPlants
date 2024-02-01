@@ -1,0 +1,1285 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400014dc: strlen in ROM
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400014d9: strlen in ROM
+[0m
+[0;33m0x40158d52: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1521
+[0m
+[0;33m0x40156527: snprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/snprintf.c:85
+[0m
+[0;33m0x400d7d7d: create_topic at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:80
+[0m
+[0;33m0x400d8842: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

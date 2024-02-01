@@ -1,0 +1,672 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/bootloader.bin
+Bootloader binary size 0x67f0 bytes. 0x810 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj 
+/Users/marcin/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-g++ -DESP_PLATFORM -DIDF_VER=\"v5.3-dev-262-g294c2bd70d\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/marcin/esp/IntelligentStationForGrowingPlants/build/config -I/Users/marcin/esp/IntelligentStationForGrowingPlants/main -I/Users/marcin/esp/esp-idf/components/newlib/platform_include -I/Users/marcin/esp/esp-idf/components/freertos/config/include -I/Users/marcin/esp/esp-idf/components/freertos/config/include/freertos -I/Users/marcin/esp/esp-idf/components/freertos/config/xtensa/include -I/Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/Users/marcin/esp/esp-idf/components/freertos/esp_additions/include -I/Users/marcin/esp/esp-idf/components/esp_hw_support/include -I/Users/marcin/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/marcin/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/Users/marcin/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/Users/marcin/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -I/Users/marcin/esp/esp-idf/components/heap/include -I/Users/marcin/esp/esp-idf/components/log/include -I/Users/marcin/esp/esp-idf/components/soc/include -I/Users/marcin/esp/esp-idf/components/soc/esp32 -I/Users/marcin/esp/esp-idf/components/soc/esp32/include -I/Users/marcin/esp/esp-idf/components/hal/platform_port/include -I/Users/marcin/esp/esp-idf/components/hal/esp32/include -I/Users/marcin/esp/esp-idf/components/hal/include -I/Users/marcin/esp/esp-idf/components/esp_rom/include -I/Users/marcin/esp/esp-idf/components/esp_rom/include/esp32 -I/Users/marcin/esp/esp-idf/components/esp_rom/esp32 -I/Users/marcin/esp/esp-idf/components/esp_common/include -I/Users/marcin/esp/esp-idf/components/esp_system/include -I/Users/marcin/esp/esp-idf/components/esp_system/port/soc -I/Users/marcin/esp/esp-idf/components/esp_system/port/include/private -I/Users/marcin/esp/esp-idf/components/xtensa/esp32/include -I/Users/marcin/esp/esp-idf/components/xtensa/include -I/Users/marcin/esp/esp-idf/components/xtensa/deprecated_include -I/Users/marcin/esp/esp-idf/components/lwip/include -I/Users/marcin/esp/esp-idf/components/lwip/include/apps -I/Users/marcin/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/marcin/esp/esp-idf/components/lwip/lwip/src/include -I/Users/marcin/esp/esp-idf/components/lwip/port/include -I/Users/marcin/esp/esp-idf/components/lwip/port/freertos/include -I/Users/marcin/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/marcin/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/marcin/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/Users/marcin/esp/esp-idf/components/esp_ringbuf/include -I/Users/marcin/esp/esp-idf/components/esp_driver_gpio/include -I/Users/marcin/esp/esp-idf/components/esp_driver_pcnt/include -I/Users/marcin/esp/esp-idf/components/esp_driver_gptimer/include -I/Users/marcin/esp/esp-idf/components/efuse/include -I/Users/marcin/esp/esp-idf/components/efuse/esp32/include -I/Users/marcin/esp/esp-idf/components/esp_mm/include -I/Users/marcin/esp/esp-idf/components/driver/include -I/Users/marcin/esp/esp-idf/components/driver/deprecated -I/Users/marcin/esp/esp-idf/components/driver/analog_comparator/include -I/Users/marcin/esp/esp-idf/components/driver/dac/include -I/Users/marcin/esp/esp-idf/components/driver/i2c/include -I/Users/marcin/esp/esp-idf/components/driver/i2s/include -I/Users/marcin/esp/esp-idf/components/driver/ledc/include -I/Users/marcin/esp/esp-idf/components/driver/mcpwm/include -I/Users/marcin/esp/esp-idf/components/driver/parlio/include -I/Users/marcin/esp/esp-idf/components/driver/rmt/include -I/Users/marcin/esp/esp-idf/components/driver/sdio_slave/include -I/Users/marcin/esp/esp-idf/components/driver/sdmmc/include -I/Users/marcin/esp/esp-idf/components/driver/sigma_delta/include -I/Users/marcin/esp/esp-idf/components/driver/spi/include -I/Users/marcin/esp/esp-idf/components/driver/temperature_sensor/include -I/Users/marcin/esp/esp-idf/components/driver/touch_sensor/include -I/Users/marcin/esp/esp-idf/components/driver/twai/include -I/Users/marcin/esp/esp-idf/components/driver/uart/include -I/Users/marcin/esp/esp-idf/components/driver/usb_serial_jtag/include -I/Users/marcin/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/Users/marcin/esp/esp-idf/components/esp_pm/include -I/Users/marcin/esp/esp-idf/components/mbedtls/port/include -I/Users/marcin/esp/esp-idf/components/mbedtls/mbedtls/include -I/Users/marcin/esp/esp-idf/components/mbedtls/mbedtls/library -I/Users/marcin/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/Users/marcin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/Users/marcin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/Users/marcin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/Users/marcin/esp/esp-idf/components/esp_bootloader_format/include -I/Users/marcin/esp/esp-idf/components/esp_app_format/include -I/Users/marcin/esp/esp-idf/components/bootloader_support/include -I/Users/marcin/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/Users/marcin/esp/esp-idf/components/esp_partition/include -I/Users/marcin/esp/esp-idf/components/app_update/include -I/Users/marcin/esp/esp-idf/components/spi_flash/include -I/Users/marcin/esp/esp-idf/components/pthread/include -I/Users/marcin/esp/esp-idf/components/esp_timer/include -I/Users/marcin/esp/esp-idf/components/app_trace/include -I/Users/marcin/esp/esp-idf/components/esp_event/include -I/Users/marcin/esp/esp-idf/components/nvs_flash/include -I/Users/marcin/esp/esp-idf/components/esp_phy/include -I/Users/marcin/esp/esp-idf/components/esp_phy/esp32/include -I/Users/marcin/esp/esp-idf/components/vfs/include -I/Users/marcin/esp/esp-idf/components/esp_netif/include -I/Users/marcin/esp/esp-idf/components/wpa_supplicant/include -I/Users/marcin/esp/esp-idf/components/wpa_supplicant/port/include -I/Users/marcin/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/Users/marcin/esp/esp-idf/components/esp_coex/include -I/Users/marcin/esp/esp-idf/components/esp_wifi/include -I/Users/marcin/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/Users/marcin/esp/esp-idf/components/bt/include/esp32/include -I/Users/marcin/esp/esp-idf/components/bt/common/osi/include -I/Users/marcin/esp/esp-idf/components/bt/common/api/include/api -I/Users/marcin/esp/esp-idf/components/bt/common/btc/profile/esp/blufi/include -I/Users/marcin/esp/esp-idf/components/bt/common/btc/profile/esp/include -I/Users/marcin/esp/esp-idf/components/bt/host/bluedroid/api/include/api -I/Users/marcin/esp/esp-idf/components/bt/porting/ext/tinycrypt/include -I/Users/marcin/esp/esp-idf/components/unity/include -I/Users/marcin/esp/esp-idf/components/unity/unity/src -I/Users/marcin/esp/esp-idf/components/cmock/CMock/src -I/Users/marcin/esp/esp-idf/components/console -I/Users/marcin/esp/esp-idf/components/http_parser -I/Users/marcin/esp/esp-idf/components/esp-tls -I/Users/marcin/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/Users/marcin/esp/esp-idf/components/esp_adc/include -I/Users/marcin/esp/esp-idf/components/esp_adc/interface -I/Users/marcin/esp/esp-idf/components/esp_adc/esp32/include -I/Users/marcin/esp/esp-idf/components/esp_adc/deprecated/include -I/Users/marcin/esp/esp-idf/components/esp_eth/include -I/Users/marcin/esp/esp-idf/components/esp_gdbstub/include -I/Users/marcin/esp/esp-idf/components/esp_hid/include -I/Users/marcin/esp/esp-idf/components/tcp_transport/include -I/Users/marcin/esp/esp-idf/components/esp_http_client/include -I/Users/marcin/esp/esp-idf/components/esp_http_server/include -I/Users/marcin/esp/esp-idf/components/esp_https_ota/include -I/Users/marcin/esp/esp-idf/components/esp_https_server/include -I/Users/marcin/esp/esp-idf/components/esp_psram/include -I/Users/marcin/esp/esp-idf/components/esp_lcd/include -I/Users/marcin/esp/esp-idf/components/esp_lcd/interface -I/Users/marcin/esp/esp-idf/components/protobuf-c/protobuf-c -I/Users/marcin/esp/esp-idf/components/protocomm/include/common -I/Users/marcin/esp/esp-idf/components/protocomm/include/security -I/Users/marcin/esp/esp-idf/components/protocomm/include/transports -I/Users/marcin/esp/esp-idf/components/esp_local_ctrl/include -I/Users/marcin/esp/esp-idf/components/espcoredump/include -I/Users/marcin/esp/esp-idf/components/espcoredump/include/port/xtensa -I/Users/marcin/esp/esp-idf/components/wear_levelling/include -I/Users/marcin/esp/esp-idf/components/sdmmc/include -I/Users/marcin/esp/esp-idf/components/fatfs/diskio -I/Users/marcin/esp/esp-idf/components/fatfs/src -I/Users/marcin/esp/esp-idf/components/fatfs/vfs -I/Users/marcin/esp/esp-idf/components/idf_test/include -I/Users/marcin/esp/esp-idf/components/idf_test/include/esp32 -I/Users/marcin/esp/esp-idf/components/ieee802154/include -I/Users/marcin/esp/esp-idf/components/json/cJSON -I/Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/include -I/Users/marcin/esp/esp-idf/components/nvs_sec_provider/include -I/Users/marcin/esp/esp-idf/components/perfmon/include -I/Users/marcin/esp/esp-idf/components/spiffs/include -I/Users/marcin/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/Users/marcin/esp/IntelligentStationForGrowingPlants=. -fmacro-prefix-map=/Users/marcin/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu++2b -fno-exceptions -fno-rtti -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj -c /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:20,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp:7:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c: In function 'void blinkLED()':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:1:22: error: invalid conversion from 'int' to 'gpio_num_t' [-fpermissive]
+    1 | #define LED_GPIO_PIN 2
+      |                      ^
+      |                      |
+      |                      int
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:5:24: note: in expansion of macro 'LED_GPIO_PIN'
+    5 |         gpio_set_level(LED_GPIO_PIN, 1);
+      |                        ^~~~~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp:4:
+/Users/marcin/esp/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:141:37: note:   initializing argument 1 of 'esp_err_t gpio_set_level(gpio_num_t, uint32_t)'
+  141 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      |                          ~~~~~~~~~~~^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:1:22: error: invalid conversion from 'int' to 'gpio_num_t' [-fpermissive]
+    1 | #define LED_GPIO_PIN 2
+      |                      ^
+      |                      |
+      |                      int
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:7:24: note: in expansion of macro 'LED_GPIO_PIN'
+    7 |         gpio_set_level(LED_GPIO_PIN, 0);
+      |                        ^~~~~~~~~~~~
+/Users/marcin/esp/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:141:37: note:   initializing argument 1 of 'esp_err_t gpio_set_level(gpio_num_t, uint32_t)'
+  141 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      |                          ~~~~~~~~~~~^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c: In function 'void event_handler(void*, esp_event_base_t, int32_t, void*)':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:31:30: error: invalid conversion from 'int' to 'gpio_num_t' [-fpermissive]
+   31 | #define LED_GPIO_PIN         2
+      |                              ^
+      |                              |
+      |                              int
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:147:24: note: in expansion of macro 'LED_GPIO_PIN'
+  147 |         gpio_set_level(LED_GPIO_PIN, 1);
+      |                        ^~~~~~~~~~~~
+/Users/marcin/esp/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:141:37: note:   initializing argument 1 of 'esp_err_t gpio_set_level(gpio_num_t, uint32_t)'
+  141 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      |                          ~~~~~~~~~~~^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c: In function 'void wifi_init_sta()':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:180:21: error: either all initializer clauses should be designated or none of them should be
+  180 |                     .threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD,
+      |                     ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:180:21: error: expected primary-expression before '.' token
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp:8:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c: In function 'void mqtt_event_handler(void*, esp_event_base_t, int32_t, void*)':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:34:37: error: invalid conversion from 'void*' to 'esp_mqtt_event_handle_t' {aka 'esp_mqtt_event_t*'} [-fpermissive]
+   34 |     esp_mqtt_event_handle_t event = event_data;
+      |                                     ^~~~~~~~~~
+      |                                     |
+      |                                     void*
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c: In function 'void mqtt_app_start()':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:72:29: error: variable 'mqtt_app_start()::authentication_t authentication' has initializer but incomplete type
+   72 |     struct authentication_t authentication = {
+      |                             ^~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:77:13: error: expected primary-expression before '.' token
+   77 |             .broker.address.uri = MQTT_URI,
+      |             ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:78:13: error: expected primary-expression before '.' token
+   78 |             .broker.address.port = MQTT_PORT,
+      |             ^
+In file included from /Users/marcin/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h:23,
+                 from /Users/marcin/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:11,
+                 from /Users/marcin/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:55,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:12:
+/Users/marcin/esp/esp-idf/components/esp_event/include/esp_event_base.h:30:32: error: invalid conversion from 'int' to 'esp_mqtt_event_id_t' [-fpermissive]
+   30 | #define ESP_EVENT_ANY_ID       -1               /**< register handler for any event id */
+      |                                ^~
+      |                                |
+      |                                int
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:84:44: note: in expansion of macro 'ESP_EVENT_ANY_ID'
+   84 |     esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, NULL);
+      |                                            ^~~~~~~~~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:10:
+/Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_client.h:624:29: note:   initializing argument 2 of 'esp_err_t esp_mqtt_client_register_event(esp_mqtt_client_handle_t, esp_mqtt_event_id_t, esp_event_handler_t, void*)'
+  624 |         esp_mqtt_event_id_t event,
+      |         ~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp:9:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp: At global scope:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:124:1: warning: missing initializer for member 'esp_ble_adv_params_t::peer_addr' [-Wmissing-field-initializers]
+  124 | };
+      | ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:124:1: warning: missing initializer for member 'esp_ble_adv_params_t::peer_addr_type' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::app_id' [-Wmissing-field-initializers]
+  155 | };
+      | ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::conn_id' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::service_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::service_id' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::char_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::char_uuid' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::perm' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::property' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::descr_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::descr_uuid' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::app_id' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::conn_id' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::service_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::service_id' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::char_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::char_uuid' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::perm' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::property' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::descr_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:155:1: warning: missing initializer for member 'server::gatts_profile_inst::descr_uuid' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp: In function 'void server::gatts_profile_a_event_handler(esp_gatts_cb_event_t, esp_gatt_if_t, esp_ble_gatts_cb_param_t*)':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:343:14: error: jump to case label
+  343 |         case ESP_GATTS_READ_EVT: {
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:357:14: error: jump to case label
+  357 |         case ESP_GATTS_WRITE_EVT: {
+      |              ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:404:14: error: jump to case label
+  404 |         case ESP_GATTS_EXEC_WRITE_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:409:14: error: jump to case label
+  409 |         case ESP_GATTS_MTU_EVT:
+      |              ^~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:412:14: error: jump to case label
+  412 |         case ESP_GATTS_UNREG_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:414:14: error: jump to case label
+  414 |         case ESP_GATTS_CREATE_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:430:14: error: jump to case label
+  430 |         case ESP_GATTS_ADD_INCL_SRVC_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:432:14: error: jump to case label
+  432 |         case ESP_GATTS_ADD_CHAR_EVT: {
+      |              ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:457:14: error: jump to case label
+  457 |         case ESP_GATTS_ADD_CHAR_DESCR_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:462:14: error: jump to case label
+  462 |         case ESP_GATTS_DELETE_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:464:14: error: jump to case label
+  464 |         case ESP_GATTS_START_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:468:14: error: jump to case label
+  468 |         case ESP_GATTS_STOP_EVT:
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:470:14: error: jump to case label
+  470 |         case ESP_GATTS_CONNECT_EVT: {
+      |              ^~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:471:58: warning: missing initializer for member 'esp_ble_conn_update_params_t::min_int' [-Wmissing-field-initializers]
+  471 |             esp_ble_conn_update_params_t conn_params = {0};
+      |                                                          ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:471:58: warning: missing initializer for member 'esp_ble_conn_update_params_t::max_int' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:471:58: warning: missing initializer for member 'esp_ble_conn_update_params_t::latency' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:471:58: warning: missing initializer for member 'esp_ble_conn_update_params_t::timeout' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:487:14: error: jump to case label
+  487 |         case ESP_GATTS_DISCONNECT_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:491:14: error: jump to case label
+  491 |         case ESP_GATTS_CONF_EVT:
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:497:14: error: jump to case label
+  497 |         case ESP_GATTS_OPEN_EVT:
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:498:14: error: jump to case label
+  498 |         case ESP_GATTS_CANCEL_OPEN_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:499:14: error: jump to case label
+  499 |         case ESP_GATTS_CLOSE_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:500:14: error: jump to case label
+  500 |         case ESP_GATTS_LISTEN_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:501:14: error: jump to case label
+  501 |         case ESP_GATTS_CONGEST_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:502:9: error: jump to case label
+  502 |         default:
+      |         ^~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:422:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  422 |             esp_err_t add_char_ret = esp_ble_gatts_add_char(gl_profile_tab[PROFILE_A_APP_ID].service_handle, &gl_profile_tab[PROFILE_A_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:328:23: note:   crosses initialization of 'esp_err_t ret'
+  328 |             esp_err_t ret = esp_ble_gap_config_adv_data(&adv_data);
+      |                       ^~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:311:23: note:   crosses initialization of 'esp_err_t set_dev_name_ret'
+  311 |             esp_err_t set_dev_name_ret = esp_ble_gap_set_device_name(DEVICE_NAME);
+      |                       ^~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_READ_EVT' not handled in switch [-Werror=switch]
+  303 |     switch (event) {
+      |            ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_WRITE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_EXEC_WRITE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_MTU_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_CONF_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_UNREG_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_CREATE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_ADD_INCL_SRVC_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_ADD_CHAR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_ADD_CHAR_DESCR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_DELETE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_START_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_STOP_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_CONNECT_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_DISCONNECT_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_OPEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_CANCEL_OPEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_CLOSE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_LISTEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_CONGEST_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_RESPONSE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_CREAT_ATTR_TAB_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_SET_ATTR_VAL_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:303:12: error: enumeration value 'ESP_GATTS_SEND_SERVICE_CHANGE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp: In function 'void server::gatts_profile_b_event_handler(esp_gatts_cb_event_t, esp_gatt_if_t, esp_ble_gatts_cb_param_t*)':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:603:14: error: jump to case label
+  603 |         case ESP_GATTS_ADD_INCL_SRVC_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:605:14: error: jump to case label
+  605 |         case ESP_GATTS_ADD_CHAR_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:616:14: error: jump to case label
+  616 |         case ESP_GATTS_ADD_CHAR_DESCR_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:621:14: error: jump to case label
+  621 |         case ESP_GATTS_DELETE_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:623:14: error: jump to case label
+  623 |         case ESP_GATTS_START_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:627:14: error: jump to case label
+  627 |         case ESP_GATTS_STOP_EVT:
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:629:14: error: jump to case label
+  629 |         case ESP_GATTS_CONNECT_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:636:14: error: jump to case label
+  636 |         case ESP_GATTS_CONF_EVT:
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:642:14: error: jump to case label
+  642 |         case ESP_GATTS_DISCONNECT_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:643:14: error: jump to case label
+  643 |         case ESP_GATTS_OPEN_EVT:
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:644:14: error: jump to case label
+  644 |         case ESP_GATTS_CANCEL_OPEN_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:645:14: error: jump to case label
+  645 |         case ESP_GATTS_CLOSE_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:646:14: error: jump to case label
+  646 |         case ESP_GATTS_LISTEN_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:647:14: error: jump to case label
+  647 |         case ESP_GATTS_CONGEST_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:648:9: error: jump to case label
+  648 |         default:
+      |         ^~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:595:23: note:   crosses initialization of 'esp_err_t add_char_ret'
+  595 |             esp_err_t add_char_ret =esp_ble_gatts_add_char( gl_profile_tab[PROFILE_B_APP_ID].service_handle, &gl_profile_tab[PROFILE_B_APP_ID].char_uuid,
+      |                       ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_CONF_EVT' not handled in switch [-Werror=switch]
+  508 |     switch (event) {
+      |            ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_ADD_INCL_SRVC_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_ADD_CHAR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_ADD_CHAR_DESCR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_DELETE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_START_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_STOP_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_CONNECT_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_DISCONNECT_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_OPEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_CANCEL_OPEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_CLOSE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_LISTEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_CONGEST_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_RESPONSE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_CREAT_ATTR_TAB_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_SET_ATTR_VAL_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:508:12: error: enumeration value 'ESP_GATTS_SEND_SERVICE_CHANGE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp: In function 'void server::ble_server_run()':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:709:29: warning: 'esp_err_t esp_bluedroid_init()' is deprecated: Please use esp_bluedroid_init_with_cfg [-Wdeprecated-declarations]
+  709 |     ret = esp_bluedroid_init();
+      |           ~~~~~~~~~~~~~~~~~~^~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:13:
+/Users/marcin/esp/esp-idf/components/bt/host/bluedroid/api/include/api/esp_bt_main.h:73:11: note: declared here
+   73 | esp_err_t esp_bluedroid_init(void) __attribute__((deprecated("Please use esp_bluedroid_init_with_cfg")));
+      |           ^~~~~~~~~~~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp:10:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp: At global scope:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:79:1: warning: missing initializer for member 'client::gattc_profile_inst::app_id' [-Wmissing-field-initializers]
+   79 | };
+      | ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:79:1: warning: missing initializer for member 'client::gattc_profile_inst::conn_id' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:79:1: warning: missing initializer for member 'client::gattc_profile_inst::service_start_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:79:1: warning: missing initializer for member 'client::gattc_profile_inst::service_end_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:79:1: warning: missing initializer for member 'client::gattc_profile_inst::char_handle' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:79:1: warning: missing initializer for member 'client::gattc_profile_inst::remote_bda' [-Wmissing-field-initializers]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp: In function 'void client::gattc_profile_event_handler(esp_gattc_cb_event_t, esp_gatt_if_t, esp_ble_gattc_cb_param_t*)':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:93:14: error: jump to case label
+   93 |         case ESP_GATTC_CONNECT_EVT:{
+      |              ^~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:105:14: error: jump to case label
+  105 |         case ESP_GATTC_OPEN_EVT:
+      |              ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:112:14: error: jump to case label
+  112 |         case ESP_GATTC_DIS_SRVC_CMPL_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:120:14: error: jump to case label
+  120 |         case ESP_GATTC_CFG_MTU_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:126:14: error: jump to case label
+  126 |         case ESP_GATTC_SEARCH_RES_EVT: {
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:138:14: error: jump to case label
+  138 |         case ESP_GATTC_SEARCH_CMPL_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:198:14: error: jump to case label
+  198 |         case ESP_GATTC_REG_FOR_NOTIFY_EVT: {
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:217:47: error: invalid conversion from 'void*' to 'esp_gattc_descr_elem_t*' [-fpermissive]
+  217 |                     descr_elem_result = malloc(sizeof(esp_gattc_descr_elem_t) * count);
+      |                                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               void*
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:236:72: error: invalid conversion from 'esp_err_t' {aka 'int'} to 'esp_gatt_status_t' [-fpermissive]
+  236 |                             ret_status = esp_ble_gattc_write_char_descr( gattc_if,
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+      |                                                                        |
+      |                                                                        esp_err_t {aka int}
+  237 |                                                                          gl_profile_tab[PROFILE_A_APP_ID].conn_id,
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  238 |                                                                          descr_elem_result[0].handle,
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  239 |                                                                          sizeof(notify_en),
+      |                                                                          ~~~~~~~~~~~~~~~~~~
+  240 |                                                                          (uint8_t *)&notify_en,
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~~~
+  241 |                                                                          ESP_GATT_WRITE_TYPE_RSP,
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~
+  242 |                                                                          ESP_GATT_AUTH_REQ_NONE);
+      |                                                                          ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:260:14: error: jump to case label
+  260 |         case ESP_GATTC_NOTIFY_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:268:14: error: jump to case label
+  268 |         case ESP_GATTC_WRITE_DESCR_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:287:14: error: jump to case label
+  287 |         case ESP_GATTC_SRVC_CHG_EVT: {
+      |              ^~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:294:14: error: jump to case label
+  294 |         case ESP_GATTC_WRITE_CHAR_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:301:14: error: jump to case label
+  301 |         case ESP_GATTC_DISCONNECT_EVT:
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:306:9: error: jump to case label
+  306 |         default:
+      |         ^~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:88:23: note:   crosses initialization of 'esp_err_t scan_ret'
+   88 |             esp_err_t scan_ret = esp_ble_gap_set_scan_params(&ble_scan_params);
+      |                       ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_UNREG_EVT' not handled in switch [-Werror=switch]
+   85 |     switch (event) {
+      |            ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_OPEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_READ_CHAR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_WRITE_CHAR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_CLOSE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_SEARCH_CMPL_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_SEARCH_RES_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_READ_DESCR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_WRITE_DESCR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_NOTIFY_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_PREP_WRITE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_EXEC_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_ACL_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_CANCEL_OPEN_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_SRVC_CHG_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_ENC_CMPL_CB_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_CFG_MTU_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_ADV_DATA_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_MULT_ADV_ENB_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_MULT_ADV_UPD_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_MULT_ADV_DATA_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_MULT_ADV_DIS_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_CONGEST_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_BTH_SCAN_ENB_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_BTH_SCAN_CFG_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_BTH_SCAN_RD_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_BTH_SCAN_THR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_BTH_SCAN_PARAM_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_BTH_SCAN_DIS_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_SCAN_FLT_CFG_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_SCAN_FLT_PARAM_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_SCAN_FLT_STATUS_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_ADV_VSC_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_REG_FOR_NOTIFY_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_UNREG_FOR_NOTIFY_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_CONNECT_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_DISCONNECT_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_READ_MULTIPLE_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_QUEUE_FULL_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_SET_ASSOC_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_GET_ADDR_LIST_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_DIS_SRVC_CMPL_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.cpp:85:12: error: enumeration value 'ESP_GATTC_READ_MULTI_VAR_EVT' not handled in switch [-Werror=switch]
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp: In function 'void app_main()':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:31:30: error: invalid conversion from 'int' to 'gpio_num_t' [-fpermissive]
+   31 | #define LED_GPIO_PIN         2
+      |                              ^
+      |                              |
+      |                              int
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.cpp:14:22: note: in expansion of macro 'LED_GPIO_PIN'
+   14 |   gpio_set_direction(LED_GPIO_PIN, GPIO_MODE_OUTPUT);
+      |                      ^~~~~~~~~~~~
+/Users/marcin/esp/esp-idf/components/esp_driver_gpio/include/driver/gpio.h:170:41: note:   initializing argument 1 of 'esp_err_t gpio_set_direction(gpio_num_t, gpio_mode_t)'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                              ~~~~~~~~~~~^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp: At global scope:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.cpp:79:16: warning: 'server::test_manufacturer' defined but not used [-Wunused-variable]
+   79 | static uint8_t test_manufacturer[TEST_MANUFACTURER_DATA_LEN] =  {0x12, 0x23, 0x45, 0x56};
+      |                ^~~~~~~~~~~~~~~~~
+cc1plus: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
