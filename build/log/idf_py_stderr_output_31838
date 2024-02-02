@@ -1,0 +1,341 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400816a6: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008632d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40086fbe: vApplicationStackOverflowHook at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:556
+[0m
+[0;33m0x40087e5b: vTaskSwitchContext at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3626 (discriminator 7)
+[0m
+[0;33m0x400870c8: _frxt_dispatch at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+[0m
+[0;33m0x4008707a: _frxt_int_exit at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

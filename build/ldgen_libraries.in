@@ -66,4 +66,6 @@ $<TARGET_FILE:__idf_nvs_sec_provider>
 $<TARGET_FILE:__idf_perfmon>
 $<TARGET_FILE:__idf_spiffs>
 $<TARGET_FILE:__idf_wifi_provisioning>
+$<TARGET_FILE:__idf_espressif__ssd1306>
+$<TARGET_FILE:__idf_suda-morris__am2302_rmt>
 $<TARGET_FILE:__idf_main>

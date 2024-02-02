@@ -1,0 +1,21 @@
+dependencies:
+  espressif/ssd1306:
+    component_hash: 102cfc05b1b304862fa3f494e9dd955844bcc5f6cb16596e4ca5df3e6bf9fd0d
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.0.5~1
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.3.0
+  suda-morris/am2302_rmt:
+    component_hash: b46dd8c20dee72654e8ea4a43b16e8a93e984a6c10426392a4b8486fed50ca93
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 1.0.0
+manifest_hash: 81def3156081d2425b95b7a18915972c3ac670a009c3974d42f662efca22cd5d
+target: esp32
+version: 1.0.0

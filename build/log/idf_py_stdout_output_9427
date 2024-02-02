@@ -1,0 +1,320 @@
+[0;32mI (259) esp_image: segment 4: paddr=000c42f4 vaddr=40086esize=11944h ( 72004) load[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=23d34h (146740) map[0m
+[0;32mI (133) esp_image: segment 1: paddr=00033d5c vaddr=3ffbdb60 size=05424h ( 21540) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=00039188 vaddr=40080000 size=06e90h ( 28304) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=842cch (541388) map[0m
+[0;32mI (259) esp_image: segment 4: paddr=000c42f4 vaddr=40086e90 size=11944h ( 72004) load[0m
+[0;32mI (290) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (290) boot: Disabling RNG early entropy source...[0m
+[0;32mI (302) cpu_start: Multicore app[0m
+[0;32mI (311) cpu_start: Pro cpu start user code[0m
+[0;32mI (311) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (311) cpu_start: Application information:[0m
+[0;32mI (314) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (321) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (326) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (332) cpu_start: ELF file SHA256:  2a17d3c3b...[0m
+[0;32mI (338) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (344) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (349) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (354) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (359) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (366) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (372) heap_init: At 3FFC70F8 len 00018F08 (99 KiB): DRAM[0m
+[0;32mI (378) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (384) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (391) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (398) spi_flash: detected chip: winbond[0m
+[0;32mI (402) spi_flash: flash io: dio[0m
+[0;33mW (406) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (417) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (422) main_task: Started on CPU0[0m
+[0;32mI (432) main_task: Calling app_main()[0m
+I (472) wifi:wifi driver task: 3ffb8540, prio:23, stack:6656, core=0
+I (492) wifi:wifi firmware version: a194738
+I (492) wifi:wifi certification version: v7.0
+I (492) wifi:config NVS flash: enabled
+I (492) wifi:config nano formating: disabled
+I (492) wifi:Init data frame dynamic rx buffer num: 32
+I (492) wifi:Init static rx mgmt buffer num: 5
+I (502) wifi:Init management short buffer num: 32
+I (502) wifi:Init dynamic tx buffer num: 32
+I (512) wifi:Init static rx buffer size: 1600
+I (512) wifi:Init static rx buffer num: 10
+I (522) wifi:Init dynamic rx buffer num: 32
+[0;32mI (522) wifi_init: rx ba win: 6[0m
+[0;32mI (522) wifi_init: tcpip mbox: 32[0m
+[0;32mI (532) wifi_init: udp mbox: 6[0m
+[0;32mI (532) wifi_init: tcp mbox: 6[0m
+[0;32mI (532) wifi_init: tcp tx win: 5760[0m
+[0;32mI (542) wifi_init: tcp rx win: 5760[0m
+[0;32mI (542) wifi_init: tcp mss: 1440[0m
+[0;32mI (552) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (552) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (562) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (642) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (642) wifi:enable tsf
+[0;32mI (642) WI-FI STATION: wifi_init_sta finished.[0m
+[0;32mI (662) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (3072) i2c: i2c driver install error[0m
+[0;32mI (3092) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (5502) i2c: i2c driver install error[0m
+[0;32mI (5512) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (7922) i2c: i2c driver install error[0m
+[0;32mI (7942) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (10352) i2c: i2c driver install error[0m
+[0;32mI (10362) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (12782) i2c: i2c driver install error[0m
+[0;32mI (12792) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (15202) i2c: i2c driver install error[0m
+[0;32mI (15222) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (17632) i2c: i2c driver install error[0m
+[0;32mI (17642) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (20052) i2c: i2c driver install error[0m
+[0;32mI (20072) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (22482) i2c: i2c driver install error[0m
+[0;32mI (22492) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (24902) i2c: i2c driver install error[0m
+[0;32mI (24922) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (27332) i2c: i2c driver install error[0m
+[0;32mI (27342) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (29762) i2c: i2c driver install error[0m
+[0;32mI (29772) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (32182) i2c: i2c driver install error[0m
+[0;32mI (32202) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (34612) i2c: i2c driver install error[0m
+[0;32mI (34622) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (37032) i2c: i2c driver install error[0m
+[0;32mI (37052) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (39462) i2c: i2c driver install error[0m
+[0;32mI (39472) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (41882) i2c: i2c driver install error[0m
+[0;32mI (41902) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (44312) i2c: i2c driver install error[0m
+[0;32mI (44322) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (46732) i2c: i2c driver install error[0m
+[0;32mI (46752) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (49162) i2c: i2c driver install error[0m
+[0;32mI (49172) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (51592) i2c: i2c driver install error[0m
+[0;32mI (51602) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (54012) i2c: i2c driver install error[0m
+[0;32mI (54032) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (56442) i2c: i2c driver install error[0m
+[0;32mI (56452) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (58862) i2c: i2c driver install error[0m
+[0;32mI (58882) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+I (59732) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (59732) wifi:state: init -> auth (b0)
+I (59742) wifi:state: auth -> assoc (0)
+I (59752) wifi:state: assoc -> run (10)
+I (59772) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 26:1d:23:83:1f:23
+I (59772) wifi:security: WPA2-PSK, phy: bgn, rssi: -56
+I (59782) wifi:pm start, type: 1
+
+I (59782) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;31mE (59792) i2c: i2c driver install error[0m
+I (59822) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (59822) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (60792) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;31mE (60792) i2c: i2c driver install error[0m
+[0;32mI (60802) WI-FI STATION: GOT IP: 192.168.163.8[0m
+[0;32mI (60802) WI-FI STATION: CONNECTED[0m
+[0;32mI (60902) main_task: Returned from app_main()[0m
+I (82862) wifi:state: run -> init (1a0)
+I (82862) wifi:pm stop, total sleep time: 19119139 us / 23079517 us
+
+I (82862) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;31mE (82872) i2c: i2c driver install error[0m
+[0;32mI (82892) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (85302) i2c: i2c driver install error[0m
+[0;32mI (85312) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (87722) i2c: i2c driver install error[0m
+[0;32mI (87742) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (90152) i2c: i2c driver install error[0m
+[0;32mI (90162) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (92572) i2c: i2c driver install error[0m
+[0;32mI (92592) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (95002) i2c: i2c driver install error[0m
+[0;32mI (95012) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (97422) i2c: i2c driver install error[0m
+[0;32mI (97442) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (99852) i2c: i2c driver install error[0m
+[0;32mI (99862) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (102272) i2c: i2c driver install error[0m
+[0;32mI (102292) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+I (102302) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (102302) wifi:state: init -> auth (b0)
+I (102342) wifi:state: auth -> assoc (0)
+I (102352) wifi:state: assoc -> run (10)
+I (102382) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = f6:0e:bf:5b:db:1a
+I (102382) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (102382) wifi:pm start, type: 1
+
+I (102382) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;31mE (102392) i2c: i2c driver install error[0m
+I (102522) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (102522) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (103392) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;31mE (103392) i2c: i2c driver install error[0m
+[0;32mI (103402) WI-FI STATION: GOT IP: 192.168.163.8[0m
+[0;32mI (103402) WI-FI STATION: CONNECTED[0m
+I (622412) wifi:state: run -> init (1a0)
+I (622412) wifi:pm stop, total sleep time: 492030600 us / 520024696 us
+
+I (622412) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;31mE (622422) i2c: i2c driver install error[0m
+[0;32mI (622432) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+I (622442) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (622442) wifi:state: init -> auth (b0)
+I (622442) wifi:state: auth -> assoc (0)
+I (622462) wifi:state: assoc -> run (10)
+I (622552) wifi:connected with supertajnasiec, aid = 2, channel 8, BW20, bssid = f6:0e:bf:5b:db:1a
+I (622552) wifi:security: WPA2-PSK, phy: bgn, rssi: -52
+I (622562) wifi:pm start, type: 1
+
+I (622562) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (622562) wifi:state: run -> init (3a0)
+I (622572) wifi:pm stop, total sleep time: 0 us / 9756 us
+
+I (622572) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;31mE (622582) i2c: i2c driver install error[0m
+[0;31mE (622592) i2c: i2c driver install error[0m
+[0;32mI (622612) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (625022) i2c: i2c driver install error[0m
+[0;32mI (625032) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (627442) i2c: i2c driver install error[0m
+[0;32mI (627462) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (629872) i2c: i2c driver install error[0m
+[0;32mI (629882) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (632292) i2c: i2c driver install error[0m
+[0;32mI (632312) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (634722) i2c: i2c driver install error[0m
+[0;32mI (634732) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (637142) i2c: i2c driver install error[0m
+[0;32mI (637162) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (639572) i2c: i2c driver install error[0m
+[0;32mI (639582) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (641992) i2c: i2c driver install error[0m
+[0;32mI (642012) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (644422) i2c: i2c driver install error[0m
+[0;32mI (644432) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (646842) i2c: i2c driver install error[0m
+[0;32mI (646862) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (649272) i2c: i2c driver install error[0m
+[0;32mI (649282) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (651692) i2c: i2c driver install error[0m
+[0;32mI (651712) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (654122) i2c: i2c driver install error[0m
+[0;32mI (654132) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (656542) i2c: i2c driver install error[0m
+[0;32mI (656552) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (658972) i2c: i2c driver install error[0m
+[0;32mI (658982) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (661392) i2c: i2c driver install error[0m
+[0;32mI (661402) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (663822) i2c: i2c driver install error[0m
+[0;32mI (663832) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (666242) i2c: i2c driver install error[0m
+[0;32mI (666252) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (668662) i2c: i2c driver install error[0m
+[0;32mI (668682) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (671092) i2c: i2c driver install error[0m
+[0;32mI (671102) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (673512) i2c: i2c driver install error[0m
+[0;32mI (673532) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (675942) i2c: i2c driver install error[0m
+[0;32mI (675952) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (678362) i2c: i2c driver install error[0m
+[0;32mI (678382) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (680792) i2c: i2c driver install error[0m
+[0;32mI (680802) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (683212) i2c: i2c driver install error[0m
+[0;32mI (683232) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (685642) i2c: i2c driver install error[0m
+[0;32mI (685652) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (688062) i2c: i2c driver install error[0m
+[0;32mI (688082) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (690492) i2c: i2c driver install error[0m
+[0;32mI (690502) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (692912) i2c: i2c driver install error[0m
+[0;32mI (692932) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (695342) i2c: i2c driver install error[0m
+[0;32mI (695352) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (697762) i2c: i2c driver install error[0m
+[0;32mI (697782) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (700192) i2c: i2c driver install error[0m
+[0;32mI (700202) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (702612) i2c: i2c driver install error[0m
+[0;32mI (702632) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (705042) i2c: i2c driver install error[0m
+[0;32mI (705052) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (707462) i2c: i2c driver install error[0m
+[0;32mI (707482) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (709892) i2c: i2c driver install error[0m
+[0;32mI (709902) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (712312) i2c: i2c driver install error[0m
+[0;32mI (712332) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (714742) i2c: i2c driver install error[0m
+[0;32mI (714752) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (717162) i2c: i2c driver install error[0m
+[0;32mI (717182) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (719592) i2c: i2c driver install error[0m
+[0;32mI (719602) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (722012) i2c: i2c driver install error[0m
+[0;32mI (722032) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (724442) i2c: i2c driver install error[0m
+[0;32mI (724452) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (726862) i2c: i2c driver install error[0m
+[0;32mI (726872) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (729292) i2c: i2c driver install error[0m
+[0;32mI (729302) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (731712) i2c: i2c driver install error[0m
+[0;32mI (731722) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (734142) i2c: i2c driver install error[0m
+[0;32mI (734152) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (736562) i2c: i2c driver install error[0m
+[0;32mI (736572) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (738992) i2c: i2c driver install error[0m
+[0;32mI (739002) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (741412) i2c: i2c driver install error[0m
+[0;32mI (741422) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (743832) i2c: i2c driver install error[0m
+[0;32mI (743852) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (746262) i2c: i2c driver install error[0m
+[0;32mI (746272) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (748682) i2c: i2c driver install error[0m
+[0;32mI (748702) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (751112) i2c: i2c driver install error[0m
+[0;32mI (751122) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (753532) i2c: i2c driver install error[0m
+[0;32mI (753552) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (755962) i2c: i2c driver install error[0m
+[0;32mI (755972) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (758382) i2c: i2c driver install error[0m
+[0;32mI (758402) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m

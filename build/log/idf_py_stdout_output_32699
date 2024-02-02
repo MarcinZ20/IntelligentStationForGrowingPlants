@@ -1,0 +1,287 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29314h (168724) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0003933c vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003e7b8 vaddr=40080000 size=01860h (  6240) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9c6c8h (640712) map[0m
+[0;32mI (284) esp_image: segment 4: paddr=000dc6f0 vaddr=40081860 size=16f74h ( 94068) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (321) boot: Disabling RNG early entropy source...[0m
+[0;32mI (332) cpu_start: Multicore app[0m
+[0;32mI (341) cpu_start: Pro cpu start user code[0m
+[0;32mI (341) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (341) cpu_start: Application information:[0m
+[0;32mI (344) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (351) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (363) cpu_start: ELF file SHA256:  5211c2cb4...[0m
+[0;32mI (368) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (379) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (384) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (389) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (396) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 3FFC7730 len 000188D0 (98 KiB): DRAM[0m
+[0;32mI (408) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (421) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (429) spi_flash: detected chip: winbond[0m
+[0;32mI (432) spi_flash: flash io: dio[0m
+[0;33mW (436) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (447) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (452) main_task: Started on CPU0[0m
+[0;32mI (462) main_task: Calling app_main()[0m
+[0;32mI (492) I2C: Module configuration successful![0m
+[0;32mI (492) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (492) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (502) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (512) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (542) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (552) wifi:wifi firmware version: a194738
+I (562) wifi:wifi certification version: v7.0
+I (562) wifi:config NVS flash: enabled
+I (562) wifi:config nano formating: disabled
+I (562) wifi:Init data frame dynamic rx buffer num: 32
+I (562) wifi:Init static rx mgmt buffer num: 5
+I (572) wifi:Init management short buffer num: 32
+I (572) wifi:Init dynamic tx buffer num: 32
+I (582) wifi:Init static rx buffer size: 1600
+I (582) wifi:Init static rx buffer num: 10
+I (582) wifi:Init dynamic rx buffer num: 32
+[0;32mI (592) wifi_init: rx ba win: 6[0m
+[0;32mI (592) wifi_init: tcpip mbox: 32[0m
+[0;32mI (602) wifi_init: udp mbox: 6[0m
+[0;32mI (602) wifi_init: tcp mbox: 6[0m
+[0;32mI (602) wifi_init: tcp tx win: 5760[0m
+[0;32mI (612) wifi_init: tcp rx win: 5760[0m
+[0;32mI (612) wifi_init: tcp mss: 1440[0m
+[0;32mI (622) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (622) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (632) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (712) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (712) wifi:enable tsf
+[0;32mI (722) [WI-FI]: Wifi started![0m
+[0;32mI (3132) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (3142) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (5552) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (5552) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (7972) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (7972) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (10382) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (10382) [APP]: WIFI DISCONNECTED[0m
+I (10392) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (10402) wifi:state: init -> auth (b0)
+I (10402) wifi:state: auth -> assoc (0)
+I (10412) wifi:state: assoc -> run (10)
+I (10432) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 36:0d:46:17:1b:db
+I (10432) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (10442) wifi:pm start, type: 1
+
+I (10442) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10492) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (10492) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (11212) wifi:<ba-add>idx:0 (ifx:0, 36:0d:46:17:1b:db), tid:0, ssn:2, winSize:64
+[0;32mI (11452) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (11452) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (11452) [APP]: WIFI CONNECTED[0m
+[0;32mI (11462) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (11572) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (11582) [APP]: MQTT CONNECTED[0m
+[0;32mI (11582) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (11632) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (19512) wifi:state: run -> init (1a0)
+I (19512) wifi:pm stop, total sleep time: 7171701 us / 9071168 us
+
+I (19512) wifi:<ba-del>idx:0, tid:0
+I (19522) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (19522) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (19532) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (19532) [APP]: WIFI DISCONNECTED[0m
+I (19542) wifi:[0;31mE (19542) mqtt_client: Poll read error: 119, aborting connection[0m
+new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (19552) [MQTT]: EVENT_DISCONNECTED[0m
+I (19562) wifi:state: init -> auth (b0)
+I (20562) wifi:state: auth -> init (200)
+I (20562) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (20572) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (20572) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (22982) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (22992) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (25402) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (25402) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (27812) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (27822) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (29562) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (29562) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (29562) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (29562) mqtt_client: Error transport connect[0m
+[0;32mI (29572) [MQTT]: EVENT_ERROR[0m
+[0;31mE (29572) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (29582) [MQTT]: Last errno string (Success)[0m
+[0;32mI (29582) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (30232) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (30232) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (32652) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (32652) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (35062) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (35072) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (37482) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (37482) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (39592) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (39592) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (39592) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (39592) mqtt_client: Error transport connect[0m
+[0;32mI (39602) [MQTT]: EVENT_ERROR[0m
+[0;31mE (39602) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (39612) [MQTT]: Last errno string (Success)[0m
+[0;32mI (39612) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (39892) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (39902) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (42312) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (42312) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (44732) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (44732) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (47142) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (47142) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (49562) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (49562) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (49622) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (49622) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (49622) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (49622) mqtt_client: Error transport connect[0m
+[0;32mI (49632) [MQTT]: EVENT_ERROR[0m
+[0;31mE (49632) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (49642) [MQTT]: Last errno string (Success)[0m
+[0;32mI (49642) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (51972) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (51982) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (54392) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (54392) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (56802) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (56812) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (59222) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (59222) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (59652) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (59652) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (59652) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (59652) mqtt_client: Error transport connect[0m
+[0;32mI (59662) [MQTT]: EVENT_ERROR[0m
+[0;31mE (59662) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (59672) [MQTT]: Last errno string (Success)[0m
+[0;32mI (59672) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (61632) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (61642) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (64052) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (64052) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (66472) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (66472) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (68882) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (68882) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (69682) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (69682) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (69682) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (69682) mqtt_client: Error transport connect[0m
+[0;32mI (69692) [MQTT]: EVENT_ERROR[0m
+[0;31mE (69692) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (69702) [MQTT]: Last errno string (Success)[0m
+[0;32mI (69702) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (71302) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (71302) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (73712) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (73722) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (76132) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (76132) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (78542) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (78552) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (79712) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (79712) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (79712) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (79712) mqtt_client: Error transport connect[0m
+[0;32mI (79722) [MQTT]: EVENT_ERROR[0m
+[0;31mE (79722) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (79732) [MQTT]: Last errno string (Success)[0m
+[0;32mI (79732) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (80962) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (80962) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (83382) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (83382) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (85792) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (85802) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (88212) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (88212) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (89742) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (89742) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (89742) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (89742) mqtt_client: Error transport connect[0m
+[0;32mI (89752) [MQTT]: EVENT_ERROR[0m
+[0;31mE (89752) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (89762) [MQTT]: Last errno string (Success)[0m
+[0;32mI (89762) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (90622) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (90632) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (93042) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (93042) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (95462) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (95462) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (97872) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (97872) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (99772) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (99772) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (99772) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (99772) mqtt_client: Error transport connect[0m
+[0;32mI (99782) [MQTT]: EVENT_ERROR[0m
+[0;31mE (99782) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (99792) [MQTT]: Last errno string (Success)[0m
+[0;32mI (99792) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (100292) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (100292) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (102702) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (102712) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (105122) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (105122) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (107532) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (107542) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (109802) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (109802) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (109802) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (109802) mqtt_client: Error transport connect[0m
+[0;32mI (109812) [MQTT]: EVENT_ERROR[0m
+[0;31mE (109812) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (109822) [MQTT]: Last errno string (Success)[0m
+[0;32mI (109822) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (109952) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (109952) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (112372) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (112372) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (114782) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (114782) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (117202) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (117202) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (119612) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (119622) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (119832) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (122032) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (122032) [APP]: WIFI DISCONNECTED[0m

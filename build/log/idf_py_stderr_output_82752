@@ -1,0 +1,37 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008190a: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40087725: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008d889: __assert_func at /Users/marcin/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40088a33: xEventGroupWaitBits at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:344 (discriminator 1)
+[0m
+[0;33m0x400d80db: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:64
+[0m
+[0;33m0x401285eb: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40088239: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008190a: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40087725: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4008d889: __assert_func at /Users/marcin/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x40088a33: xEventGroupWaitBits at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/event_groups.c:344 (discriminator 1)
+[0m
+[0;33m0x400d80db: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:64
+[0m
+[0;33m0x401285eb: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40088239: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

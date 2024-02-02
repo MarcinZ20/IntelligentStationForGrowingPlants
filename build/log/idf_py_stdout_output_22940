@@ -1,0 +1,1969 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=37208h (225800) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=00047230 vaddr=3ffbdb60 size=058e8h ( 22760) load[0m
+[0;32mI (155) esp_image: segment 2: paddr=0004cb20 vaddr=40080000 size=034f8h ( 13560) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d4aach (871084) map[0m
+[0;32mI (343) esp_image: segment 4: paddr=00124ad4 vaddr=400834f8 size=1be70h (114288) load[0m
+[0;32mI (388) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (388) boot: Disabling RNG early entropy source...[0m
+[0;32mI (400) cpu_start: Multicore app[0m
+[0;32mI (409) cpu_start: Pro cpu start user code[0m
+[0;32mI (409) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (409) cpu_start: Application information:[0m
+[0;32mI (412) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (419) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (424) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (430) cpu_start: ELF file SHA256:  79b1d4eae...[0m
+[0;32mI (436) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (442) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (447) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (452) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (457) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (464) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (482) heap_init: At 3FFCB500 len 00014B00 (82 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (494) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (501) heap_init: At 4009F368 len 00000C98 (3 KiB): IRAM[0m
+[0;32mI (508) spi_flash: detected chip: winbond[0m
+[0;32mI (511) spi_flash: flash io: dio[0m
+[0;32mI (516) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (521) main_task: Started on CPU0[0m
+[0;32mI (531) main_task: Calling app_main()[0m
+I (571) wifi:wifi driver task: 3ffcfa60, prio:23, stack:6656, core=0
+I (591) wifi:wifi firmware version: a194738
+I (591) wifi:wifi certification version: v7.0
+I (591) wifi:config NVS flash: enabled
+I (591) wifi:config nano formating: disabled
+I (591) wifi:Init data frame dynamic rx buffer num: 32
+I (591) wifi:Init static rx mgmt buffer num: 5
+I (601) wifi:Init management short buffer num: 32
+I (601) wifi:Init dynamic tx buffer num: 32
+I (611) wifi:Init static rx buffer size: 1600
+I (611) wifi:Init static rx buffer num: 10
+I (621) wifi:Init dynamic rx buffer num: 32
+[0;32mI (621) wifi_init: rx ba win: 6[0m
+[0;32mI (621) wifi_init: tcpip mbox: 32[0m
+[0;32mI (631) wifi_init: udp mbox: 6[0m
+[0;32mI (631) wifi_init: tcp mbox: 6[0m
+[0;32mI (631) wifi_init: tcp tx win: 5760[0m
+[0;32mI (641) wifi_init: tcp rx win: 5760[0m
+[0;32mI (641) wifi_init: tcp mss: 1440[0m
+[0;32mI (651) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (651) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (661) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (751) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (751) wifi:enable tsf
+[0;32mI (751) WI-FI STATION: wifi_init_sta finished.[0m
+I (841) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (841) wifi:state: init -> auth (b0)
+I (851) wifi:state: auth -> assoc (0)
+I (881) wifi:state: assoc -> run (10)
+I (911) wifi:connected with supertajnasiec, aid = 2, channel 7, BW20, bssid = 9e:5d:b7:cd:98:a6
+I (911) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (921) wifi:pm start, type: 1
+
+I (921) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (941) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (941) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (1921) esp_netif_handlers: sta ip: 192.168.148.8, mask: 255.255.255.0, gw: 192.168.148.6[0m
+[0;32mI (1921) WI-FI STATION: GOT IP: 192.168.148.8[0m
+[0;32mI (1921) WI-FI STATION: CONNECTED[0m
+
+Połączono z siecią:
+=====
+SSID: supertajnasiec
+Password: supertajnehaslo
+
+[0;32mI (1931) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (1941) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (2281) GATTC_CLIENT: REG_EVT[0m
+[0;32mI (2281) main_task: Returned from app_main()[0m
+[0;32mI (2291) GATTC_CLIENT: scan start success[0m
+[0;32mI (2411) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (2411) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2411) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2411) GATTC_CLIENT:  [0m
+[0;32mI (2421) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (2421) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2431) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2431) GATTC_CLIENT:  [0m
+[0;32mI (2441) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (2441) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2451) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2451) GATTC_CLIENT:  [0m
+[0;32mI (2461) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (2461) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2471) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2471) GATTC_CLIENT:  [0m
+[0;32mI (2481) GATTC_CLIENT: 5b c9 12 d7 c1 9d [0m
+[0;32mI (2481) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2491) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2491) GATTC_CLIENT:  [0m
+[0;32mI (2501) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (2501) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2511) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2511) GATTC_CLIENT:  [0m
+[0;32mI (2521) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (2521) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2531) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2531) GATTC_CLIENT:  [0m
+[0;32mI (2541) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (2541) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (2551) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2551) GATTC_CLIENT:  [0m
+[0;32mI (2561) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (2561) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2571) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2571) GATTC_CLIENT:  [0m
+[0;32mI (2581) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (2581) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (2591) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2591) GATTC_CLIENT:  [0m
+[0;32mI (2601) GATTC_CLIENT: 52 18 01 e8 70 0a [0m
+[0;32mI (2601) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2611) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2611) GATTC_CLIENT:  [0m
+[0;32mI (2621) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (2621) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2631) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2641) GATTC_CLIENT:  [0m
+[0;32mI (2641) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (2641) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2651) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2661) GATTC_CLIENT:  [0m
+[0;32mI (2661) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (2671) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2671) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2681) GATTC_CLIENT:  [0m
+[0;32mI (2681) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (2681) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (2691) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2701) GATTC_CLIENT:  [0m
+[0;32mI (2701) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (2701) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2711) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2721) GATTC_CLIENT:  [0m
+[0;32mI (2721) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (2721) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2731) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2741) GATTC_CLIENT:  [0m
+[0;32mI (2741) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (2741) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2751) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2761) GATTC_CLIENT:  [0m
+[0;32mI (2761) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (2761) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2771) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2781) GATTC_CLIENT:  [0m
+[0;32mI (2781) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (2791) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2791) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2801) GATTC_CLIENT:  [0m
+[0;32mI (2801) GATTC_CLIENT: 43 ce 8c bf 84 e5 [0m
+[0;32mI (2811) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2811) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2821) GATTC_CLIENT:  [0m
+[0;32mI (2821) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (2831) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2831) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2841) GATTC_CLIENT:  [0m
+[0;32mI (2841) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (2851) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (2851) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2861) GATTC_CLIENT:  [0m
+[0;32mI (2861) GATTC_CLIENT: 6e f6 ff 15 bd cc [0m
+[0;32mI (2871) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (2871) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2881) GATTC_CLIENT:  [0m
+[0;32mI (2881) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (2891) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2891) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2901) GATTC_CLIENT:  [0m
+[0;32mI (2901) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (2911) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (2911) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2921) GATTC_CLIENT:  [0m
+[0;32mI (2921) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (2931) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (2931) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2941) GATTC_CLIENT:  [0m
+[0;32mI (2951) GATTC_CLIENT: fc b1 e8 7a f4 c5 [0m
+[0;32mI (2951) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (2951) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2961) GATTC_CLIENT:  [0m
+[0;32mI (2961) GATTC_CLIENT: 64 b9 31 9f fe b4 [0m
+[0;32mI (2971) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (2981) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (2981) GATTC_CLIENT:  [0m
+[0;32mI (2981) GATTC_CLIENT: 53 c1 e1 91 12 8b [0m
+[0;32mI (2991) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3001) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3001) GATTC_CLIENT:  [0m
+[0;32mI (3001) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (3011) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3021) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3021) GATTC_CLIENT:  [0m
+[0;32mI (3021) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (3031) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3041) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3041) GATTC_CLIENT:  [0m
+[0;32mI (3041) GATTC_CLIENT: c3 3f a2 71 5c 67 [0m
+[0;32mI (3051) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (3061) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3061) GATTC_CLIENT:  [0m
+[0;32mI (3071) GATTC_CLIENT: 70 ed 6c f3 1e 89 [0m
+[0;32mI (3071) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (3081) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3081) GATTC_CLIENT:  [0m
+[0;32mI (3091) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (3091) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3101) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3101) GATTC_CLIENT:  [0m
+[0;32mI (3111) GATTC_CLIENT: 67 6b 09 be 0d dc [0m
+[0;32mI (3111) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3121) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3121) GATTC_CLIENT:  [0m
+[0;32mI (3131) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (3131) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3141) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3141) GATTC_CLIENT:  [0m
+[0;32mI (3151) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (3151) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3161) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3161) GATTC_CLIENT:  [0m
+[0;32mI (3171) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (3171) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (3181) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3191) GATTC_CLIENT:  [0m
+[0;32mI (3191) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (3191) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3201) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3201) GATTC_CLIENT:  [0m
+[0;32mI (3211) GATTC_CLIENT: 7d 62 2a ac 0e f7 [0m
+[0;32mI (3211) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3221) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3221) GATTC_CLIENT:  [0m
+[0;32mI (3231) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (3231) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3241) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3241) GATTC_CLIENT:  [0m
+[0;32mI (3251) GATTC_CLIENT: 3c b0 52 2d d9 98 [0m
+[0;32mI (3251) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3261) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3261) GATTC_CLIENT:  [0m
+[0;32mI (3271) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (3271) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3281) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3291) GATTC_CLIENT:  [0m
+[0;32mI (3291) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (3291) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3301) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3311) GATTC_CLIENT:  [0m
+[0;32mI (3311) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (3311) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3321) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3331) GATTC_CLIENT:  [0m
+[0;32mI (3331) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (3331) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3341) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3351) GATTC_CLIENT:  [0m
+[0;32mI (3351) GATTC_CLIENT: 4e c7 01 3b ac 36 [0m
+[0;32mI (3351) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (3361) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3371) GATTC_CLIENT:  [0m
+[0;32mI (3371) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (3371) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3381) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3391) GATTC_CLIENT:  [0m
+[0;32mI (3391) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (3401) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (3401) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3411) GATTC_CLIENT:  [0m
+[0;32mI (3411) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (3411) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3421) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3431) GATTC_CLIENT:  [0m
+[0;32mI (3431) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (3441) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3441) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3451) GATTC_CLIENT:  [0m
+[0;32mI (3451) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (3461) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3461) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3471) GATTC_CLIENT:  [0m
+[0;32mI (3471) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (3481) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3481) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3491) GATTC_CLIENT:  [0m
+[0;32mI (3491) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (3501) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3501) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3511) GATTC_CLIENT:  [0m
+[0;32mI (3511) GATTC_CLIENT: 46 9b 7e 55 f2 f8 [0m
+[0;32mI (3521) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3521) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3531) GATTC_CLIENT:  [0m
+[0;32mI (3531) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (3541) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3541) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3551) GATTC_CLIENT:  [0m
+[0;32mI (3551) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (3561) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3561) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3571) GATTC_CLIENT:  [0m
+[0;32mI (3571) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (3581) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3581) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3591) GATTC_CLIENT:  [0m
+[0;32mI (3591) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (3601) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3601) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3611) GATTC_CLIENT:  [0m
+[0;32mI (3611) GATTC_CLIENT: 3c b0 52 2d d9 98 [0m
+[0;32mI (3621) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3621) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3631) GATTC_CLIENT:  [0m
+[0;32mI (3631) GATTC_CLIENT: 5b c9 12 d7 c1 9d [0m
+[0;32mI (3641) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3651) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3651) GATTC_CLIENT:  [0m
+[0;32mI (3651) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (3661) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3671) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3671) GATTC_CLIENT:  [0m
+[0;32mI (3681) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (3681) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3691) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3691) GATTC_CLIENT:  [0m
+[0;32mI (3701) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (3701) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3711) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3711) GATTC_CLIENT:  [0m
+[0;32mI (3721) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (3721) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3731) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3731) GATTC_CLIENT:  [0m
+[0;32mI (3741) GATTC_CLIENT: 67 6b 09 be 0d dc [0m
+[0;32mI (3741) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3751) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3751) GATTC_CLIENT:  [0m
+[0;32mI (3761) GATTC_CLIENT: 6c 30 86 59 88 21 [0m
+[0;32mI (3761) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (3771) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3771) GATTC_CLIENT:  [0m
+[0;32mI (3781) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (3781) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3791) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3791) GATTC_CLIENT:  [0m
+[0;32mI (3801) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (3801) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3811) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3811) GATTC_CLIENT:  [0m
+[0;32mI (3821) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (3821) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (3831) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3831) GATTC_CLIENT:  [0m
+[0;32mI (3841) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (3841) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3851) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3851) GATTC_CLIENT:  [0m
+[0;32mI (3861) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (3861) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3871) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3871) GATTC_CLIENT:  [0m
+[0;32mI (3881) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (3881) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3891) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3891) GATTC_CLIENT:  [0m
+[0;32mI (3901) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (3901) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3911) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3911) GATTC_CLIENT:  [0m
+[0;32mI (3921) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (3921) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (3931) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3941) GATTC_CLIENT:  [0m
+[0;32mI (3941) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (3941) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3951) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3961) GATTC_CLIENT:  [0m
+[0;32mI (3961) GATTC_CLIENT: 43 ce 8c bf 84 e5 [0m
+[0;32mI (3961) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (3971) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (3981) GATTC_CLIENT:  [0m
+[0;32mI (3981) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (3981) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (3991) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4001) GATTC_CLIENT:  [0m
+[0;32mI (4001) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (4001) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4011) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4021) GATTC_CLIENT:  [0m
+[0;32mI (4021) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (4021) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4031) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4041) GATTC_CLIENT:  [0m
+[0;32mI (4041) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (4041) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4051) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4061) GATTC_CLIENT:  [0m
+[0;32mI (4061) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (4071) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4071) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4081) GATTC_CLIENT:  [0m
+[0;32mI (4081) GATTC_CLIENT: 4e c7 01 3b ac 36 [0m
+[0;32mI (4091) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (4091) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4101) GATTC_CLIENT:  [0m
+[0;32mI (4101) GATTC_CLIENT: 5f a6 6b 30 53 54 [0m
+[0;32mI (4111) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4111) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4121) GATTC_CLIENT:  [0m
+[0;32mI (4121) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (4131) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4131) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4141) GATTC_CLIENT:  [0m
+[0;32mI (4141) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (4151) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4151) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4161) GATTC_CLIENT:  [0m
+[0;32mI (4161) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (4171) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4171) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4181) GATTC_CLIENT:  [0m
+[0;32mI (4181) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (4191) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4191) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4201) GATTC_CLIENT:  [0m
+[0;32mI (4201) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (4211) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4221) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4221) GATTC_CLIENT:  [0m
+[0;32mI (4221) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (4231) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4231) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4241) GATTC_CLIENT:  [0m
+[0;32mI (4241) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (4251) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4251) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4261) GATTC_CLIENT:  [0m
+[0;32mI (4261) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (4271) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4271) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4281) GATTC_CLIENT:  [0m
+[0;32mI (4281) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (4291) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4301) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4301) GATTC_CLIENT:  [0m
+[0;32mI (4301) GATTC_CLIENT: 6c 30 86 59 88 21 [0m
+[0;32mI (4311) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4321) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4321) GATTC_CLIENT:  [0m
+[0;32mI (4321) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (4331) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4341) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4341) GATTC_CLIENT:  [0m
+[0;32mI (4341) GATTC_CLIENT: 46 9b 7e 55 f2 f8 [0m
+[0;32mI (4351) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4361) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4361) GATTC_CLIENT:  [0m
+[0;32mI (4371) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (4371) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4381) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4381) GATTC_CLIENT:  [0m
+[0;32mI (4391) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (4391) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (4401) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4401) GATTC_CLIENT:  [0m
+[0;32mI (4411) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (4411) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4421) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4421) GATTC_CLIENT:  [0m
+[0;32mI (4431) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (4431) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4441) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4441) GATTC_CLIENT:  [0m
+[0;32mI (4451) GATTC_CLIENT: c3 06 13 00 32 46 [0m
+[0;32mI (4451) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4461) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4461) GATTC_CLIENT:  [0m
+[0;32mI (4471) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (4471) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4481) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4481) GATTC_CLIENT:  [0m
+[0;32mI (4491) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (4491) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4501) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4501) GATTC_CLIENT:  [0m
+[0;32mI (4511) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (4511) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4521) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4521) GATTC_CLIENT:  [0m
+[0;32mI (4531) GATTC_CLIENT: 14 13 0b c8 e7 38 [0m
+[0;32mI (4531) GATTC_CLIENT: searched Adv Data Len 9, Scan Response Len 0[0m
+[0;32mI (4541) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4541) GATTC_CLIENT:  [0m
+[0;32mI (4551) GATTC_CLIENT: e2 f3 6c a2 40 c3 [0m
+[0;32mI (4551) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (4561) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4561) GATTC_CLIENT:  [0m
+[0;32mI (4571) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (4571) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4581) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4581) GATTC_CLIENT:  [0m
+[0;32mI (4591) GATTC_CLIENT: 3c b0 52 2d d9 98 [0m
+[0;32mI (4591) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4601) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4611) GATTC_CLIENT:  [0m
+[0;32mI (4611) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (4611) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4621) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4631) GATTC_CLIENT:  [0m
+[0;32mI (4631) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (4631) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4641) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4651) GATTC_CLIENT:  [0m
+[0;32mI (4651) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (4651) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4661) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4671) GATTC_CLIENT:  [0m
+[0;32mI (4671) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (4671) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4681) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4691) GATTC_CLIENT:  [0m
+[0;32mI (4691) GATTC_CLIENT: 52 18 01 e8 70 0a [0m
+[0;32mI (4691) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4701) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4711) GATTC_CLIENT:  [0m
+[0;32mI (4711) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (4721) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4721) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4731) GATTC_CLIENT:  [0m
+[0;32mI (4731) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (4741) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4741) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4751) GATTC_CLIENT:  [0m
+[0;32mI (4751) GATTC_CLIENT: 7d 62 2a ac 0e f7 [0m
+[0;32mI (4761) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4761) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4771) GATTC_CLIENT:  [0m
+[0;32mI (4771) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (4781) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4781) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4791) GATTC_CLIENT:  [0m
+[0;32mI (4791) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (4801) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (4801) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4811) GATTC_CLIENT:  [0m
+[0;32mI (4811) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (4821) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4821) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4831) GATTC_CLIENT:  [0m
+[0;32mI (4831) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (4841) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4841) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4851) GATTC_CLIENT:  [0m
+[0;32mI (4851) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (4861) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4861) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4871) GATTC_CLIENT:  [0m
+[0;32mI (4871) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (4881) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4891) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4891) GATTC_CLIENT:  [0m
+[0;32mI (4891) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (4901) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4901) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4911) GATTC_CLIENT:  [0m
+[0;32mI (4911) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (4921) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4931) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4931) GATTC_CLIENT:  [0m
+[0;32mI (4931) GATTC_CLIENT: 43 ce 8c bf 84 e5 [0m
+[0;32mI (4941) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4951) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4951) GATTC_CLIENT:  [0m
+[0;32mI (4951) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (4961) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (4971) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4971) GATTC_CLIENT:  [0m
+[0;32mI (4981) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (4981) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (4991) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (4991) GATTC_CLIENT:  [0m
+[0;32mI (4991) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (5001) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5011) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5011) GATTC_CLIENT:  [0m
+[0;32mI (5021) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (5021) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5031) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5031) GATTC_CLIENT:  [0m
+[0;32mI (5041) GATTC_CLIENT: 3c b0 52 2d d9 98 [0m
+[0;32mI (5041) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5051) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5051) GATTC_CLIENT:  [0m
+[0;32mI (5061) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (5061) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5071) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5071) GATTC_CLIENT:  [0m
+[0;32mI (5081) GATTC_CLIENT: 53 c1 e1 91 12 8b [0m
+[0;32mI (5081) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5091) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5091) GATTC_CLIENT:  [0m
+[0;32mI (5101) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (5101) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5111) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5111) GATTC_CLIENT:  [0m
+[0;32mI (5121) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (5121) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5131) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5131) GATTC_CLIENT:  [0m
+[0;32mI (5141) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (5141) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5151) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5161) GATTC_CLIENT:  [0m
+[0;32mI (5161) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (5161) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5171) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5171) GATTC_CLIENT:  [0m
+[0;32mI (5181) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (5181) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5191) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5191) GATTC_CLIENT:  [0m
+[0;32mI (5201) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (5201) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5211) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5211) GATTC_CLIENT:  [0m
+[0;32mI (5221) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (5221) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (5231) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5231) GATTC_CLIENT:  [0m
+[0;32mI (5241) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (5241) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5251) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5261) GATTC_CLIENT:  [0m
+[0;32mI (5261) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (5261) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5271) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5281) GATTC_CLIENT:  [0m
+[0;32mI (5281) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (5281) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5291) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5301) GATTC_CLIENT:  [0m
+[0;32mI (5301) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (5301) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (5311) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5321) GATTC_CLIENT:  [0m
+[0;32mI (5321) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (5331) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5331) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5341) GATTC_CLIENT:  [0m
+[0;32mI (5341) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (5341) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5351) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5361) GATTC_CLIENT:  [0m
+[0;32mI (5361) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (5361) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5371) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5381) GATTC_CLIENT:  [0m
+[0;32mI (5381) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (5381) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (5391) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5401) GATTC_CLIENT:  [0m
+[0;32mI (5401) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (5411) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5411) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5421) GATTC_CLIENT:  [0m
+[0;32mI (5421) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (5431) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5431) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5441) GATTC_CLIENT:  [0m
+[0;32mI (5441) GATTC_CLIENT: 46 9b 7e 55 f2 f8 [0m
+[0;32mI (5451) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5451) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5461) GATTC_CLIENT:  [0m
+[0;32mI (5461) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (5471) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5471) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5481) GATTC_CLIENT:  [0m
+[0;32mI (5481) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (5491) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5491) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5501) GATTC_CLIENT:  [0m
+[0;32mI (5501) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (5511) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5511) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5521) GATTC_CLIENT:  [0m
+[0;32mI (5521) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (5531) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (5531) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5541) GATTC_CLIENT:  [0m
+[0;32mI (5541) GATTC_CLIENT: 5b c9 12 d7 c1 9d [0m
+[0;32mI (5551) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (5551) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5561) GATTC_CLIENT:  [0m
+[0;32mI (5561) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (5571) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5571) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5581) GATTC_CLIENT:  [0m
+[0;32mI (5581) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (5591) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5601) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5601) GATTC_CLIENT:  [0m
+[0;32mI (5601) GATTC_CLIENT: 52 18 01 e8 70 0a [0m
+[0;32mI (5611) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (5621) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5621) GATTC_CLIENT:  [0m
+[0;32mI (5621) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (5631) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5641) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5641) GATTC_CLIENT:  [0m
+[0;32mI (5641) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (5651) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5661) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5661) GATTC_CLIENT:  [0m
+[0;32mI (5671) GATTC_CLIENT: d8 bf 24 0b 56 1b [0m
+[0;32mI (5671) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (5681) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5681) GATTC_CLIENT:  [0m
+[0;32mI (5691) GATTC_CLIENT: 7d 62 2a ac 0e f7 [0m
+[0;32mI (5691) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (5701) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5701) GATTC_CLIENT:  [0m
+[0;32mI (5711) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (5711) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5721) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5721) GATTC_CLIENT:  [0m
+[0;32mI (5731) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (5731) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5741) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5741) GATTC_CLIENT:  [0m
+[0;32mI (5751) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (5751) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5761) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5761) GATTC_CLIENT:  [0m
+[0;32mI (5771) GATTC_CLIENT: 6c 30 86 59 88 21 [0m
+[0;32mI (5771) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5781) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5781) GATTC_CLIENT:  [0m
+[0;32mI (5791) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (5791) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5801) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5801) GATTC_CLIENT:  [0m
+[0;32mI (5811) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (5811) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (5821) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5821) GATTC_CLIENT:  [0m
+[0;32mI (5831) GATTC_CLIENT: dc 3e e5 7f a6 68 [0m
+[0;32mI (5831) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5841) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5841) GATTC_CLIENT:  [0m
+[0;32mI (5851) GATTC_CLIENT: 70 ed 6c f3 1e 89 [0m
+[0;32mI (5851) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (5861) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5861) GATTC_CLIENT:  [0m
+[0;32mI (5871) GATTC_CLIENT: 5f a6 6b 30 53 54 [0m
+[0;32mI (5871) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (5881) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5891) GATTC_CLIENT:  [0m
+[0;32mI (5891) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (5891) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5901) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5911) GATTC_CLIENT:  [0m
+[0;32mI (5911) GATTC_CLIENT: d4 8f d7 e4 d2 5e [0m
+[0;32mI (5911) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (5921) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5931) GATTC_CLIENT:  [0m
+[0;32mI (5931) GATTC_CLIENT: 4e c7 01 3b ac 36 [0m
+[0;32mI (5931) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (5941) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5951) GATTC_CLIENT:  [0m
+[0;32mI (5951) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (5951) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (5961) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5971) GATTC_CLIENT:  [0m
+[0;32mI (5971) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (5971) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (5981) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (5991) GATTC_CLIENT:  [0m
+[0;32mI (5991) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (5991) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (6001) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6011) GATTC_CLIENT:  [0m
+[0;32mI (6011) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (6011) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6021) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6031) GATTC_CLIENT:  [0m
+[0;32mI (6031) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (6031) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (6041) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6051) GATTC_CLIENT:  [0m
+[0;32mI (6051) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (6061) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6061) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6071) GATTC_CLIENT:  [0m
+[0;32mI (6071) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (6081) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6081) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6091) GATTC_CLIENT:  [0m
+[0;32mI (6091) GATTC_CLIENT: 3c b0 52 2d d9 98 [0m
+[0;32mI (6101) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6101) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6111) GATTC_CLIENT:  [0m
+[0;32mI (6111) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (6121) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6121) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6131) GATTC_CLIENT:  [0m
+[0;32mI (6131) GATTC_CLIENT: 4b 07 2a b2 af 89 [0m
+[0;32mI (6141) GATTC_CLIENT: searched Adv Data Len 4, Scan Response Len 0[0m
+[0;32mI (6141) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6151) GATTC_CLIENT:  [0m
+[0;32mI (6151) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (6161) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (6161) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6171) GATTC_CLIENT:  [0m
+[0;32mI (6171) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (6181) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6181) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6191) GATTC_CLIENT:  [0m
+[0;32mI (6191) GATTC_CLIENT: 7d 62 2a ac 0e f7 [0m
+[0;32mI (6201) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (6201) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6211) GATTC_CLIENT:  [0m
+[0;32mI (6211) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (6221) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6221) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6231) GATTC_CLIENT:  [0m
+[0;32mI (6231) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (6241) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (6241) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6251) GATTC_CLIENT:  [0m
+[0;32mI (6251) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (6261) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6271) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6271) GATTC_CLIENT:  [0m
+[0;32mI (6271) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (6281) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6291) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6291) GATTC_CLIENT:  [0m
+[0;32mI (6291) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (6301) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6311) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6311) GATTC_CLIENT:  [0m
+[0;32mI (6311) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (6321) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (6331) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6331) GATTC_CLIENT:  [0m
+[0;32mI (6331) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (6341) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6351) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6351) GATTC_CLIENT:  [0m
+[0;32mI (6361) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (6361) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6371) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6371) GATTC_CLIENT:  [0m
+[0;32mI (6381) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (6381) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6391) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6391) GATTC_CLIENT:  [0m
+[0;32mI (6401) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (6401) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (6411) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6411) GATTC_CLIENT:  [0m
+[0;32mI (6421) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (6421) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (6431) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6431) GATTC_CLIENT:  [0m
+[0;32mI (6441) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (6441) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6451) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6451) GATTC_CLIENT:  [0m
+[0;32mI (6461) GATTC_CLIENT: d4 29 e1 d2 e2 9c [0m
+[0;32mI (6461) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (6471) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6471) GATTC_CLIENT:  [0m
+[0;32mI (6481) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (6481) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6491) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6501) GATTC_CLIENT:  [0m
+[0;32mI (6501) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (6501) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6511) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6511) GATTC_CLIENT:  [0m
+[0;32mI (6521) GATTC_CLIENT: 67 6b 09 be 0d dc [0m
+[0;32mI (6521) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6531) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6531) GATTC_CLIENT:  [0m
+[0;32mI (6541) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (6541) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6551) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6551) GATTC_CLIENT:  [0m
+[0;32mI (6561) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (6561) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (6571) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6581) GATTC_CLIENT:  [0m
+[0;32mI (6581) GATTC_CLIENT: e8 cf 3a 53 67 8e [0m
+[0;32mI (6581) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (6591) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6601) GATTC_CLIENT:  [0m
+[0;32mI (6601) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (6601) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6611) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6621) GATTC_CLIENT:  [0m
+[0;32mI (6621) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (6621) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6631) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6641) GATTC_CLIENT:  [0m
+[0;32mI (6641) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (6641) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6651) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6661) GATTC_CLIENT:  [0m
+[0;32mI (6661) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (6661) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6671) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6681) GATTC_CLIENT:  [0m
+[0;32mI (6681) GATTC_CLIENT: 5f a6 6b 30 53 54 [0m
+[0;32mI (6681) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (6691) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6701) GATTC_CLIENT:  [0m
+[0;32mI (6701) GATTC_CLIENT: 4e c7 01 3b ac 36 [0m
+[0;32mI (6701) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (6711) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6721) GATTC_CLIENT:  [0m
+[0;32mI (6721) GATTC_CLIENT: 6c 30 86 59 88 21 [0m
+[0;32mI (6731) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (6731) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6741) GATTC_CLIENT:  [0m
+[0;32mI (6741) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (6751) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (6751) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6761) GATTC_CLIENT:  [0m
+[0;32mI (6761) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (6771) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6771) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6781) GATTC_CLIENT:  [0m
+[0;32mI (6781) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (6791) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (6791) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6801) GATTC_CLIENT:  [0m
+[0;32mI (6801) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (6811) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6811) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6821) GATTC_CLIENT:  [0m
+[0;32mI (6821) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (6831) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6831) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6841) GATTC_CLIENT:  [0m
+[0;32mI (6841) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (6851) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (6851) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6861) GATTC_CLIENT:  [0m
+[0;32mI (6861) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (6871) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6871) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6881) GATTC_CLIENT:  [0m
+[0;32mI (6891) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (6891) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6891) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6901) GATTC_CLIENT:  [0m
+[0;32mI (6901) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (6911) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6921) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6921) GATTC_CLIENT:  [0m
+[0;32mI (6921) GATTC_CLIENT: 46 9b 7e 55 f2 f8 [0m
+[0;32mI (6931) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (6941) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6941) GATTC_CLIENT:  [0m
+[0;32mI (6941) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (6951) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (6961) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6961) GATTC_CLIENT:  [0m
+[0;32mI (6971) GATTC_CLIENT: 70 32 e4 04 d1 a7 [0m
+[0;32mI (6971) GATTC_CLIENT: searched Adv Data Len 4, Scan Response Len 31[0m
+[0;32mI (6981) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (6981) GATTC_CLIENT:  [0m
+[0;32mI (6981) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (6991) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7001) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7001) GATTC_CLIENT:  [0m
+[0;32mI (7011) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (7011) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7021) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7021) GATTC_CLIENT:  [0m
+[0;32mI (7031) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (7031) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7041) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7041) GATTC_CLIENT:  [0m
+[0;32mI (7051) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (7051) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7061) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7061) GATTC_CLIENT:  [0m
+[0;32mI (7071) GATTC_CLIENT: 5b c9 12 d7 c1 9d [0m
+[0;32mI (7071) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7081) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7081) GATTC_CLIENT:  [0m
+[0;32mI (7091) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (7091) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7101) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7101) GATTC_CLIENT:  [0m
+[0;32mI (7111) GATTC_CLIENT: c0 7c 68 22 29 4e [0m
+[0;32mI (7111) GATTC_CLIENT: searched Adv Data Len 7, Scan Response Len 0[0m
+[0;32mI (7121) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7121) GATTC_CLIENT:  [0m
+[0;32mI (7131) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (7131) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7141) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7141) GATTC_CLIENT:  [0m
+[0;32mI (7151) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (7151) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7161) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7161) GATTC_CLIENT:  [0m
+[0;32mI (7171) GATTC_CLIENT: 3c b0 52 2d d9 98 [0m
+[0;32mI (7171) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7181) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7181) GATTC_CLIENT:  [0m
+[0;32mI (7191) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (7191) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7201) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7201) GATTC_CLIENT:  [0m
+[0;32mI (7211) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (7211) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7221) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7231) GATTC_CLIENT:  [0m
+[0;32mI (7231) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (7231) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7241) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7251) GATTC_CLIENT:  [0m
+[0;32mI (7251) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (7251) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7261) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7271) GATTC_CLIENT:  [0m
+[0;32mI (7271) GATTC_CLIENT: 6c 30 86 59 88 21 [0m
+[0;32mI (7271) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7281) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7291) GATTC_CLIENT:  [0m
+[0;32mI (7291) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (7291) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (7301) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7311) GATTC_CLIENT:  [0m
+[0;32mI (7311) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (7321) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7321) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7331) GATTC_CLIENT:  [0m
+[0;32mI (7331) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (7341) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7341) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7351) GATTC_CLIENT:  [0m
+[0;32mI (7351) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (7351) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7361) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7371) GATTC_CLIENT:  [0m
+[0;32mI (7371) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (7381) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7381) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7391) GATTC_CLIENT:  [0m
+[0;32mI (7391) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (7401) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7401) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7411) GATTC_CLIENT:  [0m
+[0;32mI (7411) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m[0;31mE (7421) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (7421) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (7421) task_wdt: Tasks currently running:[0m
+[0;31mE (7421) task_wdt: CPU 0: BTC_TASK[0m
+[0;31mE (7421) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (7421) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4012EAAF:0x3FFBFD10 0x4012EC5A:0x3FFBFD30 0x4008B219:0x3FFBFD50 0x400D7092:0x3FFD7F70 0x400D784D:0x3FFD7FA0 0x400D66B7:0x3FFD7FC0 0x400D6242:0x3FFD7FE0 0x4000BD83:0x3FFD8000 0x4000117D:0x3FFD8020 0x400592FE:0x3FFD8040 0x4005937A:0x3FFD8060 0x401884B9:0x3FFD8080 0x40193E5B:0x3FFD80B0 0x4019381E:0x3FFD80D0 0x4018895D:0x3FFD83F0 0x401A3479:0x3FFD8420 0x4009789D:0x3FFD8450 0x4012F30E:0x3FFD84A0 0x400D820B:0x3FFD8520 0x400DB1A1:0x3FFD8570 0x400DBBD5:0x3FFD8590 0x400FF516:0x3FFD85B0 0x400FF3E7:0x3FFD85D0 0x400926FD:0x3FFD8600
+
+
+[0;32mI (7501) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7501) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7511) GATTC_CLIENT:  [0m
+[0;32mI (7511) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (7521) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (7521) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7531) GATTC_CLIENT:  [0m
+[0;32mI (7531) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (7541) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7541) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7551) GATTC_CLIENT:  [0m
+[0;32mI (7551) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (7561) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7561) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7571) GATTC_CLIENT:  [0m
+[0;32mI (7571) GATTC_CLIENT: 64 b9 31 9f fe b4 [0m
+[0;32mI (7581) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7581) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7591) GATTC_CLIENT:  [0m
+[0;32mI (7591) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (7601) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7611) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7611) GATTC_CLIENT:  [0m
+[0;32mI (7611) GATTC_CLIENT: 53 c1 e1 91 12 8b [0m
+[0;32mI (7621) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7631) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7631) GATTC_CLIENT:  [0m
+[0;32mI (7631) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (7641) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7651) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7651) GATTC_CLIENT:  [0m
+[0;32mI (7651) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (7661) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7671) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7671) GATTC_CLIENT:  [0m
+[0;32mI (7681) GATTC_CLIENT: 70 ed 6c f3 1e 89 [0m
+[0;32mI (7681) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (7691) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7691) GATTC_CLIENT:  [0m
+[0;32mI (7701) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (7701) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7711) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7711) GATTC_CLIENT:  [0m
+[0;32mI (7721) GATTC_CLIENT: 4e c7 01 3b ac 36 [0m
+[0;32mI (7721) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (7731) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7731) GATTC_CLIENT:  [0m
+[0;32mI (7741) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (7741) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7751) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7751) GATTC_CLIENT:  [0m
+[0;32mI (7761) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (7761) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (7771) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7771) GATTC_CLIENT:  [0m
+[0;32mI (7781) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (7781) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7791) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7791) GATTC_CLIENT:  [0m
+[0;32mI (7801) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (7801) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7811) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7811) GATTC_CLIENT:  [0m
+[0;32mI (7821) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (7821) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7831) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7831) GATTC_CLIENT:  [0m
+[0;32mI (7841) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (7841) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7851) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7861) GATTC_CLIENT:  [0m
+[0;32mI (7861) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (7861) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7871) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7871) GATTC_CLIENT:  [0m
+[0;32mI (7881) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (7881) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7891) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7901) GATTC_CLIENT:  [0m
+[0;32mI (7901) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (7901) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (7911) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7921) GATTC_CLIENT:  [0m
+[0;32mI (7921) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (7921) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7931) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7941) GATTC_CLIENT:  [0m
+[0;32mI (7941) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (7941) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7951) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7961) GATTC_CLIENT:  [0m
+[0;32mI (7961) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (7961) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7971) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (7981) GATTC_CLIENT:  [0m
+[0;32mI (7981) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (7981) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (7991) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8001) GATTC_CLIENT:  [0m
+[0;32mI (8001) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (8001) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8011) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8021) GATTC_CLIENT:  [0m
+[0;32mI (8021) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (8021) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8031) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8041) GATTC_CLIENT:  [0m
+[0;32mI (8041) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (8041) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (8051) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8061) GATTC_CLIENT:  [0m
+[0;32mI (8061) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (8071) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (8071) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8081) GATTC_CLIENT:  [0m
+[0;32mI (8081) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (8091) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8091) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8101) GATTC_CLIENT:  [0m
+[0;32mI (8101) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (8111) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (8111) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8121) GATTC_CLIENT:  [0m
+[0;32mI (8121) GATTC_CLIENT: 5b c9 12 d7 c1 9d [0m
+[0;32mI (8131) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8131) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8141) GATTC_CLIENT:  [0m
+[0;32mI (8141) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (8151) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (8151) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8161) GATTC_CLIENT:  [0m
+[0;32mI (8161) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (8171) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8171) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8181) GATTC_CLIENT:  [0m
+[0;32mI (8181) GATTC_CLIENT: d5 a8 e0 86 56 6f [0m
+[0;32mI (8191) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (8191) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8201) GATTC_CLIENT:  [0m
+[0;32mI (8201) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (8211) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8211) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8221) GATTC_CLIENT:  [0m
+[0;32mI (8221) GATTC_CLIENT: 52 18 01 e8 70 0a [0m
+[0;32mI (8231) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8241) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8241) GATTC_CLIENT:  [0m
+[0;32mI (8241) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (8251) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8261) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8261) GATTC_CLIENT:  [0m
+[0;32mI (8271) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (8271) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8281) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8281) GATTC_CLIENT:  [0m
+[0;32mI (8281) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (8291) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8301) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8301) GATTC_CLIENT:  [0m
+[0;32mI (8311) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (8311) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8321) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8321) GATTC_CLIENT:  [0m
+[0;32mI (8321) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (8331) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8341) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8341) GATTC_CLIENT:  [0m
+[0;32mI (8351) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (8351) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (8361) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8361) GATTC_CLIENT:  [0m
+[0;32mI (8371) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (8371) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8381) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8381) GATTC_CLIENT:  [0m
+[0;32mI (8391) GATTC_CLIENT: 43 ce 8c bf 84 e5 [0m
+[0;32mI (8391) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8401) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8401) GATTC_CLIENT:  [0m
+[0;32mI (8411) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (8411) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8421) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8421) GATTC_CLIENT:  [0m
+[0;32mI (8431) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (8431) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (8441) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8441) GATTC_CLIENT:  [0m
+[0;32mI (8451) GATTC_CLIENT: 68 b9 50 c0 a0 a1 [0m
+[0;32mI (8451) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8461) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8461) GATTC_CLIENT:  [0m
+[0;32mI (8471) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (8471) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8481) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8481) GATTC_CLIENT:  [0m
+[0;32mI (8491) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (8491) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8501) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8511) GATTC_CLIENT:  [0m
+[0;32mI (8511) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (8511) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8521) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8521) GATTC_CLIENT:  [0m
+[0;32mI (8531) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (8531) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8541) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8541) GATTC_CLIENT:  [0m
+[0;32mI (8551) GATTC_CLIENT: 5f a6 6b 30 53 54 [0m
+[0;32mI (8551) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8561) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8571) GATTC_CLIENT:  [0m
+[0;32mI (8571) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (8571) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8581) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8591) GATTC_CLIENT:  [0m
+[0;32mI (8591) GATTC_CLIENT: 70 ed 6c f3 1e 89 [0m
+[0;32mI (8591) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (8601) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8611) GATTC_CLIENT:  [0m
+[0;32mI (8611) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (8611) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8621) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8631) GATTC_CLIENT:  [0m
+[0;32mI (8631) GATTC_CLIENT: 4e c7 01 3b ac 36 [0m
+[0;32mI (8631) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (8641) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8651) GATTC_CLIENT:  [0m
+[0;32mI (8651) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (8651) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8661) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8671) GATTC_CLIENT:  [0m
+[0;32mI (8671) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (8671) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (8681) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8691) GATTC_CLIENT:  [0m
+[0;32mI (8691) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (8691) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8701) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8711) GATTC_CLIENT:  [0m
+[0;32mI (8711) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (8721) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8721) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8731) GATTC_CLIENT:  [0m
+[0;32mI (8731) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (8741) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8741) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8751) GATTC_CLIENT:  [0m
+[0;32mI (8751) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (8761) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8761) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8771) GATTC_CLIENT:  [0m
+[0;32mI (8771) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (8781) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8781) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8791) GATTC_CLIENT:  [0m
+[0;32mI (8791) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (8801) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8801) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8811) GATTC_CLIENT:  [0m
+[0;32mI (8811) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (8821) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8821) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8831) GATTC_CLIENT:  [0m
+[0;32mI (8831) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (8841) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8841) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8851) GATTC_CLIENT:  [0m
+[0;32mI (8851) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (8861) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8861) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8871) GATTC_CLIENT:  [0m
+[0;32mI (8871) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (8881) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8881) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8891) GATTC_CLIENT:  [0m
+[0;32mI (8891) GATTC_CLIENT: 68 b9 50 c0 a0 a1 [0m
+[0;32mI (8901) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8911) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8911) GATTC_CLIENT:  [0m
+[0;32mI (8911) GATTC_CLIENT: 4e c7 01 3b ac 36 [0m
+[0;32mI (8921) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (8931) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8931) GATTC_CLIENT:  [0m
+[0;32mI (8941) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (8941) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8951) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8951) GATTC_CLIENT:  [0m
+[0;32mI (8961) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (8961) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (8971) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8971) GATTC_CLIENT:  [0m
+[0;32mI (8971) GATTC_CLIENT: 67 6b 09 be 0d dc [0m
+[0;32mI (8981) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (8991) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (8991) GATTC_CLIENT:  [0m
+[0;32mI (9001) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (9001) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9011) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9011) GATTC_CLIENT:  [0m
+[0;32mI (9021) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (9021) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (9031) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9031) GATTC_CLIENT:  [0m
+[0;32mI (9041) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (9041) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9051) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9051) GATTC_CLIENT:  [0m
+[0;32mI (9061) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (9061) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9071) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9071) GATTC_CLIENT:  [0m
+[0;32mI (9081) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (9081) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9091) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9091) GATTC_CLIENT:  [0m
+[0;32mI (9101) GATTC_CLIENT: c2 56 79 c4 1e 10 [0m
+[0;32mI (9101) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (9111) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9111) GATTC_CLIENT:  [0m
+[0;32mI (9121) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (9121) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9131) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9141) GATTC_CLIENT:  [0m
+[0;32mI (9141) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (9141) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9151) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9151) GATTC_CLIENT:  [0m
+[0;32mI (9161) GATTC_CLIENT: 64 b9 31 9f fe b4 [0m
+[0;32mI (9161) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9171) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9171) GATTC_CLIENT:  [0m
+[0;32mI (9181) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (9181) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9191) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9201) GATTC_CLIENT:  [0m
+[0;32mI (9201) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (9201) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9211) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9221) GATTC_CLIENT:  [0m
+[0;32mI (9221) GATTC_CLIENT: 5d 93 76 ae d6 c1 [0m
+[0;32mI (9221) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9231) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9241) GATTC_CLIENT:  [0m
+[0;32mI (9241) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (9251) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (9251) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9261) GATTC_CLIENT:  [0m
+[0;32mI (9261) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (9261) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9271) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9281) GATTC_CLIENT:  [0m
+[0;32mI (9281) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (9281) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9291) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9301) GATTC_CLIENT:  [0m
+[0;32mI (9301) GATTC_CLIENT: c3 06 13 00 32 46 [0m
+[0;32mI (9301) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 30[0m
+[0;32mI (9311) GATTC_CLIENT: searched Device Name Len 24[0m
+[0;32mI (9321) GATTC_CLIENT: Xiaomi Smart Ban[0m
+[0;32mI (9321) GATTC_CLIENT: d 7 3246[0m
+[0;32mI (9331) GATTC_CLIENT:  [0m
+[0;32mI (9331) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (9331) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9341) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9351) GATTC_CLIENT:  [0m
+[0;32mI (9351) GATTC_CLIENT: cd f3 79 3c 27 f3 [0m
+[0;32mI (9351) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9361) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9371) GATTC_CLIENT:  [0m
+[0;32mI (9371) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (9371) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9381) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9391) GATTC_CLIENT:  [0m
+[0;32mI (9391) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (9391) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9401) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9411) GATTC_CLIENT:  [0m
+[0;32mI (9411) GATTC_CLIENT: e2 f3 6c a2 40 c3 [0m
+[0;32mI (9411) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (9421) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9431) GATTC_CLIENT:  [0m
+[0;32mI (9431) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (9431) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (9441) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9451) GATTC_CLIENT:  [0m
+[0;32mI (9451) GATTC_CLIENT: 70 ed 6c f3 1e 89 [0m
+[0;32mI (9451) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (9461) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9471) GATTC_CLIENT:  [0m
+[0;32mI (9471) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (9481) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9481) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9491) GATTC_CLIENT:  [0m
+[0;32mI (9491) GATTC_CLIENT: 46 9b 7e 55 f2 f8 [0m
+[0;32mI (9501) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9501) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9511) GATTC_CLIENT:  [0m
+[0;32mI (9511) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (9521) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9521) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9531) GATTC_CLIENT:  [0m
+[0;32mI (9531) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (9541) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9541) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9551) GATTC_CLIENT:  [0m
+[0;32mI (9551) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (9561) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (9561) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9571) GATTC_CLIENT:  [0m
+[0;32mI (9571) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (9581) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9581) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9591) GATTC_CLIENT:  [0m
+[0;32mI (9591) GATTC_CLIENT: 5b c9 12 d7 c1 9d [0m
+[0;32mI (9601) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9601) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9611) GATTC_CLIENT:  [0m
+[0;32mI (9611) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (9621) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9621) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9631) GATTC_CLIENT:  [0m
+[0;32mI (9631) GATTC_CLIENT: 52 18 01 e8 70 0a [0m
+[0;32mI (9641) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9641) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9651) GATTC_CLIENT:  [0m
+[0;32mI (9651) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (9661) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9671) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9671) GATTC_CLIENT:  [0m
+[0;32mI (9671) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (9681) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9691) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9691) GATTC_CLIENT:  [0m
+[0;32mI (9691) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (9701) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9711) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9711) GATTC_CLIENT:  [0m
+[0;32mI (9711) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (9721) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9731) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9731) GATTC_CLIENT:  [0m
+[0;32mI (9741) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (9751) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9751) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9751) GATTC_CLIENT:  [0m
+[0;32mI (9761) GATTC_CLIENT: 42 d9 93 6c 51 65 [0m
+[0;32mI (9761) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 7[0m
+[0;32mI (9771) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9771) GATTC_CLIENT:  [0m
+[0;32mI (9781) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (9781) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9791) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9791) GATTC_CLIENT:  [0m
+[0;32mI (9801) GATTC_CLIENT: 04 3c 98 06 da 9c [0m
+[0;32mI (9801) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9811) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9811) GATTC_CLIENT:  [0m
+[0;32mI (9821) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (9821) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9831) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9831) GATTC_CLIENT:  [0m
+[0;32mI (9841) GATTC_CLIENT: 46 9b 7e 55 f2 f8 [0m
+[0;32mI (9841) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9851) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9851) GATTC_CLIENT:  [0m
+[0;32mI (9861) GATTC_CLIENT: 6e 9b db f7 b5 10 [0m
+[0;32mI (9861) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (9871) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9871) GATTC_CLIENT:  [0m
+[0;32mI (9881) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (9881) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9891) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9891) GATTC_CLIENT:  [0m
+[0;32mI (9901) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (9901) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9911) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9911) GATTC_CLIENT:  [0m
+[0;32mI (9921) GATTC_CLIENT: 2a e3 ad 7f 52 db [0m
+[0;32mI (9921) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9931) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9931) GATTC_CLIENT:  [0m
+[0;32mI (9941) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (9941) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (9951) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9951) GATTC_CLIENT:  [0m
+[0;32mI (9961) GATTC_CLIENT: 43 ce 8c bf 84 e5 [0m
+[0;32mI (9961) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (9971) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (9981) GATTC_CLIENT:  [0m
+[0;32mI (9981) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (9981) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (9991) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10001) GATTC_CLIENT:  [0m
+[0;32mI (10001) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (10011) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (10011) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10021) GATTC_CLIENT:  [0m
+[0;32mI (10021) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (10021) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10031) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10041) GATTC_CLIENT:  [0m
+[0;32mI (10041) GATTC_CLIENT: 5f a6 6b 30 53 54 [0m
+[0;32mI (10051) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10051) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10061) GATTC_CLIENT:  [0m
+[0;32mI (10061) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (10071) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10071) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10081) GATTC_CLIENT:  [0m
+[0;32mI (10081) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (10091) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10091) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10101) GATTC_CLIENT:  [0m
+[0;32mI (10101) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (10111) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10111) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10121) GATTC_CLIENT:  [0m
+[0;32mI (10121) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (10131) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10131) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10141) GATTC_CLIENT:  [0m
+[0;32mI (10141) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (10151) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10161) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10161) GATTC_CLIENT:  [0m
+[0;32mI (10161) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (10171) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (10181) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10181) GATTC_CLIENT:  [0m
+[0;32mI (10181) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (10191) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10201) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10201) GATTC_CLIENT:  [0m
+[0;32mI (10211) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (10211) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10221) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10221) GATTC_CLIENT:  [0m
+[0;32mI (10231) GATTC_CLIENT: 42 d9 93 6c 51 65 [0m
+[0;32mI (10231) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10241) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10241) GATTC_CLIENT:  [0m
+[0;32mI (10251) GATTC_CLIENT: 43 ce 8c bf 84 e5 [0m
+[0;32mI (10251) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10261) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10261) GATTC_CLIENT:  [0m
+[0;32mI (10271) GATTC_CLIENT: 64 b9 31 9f fe b4 [0m
+[0;32mI (10271) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10281) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10281) GATTC_CLIENT:  [0m
+[0;32mI (10291) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (10291) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10301) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10311) GATTC_CLIENT:  [0m
+[0;32mI (10311) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (10311) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10321) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10331) GATTC_CLIENT:  [0m
+[0;32mI (10331) GATTC_CLIENT: 7e f4 10 95 29 9c [0m
+[0;32mI (10331) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10341) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10351) GATTC_CLIENT:  [0m
+[0;32mI (10351) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (10351) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10361) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10371) GATTC_CLIENT:  [0m
+[0;32mI (10371) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (10381) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (10381) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10391) GATTC_CLIENT:  [0m
+[0;32mI (10391) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (10401) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10401) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10411) GATTC_CLIENT:  [0m
+[0;32mI (10411) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (10421) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10421) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10431) GATTC_CLIENT:  [0m
+[0;32mI (10431) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (10441) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10441) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10451) GATTC_CLIENT:  [0m
+[0;32mI (10451) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (10461) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10471) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10471) GATTC_CLIENT:  [0m
+[0;32mI (10471) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (10481) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10491) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10491) GATTC_CLIENT:  [0m
+[0;32mI (10491) GATTC_CLIENT: dd 68 dd e0 fc 0f [0m
+[0;32mI (10501) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (10511) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10511) GATTC_CLIENT:  [0m
+[0;32mI (10521) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (10521) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10531) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10531) GATTC_CLIENT:  [0m
+[0;32mI (10541) GATTC_CLIENT: f8 f2 7d 19 ef 97 [0m
+[0;32mI (10541) GATTC_CLIENT: searched Adv Data Len 8, Scan Response Len 0[0m
+[0;32mI (10551) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10551) GATTC_CLIENT:  [0m
+[0;32mI (10561) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (10561) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (10571) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10571) GATTC_CLIENT:  [0m
+[0;32mI (10581) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (10581) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10591) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10591) GATTC_CLIENT:  [0m
+[0;32mI (10601) GATTC_CLIENT: 5f a6 6b 30 53 54 [0m
+[0;32mI (10601) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10611) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10621) GATTC_CLIENT:  [0m
+[0;32mI (10621) GATTC_CLIENT: 15 85 81 23 0d 64 [0m
+[0;32mI (10621) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10631) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10641) GATTC_CLIENT:  [0m
+[0;32mI (10641) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (10641) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10651) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10661) GATTC_CLIENT:  [0m
+[0;32mI (10661) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (10661) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10671) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10681) GATTC_CLIENT:  [0m
+[0;32mI (10681) GATTC_CLIENT: 4a 23 f6 a2 5e 40 [0m
+[0;32mI (10691) GATTC_CLIENT: searched Adv Data Len 4, Scan Response Len 0[0m
+[0;32mI (10691) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10701) GATTC_CLIENT:  [0m
+[0;32mI (10701) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (10711) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10711) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10721) GATTC_CLIENT:  [0m
+[0;32mI (10721) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (10731) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10731) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10741) GATTC_CLIENT:  [0m
+[0;32mI (10741) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (10751) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10751) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10761) GATTC_CLIENT:  [0m
+[0;32mI (10761) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (10771) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10781) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10781) GATTC_CLIENT:  [0m
+[0;32mI (10781) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (10791) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10801) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10801) GATTC_CLIENT:  [0m
+[0;32mI (10801) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (10811) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (10821) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10821) GATTC_CLIENT:  [0m
+[0;32mI (10831) GATTC_CLIENT: 7f ba c7 46 6b 09 [0m
+[0;32mI (10831) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (10841) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10841) GATTC_CLIENT:  [0m
+[0;32mI (10851) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (10851) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10861) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10861) GATTC_CLIENT:  [0m
+[0;32mI (10871) GATTC_CLIENT: 7c de ee 99 34 27 [0m
+[0;32mI (10871) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10881) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10881) GATTC_CLIENT:  [0m
+[0;32mI (10891) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (10891) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10901) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10901) GATTC_CLIENT:  [0m
+[0;32mI (10911) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (10911) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10921) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10921) GATTC_CLIENT:  [0m
+[0;32mI (10931) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (10931) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (10941) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10951) GATTC_CLIENT:  [0m
+[0;32mI (10951) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (10951) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (10961) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10971) GATTC_CLIENT:  [0m
+[0;32mI (10971) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (10971) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (10981) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (10991) GATTC_CLIENT:  [0m
+[0;32mI (10991) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (10991) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11001) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11011) GATTC_CLIENT:  [0m
+[0;32mI (11011) GATTC_CLIENT: 24 90 6a a2 43 b9 [0m
+[0;32mI (11021) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11021) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11031) GATTC_CLIENT:  [0m
+[0;32mI (11031) GATTC_CLIENT: 4b 07 2a b2 af 89 [0m
+[0;32mI (11041) GATTC_CLIENT: searched Adv Data Len 4, Scan Response Len 31[0m
+[0;32mI (11041) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11051) GATTC_CLIENT:  [0m
+[0;32mI (11051) GATTC_CLIENT: 6b d3 f4 70 96 a5 [0m
+[0;32mI (11061) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (11061) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11071) GATTC_CLIENT:  [0m
+[0;32mI (11071) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11081) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11081) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11091) GATTC_CLIENT:  [0m
+[0;32mI (11091) GATTC_CLIENT: 3c b0 52 2d d9 98 [0m
+[0;32mI (11101) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11111) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11111) GATTC_CLIENT:  [0m
+[0;32mI (11111) GATTC_CLIENT: 45 03 01 7b b3 f6 [0m
+[0;32mI (11121) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (11131) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11131) GATTC_CLIENT:  [0m
+[0;32mI (11131) GATTC_CLIENT: 6c 30 86 59 88 21 [0m
+[0;32mI (11141) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (11151) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11151) GATTC_CLIENT:  [0m
+[0;32mI (11161) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (11161) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (11171) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11171) GATTC_CLIENT:  [0m
+[0;32mI (11181) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (11181) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11191) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11191) GATTC_CLIENT:  [0m
+[0;32mI (11201) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (11201) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11211) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11211) GATTC_CLIENT:  [0m
+[0;32mI (11221) GATTC_CLIENT: 75 4a 4e 0d 96 5b [0m
+[0;32mI (11221) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11231) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11241) GATTC_CLIENT:  [0m
+[0;32mI (11241) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (11241) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (11251) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11261) GATTC_CLIENT:  [0m
+[0;32mI (11261) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11261) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11271) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11281) GATTC_CLIENT:  [0m
+[0;32mI (11281) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (11281) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11291) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11301) GATTC_CLIENT:  [0m
+[0;32mI (11301) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (11301) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11311) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11321) GATTC_CLIENT:  [0m
+[0;32mI (11321) GATTC_CLIENT: 70 0a 2f 37 97 3f [0m
+[0;32mI (11331) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (11331) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11341) GATTC_CLIENT:  [0m
+[0;32mI (11341) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11351) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11351) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11361) GATTC_CLIENT:  [0m
+[0;32mI (11361) GATTC_CLIENT: 74 c2 f0 4d 80 61 [0m
+[0;32mI (11371) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (11371) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11381) GATTC_CLIENT:  [0m
+[0;32mI (11381) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11391) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11391) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11401) GATTC_CLIENT:  [0m
+[0;32mI (11401) GATTC_CLIENT: 69 2c 25 3b d7 f5 [0m
+[0;32mI (11411) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11421) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11421) GATTC_CLIENT:  [0m
+[0;32mI (11421) GATTC_CLIENT: 70 ed 6c f3 1e 89 [0m
+[0;32mI (11431) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (11441) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11441) GATTC_CLIENT:  [0m
+[0;32mI (11441) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11451) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11461) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11461) GATTC_CLIENT:  [0m
+[0;32mI (11471) GATTC_CLIENT: 61 7f 10 5b 38 9d [0m
+[0;32mI (11471) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (11481) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11481) GATTC_CLIENT:  [0m
+[0;32mI (11491) GATTC_CLIENT: 5b 23 d0 26 4e 89 [0m
+[0;32mI (11491) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (11501) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11511) GATTC_CLIENT:  [0m
+[0;32mI (11511) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (11511) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (11521) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11521) GATTC_CLIENT:  [0m
+[0;32mI (11531) GATTC_CLIENT: 57 1e 78 60 b5 d9 [0m
+[0;32mI (11531) GATTC_CLIENT: searched Adv Data Len 27, Scan Response Len 0[0m
+[0;32mI (11541) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11541) GATTC_CLIENT:  [0m
+[0;32mI (11551) GATTC_CLIENT: 3a 6d 51 71 fe 08 [0m
+[0;32mI (11551) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11561) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11571) GATTC_CLIENT:  [0m
+[0;32mI (11571) GATTC_CLIENT: 46 b9 db f2 43 c6 [0m
+[0;32mI (11571) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (11581) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11591) GATTC_CLIENT:  [0m
+[0;32mI (11591) GATTC_CLIENT: 16 0a b5 b5 18 f0 [0m
+[0;32mI (11601) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11601) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11611) GATTC_CLIENT:  [0m
+[0;32mI (11611) GATTC_CLIENT: 43 ce 8c bf 84 e5 [0m
+[0;32mI (11611) GATTC_CLIENT: searched Adv Data Len 18, Scan Response Len 0[0m
+[0;32mI (11621) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11631) GATTC_CLIENT:  [0m
+[0;32mI (11631) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (11641) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11641) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11651) GATTC_CLIENT:  [0m
+[0;32mI (11651) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11661) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11661) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11671) GATTC_CLIENT:  [0m
+[0;32mI (11671) GATTC_CLIENT: 1d 96 b5 97 0d 61 [0m
+[0;32mI (11681) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11681) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11691) GATTC_CLIENT:  [0m
+[0;32mI (11691) GATTC_CLIENT: 56 12 fc 70 48 dc [0m
+[0;32mI (11701) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m
+[0;32mI (11701) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11711) GATTC_CLIENT:  [0m
+[0;32mI (11711) GATTC_CLIENT: 46 9b 7e 55 f2 f8 [0m
+[0;32mI (11721) GATTC_CLIENT: searched Adv Data Len 17, Scan Response Len 0[0m
+[0;32mI (11731) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11731) GATTC_CLIENT:  [0m
+[0;32mI (11731) GATTC_CLIENT: 2e e1 72 f0 61 10 [0m
+[0;32mI (11741) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11751) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11751) GATTC_CLIENT:  [0m
+[0;32mI (11751) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (11761) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11771) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11771) GATTC_CLIENT:  [0m
+[0;32mI (11781) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (11781) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11791) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11791) GATTC_CLIENT:  [0m
+[0;32mI (11801) GATTC_CLIENT: 59 97 28 6b b3 b5 [0m
+[0;32mI (11801) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11811) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11811) GATTC_CLIENT:  [0m
+[0;32mI (11821) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11821) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11831) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11831) GATTC_CLIENT:  [0m
+[0;32mI (11841) GATTC_CLIENT: 34 34 c7 eb 7d ba [0m
+[0;32mI (11841) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11851) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11851) GATTC_CLIENT:  [0m
+[0;32mI (11861) GATTC_CLIENT: 7b 86 af f6 ea 4e [0m
+[0;32mI (11861) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11871) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11881) GATTC_CLIENT:  [0m
+[0;32mI (11881) GATTC_CLIENT: 6d de c3 04 e4 1b [0m
+[0;32mI (11881) GATTC_CLIENT: searched Adv Data Len 31, Scan Response Len 0[0m
+[0;32mI (11891) GATTC_CLIENT: searched Device Name Len 0[0m
+[0;32mI (11901) GATTC_CLIENT:  [0m
+[0;32mI (11901) GATTC_CLIENT: 70 ed 6c f3 1e 89 [0m
+[0;32mI (11901) GATTC_CLIENT: searched Adv Data Len 19, Scan Response Len 0[0m

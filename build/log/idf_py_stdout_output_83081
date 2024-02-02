@@ -1,0 +1,165 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2950ch (169228) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00039534 vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003e9b0 vaddr=40080000 size=01668h (  5736) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cbb4h (641972) map[0m
+[0;32mI (284) esp_image: segment 4: paddr=000dcbdc vaddr=40081668 size=17218h ( 94744) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (321) boot: Disabling RNG early entropy source...[0m
+[0;32mI (333) cpu_start: Multicore app[0m
+[0;32mI (342) cpu_start: Pro cpu start user code[0m
+[0;32mI (342) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (342) cpu_start: Application information:[0m
+[0;32mI (345) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (352) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (363) cpu_start: ELF file SHA256:  134126ca4...[0m
+[0;32mI (369) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (380) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (385) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (403) heap_init: At 3FFC7730 len 000188D0 (98 KiB): DRAM[0m
+[0;32mI (409) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (422) heap_init: At 40098880 len 00007780 (29 KiB): IRAM[0m
+[0;32mI (430) spi_flash: detected chip: winbond[0m
+[0;32mI (433) spi_flash: flash io: dio[0m
+[0;33mW (437) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (448) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (493) [I2C]: Module configuration successful![0m
+[0;32mI (493) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (513) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (523) [SWITCH]: Configuration successful![0m
+I (24543) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (24553) wifi:wifi firmware version: a194738
+I (24563) wifi:wifi certification version: v7.0
+I (24563) wifi:config NVS flash: enabled
+I (24563) wifi:config nano formating: disabled
+I (24563) wifi:Init data frame dynamic rx buffer num: 32
+I (24573) wifi:Init static rx mgmt buffer num: 5
+I (24573) wifi:Init management short buffer num: 32
+I (24573) wifi:Init dynamic tx buffer num: 32
+I (24583) wifi:Init static rx buffer size: 1600
+I (24583) wifi:Init static rx buffer num: 10
+I (24593) wifi:Init dynamic rx buffer num: 32
+[0;32mI (24593) wifi_init: rx ba win: 6[0m
+[0;32mI (24593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (24603) wifi_init: udp mbox: 6[0m
+[0;32mI (24603) wifi_init: tcp mbox: 6[0m
+[0;32mI (24613) wifi_init: tcp tx win: 5760[0m
+[0;32mI (24613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (24623) wifi_init: tcp mss: 1440[0m
+[0;32mI (24623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (24623) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (24633) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (24723) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (24723) wifi:enable tsf
+[0;32mI (24723) [WI-FI]: Wifi started![0m
+[0;32mI (27143) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (29553) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (31973) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (34383) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (36803) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (39223) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (41633) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (44053) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (46463) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (48883) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (51293) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (53713) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (56133) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (58543) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (60963) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (63373) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (65793) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (68213) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (70623) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (73043) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (75453) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (77873) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (80283) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (82703) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (85123) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (87533) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (89953) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (92363) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (94783) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (97203) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (99613) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (102033) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (104443) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (106863) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (109273) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (111693) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (114113) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (116523) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (118943) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (121353) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (123773) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (126183) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (128603) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (131023) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (133433) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (135853) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (138263) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (140683) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (143093) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (145513) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (147923) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (150343) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (152753) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (155173) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (157593) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (160003) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (162423) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (164833) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (167253) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (169663) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (172083) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (174493) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (176913) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (179333) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (181743) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (184163) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (186573) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (188993) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (191403) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (193823) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (196233) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (198653) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (201063) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (203483) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (205903) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (208313) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (210733) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (213143) [WI-FI]: Reconnecting to wifi ...[0m

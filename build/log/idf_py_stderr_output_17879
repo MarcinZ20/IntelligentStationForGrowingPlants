@@ -1,0 +1,101 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c440: __memset_aux in ROM
+[0m
+[0;33m0x400d62d8: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:33
+[0m
+[0;33m0x4000c43d: __memset_aux in ROM
+[0m
+[0;33m0x400d621e: ssd1306_clear_screen at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:228
+[0m
+[0;33m0x400d6293: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:50
+[0m
+[0;33m0x400d62f3: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:42
+[0m
+[0;33m0x4008ac19: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c440: __memset_aux in ROM
+[0m
+[0;33m0x400d62d8: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:33
+[0m
+[0;33m0x4000c43d: __memset_aux in ROM
+[0m
+[0;33m0x400d621e: ssd1306_clear_screen at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:228
+[0m
+[0;33m0x400d6293: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:50
+[0m
+[0;33m0x400d62f3: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:42
+[0m
+[0;33m0x4008ac19: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c440: __memset_aux in ROM
+[0m
+[0;33m0x400d62d8: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:33
+[0m
+[0;33m0x4000c43d: __memset_aux in ROM
+[0m
+[0;33m0x400d621e: ssd1306_clear_screen at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:228
+[0m
+[0;33m0x400d6293: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:50
+[0m
+[0;33m0x400d62f3: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:42
+[0m
+[0;33m0x4008ac19: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c440: __memset_aux in ROM
+[0m
+[0;33m0x400d62d8: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:33
+[0m
+[0;33m0x4000c43d: __memset_aux in ROM
+[0m
+[0;33m0x400d621e: ssd1306_clear_screen at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:228
+[0m
+[0;33m0x400d6293: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:50
+[0m
+[0;33m0x400d62f3: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:42
+[0m
+[0;33m0x4008ac19: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c440: __memset_aux in ROM
+[0m
+[0;33m0x400d62d8: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:33
+[0m
+[0;33m0x4000c43d: __memset_aux in ROM
+[0m
+[0;33m0x400d621e: ssd1306_clear_screen at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:228
+[0m
+[0;33m0x400d6293: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:50
+[0m
+[0;33m0x400d62f3: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:42
+[0m
+[0;33m0x4008ac19: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c440: __memset_aux in ROM
+[0m
+[0;33m0x400d62d8: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:33
+[0m
+[0;33m0x4000c43d: __memset_aux in ROM
+[0m
+[0;33m0x400d621e: ssd1306_clear_screen at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:228
+[0m
+[0;33m0x400d6293: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:50
+[0m
+[0;33m0x400d62f3: display_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:42
+[0m
+[0;33m0x4008ac19: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,1147 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x4008189e: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40091bf1: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40098ec5: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x40091be7: _esp_error_check_failed at /Users/marcin/esp/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m0x400d9f5d: ble_client_run at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-client.c:440 (discriminator 1)
+[0m
+[0;33m0x400da122: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:27
+[0m
+[0;33m0x401bc82b: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x400926fd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

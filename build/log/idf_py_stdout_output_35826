@@ -1,0 +1,549 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29b00h (170752) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00039b28 vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003efa4 vaddr=40080000 size=01074h (  4212) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d868h (645224) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dd890 vaddr=40081074 size=1780ch ( 96268) load[0m
+[0;32mI (322) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (323) boot: Disabling RNG early entropy source...[0m
+[0;32mI (334) cpu_start: Multicore app[0m
+[0;32mI (343) cpu_start: Pro cpu start user code[0m
+[0;32mI (343) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (343) cpu_start: Application information:[0m
+[0;32mI (346) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (353) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (358) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (365) cpu_start: ELF file SHA256:  a957406eb...[0m
+[0;32mI (370) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (376) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (381) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (386) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (391) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (398) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (404) heap_init: At 3FFC7740 len 000188C0 (98 KiB): DRAM[0m
+[0;32mI (410) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (416) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 40098880 len 00007780 (29 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (438) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (448) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (457) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (463) main_task: Started on CPU0[0m
+[0;32mI (473) main_task: Calling app_main()[0m
+[0;32mI (503) I2C: Module configuration successful![0m
+[0;32mI (503) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (553) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (563) wifi:wifi firmware version: a194738
+I (573) wifi:wifi certification version: v7.0
+I (573) wifi:config NVS flash: enabled
+I (573) wifi:config nano formating: disabled
+I (573) wifi:Init data frame dynamic rx buffer num: 32
+I (573) wifi:Init static rx mgmt buffer num: 5
+I (583) wifi:Init management short buffer num: 32
+I (583) wifi:Init dynamic tx buffer num: 32
+I (593) wifi:Init static rx buffer size: 1600
+I (593) wifi:Init static rx buffer num: 10
+I (593) wifi:Init dynamic rx buffer num: 32
+[0;32mI (603) wifi_init: rx ba win: 6[0m
+[0;32mI (603) wifi_init: tcpip mbox: 32[0m
+[0;32mI (613) wifi_init: udp mbox: 6[0m
+[0;32mI (613) wifi_init: tcp mbox: 6[0m
+[0;32mI (613) wifi_init: tcp tx win: 5760[0m
+[0;32mI (623) wifi_init: tcp rx win: 5760[0m
+[0;32mI (623) wifi_init: tcp mss: 1440[0m
+[0;32mI (633) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (633) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (643) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (723) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (723) wifi:enable tsf
+[0;32mI (733) [WI-FI]: Wifi started![0m
+[0;32mI (3143) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (5563) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (7973) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (8043) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (8043) wifi:state: init -> auth (b0)
+I (8053) wifi:state: auth -> assoc (0)
+I (8073) wifi:state: assoc -> run (10)
+I (8093) wifi:connected with supertajnasiec, aid = 1, channel 1, BW20, bssid = ae:23:44:37:86:13
+I (8093) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (8103) wifi:pm start, type: 1
+
+I (8103) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (8143) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (8143) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (9113) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (9113) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (9113) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (9873) wifi:<ba-add>idx:0 (ifx:0, ae:23:44:37:86:13), tid:0, ssn:3, winSize:64
+[0;32mI (10403) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (11403) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (11663) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (16403) [MQTT]: Sent publish successful, msg_id: 2[0m
+I (19933) wifi:bcn_timeout,ap_probe_send_start
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (21403) [MQTT]: Sent publish successful, msg_id: 3[0m
+I (22433) wifi:ap_probe_send over, resett wifi status to disassoc
+I (22433) wifi:state: run -> init (c800)
+I (22443) wifi:pm stop, total sleep time: 3132106 us / 14338419 us
+
+I (22443) wifi:<ba-del>idx:0, tid:0
+I (22443) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (22453) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (22463) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (22463) [MQTT]: CLIENT STOPPED[0m
+[0;31mE (22463) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (22483) [MQTT]: EVENT_DISCONNECTED[0m
+I (23313) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (23323) wifi:state: init -> auth (b0)
+I (24323) wifi:state: auth -> init (200)
+I (24323) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (24323) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (26743) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (27603) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (27603) wifi:state: init -> auth (b0)
+I (27613) wifi:state: auth -> assoc (0)
+I (27623) wifi:state: assoc -> run (10)
+I (27643) wifi:connected with supertajnasiec, aid = 2, channel 8, BW20, bssid = ae:23:44:37:86:13
+I (27643) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (27663) wifi:pm start, type: 1
+
+I (27663) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (27743) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (27743) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (28673) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (28673) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (28673) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (28733) wifi:<ba-add>idx:0 (ifx:0, ae:23:44:37:86:13), tid:0, ssn:3, winSize:64
+[0;32mI (28973) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (29973) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (30023) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (30813) wifi:state: run -> init (1a0)
+I (30813) wifi:pm stop, total sleep time: 2009194 us / 3148020 us
+
+I (30813) wifi:<ba-del>idx:0, tid:0
+I (30813) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (30823) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (30823) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (30833) [MQTT]: CLIENT STOPPED[0m
+I (30843) wifi:[0;31mE (30843) mqtt_client: Poll read error: 119, aborting connection[0m
+new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (30853) wifi:state: init -> auth (b0)
+[0;31mE (30843) transport_base: poll_write select error 0, errno = Success, fd = 54[0m
+[0;33mW (30863) transport_base: Poll timeout or error, errno=Success, fd=54, timeout_ms=10000[0m
+[0;31mE (30873) mqtt_client: Writing failed: errno=0[0m
+[0;32mI (30883) [MQTT]: EVENT_ERROR[0m
+[0;32mI (30883) [MQTT]: Last errno string (Success)[0m
+[0;31mE (30893) mqtt_client: Error sending disconnect message[0m
+[0;32mI (30893) [MQTT]: EVENT_DISCONNECTED[0m
+I (31863) wifi:state: auth -> init (200)
+I (31863) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (31863) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (34283) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (36693) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (39113) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (39123) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (39123) wifi:state: init -> auth (b0)
+I (39133) wifi:state: auth -> assoc (0)
+I (39143) wifi:state: assoc -> run (10)
+I (39163) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 3e:28:66:6e:a6:3a
+I (39163) wifi:security: WPA2-PSK, phy: bgn, rssi: -58
+I (39173) wifi:pm start, type: 1
+
+I (39173) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (39203) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (39213) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (40183) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (40183) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (40183) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (40243) wifi:<ba-add>idx:0 (ifx:0, 3e:28:66:6e:a6:3a), tid:0, ssn:3, winSize:64
+[0;32mI (40343) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (41343) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (41413) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (46343) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (46483) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (51343) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (51403) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (56343) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;32mI (56723) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (61343) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;32mI (61403) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (66343) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;32mI (66393) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (71343) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;32mI (71573) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (76343) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;32mI (76393) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (81343) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;32mI (81613) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+I (85913) wifi:state: run -> init (1a0)
+I (85913) wifi:pm stop, total sleep time: 40696991 us / 46736058 us
+
+I (85913) wifi:<ba-del>idx:0, tid:0
+I (85913) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (85923) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (85923) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (85933) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (85943) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (85943) [MQTT]: CLIENT STOPPED[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (86343) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;32mI (88343) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (90753) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (93173) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (95583) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (98003) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (100413) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (102833) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (105243) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (107663) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (110083) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (112493) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (114913) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (117323) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (119743) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (122153) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (124573) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (126983) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (129403) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (131813) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (134233) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (136643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (139063) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (141473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (143893) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (146303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (148723) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (151143) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (153553) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (155973) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (158383) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (160803) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (163213) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (165633) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (168043) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (170463) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (172873) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (175293) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (177703) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (180123) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (182533) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (184953) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (187363) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (189783) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (192193) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (194613) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (197033) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (199443) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (201863) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (204273) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (206693) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (209103) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (211523) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (213933) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (216353) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (218763) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (221183) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (223593) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (226013) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (228423) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (230843) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (233253) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (235673) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (238093) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (240503) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (242923) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (245333) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (247753) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (250163) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (252583) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (254993) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (257413) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (259823) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (262243) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (264653) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (267073) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (269483) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (271903) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (274313) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (276733) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (279153) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (281563) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (283983) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (286393) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (288813) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (291223) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (293643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (296053) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (298473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (300883) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (303303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (305713) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (308133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (310543) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (312963) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (315373) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (317793) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (320203) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (322623) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (325033) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (327453) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (329863) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (332283) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (334693) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (337113) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (339523) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (341943) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (344353) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (346773) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (349183) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (351603) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (354013) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (356433) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (358843) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (361263) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (363673) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (366093) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (368503) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (370923) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (373333) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (375753) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (378163) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (380583) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (383003) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (385413) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (387833) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (390243) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (392663) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (395073) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (397493) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (399903) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (402323) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (404733) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (407153) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (409563) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (411983) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (414393) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (416813) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (419223) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (421643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (424053) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (426473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (428883) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (431303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (433713) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (436133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (438543) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (440963) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (443373) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (445793) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (448203) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (450623) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (453033) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (455453) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (457863) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (460283) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (462693) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (465113) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (467523) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (469943) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (472353) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (474773) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (477183) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (479603) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (482013) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (484433) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (486843) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (489263) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (491673) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (494093) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (496503) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (498923) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (501333) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (503753) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (506163) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (508583) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (510993) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (513413) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (515823) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (518243) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (520653) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (523073) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (525493) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (527903) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (530323) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (532733) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (535153) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (537563) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (539983) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (542393) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (544813) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (547223) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (549643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (552053) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (554473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (556883) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (559303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (561713) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (564133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (566543) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (568963) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (571373) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (573793) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (576203) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (578623) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (581033) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (583453) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (585863) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (588283) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (590693) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (593113) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (595523) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (597943) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (600353) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (602773) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (605183) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (607603) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (610013) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (612433) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (614843) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (617263) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (619673) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (622093) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (624503) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (626923) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (629333) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (631753) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (634163) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (636583) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (638993) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (641413) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (643823) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (646243) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (648653) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (651073) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (653483) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (655903) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (658313) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (660733) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (663153) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (665563) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (667983) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (670393) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (672813) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (675223) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (677643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (680053) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (682473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (684883) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (687303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (689713) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (692133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (694543) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (696963) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (699373) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (701793) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (704203) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (706623) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (709033) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (711453) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (713863) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (716283) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (718693) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (721113) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (723523) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (725943) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (728353) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (730773) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (733183) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (735603) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (738013) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (740433) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (742843) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (745263) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (747673) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (750093) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (752503) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (754923) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (757333) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (759753) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (762163) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (764583) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (766993) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (769413) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (771823) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (774243) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (776653) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (779073) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (781483) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (783903) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (786313) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (788733) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (791143) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (793563) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (795973) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (798393) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (800813) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (803223) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (805643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (808053) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (810473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (812883) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (815303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (817713) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (820133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (822543) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (824963) [WI-FI]: Ponowna próba połączenia do sieci ...[0m

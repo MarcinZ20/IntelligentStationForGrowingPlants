@@ -1,0 +1,122 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/bootloader.bin
+Bootloader binary size 0x67f0 bytes. 0x810 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:9:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c: In function 'get_mac_address':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:81:12: warning: returning 'uint8_t' {aka 'unsigned char'} from a function with return type 'char *' makes pointer from integer without a cast [-Wint-conversion]
+   81 |     return *mac;
+      |            ^~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c: In function 'configure_wifi':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:211:17: warning: unused variable 'bits' [-Wunused-variable]
+  211 |     EventBits_t bits = xEventGroupWaitBits(s_wifi_event_group,
+      |                 ^~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:10:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c: In function 'create_temp_message':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:80:12: warning: returning 'char' from a function with return type 'const char *' makes pointer from integer without a cast [-Wint-conversion]
+   80 |     return *text_buffer;
+      |            ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c: In function 'create_humidity_message':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:87:12: warning: returning 'char' from a function with return type 'const char *' makes pointer from integer without a cast [-Wint-conversion]
+   87 |     return *text_buffer;
+      |            ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c: In function 'create_lightInt_message':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:94:12: warning: returning 'char' from a function with return type 'const char *' makes pointer from integer without a cast [-Wint-conversion]
+   94 |     return *text_buffer;
+      |            ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c: At top level:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:90:20: warning: 'create_lightInt_message' defined but not used [-Wunused-function]
+   90 | static const char* create_lightInt_message(float intensity) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:83:20: warning: 'create_humidity_message' defined but not used [-Wunused-function]
+   83 | static const char* create_humidity_message(float humidity) {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:76:20: warning: 'create_temp_message' defined but not used [-Wunused-function]
+   76 | static const char* create_temp_message(float temperature) {
+      |                    ^~~~~~~~~~~~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:6:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:17:17: warning: '_pow' defined but not used [-Wunused-function]
+   17 | static uint32_t _pow(uint8_t m, uint8_t n)
+      |                 ^~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:21:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:29:13: warning: 'configure_led' defined but not used [-Wunused-function]
+   29 | static void configure_led() {
+      |             ^~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable InteligentStationForGrowingPlants.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+[9/10] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/marcin/esp/IntelligentStationForGrowingPlants/build/partition_table/partition-table.bin /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+InteligentStationForGrowingPlants.bin binary size 0xc5cd0 bytes. Smallest app partition is 0x200000 bytes. 0x13a330 bytes (61%) free.
+[9/10] cd /Users/marcin/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/marcin/esp/esp-idf -D "SERIAL_TOOL=/Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python;;/Users/marcin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/marcin/esp/IntelligentStationForGrowingPlants/build -P /Users/marcin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-01A178B2 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 InteligentStationForGrowingPlants.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/cu.usbserial-01A178B2
+Connecting..........
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b4:e6:2d:ea:62:f5
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash params set to 0x0220
+Compressed 26608 bytes to 16301...
+Writing at 0x00001000... (100 %)
+Wrote 26608 bytes (16301 compressed) at 0x00001000 in 0.8 seconds (effective 276.4 kbit/s)...
+Hash of data verified.
+Compressed 810192 bytes to 505187...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d079... (6 %)
+Writing at 0x0002616b... (9 %)
+Writing at 0x0002ac85... (12 %)
+Writing at 0x0003493a... (16 %)
+Writing at 0x0003d8d6... (19 %)
+Writing at 0x00043239... (22 %)
+Writing at 0x000490e9... (25 %)
+Writing at 0x0004ee6f... (29 %)
+Writing at 0x00054c3f... (32 %)
+Writing at 0x0005a854... (35 %)
+Writing at 0x0005fb9b... (38 %)
+Writing at 0x00064efd... (41 %)
+Writing at 0x0006a3fb... (45 %)
+Writing at 0x0006f73d... (48 %)
+Writing at 0x00074e1b... (51 %)
+Writing at 0x0007a688... (54 %)
+Writing at 0x0008054b... (58 %)
+Writing at 0x00085eb7... (61 %)
+Writing at 0x0008b9bb... (64 %)
+Writing at 0x00091744... (67 %)
+Writing at 0x00096fa0... (70 %)
+Writing at 0x0009cc35... (74 %)
+Writing at 0x000a331d... (77 %)
+Writing at 0x000a8da5... (80 %)
+Writing at 0x000ae4fe... (83 %)
+Writing at 0x000b847b... (87 %)
+Writing at 0x000bfac9... (90 %)
+Writing at 0x000c59bc... (93 %)
+Writing at 0x000cb807... (96 %)
+Writing at 0x000d1188... (100 %)
+Wrote 810192 bytes (505187 compressed) at 0x00010000 in 13.2 seconds (effective 492.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00008000 in 0.1 seconds (effective 285.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

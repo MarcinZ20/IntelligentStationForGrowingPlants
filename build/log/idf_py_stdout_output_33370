@@ -1,0 +1,569 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29314h (168724) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0003933c vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003e7b8 vaddr=40080000 size=01860h (  6240) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9c6d4h (640724) map[0m
+[0;32mI (284) esp_image: segment 4: paddr=000dc6fc vaddr=40081860 size=16f74h ( 94068) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (321) boot: Disabling RNG early entropy source...[0m
+[0;32mI (332) cpu_start: Multicore app[0m
+[0;32mI (341) cpu_start: Pro cpu start user code[0m
+[0;32mI (341) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (341) cpu_start: Application information:[0m
+[0;32mI (344) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (351) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (363) cpu_start: ELF file SHA256:  ad95459ee...[0m
+[0;32mI (368) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (379) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (384) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (389) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (396) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 3FFC7730 len 000188D0 (98 KiB): DRAM[0m
+[0;32mI (408) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (421) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (429) spi_flash: detected chip: winbond[0m
+[0;32mI (432) spi_flash: flash io: dio[0m
+[0;33mW (436) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (447) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (493) I2C: Module configuration successful![0m
+[0;32mI (493) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (543) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (553) wifi:wifi firmware version: a194738
+I (563) wifi:wifi certification version: v7.0
+I (563) wifi:config NVS flash: enabled
+I (563) wifi:config nano formating: disabled
+I (563) wifi:Init data frame dynamic rx buffer num: 32
+I (563) wifi:Init static rx mgmt buffer num: 5
+I (573) wifi:Init management short buffer num: 32
+I (573) wifi:Init dynamic tx buffer num: 32
+I (583) wifi:Init static rx buffer size: 1600
+I (583) wifi:Init static rx buffer num: 10
+I (583) wifi:Init dynamic rx buffer num: 32
+[0;32mI (593) wifi_init: rx ba win: 6[0m
+[0;32mI (593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (603) wifi_init: udp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp tx win: 5760[0m
+[0;32mI (613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (613) wifi_init: tcp mss: 1440[0m
+[0;32mI (623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (623) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (633) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (713) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (713) wifi:enable tsf
+[0;32mI (723) [WI-FI]: Wifi started![0m
+[0;32mI (3133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (3143) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (5553) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (5553) [APP]: WIFI DISCONNECTED[0m
+I (5653) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (5653) wifi:state: init -> auth (b0)
+I (6653) wifi:state: auth -> init (200)
+I (6653) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (6663) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (6663) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (9073) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (9083) [APP]: WIFI DISCONNECTED[0m
+I (9083) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (9083) wifi:state: init -> auth (b0)
+I (9093) wifi:state: auth -> assoc (0)
+I (9103) wifi:state: assoc -> run (10)
+I (9123) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 96:1a:aa:0b:bb:81
+I (9123) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (9133) wifi:pm start, type: 1
+
+I (9133) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (9133) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (9143) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (10153) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (10153) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (10153) [APP]: WIFI CONNECTED[0m
+[0;32mI (10163) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (10193) wifi:<ba-add>idx:0 (ifx:0, 96:1a:aa:0b:bb:81), tid:0, ssn:3, winSize:64
+[0;32mI (10283) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (10293) [APP]: MQTT CONNECTED[0m
+[0;32mI (10293) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (10343) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (16303) wifi:state: run -> init (1a0)
+I (16303) wifi:pm stop, total sleep time: 5559819 us / 7173560 us
+
+I (16303) wifi:<ba-del>idx:0, tid:0
+I (16303) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (16313) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (16313) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (16323) [APP]: WIFI DISCONNECTED[0m
+[0;31mE (16333) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (16343) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (16343) [MQTT]: client deleted[0m
+[0;32mI (18733) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (21153) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (21343) [APP]: WIFI DISCONNECTED[0m
+[0;31mE (21343) [MQTT]: client deleted[0m
+
+assert failed: spinlock_acquire spinlock.h:140 (lock->count == 0)
+
+
+Backtrace: 0x40081956:0x3ffb21c0 0x4008b071:0x3ffb21e0 0x40092679:0x3ffb2200 0x4008be42:0x3ffb2320 0x4008b9ec:0x3ffb2350 0x4008bac6:0x3ffb2390 0x400da318:0x3ffb23b0 0x400d8124:0x3ffb23d0 0x400d85d1:0x3ffb23f0 0x4016a70f:0x3ffb2430 0x4008bbbd:0x3ffb2460
+
+
+
+
+ELF file SHA256: ad95459ee
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29314h (168724) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0003933c vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003e7b8 vaddr=40080000 size=01860h (  6240) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9c6d4h (640724) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dc6fc vaddr=40081860 size=16f74h ( 94068) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (322) boot: Disabling RNG early entropy source...[0m
+[0;32mI (333) cpu_start: Multicore app[0m
+[0;32mI (342) cpu_start: Pro cpu start user code[0m
+[0;32mI (342) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (342) cpu_start: Application information:[0m
+[0;32mI (345) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (352) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (364) cpu_start: ELF file SHA256:  ad95459ee...[0m
+[0;32mI (369) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (380) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (385) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (403) heap_init: At 3FFC7730 len 000188D0 (98 KiB): DRAM[0m
+[0;32mI (409) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (422) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (430) spi_flash: detected chip: winbond[0m
+[0;32mI (433) spi_flash: flash io: dio[0m
+[0;33mW (437) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (448) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (493) I2C: Module configuration successful![0m
+[0;32mI (493) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (543) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (553) wifi:wifi firmware version: a194738
+I (563) wifi:wifi certification version: v7.0
+I (563) wifi:config NVS flash: enabled
+I (563) wifi:config nano formating: disabled
+I (563) wifi:Init data frame dynamic rx buffer num: 32
+I (563) wifi:Init static rx mgmt buffer num: 5
+I (573) wifi:Init management short buffer num: 32
+I (573) wifi:Init dynamic tx buffer num: 32
+I (583) wifi:Init static rx buffer size: 1600
+I (583) wifi:Init static rx buffer num: 10
+I (583) wifi:Init dynamic rx buffer num: 32
+[0;32mI (593) wifi_init: rx ba win: 6[0m
+[0;32mI (593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (603) wifi_init: udp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp tx win: 5760[0m
+[0;32mI (613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (613) wifi_init: tcp mss: 1440[0m
+[0;32mI (623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (623) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (633) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (713) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (713) wifi:enable tsf
+[0;32mI (723) [WI-FI]: Wifi started![0m
+[0;32mI (3133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (3143) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (5553) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (5553) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (7963) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (7973) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (10383) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (10383) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (12803) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (12803) [APP]: WIFI DISCONNECTED[0m
+I (12813) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (12813) wifi:state: init -> auth (b0)
+I (12823) wifi:state: auth -> assoc (0)
+I (12843) wifi:state: assoc -> run (10)
+I (12863) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = ea:ab:b9:b2:dc:38
+I (12863) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (12873) wifi:pm start, type: 1
+
+I (12873) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (12933) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (12933) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (13883) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (13883) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (13883) [APP]: WIFI CONNECTED[0m
+[0;32mI (13893) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (14203) wifi:<ba-add>idx:0 (ifx:0, ea:ab:b9:b2:dc:38), tid:0, ssn:3, winSize:64
+[0;32mI (14463) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (14463) [APP]: MQTT CONNECTED[0m
+[0;32mI (14473) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (14583) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (21023) wifi:state: run -> init (1a0)
+I (21023) wifi:pm stop, total sleep time: 5674734 us / 8153733 us
+
+I (21023) wifi:<ba-del>idx:0, tid:0
+I (21033) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (21033) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (21043) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (21043) [APP]: WIFI DISCONNECTED[0m
+[0;31mE (21053) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (21063) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (21063) [MQTT]: client deleted[0m
+[0;32mI (23453) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (25873) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (26063) [APP]: WIFI DISCONNECTED[0m
+[0;31mE (26063) [MQTT]: client deleted[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4008baaa  PS      : 0x00060930  A0      : 0x800da31b  A1      : 0x3ffb2390  
+A2      : 0xa5a5a5a5  A3      : 0xffffffff  A4      : 0x3f403678  A5      : 0x3ffb23b0  
+A6      : 0x3ffb2390  A7      : 0xa5a5a5a5  A8      : 0x8016b0a4  A9      : 0x3ffb2320  
+A10     : 0x0000002c  A11     : 0x3ffb23b0  A12     : 0x3ffb2390  A13     : 0x0000000c  
+A14     : 0x00000018  A15     : 0x00000002  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0xa5a5a5ad  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x4008baa7:0x3ffb2390 0x400da318:0x3ffb23b0 0x400d8124:0x3ffb23d0 0x400d85d1:0x3ffb23f0 0x4016a70f:0x3ffb2430 0x4008bbbd:0x3ffb2460
+
+
+
+
+ELF file SHA256: ad95459ee
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29314h (168724) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0003933c vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003e7b8 vaddr=40080000 size=01860h (  6240) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9c6d4h (640724) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dc6fc vaddr=40081860 size=16f74h ( 94068) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (322) boot: Disabling RNG early entropy source...[0m
+[0;32mI (333) cpu_start: Multicore app[0m
+[0;32mI (342) cpu_start: Pro cpu start user code[0m
+[0;32mI (342) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (342) cpu_start: Application information:[0m
+[0;32mI (345) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (352) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (364) cpu_start: ELF file SHA256:  ad95459ee...[0m
+[0;32mI (369) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (380) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (385) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (403) heap_init: At 3FFC7730 len 000188D0 (98 KiB): DRAM[0m
+[0;32mI (409) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (422) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (430) spi_flash: detected chip: winbond[0m
+[0;32mI (433) spi_flash: flash io: dio[0m
+[0;33mW (437) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (448) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (493) I2C: Module configuration successful![0m
+[0;32mI (493) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (543) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (553) wifi:wifi firmware version: a194738
+I (563) wifi:wifi certification version: v7.0
+I (563) wifi:config NVS flash: enabled
+I (563) wifi:config nano formating: disabled
+I (563) wifi:Init data frame dynamic rx buffer num: 32
+I (563) wifi:Init static rx mgmt buffer num: 5
+I (573) wifi:Init management short buffer num: 32
+I (573) wifi:Init dynamic tx buffer num: 32
+I (583) wifi:Init static rx buffer size: 1600
+I (583) wifi:Init static rx buffer num: 10
+I (583) wifi:Init dynamic rx buffer num: 32
+[0;32mI (593) wifi_init: rx ba win: 6[0m
+[0;32mI (593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (603) wifi_init: udp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp tx win: 5760[0m
+[0;32mI (613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (613) wifi_init: tcp mss: 1440[0m
+[0;32mI (623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (623) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (633) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (713) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (713) wifi:enable tsf
+[0;32mI (723) [WI-FI]: Wifi started![0m
+[0;32mI (3133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (3143) [APP]: WIFI DISCONNECTED[0m
+I (3263) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3273) wifi:state: init -> auth (b0)
+I (3273) wifi:state: auth -> assoc (0)
+I (3283) wifi:state: assoc -> run (10)
+I (3303) wifi:connected with supertajnasiec, aid = 1, channel 1, BW20, bssid = 62:cc:81:ea:ab:8d
+I (3303) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (3323) wifi:pm start, type: 1
+
+I (3323) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3343) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3353) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4333) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (4333) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (4333) [APP]: WIFI CONNECTED[0m
+[0;32mI (4343) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (4483) wifi:<ba-add>idx:0 (ifx:0, 62:cc:81:ea:ab:8d), tid:0, ssn:3, winSize:64
+[0;32mI (4783) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (4793) [APP]: MQTT CONNECTED[0m
+[0;32mI (4793) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (4993) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (51273) wifi:bcn_timeout,ap_probe_send_start
+I (53783) wifi:ap_probe_send over, resett wifi status to disassoc
+I (53783) wifi:state: run -> init (c800)
+I (53783) wifi:pm stop, total sleep time: 39275029 us / 50453152 us
+
+I (53783) wifi:<ba-del>idx:0, tid:0
+I (53783) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (53793) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (53793) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (53803) [APP]: WIFI DISCONNECTED[0m
+[0;31mE (53813) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;31mE (53823) [MQTT]: client deleted[0m
+[0;32mI (53823) [MQTT]: EVENT_DISCONNECTED[0m
+I (54683) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (54683) wifi:state: init -> auth (b0)
+I (54693) wifi:state: auth -> init (1c0)
+I (54693) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (54693) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (57113) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (57973) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (57973) wifi:state: init -> auth (b0)
+I (57973) wifi:state: auth -> assoc (0)
+I (57983) wifi:state: assoc -> run (10)
+I (58013) wifi:connected with supertajnasiec, aid = 2, channel 8, BW20, bssid = 62:cc:81:ea:ab:8d
+I (58013) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (58023) wifi:pm start, type: 1
+
+I (58023) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (58053) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (58053) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;31mE (58833) [APP]: WIFI DISCONNECTED[0m
+[0;31mE (58833) [MQTT]: client deleted[0m
+
+assert failed: spinlock_acquire spinlock.h:140 (lock->count == 0)
+
+
+Backtrace: 0x40081956:0x3ffb21c0 0x4008b071:0x3ffb21e0 0x40092679:0x3ffb2200 0x4008be42:0x3ffb2320 0x4008b9ec:0x3ffb2350 0x4008bac6:0x3ffb2390 0x400da318:0x3ffb23b0 0x400d8124:0x3ffb23d0 0x400d85d1:0x3ffb23f0 0x4016a70f:0x3ffb2430 0x4008bbbd:0x3ffb2460
+
+
+
+
+ELF file SHA256: ad95459ee
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29314h (168724) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0003933c vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003e7b8 vaddr=40080000 size=01860h (  6240) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9c6d4h (640724) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dc6fc vaddr=40081860 size=16f74h ( 94068) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (322) boot: Disabling RNG early entropy source...[0m
+[0;32mI (333) cpu_start: Multicore app[0m
+[0;32mI (342) cpu_start: Pro cpu start user code[0m
+[0;32mI (342) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (342) cpu_start: Application information:[0m
+[0;32mI (345) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (352) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (364) cpu_start: ELF file SHA256:  ad95459ee...[0m
+[0;32mI (369) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (380) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (385) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (403) heap_init: At 3FFC7730 len 000188D0 (98 KiB): DRAM[0m
+[0;32mI (409) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (422) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (430) spi_flash: detected chip: winbond[0m
+[0;32mI (433) spi_flash: flash io: dio[0m
+[0;33mW (437) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (448) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (493) I2C: Module configuration successful![0m
+[0;32mI (493) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (543) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (553) wifi:wifi firmware version: a194738
+I (563) wifi:wifi certification version: v7.0
+I (563) wifi:config NVS flash: enabled
+I (563) wifi:config nano formating: disabled
+I (563) wifi:Init data frame dynamic rx buffer num: 32
+I (563) wifi:Init static rx mgmt buffer num: 5
+I (573) wifi:Init management short buffer num: 32
+I (573) wifi:Init dynamic tx buffer num: 32
+I (583) wifi:Init static rx buffer size: 1600
+I (583) wifi:Init static rx buffer num: 10
+I (583) wifi:Init dynamic rx buffer num: 32
+[0;32mI (593) wifi_init: rx ba win: 6[0m
+[0;32mI (593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (603) wifi_init: udp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp tx win: 5760[0m
+[0;32mI (613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (613) wifi_init: tcp mss: 1440[0m
+[0;32mI (623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (623) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (633) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (713) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (713) wifi:enable tsf
+[0;32mI (723) [WI-FI]: Wifi started![0m
+I (743) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (743) wifi:state: init -> auth (b0)
+I (1743) wifi:state: auth -> init (200)
+I (1753) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (1753) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (1753) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (4163) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (4173) [APP]: WIFI DISCONNECTED[0m
+I (4173) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (4183) wifi:state: init -> auth (b0)
+I (4183) wifi:state: auth -> init (1c0)
+I (4193) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (4193) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (4193) [APP]: WIFI DISCONNECTED[0m
+[0;32mI (6613) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (6613) [APP]: WIFI DISCONNECTED[0m
+I (6663) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (6663) wifi:state: init -> auth (b0)
+I (6663) wifi:state: auth -> assoc (0)
+I (6673) wifi:state: assoc -> run (10)
+I (6703) wifi:connected with supertajnasiec, aid = 3, channel 8, BW20, bssid = 62:cc:81:ea:ab:8d
+I (6703) wifi:security: WPA2-PSK, phy: bgn, rssi: -48
+I (6703) wifi:pm start, type: 1
+
+I (6703) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (6753) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (6753) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (8213) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (8213) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (8213) [APP]: WIFI CONNECTED[0m
+[0;32mI (8223) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (8243) wifi:<ba-add>idx:0 (ifx:0, 62:cc:81:ea:ab:8d), tid:0, ssn:3, winSize:64
+[0;32mI (8353) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (8353) [APP]: MQTT CONNECTED[0m
+[0;32mI (8353) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (8423) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m

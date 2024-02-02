@@ -1,0 +1,346 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=36338h (222008) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=00046360 vaddr=3ffbdb60 size=058c8h ( 22728) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=0004bc30 vaddr=40080000 size=043e8h ( 17384) load[0m
+[0;32mI (159) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d293ch (862524) map[0m
+[0;32mI (341) esp_image: segment 4: paddr=00122964 vaddr=400843e8 size=1af80h (110464) load[0m
+[0;32mI (385) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (385) boot: Disabling RNG early entropy source...[0m
+[0;32mI (396) cpu_start: Multicore app[0m
+[0;32mI (405) cpu_start: Pro cpu start user code[0m
+[0;32mI (405) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (405) cpu_start: Application information:[0m
+[0;32mI (408) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (415) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (421) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (427) cpu_start: ELF file SHA256:  1ed2d9d3f...[0m
+[0;32mI (432) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (439) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (443) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (448) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (453) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (460) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (466) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (472) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (478) heap_init: At 3FFCB4D0 len 00014B30 (82 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (491) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 4009F368 len 00000C98 (3 KiB): IRAM[0m
+[0;32mI (505) spi_flash: detected chip: winbond[0m
+[0;32mI (508) spi_flash: flash io: dio[0m
+[0;32mI (513) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (518) main_task: Started on CPU0[0m
+[0;32mI (528) main_task: Calling app_main()[0m
+I (568) wifi:wifi driver task: 3ffcfa30, prio:23, stack:6656, core=0
+I (588) wifi:wifi firmware version: a194738
+I (588) wifi:wifi certification version: v7.0
+I (588) wifi:config NVS flash: enabled
+I (588) wifi:config nano formating: disabled
+I (588) wifi:Init data frame dynamic rx buffer num: 32
+I (588) wifi:Init static rx mgmt buffer num: 5
+I (598) wifi:Init management short buffer num: 32
+I (598) wifi:Init dynamic tx buffer num: 32
+I (608) wifi:Init static rx buffer size: 1600
+I (608) wifi:Init static rx buffer num: 10
+I (618) wifi:Init dynamic rx buffer num: 32
+[0;32mI (618) wifi_init: rx ba win: 6[0m
+[0;32mI (618) wifi_init: tcpip mbox: 32[0m
+[0;32mI (628) wifi_init: udp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp tx win: 5760[0m
+[0;32mI (638) wifi_init: tcp rx win: 5760[0m
+[0;32mI (638) wifi_init: tcp mss: 1440[0m
+[0;32mI (648) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (648) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (658) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (748) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (748) wifi:enable tsf
+[0;32mI (748) WI-FI STATION: wifi_init_sta finished.[0m
+I (838) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (838) wifi:state: init -> auth (b0)
+I (1848) wifi:state: auth -> init (200)
+I (1848) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+[0;32mI (2848) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (2848) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (6258) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (6258) WI-FI STATION: Nie połączono z siecią[0m
+I (6258) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (6268) wifi:state: init -> auth (b0)
+I (7268) wifi:state: auth -> init (200)
+I (7268) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+[0;32mI (8268) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (8268) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (11678) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (11678) WI-FI STATION: Nie połączono z siecią[0m
+I (11698) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (11698) wifi:state: init -> auth (b0)
+I (12698) wifi:state: auth -> init (200)
+I (12698) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+[0;32mI (13698) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (13698) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (17108) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (17108) WI-FI STATION: Nie połączono z siecią[0m
+I (17118) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (17118) wifi:state: init -> auth (b0)
+I (18128) wifi:state: auth -> init (200)
+I (18128) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+[0;32mI (19128) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (19128) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (22538) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (22538) WI-FI STATION: Nie połączono z siecią[0m
+I (22548) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (22548) wifi:state: init -> auth (b0)
+I (23548) wifi:state: auth -> init (200)
+I (23548) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+[0;32mI (24548) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (24548) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (27958) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (27958) WI-FI STATION: Nie połączono z siecią[0m
+I (27978) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+I (27978) wifi:state: init -> auth (b0)
+I (27978) wifi:state: auth -> init (1c0)
+I (27978) wifi:new:<7,0>, old:<7,0>, ap:<255,255>, sta:<7,0>, prof:1
+[0;32mI (28988) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (28988) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (32398) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (32398) WI-FI STATION: Nie połączono z siecią[0m
+I (33608) wifi:new:<11,0>, old:<7,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (33608) wifi:state: init -> auth (b0)
+I (33618) wifi:state: auth -> assoc (0)
+I (33658) wifi:state: assoc -> run (10)
+I (33698) wifi:connected with supertajnasiec, aid = 1, channel 11, BW20, bssid = ce:b9:95:1b:e9:b3
+I (33698) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (33708) wifi:pm start, type: 1
+
+I (33708) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (33788) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (33788) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (34718) esp_netif_handlers: sta ip: 192.168.148.8, mask: 255.255.255.0, gw: 192.168.148.6[0m
+[0;32mI (34718) WI-FI STATION: GOT IP: 192.168.148.8[0m
+[0;32mI (34718) WI-FI STATION: CONNECTED[0m
+
+Połączono z siecią:
+=====
+SSID: supertajnasiec
+Password: supertajnehaslo
+
+[0;32mI (34728) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (34738) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+1 - Register gatt event
+[0;32mI (35058) main_task: Returned from app_main()[0m
+2 - Scan parameters set
+3 - Start scan ... 
+[0;32mI (37068) BT: jano_wikson_kubs[0m
+[0;32mI (37068) BT: on[0m
+[0;32mI (37068) BT: jano_wikson_kubs[0m
+[0;32mI (37068) BT: on[0m
+[0;32mI (37068) BT: jano_wikson_kubs[0m
+[0;32mI (37068) BT: on[0m
+[0;32mI (37068) BT: MAJOR IV[0m
+[0;32mI (37078) BT: jano_wikson_kubs[0m
+[0;32mI (37078) BT: on[0m
+[0;32mI (37078) BT: jano_wikson_kubs[0m
+[0;32mI (37088) BT: on[0m
+[0;32mI (37088) BT: jano_wikson_kubs[0m
+[0;32mI (37088) BT: on[0m
+[0;32mI (37098) BT: jano_wikson_kubs[0m
+[0;32mI (37098) BT: on[0m
+[0;32mI (37098) BT: POCO X4 GT[0m
+[0;32mI (37108) BT: POCO X4 GT[0m
+[0;32mI (37108) BT: jano_wikson_kubs[0m
+[0;32mI (37108) BT: on[0m
+[0;32mI (37118) BT: jano_wikson_kubs[0m
+[0;32mI (37118) BT: on[0m
+[0;32mI (37118) BT: jano_wikson_kubs[0m
+[0;32mI (37128) BT: on[0m
+[0;32mI (37128) BT: jano_wikson_kubs[0m
+[0;32mI (37128) BT: on[0m
+[0;32mI (37128) BT: POCO X4 GT[0m
+[0;32mI (37138) BT: jano_wikson_kubs[0m
+[0;32mI (37138) BT: on[0m
+[0;32mI (37138) BT: jano_wikson_kubs[0m
+[0;32mI (37148) BT: on[0m
+[0;32mI (37148) BT: jano_wikson_kubs[0m
+[0;32mI (37148) BT: on[0m
+[0;32mI (37158) BT: jano_wikson_kubs[0m
+[0;32mI (37158) BT: on[0m
+[0;32mI (37198) BT: jano_wikson_kubs[0m
+[0;32mI (37208) BT: on[0m
+[0;32mI (37498) BT: jano_wikson_kubs[0m
+[0;32mI (37498) BT: on[0m
+[0;32mI (37648) BT: POCO X4 GT[0m
+[0;32mI (37788) BT: jano_wikson_kubs[0m
+[0;32mI (37788) BT: on[0m
+[0;32mI (38138) BT: jano_wikson_kubs[0m
+[0;32mI (38138) BT: on[0m
+[0;32mI (38198) BT: jano_wikson_kubs[0m
+[0;32mI (38198) BT: on[0m
+[0;32mI (38238) BT: jano_wikson_kubs[0m
+[0;32mI (38238) BT: on[0m
+[0;32mI (38378) BT: jano_wikson_kubs[0m
+[0;32mI (38378) BT: on[0m
+[0;32mI (38478) BT: MAJOR IV[0m
+[0;32mI (38548) BT: jano_wikson_kubs[0m
+[0;32mI (38548) BT: on[0m
+[0;32mI (38688) BT: jano_wikson_kubs[0m
+[0;32mI (38688) BT: on[0m
+[0;32mI (38998) BT: jano_wikson_kubs[0m
+[0;32mI (38998) BT: on[0m
+[0;32mI (39098) BT: jano_wikson_kubs[0m
+[0;32mI (39098) BT: on[0m
+[0;32mI (39588) BT: jano_wikson_kubs[0m
+[0;32mI (39588) BT: on[0m
+[0;32mI (39688) BT: jano_wikson_kubs[0m
+[0;32mI (39688) BT: on[0m
+[0;32mI (39778) BT: jano_wikson_kubs[0m
+[0;32mI (39778) BT: on[0m
+[0;32mI (39928) BT: Xiaomi Smart Ban[0m
+[0;32mI (39928) BT: d 7 3246[0m
+[0;32mI (39948) BT: jano_wikson_kubs[0m
+[0;32mI (39948) BT: on[0m
+[0;32mI (39988) BT: MAJOR IV[0m
+[0;32mI (40078) BT: jano_wikson_kubs[0m
+[0;32mI (40078) BT: on[0m
+[0;32mI (40078) BT: jano_wikson_kubs[0m
+[0;32mI (40078) BT: on[0m
+[0;32mI (40438) BT: jano_wikson_kubs[0m
+[0;32mI (40438) BT: on[0m
+[0;32mI (40528) BT: jano_wikson_kubs[0m
+[0;32mI (40528) BT: on[0m
+[0;32mI (40578) BT: jano_wikson_kubs[0m
+[0;32mI (40578) BT: on[0m
+[0;32mI (40748) BT: MAJOR IV[0m
+[0;32mI (40898) BT: jano_wikson_kubs[0m
+[0;32mI (40898) BT: on[0m
+[0;32mI (40998) BT: jano_wikson_kubs[0m
+[0;32mI (40998) BT: on[0m
+[0;32mI (41018) BT: jano_wikson_kubs[0m
+[0;32mI (41018) BT: on[0m
+[0;32mI (41038) BT: POCO X4 GT[0m
+[0;32mI (41178) BT: jano_wikson_kubs[0m
+[0;32mI (41178) BT: on[0m
+[0;32mI (41198) BT: jano_wikson_kubs[0m
+[0;32mI (41198) BT: on[0m
+[0;32mI (41238) BT: jano_wikson_kubs[0m
+[0;32mI (41238) BT: on[0m
+[0;32mI (41298) BT: jano_wikson_kubs[0m
+[0;32mI (41298) BT: on[0m
+[0;32mI (41378) BT: jano_wikson_kubs[0m
+[0;32mI (41388) BT: on[0m
+[0;32mI (41498) BT: MAJOR IV[0m
+[0;32mI (41738) BT: jano_wikson_kubs[0m
+[0;32mI (41738) BT: on[0m
+[0;32mI (41748) BT: jano_wikson_kubs[0m
+[0;32mI (41748) BT: on[0m
+[0;32mI (41828) BT: jano_wikson_kubs[0m
+[0;32mI (41828) BT: on[0m
+[0;32mI (41838) BT: POCO X4 GT[0m
+[0;32mI (42238) BT: jano_wikson_kubs[0m
+[0;32mI (42238) BT: on[0m
+[0;32mI (42248) BT: MAJOR IV[0m
+[0;32mI (42378) BT: POCO X4 GT[0m
+[0;32mI (42448) BT: jano_wikson_kubs[0m
+[0;32mI (42448) BT: on[0m
+[0;32mI (42488) BT: jano_wikson_kubs[0m
+[0;32mI (42488) BT: on[0m
+[0;32mI (42538) BT: jano_wikson_kubs[0m
+[0;32mI (42538) BT: on[0m
+[0;32mI (42578) BT: jano_wikson_kubs[0m
+[0;32mI (42578) BT: on[0m
+[0;32mI (42668) BT: jano_wikson_kubs[0m
+[0;32mI (42668) BT: on[0m
+[0;32mI (42838) BT: jano_wikson_kubs[0m
+[0;32mI (42838) BT: on[0m
+[0;32mI (42888) BT: jano_wikson_kubs[0m
+[0;32mI (42888) BT: on[0m
+[0;32mI (42978) BT: jano_wikson_kubs[0m
+[0;32mI (42978) BT: on[0m
+[0;32mI (43038) BT: jano_wikson_kubs[0m
+[0;32mI (43038) BT: on[0m
+[0;32mI (43078) BT: jano_wikson_kubs[0m
+[0;32mI (43078) BT: on[0m
+[0;32mI (43598) BT: jano_wikson_kubs[0m
+[0;32mI (43598) BT: on[0m
+[0;32mI (43748) BT: jano_wikson_kubs[0m
+[0;32mI (43748) BT: on[0m
+[0;32mI (43838) BT: jano_wikson_kubs[0m
+[0;32mI (43838) BT: on[0m
+[0;32mI (43838) BT: jano_wikson_kubs[0m
+[0;32mI (43838) BT: on[0m
+[0;32mI (43898) BT: jano_wikson_kubs[0m
+[0;32mI (43908) BT: on[0m
+[0;32mI (43948) BT: jano_wikson_kubs[0m
+[0;32mI (43948) BT: on[0m
+[0;32mI (44148) BT: jano_wikson_kubs[0m
+[0;32mI (44148) BT: on[0m
+[0;32mI (44238) BT: jano_wikson_kubs[0m
+[0;32mI (44238) BT: on[0m
+[0;32mI (44398) BT: jano_wikson_kubs[0m
+[0;32mI (44398) BT: on[0m
+[0;32mI (44498) BT: jano_wikson_kubs[0m
+[0;32mI (44498) BT: on[0m
+[0;32mI (44538) BT: jano_wikson_kubs[0m
+[0;32mI (44538) BT: on[0m
+[0;32mI (44578) BT: jano_wikson_kubs[0m
+[0;32mI (44578) BT: on[0m
+[0;32mI (44728) BT: jano_wikson_kubs[0m
+[0;32mI (44728) BT: on[0m
+[0;32mI (44808) BT: POCO X4 GT[0m
+[0;32mI (45048) BT: jano_wikson_kubs[0m
+[0;32mI (45048) BT: on[0m
+[0;32mI (45048) BT: jano_wikson_kubs[0m
+[0;32mI (45048) BT: on[0m
+I (171408) wifi:bcn_timeout,ap_probe_send_start
+I (173908) wifi:ap_probe_send over, resett wifi status to disassoc
+I (173908) wifi:state: run -> init (c800)
+I (173908) wifi:pm stop, total sleep time: 109486362 us / 140197301 us
+
+I (173918) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (174918) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (174918) WI-FI STATION: Nie połączono z siecią[0m
+I (175048) wifi:new:<1,0>, old:<11,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (175048) wifi:state: init -> auth (b0)
+I (175048) wifi:state: auth -> init (1c0)
+I (175048) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (176058) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (176058) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (178758) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (178758) WI-FI STATION: Nie połączono z siecią[0m
+I (178888) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (178888) wifi:state: init -> auth (b0)
+I (178888) wifi:state: auth -> assoc (0)
+I (178898) wifi:state: assoc -> run (10)
+I (178918) wifi:connected with supertajnasiec, aid = 2, channel 1, BW20, bssid = ce:b9:95:1b:e9:b3
+I (178918) wifi:security: WPA2-PSK, phy: bgn, rssi: -12
+I (178978) wifi:pm start, type: 1
+
+I (178978) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (178998) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (178998) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (179988) esp_netif_handlers: sta ip: 192.168.148.8, mask: 255.255.255.0, gw: 192.168.148.6[0m
+[0;32mI (179988) WI-FI STATION: GOT IP: 192.168.148.8[0m
+[0;32mI (179988) WI-FI STATION: CONNECTED[0m

@@ -1,0 +1,395 @@
+[0;32mI (250) esp_image: segment 4: paddr=000b9ce8 vaddr=40087e90 size=108ech ( 67820) load[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22d44h (142660) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=00032d6c vaddr=3ffbdb60 size=05414h ( 21524) load[0m
+[0;32mI (138) esp_image: segment 2: paddr=00038188 vaddr=40080000 size=07e90h ( 32400) load[0m
+[0;32mI (147) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=79cc0h (498880) map[0m
+[0;32mI (250) esp_image: segment 4: paddr=000b9ce8 vaddr=40087e90 size=108ech ( 67820) load[0m
+[0;32mI (280) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (280) boot: Disabling RNG early entropy source...[0m
+[0;32mI (291) cpu_start: Multicore app[0m
+[0;32mI (300) cpu_start: Pro cpu start user code[0m
+[0;32mI (300) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (300) cpu_start: Application information:[0m
+[0;32mI (303) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (310) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (316) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (322) cpu_start: ELF file SHA256:  2f8b4bc27...[0m
+[0;32mI (327) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (333) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (338) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (343) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (348) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (355) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (361) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (367) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 3FFC7080 len 00018F80 (99 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (386) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (392) heap_init: At 4009877C len 00007884 (30 KiB): IRAM[0m
+[0;32mI (400) spi_flash: detected chip: winbond[0m
+[0;32mI (403) spi_flash: flash io: dio[0m
+[0;33mW (407) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (418) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (424) main_task: Started on CPU0[0m
+[0;32mI (434) main_task: Calling app_main()[0m
+[0;32mI (474) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (474) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (494) wifi:wifi driver task: 3ffcbb30, prio:23, stack:6656, core=0
+I (504) wifi:wifi firmware version: a194738
+I (514) wifi:wifi certification version: v7.0
+I (514) wifi:config NVS flash: enabled
+I (514) wifi:config nano formating: disabled
+I (514) wifi:Init data frame dynamic rx buffer num: 32
+I (514) wifi:Init static rx mgmt buffer num: 5
+I (524) wifi:Init management short buffer num: 32
+I (524) wifi:Init dynamic tx buffer num: 32
+I (534) wifi:Init static rx buffer size: 1600
+I (534) wifi:Init static rx buffer num: 10
+I (534) wifi:Init dynamic rx buffer num: 32
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (564) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (574) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (664) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (664) wifi:enable tsf
+[0;32mI (674) WI-FI STATION: wifi_init_sta finished.[0m
+[0;32mI (4584) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (4584) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (8494) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (8494) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (12404) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (12404) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (16314) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (16314) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (20224) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (20224) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (24134) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (24134) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (28044) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (28044) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (31954) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (31954) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (35864) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (35864) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (39774) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (39774) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (43684) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (43684) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (47594) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (47594) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (51504) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (51504) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (55414) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (55414) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (59324) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (59324) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (63234) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (63234) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (67144) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (67144) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (71054) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (71054) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (74964) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (74964) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (78874) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (78874) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (82784) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (82784) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (86694) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (86694) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (90604) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (90604) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (94514) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (94514) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (98424) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (98424) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (102334) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (102334) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (106244) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (106244) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (110154) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (110154) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (114064) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (114064) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (117974) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (117974) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (121884) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (121884) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (125794) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (125794) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (129704) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (129704) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (133614) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (133614) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (137524) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (137524) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (141434) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (141434) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (145344) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (145344) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (149254) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (149254) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (153164) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (153164) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (157074) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (157074) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (160984) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (160984) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (164894) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (164894) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (168804) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (168804) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (172714) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (172714) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (176624) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (176624) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (180534) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (180534) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (184444) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (184444) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (188354) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (188354) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (192264) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (192264) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (196174) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (196174) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (200084) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (200084) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (203994) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (203994) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (207904) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (207904) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (211814) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (211814) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (215724) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (215724) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (219634) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (219634) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (223544) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (223544) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (227454) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (227454) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (231364) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (231364) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (235274) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (235274) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (239184) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (239184) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (243094) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (243094) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (247004) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (247004) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (250914) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (250914) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (254824) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (254824) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (258734) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (258734) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (262644) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (262644) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (266554) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (266554) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (270464) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (270464) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (274374) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (274374) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (278284) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (278284) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (282194) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (282194) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (286104) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (286104) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (290014) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (290014) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (293924) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (293924) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (297834) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (297834) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (301744) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (301744) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (305654) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (305654) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (309564) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (309564) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (313474) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (313474) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (317384) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (317384) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (321294) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (321294) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (325204) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (325204) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (329114) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (329114) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (333024) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (333024) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (336934) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (336934) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (340844) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (340844) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (344754) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (344754) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (348664) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (348664) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (352574) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (352574) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (356484) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (356484) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (360394) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (360394) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (364304) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (364304) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (368214) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (368214) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (372124) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (372124) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (376034) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (376034) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (379944) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (379944) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (383854) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (383854) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (387764) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (387764) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (391674) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (391674) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (395584) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (395584) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (399494) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (399494) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (403404) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (403404) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (407314) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (407314) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (411224) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (411224) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (415134) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (415134) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (419044) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (419044) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (422954) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (422954) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (426864) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (426864) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (430774) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (430774) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (434684) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (434684) WI-FI STATION: Nie połączono z siecią[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=22d44h (142660) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=00032d6c vaddr=3ffbdb60 size=05414h ( 21524) load[0m
+[0;32mI (138) esp_image: segment 2: paddr=00038188 vaddr=40080000 size=07e90h ( 32400) load[0m
+[0;32mI (147) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=79cc0h (498880) map[0m
+[0;32mI (250) esp_image: segment 4: paddr=000b9ce8 vaddr=40087e90 size=108ech ( 67820) load[0m
+[0;32mI (280) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (280) boot: Disabling RNG early entropy source...[0m
+[0;32mI (291) cpu_start: Multicore app[0m
+[0;32mI (300) cpu_start: Pro cpu start user code[0m
+[0;32mI (300) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (300) cpu_start: Application information:[0m
+[0;32mI (303) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (310) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (316) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (322) cpu_start: ELF file SHA256:  2f8b4bc27...[0m
+[0;32mI (327) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (333) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (338) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (343) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (348) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (355) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (361) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (367) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (373) heap_init: At 3FFC7080 len 00018F80 (99 KiB): DRAM[0m
+[0;32mI (379) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (386) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (392) heap_init: At 4009877C len 00007884 (30 KiB): IRAM[0m
+[0;32mI (400) spi_flash: detected chip: winbond[0m
+[0;32mI (403) spi_flash: flash io: dio[0m
+[0;33mW (407) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (418) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (424) main_task: Started on CPU0[0m
+[0;32mI (434) main_task: Calling app_main()[0m
+[0;32mI (474) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (474) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (494) wifi:wifi driver task: 3ffcbb30, prio:23, stack:6656, core=0
+I (504) wifi:wifi firmware version: a194738
+I (514) wifi:wifi certification version: v7.0
+I (514) wifi:config NVS flash: enabled
+I (514) wifi:config nano formating: disabled
+I (514) wifi:Init data frame dynamic rx buffer num: 32
+I (514) wifi:Init static rx mgmt buffer num: 5
+I (524) wifi:Init management short buffer num: 32
+I (524) wifi:Init dynamic tx buffer num: 32
+I (534) wifi:Init static rx buffer size: 1600
+I (534) wifi:Init static rx buffer num: 10
+I (534) wifi:Init dynamic rx buffer num: 32
+[0;32mI (544) wifi_init: rx ba win: 6[0m
+[0;32mI (544) wifi_init: tcpip mbox: 32[0m
+[0;32mI (554) wifi_init: udp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp mbox: 6[0m
+[0;32mI (554) wifi_init: tcp tx win: 5760[0m
+[0;32mI (564) wifi_init: tcp rx win: 5760[0m
+[0;32mI (564) wifi_init: tcp mss: 1440[0m
+[0;32mI (574) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (574) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (584) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (664) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (664) wifi:enable tsf
+[0;32mI (664) WI-FI STATION: wifi_init_sta finished.[0m
+[0;32mI (4584) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (4584) WI-FI STATION: Nie połączono z siecią[0m
