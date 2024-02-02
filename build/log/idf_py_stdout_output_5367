@@ -1,0 +1,410 @@
+[0;32mI (285) esp_image: segment 4: paddr=000dd140 vad�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  1 2024 17:42:17[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29904h (170244) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0003992c vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003edb8 vaddr=40080000 size=01260h (  4704) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d118h (643352) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dd140 vaddr=40081260 size=17e70h ( 97904) load[0m
+[0;32mI (323) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (323) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) cpu_start: Multicore app[0m
+[0;32mI (343) cpu_start: Pro cpu start user code[0m
+[0;32mI (343) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (344) cpu_start: Application information:[0m
+[0;32mI (347) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (354) cpu_start: App version:      ea6fe41-dirty[0m
+[0;32mI (359) cpu_start: Compile time:     Feb  1 2024 17:42:20[0m
+[0;32mI (365) cpu_start: ELF file SHA256:  946b98af4...[0m
+[0;32mI (370) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (382) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (386) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (391) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (399) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 3FFC7878 len 00018788 (97 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 400990D0 len 00006F30 (27 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (439) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (449) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (455) main_task: Started on CPU0[0m
+[0;32mI (465) main_task: Calling app_main()[0m
+[0;32mI (495) [I2C]: Module configuration successful![0m
+[0;32mI (495) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (495) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (505) [SWITCH]: Configuration successful![0m
+[0;32mI (23515) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23515) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23515) [LED]: LEDs configured![0m
+I (23535) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (23545) wifi:wifi firmware version: a194738
+I (23555) wifi:wifi certification version: v7.0
+I (23555) wifi:config NVS flash: enabled
+I (23555) wifi:config nano formating: disabled
+I (23555) wifi:Init data frame dynamic rx buffer num: 32
+I (23565) wifi:Init static rx mgmt buffer num: 5
+I (23565) wifi:Init management short buffer num: 32
+I (23565) wifi:Init dynamic tx buffer num: 32
+I (23575) wifi:Init static rx buffer size: 1600
+I (23575) wifi:Init static rx buffer num: 10
+I (23585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (23585) wifi_init: rx ba win: 6[0m
+[0;32mI (23585) wifi_init: tcpip mbox: 32[0m
+[0;32mI (23595) wifi_init: udp mbox: 6[0m
+[0;32mI (23595) wifi_init: tcp mbox: 6[0m
+[0;32mI (23605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (23605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (23615) wifi_init: tcp mss: 1440[0m
+[0;32mI (23615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (23615) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (23625) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (23715) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (23715) wifi:enable tsf
+Gpio pin: 33
+Greeting user
+[0;32mI (23715) [WI-FI]: Wifi started![0m
+[0;32mI (26135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (28545) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (30965) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (33385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (35795) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (38215) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (40635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (43045) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (45465) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (47885) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (50295) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (52715) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (55125) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (57545) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (59965) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (62375) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (64795) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (67215) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (69625) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (72045) [WI-FI]: Reconnecting to wifi ...[0m
+I (72055) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (72055) wifi:state: init -> auth (b0)
+I (72065) wifi:state: auth -> assoc (0)
+I (72085) wifi:state: assoc -> run (10)
+I (72105) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 82:83:5b:2b:7c:e1
+I (72105) wifi:security: WPA2-PSK, phy: bgn, rssi: -55
+I (72115) wifi:pm start, type: 1
+
+I (72115) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (72205) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (72205) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (73125) esp_netif_handlers: sta ip: 192.168.133.8, mask: 255.255.255.0, gw: 192.168.133.112[0m
+[0;32mI (73125) [WI-FI]: Connected to ip: 192.168.133.8[0m
+[0;32mI (78125) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (78155) wifi:<ba-add>idx:0 (ifx:0, 82:83:5b:2b:7c:e1), tid:0, ssn:3, winSize:64
+[0;32mI (78255) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (79255) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 128.000000%
+Temperatura: 1228.800049°C
+[0;32mI (79255) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (79315) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (84255) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (84255) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (84305) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+I (88995) wifi:state: run -> init (1a0)
+I (88995) wifi:pm stop, total sleep time: 14548704 us / 16885962 us
+
+I (89005) wifi:<ba-del>idx:0, tid:0
+I (89005) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (89015) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (89015) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (89015) [MQTT]: CLIENT STOPPED[0m
+[0;31mE (89025) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (89035) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (91425) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (93845) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (96255) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (98675) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (101095) [WI-FI]: Reconnecting to wifi ...[0m
+I (101185) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (101185) wifi:state: init -> auth (b0)
+I (102185) wifi:state: auth -> init (200)
+I (102195) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (102195) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (104605) [WI-FI]: Reconnecting to wifi ...[0m
+I (104615) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (104615) wifi:state: init -> auth (b0)
+I (104625) wifi:state: auth -> assoc (0)
+I (104635) wifi:state: assoc -> run (10)
+I (104655) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = be:88:3b:32:60:f9
+I (104655) wifi:security: WPA2-PSK, phy: bgn, rssi: -55
+I (104665) wifi:pm start, type: 1
+
+I (104665) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (104765) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (104765) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (105675) esp_netif_handlers: sta ip: 192.168.133.8, mask: 255.255.255.0, gw: 192.168.133.112[0m
+[0;32mI (105675) [WI-FI]: Connected to ip: 192.168.133.8[0m
+[0;32mI (110675) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (111925) wifi:<ba-add>idx:0 (ifx:0, be:88:3b:32:60:f9), tid:0, ssn:3, winSize:64
+[0;32mI (112145) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (113155) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 128.000000%
+Temperatura: 1228.800049°C
+[0;32mI (113155) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (113205) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (118145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (118145) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (118295) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (123145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (123145) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (123195) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;31mE (128145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (128145) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;32mI (128225) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;31mE (133145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (133145) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;32mI (133195) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;31mE (138145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (138145) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;32mI (138195) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;31mE (143145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (143145) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;32mI (143205) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;31mE (148145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (148145) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;32mI (148195) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;31mE (153145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (153145) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;32mI (153195) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+[0;31mE (158145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (158145) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;32mI (158425) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+[0;31mE (163145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (163145) [MQTT]: Sent publish successful, msg_id: 11[0m
+[0;32mI (163195) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+[0;31mE (168145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (168145) [MQTT]: Sent publish successful, msg_id: 12[0m
+[0;32mI (168205) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+[0;31mE (173145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (173145) [MQTT]: Sent publish successful, msg_id: 13[0m
+[0;32mI (173195) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+[0;31mE (178145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (178145) [MQTT]: Sent publish successful, msg_id: 14[0m
+[0;32mI (178195) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+[0;31mE (183145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (183145) [MQTT]: Sent publish successful, msg_id: 15[0m
+[0;32mI (183195) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+[0;31mE (188145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (188145) [MQTT]: Sent publish successful, msg_id: 16[0m
+[0;32mI (188195) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+[0;31mE (193145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (193145) [MQTT]: Sent publish successful, msg_id: 17[0m
+[0;32mI (193195) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+[0;31mE (198145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (198145) [MQTT]: Sent publish successful, msg_id: 18[0m
+[0;32mI (198365) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+[0;31mE (203145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (203145) [MQTT]: Sent publish successful, msg_id: 19[0m
+[0;32mI (203285) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+[0;31mE (208145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (208145) [MQTT]: Sent publish successful, msg_id: 20[0m
+[0;32mI (208405) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+[0;31mE (213145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (213145) [MQTT]: Sent publish successful, msg_id: 21[0m
+[0;32mI (213315) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+[0;31mE (218145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (218145) [MQTT]: Sent publish successful, msg_id: 22[0m
+[0;32mI (218235) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+[0;31mE (223145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (223145) [MQTT]: Sent publish successful, msg_id: 23[0m
+[0;32mI (223345) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+[0;31mE (228145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (228145) [MQTT]: Sent publish successful, msg_id: 24[0m
+[0;32mI (228265) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+[0;31mE (233145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (233145) [MQTT]: Sent publish successful, msg_id: 25[0m
+[0;32mI (233385) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+[0;31mE (238145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (238145) [MQTT]: Sent publish successful, msg_id: 26[0m
+[0;32mI (238305) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+[0;31mE (243145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (243145) [MQTT]: Sent publish successful, msg_id: 27[0m
+[0;32mI (243425) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+[0;31mE (248145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (248145) [MQTT]: Sent publish successful, msg_id: 28[0m
+[0;32mI (248365) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+[0;31mE (253145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (253145) [MQTT]: Sent publish successful, msg_id: 29[0m
+[0;32mI (253195) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+[0;31mE (258145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (258145) [MQTT]: Sent publish successful, msg_id: 30[0m
+[0;32mI (258195) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+[0;31mE (263145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (263145) [MQTT]: Sent publish successful, msg_id: 31[0m
+[0;32mI (263195) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+[0;31mE (268145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (268145) [MQTT]: Sent publish successful, msg_id: 32[0m
+[0;32mI (268405) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+[0;31mE (273145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (273145) [MQTT]: Sent publish successful, msg_id: 33[0m
+[0;32mI (273325) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+[0;31mE (278145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (278145) [MQTT]: Sent publish successful, msg_id: 34[0m
+[0;32mI (278235) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+[0;31mE (283145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (283145) [MQTT]: Sent publish successful, msg_id: 35[0m
+[0;32mI (283355) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+[0;31mE (288145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (288145) [MQTT]: Sent publish successful, msg_id: 36[0m
+[0;32mI (288285) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+[0;31mE (293145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (293145) [MQTT]: Sent publish successful, msg_id: 37[0m
+[0;32mI (293395) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+[0;31mE (298145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (298145) [MQTT]: Sent publish successful, msg_id: 38[0m
+[0;32mI (298305) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+[0;31mE (303145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (303145) [MQTT]: Sent publish successful, msg_id: 39[0m
+[0;32mI (303425) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+[0;31mE (308145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (308145) [MQTT]: Sent publish successful, msg_id: 40[0m
+[0;32mI (308345) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+[0;31mE (313145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (313145) [MQTT]: Sent publish successful, msg_id: 41[0m
+[0;32mI (313255) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+[0;31mE (318145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (318145) [MQTT]: Sent publish successful, msg_id: 42[0m
+[0;32mI (318195) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+[0;31mE (323145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (323145) [MQTT]: Sent publish successful, msg_id: 43[0m
+[0;32mI (323295) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+[0;31mE (328145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (328145) [MQTT]: Sent publish successful, msg_id: 44[0m
+[0;32mI (328415) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+[0;31mE (333145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (333145) [MQTT]: Sent publish successful, msg_id: 45[0m
+[0;32mI (333325) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+[0;31mE (338145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (338145) [MQTT]: Sent publish successful, msg_id: 46[0m
+[0;32mI (338245) [MQTT]: EVENT_PUBLISHED, msg_id: 46[0m
+[0;31mE (343145) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (343145) [MQTT]: Sent publish successful, msg_id: 47[0m
+[0;32mI (343365) [MQTT]: EVENT_PUBLISHED, msg_id: 47[0m

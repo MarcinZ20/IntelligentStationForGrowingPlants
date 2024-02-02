@@ -29,21 +29,6 @@ void display_task(void *pvParameter) {
 }
 
 /*Description:
- * Task that displays greeting on the OLED display using #display_string function
- *
- * @Input: [void*]
- *
- * @Output: [void] Greeting is displayed on the screen
- * */
-void greet_user_task(void *pvParameters) {
-    printf("Greeting user\n");
-	for (;;) {
-		display_string("Hello there!", 3);
-		vTaskDelete(NULL);
-	}
-}
-
-/*Description:
  * Function to display text on the OLED screen
  *
  * @Input:
@@ -56,6 +41,7 @@ void display_string(const char *text, unsigned int time_s) {
     ssd1306_clear_screen(ssd1306_dev, 0x00);
     char text_buffer[20] = {0};
     sprintf(text_buffer, "%s", text);
+    printf("%s\n", text_buffer);
 
     ssd1306_draw_string(ssd1306_dev, 1, 16, (const uint8_t *)text_buffer, 16, 1);
     ssd1306_refresh_gram(ssd1306_dev);

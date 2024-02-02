@@ -1,0 +1,1422 @@
+[0;32mI (�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  1 2024 17:42:17[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29954h (170324) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0003997c vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003ee08 vaddr=40080000 size=01210h (  4624) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d168h (643432) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dd190 vaddr=40081210 size=17ec0h ( 97984) load[0m
+[0;32mI (323) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (323) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) cpu_start: Multicore app[0m
+[0;32mI (343) cpu_start: Pro cpu start user code[0m
+[0;32mI (343) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (343) cpu_start: Application information:[0m
+[0;32mI (346) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (353) cpu_start: App version:      ea6fe41-dirty[0m
+[0;32mI (359) cpu_start: Compile time:     Feb  2 2024 14:24:52[0m
+[0;32mI (365) cpu_start: ELF file SHA256:  0d3cc9cb6...[0m
+[0;32mI (370) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (382) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (386) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (391) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (398) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (404) heap_init: At 3FFC7878 len 00018788 (97 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 400990D0 len 00006F30 (27 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (438) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (449) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (455) main_task: Started on CPU0[0m
+[0;32mI (465) main_task: Calling app_main()[0m
+[0;32mI (495) [I2C]: Module configuration successful![0m
+[0;32mI (495) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (495) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (505) [SWITCH]: Configuration successful![0m
+[0;32mI (24515) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24515) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24515) [LED]: LEDs configured![0m
+I (24535) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (24545) wifi:wifi firmware version: a194738
+I (24555) wifi:wifi certification version: v7.0
+I (24555) wifi:config NVS flash: enabled
+I (24555) wifi:config nano formating: disabled
+I (24555) wifi:Init data frame dynamic rx buffer num: 32
+I (24565) wifi:Init static rx mgmt buffer num: 5
+I (24565) wifi:Init management short buffer num: 32
+I (24565) wifi:Init dynamic tx buffer num: 32
+I (24575) wifi:Init static rx buffer size: 1600
+I (24575) wifi:Init static rx buffer num: 10
+I (24585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (24585) wifi_init: rx ba win: 6[0m
+[0;32mI (24585) wifi_init: tcpip mbox: 32[0m
+[0;32mI (24595) wifi_init: udp mbox: 6[0m
+[0;32mI (24595) wifi_init: tcp mbox: 6[0m
+[0;32mI (24605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (24605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (24615) wifi_init: tcp mss: 1440[0m
+[0;32mI (24615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (24615) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (24625) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (24715) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (24715) wifi:enable tsf
+Gpio pin: 33
+Greeting user
+[0;32mI (24715) [WI-FI]: Wifi started![0m
+[0;32mI (27135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (29555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (31965) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (34385) [WI-FI]: Reconnecting to wifi ...[0m
+I (34405) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (34405) wifi:state: init -> auth (b0)
+I (34405) wifi:state: auth -> assoc (0)
+I (34425) wifi:state: assoc -> run (10)
+I (34485) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 62:eb:c3:f6:ac:b2
+I (34485) wifi:security: WPA2-PSK, phy: bgn, rssi: -41
+I (34495) wifi:pm start, type: 1
+
+I (34495) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (34765) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (34765) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (35505) esp_netif_handlers: sta ip: 192.168.133.8, mask: 255.255.255.0, gw: 192.168.133.112[0m
+[0;32mI (35505) [WI-FI]: Connected to ip: 192.168.133.8[0m
+[0;32mI (40505) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (40535) wifi:<ba-add>idx:0 (ifx:0, 62:eb:c3:f6:ac:b2), tid:0, ssn:3, winSize:64
+[0;32mI (40655) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (41665) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 128.000000%
+Temperatura: 1228.800049°C
+[0;32mI (41665) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (41735) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (46665) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (46665) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (46715) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (51665) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (51665) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (51715) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+I (55445) wifi:state: run -> init (1a0)
+I (55445) wifi:pm stop, total sleep time: 16250347 us / 20953968 us
+
+I (55445) wifi:<ba-del>idx:0, tid:0
+I (55455) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (55455) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (55455) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (55475) mqtt_client: Poll read error: 119, aborting connection[0m
+I (55475) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (55475) [MQTT]: EVENT_DISCONNECTED[0m
+I (55485) wifi:[0;32mI (55485) mqtt_client: Client force reconnect requested[0m
+state: init -> auth (b0)[0;32mI (55495) [MQTT]: ESTABLISHING CONNECTION ...[0m
+
+I (55505) wifi:state: auth -> init (3a0)
+[0;31mE (55505) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+I (55505) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;31mE (55515) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (55525) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (55525) mqtt_client: Error transport connect[0m
+[0;32mI (55535) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55535) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55545) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55555) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55555) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55565) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55565) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55575) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55575) mqtt_client: Error transport connect[0m
+[0;32mI (55585) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55585) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55595) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55595) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55605) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55605) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55615) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55625) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55625) mqtt_client: Error transport connect[0m
+[0;32mI (55635) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55635) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55645) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55645) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55655) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55655) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55665) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55675) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55675) mqtt_client: Error transport connect[0m
+[0;32mI (55685) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55685) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55695) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55695) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55705) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55705) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55715) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55715) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55725) mqtt_client: Error transport connect[0m
+[0;32mI (55735) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55735) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55745) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55745) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55745) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55755) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55765) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55765) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55775) mqtt_client: Error transport connect[0m
+[0;32mI (55775) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55785) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55785) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55795) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55795) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55805) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55815) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55815) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55825) mqtt_client: Error transport connect[0m
+[0;32mI (55825) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55835) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55835) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55845) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55845) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55855) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55855) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55865) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55875) mqtt_client: Error transport connect[0m
+[0;32mI (55875) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55875) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55885) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55895) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55895) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55905) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55905) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55915) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55915) mqtt_client: Error transport connect[0m
+[0;32mI (55925) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55925) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55935) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55935) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55945) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55945) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (55955) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (55965) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (55965) mqtt_client: Error transport connect[0m
+[0;32mI (55975) [MQTT]: EVENT_ERROR[0m
+[0;31mE (55975) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (55985) [MQTT]: Last errno string (Success)[0m
+[0;32mI (55985) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (55995) mqtt_client: Client force reconnect requested[0m
+[0;32mI (55995) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56005) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56015) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56015) mqtt_client: Error transport connect[0m
+[0;32mI (56025) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56025) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56035) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56035) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56045) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56045) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56055) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56055) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56065) mqtt_client: Error transport connect[0m
+[0;32mI (56075) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56075) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56085) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56085) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56085) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56095) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56105) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56105) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56115) mqtt_client: Error transport connect[0m
+[0;32mI (56115) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56125) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56125) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56135) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56135) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56145) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56155) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56155) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56165) mqtt_client: Error transport connect[0m
+[0;32mI (56165) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56175) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56175) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56185) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56185) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56195) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56195) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56205) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56215) mqtt_client: Error transport connect[0m
+[0;32mI (56215) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56225) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56225) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56235) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56235) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56245) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56245) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56255) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56255) mqtt_client: Error transport connect[0m
+[0;32mI (56265) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56265) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56275) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56285) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56285) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56295) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56295) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56305) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56305) mqtt_client: Error transport connect[0m
+[0;32mI (56315) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56315) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56325) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56325) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56335) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56335) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56345) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56355) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56355) mqtt_client: Error transport connect[0m
+[0;32mI (56365) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56365) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56375) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56375) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56385) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56385) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56395) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56395) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56405) mqtt_client: Error transport connect[0m
+[0;32mI (56415) [MQTT]: EVENT_ERROR[0m
+[0;31mE (56415) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (56425) [MQTT]: Last errno string (Success)[0m
+[0;32mI (56425) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (56435) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56435) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (56445) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (56445) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (56455) mqtt_client: Error transport connect[0m
+[0;32mI (56455) [MQGuru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4008cd63  PS      : 0x00060f33  A0      : 0x8008e11f  A1      : 0x3ffb23b0  
+A2      : 0x3ffd3308  A3      : 0xffffffff  A4      : 0x00000000  A5      : 0x00060f23  
+A6      : 0x00000010  A7      : 0x0000cdcd  A8      : 0x00000000  A9      : 0x3ffb501c  
+A10     : 0x3ffc3304  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x00000010  
+A14     : 0x00000010  A15     : 0x3ffce1e0  SAR     : 0x00000020  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4008cd60:0x3ffb23b0 0x4008e11c:0x3ffb23d0 0x400d8b5a:0x3ffb23f0 0x4016b1a3:0x3ffb2430 0x4008be85:0x3ffb2460
+
+
+
+
+ELF file SHA256: 0d3cc9cb6
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  1 2024 17:42:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29954h (170324) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0003997c vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003ee08 vaddr=40080000 size=01210h (  4624) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d168h (643432) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=000dd190 vaddr=40081210 size=17ec0h ( 97984) load[0m
+[0;32mI (324) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (324) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) cpu_start: Multicore app[0m
+[0;32mI (344) cpu_start: Pro cpu start user code[0m
+[0;32mI (344) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (344) cpu_start: Application information:[0m
+[0;32mI (347) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (354) cpu_start: App version:      ea6fe41-dirty[0m
+[0;32mI (360) cpu_start: Compile time:     Feb  2 2024 14:24:52[0m
+[0;32mI (366) cpu_start: ELF file SHA256:  0d3cc9cb6...[0m
+[0;32mI (371) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (382) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (387) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (392) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (399) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 3FFC7878 len 00018788 (97 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (418) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (424) heap_init: At 400990D0 len 00006F30 (27 KiB): IRAM[0m
+[0;32mI (432) spi_flash: detected chip: winbond[0m
+[0;32mI (435) spi_flash: flash io: dio[0m
+[0;33mW (439) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (450) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (455) main_task: Started on CPU0[0m
+[0;32mI (465) main_task: Calling app_main()[0m
+[0;32mI (495) [I2C]: Module configuration successful![0m
+[0;32mI (495) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (495) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (505) [SWITCH]: Configuration successful![0m
+[0;32mI (24515) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24515) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24515) [LED]: LEDs configured![0m
+I (24535) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (24545) wifi:wifi firmware version: a194738
+I (24555) wifi:wifi certification version: v7.0
+I (24555) wifi:config NVS flash: enabled
+I (24555) wifi:config nano formating: disabled
+I (24555) wifi:Init data frame dynamic rx buffer num: 32
+I (24565) wifi:Init static rx mgmt buffer num: 5
+I (24565) wifi:Init management short buffer num: 32
+I (24565) wifi:Init dynamic tx buffer num: 32
+I (24575) wifi:Init static rx buffer size: 1600
+I (24575) wifi:Init static rx buffer num: 10
+I (24585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (24585) wifi_init: rx ba win: 6[0m
+[0;32mI (24585) wifi_init: tcpip mbox: 32[0m
+[0;32mI (24595) wifi_init: udp mbox: 6[0m
+[0;32mI (24595) wifi_init: tcp mbox: 6[0m
+[0;32mI (24605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (24605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (24615) wifi_init: tcp mss: 1440[0m
+[0;32mI (24615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (24615) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (24625) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (24715) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (24715) wifi:enable tsf
+Gpio pin: 33
+Greeting user
+[0;32mI (24715) [WI-FI]: Wifi started![0m
+[0;32mI (27135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (29555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (31965) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (34385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (36805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (39215) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (41635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (44055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (46465) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (48885) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (51305) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (53725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (56135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (58555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (60975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (63385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (65805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (68225) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (70635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (73055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (75475) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (77885) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (80305) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (82725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (85135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (87555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (89975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (92385) [WI-FI]: Reconnecting to wifi ...[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  1 2024 17:42:17[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29954h (170324) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0003997c vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003ee08 vaddr=40080000 size=01210h (  4624) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d168h (643432) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dd190 vaddr=40081210 size=17ec0h ( 97984) load[0m
+[0;32mI (323) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (323) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) cpu_start: Multicore app[0m
+[0;32mI (344) cpu_start: Pro cpu start user code[0m
+[0;32mI (344) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (344) cpu_start: Application information:[0m
+[0;32mI (347) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (354) cpu_start: App version:      ea6fe41-dirty[0m
+[0;32mI (359) cpu_start: Compile time:     Feb  2 2024 14:24:52[0m
+[0;32mI (365) cpu_start: ELF file SHA256:  0d3cc9cb6...[0m
+[0;32mI (371) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (382) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (387) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (392) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (399) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 3FFC7878 len 00018788 (97 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (424) heap_init: At 400990D0 len 00006F30 (27 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (439) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (449) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (455) main_task: Started on CPU0[0m
+[0;32mI (465) main_task: Calling app_main()[0m
+[0;32mI (495) [I2C]: Module configuration successful![0m
+[0;32mI (495) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (495) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (505) [SWITCH]: Configuration successful![0m
+[0;32mI (24515) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24515) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24515) [LED]: LEDs configured![0m
+I (24535) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (24545) wifi:wifi firmware version: a194738
+I (24555) wifi:wifi certification version: v7.0
+I (24555) wifi:config NVS flash: enabled
+I (24555) wifi:config nano formating: disabled
+I (24555) wifi:Init data frame dynamic rx buffer num: 32
+I (24565) wifi:Init static rx mgmt buffer num: 5
+I (24565) wifi:Init management short buffer num: 32
+I (24565) wifi:Init dynamic tx buffer num: 32
+I (24575) wifi:Init static rx buffer size: 1600
+I (24575) wifi:Init static rx buffer num: 10
+I (24585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (24585) wifi_init: rx ba win: 6[0m
+[0;32mI (24585) wifi_init: tcpip mbox: 32[0m
+[0;32mI (24595) wifi_init: udp mbox: 6[0m
+[0;32mI (24595) wifi_init: tcp mbox: 6[0m
+[0;32mI (24605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (24605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (24615) wifi_init: tcp mss: 1440[0m
+[0;32mI (24615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (24615) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (24625) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (24715) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (24715) wifi:enable tsf
+Gpio pin: 33
+Greeting user
+[0;32mI (24715) [WI-FI]: Wifi started![0m
+[0;32mI (27135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (29555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (31965) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (34385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (36805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (39215) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (41635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (44055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (46465) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (48885) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (51305) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (53715) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (56135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (58555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (60975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (63385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (65805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (68225) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (70635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (73055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (75475) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (77885) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (80305) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (82725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (85135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (87555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (89975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (92385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (94805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (97225) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (99635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (102055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (104475) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (106885) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (109305) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (111725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (114135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (116555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (118975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (121385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (123805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (126225) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (128635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (131055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (133475) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (135885) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (138305) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (140725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (143145) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (145555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (147975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (150395) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (152805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (155225) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (157645) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (160055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (162475) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (164895) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (167305) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (169725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (172145) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (174555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (176975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (179395) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (181805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (184225) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (186645) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (189065) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (191475) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (193895) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (196315) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (198725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (201145) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (203565) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (205975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (208395) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (210815) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (213225) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (215645) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (218065) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (220475) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (222895) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (225315) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (227725) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (230145) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (232565) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (234975) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (237395) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (239815) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (242235) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (244645) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (247065) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (249485) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (251895) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (254315) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (256735) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (259145) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (261565) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (263985) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (266395) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (268815) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (271235) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (273645) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (276065) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (278485) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (280895) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (283315) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (285735) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (288145) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (290565) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (292985) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (295405) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (297815) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (300235) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (302655) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (305065) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (307485) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (309905) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (312315) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (314735) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (317155) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (319565) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (321985) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (324405) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (326815) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (329235) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (331655) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (334065) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (336485) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (338905) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (341315) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (343735) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (346155) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (348575) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (350985) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (353405) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (355825) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (358235) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (360655) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (363075) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (365485) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (367905) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (370325) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (372735) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (375155) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (377575) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (379985) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (382405) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (384825) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (387235) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (389655) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (392075) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (394495) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (396905) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (399325) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (401745) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (404155) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (406575) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (408995) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (411405) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (413825) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (416245) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (418655) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (421075) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (423495) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (425905) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (428325) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (430745) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (433155) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (435575) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (437995) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (440405) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (442825) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (445245) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (447665) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (450075) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (452495) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (454915) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (457325) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (459745) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (462165) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (464575) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (466995) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (469415) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (471825) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (474245) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (476665) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (479075) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (481495) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (483915) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (486325) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (488745) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (491165) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (493585) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (495995) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (498415) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (500835) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (503245) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (505665) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (508085) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (510495) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (512915) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (515335) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (517745) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (520165) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (522585) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (524995) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (527415) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (529835) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (532245) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (534665) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (537085) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (539495) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (541915) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (544335) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (546745) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (549165) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (551585) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (554005) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (556415) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (558835) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (561255) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (563665) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (566085) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (568505) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (570915) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (573335) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (575755) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (578165) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (580585) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (583005) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (585415) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (587835) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (590255) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (592665) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (595085) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (597505) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (599915) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (602335) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (604755) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (607175) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (609585) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (612005) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (614425) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (616835) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (619255) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (621675) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (624085) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (626505) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (628925) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (631335) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (633755) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (636175) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (638585) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (641005) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (643425) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (645835) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (648255) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (650675) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (653095) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (655505) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (657925) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (660345) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (662755) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (665175) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (667595) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (670005) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (672425) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (674845) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (677255) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (679675) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (682095) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (684505) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (686925) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (689345) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (691755) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (694175) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (696595) [WI-FI]: Reconnecting to wifi ...[0m
+I (696605) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (696605) wifi:state: init -> auth (b0)
+I (697615) wifi:state: auth -> init (200)
+I (697615) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (697615) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (700035) [WI-FI]: Reconnecting to wifi ...[0m
+I (700055) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (700055) wifi:state: init -> auth (b0)
+I (700065) wifi:state: auth -> assoc (0)
+I (700075) wifi:state: assoc -> run (10)
+I (700095) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 16:dc:06:c5:88:c8
+I (700095) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (700105) wifi:pm start, type: 1
+
+I (700105) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (700365) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (700365) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (701115) esp_netif_handlers: sta ip: 192.168.133.8, mask: 255.255.255.0, gw: 192.168.133.112[0m
+[0;32mI (701115) [WI-FI]: Connected to ip: 192.168.133.8[0m
+[0;32mI (706115) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (706145) wifi:<ba-add>idx:0 (ifx:0, 16:dc:06:c5:88:c8), tid:0, ssn:3, winSize:64
+[0;32mI (706245) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (707245) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 128.000000%
+Temperatura: 1228.800049°C
+[0;32mI (707245) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (707295) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (712245) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (712245) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (712455) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (717245) AM2320: Failed to read data: ESP_ERR_TIMEOUT[0m
+Wilgotność: 0.000000%
+Temperatura: 128.000000°C
+[0;32mI (717245) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (717365) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+I (719615) wifi:state: run -> init (1a0)
+I (719615) wifi:pm stop, total sleep time: 16082077 us / 19513944 us
+
+I (719625) wifi:<ba-del>idx:0, tid:0
+I (719625) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (719635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (719635) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (719645) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (719645) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719655) mqtt_client: Client force reconnect requested[0m
+[0;32mI (719655) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (719665) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (719675) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (719675) mqtt_client: Error transport connect[0m
+[0;32mI (719685) [MQTT]: EVENT_ERROR[0m
+[0;31mE (719685) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (719695) [MQTT]: Last errno string (Success)[0m
+[0;32mI (719695) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719705) mqtt_client: Client force reconnect requested[0m
+[0;32mI (719705) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (719715) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (719725) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (719725) mqtt_client: Error transport connect[0m
+[0;32mI (719735) [MQTT]: EVENT_ERROR[0m
+[0;31mE (719735) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (719745) [MQTT]: Last errno string (Success)[0m
+[0;32mI (719745) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719755) mqtt_client: Client force reconnect requested[0m
+[0;32mI (719755) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (719765) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (719775) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (719775) mqtt_client: Error transport connect[0m
+[0;32mI (719785) [MQTT]: EVENT_ERROR[0m
+[0;31mE (719785) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (719795) [MQTT]: Last errno string (Success)[0m
+[0;32mI (719795) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719805) mqtt_client: Client force reconnect requested[0m
+[0;32mI (719805) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (719815) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (719825) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (719825) mqtt_client: Error transport connect[0m
+[0;32mI (719835) [MQTT]: EVENT_ERROR[0m
+[0;31mE (719835) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (719845) [MQTT]: Last errno string (Success)[0m
+[0;32mI (719845) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719855) mqtt_client: Client force reconnect requested[0m
+[0;32mI (719855) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (719865) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (719865) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (719875) mqtt_client: Error transport connect[0m
+[0;32mI (719885) [MQTT]: EVENT_ERROR[0m
+[0;31mE (719885) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (719895) [MQTT]: Last errno string (Success)[0m
+[0;32mI (719895) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719905) mqtt_client: Client force reconnect requested[0m
+[0;32mI (719905) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (719915) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (719915) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (719925) mqtt_client: Error transport connect[0m
+[0;32mI (719935) [MQTT]: EVENT_ERROR[0m
+[0;31mE (719935) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (719945) [MQTT]: Last errno string (Success)[0m
+[0;32mI (719945) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719955) mqtt_client: Client force reconnect requested[0m
+[0;32mI (719955) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (719965) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (719965) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (719975) mqtt_client: Error transport connect[0m
+[0;32mI (719985) [MQTT]: EVENT_ERROR[0m
+[0;31mE (719985) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (719985) [MQTT]: Last errno string (Success)[0m
+[0;32mI (719995) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (719995) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720005) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720015) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720015) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720025) mqtt_client: Error transport connect[0m
+[0;32mI (720025) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720035) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720035) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720045) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720045) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720055) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720065) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720065) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720075) mqtt_client: Error transport connect[0m
+[0;32mI (720075) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720085) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720085) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720095) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720095) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720105) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720115) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720115) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720125) mqtt_client: Error transport connect[0m
+[0;32mI (720125) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720135) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720135) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720145) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720145) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720155) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720165) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720165) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720175) mqtt_client: Error transport connect[0m
+[0;32mI (720175) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720185) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720185) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720195) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720195) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720205) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720205) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720215) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720225) mqtt_client: Error transport connect[0m
+[0;32mI (720225) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720235) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720235) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720245) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720245) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720255) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720255) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720265) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720275) mqtt_client: Error transport connect[0m
+[0;32mI (720275) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720285) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720285) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720295) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720295) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720305) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720305) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720315) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720325) mqtt_client: Error transport connect[0m
+[0;32mI (720325) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720325) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720335) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720345) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720345) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720355) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720355) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720365) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720365) mqtt_client: Error transport connect[0m
+[0;32mI (720375) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720375) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720385) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720395) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720395) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720405) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720405) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720415) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720415) mqtt_client: Error transport connect[0m
+[0;32mI (720425) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720425) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720435) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720435) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720445) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720455) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720455) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720465) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720465) mqtt_client: Error transport connect[0m
+[0;32mI (720475) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720475) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720485) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720485) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720495) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720495) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720505) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720515) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720515) mqtt_client: Error transport connect[0m
+[0;32mI (720525) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720525) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720535) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720535) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720545) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720545) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720555) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720565) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720565) mqtt_client: Error transport connect[0m
+[0;32mI (720575) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720575) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720585) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720585) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720595) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720595) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720605) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720615) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720615) mqtt_client: Error transport connect[0m
+[0;32mI (720625) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720625) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720635) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720635) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720645) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720645) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720655) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720655) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720665) mqtt_client: Error transport connect[0m
+[0;32mI (720675) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720675) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720685) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720685) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720695) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720695) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720705) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720705) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720715) mqtt_client: Error transport connect[0m
+[0;32mI (720725) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720725) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720735) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720735) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720745) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720745) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720755) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720755) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720765) mqtt_client: Error transport connect[0m
+[0;32mI (720775) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720775) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720785) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720785) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720785) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720795) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720805) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720805) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720815) mqtt_client: Error transport connect[0m
+[0;32mI (720815) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720825) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720825) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720835) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720835) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720845) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720855) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720855) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720865) mqtt_client: Error transport connect[0m
+[0;32mI (720865) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720875) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720875) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720885) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720885) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720895) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720905) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720905) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720915) mqtt_client: Error transport connect[0m
+[0;32mI (720915) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720925) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720925) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720935) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720935) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720945) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720955) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (720955) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (720965) mqtt_client: Error transport connect[0m
+[0;32mI (720965) [MQTT]: EVENT_ERROR[0m
+[0;31mE (720975) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (720975) [MQTT]: Last errno string (Success)[0m
+[0;32mI (720985) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (720985) mqtt_client: Client force reconnect requested[0m
+[0;32mI (720995) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (720995) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721005) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721015) mqtt_client: Error transport connect[0m
+[0;32mI (721015) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721025) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721025) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721035) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721035) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721045) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721045) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721055) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721065) mqtt_client: Error transport connect[0m
+[0;32mI (721065) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721075) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721075) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721085) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721085) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721095) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721095) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721105) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721115) mqtt_client: Error transport connect[0m
+[0;32mI (721115) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721115) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721125) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721135) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721135) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721145) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721145) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721155) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721165) mqtt_client: Error transport connect[0m
+[0;32mI (721165) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721165) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721175) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721185) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721185) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721195) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721195) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721205) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721205) mqtt_client: Error transport connect[0m
+[0;32mI (721215) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721215) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721225) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721225) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721235) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721245) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721245) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721255) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721255) mqtt_client: Error transport connect[0m
+[0;32mI (721265) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721265) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721275) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721275) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721285) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721285) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721295) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721305) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721305) mqtt_client: Error transport connect[0m
+[0;32mI (721315) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721315) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721325) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721325) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721335) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721335) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721345) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721355) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721355) mqtt_client: Error transport connect[0m
+[0;32mI (721365) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721365) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721375) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721375) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721385) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721385) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721395) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721405) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721405) mqtt_client: Error transport connect[0m
+[0;32mI (721415) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721415) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721425) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721425) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721435) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721435) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721445) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721455) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721455) mqtt_client: Error transport connect[0m
+[0;32mI (721465) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721465) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721475) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721475) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721485) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721485) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721495) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721495) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721505) mqtt_client: Error transport connect[0m
+[0;32mI (721515) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721515) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721525) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721525) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721535) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721535) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721545) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721545) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721555) mqtt_client: Error transport connect[0m
+[0;32mI (721565) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721565) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721575) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721575) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721575) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721585) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721595) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721595) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721605) mqtt_client: Error transport connect[0m
+[0;32mI (721615) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721615) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721615) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721625) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721625) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721635) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721645) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721645) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721655) mqtt_client: Error transport connect[0m
+[0;32mI (721655) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721665) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721665) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721675) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721675) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721685) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721695) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721695) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721705) mqtt_client: Error transport connect[0m
+[0;32mI (721705) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721715) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721715) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721725) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721725) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721735) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721745) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721745) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721755) mqtt_client: Error transport connect[0m
+[0;32mI (721755) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721765) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721765) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721775) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721775) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721785) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721785) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721795) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721805) mqtt_client: Error transport connect[0m
+[0;32mI (721805) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721815) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721815) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721825) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721825) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721835) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721835) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721845) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721855) mqtt_client: Error transport connect[0m
+[0;32mI (721855) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721865) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721865) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721875) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721875) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721885) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721885) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721895) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721905) mqtt_client: Error transport connect[0m
+[0;32mI (721905) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721905) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721915) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721925) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721925) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721935) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721935) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721945) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721955) mqtt_client: Error transport connect[0m
+[0;32mI (721955) [MQTT]: EVENT_ERROR[0m
+[0;31mE (721955) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (721965) [MQTT]: Last errno string (Success)[0m
+[0;32mI (721975) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (721975) mqtt_client: Client force reconnect requested[0m
+[0;32mI (721985) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (721985) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (721995) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (721995) mqtt_client: Error transport connect[0m
+[0;32mI (722005) [MQTT]: EVENT_ERROR[0m
+[0;31mE (722005) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (722015) [MQTT]: Last errno string (Success)[0m
+[0;32mI (722025) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (722025) mqtt_client: Client force reconnect requested[0m
+[0;32mI (722035) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (722035) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (722045) transport_base: Failed to open a new connection: 32772[0mGuru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4008cd63  PS      : 0x00060133  A0      : 0x8008e11f  A1      : 0x3ffb23b0  
+A2      : 0x3ffd32f4  A3      : 0xffffffff  A4      : 0xffffffff  A5      : 0x00060123  
+A6      : 0x00000010  A7      : 0x0000cdcd  A8      : 0x00000000  A9      : 0x3ffb501c  
+A10     : 0x3ffc3304  A11     : 0x00000000  A12     : 0xb33fffff  A13     : 0x00060323  
+A14     : 0x00011952  A15     : 0x0000cdcd  SAR     : 0x0000001a  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000004  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4008cd60:0x3ffb23b0 0x4008e11c:0x3ffb23d0 0x400d8b5a:0x3ffb23f0 0x4016b1a3:0x3ffb2430 0x4008be85:0x3ffb2460
+
+
+
+
+ELF file SHA256: 0d3cc9cb6
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  1 2024 17:42:17[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29954h (170324) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0003997c vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003ee08 vaddr=40080000 size=01210h (  4624) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d168h (643432) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=000dd190 vaddr=40081210 size=17ec0h ( 97984) load[0m
+[0;32mI (324) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (324) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) cpu_start: Multicore app[0m
+[0;32mI (344) cpu_start: Pro cpu start user code[0m
+[0;32mI (344) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (344) cpu_start: Application information:[0m
+[0;32mI (347) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (354) cpu_start: App version:      ea6fe41-dirty[0m
+[0;32mI (360) cpu_start: Compile time:     Feb  2 2024 14:24:52[0m
+[0;32mI (366) cpu_start: ELF file SHA256:  0d3cc9cb6...[0m
+[0;32mI (371) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (382) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (387) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (392) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (399) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 3FFC7878 len 00018788 (97 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (418) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (424) heap_init: At 400990D0 len 00006F30 (27 KiB): IRAM[0m
+[0;32mI (432) spi_flash: detected chip: winbond[0m
+[0;32mI (435) spi_flash: flash io: dio[0m
+[0;33mW (439) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (450) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (455) main_task: Started on CPU0[0m
+[0;32mI (465) main_task: Calling app_main()[0m
+[0;32mI (495) [I2C]: Module configuration successful![0m
+[0;32mI (495) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (495) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (505) [SWITCH]: Configuration successful![0m
+[0;32mI (23515) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23515) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23515) [LED]: LEDs configured![0m
+I (23535) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (23545) wifi:wifi firmware version: a194738
+I (23555) wifi:wifi certification version: v7.0
+I (23555) wifi:config NVS flash: enabled
+I (23555) wifi:config nano formating: disabled
+I (23555) wifi:Init data frame dynamic rx buffer num: 32
+I (23565) wifi:Init static rx mgmt buffer num: 5
+I (23565) wifi:Init management short buffer num: 32
+I (23565) wifi:Init dynamic tx buffer num: 32
+I (23575) wifi:Init static rx buffer size: 1600
+I (23575) wifi:Init static rx buffer num: 10
+I (23585) wifi:Init dynamic rx buffer num: 32
+[0;32mI (23585) wifi_init: rx ba win: 6[0m
+[0;32mI (23585) wifi_init: tcpip mbox: 32[0m
+[0;32mI (23595) wifi_init: udp mbox: 6[0m
+[0;32mI (23595) wifi_init: tcp mbox: 6[0m
+[0;32mI (23605) wifi_init: tcp tx win: 5760[0m
+[0;32mI (23605) wifi_init: tcp rx win: 5760[0m
+[0;32mI (23615) wifi_init: tcp mss: 1440[0m
+[0;32mI (23615) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (23615) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (23625) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (23715) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (23715) wifi:enable tsf
+Gpio pin: 33
+Greeting user
+[0;32mI (23715) [WI-FI]: Wifi started![0m
+[0;32mI (26135) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (28555) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (30965) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (33385) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (35805) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (38215) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (40635) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (43055) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (45465) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (47885) [WI-FI]: Reconnecting to wifi ...[0m

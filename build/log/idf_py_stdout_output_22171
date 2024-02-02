@@ -1,0 +1,2813 @@
+14 size=12af4h ( 76532) load[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  1 2024 17:42:17[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=247b0h (149424) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=000347d8 vaddr=3ffbdb60 size=05424h ( 21540) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=00039c04 vaddr=40080000 size=06414h ( 25620) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=855ach (546220) map[0m
+[0;32mI (261) esp_image: segment 4: paddr=000c55d4 vaddr=40086414 size=12af4h ( 76532) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (305) cpu_start: Multicore app[0m
+[0;32mI (314) cpu_start: Pro cpu start user code[0m
+[0;32mI (314) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) cpu_start: Application information:[0m
+[0;32mI (317) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (324) cpu_start: App version:      ea6fe41-dirty[0m
+[0;32mI (329) cpu_start: Compile time:     Feb  2 2024 14:24:52[0m
+[0;32mI (335) cpu_start: ELF file SHA256:  ff4089884...[0m
+[0;32mI (341) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (347) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (352) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (357) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (362) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (369) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (375) heap_init: At 3FFC7248 len 00018DB8 (99 KiB): DRAM[0m
+[0;32mI (381) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (387) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (394) heap_init: At 40098F08 len 000070F8 (28 KiB): IRAM[0m
+[0;32mI (401) spi_flash: detected chip: winbond[0m
+[0;32mI (404) spi_flash: flash io: dio[0m
+[0;33mW (409) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (419) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (428) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (433) main_task: Started on CPU0[0m
+[0;32mI (443) main_task: Calling app_main()[0m
+[0;32mI (443) [WI-FI]: [APP] Startup..[0m
+[0;32mI (443) [WI-FI]: [APP] Free memory: 268584 bytes[0m
+[0;32mI (443) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (483) [I2C]: Module configuration successful![0m
+[0;32mI (483) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (493) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (493) [SWITCH]: Configuration successful![0m
+[0;32mI (513) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) [LED]: LEDs configured![0m
+I (543) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (553) wifi:wifi firmware version: a194738
+I (563) wifi:wifi certification version: v7.0
+I (563) wifi:config NVS flash: enabled
+I (563) wifi:config nano formating: disabled
+I (563) wifi:Init data frame dynamic rx buffer num: 32
+I (563) wifi:Init static rx mgmt buffer num: 5
+I (573) wifi:Init management short buffer num: 32
+I (573) wifi:Init dynamic tx buffer num: 32
+I (583) wifi:Init static rx buffer size: 1600
+I (583) wifi:Init static rx buffer num: 10
+I (583) wifi:Init dynamic rx buffer num: 32
+[0;32mI (593) wifi_init: rx ba win: 6[0m
+[0;32mI (593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (603) wifi_init: udp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp tx win: 5760[0m
+[0;32mI (613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (613) wifi_init: tcp mss: 1440[0m
+[0;32mI (623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (623) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+ADC Value: 2559
+Voltage: 2.062198
+Light Intensity: 2.062198
+[0;32mI (5993) main_task: Returned from app_main()[0m
+ADC Value: 3542
+Voltage: 2.854359
+Light Intensity: 2.854359
+ADC Value: 3470
+Voltage: 2.796337
+Light Intensity: 2.796337
+ADC Value: 3451
+Voltage: 2.781026
+Light Intensity: 2.781026
+ADC Value: 3392
+Voltage: 2.733480
+Light Intensity: 2.733480
+ADC Value: 3137
+Voltage: 2.527985
+Light Intensity: 2.527985
+ADC Value: 2846
+Voltage: 2.293480
+Light Intensity: 2.293480
+ADC Value: 2541
+Voltage: 2.047692
+Light Intensity: 2.047692
+ADC Value: 2224
+Voltage: 1.792234
+Light Intensity: 1.792234
+ADC Value: 1982
+Voltage: 1.597216
+Light Intensity: 1.597216
+ADC Value: 1690
+Voltage: 1.361905
+Light Intensity: 1.361905
+ADC Value: 1463
+Voltage: 1.178974
+Light Intensity: 1.178974
+ADC Value: 1280
+Voltage: 1.031502
+Light Intensity: 1.031502
+ADC Value: 1123
+Voltage: 0.904982
+Light Intensity: 0.904982
+ADC Value: 1001
+Voltage: 0.806667
+Light Intensity: 0.806667
+ADC Value: 942
+Voltage: 0.759121
+Light Intensity: 0.759121
+ADC Value: 950
+Voltage: 0.765568
+Light Intensity: 0.765568
+ADC Value: 864
+Voltage: 0.696264
+Light Intensity: 0.696264
+ADC Value: 712
+Voltage: 0.573773
+Light Intensity: 0.573773
+ADC Value: 561
+Voltage: 0.452088
+Light Intensity: 0.452088
+ADC Value: 528
+Voltage: 0.425494
+Light Intensity: 0.425494
+ADC Value: 561
+Voltage: 0.452088
+Light Intensity: 0.452088
+ADC Value: 629
+Voltage: 0.506886
+Light Intensity: 0.506886
+ADC Value: 567
+Voltage: 0.456923
+Light Intensity: 0.456923
+ADC Value: 588
+Voltage: 0.473846
+Light Intensity: 0.473846
+ADC Value: 579
+Voltage: 0.466593
+Light Intensity: 0.466593
+ADC Value: 638
+Voltage: 0.514139
+Light Intensity: 0.514139
+ADC Value: 637
+Voltage: 0.513333
+Light Intensity: 0.513333
+ADC Value: 654
+Voltage: 0.527033
+Light Intensity: 0.527033
+ADC Value: 741
+Voltage: 0.597143
+Light Intensity: 0.597143
+ADC Value: 788
+Voltage: 0.635018
+Light Intensity: 0.635018
+ADC Value: 859
+Voltage: 0.692234
+Light Intensity: 0.692234
+ADC Value: 986
+Voltage: 0.794579
+Light Intensity: 0.794579
+ADC Value: 1114
+Voltage: 0.897729
+Light Intensity: 0.897729
+ADC Value: 1229
+Voltage: 0.990403
+Light Intensity: 0.990403
+ADC Value: 1419
+Voltage: 1.143517
+Light Intensity: 1.143517
+ADC Value: 1675
+Voltage: 1.349817
+Light Intensity: 1.349817
+ADC Value: 1843
+Voltage: 1.485201
+Light Intensity: 1.485201
+ADC Value: 2222
+Voltage: 1.790623
+Light Intensity: 1.790623
+ADC Value: 2411
+Voltage: 1.942930
+Light Intensity: 1.942930
+ADC Value: 2638
+Voltage: 2.125861
+Light Intensity: 2.125861
+ADC Value: 2832
+Voltage: 2.282198
+Light Intensity: 2.282198
+ADC Value: 3003
+Voltage: 2.420000
+Light Intensity: 2.420000
+ADC Value: 3107
+Voltage: 2.503809
+Light Intensity: 2.503809
+ADC Value: 3296
+Voltage: 2.656117
+Light Intensity: 2.656117
+ADC Value: 3345
+Voltage: 2.695604
+Light Intensity: 2.695604
+ADC Value: 3423
+Voltage: 2.758461
+Light Intensity: 2.758461
+ADC Value: 3617
+Voltage: 2.914798
+Light Intensity: 2.914798
+ADC Value: 3213
+Voltage: 2.589231
+Light Intensity: 2.589231
+ADC Value: 3271
+Voltage: 2.635971
+Light Intensity: 2.635971
+ADC Value: 3201
+Voltage: 2.579561
+Light Intensity: 2.579561
+ADC Value: 3113
+Voltage: 2.508645
+Light Intensity: 2.508645
+ADC Value: 3027
+Voltage: 2.439341
+Light Intensity: 2.439341
+ADC Value: 2814
+Voltage: 2.267692
+Light Intensity: 2.267692
+ADC Value: 2603
+Voltage: 2.097656
+Light Intensity: 2.097656
+ADC Value: 2359
+Voltage: 1.901026
+Light Intensity: 1.901026
+ADC Value: 2111
+Voltage: 1.701172
+Light Intensity: 1.701172
+ADC Value: 1910
+Voltage: 1.539194
+Light Intensity: 1.539194
+ADC Value: 1719
+Voltage: 1.385275
+Light Intensity: 1.385275
+ADC Value: 1535
+Voltage: 1.236996
+Light Intensity: 1.236996
+ADC Value: 1457
+Voltage: 1.174139
+Light Intensity: 1.174139
+ADC Value: 1259
+Voltage: 1.014579
+Light Intensity: 1.014579
+ADC Value: 1202
+Voltage: 0.968645
+Light Intensity: 0.968645
+ADC Value: 1168
+Voltage: 0.941245
+Light Intensity: 0.941245
+ADC Value: 1115
+Voltage: 0.898535
+Light Intensity: 0.898535
+ADC Value: 1098
+Voltage: 0.884835
+Light Intensity: 0.884835
+ADC Value: 1011
+Voltage: 0.814725
+Light Intensity: 0.814725
+ADC Value: 589
+Voltage: 0.474652
+Light Intensity: 0.474652
+ADC Value: 3174
+Voltage: 2.557802
+Light Intensity: 2.557802
+ADC Value: 2933
+Voltage: 2.363590
+Light Intensity: 2.363590
+ADC Value: 2821
+Voltage: 2.273333
+Light Intensity: 2.273333
+ADC Value: 2653
+Voltage: 2.137949
+Light Intensity: 2.137949
+ADC Value: 2414
+Voltage: 1.945348
+Light Intensity: 1.945348
+ADC Value: 2127
+Voltage: 1.714066
+Light Intensity: 1.714066
+ADC Value: 1895
+Voltage: 1.527106
+Light Intensity: 1.527106
+ADC Value: 1601
+Voltage: 1.290183
+Light Intensity: 1.290183
+ADC Value: 1434
+Voltage: 1.155604
+Light Intensity: 1.155604
+ADC Value: 1232
+Voltage: 0.992821
+Light Intensity: 0.992821
+ADC Value: 1099
+Voltage: 0.885641
+Light Intensity: 0.885641
+ADC Value: 1010
+Voltage: 0.813919
+Light Intensity: 0.813919
+ADC Value: 841
+Voltage: 0.677729
+Light Intensity: 0.677729
+ADC Value: 739
+Voltage: 0.595531
+Light Intensity: 0.595531
+ADC Value: 788
+Voltage: 0.635018
+Light Intensity: 0.635018
+ADC Value: 831
+Voltage: 0.669670
+Light Intensity: 0.669670
+ADC Value: 869
+Voltage: 0.700293
+Light Intensity: 0.700293
+ADC Value: 912
+Voltage: 0.734945
+Light Intensity: 0.734945
+ADC Value: 1065
+Voltage: 0.858242
+Light Intensity: 0.858242
+ADC Value: 1168
+Voltage: 0.941245
+Light Intensity: 0.941245
+ADC Value: 1304
+Voltage: 1.050843
+Light Intensity: 1.050843
+ADC Value: 1514
+Voltage: 1.220073
+Light Intensity: 1.220073
+ADC Value: 2111
+Voltage: 1.701172
+Light Intensity: 1.701172
+ADC Value: 2064
+Voltage: 1.663297
+Light Intensity: 1.663297
+ADC Value: 2043
+Voltage: 1.646374
+Light Intensity: 1.646374
+ADC Value: 1989
+Voltage: 1.602857
+Light Intensity: 1.602857
+ADC Value: 1955
+Voltage: 1.575458
+Light Intensity: 1.575458
+ADC Value: 1902
+Voltage: 1.532747
+Light Intensity: 1.532747
+ADC Value: 2165
+Voltage: 1.744689
+Light Intensity: 1.744689
+ADC Value: 2064
+Voltage: 1.663297
+Light Intensity: 1.663297
+ADC Value: 1840
+Voltage: 1.482784
+Light Intensity: 1.482784
+ADC Value: 1947
+Voltage: 1.569011
+Light Intensity: 1.569011
+ADC Value: 2011
+Voltage: 1.620586
+Light Intensity: 1.620586
+ADC Value: 1995
+Voltage: 1.607692
+Light Intensity: 1.607692
+ADC Value: 1987
+Voltage: 1.601245
+Light Intensity: 1.601245
+ADC Value: 1916
+Voltage: 1.544029
+Light Intensity: 1.544029
+ADC Value: 1901
+Voltage: 1.531941
+Light Intensity: 1.531941
+ADC Value: 1872
+Voltage: 1.508571
+Light Intensity: 1.508571
+ADC Value: 2312
+Voltage: 1.863150
+Light Intensity: 1.863150
+ADC Value: 2034
+Voltage: 1.639121
+Light Intensity: 1.639121
+ADC Value: 1931
+Voltage: 1.556117
+Light Intensity: 1.556117
+ADC Value: 2042
+Voltage: 1.645568
+Light Intensity: 1.645568
+ADC Value: 1966
+Voltage: 1.584322
+Light Intensity: 1.584322
+ADC Value: 1771
+Voltage: 1.427179
+Light Intensity: 1.427179
+ADC Value: 1756
+Voltage: 1.415092
+Light Intensity: 1.415092
+ADC Value: 1699
+Voltage: 1.369158
+Light Intensity: 1.369158
+ADC Value: 1840
+Voltage: 1.482784
+Light Intensity: 1.482784
+ADC Value: 1587
+Voltage: 1.278901
+Light Intensity: 1.278901
+ADC Value: 1578
+Voltage: 1.271648
+Light Intensity: 1.271648
+ADC Value: 1555
+Voltage: 1.253114
+Light Intensity: 1.253114
+ADC Value: 1486
+Voltage: 1.197509
+Light Intensity: 1.197509
+ADC Value: 1427
+Voltage: 1.149963
+Light Intensity: 1.149963
+ADC Value: 1406
+Voltage: 1.133040
+Light Intensity: 1.133040
+ADC Value: 1409
+Voltage: 1.135458
+Light Intensity: 1.135458
+ADC Value: 1363
+Voltage: 1.098388
+Light Intensity: 1.098388
+ADC Value: 1425
+Voltage: 1.148352
+Light Intensity: 1.148352
+ADC Value: 1456
+Voltage: 1.173333
+Light Intensity: 1.173333
+ADC Value: 1508
+Voltage: 1.215238
+Light Intensity: 1.215238
+ADC Value: 1470
+Voltage: 1.184615
+Light Intensity: 1.184615
+ADC Value: 955
+Voltage: 0.769597
+Light Intensity: 0.769597
+ADC Value: 1264
+Voltage: 1.018608
+Light Intensity: 1.018608
+ADC Value: 1125
+Voltage: 0.906593
+Light Intensity: 0.906593
+ADC Value: 1712
+Voltage: 1.379634
+Light Intensity: 1.379634
+ADC Value: 1791
+Voltage: 1.443297
+Light Intensity: 1.443297
+ADC Value: 1967
+Voltage: 1.585128
+Light Intensity: 1.585128
+ADC Value: 1952
+Voltage: 1.573040
+Light Intensity: 1.573040
+ADC Value: 2117
+Voltage: 1.706007
+Light Intensity: 1.706007
+ADC Value: 2191
+Voltage: 1.765641
+Light Intensity: 1.765641
+ADC Value: 2189
+Voltage: 1.764029
+Light Intensity: 1.764029
+ADC Value: 2312
+Voltage: 1.863150
+Light Intensity: 1.863150
+ADC Value: 2179
+Voltage: 1.755971
+Light Intensity: 1.755971
+ADC Value: 2198
+Voltage: 1.771282
+Light Intensity: 1.771282
+ADC Value: 1978
+Voltage: 1.593993
+Light Intensity: 1.593993
+ADC Value: 1821
+Voltage: 1.467473
+Light Intensity: 1.467473
+ADC Value: 1970
+Voltage: 1.587546
+Light Intensity: 1.587546
+ADC Value: 2045
+Voltage: 1.647985
+Light Intensity: 1.647985
+ADC Value: 2047
+Voltage: 1.649597
+Light Intensity: 1.649597
+ADC Value: 2119
+Voltage: 1.707619
+Light Intensity: 1.707619
+ADC Value: 2127
+Voltage: 1.714066
+Light Intensity: 1.714066
+ADC Value: 1971
+Voltage: 1.588352
+Light Intensity: 1.588352
+ADC Value: 2112
+Voltage: 1.701978
+Light Intensity: 1.701978
+ADC Value: 2107
+Voltage: 1.697949
+Light Intensity: 1.697949
+ADC Value: 1971
+Voltage: 1.588352
+Light Intensity: 1.588352
+ADC Value: 2119
+Voltage: 1.707619
+Light Intensity: 1.707619
+ADC Value: 2022
+Voltage: 1.629451
+Light Intensity: 1.629451
+ADC Value: 2031
+Voltage: 1.636703
+Light Intensity: 1.636703
+ADC Value: 1955
+Voltage: 1.575458
+Light Intensity: 1.575458
+ADC Value: 1877
+Voltage: 1.512601
+Light Intensity: 1.512601
+ADC Value: 1962
+Voltage: 1.581099
+Light Intensity: 1.581099
+ADC Value: 1893
+Voltage: 1.525494
+Light Intensity: 1.525494
+ADC Value: 1857
+Voltage: 1.496484
+Light Intensity: 1.496484
+ADC Value: 1796
+Voltage: 1.447326
+Light Intensity: 1.447326
+ADC Value: 1887
+Voltage: 1.520659
+Light Intensity: 1.520659
+ADC Value: 1858
+Voltage: 1.497289
+Light Intensity: 1.497289
+ADC Value: 1949
+Voltage: 1.570623
+Light Intensity: 1.570623
+ADC Value: 1951
+Voltage: 1.572234
+Light Intensity: 1.572234
+ADC Value: 1998
+Voltage: 1.610110
+Light Intensity: 1.610110
+ADC Value: 2030
+Voltage: 1.635897
+Light Intensity: 1.635897
+ADC Value: 2155
+Voltage: 1.736630
+Light Intensity: 1.736630
+ADC Value: 2154
+Voltage: 1.735824
+Light Intensity: 1.735824
+ADC Value: 2239
+Voltage: 1.804322
+Light Intensity: 1.804322
+ADC Value: 2244
+Voltage: 1.808352
+Light Intensity: 1.808352
+ADC Value: 2339
+Voltage: 1.884908
+Light Intensity: 1.884908
+ADC Value: 2295
+Voltage: 1.849451
+Light Intensity: 1.849451
+ADC Value: 2395
+Voltage: 1.930037
+Light Intensity: 1.930037
+ADC Value: 2393
+Voltage: 1.928425
+Light Intensity: 1.928425
+ADC Value: 2589
+Voltage: 2.086374
+Light Intensity: 2.086374
+ADC Value: 2559
+Voltage: 2.062198
+Light Intensity: 2.062198
+ADC Value: 2691
+Voltage: 2.168571
+Light Intensity: 2.168571
+ADC Value: 2666
+Voltage: 2.148425
+Light Intensity: 2.148425
+ADC Value: 2685
+Voltage: 2.163736
+Light Intensity: 2.163736
+ADC Value: 2716
+Voltage: 2.188718
+Light Intensity: 2.188718
+ADC Value: 2759
+Voltage: 2.223370
+Light Intensity: 2.223370
+ADC Value: 2693
+Voltage: 2.170183
+Light Intensity: 2.170183
+ADC Value: 2781
+Voltage: 2.241099
+Light Intensity: 2.241099
+ADC Value: 2786
+Voltage: 2.245128
+Light Intensity: 2.245128
+ADC Value: 2815
+Voltage: 2.268498
+Light Intensity: 2.268498
+ADC Value: 2849
+Voltage: 2.295897
+Light Intensity: 2.295897
+ADC Value: 2785
+Voltage: 2.244322
+Light Intensity: 2.244322
+ADC Value: 2854
+Voltage: 2.299927
+Light Intensity: 2.299927
+ADC Value: 2869
+Voltage: 2.312015
+Light Intensity: 2.312015
+ADC Value: 2734
+Voltage: 2.203223
+Light Intensity: 2.203223
+ADC Value: 2896
+Voltage: 2.333773
+Light Intensity: 2.333773
+ADC Value: 2905
+Voltage: 2.341026
+Light Intensity: 2.341026
+ADC Value: 2928
+Voltage: 2.359560
+Light Intensity: 2.359560
+ADC Value: 2929
+Voltage: 2.360366
+Light Intensity: 2.360366
+ADC Value: 2942
+Voltage: 2.370842
+Light Intensity: 2.370842
+ADC Value: 2959
+Voltage: 2.384542
+Light Intensity: 2.384542
+ADC Value: 2953
+Voltage: 2.379707
+Light Intensity: 2.379707
+ADC Value: 2980
+Voltage: 2.401465
+Light Intensity: 2.401465
+ADC Value: 2973
+Voltage: 2.395824
+Light Intensity: 2.395824
+ADC Value: 2933
+Voltage: 2.363590
+Light Intensity: 2.363590
+ADC Value: 2887
+Voltage: 2.326520
+Light Intensity: 2.326520
+ADC Value: 2905
+Voltage: 2.341026
+Light Intensity: 2.341026
+ADC Value: 2926
+Voltage: 2.357949
+Light Intensity: 2.357949
+ADC Value: 2933
+Voltage: 2.363590
+Light Intensity: 2.363590
+ADC Value: 2928
+Voltage: 2.359560
+Light Intensity: 2.359560
+ADC Value: 2810
+Voltage: 2.264469
+Light Intensity: 2.264469
+ADC Value: 2781
+Voltage: 2.241099
+Light Intensity: 2.241099
+ADC Value: 2926
+Voltage: 2.357949
+Light Intensity: 2.357949
+ADC Value: 2838
+Voltage: 2.287033
+Light Intensity: 2.287033
+ADC Value: 2851
+Voltage: 2.297509
+Light Intensity: 2.297509
+ADC Value: 3105
+Voltage: 2.502198
+Light Intensity: 2.502198
+ADC Value: 3099
+Voltage: 2.497363
+Light Intensity: 2.497363
+ADC Value: 3119
+Voltage: 2.513480
+Light Intensity: 2.513480
+ADC Value: 3111
+Voltage: 2.507033
+Light Intensity: 2.507033
+ADC Value: 3067
+Voltage: 2.471575
+Light Intensity: 2.471575
+ADC Value: 3055
+Voltage: 2.461905
+Light Intensity: 2.461905
+ADC Value: 3070
+Voltage: 2.473993
+Light Intensity: 2.473993
+ADC Value: 2983
+Voltage: 2.403883
+Light Intensity: 2.403883
+ADC Value: 2959
+Voltage: 2.384542
+Light Intensity: 2.384542
+ADC Value: 3043
+Voltage: 2.452235
+Light Intensity: 2.452235
+ADC Value: 2922
+Voltage: 2.354725
+Light Intensity: 2.354725
+ADC Value: 2896
+Voltage: 2.333773
+Light Intensity: 2.333773
+ADC Value: 2895
+Voltage: 2.332967
+Light Intensity: 2.332967
+ADC Value: 2942
+Voltage: 2.370842
+Light Intensity: 2.370842
+ADC Value: 2908
+Voltage: 2.343443
+Light Intensity: 2.343443
+ADC Value: 2974
+Voltage: 2.396630
+Light Intensity: 2.396630
+ADC Value: 2832
+Voltage: 2.282198
+Light Intensity: 2.282198
+ADC Value: 2865
+Voltage: 2.308791
+Light Intensity: 2.308791
+ADC Value: 2774
+Voltage: 2.235458
+Light Intensity: 2.235458
+ADC Value: 2753
+Voltage: 2.218535
+Light Intensity: 2.218535
+ADC Value: 2662
+Voltage: 2.145201
+Light Intensity: 2.145201
+ADC Value: 2592
+Voltage: 2.088791
+Light Intensity: 2.088791
+ADC Value: 2544
+Voltage: 2.050110
+Light Intensity: 2.050110
+ADC Value: 2460
+Voltage: 1.982418
+Light Intensity: 1.982418
+ADC Value: 2450
+Voltage: 1.974359
+Light Intensity: 1.974359
+ADC Value: 2477
+Voltage: 1.996117
+Light Intensity: 1.996117
+ADC Value: 2487
+Voltage: 2.004176
+Light Intensity: 2.004176
+ADC Value: 2259
+Voltage: 1.820440
+Light Intensity: 1.820440
+ADC Value: 2251
+Voltage: 1.813993
+Light Intensity: 1.813993
+ADC Value: 2205
+Voltage: 1.776923
+Light Intensity: 1.776923
+ADC Value: 2288
+Voltage: 1.843809
+Light Intensity: 1.843809
+ADC Value: 2225
+Voltage: 1.793040
+Light Intensity: 1.793040
+ADC Value: 2192
+Voltage: 1.766447
+Light Intensity: 1.766447
+ADC Value: 2188
+Voltage: 1.763223
+Light Intensity: 1.763223
+ADC Value: 2288
+Voltage: 1.843809
+Light Intensity: 1.843809
+ADC Value: 2214
+Voltage: 1.784176
+Light Intensity: 1.784176
+ADC Value: 2038
+Voltage: 1.642344
+Light Intensity: 1.642344
+ADC Value: 1792
+Voltage: 1.444103
+Light Intensity: 1.444103
+ADC Value: 1961
+Voltage: 1.580293
+Light Intensity: 1.580293
+ADC Value: 1971
+Voltage: 1.588352
+Light Intensity: 1.588352
+ADC Value: 2043
+Voltage: 1.646374
+Light Intensity: 1.646374
+ADC Value: 1967
+Voltage: 1.585128
+Light Intensity: 1.585128
+ADC Value: 2064
+Voltage: 1.663297
+Light Intensity: 1.663297
+ADC Value: 2087
+Voltage: 1.681831
+Light Intensity: 1.681831
+ADC Value: 2030
+Voltage: 1.635897
+Light Intensity: 1.635897
+ADC Value: 1983
+Voltage: 1.598022
+Light Intensity: 1.598022
+ADC Value: 1937
+Voltage: 1.560952
+Light Intensity: 1.560952
+ADC Value: 1921
+Voltage: 1.548059
+Light Intensity: 1.548059
+ADC Value: 2091
+Voltage: 1.685055
+Light Intensity: 1.685055
+ADC Value: 2063
+Voltage: 1.662491
+Light Intensity: 1.662491
+ADC Value: 1936
+Voltage: 1.560147
+Light Intensity: 1.560147
+ADC Value: 1948
+Voltage: 1.569817
+Light Intensity: 1.569817
+ADC Value: 1803
+Voltage: 1.452967
+Light Intensity: 1.452967
+ADC Value: 1698
+Voltage: 1.368352
+Light Intensity: 1.368352
+ADC Value: 1715
+Voltage: 1.382051
+Light Intensity: 1.382051
+ADC Value: 1568
+Voltage: 1.263590
+Light Intensity: 1.263590
+ADC Value: 1389
+Voltage: 1.119341
+Light Intensity: 1.119341
+ADC Value: 1334
+Voltage: 1.075018
+Light Intensity: 1.075018
+ADC Value: 1217
+Voltage: 0.980733
+Light Intensity: 0.980733
+ADC Value: 1141
+Voltage: 0.919487
+Light Intensity: 0.919487
+ADC Value: 1168
+Voltage: 0.941245
+Light Intensity: 0.941245
+ADC Value: 1118
+Voltage: 0.900952
+Light Intensity: 0.900952
+ADC Value: 1179
+Voltage: 0.950110
+Light Intensity: 0.950110
+ADC Value: 1094
+Voltage: 0.881612
+Light Intensity: 0.881612
+ADC Value: 1122
+Voltage: 0.904176
+Light Intensity: 0.904176
+ADC Value: 1143
+Voltage: 0.921099
+Light Intensity: 0.921099
+ADC Value: 1207
+Voltage: 0.972674
+Light Intensity: 0.972674
+ADC Value: 1319
+Voltage: 1.062930
+Light Intensity: 1.062930
+ADC Value: 1353
+Voltage: 1.090330
+Light Intensity: 1.090330
+ADC Value: 1363
+Voltage: 1.098388
+Light Intensity: 1.098388
+ADC Value: 1574
+Voltage: 1.268425
+Light Intensity: 1.268425
+ADC Value: 1579
+Voltage: 1.272454
+Light Intensity: 1.272454
+ADC Value: 1670
+Voltage: 1.345788
+Light Intensity: 1.345788
+ADC Value: 1682
+Voltage: 1.355458
+Light Intensity: 1.355458
+ADC Value: 1740
+Voltage: 1.402198
+Light Intensity: 1.402198
+ADC Value: 1818
+Voltage: 1.465055
+Light Intensity: 1.465055
+ADC Value: 1810
+Voltage: 1.458608
+Light Intensity: 1.458608
+ADC Value: 1836
+Voltage: 1.479560
+Light Intensity: 1.479560
+ADC Value: 1838
+Voltage: 1.481172
+Light Intensity: 1.481172
+ADC Value: 1808
+Voltage: 1.456996
+Light Intensity: 1.456996
+ADC Value: 1795
+Voltage: 1.446520
+Light Intensity: 1.446520
+ADC Value: 1744
+Voltage: 1.405421
+Light Intensity: 1.405421
+ADC Value: 1794
+Voltage: 1.445714
+Light Intensity: 1.445714
+ADC Value: 1773
+Voltage: 1.428791
+Light Intensity: 1.428791
+ADC Value: 1696
+Voltage: 1.366740
+Light Intensity: 1.366740
+ADC Value: 1721
+Voltage: 1.386886
+Light Intensity: 1.386886
+ADC Value: 1751
+Voltage: 1.411062
+Light Intensity: 1.411062
+ADC Value: 1741
+Voltage: 1.403004
+Light Intensity: 1.403004
+ADC Value: 1783
+Voltage: 1.436850
+Light Intensity: 1.436850
+ADC Value: 1783
+Voltage: 1.436850
+Light Intensity: 1.436850
+ADC Value: 1773
+Voltage: 1.428791
+Light Intensity: 1.428791
+ADC Value: 1808
+Voltage: 1.456996
+Light Intensity: 1.456996
+ADC Value: 1947
+Voltage: 1.569011
+Light Intensity: 1.569011
+ADC Value: 1773
+Voltage: 1.428791
+Light Intensity: 1.428791
+ADC Value: 1798
+Voltage: 1.448938
+Light Intensity: 1.448938
+ADC Value: 1811
+Voltage: 1.459414
+Light Intensity: 1.459414
+ADC Value: 2288
+Voltage: 1.843809
+Light Intensity: 1.843809
+ADC Value: 1959
+Voltage: 1.578681
+Light Intensity: 1.578681
+ADC Value: 2032
+Voltage: 1.637509
+Light Intensity: 1.637509
+ADC Value: 1872
+Voltage: 1.508571
+Light Intensity: 1.508571
+ADC Value: 1871
+Voltage: 1.507766
+Light Intensity: 1.507766
+ADC Value: 1879
+Voltage: 1.514212
+Light Intensity: 1.514212
+ADC Value: 1898
+Voltage: 1.529524
+Light Intensity: 1.529524
+ADC Value: 2038
+Voltage: 1.642344
+Light Intensity: 1.642344
+ADC Value: 1845
+Voltage: 1.486813
+Light Intensity: 1.486813
+ADC Value: 1894
+Voltage: 1.526300
+Light Intensity: 1.526300
+ADC Value: 1824
+Voltage: 1.469890
+Light Intensity: 1.469890
+ADC Value: 1776
+Voltage: 1.431209
+Light Intensity: 1.431209
+ADC Value: 1738
+Voltage: 1.400586
+Light Intensity: 1.400586
+ADC Value: 1769
+Voltage: 1.425568
+Light Intensity: 1.425568
+ADC Value: 1793
+Voltage: 1.444908
+Light Intensity: 1.444908
+ADC Value: 1723
+Voltage: 1.388498
+Light Intensity: 1.388498
+ADC Value: 2275
+Voltage: 1.833333
+Light Intensity: 1.833333
+ADC Value: 2538
+Voltage: 2.045275
+Light Intensity: 2.045275
+ADC Value: 2627
+Voltage: 2.116996
+Light Intensity: 2.116996
+ADC Value: 2609
+Voltage: 2.102491
+Light Intensity: 2.102491
+ADC Value: 2489
+Voltage: 2.005788
+Light Intensity: 2.005788
+ADC Value: 2559
+Voltage: 2.062198
+Light Intensity: 2.062198
+ADC Value: 2609
+Voltage: 2.102491
+Light Intensity: 2.102491
+ADC Value: 2477
+Voltage: 1.996117
+Light Intensity: 1.996117
+ADC Value: 2498
+Voltage: 2.013040
+Light Intensity: 2.013040
+ADC Value: 2541
+Voltage: 2.047692
+Light Intensity: 2.047692
+ADC Value: 2579
+Voltage: 2.078315
+Light Intensity: 2.078315
+ADC Value: 2723
+Voltage: 2.194359
+Light Intensity: 2.194359
+ADC Value: 2659
+Voltage: 2.142784
+Light Intensity: 2.142784
+ADC Value: 2038
+Voltage: 1.642344
+Light Intensity: 1.642344
+ADC Value: 2335
+Voltage: 1.881685
+Light Intensity: 1.881685
+ADC Value: 2704
+Voltage: 2.179048
+Light Intensity: 2.179048
+ADC Value: 2864
+Voltage: 2.307985
+Light Intensity: 2.307985
+ADC Value: 2863
+Voltage: 2.307179
+Light Intensity: 2.307179
+ADC Value: 2775
+Voltage: 2.236264
+Light Intensity: 2.236264
+ADC Value: 2741
+Voltage: 2.208864
+Light Intensity: 2.208864
+ADC Value: 2829
+Voltage: 2.279780
+Light Intensity: 2.279780
+ADC Value: 2789
+Voltage: 2.247546
+Light Intensity: 2.247546
+ADC Value: 2715
+Voltage: 2.187912
+Light Intensity: 2.187912
+ADC Value: 2641
+Voltage: 2.128278
+Light Intensity: 2.128278
+ADC Value: 2686
+Voltage: 2.164542
+Light Intensity: 2.164542
+ADC Value: 2693
+Voltage: 2.170183
+Light Intensity: 2.170183
+ADC Value: 3056
+Voltage: 2.462711
+Light Intensity: 2.462711
+ADC Value: 2800
+Voltage: 2.256410
+Light Intensity: 2.256410
+ADC Value: 2896
+Voltage: 2.333773
+Light Intensity: 2.333773
+ADC Value: 2947
+Voltage: 2.374872
+Light Intensity: 2.374872
+ADC Value: 3013
+Voltage: 2.428059
+Light Intensity: 2.428059
+ADC Value: 3184
+Voltage: 2.565861
+Light Intensity: 2.565861
+ADC Value: 3156
+Voltage: 2.543297
+Light Intensity: 2.543297
+ADC Value: 3236
+Voltage: 2.607766
+Light Intensity: 2.607766
+ADC Value: 3223
+Voltage: 2.597289
+Light Intensity: 2.597289
+ADC Value: 3291
+Voltage: 2.652088
+Light Intensity: 2.652088
+ADC Value: 3280
+Voltage: 2.643224
+Light Intensity: 2.643224
+ADC Value: 3419
+Voltage: 2.755238
+Light Intensity: 2.755238
+ADC Value: 3361
+Voltage: 2.708498
+Light Intensity: 2.708498
+ADC Value: 3506
+Voltage: 2.825348
+Light Intensity: 2.825348
+ADC Value: 3419
+Voltage: 2.755238
+Light Intensity: 2.755238
+ADC Value: 3523
+Voltage: 2.839048
+Light Intensity: 2.839048
+ADC Value: 3571
+Voltage: 2.877729
+Light Intensity: 2.877729
+ADC Value: 3531
+Voltage: 2.845495
+Light Intensity: 2.845495
+ADC Value: 3711
+Voltage: 2.990550
+Light Intensity: 2.990550
+ADC Value: 3658
+Voltage: 2.947839
+Light Intensity: 2.947839
+ADC Value: 3607
+Voltage: 2.906740
+Light Intensity: 2.906740
+ADC Value: 3634
+Voltage: 2.928498
+Light Intensity: 2.928498
+ADC Value: 734
+Voltage: 0.591502
+Light Intensity: 0.591502
+ADC Value: 995
+Voltage: 0.801831
+Light Intensity: 0.801831
+ADC Value: 858
+Voltage: 0.691429
+Light Intensity: 0.691429
+ADC Value: 724
+Voltage: 0.583443
+Light Intensity: 0.583443
+ADC Value: 750
+Voltage: 0.604396
+Light Intensity: 0.604396
+ADC Value: 812
+Voltage: 0.654359
+Light Intensity: 0.654359
+ADC Value: 757
+Voltage: 0.610037
+Light Intensity: 0.610037
+ADC Value: 828
+Voltage: 0.667253
+Light Intensity: 0.667253
+ADC Value: 787
+Voltage: 0.634212
+Light Intensity: 0.634212
+ADC Value: 806
+Voltage: 0.649524
+Light Intensity: 0.649524
+ADC Value: 834
+Voltage: 0.672088
+Light Intensity: 0.672088
+ADC Value: 862
+Voltage: 0.694652
+Light Intensity: 0.694652
+ADC Value: 894
+Voltage: 0.720440
+Light Intensity: 0.720440
+ADC Value: 868
+Voltage: 0.699487
+Light Intensity: 0.699487
+ADC Value: 894
+Voltage: 0.720440
+Light Intensity: 0.720440
+ADC Value: 884
+Voltage: 0.712381
+Light Intensity: 0.712381
+ADC Value: 924
+Voltage: 0.744615
+Light Intensity: 0.744615
+ADC Value: 907
+Voltage: 0.730916
+Light Intensity: 0.730916
+ADC Value: 921
+Voltage: 0.742198
+Light Intensity: 0.742198
+ADC Value: 942
+Voltage: 0.759121
+Light Intensity: 0.759121
+ADC Value: 957
+Voltage: 0.771209
+Light Intensity: 0.771209
+ADC Value: 961
+Voltage: 0.774432
+Light Intensity: 0.774432
+ADC Value: 977
+Voltage: 0.787326
+Light Intensity: 0.787326
+ADC Value: 1032
+Voltage: 0.831648
+Light Intensity: 0.831648
+ADC Value: 1241
+Voltage: 1.000073
+Light Intensity: 1.000073
+ADC Value: 1286
+Voltage: 1.036337
+Light Intensity: 1.036337
+ADC Value: 1339
+Voltage: 1.079048
+Light Intensity: 1.079048
+ADC Value: 1417
+Voltage: 1.141905
+Light Intensity: 1.141905
+ADC Value: 1520
+Voltage: 1.224908
+Light Intensity: 1.224908
+ADC Value: 1643
+Voltage: 1.324029
+Light Intensity: 1.324029
+ADC Value: 1693
+Voltage: 1.364322
+Light Intensity: 1.364322
+ADC Value: 1965
+Voltage: 1.583516
+Light Intensity: 1.583516
+ADC Value: 2005
+Voltage: 1.615751
+Light Intensity: 1.615751
+ADC Value: 2149
+Voltage: 1.731795
+Light Intensity: 1.731795
+ADC Value: 2296
+Voltage: 1.850256
+Light Intensity: 1.850256
+ADC Value: 2626
+Voltage: 2.116190
+Light Intensity: 2.116190
+ADC Value: 2538
+Voltage: 2.045275
+Light Intensity: 2.045275
+ADC Value: 2687
+Voltage: 2.165348
+Light Intensity: 2.165348
+ADC Value: 2751
+Voltage: 2.216923
+Light Intensity: 2.216923
+ADC Value: 2912
+Voltage: 2.346667
+Light Intensity: 2.346667
+ADC Value: 2853
+Voltage: 2.299121
+Light Intensity: 2.299121
+ADC Value: 2910
+Voltage: 2.345055
+Light Intensity: 2.345055
+ADC Value: 2890
+Voltage: 2.328938
+Light Intensity: 2.328938
+ADC Value: 2955
+Voltage: 2.381319
+Light Intensity: 2.381319
+ADC Value: 3024
+Voltage: 2.436923
+Light Intensity: 2.436923
+ADC Value: 3158
+Voltage: 2.544909
+Light Intensity: 2.544909
+ADC Value: 2932
+Voltage: 2.362784
+Light Intensity: 2.362784
+ADC Value: 2858
+Voltage: 2.303150
+Light Intensity: 2.303150
+ADC Value: 2651
+Voltage: 2.136337
+Light Intensity: 2.136337
+ADC Value: 2876
+Voltage: 2.317656
+Light Intensity: 2.317656
+ADC Value: 2907
+Voltage: 2.342637
+Light Intensity: 2.342637
+ADC Value: 2939
+Voltage: 2.368425
+Light Intensity: 2.368425
+ADC Value: 2952
+Voltage: 2.378901
+Light Intensity: 2.378901
+ADC Value: 2977
+Voltage: 2.399048
+Light Intensity: 2.399048
+ADC Value: 2955
+Voltage: 2.381319
+Light Intensity: 2.381319
+ADC Value: 3055
+Voltage: 2.461905
+Light Intensity: 2.461905
+ADC Value: 3062
+Voltage: 2.467546
+Light Intensity: 2.467546
+ADC Value: 3019
+Voltage: 2.432894
+Light Intensity: 2.432894
+ADC Value: 2993
+Voltage: 2.411941
+Light Intensity: 2.411941
+ADC Value: 3080
+Voltage: 2.482051
+Light Intensity: 2.482051
+ADC Value: 3053
+Voltage: 2.460293
+Light Intensity: 2.460293
+ADC Value: 3111
+Voltage: 2.507033
+Light Intensity: 2.507033
+ADC Value: 3037
+Voltage: 2.447399
+Light Intensity: 2.447399
+ADC Value: 2999
+Voltage: 2.416777
+Light Intensity: 2.416777
+ADC Value: 3035
+Voltage: 2.445787
+Light Intensity: 2.445787
+ADC Value: 2999
+Voltage: 2.416777
+Light Intensity: 2.416777
+ADC Value: 2962
+Voltage: 2.386960
+Light Intensity: 2.386960
+ADC Value: 2941
+Voltage: 2.370037
+Light Intensity: 2.370037
+ADC Value: 2919
+Voltage: 2.352308
+Light Intensity: 2.352308
+ADC Value: 2950
+Voltage: 2.377289
+Light Intensity: 2.377289
+ADC Value: 2903
+Voltage: 2.339414
+Light Intensity: 2.339414
+ADC Value: 2901
+Voltage: 2.337802
+Light Intensity: 2.337802
+ADC Value: 2919
+Voltage: 2.352308
+Light Intensity: 2.352308
+ADC Value: 2555
+Voltage: 2.058974
+Light Intensity: 2.058974
+ADC Value: 2457
+Voltage: 1.980000
+Light Intensity: 1.980000
+ADC Value: 2434
+Voltage: 1.961465
+Light Intensity: 1.961465
+ADC Value: 2339
+Voltage: 1.884908
+Light Intensity: 1.884908
+ADC Value: 2250
+Voltage: 1.813187
+Light Intensity: 1.813187
+ADC Value: 2045
+Voltage: 1.647985
+Light Intensity: 1.647985
+ADC Value: 1973
+Voltage: 1.589963
+Light Intensity: 1.589963
+ADC Value: 1797
+Voltage: 1.448132
+Light Intensity: 1.448132
+ADC Value: 1613
+Voltage: 1.299853
+Light Intensity: 1.299853
+ADC Value: 1590
+Voltage: 1.281319
+Light Intensity: 1.281319
+ADC Value: 1408
+Voltage: 1.134652
+Light Intensity: 1.134652
+ADC Value: 1246
+Voltage: 1.004103
+Light Intensity: 1.004103
+ADC Value: 1117
+Voltage: 0.900147
+Light Intensity: 0.900147
+ADC Value: 896
+Voltage: 0.722051
+Light Intensity: 0.722051
+ADC Value: 895
+Voltage: 0.721245
+Light Intensity: 0.721245
+ADC Value: 684
+Voltage: 0.551209
+Light Intensity: 0.551209
+ADC Value: 863
+Voltage: 0.695458
+Light Intensity: 0.695458
+ADC Value: 848
+Voltage: 0.683370
+Light Intensity: 0.683370
+ADC Value: 734
+Voltage: 0.591502
+Light Intensity: 0.591502
+ADC Value: 720
+Voltage: 0.580220
+Light Intensity: 0.580220
+ADC Value: 782
+Voltage: 0.630183
+Light Intensity: 0.630183
+ADC Value: 879
+Voltage: 0.708352
+Light Intensity: 0.708352
+ADC Value: 942
+Voltage: 0.759121
+Light Intensity: 0.759121
+ADC Value: 957
+Voltage: 0.771209
+Light Intensity: 0.771209
+ADC Value: 1077
+Voltage: 0.867912
+Light Intensity: 0.867912
+ADC Value: 1131
+Voltage: 0.911429
+Light Intensity: 0.911429
+ADC Value: 1139
+Voltage: 0.917875
+Light Intensity: 0.917875
+ADC Value: 1181
+Voltage: 0.951722
+Light Intensity: 0.951722
+ADC Value: 1423
+Voltage: 1.146740
+Light Intensity: 1.146740
+ADC Value: 1520
+Voltage: 1.224908
+Light Intensity: 1.224908
+ADC Value: 1648
+Voltage: 1.328059
+Light Intensity: 1.328059
+ADC Value: 1833
+Voltage: 1.477143
+Light Intensity: 1.477143
+ADC Value: 1923
+Voltage: 1.549670
+Light Intensity: 1.549670
+ADC Value: 2131
+Voltage: 1.717289
+Light Intensity: 1.717289
+ADC Value: 2226
+Voltage: 1.793846
+Light Intensity: 1.793846
+ADC Value: 2340
+Voltage: 1.885714
+Light Intensity: 1.885714
+ADC Value: 2486
+Voltage: 2.003370
+Light Intensity: 2.003370
+ADC Value: 2591
+Voltage: 2.087985
+Light Intensity: 2.087985
+ADC Value: 2638
+Voltage: 2.125861
+Light Intensity: 2.125861
+ADC Value: 2834
+Voltage: 2.283809
+Light Intensity: 2.283809
+ADC Value: 2831
+Voltage: 2.281392
+Light Intensity: 2.281392
+ADC Value: 2963
+Voltage: 2.387766
+Light Intensity: 2.387766
+ADC Value: 2942
+Voltage: 2.370842
+Light Intensity: 2.370842
+ADC Value: 3042
+Voltage: 2.451429
+Light Intensity: 2.451429
+ADC Value: 2962
+Voltage: 2.386960
+Light Intensity: 2.386960
+ADC Value: 2941
+Voltage: 2.370037
+Light Intensity: 2.370037
+ADC Value: 3128
+Voltage: 2.520733
+Light Intensity: 2.520733
+ADC Value: 3025
+Voltage: 2.437729
+Light Intensity: 2.437729
+ADC Value: 2951
+Voltage: 2.378095
+Light Intensity: 2.378095
+ADC Value: 2815
+Voltage: 2.268498
+Light Intensity: 2.268498
+ADC Value: 2606
+Voltage: 2.100073
+Light Intensity: 2.100073
+ADC Value: 2311
+Voltage: 1.862344
+Light Intensity: 1.862344
+ADC Value: 2091
+Voltage: 1.685055
+Light Intensity: 1.685055
+ADC Value: 1861
+Voltage: 1.499707
+Light Intensity: 1.499707
+ADC Value: 1705
+Voltage: 1.373993
+Light Intensity: 1.373993
+ADC Value: 1526
+Voltage: 1.229744
+Light Intensity: 1.229744
+ADC Value: 1170
+Voltage: 0.942857
+Light Intensity: 0.942857
+ADC Value: 801
+Voltage: 0.645495
+Light Intensity: 0.645495
+ADC Value: 511
+Voltage: 0.411795
+Light Intensity: 0.411795
+ADC Value: 660
+Voltage: 0.531868
+Light Intensity: 0.531868
+ADC Value: 603
+Voltage: 0.485934
+Light Intensity: 0.485934
+ADC Value: 592
+Voltage: 0.477070
+Light Intensity: 0.477070
+ADC Value: 698
+Voltage: 0.562491
+Light Intensity: 0.562491
+ADC Value: 844
+Voltage: 0.680147
+Light Intensity: 0.680147
+ADC Value: 831
+Voltage: 0.669670
+Light Intensity: 0.669670
+ADC Value: 1154
+Voltage: 0.929963
+Light Intensity: 0.929963
+ADC Value: 2495
+Voltage: 2.010623
+Light Intensity: 2.010623
+ADC Value: 2284
+Voltage: 1.840586
+Light Intensity: 1.840586
+ADC Value: 1923
+Voltage: 1.549670
+Light Intensity: 1.549670
+ADC Value: 1612
+Voltage: 1.299048
+Light Intensity: 1.299048
+ADC Value: 1310
+Voltage: 1.055678
+Light Intensity: 1.055678
+ADC Value: 1136
+Voltage: 0.915458
+Light Intensity: 0.915458
+ADC Value: 1036
+Voltage: 0.834872
+Light Intensity: 0.834872
+ADC Value: 211
+Voltage: 0.170037
+Light Intensity: 0.170037
+ADC Value: 752
+Voltage: 0.606007
+Light Intensity: 0.606007
+ADC Value: 461
+Voltage: 0.371502
+Light Intensity: 0.371502
+ADC Value: 656
+Voltage: 0.528645
+Light Intensity: 0.528645
+ADC Value: 678
+Voltage: 0.546374
+Light Intensity: 0.546374
+ADC Value: 656
+Voltage: 0.528645
+Light Intensity: 0.528645
+ADC Value: 775
+Voltage: 0.624542
+Light Intensity: 0.624542
+ADC Value: 877
+Voltage: 0.706740
+Light Intensity: 0.706740
+ADC Value: 885
+Voltage: 0.713187
+Light Intensity: 0.713187
+ADC Value: 960
+Voltage: 0.773626
+Light Intensity: 0.773626
+ADC Value: 1139
+Voltage: 0.917875
+Light Intensity: 0.917875
+ADC Value: 1291
+Voltage: 1.040366
+Light Intensity: 1.040366
+ADC Value: 1515
+Voltage: 1.220879
+Light Intensity: 1.220879
+ADC Value: 1842
+Voltage: 1.484396
+Light Intensity: 1.484396
+ADC Value: 2127
+Voltage: 1.714066
+Light Intensity: 1.714066
+ADC Value: 2534
+Voltage: 2.042051
+Light Intensity: 2.042051
+ADC Value: 2821
+Voltage: 2.273333
+Light Intensity: 2.273333
+ADC Value: 3238
+Voltage: 2.609377
+Light Intensity: 2.609377
+ADC Value: 3358
+Voltage: 2.706081
+Light Intensity: 2.706081
+ADC Value: 3433
+Voltage: 2.766520
+Light Intensity: 2.766520
+ADC Value: 3458
+Voltage: 2.786667
+Light Intensity: 2.786667
+ADC Value: 3475
+Voltage: 2.800366
+Light Intensity: 2.800366
+ADC Value: 3293
+Voltage: 2.653700
+Light Intensity: 2.653700
+ADC Value: 3071
+Voltage: 2.474798
+Light Intensity: 2.474798
+ADC Value: 2671
+Voltage: 2.152454
+Light Intensity: 2.152454
+ADC Value: 2428
+Voltage: 1.956630
+Light Intensity: 1.956630
+ADC Value: 2086
+Voltage: 1.681026
+Light Intensity: 1.681026
+ADC Value: 1739
+Voltage: 1.401392
+Light Intensity: 1.401392
+ADC Value: 1419
+Voltage: 1.143517
+Light Intensity: 1.143517
+ADC Value: 1266
+Voltage: 1.020220
+Light Intensity: 1.020220
+ADC Value: 1142
+Voltage: 0.920293
+Light Intensity: 0.920293
+ADC Value: 977
+Voltage: 0.787326
+Light Intensity: 0.787326
+ADC Value: 931
+Voltage: 0.750256
+Light Intensity: 0.750256
+ADC Value: 805
+Voltage: 0.648718
+Light Intensity: 0.648718
+ADC Value: 891
+Voltage: 0.718022
+Light Intensity: 0.718022
+ADC Value: 814
+Voltage: 0.655971
+Light Intensity: 0.655971
+ADC Value: 794
+Voltage: 0.639853
+Light Intensity: 0.639853
+ADC Value: 784
+Voltage: 0.631795
+Light Intensity: 0.631795
+ADC Value: 753
+Voltage: 0.606813
+Light Intensity: 0.606813
+ADC Value: 781
+Voltage: 0.629377
+Light Intensity: 0.629377
+ADC Value: 733
+Voltage: 0.590696
+Light Intensity: 0.590696
+ADC Value: 777
+Voltage: 0.626154
+Light Intensity: 0.626154
+ADC Value: 865
+Voltage: 0.697070
+Light Intensity: 0.697070
+ADC Value: 937
+Voltage: 0.755092
+Light Intensity: 0.755092
+ADC Value: 1012
+Voltage: 0.815531
+Light Intensity: 0.815531
+ADC Value: 1151
+Voltage: 0.927546
+Light Intensity: 0.927546
+ADC Value: 1319
+Voltage: 1.062930
+Light Intensity: 1.062930
+ADC Value: 1365
+Voltage: 1.100000
+Light Intensity: 1.100000
+ADC Value: 1535
+Voltage: 1.236996
+Light Intensity: 1.236996
+ADC Value: 1841
+Voltage: 1.483590
+Light Intensity: 1.483590
+ADC Value: 1926
+Voltage: 1.552088
+Light Intensity: 1.552088
+ADC Value: 2061
+Voltage: 1.660879
+Light Intensity: 1.660879
+ADC Value: 2235
+Voltage: 1.801099
+Light Intensity: 1.801099
+ADC Value: 2432
+Voltage: 1.959854
+Light Intensity: 1.959854
+ADC Value: 2609
+Voltage: 2.102491
+Light Intensity: 2.102491
+ADC Value: 2813
+Voltage: 2.266886
+Light Intensity: 2.266886
+ADC Value: 2919
+Voltage: 2.352308
+Light Intensity: 2.352308
+ADC Value: 3070
+Voltage: 2.473993
+Light Intensity: 2.473993
+ADC Value: 3263
+Voltage: 2.629524
+Light Intensity: 2.629524
+ADC Value: 3280
+Voltage: 2.643224
+Light Intensity: 2.643224
+ADC Value: 3315
+Voltage: 2.671429
+Light Intensity: 2.671429
+ADC Value: 3311
+Voltage: 2.668205
+Light Intensity: 2.668205
+ADC Value: 3376
+Voltage: 2.720586
+Light Intensity: 2.720586
+ADC Value: 3412
+Voltage: 2.749597
+Light Intensity: 2.749597
+ADC Value: 3417
+Voltage: 2.753626
+Light Intensity: 2.753626
+ADC Value: 3533
+Voltage: 2.847106
+Light Intensity: 2.847106
+ADC Value: 3414
+Voltage: 2.751209
+Light Intensity: 2.751209
+ADC Value: 3431
+Voltage: 2.764908
+Light Intensity: 2.764908
+ADC Value: 3504
+Voltage: 2.823736
+Light Intensity: 2.823736
+ADC Value: 3511
+Voltage: 2.829377
+Light Intensity: 2.829377
+ADC Value: 3504
+Voltage: 2.823736
+Light Intensity: 2.823736
+ADC Value: 3530
+Voltage: 2.844689
+Light Intensity: 2.844689
+ADC Value: 3488
+Voltage: 2.810843
+Light Intensity: 2.810843
+ADC Value: 3441
+Voltage: 2.772967
+Light Intensity: 2.772967
+ADC Value: 3341
+Voltage: 2.692381
+Light Intensity: 2.692381
+ADC Value: 3248
+Voltage: 2.617436
+Light Intensity: 2.617436
+ADC Value: 3162
+Voltage: 2.548132
+Light Intensity: 2.548132
+ADC Value: 3164
+Voltage: 2.549744
+Light Intensity: 2.549744
+ADC Value: 3024
+Voltage: 2.436923
+Light Intensity: 2.436923
+ADC Value: 2929
+Voltage: 2.360366
+Light Intensity: 2.360366
+ADC Value: 2775
+Voltage: 2.236264
+Light Intensity: 2.236264
+ADC Value: 2742
+Voltage: 2.209670
+Light Intensity: 2.209670
+ADC Value: 2551
+Voltage: 2.055751
+Light Intensity: 2.055751
+ADC Value: 2358
+Voltage: 1.900220
+Light Intensity: 1.900220
+ADC Value: 2167
+Voltage: 1.746300
+Light Intensity: 1.746300
+ADC Value: 1897
+Voltage: 1.528718
+Light Intensity: 1.528718
+ADC Value: 1680
+Voltage: 1.353846
+Light Intensity: 1.353846
+ADC Value: 1488
+Voltage: 1.199121
+Light Intensity: 1.199121
+ADC Value: 1360
+Voltage: 1.095971
+Light Intensity: 1.095971
+ADC Value: 1207
+Voltage: 0.972674
+Light Intensity: 0.972674
+ADC Value: 1209
+Voltage: 0.974286
+Light Intensity: 0.974286
+ADC Value: 1033
+Voltage: 0.832454
+Light Intensity: 0.832454
+ADC Value: 941
+Voltage: 0.758315
+Light Intensity: 0.758315
+ADC Value: 944
+Voltage: 0.760733
+Light Intensity: 0.760733
+ADC Value: 880
+Voltage: 0.709158
+Light Intensity: 0.709158
+ADC Value: 914
+Voltage: 0.736557
+Light Intensity: 0.736557
+ADC Value: 887
+Voltage: 0.714799
+Light Intensity: 0.714799
+ADC Value: 871
+Voltage: 0.701905
+Light Intensity: 0.701905
+ADC Value: 837
+Voltage: 0.674505
+Light Intensity: 0.674505
+ADC Value: 827
+Voltage: 0.666447
+Light Intensity: 0.666447
+ADC Value: 809
+Voltage: 0.651941
+Light Intensity: 0.651941
+ADC Value: 807
+Voltage: 0.650330
+Light Intensity: 0.650330
+ADC Value: 784
+Voltage: 0.631795
+Light Intensity: 0.631795
+ADC Value: 786
+Voltage: 0.633407
+Light Intensity: 0.633407
+ADC Value: 603
+Voltage: 0.485934
+Light Intensity: 0.485934
+ADC Value: 624
+Voltage: 0.502857
+Light Intensity: 0.502857
+ADC Value: 650
+Voltage: 0.523810
+Light Intensity: 0.523810
+ADC Value: 609
+Voltage: 0.490769
+Light Intensity: 0.490769
+ADC Value: 624
+Voltage: 0.502857
+Light Intensity: 0.502857
+ADC Value: 609
+Voltage: 0.490769
+Light Intensity: 0.490769
+ADC Value: 653
+Voltage: 0.526227
+Light Intensity: 0.526227
+ADC Value: 1107
+Voltage: 0.892088
+Light Intensity: 0.892088
+ADC Value: 846
+Voltage: 0.681758
+Light Intensity: 0.681758
+ADC Value: 608
+Voltage: 0.489963
+Light Intensity: 0.489963
+ADC Value: 699
+Voltage: 0.563297
+Light Intensity: 0.563297
+ADC Value: 635
+Voltage: 0.511722
+Light Intensity: 0.511722
+ADC Value: 743
+Voltage: 0.598755
+Light Intensity: 0.598755
+ADC Value: 894
+Voltage: 0.720440
+Light Intensity: 0.720440
+ADC Value: 891
+Voltage: 0.718022
+Light Intensity: 0.718022
+ADC Value: 1066
+Voltage: 0.859048
+Light Intensity: 0.859048
+ADC Value: 1040
+Voltage: 0.838095
+Light Intensity: 0.838095
+ADC Value: 987
+Voltage: 0.795385
+Light Intensity: 0.795385
+ADC Value: 1007
+Voltage: 0.811502
+Light Intensity: 0.811502
+ADC Value: 975
+Voltage: 0.785714
+Light Intensity: 0.785714
+ADC Value: 1006
+Voltage: 0.810696
+Light Intensity: 0.810696
+ADC Value: 980
+Voltage: 0.789744
+Light Intensity: 0.789744
+ADC Value: 1315
+Voltage: 1.059707
+Light Intensity: 1.059707
+ADC Value: 1187
+Voltage: 0.956557
+Light Intensity: 0.956557
+ADC Value: 965
+Voltage: 0.777656
+Light Intensity: 0.777656
+ADC Value: 961
+Voltage: 0.774432
+Light Intensity: 0.774432
+ADC Value: 928
+Voltage: 0.747839
+Light Intensity: 0.747839
+ADC Value: 1262
+Voltage: 1.016996
+Light Intensity: 1.016996
+ADC Value: 1144
+Voltage: 0.921905
+Light Intensity: 0.921905
+ADC Value: 1358
+Voltage: 1.094359
+Light Intensity: 1.094359
+ADC Value: 1238
+Voltage: 0.997656
+Light Intensity: 0.997656
+ADC Value: 1423
+Voltage: 1.146740
+Light Intensity: 1.146740
+ADC Value: 1394
+Voltage: 1.123370
+Light Intensity: 1.123370
+ADC Value: 1424
+Voltage: 1.147546
+Light Intensity: 1.147546
+ADC Value: 1299
+Voltage: 1.046813
+Light Intensity: 1.046813
+ADC Value: 1499
+Voltage: 1.207985
+Light Intensity: 1.207985
+ADC Value: 1531
+Voltage: 1.233773
+Light Intensity: 1.233773
+ADC Value: 1616
+Voltage: 1.302271
+Light Intensity: 1.302271
+ADC Value: 1624
+Voltage: 1.308718
+Light Intensity: 1.308718
+ADC Value: 3011
+Voltage: 2.426447
+Light Intensity: 2.426447
+ADC Value: 3025
+Voltage: 2.437729
+Light Intensity: 2.437729
+ADC Value: 1616
+Voltage: 1.302271
+Light Intensity: 1.302271
+ADC Value: 1522
+Voltage: 1.226520
+Light Intensity: 1.226520
+ADC Value: 1417
+Voltage: 1.141905
+Light Intensity: 1.141905
+ADC Value: 1472
+Voltage: 1.186227
+Light Intensity: 1.186227
+ADC Value: 1232
+Voltage: 0.992821
+Light Intensity: 0.992821
+ADC Value: 1394
+Voltage: 1.123370
+Light Intensity: 1.123370
+ADC Value: 1669
+Voltage: 1.344982
+Light Intensity: 1.344982
+ADC Value: 1717
+Voltage: 1.383663
+Light Intensity: 1.383663
+ADC Value: 1685
+Voltage: 1.357875
+Light Intensity: 1.357875
+ADC Value: 1718
+Voltage: 1.384469
+Light Intensity: 1.384469
+ADC Value: 1731
+Voltage: 1.394945
+Light Intensity: 1.394945
+ADC Value: 1827
+Voltage: 1.472308
+Light Intensity: 1.472308
+ADC Value: 1840
+Voltage: 1.482784
+Light Intensity: 1.482784
+ADC Value: 1843
+Voltage: 1.485201
+Light Intensity: 1.485201
+ADC Value: 1785
+Voltage: 1.438462
+Light Intensity: 1.438462
+ADC Value: 1791
+Voltage: 1.443297
+Light Intensity: 1.443297
+ADC Value: 1535
+Voltage: 1.236996
+Light Intensity: 1.236996
+ADC Value: 1472
+Voltage: 1.186227
+Light Intensity: 1.186227
+ADC Value: 1296
+Voltage: 1.044396
+Light Intensity: 1.044396
+ADC Value: 1321
+Voltage: 1.064542
+Light Intensity: 1.064542
+ADC Value: 1245
+Voltage: 1.003297
+Light Intensity: 1.003297
+ADC Value: 1221
+Voltage: 0.983956
+Light Intensity: 0.983956
+ADC Value: 1280
+Voltage: 1.031502
+Light Intensity: 1.031502
+ADC Value: 1233
+Voltage: 0.993626
+Light Intensity: 0.993626
+ADC Value: 1271
+Voltage: 1.024249
+Light Intensity: 1.024249
+ADC Value: 1339
+Voltage: 1.079048
+Light Intensity: 1.079048
+ADC Value: 1403
+Voltage: 1.130623
+Light Intensity: 1.130623
+ADC Value: 1413
+Voltage: 1.138681
+Light Intensity: 1.138681
+ADC Value: 1235
+Voltage: 0.995238
+Light Intensity: 0.995238
+ADC Value: 1655
+Voltage: 1.333700
+Light Intensity: 1.333700
+ADC Value: 1395
+Voltage: 1.124176
+Light Intensity: 1.124176
+ADC Value: 1395
+Voltage: 1.124176
+Light Intensity: 1.124176
+ADC Value: 1424
+Voltage: 1.147546
+Light Intensity: 1.147546
+ADC Value: 1501
+Voltage: 1.209597
+Light Intensity: 1.209597
+ADC Value: 1395
+Voltage: 1.124176
+Light Intensity: 1.124176
+ADC Value: 1377
+Voltage: 1.109670
+Light Intensity: 1.109670
+ADC Value: 1358
+Voltage: 1.094359
+Light Intensity: 1.094359
+ADC Value: 1305
+Voltage: 1.051648
+Light Intensity: 1.051648
+ADC Value: 1401
+Voltage: 1.129011
+Light Intensity: 1.129011
+ADC Value: 1437
+Voltage: 1.158022
+Light Intensity: 1.158022
+ADC Value: 1502
+Voltage: 1.210403
+Light Intensity: 1.210403
+ADC Value: 1406
+Voltage: 1.133040
+Light Intensity: 1.133040
+ADC Value: 1490
+Voltage: 1.200733
+Light Intensity: 1.200733
+ADC Value: 1392
+Voltage: 1.121758
+Light Intensity: 1.121758
+ADC Value: 1392
+Voltage: 1.121758
+Light Intensity: 1.121758
+ADC Value: 1432
+Voltage: 1.153993
+Light Intensity: 1.153993
+ADC Value: 1388
+Voltage: 1.118535
+Light Intensity: 1.118535
+ADC Value: 1442
+Voltage: 1.162051
+Light Intensity: 1.162051
+ADC Value: 960
+Voltage: 0.773626
+Light Intensity: 0.773626
+ADC Value: 1205
+Voltage: 0.971062
+Light Intensity: 0.971062
+ADC Value: 1488
+Voltage: 1.199121
+Light Intensity: 1.199121
+ADC Value: 1840
+Voltage: 1.482784
+Light Intensity: 1.482784
+ADC Value: 1535
+Voltage: 1.236996
+Light Intensity: 1.236996
+ADC Value: 1093
+Voltage: 0.880806
+Light Intensity: 0.880806
+ADC Value: 1235
+Voltage: 0.995238
+Light Intensity: 0.995238
+ADC Value: 1088
+Voltage: 0.876777
+Light Intensity: 0.876777
+ADC Value: 1040
+Voltage: 0.838095
+Light Intensity: 0.838095
+ADC Value: 979
+Voltage: 0.788938
+Light Intensity: 0.788938
+ADC Value: 1322
+Voltage: 1.065348
+Light Intensity: 1.065348
+ADC Value: 1285
+Voltage: 1.035531
+Light Intensity: 1.035531
+ADC Value: 1075
+Voltage: 0.866300
+Light Intensity: 0.866300
+ADC Value: 1115
+Voltage: 0.898535
+Light Intensity: 0.898535
+ADC Value: 1120
+Voltage: 0.902564
+Light Intensity: 0.902564
+ADC Value: 1177
+Voltage: 0.948498
+Light Intensity: 0.948498
+ADC Value: 1104
+Voltage: 0.889670
+Light Intensity: 0.889670
+ADC Value: 1088
+Voltage: 0.876777
+Light Intensity: 0.876777
+ADC Value: 1117
+Voltage: 0.900147
+Light Intensity: 0.900147
+ADC Value: 1072
+Voltage: 0.863883
+Light Intensity: 0.863883
+ADC Value: 1286
+Voltage: 1.036337
+Light Intensity: 1.036337
+ADC Value: 1260
+Voltage: 1.015385
+Light Intensity: 1.015385
+ADC Value: 1151
+Voltage: 0.927546
+Light Intensity: 0.927546
+ADC Value: 1277
+Voltage: 1.029084
+Light Intensity: 1.029084
+ADC Value: 1350
+Voltage: 1.087912
+Light Intensity: 1.087912
+ADC Value: 1216
+Voltage: 0.979927
+Light Intensity: 0.979927
+ADC Value: 1198
+Voltage: 0.965421
+Light Intensity: 0.965421
+ADC Value: 1287
+Voltage: 1.037143
+Light Intensity: 1.037143
+ADC Value: 1227
+Voltage: 0.988791
+Light Intensity: 0.988791
+ADC Value: 1198
+Voltage: 0.965421
+Light Intensity: 0.965421
+ADC Value: 1344
+Voltage: 1.083077
+Light Intensity: 1.083077
+ADC Value: 1455
+Voltage: 1.172527
+Light Intensity: 1.172527
+ADC Value: 1335
+Voltage: 1.075824
+Light Intensity: 1.075824
+ADC Value: 2921
+Voltage: 2.353920
+Light Intensity: 2.353920
+ADC Value: 2995
+Voltage: 2.413553
+Light Intensity: 2.413553
+ADC Value: 3023
+Voltage: 2.436117
+Light Intensity: 2.436117
+ADC Value: 2971
+Voltage: 2.394212
+Light Intensity: 2.394212
+ADC Value: 2974
+Voltage: 2.396630
+Light Intensity: 2.396630
+ADC Value: 3094
+Voltage: 2.493333
+Light Intensity: 2.493333
+ADC Value: 3027
+Voltage: 2.439341
+Light Intensity: 2.439341
+ADC Value: 3123
+Voltage: 2.516703
+Light Intensity: 2.516703
+ADC Value: 3038
+Voltage: 2.448205
+Light Intensity: 2.448205
+ADC Value: 3071
+Voltage: 2.474798
+Light Intensity: 2.474798
+ADC Value: 3065
+Voltage: 2.469963
+Light Intensity: 2.469963
+ADC Value: 3056
+Voltage: 2.462711
+Light Intensity: 2.462711
+ADC Value: 3023
+Voltage: 2.436117
+Light Intensity: 2.436117
+ADC Value: 2960
+Voltage: 2.385348
+Light Intensity: 2.385348
+ADC Value: 3045
+Voltage: 2.453846
+Light Intensity: 2.453846
+ADC Value: 2699
+Voltage: 2.175018
+Light Intensity: 2.175018
+ADC Value: 2629
+Voltage: 2.118608
+Light Intensity: 2.118608
+ADC Value: 2619
+Voltage: 2.110549
+Light Intensity: 2.110549
+ADC Value: 2608
+Voltage: 2.101685
+Light Intensity: 2.101685
+ADC Value: 2559
+Voltage: 2.062198
+Light Intensity: 2.062198
+ADC Value: 2515
+Voltage: 2.026740
+Light Intensity: 2.026740
+ADC Value: 2748
+Voltage: 2.214505
+Light Intensity: 2.214505
+ADC Value: 2726
+Voltage: 2.196777
+Light Intensity: 2.196777
+ADC Value: 2701
+Voltage: 2.176630
+Light Intensity: 2.176630
+ADC Value: 2710
+Voltage: 2.183883
+Light Intensity: 2.183883
+ADC Value: 2590
+Voltage: 2.087179
+Light Intensity: 2.087179
+ADC Value: 2579
+Voltage: 2.078315
+Light Intensity: 2.078315
+ADC Value: 2799
+Voltage: 2.255605
+Light Intensity: 2.255605
+ADC Value: 2534
+Voltage: 2.042051
+Light Intensity: 2.042051
+ADC Value: 2602
+Voltage: 2.096850
+Light Intensity: 2.096850
+ADC Value: 2550
+Voltage: 2.054945
+Light Intensity: 2.054945
+ADC Value: 2608
+Voltage: 2.101685
+Light Intensity: 2.101685
+ADC Value: 2511
+Voltage: 2.023516
+Light Intensity: 2.023516
+ADC Value: 2545
+Voltage: 2.050916
+Light Intensity: 2.050916
+ADC Value: 2512
+Voltage: 2.024322
+Light Intensity: 2.024322
+ADC Value: 2420
+Voltage: 1.950183
+Light Intensity: 1.950183
+ADC Value: 2407
+Voltage: 1.939707
+Light Intensity: 1.939707
+ADC Value: 2465
+Voltage: 1.986447
+Light Intensity: 1.986447
+ADC Value: 2021
+Voltage: 1.628645
+Light Intensity: 1.628645
+ADC Value: 1791
+Voltage: 1.443297
+Light Intensity: 1.443297
+ADC Value: 1911
+Voltage: 1.540000
+Light Intensity: 1.540000
+ADC Value: 1613
+Voltage: 1.299853
+Light Intensity: 1.299853
+ADC Value: 2042
+Voltage: 1.645568
+Light Intensity: 1.645568
+ADC Value: 1809
+Voltage: 1.457802
+Light Intensity: 1.457802
+ADC Value: 1467
+Voltage: 1.182198
+Light Intensity: 1.182198
+ADC Value: 1402
+Voltage: 1.129817
+Light Intensity: 1.129817
+ADC Value: 1351
+Voltage: 1.088718
+Light Intensity: 1.088718
+ADC Value: 1231
+Voltage: 0.992015
+Light Intensity: 0.992015
+ADC Value: 1142
+Voltage: 0.920293
+Light Intensity: 0.920293
+ADC Value: 1198
+Voltage: 0.965421
+Light Intensity: 0.965421
+ADC Value: 1146
+Voltage: 0.923517
+Light Intensity: 0.923517
+ADC Value: 1152
+Voltage: 0.928352
+Light Intensity: 0.928352
+ADC Value: 1342
+Voltage: 1.081465
+Light Intensity: 1.081465
+ADC Value: 1343
+Voltage: 1.082271
+Light Intensity: 1.082271
+ADC Value: 1280
+Voltage: 1.031502
+Light Intensity: 1.031502
+ADC Value: 1296
+Voltage: 1.044396
+Light Intensity: 1.044396
+ADC Value: 1277
+Voltage: 1.029084
+Light Intensity: 1.029084
+ADC Value: 1246
+Voltage: 1.004103
+Light Intensity: 1.004103
+ADC Value: 1268
+Voltage: 1.021832
+Light Intensity: 1.021832
+ADC Value: 1278
+Voltage: 1.029890
+Light Intensity: 1.029890
+ADC Value: 1232
+Voltage: 0.992821
+Light Intensity: 0.992821
+ADC Value: 1211
+Voltage: 0.975897
+Light Intensity: 0.975897
+ADC Value: 1399
+Voltage: 1.127399
+Light Intensity: 1.127399
+ADC Value: 1170
+Voltage: 0.942857
+Light Intensity: 0.942857
+ADC Value: 1195
+Voltage: 0.963004
+Light Intensity: 0.963004
+ADC Value: 1105
+Voltage: 0.890476
+Light Intensity: 0.890476
+ADC Value: 1136
+Voltage: 0.915458
+Light Intensity: 0.915458
+ADC Value: 1106
+Voltage: 0.891282
+Light Intensity: 0.891282
+ADC Value: 825
+Voltage: 0.664835
+Light Intensity: 0.664835
+ADC Value: 853
+Voltage: 0.687399
+Light Intensity: 0.687399
+ADC Value: 883
+Voltage: 0.711575
+Light Intensity: 0.711575
+ADC Value: 841
+Voltage: 0.677729
+Light Intensity: 0.677729
+ADC Value: 879
+Voltage: 0.708352
+Light Intensity: 0.708352
+ADC Value: 823
+Voltage: 0.663223
+Light Intensity: 0.663223
+ADC Value: 871
+Voltage: 0.701905
+Light Intensity: 0.701905
+ADC Value: 785
+Voltage: 0.632601
+Light Intensity: 0.632601
+ADC Value: 1178
+Voltage: 0.949304
+Light Intensity: 0.949304
+ADC Value: 1231
+Voltage: 0.992015
+Light Intensity: 0.992015
+ADC Value: 1424
+Voltage: 1.147546
+Light Intensity: 1.147546
+ADC Value: 1197
+Voltage: 0.964615
+Light Intensity: 0.964615
+ADC Value: 1244
+Voltage: 1.002491
+Light Intensity: 1.002491
+ADC Value: 1313
+Voltage: 1.058095
+Light Intensity: 1.058095
+ADC Value: 1239
+Voltage: 0.998462
+Light Intensity: 0.998462
+ADC Value: 1245
+Voltage: 1.003297
+Light Intensity: 1.003297
+ADC Value: 1021
+Voltage: 0.822784
+Light Intensity: 0.822784
+ADC Value: 1007
+Voltage: 0.811502
+Light Intensity: 0.811502
+ADC Value: 976
+Voltage: 0.786520
+Light Intensity: 0.786520
+ADC Value: 1101
+Voltage: 0.887253
+Light Intensity: 0.887253
+ADC Value: 1127
+Voltage: 0.908205
+Light Intensity: 0.908205
+ADC Value: 1155
+Voltage: 0.930769
+Light Intensity: 0.930769
+ADC Value: 1008
+Voltage: 0.812308
+Light Intensity: 0.812308
+ADC Value: 1124
+Voltage: 0.905788
+Light Intensity: 0.905788
+ADC Value: 1239
+Voltage: 0.998462
+Light Intensity: 0.998462
+ADC Value: 1302
+Voltage: 1.049231
+Light Intensity: 1.049231
+ADC Value: 1322
+Voltage: 1.065348
+Light Intensity: 1.065348
+ADC Value: 1664
+Voltage: 1.340952
+Light Intensity: 1.340952
+ADC Value: 1705
+Voltage: 1.373993
+Light Intensity: 1.373993
+ADC Value: 1769
+Voltage: 1.425568
+Light Intensity: 1.425568
+ADC Value: 1819
+Voltage: 1.465861
+Light Intensity: 1.465861
+ADC Value: 1972
+Voltage: 1.589157
+Light Intensity: 1.589157
+ADC Value: 1664
+Voltage: 1.340952
+Light Intensity: 1.340952
+ADC Value: 1856
+Voltage: 1.495678
+Light Intensity: 1.495678
+ADC Value: 1936
+Voltage: 1.560147
+Light Intensity: 1.560147
+ADC Value: 2065
+Voltage: 1.664103
+Light Intensity: 1.664103
+ADC Value: 2001
+Voltage: 1.612527
+Light Intensity: 1.612527
+ADC Value: 2191
+Voltage: 1.765641
+Light Intensity: 1.765641
+ADC Value: 2271
+Voltage: 1.830110
+Light Intensity: 1.830110
+ADC Value: 2303
+Voltage: 1.855897
+Light Intensity: 1.855897
+ADC Value: 2224
+Voltage: 1.792234
+Light Intensity: 1.792234
+ADC Value: 2394
+Voltage: 1.929231
+Light Intensity: 1.929231
+ADC Value: 2479
+Voltage: 1.997729
+Light Intensity: 1.997729
+ADC Value: 3031
+Voltage: 2.442564
+Light Intensity: 2.442564
+ADC Value: 2829
+Voltage: 2.279780
+Light Intensity: 2.279780
+ADC Value: 2811
+Voltage: 2.265275
+Light Intensity: 2.265275
+ADC Value: 2825
+Voltage: 2.276557
+Light Intensity: 2.276557
+ADC Value: 2871
+Voltage: 2.313626
+Light Intensity: 2.313626
+ADC Value: 2869
+Voltage: 2.312015
+Light Intensity: 2.312015
+ADC Value: 2957
+Voltage: 2.382931
+Light Intensity: 2.382931
+ADC Value: 2930
+Voltage: 2.361172
+Light Intensity: 2.361172
+ADC Value: 2897
+Voltage: 2.334579
+Light Intensity: 2.334579
+ADC Value: 3149
+Voltage: 2.537656
+Light Intensity: 2.537656
+ADC Value: 2935
+Voltage: 2.365201
+Light Intensity: 2.365201
+ADC Value: 3020
+Voltage: 2.433700
+Light Intensity: 2.433700
+ADC Value: 2928
+Voltage: 2.359560
+Light Intensity: 2.359560
+ADC Value: 2981
+Voltage: 2.402271
+Light Intensity: 2.402271
+ADC Value: 3023
+Voltage: 2.436117
+Light Intensity: 2.436117
+ADC Value: 2943
+Voltage: 2.371648
+Light Intensity: 2.371648
+ADC Value: 3088
+Voltage: 2.488498
+Light Intensity: 2.488498
+ADC Value: 3042
+Voltage: 2.451429
+Light Intensity: 2.451429
+ADC Value: 3005
+Voltage: 2.421612
+Light Intensity: 2.421612
+ADC Value: 2992
+Voltage: 2.411135
+Light Intensity: 2.411135
+ADC Value: 2926
+Voltage: 2.357949
+Light Intensity: 2.357949
+ADC Value: 2928
+Voltage: 2.359560
+Light Intensity: 2.359560
+ADC Value: 3013
+Voltage: 2.428059
+Light Intensity: 2.428059
+ADC Value: 2914
+Voltage: 2.348278
+Light Intensity: 2.348278
+ADC Value: 2887
+Voltage: 2.326520
+Light Intensity: 2.326520
+ADC Value: 2901
+Voltage: 2.337802
+Light Intensity: 2.337802
+ADC Value: 3134
+Voltage: 2.525568
+Light Intensity: 2.525568
+ADC Value: 2977
+Voltage: 2.399048
+Light Intensity: 2.399048
+ADC Value: 3071
+Voltage: 2.474798
+Light Intensity: 2.474798
+ADC Value: 2981
+Voltage: 2.402271
+Light Intensity: 2.402271
+ADC Value: 2967
+Voltage: 2.390989
+Light Intensity: 2.390989
+ADC Value: 2974
+Voltage: 2.396630
+Light Intensity: 2.396630
+ADC Value: 3011
+Voltage: 2.426447
+Light Intensity: 2.426447
+ADC Value: 3120
+Voltage: 2.514286
+Light Intensity: 2.514286
+ADC Value: 3039
+Voltage: 2.449011
+Light Intensity: 2.449011
+ADC Value: 2999
+Voltage: 2.416777
+Light Intensity: 2.416777
+ADC Value: 2960
+Voltage: 2.385348
+Light Intensity: 2.385348
+ADC Value: 2845
+Voltage: 2.292674
+Light Intensity: 2.292674
+ADC Value: 2939
+Voltage: 2.368425
+Light Intensity: 2.368425
+ADC Value: 2503
+Voltage: 2.017070
+Light Intensity: 2.017070
+ADC Value: 2459
+Voltage: 1.981612
+Light Intensity: 1.981612
+ADC Value: 2409
+Voltage: 1.941319
+Light Intensity: 1.941319
+ADC Value: 2333
+Voltage: 1.880073
+Light Intensity: 1.880073
+ADC Value: 2187
+Voltage: 1.762418
+Light Intensity: 1.762418
+ADC Value: 2128
+Voltage: 1.714872
+Light Intensity: 1.714872
+ADC Value: 2012
+Voltage: 1.621392
+Light Intensity: 1.621392
+ADC Value: 1913
+Voltage: 1.541612
+Light Intensity: 1.541612
+ADC Value: 1867
+Voltage: 1.504542
+Light Intensity: 1.504542
+ADC Value: 1717
+Voltage: 1.383663
+Light Intensity: 1.383663
+ADC Value: 1750
+Voltage: 1.410256
+Light Intensity: 1.410256
+ADC Value: 1697
+Voltage: 1.367546
+Light Intensity: 1.367546
+ADC Value: 1618
+Voltage: 1.303883
+Light Intensity: 1.303883
+ADC Value: 1600
+Voltage: 1.289377
+Light Intensity: 1.289377
+ADC Value: 1584
+Voltage: 1.276484
+Light Intensity: 1.276484
