@@ -144,5 +144,15 @@ static void config_wifi(void) {
 
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
-    ESP_ERROR_CHECK(esp_wifi_start());
 }
+
+/*Description:
+* Function to start Wi-Fi module
+*
+* @Input: [void]
+*
+* @Output: [void] Starts Wi-Fi
+* */
+ void start_wifi(void) {
+    ESP_ERROR_CHECK(esp_wifi_start());
+ }

@@ -15,10 +15,14 @@
 #include "wifi.c"
 #include "mqtt.c"
 #include "i2c.c"
-//#include "adc.c"
+#include "adc.c"
 
 
 void app_main (void) {
+
+	ESP_LOGI(TAG, "[APP] Startup..");
+    ESP_LOGI(TAG, "[APP] Free memory: %" PRIu32 " bytes", esp_get_free_heap_size());
+    ESP_LOGI(TAG, "[APP] IDF version: %s", esp_get_idf_version());
 
 //  Initialize NVS
 	ESP_ERROR_CHECK(esp_netif_init());
@@ -36,40 +40,42 @@ void app_main (void) {
 	EventBits_t wifi_bits;
 	EventBits_t mqtt_bits;
 	EventBits_t led_bits;
-	EventBits_t switch_bits;
 
 //  COMPONENT CONFIGURATION
 	config_i2c();
 	config_switch();
 	config_display();
 	config_led();
-//	config_adc();
 	config_wifi();
+	config_adc();
+
+// Display startup message
+	display_string("Booting ...", 2);
+	display_string("Hello there!", 3);
+
+	// xTaskCreate(&adc_task, "adc_task", 2000, NULL, 5, NULL);
+
 
 //  Event Handlers
-	TaskHandle_t handle_display = NULL;
 	TaskHandle_t handle_check_led = NULL;
 	TaskHandle_t handle_mqtt_publish = NULL;
-	TaskHandle_t handle_mqtt = NULL;
 	TaskHandle_t handle_reset = NULL;
-	TaskHandle_t handle_greet_message = NULL;
 
 	//  TASKS
-	xTaskCreate(&check_led_task, "check_led", 2000, NULL, 2, &handle_check_led);
-	xTaskCreate(&greet_user_task, "greet_user", 2000, NULL, 10, &handle_greet_message);
+	xTaskCreate(&check_led_task, "check_led", 2000, (void*)LED_GREEN_PIN, 2, &handle_check_led);
+	xTaskCreatePinnedToCore(&switch_task, "switch_task", 2000, NULL, 10, &handle_reset, 1);
 
-	sleep(3); // To greet user
+	start_wifi();
 
 	//  MAIN LOOP
 	for (;;) {
 
-		// switch_bits = xEventGroupWaitBits(s_switch_event_group, BIT_SWITCH_MAIN | BIT_SWITCH_RESET, pdTRUE, pdFALSE, portMAX_DELAY);
 		wifi_bits = xEventGroupWaitBits(s_wifi_event_group, WIFI_CONNECTED_BIT | WIFI_FAIL_BIT | WIFI_DISCONNECTED_BIT,
 		                                pdTRUE, pdFALSE, portMAX_DELAY);
 
 		if (wifi_bits & WIFI_CONNECTED_BIT) {
-			display_string("Wi-Fi connected", 3);
 			xEventGroupSetBits(s_led_event_group, BIT_LED_NOT_BLINK);
+			display_string("Wi-Fi connected", 3);
 			start_mqtt();
 			mqtt_bits = xEventGroupWaitBits(s_mqtt_event_group, MQTT_CONNECTED_BIT | MQTT_FAIL_BIT, pdTRUE, pdFALSE, portMAX_DELAY);
 			if (mqtt_bits & MQTT_CONNECTED_BIT) {
