@@ -49,7 +49,6 @@ const HistoricalData = ({ route, navigation }: HistoricalDataProps) => {
     const getReadings = async () => {
       try {
         const data = await device.historyReadings()
-        console.log(data)
         setReadings(data)
 
         setChartData({
