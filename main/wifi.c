@@ -33,6 +33,7 @@ void http_get(const char *host, const char *path) {
     bzero((char *)&server_addr, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
     bcopy((char *)server->h_addr, (char *)&server_addr.sin_addr.s_addr, server->h_length);
+
     server_addr.sin_port = htons(PORT);
 
     // Connect to the server
@@ -68,6 +69,68 @@ void http_get(const char *host, const char *path) {
     close(sockfd);
 }
 
+void http_put(const char *host, const char *path, const int port, const char *data, const char *authorization) {
+    int sockfd;
+    struct sockaddr_in server_addr;
+    struct hostent *server;
+
+    // Create a socket
+    sockfd = socket(AF_INET, SOCK_STREAM, 0);
+    if (sockfd < 0) {
+        perror("Error opening socket");
+        exit(EXIT_FAILURE);
+    }
+
+    // Get the server's IP address
+    // server = gethostbyname(host);
+    // if (server == NULL) {
+    //     fprintf(stderr, "Error, no such host\n");
+    //     exit(EXIT_FAILURE);
+    // }
+
+    // Initialize the server address structure
+    bzero((char *)&server_addr, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    // bcopy((char *)server->h_addr, (char *)&server_addr.sin_addr.s_addr, server->h_length);
+    server_addr.sin_addr.s_addr = inet_addr(host);
+    server_addr.sin_port = htons(port);
+
+    // Connect to the server
+    if (connect(sockfd, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+        perror("Error connecting to server");
+        exit(EXIT_FAILURE);
+    }
+
+    // Build the HTTP PUT request with Authorization header
+    char request[MAX_BUFFER_SIZE];
+    snprintf(request, sizeof(request), "PUT %s HTTP/1.1\r\nHost: %s\r\nContent-Length: %zu\r\nContent-Type: application/json\r\nAuthorization: Bearer %s\r\n\r\n%s", path, host, strlen(data), authorization, data);
+    printf("Request: %s\n", request);
+    sleep(1);
+
+    // Send the request
+    if (send(sockfd, request, strlen(request), 0) < 0) {
+        perror("Error sending request");
+        exit(EXIT_FAILURE);
+    }
+
+    // Receive and print the response
+    char response[MAX_BUFFER_SIZE];
+    ssize_t bytes_received;
+
+    while ((bytes_received = recv(sockfd, response, sizeof(response) - 1, 0)) > 0) {
+        response[bytes_received] = '\0';
+        printf("%s", response);
+    }
+
+    if (bytes_received < 0) {
+        perror("Error receiving response");
+        exit(EXIT_FAILURE);
+    }
+
+    close(sockfd);
+}
+
+
 /*Description:
  * Event handler for Wi-Fi events
  *
@@ -87,19 +150,21 @@ static void event_handler(void* arg, esp_event_base_t event_base, int32_t event_
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
         if (s_retry_num < ESP_MAXIMUM_RETRY) {
 	        xEventGroupSetBits(s_wifi_event_group, WIFI_DISCONNECTED_BIT);
+            wifi_connected = false;
             ESP_LOGI(TAG, "Reconnecting to wifi ...");
             esp_wifi_connect();
             s_retry_num++;
         } else {
+            wifi_connected = false;
             xEventGroupSetBits(s_wifi_event_group, WIFI_FAIL_BIT);
         }
     } else if (event_base == IP_EVENT && event_id == IP_EVENT_STA_GOT_IP) {
 	    xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+        wifi_connected = true;
 	    ip_event_got_ip_t *event = (ip_event_got_ip_t *) event_data;
 	    ESP_LOGI(TAG, "Connected to ip: "
 	    IPSTR, IP2STR(&event->ip_info.ip));
     }
-    
 }
 
 /*Description:
@@ -109,7 +174,7 @@ static void event_handler(void* arg, esp_event_base_t event_base, int32_t event_
  *
  * @Output: [void] Configures Wi-Fi with set parameters
  * */
-static void config_wifi(void) {
+static void config_wifi() {
 
     s_wifi_event_group = xEventGroupCreate();
     esp_netif_create_default_wifi_sta();
@@ -132,19 +197,35 @@ static void config_wifi(void) {
                                                         NULL,
                                                         &instance_got_ip));
 
+}
+
+static void set_wifi_config(const char *ssid, const char *password) {
+
+   wifi_sta_config_t wifi_config_sta = {
+            .threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD,
+            .sae_pwe_h2e = ESP_WIFI_SAE_MODE,
+            .sae_h2e_identifier = EXAMPLE_H2E_IDENTIFIER,
+    };
+
+    for (int i = 0; i < strlen(ssid); i++) {
+        wifi_config_sta.ssid[i] = ssid[i];
+    }
+
+    for (int i = 0; i < strlen(password); i++) {
+        wifi_config_sta.password[i] = password[i];
+    }
+
+    printf("SSID_len: %s\n", wifi_config_sta.ssid);
+    printf("Password: %s\n", wifi_config_sta.password);
+
     wifi_config_t wifi_config = {
-            .sta = {
-                    .ssid = ESP_WIFI_SSID,
-                    .password = ESP_WIFI_PASS,
-                    .threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD,
-                    .sae_pwe_h2e = ESP_WIFI_SAE_MODE,
-                    .sae_h2e_identifier = EXAMPLE_H2E_IDENTIFIER,
-            },
+            .sta = wifi_config_sta
     };
 
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config));
 }
+
 
 /*Description:
 * Function to start Wi-Fi module

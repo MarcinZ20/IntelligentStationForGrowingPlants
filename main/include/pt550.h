@@ -15,6 +15,6 @@ uint32_t read_adc(void);
 float convert_adc_to_voltage(uint32_t adc_value);
 float convert_adc_to_light_intensity(uint32_t adc_value);
 float read_light_intensity(void);
-void adc_task(void *pvParameter);
+float pt550_measure_with_mean(void);
 
 #endif //INTELLIGENTSTATIONFORGROWINGPLANTS_PT550_H

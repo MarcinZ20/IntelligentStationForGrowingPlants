@@ -53,3 +53,48 @@ void display_string(const char *text, unsigned int time_s) {
         return;
     }
 }
+
+/*Description:
+ * Function to clear the OLED display
+ *
+ * @Input: [void]
+ *
+ * @Output: [void] Display will be cleared
+ * */
+void clear_display(void) {
+    ssd1306_clear_screen(ssd1306_dev, 0x00);
+    ssd1306_refresh_gram(ssd1306_dev);
+}
+
+/*Description:
+* Function to display information about the measurement on the OLED screen
+*
+* @Input:
+*  - [const size_t] option: option to display
+*  - [const struct measurement] measurement: measurement structure
+*
+* @Output: [void] Display will show the desired information
+*/
+// void display_info(const int option, const struct measurement current_measurement) {
+//     char *message[30];
+
+//     switch (option) {
+//         case 0:
+//             return;
+//         case 1:
+//             sprintf(message, "Temperature: %.2f", current_measurement.temperature);
+//             break;
+//         case 2:
+//             sprintf(message, "Humidity: %.2f", current_measurement.humidity);
+//             break;
+//         case 3:
+//             sprintf(message, "Light: %.2f", current_measurement.light);
+//             break;
+//         default:
+//             sprintf(message, "Invalid option");
+//             break;
+//     }
+
+//     display_string(message, 5);
+//     free(message);
+// }

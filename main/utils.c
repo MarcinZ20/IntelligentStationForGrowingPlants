@@ -1,5 +1,5 @@
 #include "include/utils.h"
-#include "am2320.c"
+#include "am_2320.c"
 #include "pt550.c"
 
 /*Description:
@@ -12,20 +12,18 @@
 static struct measurement get_measurement () {
 	struct measurement measurement;
 
-	uint8_t am2320_data[4];
+	uint8_t am2320_data[8];
 
 	if (read_am2320_sensor(am2320_data, sizeof(am2320_data)) == ESP_OK) {
 		measurement.humidity = ((am2320_data[2] << 8) | am2320_data[3]) * 0.1;
 		measurement.temperature = ((am2320_data[0] << 8) | am2320_data[1]) * 0.1;
-		measurement.light = 98;
 	} else {
 		printf("Błąd odczytu danych z czujnika AM2320\n");
 	}
 
 	measurement.light = read_light_intensity();
-	printf("Wilgotność: %f%%\n", measurement.humidity);
-	printf("Temperatura: %f°C\n", measurement.temperature);
-	printf("Natężenie światła: %f\n", measurement.light);
+
+	current_measurement = measurement;
 
 	return measurement;
 }
@@ -71,3 +69,5 @@ const char* get_mac_address() {
 
 	return mac_str;
 }
+
+
