@@ -23,9 +23,7 @@ const Login = ({ route, navigation }: LoginProps) => {
       if (devicesResponse.error)
         return Alert.alert(devicesResponse.error)
 
-      const devices: Device[] = devicesResponse.devicesIds.map((deviceId: string) => new Device(deviceId))
-
-      navigation.navigate('SelectDevice', { deviceIds: devices.map(d => d.id) })
+      navigation.navigate('SelectDevice', { deviceIds: devicesResponse.devicesIds })
     } catch (error) {
       console.error(error)
     }

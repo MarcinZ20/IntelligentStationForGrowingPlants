@@ -8,7 +8,7 @@ import { Device, Reading } from '../types/Device'
 type CurrentReadingsProps = NativeStackScreenProps<StackParamList, 'CurrentReadings'>
 
 const CurrentReadings = ({ route, navigation }: CurrentReadingsProps) => {
-  const [readings, setReadings] = useState<Reading>({ temperature: 0, humidity: 0, lightIntensity: 0 })
+  const [readings, setReadings] = useState<Reading>({ temperature: 0, humidity: 0, light_intensity: 0 })
   const [error, setError] = useState<string | null>(null)
   const [deviceName, setDeviceName] = useState<string>('')
 
@@ -72,7 +72,7 @@ const CurrentReadings = ({ route, navigation }: CurrentReadingsProps) => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Light Intensity</Text>
-          <Text style={styles.textBigNumber}>{readings.lightIntensity}</Text>
+          <Text style={styles.textBigNumber}>{readings.light_intensity}</Text>
         </TouchableOpacity>
       </View>
       <TouchableOpacity style={styles.history} onPress={goToHistoricalData}>

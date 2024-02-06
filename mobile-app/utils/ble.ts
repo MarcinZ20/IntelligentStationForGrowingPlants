@@ -26,7 +26,7 @@ const useBLE = (): BluetoothLowEnergyApi => {
   const bleManager = useMemo(() => new BleManager(), [])
   const [allDevices, setAllDevices] = useState<BluetoothDevice[]>([])
   const [connectedDevice, setConnectedDevice] = useState<BluetoothDevice | null>(null)
-  
+
   const requestAndroid31Permissions = async () => {
     const bluetoothScanPermission = await PermissionsAndroid.request(
       PermissionsAndroid.PERMISSIONS.BLUETOOTH_SCAN,
@@ -87,9 +87,9 @@ const useBLE = (): BluetoothLowEnergyApi => {
     if (await bleManager.state() === 'PoweredOn')
       return
 
-    try { 
+    try {
       await bleManager.enable()
-    } catch(error) {
+    } catch (error) {
       console.error(error)
     }
   }
@@ -101,7 +101,7 @@ const useBLE = (): BluetoothLowEnergyApi => {
     bleManager.startDeviceScan(null, null, (error, device) => {
       if (error)
         return console.log(error)
-      
+
       if (device && device.name?.includes(Config.DEVICE_NAME)) {
         setAllDevices((prevState: BluetoothDevice[]) => {
           if (!isDuplicteDevice(prevState, device)) {
@@ -113,7 +113,7 @@ const useBLE = (): BluetoothLowEnergyApi => {
     })
 
   const connectToDevice = async (device: BluetoothDevice) => {
-    const deviceConnection = await bleManager.connectToDevice(device.id)
+    const deviceConnection = await bleManager.connectToDevice(device.id, { requestMTU: 500 })
     setConnectedDevice(deviceConnection)
     await deviceConnection.discoverAllServicesAndCharacteristics()
     bleManager.stopDeviceScan()

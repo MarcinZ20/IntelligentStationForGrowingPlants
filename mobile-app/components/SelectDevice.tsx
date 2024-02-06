@@ -16,19 +16,28 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
   const [deviceId, setDeviceId] = useState<string>('')
   const [devices, setDevices] = useState<Device[]>([])
 
-  const {
-    requestPermissions,
-    scanForPeripherals,
-    connectToDevice,
-    sendData,
-    disconnectFromDevice,
-    enableBluetooth,
-    allDevices,
-    connectedDevice,
-  } = useBLE()
+  const { requestPermissions, enableBluetooth } = useBLE()
 
   useEffect(() => {
     setDevices(route.params.deviceIds.map(id => new Device(id)))
+
+    const updateDevices = async () => {
+      try {
+        const response = await API.devices()
+        if (response.error)
+          return Alert.alert(`Failed to fetch devices: ${response.error}`)
+        
+        const devicesFromAPI: Device[] = response.devicesIds.map((deviceId: string) => new Device(deviceId))
+        setDevices(devicesFromAPI)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+  
+    const interval = setInterval(() => {
+      updateDevices()
+    }, 2000)
+    return () => clearInterval(interval)
   }, [])
 
   const chooseDevice = (device: Device) => {
@@ -73,7 +82,7 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
           PermissionsAndroid.PERMISSIONS.BLUETOOTH_CONNECT,
           PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION
         ])
-  
+
         return (
           result['android.permission.BLUETOOTH_CONNECT'] === PermissionsAndroid.RESULTS.GRANTED &&
           result['android.permission.BLUETOOTH_SCAN'] === PermissionsAndroid.RESULTS.GRANTED &&
@@ -81,7 +90,7 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
         )
       }
     }
-  
+
     return false
   }
 
@@ -93,7 +102,7 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
       const response = await API.addDevice(deviceId)
       if (response.error)
         return Alert.alert(response.error)
-      
+
       setIsModalOpen(false)
       setDevices(response.user.devicesIds.map((deviceId: string) => new Device(deviceId)))
     } catch (error) {
@@ -104,10 +113,10 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
   return (
     <>
       <Dialog.Container visible={isModalOpen}>
-      <Dialog.Title>Add a device</Dialog.Title>
+        <Dialog.Title>Add a device</Dialog.Title>
         <Dialog.Input label='Device ID' onChangeText={setDeviceId} />
-        <Dialog.Button label='Cancel' onPress={() => setIsModalOpen(false)}/>
-        <Dialog.Button label='Add' onPress={addDevice}/>
+        <Dialog.Button label='Cancel' onPress={() => setIsModalOpen(false)} />
+        <Dialog.Button label='Add' onPress={addDevice} />
       </Dialog.Container>
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         {
@@ -119,9 +128,6 @@ const SelectDevice = ({ route, navigation }: SelectDeviceProps) => {
         <View style={styles.buttonContainer}>
           <Button title='Add a device' color={Config.COLOR_CONTENT} onPress={scanDevices}></Button>
         </View>
-        {/* {
-          allDevices.map((device, i) => <Text key={i}>{device.name} - {device.id}</Text>)
-        } */}
       </ScrollView>
     </>
   )

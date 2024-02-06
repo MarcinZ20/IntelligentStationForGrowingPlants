@@ -7,6 +7,7 @@ import Config from '../Config'
 import { StackParamList } from '../navigation/types'
 import API from '../utils/API'
 import useBLE from '../utils/ble'
+import { Device } from '../types/Device'
 
 type AddDeviceProps = NativeStackScreenProps<StackParamList, 'AddDevice'>
 
@@ -32,7 +33,7 @@ const AddDevice = ({ route, navigation }: AddDeviceProps) => {
     try {
       await connectToDevice(device)
       setIsModalOpen(true)
-    } catch(error) {
+    } catch (error) {
       console.error(error)
       Alert.alert('Error connecting!')
     }
@@ -45,7 +46,14 @@ const AddDevice = ({ route, navigation }: AddDeviceProps) => {
     try {
       await sendData(connectedDevice, API.getAccessToken(), SSID, password)
       disconnectFromDevice()
-    } catch(error) {
+      setIsModalOpen(false)
+
+      const devicesResponse = await API.devices()
+      if (devicesResponse.error)
+        return Alert.alert(devicesResponse.error)
+
+      navigation.navigate('SelectDevice', { deviceIds: devicesResponse.devicesIds })
+    } catch (error) {
       console.error(error)
       Alert.alert('Error sending data!')
     }
@@ -54,21 +62,21 @@ const AddDevice = ({ route, navigation }: AddDeviceProps) => {
   return (
     <>
       <Dialog.Container visible={isModalOpen}>
-      <Dialog.Title>Add a device</Dialog.Title>
+        <Dialog.Title>Add a device</Dialog.Title>
         <Dialog.Input label='SSID' onChangeText={setSSID} />
         <Dialog.Input label='Password' secureTextEntry={true} onChangeText={setPassword} />
-        <Dialog.Button label='Cancel' onPress={() => setIsModalOpen(false)}/>
-        <Dialog.Button label='Send' onPress={send}/>
+        <Dialog.Button label='Cancel' onPress={() => setIsModalOpen(false)} />
+        <Dialog.Button label='Send' onPress={send} />
       </Dialog.Container>
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
         {
           allDevices.map((device, i) => {
             return <TouchableOpacity key={i} style={styles.selectDevice} onPress={() => connect(device)}>
-                    <View style={styles.textContainer}>
-                      <Text style={styles.deviceName}>{device.name}</Text>
-                      <Text style={styles.deviceId}>ID: {device.id}</Text>
-                    </View>
-                  </TouchableOpacity>
+              <View style={styles.textContainer}>
+                <Text style={styles.deviceName}>{device.name}</Text>
+                <Text style={styles.deviceId}>ID: {device.id}</Text>
+              </View>
+            </TouchableOpacity>
           })
         }
       </ScrollView>

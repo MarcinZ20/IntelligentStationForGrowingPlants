@@ -70,7 +70,7 @@ const HistoricalData = ({ route, navigation }: HistoricalDataProps) => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Avergae Light Intensity</Text>
-          <Text style={styles.textBigNumber}>{readings.reduce((sum, reading) => sum + reading.lightIntensity, 0) / readings.length}</Text>
+          <Text style={styles.textBigNumber}>{readings.reduce((sum, reading) => sum + reading.light_intensity, 0) / readings.length}</Text>
         </TouchableOpacity>
       </View>
     </View>
