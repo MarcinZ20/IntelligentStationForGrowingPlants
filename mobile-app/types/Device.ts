@@ -40,5 +40,6 @@ export class Device {
 export type Reading = {
   temperature: number,
   humidity: number,
-  light_intensity: number
+  light_intensity: number,
+  timestamp: string
 }

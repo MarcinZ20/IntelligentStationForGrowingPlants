@@ -1,14 +1,16 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 import React, { useEffect, useState } from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import Config from '../Config'
 import { StackParamList } from '../navigation/types'
 import { Device, Reading } from '../types/Device'
 
 type CurrentReadingsProps = NativeStackScreenProps<StackParamList, 'CurrentReadings'>
 
+const screenWidth = Dimensions.get('screen').width
+
 const CurrentReadings = ({ route, navigation }: CurrentReadingsProps) => {
-  const [readings, setReadings] = useState<Reading>({ temperature: 0, humidity: 0, light_intensity: 0 })
+  const [readings, setReadings] = useState<Reading>({ temperature: 0, humidity: 0, light_intensity: 0, timestamp: '' })
   const [error, setError] = useState<string | null>(null)
   const [deviceName, setDeviceName] = useState<string>('')
 
@@ -64,15 +66,15 @@ const CurrentReadings = ({ route, navigation }: CurrentReadingsProps) => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Temperature</Text>
-          <Text style={styles.textBigNumber}>{readings.temperature}</Text>
+          <Text style={styles.textBigNumber}>{readings.temperature.toFixed(1)}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Humidity</Text>
-          <Text style={styles.textBigNumber}>{readings.humidity}</Text>
+          <Text style={styles.textBigNumber}>{readings.humidity.toFixed(1)}</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Light Intensity</Text>
-          <Text style={styles.textBigNumber}>{readings.light_intensity}</Text>
+          <Text style={styles.textBigNumber}>{readings.light_intensity.toFixed(1)}</Text>
         </TouchableOpacity>
       </View>
       <TouchableOpacity style={styles.history} onPress={goToHistoricalData}>
@@ -101,7 +103,7 @@ const styles = StyleSheet.create({
   },
   panel: {
     backgroundColor: Config.COLOR_CONTENT,
-    width: '46%',
+    width: (screenWidth / 2) - 38,
     aspectRatio: 1,
     padding: 25,
     borderRadius: 25,
@@ -122,7 +124,7 @@ const styles = StyleSheet.create({
     color: Config.COLOR_TEXT
   },
   textBigNumber: {
-    fontSize: 60,
+    fontSize: 50,
     color: Config.COLOR_TEXT
   },
   history: {
