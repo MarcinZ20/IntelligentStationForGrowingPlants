@@ -1,0 +1,1153 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a1ch (166428) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00038a44 vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003ded0 vaddr=40080000 size=02148h (  8520) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=91e80h (597632) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=000d1ea8 vaddr=40082148 size=16634h ( 91700) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) cpu_start: Application information:[0m
+[0;32mI (334) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (341) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (347) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (353) cpu_start: ELF file SHA256:  90bb72c11...[0m
+[0;32mI (358) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (369) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (374) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (392) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (398) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (404) heap_init: At 3FFC76D8 len 00018928 (98 KiB): DRAM[0m
+[0;32mI (410) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 4009877C len 00007884 (30 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (438) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (449) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (455) main_task: Started on CPU0[0m
+[0;32mI (465) main_task: Calling app_main()[0m
+[0;32mI (495) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (505) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (505) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (515) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (2035) wifi:wifi driver task: 3ffcc188, prio:23, stack:6656, core=0
+I (2045) wifi:wifi firmware version: a194738
+I (2055) wifi:wifi certification version: v7.0
+I (2055) wifi:config NVS flash: enabled
+I (2055) wifi:config nano formating: disabled
+I (2055) wifi:Init data frame dynamic rx buffer num: 32
+I (2065) wifi:Init static rx mgmt buffer num: 5
+I (2065) wifi:Init management short buffer num: 32
+I (2065) wifi:Init dynamic tx buffer num: 32
+I (2075) wifi:Init static rx buffer size: 1600
+I (2075) wifi:Init static rx buffer num: 10
+I (2085) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2085) wifi_init: rx ba win: 6[0m
+[0;32mI (2085) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2095) wifi_init: udp mbox: 6[0m
+[0;32mI (2095) wifi_init: tcp mbox: 6[0m
+[0;32mI (2105) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2105) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2105) wifi_init: tcp mss: 1440[0m
+[0;32mI (2115) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2115) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2125) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (2215) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (2215) wifi:enable tsf
+[0;32mI (2215) WI-FI STATION: wifi_init_sta finished.[0m
+[0;31mE (2215) i2c: i2c driver install error[0m
+I (2325) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (2325) wifi:state: init -> auth (b0)
+I (2335) wifi:state: auth -> init (1c0)
+I (2335) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2335) i2c: i2c driver install error[0m
+[0;32mI (2345) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (2345) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (4765) i2c: i2c driver install error[0m
+[0;32mI (4775) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (4775) WI-FI STATION: Nie połączono z siecią[0m
+I (4775) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4785) wifi:state: init -> auth (b0)
+I (4785) wifi:state: auth -> assoc (0)
+I (4795) wifi:state: assoc -> run (10)
+I (4815) wifi:connected with supertajnasiec, aid = 2, channel 1, BW20, bssid = 02:0d:d7:97:c0:79
+I (4815) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (4825) wifi:pm start, type: 1
+
+I (4825) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;31mE (4835) i2c: i2c driver install error[0m
+I (4985) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4985) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (7335) esp_netif_handlers: sta ip: 192.168.54.8, mask: 255.255.255.0, gw: 192.168.54.217[0m
+[0;31mE (7335) i2c: i2c driver install error[0m
+[0;32mI (7345) WI-FI STATION: GOT IP: 192.168.54.8[0m
+[0;32mI (7345) WI-FI STATION: CONNECTED[0m
+
+Połączono z siecią:
+=====
+SSID: supertajnasiec
+Password: supertajnehaslo
+
+[0;32mI (7355) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;32mI (7365) main_task: Returned from app_main()[0m
+I (7545) wifi:<ba-add>idx:0 (ifx:0, 02:0d:d7:97:c0:79), tid:0, ssn:3, winSize:64
+[0;32mI (8025) MQTT: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (8035) MQTT: Sent publish successful, msg_id: 1[0m
+[0;32mI (11035) MQTT: Sent publish successful, msg_id: 2[0m
+[0;32mI (14035) MQTT: Sent publish successful, msg_id: 3[0m
+[0;32mI (17035) MQTT: Sent publish successful, msg_id: 4[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a1ch (166428) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00038a44 vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (142) esp_image: segment 2: paddr=0003ded0 vaddr=40080000 size=02148h (  8520) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=91e80h (597632) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=000d1ea8 vaddr=40082148 size=16634h ( 91700) load[0m
+[0;32mI (311) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (311) boot: Disabling RNG early entropy source...[0m
+[0;32mI (322) cpu_start: Multicore app[0m
+[0;32mI (331) cpu_start: Pro cpu start user code[0m
+[0;32mI (331) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (331) cpu_start: Application information:[0m
+[0;32mI (334) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (341) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (347) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (353) cpu_start: ELF file SHA256:  90bb72c11...[0m
+[0;32mI (358) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (369) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (374) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (379) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (386) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (392) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (398) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (404) heap_init: At 3FFC76D8 len 00018928 (98 KiB): DRAM[0m
+[0;32mI (410) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 4009877C len 00007884 (30 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (438) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (449) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (455) main_task: Started on CPU0[0m
+[0;32mI (465) main_task: Calling app_main()[0m
+[0;32mI (495) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (505) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (505) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (515) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (2035) wifi:wifi driver task: 3ffcc188, prio:23, stack:6656, core=0
+I (2045) wifi:wifi firmware version: a194738
+I (2055) wifi:wifi certification version: v7.0
+I (2055) wifi:config NVS flash: enabled
+I (2055) wifi:config nano formating: disabled
+I (2055) wifi:Init data frame dynamic rx buffer num: 32
+I (2065) wifi:Init static rx mgmt buffer num: 5
+I (2065) wifi:Init management short buffer num: 32
+I (2065) wifi:Init dynamic tx buffer num: 32
+I (2075) wifi:Init static rx buffer size: 1600
+I (2075) wifi:Init static rx buffer num: 10
+I (2085) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2085) wifi_init: rx ba win: 6[0m
+[0;32mI (2085) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2095) wifi_init: udp mbox: 6[0m
+[0;32mI (2095) wifi_init: tcp mbox: 6[0m
+[0;32mI (2105) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2105) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2105) wifi_init: tcp mss: 1440[0m
+[0;32mI (2115) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2115) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2125) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (2215) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (2215) wifi:enable tsf
+[0;32mI (2215) WI-FI STATION: wifi_init_sta finished.[0m
+[0;31mE (2215) i2c: i2c driver install error[0m
+I (2235) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (2235) wifi:state: init -> auth (b0)
+I (2245) wifi:state: auth -> init (1c0)
+I (2245) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (2245) i2c: i2c driver install error[0m
+[0;32mI (2255) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (2255) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (4675) i2c: i2c driver install error[0m
+[0;32mI (4785) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (4785) WI-FI STATION: Nie połączono z siecią[0m
+I (4795) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4795) wifi:state: init -> auth (b0)
+I (4805) wifi:state: auth -> assoc (0)
+I (4815) wifi:state: assoc -> run (10)
+I (4835) wifi:connected with supertajnasiec, aid = 3, channel 1, BW20, bssid = 02:0d:d7:97:c0:79
+I (4835) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (4845) wifi:pm start, type: 1
+
+I (4845) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;31mE (4855) i2c: i2c driver install error[0m
+I (4865) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4865) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (5845) esp_netif_handlers: sta ip: 192.168.54.8, mask: 255.255.255.0, gw: 192.168.54.217[0m
+[0;31mE (5845) i2c: i2c driver install error[0m
+[0;32mI (5855) WI-FI STATION: GOT IP: 192.168.54.8[0m
+[0;32mI (5855) WI-FI STATION: CONNECTED[0m
+
+Połączono z siecią:
+=====
+SSID: supertajnasiec
+Password: supertajnehaslo
+
+[0;32mI (5955) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;32mI (5965) main_task: Returned from app_main()[0m
+I (5995) wifi:<ba-add>idx:0 (ifx:0, 02:0d:d7:97:c0:79), tid:0, ssn:3, winSize:64
+[0;32mI (6715) MQTT: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (6725) MQTT: Sent publish successful, msg_id: 1[0m
+[0;32mI (9725) MQTT: Sent publish successful, msg_id: 2[0m
+[0;32mI (12725) MQTT: Sent publish successful, msg_id: 3[0m
+I (12725) wifi:state: run -> init (1a0)
+I (12725) wifi:pm stop, total sleep time: 6440755 us / 7885169 us
+
+I (12725) wifi:<ba-del>idx:0, tid:0
+I (12735) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (12745) i2c: i2c driver install error[0m
+[0;32mI (12855) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (12855) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (15265) i2c: i2c driver install error[0m
+[0;32mI (15375) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (15375) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (15725) transport_base: poll_write select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;33mW (15725) transport_base: Poll timeout or error, errno=Connection already in progress, fd=54, timeout_ms=10000[0m
+[0;31mE (15735) mqtt_client: Writing failed: errno=119[0m
+[0;32mI (15735) MQTT: EVENT_ERROR[0m
+[0;31mE (15745) MQTT: Last error captured as transport's socket errno: 0x71[0m
+[0;32mI (15745) MQTT: Last errno string (Software caused connection abort)[0m
+[0;32mI (15755) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (15755) MQTT: Sent publish successful, msg_id: -1[0m
+[0;31mE (17795) i2c: i2c driver install error[0m
+[0;32mI (17895) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (17905) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (18765) MQTT: Sent publish successful, msg_id: 5[0m
+[0;31mE (20315) i2c: i2c driver install error[0m
+[0;32mI (20425) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (20425) WI-FI STATION: Nie połączono z siecią[0m
+I (20425) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (20435) wifi:state: init -> auth (b0)
+I (20435) wifi:state: auth -> assoc (0)
+I (20455) wifi:state: assoc -> run (10)
+I (20475) wifi:connected with supertajnasiec, aid = 1, channel 1, BW20, bssid = d2:01:4c:33:9e:d0
+I (20475) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (20485) wifi:pm start, type: 1
+
+I (20485) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;31mE (20495) i2c: i2c driver install error[0m
+I (20535) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (20535) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (21495) esp_netif_handlers: sta ip: 192.168.54.8, mask: 255.255.255.0, gw: 192.168.54.217[0m
+[0;31mE (21495) i2c: i2c driver install error[0m
+[0;32mI (21505) WI-FI STATION: GOT IP: 192.168.54.8[0m
+[0;32mI (21505) WI-FI STATION: CONNECTED[0m
+[0;32mI (21765) MQTT: Sent publish successful, msg_id: 6[0m
+[0;32mI (24765) MQTT: Sent publish successful, msg_id: 7[0m
+[0;32mI (27765) MQTT: Sent publish successful, msg_id: 8[0m
+[0;32mI (30765) MQTT: Sent publish successful, msg_id: 9[0m
+[0;32mI (33765) MQTT: Sent publish successful, msg_id: 10[0m
+[0;32mI (36765) MQTT: ESTABLISHING CONNECTION ...[0m
+I (37125) wifi:<ba-add>idx:0 (ifx:0, d2:01:4c:33:9e:d0), tid:0, ssn:3, winSize:64
+[0;32mI (37435) MQTT: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (37435) MQTT: Sent publish successful, msg_id: 11[0m
+[0;32mI (40435) MQTT: Sent publish successful, msg_id: 12[0m
+[0;32mI (43435) MQTT: Sent publish successful, msg_id: 13[0m
+[0;32mI (46435) MQTT: Sent publish successful, msg_id: 14[0m
+[0;32mI (49435) MQTT: Sent publish successful, msg_id: 15[0m
+[0;32mI (52435) MQTT: Sent publish successful, msg_id: 16[0m
+[0;32mI (55435) MQTT: Sent publish successful, msg_id: 17[0m
+[0;32mI (58435) MQTT: Sent publish successful, msg_id: 18[0m
+[0;32mI (61435) MQTT: Sent publish successful, msg_id: 19[0m
+[0;32mI (64435) MQTT: Sent publish successful, msg_id: 20[0m
+[0;32mI (67435) MQTT: EVENT_PUBLISHED, msg_id: 11[0m
+[0;32mI (67445) MQTT: EVENT_PUBLISHED, msg_id: 12[0m
+[0;32mI (67445) MQTT: EVENT_PUBLISHED, msg_id: 13[0m
+[0;32mI (67455) MQTT: EVENT_PUBLISHED, msg_id: 14[0m
+[0;32mI (67455) MQTT: EVENT_PUBLISHED, msg_id: 15[0m
+[0;32mI (67455) MQTT: EVENT_PUBLISHED, msg_id: 16[0m
+[0;32mI (67515) MQTT: EVENT_PUBLISHED, msg_id: 17[0m
+[0;32mI (76615) MQTT: EVENT_PUBLISHED, msg_id: 18[0m
+[0;32mI (77065) MQTT: EVENT_PUBLISHED, msg_id: 19[0m
+[0;32mI (77075) MQTT: EVENT_PUBLISHED, msg_id: 20[0m
+I (83815) wifi:state: run -> init (1a0)
+I (83815) wifi:pm stop, total sleep time: 53891309 us / 63335121 us
+
+I (83815) wifi:<ba-del>idx:0, tid:0
+I (83825) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;31mE (83825) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (83835) i2c: i2c driver install error[0m
+[0;31mE (83835) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (83845) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (83955) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (83955) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (86365) i2c: i2c driver install error[0m
+[0;32mI (86475) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (86475) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (88885) i2c: i2c driver install error[0m
+[0;32mI (88995) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (88995) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (91405) i2c: i2c driver install error[0m
+[0;32mI (91515) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (91515) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (93855) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (93855) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (93855) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (93855) mqtt_client: Error transport connect[0m
+[0;32mI (93865) MQTT: EVENT_ERROR[0m
+[0;31mE (93865) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (93875) MQTT: Last errno string (Success)[0m
+[0;32mI (93875) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (93935) i2c: i2c driver install error[0m
+[0;32mI (94045) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (94045) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (96455) i2c: i2c driver install error[0m
+[0;32mI (96565) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (96565) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (98975) i2c: i2c driver install error[0m
+[0;32mI (99085) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (99085) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (101495) i2c: i2c driver install error[0m
+[0;32mI (101605) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (101605) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (103885) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (103885) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (103885) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (103885) mqtt_client: Error transport connect[0m
+[0;32mI (103895) MQTT: EVENT_ERROR[0m
+[0;31mE (103895) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (103905) MQTT: Last errno string (Success)[0m
+[0;32mI (103905) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (104025) i2c: i2c driver install error[0m
+[0;32mI (104135) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (104135) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (106545) i2c: i2c driver install error[0m
+[0;32mI (106655) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (106655) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (109065) i2c: i2c driver install error[0m
+[0;32mI (109175) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (109175) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (111595) i2c: i2c driver install error[0m
+[0;32mI (111695) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (111705) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (113915) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (113915) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (113915) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (113915) mqtt_client: Error transport connect[0m
+[0;32mI (113925) MQTT: EVENT_ERROR[0m
+[0;31mE (113925) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (113935) MQTT: Last errno string (Success)[0m
+[0;32mI (113935) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (114115) i2c: i2c driver install error[0m
+[0;32mI (114225) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (114225) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (116635) i2c: i2c driver install error[0m
+[0;32mI (116745) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (116745) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (119155) i2c: i2c driver install error[0m
+[0;32mI (119265) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (119265) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (121685) i2c: i2c driver install error[0m
+[0;32mI (121795) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (121795) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (123945) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (123945) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (123945) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (123945) mqtt_client: Error transport connect[0m
+[0;32mI (123955) MQTT: EVENT_ERROR[0m
+[0;31mE (123955) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (123965) MQTT: Last errno string (Success)[0m
+[0;32mI (123965) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (124205) i2c: i2c driver install error[0m
+[0;32mI (124315) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (124315) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (126725) i2c: i2c driver install error[0m
+[0;32mI (126835) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (126835) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (129255) i2c: i2c driver install error[0m
+[0;32mI (129365) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (129365) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (131775) i2c: i2c driver install error[0m
+[0;32mI (131885) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (131885) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (133975) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (133975) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (133975) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (133975) mqtt_client: Error transport connect[0m
+[0;32mI (133985) MQTT: EVENT_ERROR[0m
+[0;31mE (133985) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (133995) MQTT: Last errno string (Success)[0m
+[0;32mI (133995) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (134295) i2c: i2c driver install error[0m
+[0;32mI (134405) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (134405) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (136825) i2c: i2c driver install error[0m
+[0;32mI (136935) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (136935) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (139345) i2c: i2c driver install error[0m
+[0;32mI (139455) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (139455) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (141865) i2c: i2c driver install error[0m
+[0;32mI (141975) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (141975) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (144005) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (144385) i2c: i2c driver install error[0m
+[0;32mI (144495) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (144495) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (146915) i2c: i2c driver install error[0m
+[0;32mI (147025) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (147025) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (149435) i2c: i2c driver install error[0m
+[0;32mI (149545) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (149545) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (151005) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (151005) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (151005) mqtt_client: Error transport connect[0m
+[0;32mI (151015) MQTT: EVENT_ERROR[0m
+[0;31mE (151015) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (151025) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (151025) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (151035) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (151955) i2c: i2c driver install error[0m
+[0;32mI (152065) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (152065) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (154485) i2c: i2c driver install error[0m
+[0;32mI (154595) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (154595) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (157005) i2c: i2c driver install error[0m
+[0;32mI (157115) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (157115) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (159525) i2c: i2c driver install error[0m
+[0;32mI (159635) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (159635) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (162045) i2c: i2c driver install error[0m
+[0;32mI (162155) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (162155) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (164575) i2c: i2c driver install error[0m
+[0;32mI (164685) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (164685) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (166035) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (167095) i2c: i2c driver install error[0m
+[0;32mI (167105) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (167105) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (169515) i2c: i2c driver install error[0m
+[0;32mI (169525) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (169525) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (171945) i2c: i2c driver install error[0m
+[0;32mI (171955) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (171955) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (173035) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (173035) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (173035) mqtt_client: Error transport connect[0m
+[0;32mI (173045) MQTT: EVENT_ERROR[0m
+[0;31mE (173045) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (173055) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (173055) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (173065) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (174365) i2c: i2c driver install error[0m
+[0;32mI (174375) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (174375) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (176795) i2c: i2c driver install error[0m
+[0;32mI (176805) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (176805) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (179215) i2c: i2c driver install error[0m
+[0;32mI (179225) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (179225) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (181635) i2c: i2c driver install error[0m
+[0;32mI (181645) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (181645) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (184065) i2c: i2c driver install error[0m
+[0;32mI (184075) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (184075) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (186485) i2c: i2c driver install error[0m
+[0;32mI (186495) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (186495) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (188065) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (188905) i2c: i2c driver install error[0m
+[0;32mI (188925) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (188925) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (191335) i2c: i2c driver install error[0m
+[0;32mI (191345) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (191345) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (193755) i2c: i2c driver install error[0m
+[0;32mI (193765) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (193765) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (195065) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (195065) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (195065) mqtt_client: Error transport connect[0m
+[0;32mI (195075) MQTT: EVENT_ERROR[0m
+[0;31mE (195075) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (195085) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (195085) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (195095) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (196185) i2c: i2c driver install error[0m
+[0;32mI (196195) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (196195) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (198605) i2c: i2c driver install error[0m
+[0;32mI (198615) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (198615) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (201035) i2c: i2c driver install error[0m
+[0;32mI (201045) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (201045) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (203455) i2c: i2c driver install error[0m
+[0;32mI (203465) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (203465) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (205875) i2c: i2c driver install error[0m
+[0;32mI (205885) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (205885) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (208305) i2c: i2c driver install error[0m
+[0;32mI (208315) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (208315) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (210095) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (210725) i2c: i2c driver install error[0m
+[0;32mI (210735) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (210735) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (213155) i2c: i2c driver install error[0m
+[0;32mI (213165) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (213165) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (215575) i2c: i2c driver install error[0m
+[0;32mI (215585) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (215585) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (217095) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (217095) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (217095) mqtt_client: Error transport connect[0m
+[0;32mI (217105) MQTT: EVENT_ERROR[0m
+[0;31mE (217105) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (217115) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (217115) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (217125) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (217995) i2c: i2c driver install error[0m
+[0;32mI (218015) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (218015) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (220425) i2c: i2c driver install error[0m
+[0;32mI (220435) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (220435) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (222845) i2c: i2c driver install error[0m
+[0;32mI (222855) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (222855) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (225275) i2c: i2c driver install error[0m
+[0;32mI (225285) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (225285) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (227695) i2c: i2c driver install error[0m
+[0;32mI (227705) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (227705) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (230115) i2c: i2c driver install error[0m
+[0;32mI (230135) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (230135) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (232125) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (232545) i2c: i2c driver install error[0m
+[0;32mI (232555) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (232555) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (234965) i2c: i2c driver install error[0m
+[0;32mI (234975) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (234975) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (237395) i2c: i2c driver install error[0m
+[0;32mI (237405) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (237405) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (239125) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (239125) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (239125) mqtt_client: Error transport connect[0m
+[0;32mI (239135) MQTT: EVENT_ERROR[0m
+[0;31mE (239135) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (239145) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (239145) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (239155) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (239815) i2c: i2c driver install error[0m
+[0;32mI (239825) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (239825) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (242245) i2c: i2c driver install error[0m
+[0;32mI (242255) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (242255) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (244665) i2c: i2c driver install error[0m
+[0;32mI (244675) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (244675) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (247085) i2c: i2c driver install error[0m
+[0;32mI (247095) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (247095) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (249515) i2c: i2c driver install error[0m
+[0;32mI (249525) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (249525) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (251935) i2c: i2c driver install error[0m
+[0;32mI (251945) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (251945) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (254155) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (254365) i2c: i2c driver install error[0m
+[0;32mI (254375) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (254375) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (256785) i2c: i2c driver install error[0m
+[0;32mI (256795) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (256795) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (259205) i2c: i2c driver install error[0m
+[0;32mI (259215) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (259225) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (261155) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (261155) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (261155) mqtt_client: Error transport connect[0m
+[0;32mI (261165) MQTT: EVENT_ERROR[0m
+[0;31mE (261165) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (261175) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (261175) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (261185) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (261635) i2c: i2c driver install error[0m
+[0;32mI (261645) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (261645) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (264055) i2c: i2c driver install error[0m
+[0;32mI (264065) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (264065) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (266485) i2c: i2c driver install error[0m
+[0;32mI (266495) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (266495) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (268905) i2c: i2c driver install error[0m
+[0;32mI (268915) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (268915) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (271325) i2c: i2c driver install error[0m
+[0;32mI (271345) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (271345) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (273755) i2c: i2c driver install error[0m
+[0;32mI (273765) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (273765) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (276175) i2c: i2c driver install error[0m
+[0;32mI (276185) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;32mI (276185) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (276185) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (278605) i2c: i2c driver install error[0m
+[0;32mI (278615) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (278615) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (281025) i2c: i2c driver install error[0m
+[0;32mI (281035) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (281035) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (283185) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (283185) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (283185) mqtt_client: Error transport connect[0m
+[0;32mI (283195) MQTT: EVENT_ERROR[0m
+[0;31mE (283195) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (283205) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (283205) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (283215) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (283455) i2c: i2c driver install error[0m
+[0;32mI (283465) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (283465) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (285875) i2c: i2c driver install error[0m
+[0;32mI (285885) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (285885) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (288295) i2c: i2c driver install error[0m
+[0;32mI (288305) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (288305) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (290725) i2c: i2c driver install error[0m
+[0;32mI (290735) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (290735) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (293145) i2c: i2c driver install error[0m
+[0;32mI (293155) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (293155) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (295565) i2c: i2c driver install error[0m
+[0;32mI (295585) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (295585) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (297995) i2c: i2c driver install error[0m
+[0;32mI (298005) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (298005) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (298215) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (300415) i2c: i2c driver install error[0m
+[0;32mI (300425) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (300435) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (302845) i2c: i2c driver install error[0m
+[0;32mI (302855) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (302855) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (305215) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (305215) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (305215) mqtt_client: Error transport connect[0m
+[0;32mI (305225) MQTT: EVENT_ERROR[0m
+[0;31mE (305225) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (305235) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (305235) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (305245) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (305265) i2c: i2c driver install error[0m
+[0;32mI (305275) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (305275) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (307695) i2c: i2c driver install error[0m
+[0;32mI (307705) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (307705) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (310115) i2c: i2c driver install error[0m
+[0;32mI (310125) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (310125) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (312535) i2c: i2c driver install error[0m
+[0;32mI (312545) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (312545) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (314965) i2c: i2c driver install error[0m
+[0;32mI (314975) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (314975) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (317385) i2c: i2c driver install error[0m
+[0;32mI (317395) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (317395) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (319805) i2c: i2c driver install error[0m
+[0;32mI (319825) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (319825) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (320245) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (322235) i2c: i2c driver install error[0m
+[0;32mI (322245) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (322245) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (324655) i2c: i2c driver install error[0m
+[0;32mI (324665) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (324675) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (327085) i2c: i2c driver install error[0m
+[0;32mI (327095) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (327095) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (327245) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (327245) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (327245) mqtt_client: Error transport connect[0m
+[0;32mI (327255) MQTT: EVENT_ERROR[0m
+[0;31mE (327255) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (327265) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (327265) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (327275) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (329505) i2c: i2c driver install error[0m
+[0;32mI (329515) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (329515) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (331935) i2c: i2c driver install error[0m
+[0;32mI (331945) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (331945) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (334355) i2c: i2c driver install error[0m
+[0;32mI (334365) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (334365) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (336775) i2c: i2c driver install error[0m
+[0;32mI (336785) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (336785) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (339205) i2c: i2c driver install error[0m
+[0;32mI (339215) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (339215) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (341625) i2c: i2c driver install error[0m
+[0;32mI (341635) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (341635) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (342275) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (344055) i2c: i2c driver install error[0m
+[0;32mI (344065) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (344065) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (346475) i2c: i2c driver install error[0m
+[0;32mI (346485) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (346485) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (348895) i2c: i2c driver install error[0m
+[0;32mI (348905) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (348915) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (349275) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (349275) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (349275) mqtt_client: Error transport connect[0m
+[0;32mI (349285) MQTT: EVENT_ERROR[0m
+[0;31mE (349285) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (349295) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (349295) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (349305) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (351325) i2c: i2c driver install error[0m
+[0;32mI (351335) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (351335) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (353745) i2c: i2c driver install error[0m
+[0;32mI (353755) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (353755) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (356175) i2c: i2c driver install error[0m
+[0;32mI (356185) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (356185) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (358595) i2c: i2c driver install error[0m
+[0;32mI (358605) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (358605) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (361015) i2c: i2c driver install error[0m
+[0;32mI (361035) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (361035) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (363445) i2c: i2c driver install error[0m
+[0;32mI (363455) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (363455) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (364305) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (365865) i2c: i2c driver install error[0m
+[0;32mI (365875) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (365875) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (368295) i2c: i2c driver install error[0m
+[0;32mI (368305) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (368305) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (370715) i2c: i2c driver install error[0m
+[0;32mI (370725) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (370725) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (371305) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (371305) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (371305) mqtt_client: Error transport connect[0m
+[0;32mI (371315) MQTT: EVENT_ERROR[0m
+[0;31mE (371315) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (371325) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (371325) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (371335) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (373145) i2c: i2c driver install error[0m
+[0;32mI (373155) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (373155) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (375565) i2c: i2c driver install error[0m
+[0;32mI (375575) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (375575) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (377985) i2c: i2c driver install error[0m
+[0;32mI (377995) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (378005) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (380415) i2c: i2c driver install error[0m
+[0;32mI (380425) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (380425) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (382835) i2c: i2c driver install error[0m
+[0;32mI (382845) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (382845) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (385265) i2c: i2c driver install error[0m
+[0;32mI (385275) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (385275) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (386335) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (387685) i2c: i2c driver install error[0m
+[0;32mI (387695) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (387695) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (390105) i2c: i2c driver install error[0m
+[0;32mI (390125) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (390125) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (392535) i2c: i2c driver install error[0m
+[0;32mI (392545) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (392545) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (393335) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (393335) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (393335) mqtt_client: Error transport connect[0m
+[0;32mI (393345) MQTT: EVENT_ERROR[0m
+[0;31mE (393345) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (393355) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (393355) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (393365) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (394955) i2c: i2c driver install error[0m
+[0;32mI (394965) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (394965) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (397385) i2c: i2c driver install error[0m
+[0;32mI (397395) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (397395) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (399805) i2c: i2c driver install error[0m
+[0;32mI (399815) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (399815) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (402235) i2c: i2c driver install error[0m
+[0;32mI (402245) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (402245) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (404655) i2c: i2c driver install error[0m
+[0;32mI (404665) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (404665) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (407075) i2c: i2c driver install error[0m
+[0;32mI (407085) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (407095) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (408365) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (409505) i2c: i2c driver install error[0m
+[0;32mI (409515) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (409515) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (411925) i2c: i2c driver install error[0m
+[0;32mI (411935) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (411935) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (414355) i2c: i2c driver install error[0m
+[0;32mI (414365) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (414365) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (415365) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (415365) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (415365) mqtt_client: Error transport connect[0m
+[0;32mI (415375) MQTT: EVENT_ERROR[0m
+[0;31mE (415375) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (415385) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (415385) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (415395) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (416775) i2c: i2c driver install error[0m
+[0;32mI (416785) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (416785) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (419195) i2c: i2c driver install error[0m
+[0;32mI (419215) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (419215) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (421625) i2c: i2c driver install error[0m
+[0;32mI (421635) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (421635) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (424045) i2c: i2c driver install error[0m
+[0;32mI (424055) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (424055) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (426475) i2c: i2c driver install error[0m
+[0;32mI (426485) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (426485) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (428895) i2c: i2c driver install error[0m
+[0;32mI (428905) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (428905) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (430395) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (431325) i2c: i2c driver install error[0m
+[0;32mI (431335) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (431335) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (433745) i2c: i2c driver install error[0m
+[0;32mI (433755) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (433755) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (436165) i2c: i2c driver install error[0m
+[0;32mI (436175) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (436185) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (437395) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (437395) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (437395) mqtt_client: Error transport connect[0m
+[0;32mI (437405) MQTT: EVENT_ERROR[0m
+[0;31mE (437405) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (437415) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (437415) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (437425) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (438595) i2c: i2c driver install error[0m
+[0;32mI (438605) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (438605) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (441015) i2c: i2c driver install error[0m
+[0;32mI (441025) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (441025) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (443445) i2c: i2c driver install error[0m
+[0;32mI (443455) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (443455) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (445865) i2c: i2c driver install error[0m
+[0;32mI (445875) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (445875) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (448285) i2c: i2c driver install error[0m
+[0;32mI (448305) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (448305) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (450715) i2c: i2c driver install error[0m
+[0;32mI (450725) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (450725) WI-FI STATION: Nie połączono z siecią[0m
+[0;32mI (452425) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (453135) i2c: i2c driver install error[0m
+[0;32mI (453145) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (453145) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (455565) i2c: i2c driver install error[0m
+[0;32mI (455575) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (455575) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (457985) i2c: i2c driver install error[0m
+[0;32mI (457995) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (457995) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (459425) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (459425) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (459425) mqtt_client: Error transport connect[0m
+[0;32mI (459435) MQTT: EVENT_ERROR[0m
+[0;31mE (459435) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (459445) MQTT: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (459445) MQTT: Last errno string (Host is unreachable)[0m
+[0;32mI (459455) MQTT: EVENT_DISCONNECTED[0m
+[0;31mE (460415) i2c: i2c driver install error[0m
+[0;32mI (460425) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (460425) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (462835) i2c: i2c driver install error[0m
+[0;32mI (462845) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (462845) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (465255) i2c: i2c driver install error[0m
+[0;32mI (465265) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (465275) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (467685) i2c: i2c driver install error[0m
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400d8196  PS      : 0x00060d30  A0      : 0x800d81e0  A1      : 0x3ffc98e0  
+A2      : 0x00000000  A3      : 0x0000003c  A4      : 0x00000000  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x00000001  A8      : 0x800d8194  A9      : 0x3ffc98c0  
+A10     : 0x00000000  A11     : 0x00000408  A12     : 0x3f405a20  A13     : 0x000722e5  
+A14     : 0x3f40579c  A15     : 0x0000cdcd  SAR     : 0x0000001a  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffe  
+
+
+Backtrace: 0x400d8193:0x3ffc98e0 0x400d81dd:0x3ffc9900 0x400d823b:0x3ffc9940 0x4015eb49:0x3ffc9970 0x4015e5be:0x3ffc99a0 0x4015e699:0x3ffc99e0 0x4008bbbd:0x3ffc9a00
+
+
+
+
+ELF file SHA256: 90bb72c11
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28a1ch (166428) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00038a44 vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003ded0 vaddr=40080000 size=02148h (  8520) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=91e80h (597632) map[0m
+[0;32mI (275) esp_image: segment 4: paddr=000d1ea8 vaddr=40082148 size=16634h ( 91700) load[0m
+[0;32mI (312) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (312) boot: Disabling RNG early entropy source...[0m
+[0;32mI (323) cpu_start: Multicore app[0m
+[0;32mI (332) cpu_start: Pro cpu start user code[0m
+[0;32mI (332) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (332) cpu_start: Application information:[0m
+[0;32mI (335) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (342) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (348) cpu_start: Compile time:     Dec 14 2023 19:21:16[0m
+[0;32mI (354) cpu_start: ELF file SHA256:  90bb72c11...[0m
+[0;32mI (359) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (370) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (375) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (380) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (387) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 3FFC76D8 len 00018928 (98 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (418) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (424) heap_init: At 4009877C len 00007884 (30 KiB): IRAM[0m
+[0;32mI (432) spi_flash: detected chip: winbond[0m
+[0;32mI (435) spi_flash: flash io: dio[0m
+[0;33mW (439) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (450) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (456) main_task: Started on CPU0[0m
+[0;32mI (466) main_task: Calling app_main()[0m
+[0;32mI (496) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (506) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (506) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (516) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (2036) wifi:wifi driver task: 3ffcc188, prio:23, stack:6656, core=0
+I (2046) wifi:wifi firmware version: a194738
+I (2056) wifi:wifi certification version: v7.0
+I (2056) wifi:config NVS flash: enabled
+I (2056) wifi:config nano formating: disabled
+I (2056) wifi:Init data frame dynamic rx buffer num: 32
+I (2066) wifi:Init static rx mgmt buffer num: 5
+I (2066) wifi:Init management short buffer num: 32
+I (2066) wifi:Init dynamic tx buffer num: 32
+I (2076) wifi:Init static rx buffer size: 1600
+I (2076) wifi:Init static rx buffer num: 10
+I (2086) wifi:Init dynamic rx buffer num: 32
+[0;32mI (2086) wifi_init: rx ba win: 6[0m
+[0;32mI (2086) wifi_init: tcpip mbox: 32[0m
+[0;32mI (2096) wifi_init: udp mbox: 6[0m
+[0;32mI (2096) wifi_init: tcp mbox: 6[0m
+[0;32mI (2106) wifi_init: tcp tx win: 5760[0m
+[0;32mI (2106) wifi_init: tcp rx win: 5760[0m
+[0;32mI (2106) wifi_init: tcp mss: 1440[0m
+[0;32mI (2116) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (2116) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (2126) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (2206) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (2216) wifi:enable tsf
+[0;32mI (2216) WI-FI STATION: wifi_init_sta finished.[0m
+[0;31mE (2216) i2c: i2c driver install error[0m
+[0;31mE (4636) i2c: i2c driver install error[0m
+[0;32mI (4656) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (4656) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (7066) i2c: i2c driver install error[0m
+[0;32mI (7076) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (7076) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (9486) i2c: i2c driver install error[0m
+[0;32mI (9496) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (9496) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (11916) i2c: i2c driver install error[0m
+[0;32mI (11926) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (11926) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (14336) i2c: i2c driver install error[0m
+[0;32mI (14346) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (14346) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (16766) i2c: i2c driver install error[0m
+[0;32mI (16776) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (16776) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (19186) i2c: i2c driver install error[0m
+[0;32mI (19196) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (19196) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (21616) i2c: i2c driver install error[0m
+[0;32mI (21626) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (21626) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (24036) i2c: i2c driver install error[0m
+[0;32mI (24046) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (24046) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (26466) i2c: i2c driver install error[0m
+[0;32mI (26476) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (26476) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (28886) i2c: i2c driver install error[0m
+[0;32mI (28896) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (28896) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (31306) i2c: i2c driver install error[0m
+[0;32mI (31326) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (31326) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (33736) i2c: i2c driver install error[0m
+[0;32mI (33746) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (33746) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (36156) i2c: i2c driver install error[0m
+[0;32mI (36166) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (36176) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (38586) i2c: i2c driver install error[0m
+[0;32mI (38596) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (38596) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (41006) i2c: i2c driver install error[0m
+[0;32mI (41016) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (41016) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (43436) i2c: i2c driver install error[0m
+[0;32mI (43446) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (43446) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (45856) i2c: i2c driver install error[0m
+[0;32mI (45866) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (45866) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (48286) i2c: i2c driver install error[0m
+[0;32mI (48296) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (48296) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (50706) i2c: i2c driver install error[0m
+[0;32mI (50716) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (50716) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (53136) i2c: i2c driver install error[0m
+[0;32mI (53146) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (53146) WI-FI STATION: Nie połączono z siecią[0m
+[0;31mE (55556) i2c: i2c driver install error[0m
+[0;32mI (55566) WI-FI STATION: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (55566) WI-FI STATION: Nie połączono z siecią[0m

@@ -1,0 +1,223 @@
+[0;32mI (261) esp_image: segment 4: paddr=000c55d4 vaddr=40ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  1 2024 17:42:17[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=247b0h (149424) map[0m
+[0;32mI (134) esp_image: segment 1: paddr=000347d8 vaddr=3ffbdb60 size=05424h ( 21540) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=00039c04 vaddr=40080000 size=06414h ( 25620) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=855ach (546220) map[0m
+[0;32mI (261) esp_image: segment 4: paddr=000c55d4 vaddr=40086414 size=12af4h ( 76532) load[0m
+[0;32mI (293) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (293) boot: Disabling RNG early entropy source...[0m
+[0;32mI (305) cpu_start: Multicore app[0m
+[0;32mI (314) cpu_start: Pro cpu start user code[0m
+[0;32mI (314) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (314) cpu_start: Application information:[0m
+[0;32mI (317) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (324) cpu_start: App version:      ea6fe41-dirty[0m
+[0;32mI (329) cpu_start: Compile time:     Feb  2 2024 14:24:52[0m
+[0;32mI (335) cpu_start: ELF file SHA256:  a56b00a58...[0m
+[0;32mI (341) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (347) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (352) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (357) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (362) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (369) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (375) heap_init: At 3FFC7248 len 00018DB8 (99 KiB): DRAM[0m
+[0;32mI (381) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (387) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (394) heap_init: At 40098F08 len 000070F8 (28 KiB): IRAM[0m
+[0;32mI (401) spi_flash: detected chip: winbond[0m
+[0;32mI (404) spi_flash: flash io: dio[0m
+[0;33mW (409) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (419) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (428) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (433) main_task: Started on CPU0[0m
+[0;32mI (443) main_task: Calling app_main()[0m
+[0;32mI (443) [WI-FI]: [APP] Startup..[0m
+[0;32mI (443) [WI-FI]: [APP] Free memory: 268584 bytes[0m
+[0;32mI (443) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (483) [I2C]: Module configuration successful![0m
+[0;32mI (483) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (493) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (493) [SWITCH]: Configuration successful![0m
+[0;32mI (513) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) [LED]: LEDs configured![0m
+I (543) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (553) wifi:wifi firmware version: a194738
+I (563) wifi:wifi certification version: v7.0
+I (563) wifi:config NVS flash: enabled
+I (563) wifi:config nano formating: disabled
+I (563) wifi:Init data frame dynamic rx buffer num: 32
+I (563) wifi:Init static rx mgmt buffer num: 5
+I (573) wifi:Init management short buffer num: 32
+I (573) wifi:Init dynamic tx buffer num: 32
+I (583) wifi:Init static rx buffer size: 1600
+I (583) wifi:Init static rx buffer num: 10
+I (583) wifi:Init dynamic rx buffer num: 32
+[0;32mI (593) wifi_init: rx ba win: 6[0m
+[0;32mI (593) wifi_init: tcpip mbox: 32[0m
+[0;32mI (603) wifi_init: udp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp mbox: 6[0m
+[0;32mI (603) wifi_init: tcp tx win: 5760[0m
+[0;32mI (613) wifi_init: tcp rx win: 5760[0m
+[0;32mI (613) wifi_init: tcp mss: 1440[0m
+[0;32mI (623) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (623) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+ADC Value: 560
+Voltage: 0.451282
+Light Intensity: 0.451282
+[0;32mI (5993) main_task: Returned from app_main()[0m
+ADC Value: 67
+Voltage: 0.053993
+Light Intensity: 0.053993
+ADC Value: 64
+Voltage: 0.051575
+Light Intensity: 0.051575
+ADC Value: 63
+Voltage: 0.050769
+Light Intensity: 0.050769
+ADC Value: 63
+Voltage: 0.050769
+Light Intensity: 0.050769
+ADC Value: 64
+Voltage: 0.051575
+Light Intensity: 0.051575
+ADC Value: 57
+Voltage: 0.045934
+Light Intensity: 0.045934
+ADC Value: 55
+Voltage: 0.044322
+Light Intensity: 0.044322
+ADC Value: 57
+Voltage: 0.045934
+Light Intensity: 0.045934
+ADC Value: 57
+Voltage: 0.045934
+Light Intensity: 0.045934
+ADC Value: 61
+Voltage: 0.049158
+Light Intensity: 0.049158
+ADC Value: 59
+Voltage: 0.047546
+Light Intensity: 0.047546
+ADC Value: 57
+Voltage: 0.045934
+Light Intensity: 0.045934
+ADC Value: 61
+Voltage: 0.049158
+Light Intensity: 0.049158
+ADC Value: 59
+Voltage: 0.047546
+Light Intensity: 0.047546
+ADC Value: 63
+Voltage: 0.050769
+Light Intensity: 0.050769
+ADC Value: 63
+Voltage: 0.050769
+Light Intensity: 0.050769
+ADC Value: 62
+Voltage: 0.049963
+Light Intensity: 0.049963
+ADC Value: 51
+Voltage: 0.041099
+Light Intensity: 0.041099
+ADC Value: 62
+Voltage: 0.049963
+Light Intensity: 0.049963
+ADC Value: 58
+Voltage: 0.046740
+Light Intensity: 0.046740
+ADC Value: 62
+Voltage: 0.049963
+Light Intensity: 0.049963
+ADC Value: 55
+Voltage: 0.044322
+Light Intensity: 0.044322
+ADC Value: 63
+Voltage: 0.050769
+Light Intensity: 0.050769
+ADC Value: 60
+Voltage: 0.048352
+Light Intensity: 0.048352
+ADC Value: 58
+Voltage: 0.046740
+Light Intensity: 0.046740
+ADC Value: 61
+Voltage: 0.049158
+Light Intensity: 0.049158
+ADC Value: 69
+Voltage: 0.055604
+Light Intensity: 0.055604
+ADC Value: 58
+Voltage: 0.046740
+Light Intensity: 0.046740
+ADC Value: 60
+Voltage: 0.048352
+Light Intensity: 0.048352
+ADC Value: 57
+Voltage: 0.045934
+Light Intensity: 0.045934
+ADC Value: 64
+Voltage: 0.051575
+Light Intensity: 0.051575
+ADC Value: 62
+Voltage: 0.049963
+Light Intensity: 0.049963
+ADC Value: 64
+Voltage: 0.051575
+Light Intensity: 0.051575
+ADC Value: 61
+Voltage: 0.049158
+Light Intensity: 0.049158
+ADC Value: 59
+Voltage: 0.047546
+Light Intensity: 0.047546
+ADC Value: 58
+Voltage: 0.046740
+Light Intensity: 0.046740
+ADC Value: 64
+Voltage: 0.051575
+Light Intensity: 0.051575
+ADC Value: 63
+Voltage: 0.050769
+Light Intensity: 0.050769
+ADC Value: 61
+Voltage: 0.049158
+Light Intensity: 0.049158
+ADC Value: 58
+Voltage: 0.046740
+Light Intensity: 0.046740
+ADC Value: 64
+Voltage: 0.051575
+Light Intensity: 0.051575
+ADC Value: 54
+Voltage: 0.043516
+Light Intensity: 0.043516
+ADC Value: 62
+Voltage: 0.049963
+Light Intensity: 0.049963

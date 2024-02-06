@@ -1,0 +1,71 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4012474e: rcReachRetryLimit at ??:?
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4012474b: rcReachRetryLimit at ??:?
+[0m
+[0;33m0x401208d9: lmacProcessLongRetryFail at ??:?
+[0m
+[0;33m0x40120b7d: lmacProcessAckTimeout at ??:?
+[0m
+[0;33m0x40120cf7: lmacProcessTxError at ??:?
+[0m
+[0;33m0x4014f536: lmacProcessTxComplete at ??:?
+[0m
+[0;33m0x40093fd2: ppTask at ??:?
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4012474e: rcReachRetryLimit at ??:?
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4012474b: rcReachRetryLimit at ??:?
+[0m
+[0;33m0x401206a1: lmacProcessShortRetryFail at ??:?
+[0m
+[0;33m0x40120a75: lmacProcessCollision at ??:?
+[0m
+[0;33m0x40120cbf: lmacProcessTxError at ??:?
+[0m
+[0;33m0x4014f536: lmacProcessTxComplete at ??:?
+[0m
+[0;33m0x40093fd2: ppTask at ??:?
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4012474e: rcReachRetryLimit at ??:?
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+[0m
+[0;33m0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x4012474b: rcReachRetryLimit at ??:?
+[0m
+[0;33m0x401208d9: lmacProcessLongRetryFail at ??:?
+[0m
+[0;33m0x40120b7d: lmacProcessAckTimeout at ??:?
+[0m
+[0;33m0x40120cf7: lmacProcessTxError at ??:?
+[0m
+[0;33m0x4014f536: lmacProcessTxComplete at ??:?
+[0m
+[0;33m0x40093fd2: ppTask at ??:?
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

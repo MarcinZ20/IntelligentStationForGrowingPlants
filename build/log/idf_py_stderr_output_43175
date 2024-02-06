@@ -1,0 +1,213 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40083997: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1415
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40083994: i2c_master_cmd_begin_static at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1408
+[0m
+[0;33m0x40083bdf: i2c_isr_handler_default at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:559
+[0m
+[0;33m0x40083439: _xt_lowint1 at /Users/marcin/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400828e5: _lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:158
+[0m
+[0;33m0x4008295e: __retarget_lock_acquire_recursive at /Users/marcin/esp/esp-idf/components/newlib/locks.c:314
+[0m
+[0;33m0x400e20d6: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+[0m
+[0;33m0x400de1bf: printf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/printf.c:56
+[0m
+[0;33m0x400d5bc2: click_switch_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:19
+[0m
+[0;33m0x40088041: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,263 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40135304: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x40135301: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:911
+[0m
+[0;33m0x401347c1: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d6d21: display_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:34
+[0m
+[0;33m0x400d6e23: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:36
+[0m
+[0;33m0x40148097: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x4008bbbd: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0m

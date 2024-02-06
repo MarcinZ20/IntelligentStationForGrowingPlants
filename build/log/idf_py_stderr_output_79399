@@ -1,0 +1,27 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081962: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x4008b07d: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40092725: __assert_func at /Users/marcin/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4008ddd5: vTaskPriorityDisinheritAfterTimeout at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5145 (discriminator 1)
+[0m
+[0;33m0x4008ba94: xQueueSemaphoreTake at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1842
+[0m
+[0;33m0x400de428: i2c_master_cmd_begin at /Users/marcin/esp/esp-idf/components/driver/i2c/i2c.c:1519
+[0m
+[0;33m0x400d7cca: read_am2320_sensor at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/am2320.c:63
+[0m
+[0;33m0x400d7d5c: get_measurement at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:17
+[0m
+[0;33m0x400d7f38: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:149
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

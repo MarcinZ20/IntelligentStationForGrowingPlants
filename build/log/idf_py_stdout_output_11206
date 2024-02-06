@@ -1,0 +1,581 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29404h (168964) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=0003942c vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003e8a8 vaddr=40080000 size=01770h (  6000) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cb40h (641856) map[0m
+[0;32mI (284) esp_image: segment 4: paddr=000dcb68 vaddr=40081770 size=17064h ( 94308) load[0m
+[0;32mI (321) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (321) boot: Disabling RNG early entropy source...[0m
+[0;32mI (333) cpu_start: Multicore app[0m
+[0;32mI (341) cpu_start: Pro cpu start user code[0m
+[0;32mI (341) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (341) cpu_start: Application information:[0m
+[0;32mI (344) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (351) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (363) cpu_start: ELF file SHA256:  d26fd7e70...[0m
+[0;32mI (368) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (379) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (384) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (389) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (396) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (402) heap_init: At 3FFC7728 len 000188D8 (98 KiB): DRAM[0m
+[0;32mI (409) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (421) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (429) spi_flash: detected chip: winbond[0m
+[0;32mI (432) spi_flash: flash io: dio[0m
+[0;33mW (436) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (447) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (453) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (493) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (493) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (22663) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (22673) wifi:wifi firmware version: a194738
+I (22683) wifi:wifi certification version: v7.0
+I (22683) wifi:config NVS flash: enabled
+I (22683) wifi:config nano formating: disabled
+I (22683) wifi:Init data frame dynamic rx buffer num: 32
+I (22693) wifi:Init static rx mgmt buffer num: 5
+I (22693) wifi:Init management short buffer num: 32
+I (22693) wifi:Init dynamic tx buffer num: 32
+I (22703) wifi:Init static rx buffer size: 1600
+I (22703) wifi:Init static rx buffer num: 10
+I (22713) wifi:Init dynamic rx buffer num: 32
+[0;32mI (22713) wifi_init: rx ba win: 6[0m
+[0;32mI (22713) wifi_init: tcpip mbox: 32[0m
+[0;32mI (22723) wifi_init: udp mbox: 6[0m
+[0;32mI (22723) wifi_init: tcp mbox: 6[0m
+[0;32mI (22733) wifi_init: tcp tx win: 5760[0m
+[0;32mI (22733) wifi_init: tcp rx win: 5760[0m
+[0;32mI (22743) wifi_init: tcp mss: 1440[0m
+[0;32mI (22743) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (22743) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (22753) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (22843) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (22843) wifi:enable tsf
+[0;32mI (22843) WI-FI: Wifi started![0m
+[0;32mI (25263) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (27673) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (30093) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (32503) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (34923) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (37333) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (39753) WI-FI: Ponowna próba połączenia do sieci ...[0m
+I (39803) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (39803) wifi:state: init -> auth (b0)
+I (39813) wifi:state: auth -> assoc (0)
+I (39823) wifi:state: assoc -> run (10)
+I (39843) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 2a:67:3a:c3:1b:09
+I (39853) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (39853) wifi:pm start, type: 1
+
+I (39853) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (39903) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (39903) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (40863) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (40863) WI-FI: CONNECTED TO IP: 192.168.163.8[0m
+[0;31mE (40863) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (40873) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;32mI (40883) main_task: Returned from app_main()[0m
+I (40933) wifi:<ba-add>idx:0 (ifx:0, 2a:67:3a:c3:1b:09), tid:0, ssn:3, winSize:64
+[0;31mE (41043) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=1[0m
+[0;32mI (41043) MQTT: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (41243) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (41243) MQTT: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (41883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (43883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (45883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (47883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (49883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (51883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (53883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (55883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (57883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (59883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (61883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (63883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (65883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (67883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (69883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (71883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (73883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (75883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (77883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (79883) AM-2320: 00 00 00 00 00 [0m
+I (80353) wifi:state: run -> init (1a0)
+I (80363) wifi:pm stop, total sleep time: 34908217 us / 40502455 us
+
+I (80363) wifi:<ba-del>idx:0, tid:0
+I (80363) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (80373) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (80373) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+I (80383) wifi:[0;31mE (80383) mqtt_client: Poll read error: 119, aborting connection[0m
+new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;31mE (80393) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+I (80393) wifi:[0;32mI (80403) MQTT: EVENT_DISCONNECTED[0m
+state: init -> auth (b0)
+I (81413) wifi:state: auth -> init (200)
+I (81413) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (81413) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (81883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (83833) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (83883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (85883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (86253) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (87883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (88663) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (89883) AM-2320: 00 00 00 00 00 [0m
+[0;31mE (90403) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (90403) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (90403) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (90403) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (90413) mqtt_client: Error transport connect[0m
+[0;31mE (90423) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (90423) MQTT: EVENT_ERROR[0m
+[0;31mE (90433) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (90433) MQTT: Last errno string (Success)[0m
+[0;31mE (90443) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (90453) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (91083) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (91883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (93493) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (93883) AM-2320: 00 00 00 00 00 [0m
+[0;32mI (94893) AM-2320: 76 76 76 76 00 [0m
+[0;32mI (95913) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (95913) AM-2320: 76 76 76 76 00 [0m
+[0;32mI (97913) AM-2320: 76 76 76 76 00 [0m
+[0;32mI (98333) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (99913) AM-2320: 76 76 76 76 00 [0m
+[0;31mE (100453) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (100453) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (100453) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (100453) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (100463) mqtt_client: Error transport connect[0m
+[0;31mE (100473) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (100473) MQTT: EVENT_ERROR[0m
+[0;31mE (100483) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (100483) MQTT: Last errno string (Success)[0m
+[0;31mE (100493) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (100503) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (100743) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (100913) AM-2320: 76 76 76 76 00 [0m
+[0;32mI (102503) AM-2320: 76 76 76 76 00 [0m
+[0;32mI (103163) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (104503) AM-2320: 76 76 76 76 00 [0m
+[0;32mI (105513) AM-2320: 76 76 76 76 00 [0m
+[0;32mI (105583) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (106723) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (107733) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (107993) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (108843) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (109873) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (110413) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (110503) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (110503) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (110503) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (110503) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (110513) mqtt_client: Error transport connect[0m
+[0;31mE (110523) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (110523) MQTT: EVENT_ERROR[0m
+[0;31mE (110533) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (110533) MQTT: Last errno string (Success)[0m
+[0;31mE (110543) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (110553) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (111873) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (112833) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (113873) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (115243) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (115243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (117243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (117663) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (119243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (120073) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (120553) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (120553) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (120553) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (120563) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (120563) mqtt_client: Error transport connect[0m
+[0;31mE (120573) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (120573) MQTT: EVENT_ERROR[0m
+[0;31mE (120583) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (120583) MQTT: Last errno string (Success)[0m
+[0;31mE (120593) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (120603) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (121243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (122493) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (123243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (124913) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (125243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (127243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (127333) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (129243) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (129743) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (130243) AM-2320: 76 76 76 76 ff [0m
+[0;31mE (130603) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (130603) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (130603) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (130613) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (130613) mqtt_client: Error transport connect[0m
+[0;31mE (130623) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (130623) MQTT: EVENT_ERROR[0m
+[0;31mE (130633) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (130633) MQTT: Last errno string (Success)[0m
+[0;31mE (130643) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (130653) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (132163) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (132163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (134163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (134573) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (136163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (136993) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (138163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (139413) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (140163) AM-2320: 76 76 76 76 ff [0m
+[0;31mE (140653) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (140653) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (140653) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (140663) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (140663) mqtt_client: Error transport connect[0m
+[0;31mE (140673) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (140673) MQTT: EVENT_ERROR[0m
+[0;31mE (140683) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (140683) MQTT: Last errno string (Success)[0m
+[0;31mE (140693) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (140703) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (141823) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (142163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (144163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (144243) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (146163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (146663) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (148163) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (149073) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (150163) AM-2320: 76 76 76 76 ff [0m
+[0;31mE (150703) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (150703) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (150703) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (150703) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (150713) mqtt_client: Error transport connect[0m
+[0;31mE (150723) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (150723) MQTT: EVENT_ERROR[0m
+[0;31mE (150733) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (150733) MQTT: Last errno string (Success)[0m
+[0;31mE (150743) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (150753) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (151493) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (151493) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (153493) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (153913) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (155493) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (156323) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (157493) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (158743) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (158743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (160743) AM-2320: 76 76 76 76 ff [0m
+[0;31mE (160753) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (160753) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (160753) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (160753) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (160763) mqtt_client: Error transport connect[0m
+[0;31mE (160773) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (160773) MQTT: EVENT_ERROR[0m
+[0;31mE (160783) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (160783) MQTT: Last errno string (Success)[0m
+[0;31mE (160793) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (160803) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (161153) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (162743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (163573) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (164743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (165993) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (166743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (168403) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (168743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (170743) AM-2320: 76 76 76 76 ff [0m
+[0;31mE (170803) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (170803) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (170803) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (170803) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (170813) mqtt_client: Error transport connect[0m
+[0;31mE (170823) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (170823) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (170823) MQTT: EVENT_ERROR[0m
+[0;31mE (170833) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (170843) MQTT: Last errno string (Success)[0m
+[0;31mE (170843) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (170853) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (172743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (173253) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (174743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (175663) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (176743) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (178083) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (178083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (180083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (180493) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (180863) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (180863) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (180863) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (180873) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (180873) mqtt_client: Error transport connect[0m
+[0;31mE (180883) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (180883) MQTT: EVENT_ERROR[0m
+[0;31mE (180893) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (180893) MQTT: Last errno string (Success)[0m
+[0;31mE (180903) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (180913) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (182083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (182913) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (184083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (185333) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (186083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (187743) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (188083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (190083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (190163) WI-FI: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (190913) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (190913) MQTT: ESTABLISHING CONNECTION ...[0m
+[0;31mE (190913) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (190923) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (190923) mqtt_client: Error transport connect[0m
+[0;31mE (190933) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=0[0m
+[0;32mI (190933) MQTT: EVENT_ERROR[0m
+[0;31mE (190943) MQTT: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (190943) MQTT: Last errno string (Success)[0m
+[0;31mE (190953) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=2[0m
+[0;32mI (190963) MQTT: EVENT_DISCONNECTED[0m
+[0;32mI (192083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (192583) WI-FI: Ponowna próba połączenia do sieci ...[0m
+I (192593) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (192593) wifi:state: init -> auth (b0)
+I (192633) wifi:state: auth -> assoc (0)
+I (192643) wifi:state: assoc -> run (10)
+I (192673) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = b6:78:87:5c:61:7f
+I (192673) wifi:security: WPA2-PSK, phy: bgn, rssi: -37
+I (192683) wifi:pm start, type: 1
+
+I (192683) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (192693) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (192693) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (193703) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (193703) WI-FI: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (194083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (196083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (198083) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (199363) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (200853) AM-2320: 76 76 76 76 ff [0m
+[0;31mE (200963) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=7[0m
+[0;32mI (200963) MQTT: ESTABLISHING CONNECTION ...[0m
+I (201083) wifi:<ba-add>idx:0 (ifx:0, b6:78:87:5c:61:7f), tid:0, ssn:3, winSize:64
+[0;31mE (201173) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=1[0m
+[0;32mI (201173) MQTT: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (201333) MQTT: Event dispatched from event loop base=MQTT_EVENTS, event_id=5[0m
+[0;32mI (201333) MQTT: EVENT_PUBLISHED, msg_id: 2[0m
+[0;32mI (201993) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (203413) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (204713) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (206713) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (208713) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (211463) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (214003) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (216003) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (218003) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (220003) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (222003) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (224003) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (225903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (227903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (229903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (231903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (233903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (235903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (237903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (239903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (241903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (243903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (245903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (247903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (249903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (251903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (253903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (255903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (257903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (259903) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (260933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (262933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (264933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (266933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (268933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (270933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (272933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (274933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (276933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (278933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (280933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (282933) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (284763) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (286643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (288643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (290643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (292643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (294643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (296643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (298643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (300643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (302643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (304643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (306643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (308643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (310643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (312643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (314643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (316643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (318643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (320643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (322643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (324643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (326643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (328643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (330643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (332643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (334643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (336643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (338643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (340643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (342643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (344643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (346643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (348643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (350643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (352643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (354643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (356643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (358643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (360643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (362643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (364643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (366643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (368643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (370643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (372643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (374643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (376643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (378643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (380643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (382643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (384643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (386643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (388643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (390643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (392643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (394643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (396643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (398643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (400643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (402643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (404643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (406643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (408643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (410643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (412643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (414643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (416643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (418643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (420643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (421643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (423643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (424643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (426643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (427643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (429643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (430643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (432643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (433643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (435643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (436643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (438643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (439643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (441643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (442643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (444643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (446643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (448643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (450643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (452643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (454643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (456643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (458643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (460643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (462643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (464643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (466643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (468643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (470643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (472643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (474643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (476643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (478643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (480643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (482643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (484643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (486643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (488643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (490643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (492643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (494643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (496643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (498643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (500643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (502643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (504643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (506643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (508643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (510643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (512643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (514643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (516643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (518643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (520643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (522643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (524643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (526643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (528643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (530643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (532643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (534643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (536643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (538643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (540643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (542643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (544643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (546643) AM-2320: 76 76 76 76 ff [0m
+[0;32mI (548643) AM-2320: 76 76 76 76 ff [0m

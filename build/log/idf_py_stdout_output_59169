@@ -1,0 +1,1476 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29b60h (170848) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00039b88 vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003f004 vaddr=40080000 size=01014h (  4116) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d8e0h (645344) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dd908 vaddr=40081014 size=1786ch ( 96364) load[0m
+[0;32mI (323) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (323) boot: Disabling RNG early entropy source...[0m
+[0;32mI (334) cpu_start: Multicore app[0m
+[0;32mI (343) cpu_start: Pro cpu start user code[0m
+[0;32mI (343) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (343) cpu_start: Application information:[0m
+[0;32mI (346) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (353) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (359) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (365) cpu_start: ELF file SHA256:  0c6667329...[0m
+[0;32mI (370) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (381) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (386) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (391) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (398) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (404) heap_init: At 3FFC7740 len 000188C0 (98 KiB): DRAM[0m
+[0;32mI (410) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 40098880 len 00007780 (29 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (438) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (449) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (457) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (463) main_task: Started on CPU0[0m
+[0;32mI (473) main_task: Calling app_main()[0m
+[0;32mI (503) I2C: Module configuration successful![0m
+[0;32mI (503) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (503) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (513) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (553) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (563) wifi:wifi firmware version: a194738
+I (573) wifi:wifi certification version: v7.0
+I (573) wifi:config NVS flash: enabled
+I (573) wifi:config nano formating: disabled
+I (573) wifi:Init data frame dynamic rx buffer num: 32
+I (573) wifi:Init static rx mgmt buffer num: 5
+I (583) wifi:Init management short buffer num: 32
+I (583) wifi:Init dynamic tx buffer num: 32
+I (593) wifi:Init static rx buffer size: 1600
+I (593) wifi:Init static rx buffer num: 10
+I (593) wifi:Init dynamic rx buffer num: 32
+[0;32mI (603) wifi_init: rx ba win: 6[0m
+[0;32mI (603) wifi_init: tcpip mbox: 32[0m
+[0;32mI (613) wifi_init: udp mbox: 6[0m
+[0;32mI (613) wifi_init: tcp mbox: 6[0m
+[0;32mI (613) wifi_init: tcp tx win: 5760[0m
+[0;32mI (623) wifi_init: tcp rx win: 5760[0m
+[0;32mI (623) wifi_init: tcp mss: 1440[0m
+[0;32mI (633) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (633) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (643) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (723) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (733) wifi:enable tsf
+[0;32mI (733) [WI-FI]: Wifi started![0m
+[0;32mI (3143) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (5563) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (7973) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (10393) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (12813) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (15223) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (17643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (20053) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (22473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (24883) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (27303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (29713) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (32133) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (34543) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (36963) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (39373) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (41793) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (44203) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (46623) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (46653) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (46653) wifi:state: init -> auth (b0)
+I (46663) wifi:state: auth -> assoc (0)
+I (46673) wifi:state: assoc -> run (10)
+I (46703) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = ae:1d:31:9f:4a:fc
+I (46703) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (46713) wifi:pm start, type: 1
+
+I (46713) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (46753) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (46753) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (49223) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (49223) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (52413) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (52503) wifi:<ba-add>idx:0 (ifx:0, ae:1d:31:9f:4a:fc), tid:0, ssn:4, winSize:64
+[0;32mI (52593) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (53603) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (53653) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (58593) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (58653) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (63593) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (63753) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (68593) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;32mI (68673) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (73593) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;32mI (74103) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (78593) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;32mI (78813) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (83593) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;32mI (83643) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (88593) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;32mI (88633) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (93593) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;32mI (93763) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (98593) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;32mI (98673) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (103593) [MQTT]: Sent publish successful, msg_id: 11[0m
+[0;32mI (103793) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (108593) [MQTT]: Sent publish successful, msg_id: 12[0m
+[0;32mI (108713) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (113593) [MQTT]: Sent publish successful, msg_id: 13[0m
+[0;32mI (113833) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (118593) [MQTT]: Sent publish successful, msg_id: 14[0m
+[0;32mI (118743) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (123593) [MQTT]: Sent publish successful, msg_id: 15[0m
+[0;32mI (123873) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (128593) [MQTT]: Sent publish successful, msg_id: 16[0m
+[0;32mI (128783) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (133593) [MQTT]: Sent publish successful, msg_id: 17[0m
+[0;32mI (133703) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (138593) [MQTT]: Sent publish successful, msg_id: 18[0m
+[0;32mI (138923) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (143593) [MQTT]: Sent publish successful, msg_id: 19[0m
+[0;32mI (143833) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (148593) [MQTT]: Sent publish successful, msg_id: 20[0m
+[0;32mI (148743) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (153593) [MQTT]: Sent publish successful, msg_id: 21[0m
+[0;32mI (153873) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (158593) [MQTT]: Sent publish successful, msg_id: 22[0m
+[0;32mI (158653) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+I (160213) wifi:state: run -> init (1a0)
+I (160213) wifi:pm stop, total sleep time: 97849317 us / 113503844 us
+
+I (160223) wifi:<ba-del>idx:0, tid:0
+I (160223) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (160233) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (160233) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (160233) [MQTT]: CLIENT STOPPED[0m
+[0;31mE (160243) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (160253) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (162643) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (165063) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (167473) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (169893) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (172303) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (174723) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (174733) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (174733) wifi:state: init -> auth (b0)
+I (174743) wifi:state: auth -> assoc (0)
+I (174743) wifi:state: assoc -> run (10)
+I (174763) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 12:58:31:e5:ce:8a
+I (174763) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (174773) wifi:pm start, type: 1
+
+I (174773) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (174853) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (174853) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (175783) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (175783) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (178973) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (179543) wifi:<ba-add>idx:0 (ifx:0, 12:58:31:e5:ce:8a), tid:0, ssn:3, winSize:64
+[0;32mI (179673) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (180673) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (180753) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (185673) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (185723) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (190673) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (190723) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (195673) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;32mI (195723) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (200673) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;32mI (200773) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (205673) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;32mI (205893) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (210673) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;32mI (210803) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (215673) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;32mI (215923) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (220673) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;32mI (220843) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (225673) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;32mI (225973) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (230673) [MQTT]: Sent publish successful, msg_id: 11[0m
+[0;32mI (230873) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (235673) [MQTT]: Sent publish successful, msg_id: 12[0m
+[0;32mI (235793) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (240673) [MQTT]: Sent publish successful, msg_id: 13[0m
+[0;32mI (240743) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (245673) [MQTT]: Sent publish successful, msg_id: 14[0m
+[0;32mI (245833) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (250673) [MQTT]: Sent publish successful, msg_id: 15[0m
+[0;32mI (250943) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (255673) [MQTT]: Sent publish successful, msg_id: 16[0m
+[0;32mI (255863) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (260673) [MQTT]: Sent publish successful, msg_id: 17[0m
+[0;32mI (260773) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (265673) [MQTT]: Sent publish successful, msg_id: 18[0m
+[0;32mI (265893) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (270673) [MQTT]: Sent publish successful, msg_id: 19[0m
+[0;32mI (270813) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (275673) [MQTT]: Sent publish successful, msg_id: 20[0m
+[0;32mI (275943) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (280673) [MQTT]: Sent publish successful, msg_id: 21[0m
+[0;32mI (280853) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (285673) [MQTT]: Sent publish successful, msg_id: 22[0m
+[0;32mI (285863) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (290673) [MQTT]: Sent publish successful, msg_id: 23[0m
+[0;32mI (290883) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (295673) [MQTT]: Sent publish successful, msg_id: 24[0m
+[0;32mI (295793) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (300673) [MQTT]: Sent publish successful, msg_id: 25[0m
+[0;32mI (300753) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (305673) [MQTT]: Sent publish successful, msg_id: 26[0m
+[0;32mI (305833) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (310673) [MQTT]: Sent publish successful, msg_id: 27[0m
+[0;32mI (311053) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (315673) [MQTT]: Sent publish successful, msg_id: 28[0m
+[0;32mI (315763) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (320673) [MQTT]: Sent publish successful, msg_id: 29[0m
+[0;32mI (320883) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (325673) [MQTT]: Sent publish successful, msg_id: 30[0m
+[0;32mI (325803) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (330673) [MQTT]: Sent publish successful, msg_id: 31[0m
+[0;32mI (330923) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (335673) [MQTT]: Sent publish successful, msg_id: 32[0m
+[0;32mI (335833) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (340673) [MQTT]: Sent publish successful, msg_id: 33[0m
+[0;32mI (340953) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (345673) [MQTT]: Sent publish successful, msg_id: 34[0m
+[0;32mI (345873) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (350673) [MQTT]: Sent publish successful, msg_id: 35[0m
+[0;32mI (350783) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (355673) [MQTT]: Sent publish successful, msg_id: 36[0m
+[0;32mI (355903) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (360673) [MQTT]: Sent publish successful, msg_id: 37[0m
+[0;32mI (360753) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (365673) [MQTT]: Sent publish successful, msg_id: 38[0m
+[0;32mI (365943) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (370673) [MQTT]: Sent publish successful, msg_id: 39[0m
+[0;32mI (370853) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (375673) [MQTT]: Sent publish successful, msg_id: 40[0m
+[0;32mI (375773) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (380673) [MQTT]: Sent publish successful, msg_id: 41[0m
+[0;32mI (380893) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (385673) [MQTT]: Sent publish successful, msg_id: 42[0m
+[0;32mI (385803) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (390673) [MQTT]: Sent publish successful, msg_id: 43[0m
+[0;32mI (390923) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (395673) [MQTT]: Sent publish successful, msg_id: 44[0m
+[0;32mI (396043) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (400673) [MQTT]: Sent publish successful, msg_id: 45[0m
+[0;32mI (400753) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (405673) [MQTT]: Sent publish successful, msg_id: 46[0m
+[0;32mI (405873) [MQTT]: EVENT_PUBLISHED, msg_id: 46[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (410673) [MQTT]: Sent publish successful, msg_id: 47[0m
+[0;32mI (410793) [MQTT]: EVENT_PUBLISHED, msg_id: 47[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (415673) [MQTT]: Sent publish successful, msg_id: 48[0m
+[0;32mI (415723) [MQTT]: EVENT_PUBLISHED, msg_id: 48[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (420673) [MQTT]: Sent publish successful, msg_id: 49[0m
+[0;32mI (420713) [MQTT]: EVENT_PUBLISHED, msg_id: 49[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (425673) [MQTT]: Sent publish successful, msg_id: 50[0m
+[0;32mI (425943) [MQTT]: EVENT_PUBLISHED, msg_id: 50[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (430673) [MQTT]: Sent publish successful, msg_id: 51[0m
+[0;32mI (430863) [MQTT]: EVENT_PUBLISHED, msg_id: 51[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (435673) [MQTT]: Sent publish successful, msg_id: 52[0m
+[0;32mI (435773) [MQTT]: EVENT_PUBLISHED, msg_id: 52[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (440673) [MQTT]: Sent publish successful, msg_id: 53[0m
+[0;32mI (440893) [MQTT]: EVENT_PUBLISHED, msg_id: 53[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (445673) [MQTT]: Sent publish successful, msg_id: 54[0m
+[0;32mI (445813) [MQTT]: EVENT_PUBLISHED, msg_id: 54[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (450673) [MQTT]: Sent publish successful, msg_id: 55[0m
+[0;32mI (450933) [MQTT]: EVENT_PUBLISHED, msg_id: 55[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (455673) [MQTT]: Sent publish successful, msg_id: 56[0m
+[0;32mI (455843) [MQTT]: EVENT_PUBLISHED, msg_id: 56[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (460673) [MQTT]: Sent publish successful, msg_id: 57[0m
+[0;32mI (460763) [MQTT]: EVENT_PUBLISHED, msg_id: 57[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (465673) [MQTT]: Sent publish successful, msg_id: 58[0m
+[0;32mI (465753) [MQTT]: EVENT_PUBLISHED, msg_id: 58[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (470673) [MQTT]: Sent publish successful, msg_id: 59[0m
+[0;32mI (470793) [MQTT]: EVENT_PUBLISHED, msg_id: 59[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (475673) [MQTT]: Sent publish successful, msg_id: 60[0m
+[0;32mI (475723) [MQTT]: EVENT_PUBLISHED, msg_id: 60[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (480673) [MQTT]: Sent publish successful, msg_id: 61[0m
+[0;32mI (480723) [MQTT]: EVENT_PUBLISHED, msg_id: 61[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (485673) [MQTT]: Sent publish successful, msg_id: 62[0m
+[0;32mI (485723) [MQTT]: EVENT_PUBLISHED, msg_id: 62[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (490673) [MQTT]: Sent publish successful, msg_id: 63[0m
+[0;32mI (490873) [MQTT]: EVENT_PUBLISHED, msg_id: 63[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (495673) [MQTT]: Sent publish successful, msg_id: 64[0m
+[0;32mI (495783) [MQTT]: EVENT_PUBLISHED, msg_id: 64[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (500673) [MQTT]: Sent publish successful, msg_id: 65[0m
+[0;32mI (500903) [MQTT]: EVENT_PUBLISHED, msg_id: 65[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (505673) [MQTT]: Sent publish successful, msg_id: 66[0m
+[0;32mI (505823) [MQTT]: EVENT_PUBLISHED, msg_id: 66[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (510673) [MQTT]: Sent publish successful, msg_id: 67[0m
+[0;32mI (510943) [MQTT]: EVENT_PUBLISHED, msg_id: 67[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (515673) [MQTT]: Sent publish successful, msg_id: 68[0m
+[0;32mI (515853) [MQTT]: EVENT_PUBLISHED, msg_id: 68[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (520673) [MQTT]: Sent publish successful, msg_id: 69[0m
+[0;32mI (520773) [MQTT]: EVENT_PUBLISHED, msg_id: 69[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (525683) [MQTT]: Sent publish successful, msg_id: 70[0m
+[0;32mI (525893) [MQTT]: EVENT_PUBLISHED, msg_id: 70[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (530673) [MQTT]: Sent publish successful, msg_id: 71[0m
+[0;32mI (530803) [MQTT]: EVENT_PUBLISHED, msg_id: 71[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (535673) [MQTT]: Sent publish successful, msg_id: 72[0m
+[0;32mI (535923) [MQTT]: EVENT_PUBLISHED, msg_id: 72[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (540673) [MQTT]: Sent publish successful, msg_id: 73[0m
+[0;32mI (541443) [MQTT]: EVENT_PUBLISHED, msg_id: 73[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (545673) [MQTT]: Sent publish successful, msg_id: 74[0m
+[0;32mI (545963) [MQTT]: EVENT_PUBLISHED, msg_id: 74[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (550673) [MQTT]: Sent publish successful, msg_id: 75[0m
+[0;32mI (550873) [MQTT]: EVENT_PUBLISHED, msg_id: 75[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (555673) [MQTT]: Sent publish successful, msg_id: 76[0m
+[0;32mI (555753) [MQTT]: EVENT_PUBLISHED, msg_id: 76[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (560673) [MQTT]: Sent publish successful, msg_id: 77[0m
+[0;32mI (560903) [MQTT]: EVENT_PUBLISHED, msg_id: 77[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (565673) [MQTT]: Sent publish successful, msg_id: 78[0m
+[0;32mI (566133) [MQTT]: EVENT_PUBLISHED, msg_id: 78[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (570673) [MQTT]: Sent publish successful, msg_id: 79[0m
+[0;32mI (570843) [MQTT]: EVENT_PUBLISHED, msg_id: 79[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (575673) [MQTT]: Sent publish successful, msg_id: 80[0m
+[0;32mI (575723) [MQTT]: EVENT_PUBLISHED, msg_id: 80[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (580673) [MQTT]: Sent publish successful, msg_id: 81[0m
+[0;32mI (580883) [MQTT]: EVENT_PUBLISHED, msg_id: 81[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (585673) [MQTT]: Sent publish successful, msg_id: 82[0m
+[0;32mI (585893) [MQTT]: EVENT_PUBLISHED, msg_id: 82[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (590673) [MQTT]: Sent publish successful, msg_id: 83[0m
+[0;32mI (590913) [MQTT]: EVENT_PUBLISHED, msg_id: 83[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (595673) [MQTT]: Sent publish successful, msg_id: 84[0m
+[0;32mI (595833) [MQTT]: EVENT_PUBLISHED, msg_id: 84[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (600673) [MQTT]: Sent publish successful, msg_id: 85[0m
+[0;32mI (600743) [MQTT]: EVENT_PUBLISHED, msg_id: 85[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (605673) [MQTT]: Sent publish successful, msg_id: 86[0m
+[0;32mI (605733) [MQTT]: EVENT_PUBLISHED, msg_id: 86[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (610673) [MQTT]: Sent publish successful, msg_id: 87[0m
+[0;32mI (610893) [MQTT]: EVENT_PUBLISHED, msg_id: 87[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (615673) [MQTT]: Sent publish successful, msg_id: 88[0m
+[0;32mI (616103) [MQTT]: EVENT_PUBLISHED, msg_id: 88[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (620673) [MQTT]: Sent publish successful, msg_id: 89[0m
+[0;32mI (620823) [MQTT]: EVENT_PUBLISHED, msg_id: 89[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (625673) [MQTT]: Sent publish successful, msg_id: 90[0m
+[0;32mI (625933) [MQTT]: EVENT_PUBLISHED, msg_id: 90[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (630673) [MQTT]: Sent publish successful, msg_id: 91[0m
+[0;32mI (630853) [MQTT]: EVENT_PUBLISHED, msg_id: 91[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (635673) [MQTT]: Sent publish successful, msg_id: 92[0m
+[0;32mI (635763) [MQTT]: EVENT_PUBLISHED, msg_id: 92[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (640673) [MQTT]: Sent publish successful, msg_id: 93[0m
+[0;32mI (640883) [MQTT]: EVENT_PUBLISHED, msg_id: 93[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (645673) [MQTT]: Sent publish successful, msg_id: 94[0m
+[0;32mI (645803) [MQTT]: EVENT_PUBLISHED, msg_id: 94[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (650673) [MQTT]: Sent publish successful, msg_id: 95[0m
+[0;32mI (650923) [MQTT]: EVENT_PUBLISHED, msg_id: 95[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (655673) [MQTT]: Sent publish successful, msg_id: 96[0m
+[0;32mI (655833) [MQTT]: EVENT_PUBLISHED, msg_id: 96[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (660673) [MQTT]: Sent publish successful, msg_id: 97[0m
+[0;32mI (660753) [MQTT]: EVENT_PUBLISHED, msg_id: 97[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (665673) [MQTT]: Sent publish successful, msg_id: 98[0m
+[0;32mI (665873) [MQTT]: EVENT_PUBLISHED, msg_id: 98[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (670673) [MQTT]: Sent publish successful, msg_id: 99[0m
+[0;32mI (670793) [MQTT]: EVENT_PUBLISHED, msg_id: 99[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (675673) [MQTT]: Sent publish successful, msg_id: 100[0m
+[0;32mI (675903) [MQTT]: EVENT_PUBLISHED, msg_id: 100[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (680673) [MQTT]: Sent publish successful, msg_id: 101[0m
+[0;32mI (680823) [MQTT]: EVENT_PUBLISHED, msg_id: 101[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (685673) [MQTT]: Sent publish successful, msg_id: 102[0m
+[0;32mI (685943) [MQTT]: EVENT_PUBLISHED, msg_id: 102[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (690673) [MQTT]: Sent publish successful, msg_id: 103[0m
+[0;32mI (690853) [MQTT]: EVENT_PUBLISHED, msg_id: 103[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (695673) [MQTT]: Sent publish successful, msg_id: 104[0m
+[0;32mI (695773) [MQTT]: EVENT_PUBLISHED, msg_id: 104[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (700673) [MQTT]: Sent publish successful, msg_id: 105[0m
+[0;32mI (700893) [MQTT]: EVENT_PUBLISHED, msg_id: 105[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (705673) [MQTT]: Sent publish successful, msg_id: 106[0m
+[0;32mI (705803) [MQTT]: EVENT_PUBLISHED, msg_id: 106[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (710673) [MQTT]: Sent publish successful, msg_id: 107[0m
+[0;32mI (710923) [MQTT]: EVENT_PUBLISHED, msg_id: 107[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (715673) [MQTT]: Sent publish successful, msg_id: 108[0m
+[0;32mI (715723) [MQTT]: EVENT_PUBLISHED, msg_id: 108[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (720673) [MQTT]: Sent publish successful, msg_id: 109[0m
+[0;32mI (721363) [MQTT]: EVENT_PUBLISHED, msg_id: 109[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (725673) [MQTT]: Sent publish successful, msg_id: 110[0m
+[0;32mI (725873) [MQTT]: EVENT_PUBLISHED, msg_id: 110[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (730673) [MQTT]: Sent publish successful, msg_id: 111[0m
+[0;32mI (731613) [MQTT]: EVENT_PUBLISHED, msg_id: 111[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (735673) [MQTT]: Sent publish successful, msg_id: 112[0m
+[0;32mI (735913) [MQTT]: EVENT_PUBLISHED, msg_id: 112[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (740673) [MQTT]: Sent publish successful, msg_id: 113[0m
+[0;32mI (740823) [MQTT]: EVENT_PUBLISHED, msg_id: 113[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (745673) [MQTT]: Sent publish successful, msg_id: 114[0m
+[0;32mI (745943) [MQTT]: EVENT_PUBLISHED, msg_id: 114[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (750673) [MQTT]: Sent publish successful, msg_id: 115[0m
+[0;32mI (750863) [MQTT]: EVENT_PUBLISHED, msg_id: 115[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (755673) [MQTT]: Sent publish successful, msg_id: 116[0m
+[0;32mI (755773) [MQTT]: EVENT_PUBLISHED, msg_id: 116[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (760673) [MQTT]: Sent publish successful, msg_id: 117[0m
+[0;32mI (760893) [MQTT]: EVENT_PUBLISHED, msg_id: 117[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (765673) [MQTT]: Sent publish successful, msg_id: 118[0m
+[0;32mI (765813) [MQTT]: EVENT_PUBLISHED, msg_id: 118[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (770673) [MQTT]: Sent publish successful, msg_id: 119[0m
+[0;32mI (770933) [MQTT]: EVENT_PUBLISHED, msg_id: 119[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (775673) [MQTT]: Sent publish successful, msg_id: 120[0m
+[0;32mI (775853) [MQTT]: EVENT_PUBLISHED, msg_id: 120[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (780673) [MQTT]: Sent publish successful, msg_id: 121[0m
+[0;32mI (780753) [MQTT]: EVENT_PUBLISHED, msg_id: 121[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (785673) [MQTT]: Sent publish successful, msg_id: 122[0m
+[0;32mI (785883) [MQTT]: EVENT_PUBLISHED, msg_id: 122[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (790673) [MQTT]: Sent publish successful, msg_id: 123[0m
+[0;32mI (791003) [MQTT]: EVENT_PUBLISHED, msg_id: 123[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (795673) [MQTT]: Sent publish successful, msg_id: 124[0m
+[0;32mI (795923) [MQTT]: EVENT_PUBLISHED, msg_id: 124[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (800673) [MQTT]: Sent publish successful, msg_id: 125[0m
+[0;32mI (800833) [MQTT]: EVENT_PUBLISHED, msg_id: 125[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (805673) [MQTT]: Sent publish successful, msg_id: 126[0m
+[0;32mI (805953) [MQTT]: EVENT_PUBLISHED, msg_id: 126[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (810673) [MQTT]: Sent publish successful, msg_id: 127[0m
+[0;32mI (810863) [MQTT]: EVENT_PUBLISHED, msg_id: 127[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (815673) [MQTT]: Sent publish successful, msg_id: 128[0m
+[0;32mI (815783) [MQTT]: EVENT_PUBLISHED, msg_id: 128[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (820673) [MQTT]: Sent publish successful, msg_id: 129[0m
+[0;32mI (820903) [MQTT]: EVENT_PUBLISHED, msg_id: 129[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (825673) [MQTT]: Sent publish successful, msg_id: 130[0m
+[0;32mI (825923) [MQTT]: EVENT_PUBLISHED, msg_id: 130[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (830673) [MQTT]: Sent publish successful, msg_id: 131[0m
+[0;32mI (830933) [MQTT]: EVENT_PUBLISHED, msg_id: 131[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (835673) [MQTT]: Sent publish successful, msg_id: 132[0m
+[0;32mI (835853) [MQTT]: EVENT_PUBLISHED, msg_id: 132[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (840673) [MQTT]: Sent publish successful, msg_id: 133[0m
+[0;32mI (841383) [MQTT]: EVENT_PUBLISHED, msg_id: 133[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (845683) [MQTT]: Sent publish successful, msg_id: 134[0m
+[0;32mI (845883) [MQTT]: EVENT_PUBLISHED, msg_id: 134[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (850673) [MQTT]: Sent publish successful, msg_id: 135[0m
+[0;32mI (850723) [MQTT]: EVENT_PUBLISHED, msg_id: 135[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (855673) [MQTT]: Sent publish successful, msg_id: 136[0m
+[0;32mI (855923) [MQTT]: EVENT_PUBLISHED, msg_id: 136[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (860673) [MQTT]: Sent publish successful, msg_id: 137[0m
+[0;32mI (860843) [MQTT]: EVENT_PUBLISHED, msg_id: 137[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (865673) [MQTT]: Sent publish successful, msg_id: 138[0m
+[0;32mI (865963) [MQTT]: EVENT_PUBLISHED, msg_id: 138[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (870673) [MQTT]: Sent publish successful, msg_id: 139[0m
+[0;32mI (870773) [MQTT]: EVENT_PUBLISHED, msg_id: 139[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (875673) [MQTT]: Sent publish successful, msg_id: 140[0m
+[0;32mI (875793) [MQTT]: EVENT_PUBLISHED, msg_id: 140[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (880673) [MQTT]: Sent publish successful, msg_id: 141[0m
+[0;32mI (881013) [MQTT]: EVENT_PUBLISHED, msg_id: 141[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (885673) [MQTT]: Sent publish successful, msg_id: 142[0m
+[0;32mI (885823) [MQTT]: EVENT_PUBLISHED, msg_id: 142[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (890673) [MQTT]: Sent publish successful, msg_id: 143[0m
+[0;32mI (890943) [MQTT]: EVENT_PUBLISHED, msg_id: 143[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (895673) [MQTT]: Sent publish successful, msg_id: 144[0m
+[0;32mI (895863) [MQTT]: EVENT_PUBLISHED, msg_id: 144[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (900673) [MQTT]: Sent publish successful, msg_id: 145[0m
+[0;32mI (900743) [MQTT]: EVENT_PUBLISHED, msg_id: 145[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (905673) [MQTT]: Sent publish successful, msg_id: 146[0m
+[0;32mI (905903) [MQTT]: EVENT_PUBLISHED, msg_id: 146[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (910673) [MQTT]: Sent publish successful, msg_id: 147[0m
+[0;32mI (910913) [MQTT]: EVENT_PUBLISHED, msg_id: 147[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (915673) [MQTT]: Sent publish successful, msg_id: 148[0m
+[0;32mI (915933) [MQTT]: EVENT_PUBLISHED, msg_id: 148[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (920673) [MQTT]: Sent publish successful, msg_id: 149[0m
+[0;32mI (920943) [MQTT]: EVENT_PUBLISHED, msg_id: 149[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (925673) [MQTT]: Sent publish successful, msg_id: 150[0m
+[0;32mI (925963) [MQTT]: EVENT_PUBLISHED, msg_id: 150[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (930673) [MQTT]: Sent publish successful, msg_id: 151[0m
+[0;32mI (930983) [MQTT]: EVENT_PUBLISHED, msg_id: 151[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (935673) [MQTT]: Sent publish successful, msg_id: 152[0m
+[0;32mI (935793) [MQTT]: EVENT_PUBLISHED, msg_id: 152[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (940673) [MQTT]: Sent publish successful, msg_id: 153[0m
+[0;32mI (940913) [MQTT]: EVENT_PUBLISHED, msg_id: 153[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (945673) [MQTT]: Sent publish successful, msg_id: 154[0m
+[0;32mI (945833) [MQTT]: EVENT_PUBLISHED, msg_id: 154[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (950673) [MQTT]: Sent publish successful, msg_id: 155[0m
+[0;32mI (950953) [MQTT]: EVENT_PUBLISHED, msg_id: 155[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (955673) [MQTT]: Sent publish successful, msg_id: 156[0m
+[0;32mI (955723) [MQTT]: EVENT_PUBLISHED, msg_id: 156[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (960673) [MQTT]: Sent publish successful, msg_id: 157[0m
+[0;32mI (961383) [MQTT]: EVENT_PUBLISHED, msg_id: 157[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (965673) [MQTT]: Sent publish successful, msg_id: 158[0m
+[0;32mI (965903) [MQTT]: EVENT_PUBLISHED, msg_id: 158[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (970673) [MQTT]: Sent publish successful, msg_id: 159[0m
+[0;32mI (970813) [MQTT]: EVENT_PUBLISHED, msg_id: 159[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (975673) [MQTT]: Sent publish successful, msg_id: 160[0m
+[0;32mI (975933) [MQTT]: EVENT_PUBLISHED, msg_id: 160[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (980673) [MQTT]: Sent publish successful, msg_id: 161[0m
+[0;32mI (980853) [MQTT]: EVENT_PUBLISHED, msg_id: 161[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (985673) [MQTT]: Sent publish successful, msg_id: 162[0m
+[0;32mI (985763) [MQTT]: EVENT_PUBLISHED, msg_id: 162[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (990673) [MQTT]: Sent publish successful, msg_id: 163[0m
+[0;32mI (990883) [MQTT]: EVENT_PUBLISHED, msg_id: 163[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (995673) [MQTT]: Sent publish successful, msg_id: 164[0m
+[0;32mI (995803) [MQTT]: EVENT_PUBLISHED, msg_id: 164[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1000673) [MQTT]: Sent publish successful, msg_id: 165[0m
+[0;32mI (1000823) [MQTT]: EVENT_PUBLISHED, msg_id: 165[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1005673) [MQTT]: Sent publish successful, msg_id: 166[0m
+[0;32mI (1005833) [MQTT]: EVENT_PUBLISHED, msg_id: 166[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1010673) [MQTT]: Sent publish successful, msg_id: 167[0m
+[0;32mI (1010953) [MQTT]: EVENT_PUBLISHED, msg_id: 167[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1015673) [MQTT]: Sent publish successful, msg_id: 168[0m
+[0;32mI (1016073) [MQTT]: EVENT_PUBLISHED, msg_id: 168[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1020673) [MQTT]: Sent publish successful, msg_id: 169[0m
+[0;32mI (1020763) [MQTT]: EVENT_PUBLISHED, msg_id: 169[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1025673) [MQTT]: Sent publish successful, msg_id: 170[0m
+[0;32mI (1025903) [MQTT]: EVENT_PUBLISHED, msg_id: 170[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1030673) [MQTT]: Sent publish successful, msg_id: 171[0m
+[0;32mI (1031023) [MQTT]: EVENT_PUBLISHED, msg_id: 171[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1035673) [MQTT]: Sent publish successful, msg_id: 172[0m
+[0;32mI (1035943) [MQTT]: EVENT_PUBLISHED, msg_id: 172[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1040673) [MQTT]: Sent publish successful, msg_id: 173[0m
+[0;32mI (1040853) [MQTT]: EVENT_PUBLISHED, msg_id: 173[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1045673) [MQTT]: Sent publish successful, msg_id: 174[0m
+[0;32mI (1045773) [MQTT]: EVENT_PUBLISHED, msg_id: 174[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1050673) [MQTT]: Sent publish successful, msg_id: 175[0m
+[0;32mI (1050893) [MQTT]: EVENT_PUBLISHED, msg_id: 175[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1055673) [MQTT]: Sent publish successful, msg_id: 176[0m
+[0;32mI (1055803) [MQTT]: EVENT_PUBLISHED, msg_id: 176[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1060673) [MQTT]: Sent publish successful, msg_id: 177[0m
+[0;32mI (1060923) [MQTT]: EVENT_PUBLISHED, msg_id: 177[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1065673) [MQTT]: Sent publish successful, msg_id: 178[0m
+[0;32mI (1065883) [MQTT]: EVENT_PUBLISHED, msg_id: 178[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1070673) [MQTT]: Sent publish successful, msg_id: 179[0m
+[0;32mI (1070963) [MQTT]: EVENT_PUBLISHED, msg_id: 179[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1075673) [MQTT]: Sent publish successful, msg_id: 180[0m
+[0;32mI (1075883) [MQTT]: EVENT_PUBLISHED, msg_id: 180[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1080673) [MQTT]: Sent publish successful, msg_id: 181[0m
+[0;32mI (1080743) [MQTT]: EVENT_PUBLISHED, msg_id: 181[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1085673) [MQTT]: Sent publish successful, msg_id: 182[0m
+[0;32mI (1085913) [MQTT]: EVENT_PUBLISHED, msg_id: 182[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1090673) [MQTT]: Sent publish successful, msg_id: 183[0m
+[0;32mI (1090833) [MQTT]: EVENT_PUBLISHED, msg_id: 183[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1095673) [MQTT]: Sent publish successful, msg_id: 184[0m
+[0;32mI (1095953) [MQTT]: EVENT_PUBLISHED, msg_id: 184[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1100673) [MQTT]: Sent publish successful, msg_id: 185[0m
+[0;32mI (1100863) [MQTT]: EVENT_PUBLISHED, msg_id: 185[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1105673) [MQTT]: Sent publish successful, msg_id: 186[0m
+[0;32mI (1105783) [MQTT]: EVENT_PUBLISHED, msg_id: 186[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1110673) [MQTT]: Sent publish successful, msg_id: 187[0m
+[0;32mI (1110913) [MQTT]: EVENT_PUBLISHED, msg_id: 187[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1115673) [MQTT]: Sent publish successful, msg_id: 188[0m
+[0;32mI (1115813) [MQTT]: EVENT_PUBLISHED, msg_id: 188[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1120673) [MQTT]: Sent publish successful, msg_id: 189[0m
+[0;32mI (1120983) [MQTT]: EVENT_PUBLISHED, msg_id: 189[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1125673) [MQTT]: Sent publish successful, msg_id: 190[0m
+[0;32mI (1125853) [MQTT]: EVENT_PUBLISHED, msg_id: 190[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1130673) [MQTT]: Sent publish successful, msg_id: 191[0m
+[0;32mI (1130763) [MQTT]: EVENT_PUBLISHED, msg_id: 191[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1135673) [MQTT]: Sent publish successful, msg_id: 192[0m
+[0;32mI (1135883) [MQTT]: EVENT_PUBLISHED, msg_id: 192[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1140673) [MQTT]: Sent publish successful, msg_id: 193[0m
+[0;32mI (1140743) [MQTT]: EVENT_PUBLISHED, msg_id: 193[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1145673) [MQTT]: Sent publish successful, msg_id: 194[0m
+[0;32mI (1145923) [MQTT]: EVENT_PUBLISHED, msg_id: 194[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1150673) [MQTT]: Sent publish successful, msg_id: 195[0m
+[0;32mI (1150833) [MQTT]: EVENT_PUBLISHED, msg_id: 195[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1155673) [MQTT]: Sent publish successful, msg_id: 196[0m
+[0;32mI (1155953) [MQTT]: EVENT_PUBLISHED, msg_id: 196[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1160673) [MQTT]: Sent publish successful, msg_id: 197[0m
+[0;32mI (1160723) [MQTT]: EVENT_PUBLISHED, msg_id: 197[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1165673) [MQTT]: Sent publish successful, msg_id: 198[0m
+[0;32mI (1165783) [MQTT]: EVENT_PUBLISHED, msg_id: 198[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1170673) [MQTT]: Sent publish successful, msg_id: 199[0m
+[0;32mI (1170903) [MQTT]: EVENT_PUBLISHED, msg_id: 199[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1175673) [MQTT]: Sent publish successful, msg_id: 200[0m
+[0;32mI (1175823) [MQTT]: EVENT_PUBLISHED, msg_id: 200[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1180673) [MQTT]: Sent publish successful, msg_id: 201[0m
+[0;32mI (1180943) [MQTT]: EVENT_PUBLISHED, msg_id: 201[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1185673) [MQTT]: Sent publish successful, msg_id: 202[0m
+[0;32mI (1185853) [MQTT]: EVENT_PUBLISHED, msg_id: 202[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1190673) [MQTT]: Sent publish successful, msg_id: 203[0m
+[0;32mI (1190773) [MQTT]: EVENT_PUBLISHED, msg_id: 203[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1195673) [MQTT]: Sent publish successful, msg_id: 204[0m
+[0;32mI (1195893) [MQTT]: EVENT_PUBLISHED, msg_id: 204[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1200673) [MQTT]: Sent publish successful, msg_id: 205[0m
+[0;32mI (1200753) [MQTT]: EVENT_PUBLISHED, msg_id: 205[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1205673) [MQTT]: Sent publish successful, msg_id: 206[0m
+[0;32mI (1205923) [MQTT]: EVENT_PUBLISHED, msg_id: 206[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1210673) [MQTT]: Sent publish successful, msg_id: 207[0m
+[0;32mI (1210843) [MQTT]: EVENT_PUBLISHED, msg_id: 207[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1215673) [MQTT]: Sent publish successful, msg_id: 208[0m
+[0;32mI (1215753) [MQTT]: EVENT_PUBLISHED, msg_id: 208[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1220673) [MQTT]: Sent publish successful, msg_id: 209[0m
+[0;32mI (1220883) [MQTT]: EVENT_PUBLISHED, msg_id: 209[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1225673) [MQTT]: Sent publish successful, msg_id: 210[0m
+[0;32mI (1225793) [MQTT]: EVENT_PUBLISHED, msg_id: 210[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1230673) [MQTT]: Sent publish successful, msg_id: 211[0m
+[0;32mI (1230813) [MQTT]: EVENT_PUBLISHED, msg_id: 211[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1235673) [MQTT]: Sent publish successful, msg_id: 212[0m
+[0;32mI (1235823) [MQTT]: EVENT_PUBLISHED, msg_id: 212[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1240673) [MQTT]: Sent publish successful, msg_id: 213[0m
+[0;32mI (1240943) [MQTT]: EVENT_PUBLISHED, msg_id: 213[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1245673) [MQTT]: Sent publish successful, msg_id: 214[0m
+[0;32mI (1245863) [MQTT]: EVENT_PUBLISHED, msg_id: 214[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1250673) [MQTT]: Sent publish successful, msg_id: 215[0m
+[0;32mI (1250783) [MQTT]: EVENT_PUBLISHED, msg_id: 215[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1255673) [MQTT]: Sent publish successful, msg_id: 216[0m
+[0;32mI (1255893) [MQTT]: EVENT_PUBLISHED, msg_id: 216[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1260673) [MQTT]: Sent publish successful, msg_id: 217[0m
+[0;32mI (1260743) [MQTT]: EVENT_PUBLISHED, msg_id: 217[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1265673) [MQTT]: Sent publish successful, msg_id: 218[0m
+[0;32mI (1265933) [MQTT]: EVENT_PUBLISHED, msg_id: 218[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1270673) [MQTT]: Sent publish successful, msg_id: 219[0m
+[0;32mI (1270843) [MQTT]: EVENT_PUBLISHED, msg_id: 219[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1275673) [MQTT]: Sent publish successful, msg_id: 220[0m
+[0;32mI (1275723) [MQTT]: EVENT_PUBLISHED, msg_id: 220[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1280673) [MQTT]: Sent publish successful, msg_id: 221[0m
+[0;32mI (1280883) [MQTT]: EVENT_PUBLISHED, msg_id: 221[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1285673) [MQTT]: Sent publish successful, msg_id: 222[0m
+[0;32mI (1285803) [MQTT]: EVENT_PUBLISHED, msg_id: 222[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1290673) [MQTT]: Sent publish successful, msg_id: 223[0m
+[0;32mI (1290923) [MQTT]: EVENT_PUBLISHED, msg_id: 223[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1295673) [MQTT]: Sent publish successful, msg_id: 224[0m
+[0;32mI (1295833) [MQTT]: EVENT_PUBLISHED, msg_id: 224[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1300673) [MQTT]: Sent publish successful, msg_id: 225[0m
+[0;32mI (1300953) [MQTT]: EVENT_PUBLISHED, msg_id: 225[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1305673) [MQTT]: Sent publish successful, msg_id: 226[0m
+[0;32mI (1305873) [MQTT]: EVENT_PUBLISHED, msg_id: 226[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1310673) [MQTT]: Sent publish successful, msg_id: 227[0m
+[0;32mI (1310783) [MQTT]: EVENT_PUBLISHED, msg_id: 227[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1315673) [MQTT]: Sent publish successful, msg_id: 228[0m
+[0;32mI (1315903) [MQTT]: EVENT_PUBLISHED, msg_id: 228[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1320673) [MQTT]: Sent publish successful, msg_id: 229[0m
+[0;32mI (1320753) [MQTT]: EVENT_PUBLISHED, msg_id: 229[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1325673) [MQTT]: Sent publish successful, msg_id: 230[0m
+[0;32mI (1325943) [MQTT]: EVENT_PUBLISHED, msg_id: 230[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1330673) [MQTT]: Sent publish successful, msg_id: 231[0m
+[0;32mI (1330853) [MQTT]: EVENT_PUBLISHED, msg_id: 231[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1335673) [MQTT]: Sent publish successful, msg_id: 232[0m
+[0;32mI (1335973) [MQTT]: EVENT_PUBLISHED, msg_id: 232[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1340673) [MQTT]: Sent publish successful, msg_id: 233[0m
+[0;32mI (1340893) [MQTT]: EVENT_PUBLISHED, msg_id: 233[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1345673) [MQTT]: Sent publish successful, msg_id: 234[0m
+[0;32mI (1345803) [MQTT]: EVENT_PUBLISHED, msg_id: 234[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1350673) [MQTT]: Sent publish successful, msg_id: 235[0m
+[0;32mI (1350823) [MQTT]: EVENT_PUBLISHED, msg_id: 235[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1355673) [MQTT]: Sent publish successful, msg_id: 236[0m
+[0;32mI (1355953) [MQTT]: EVENT_PUBLISHED, msg_id: 236[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1360673) [MQTT]: Sent publish successful, msg_id: 237[0m
+[0;32mI (1360863) [MQTT]: EVENT_PUBLISHED, msg_id: 237[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1365673) [MQTT]: Sent publish successful, msg_id: 238[0m
+[0;32mI (1365983) [MQTT]: EVENT_PUBLISHED, msg_id: 238[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1370673) [MQTT]: Sent publish successful, msg_id: 239[0m
+[0;32mI (1370893) [MQTT]: EVENT_PUBLISHED, msg_id: 239[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1375673) [MQTT]: Sent publish successful, msg_id: 240[0m
+[0;32mI (1375803) [MQTT]: EVENT_PUBLISHED, msg_id: 240[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1380673) [MQTT]: Sent publish successful, msg_id: 241[0m
+[0;32mI (1380753) [MQTT]: EVENT_PUBLISHED, msg_id: 241[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1385673) [MQTT]: Sent publish successful, msg_id: 242[0m
+[0;32mI (1385723) [MQTT]: EVENT_PUBLISHED, msg_id: 242[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1390673) [MQTT]: Sent publish successful, msg_id: 243[0m
+[0;32mI (1390713) [MQTT]: EVENT_PUBLISHED, msg_id: 243[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1395673) [MQTT]: Sent publish successful, msg_id: 244[0m
+[0;32mI (1395723) [MQTT]: EVENT_PUBLISHED, msg_id: 244[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1400673) [MQTT]: Sent publish successful, msg_id: 245[0m
+[0;32mI (1400793) [MQTT]: EVENT_PUBLISHED, msg_id: 245[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1405673) [MQTT]: Sent publish successful, msg_id: 246[0m
+[0;32mI (1405913) [MQTT]: EVENT_PUBLISHED, msg_id: 246[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1410673) [MQTT]: Sent publish successful, msg_id: 247[0m
+[0;32mI (1410833) [MQTT]: EVENT_PUBLISHED, msg_id: 247[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1415673) [MQTT]: Sent publish successful, msg_id: 248[0m
+[0;32mI (1415953) [MQTT]: EVENT_PUBLISHED, msg_id: 248[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1420673) [MQTT]: Sent publish successful, msg_id: 249[0m
+[0;32mI (1420863) [MQTT]: EVENT_PUBLISHED, msg_id: 249[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1425673) [MQTT]: Sent publish successful, msg_id: 250[0m
+[0;32mI (1425773) [MQTT]: EVENT_PUBLISHED, msg_id: 250[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1430673) [MQTT]: Sent publish successful, msg_id: 251[0m
+[0;32mI (1430903) [MQTT]: EVENT_PUBLISHED, msg_id: 251[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1435673) [MQTT]: Sent publish successful, msg_id: 252[0m
+[0;32mI (1436023) [MQTT]: EVENT_PUBLISHED, msg_id: 252[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1440673) [MQTT]: Sent publish successful, msg_id: 253[0m
+[0;32mI (1440743) [MQTT]: EVENT_PUBLISHED, msg_id: 253[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1445673) [MQTT]: Sent publish successful, msg_id: 254[0m
+[0;32mI (1445853) [MQTT]: EVENT_PUBLISHED, msg_id: 254[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1450673) [MQTT]: Sent publish successful, msg_id: 255[0m
+[0;32mI (1450763) [MQTT]: EVENT_PUBLISHED, msg_id: 255[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1455673) [MQTT]: Sent publish successful, msg_id: 256[0m
+[0;32mI (1455883) [MQTT]: EVENT_PUBLISHED, msg_id: 256[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1460673) [MQTT]: Sent publish successful, msg_id: 257[0m
+[0;32mI (1460903) [MQTT]: EVENT_PUBLISHED, msg_id: 257[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1465673) [MQTT]: Sent publish successful, msg_id: 258[0m
+[0;32mI (1465923) [MQTT]: EVENT_PUBLISHED, msg_id: 258[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1470673) [MQTT]: Sent publish successful, msg_id: 259[0m
+[0;32mI (1470833) [MQTT]: EVENT_PUBLISHED, msg_id: 259[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1475673) [MQTT]: Sent publish successful, msg_id: 260[0m
+[0;32mI (1475953) [MQTT]: EVENT_PUBLISHED, msg_id: 260[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1480673) [MQTT]: Sent publish successful, msg_id: 261[0m
+[0;32mI (1480873) [MQTT]: EVENT_PUBLISHED, msg_id: 261[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1485673) [MQTT]: Sent publish successful, msg_id: 262[0m
+[0;32mI (1485793) [MQTT]: EVENT_PUBLISHED, msg_id: 262[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1490673) [MQTT]: Sent publish successful, msg_id: 263[0m
+[0;32mI (1490903) [MQTT]: EVENT_PUBLISHED, msg_id: 263[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1495673) [MQTT]: Sent publish successful, msg_id: 264[0m
+[0;32mI (1495823) [MQTT]: EVENT_PUBLISHED, msg_id: 264[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1500673) [MQTT]: Sent publish successful, msg_id: 265[0m
+[0;32mI (1501543) [MQTT]: EVENT_PUBLISHED, msg_id: 265[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1505673) [MQTT]: Sent publish successful, msg_id: 266[0m
+[0;32mI (1505853) [MQTT]: EVENT_PUBLISHED, msg_id: 266[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1510673) [MQTT]: Sent publish successful, msg_id: 267[0m
+[0;32mI (1510773) [MQTT]: EVENT_PUBLISHED, msg_id: 267[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1515673) [MQTT]: Sent publish successful, msg_id: 268[0m
+[0;32mI (1515893) [MQTT]: EVENT_PUBLISHED, msg_id: 268[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1520673) [MQTT]: Sent publish successful, msg_id: 269[0m
+[0;32mI (1520803) [MQTT]: EVENT_PUBLISHED, msg_id: 269[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1525673) [MQTT]: Sent publish successful, msg_id: 270[0m
+[0;32mI (1526133) [MQTT]: EVENT_PUBLISHED, msg_id: 270[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1530673) [MQTT]: Sent publish successful, msg_id: 271[0m
+[0;32mI (1530843) [MQTT]: EVENT_PUBLISHED, msg_id: 271[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1535673) [MQTT]: Sent publish successful, msg_id: 272[0m
+[0;32mI (1535963) [MQTT]: EVENT_PUBLISHED, msg_id: 272[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1540673) [MQTT]: Sent publish successful, msg_id: 273[0m
+[0;32mI (1540873) [MQTT]: EVENT_PUBLISHED, msg_id: 273[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1545673) [MQTT]: Sent publish successful, msg_id: 274[0m
+[0;32mI (1545793) [MQTT]: EVENT_PUBLISHED, msg_id: 274[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1550673) [MQTT]: Sent publish successful, msg_id: 275[0m
+[0;32mI (1551113) [MQTT]: EVENT_PUBLISHED, msg_id: 275[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1555673) [MQTT]: Sent publish successful, msg_id: 276[0m
+[0;32mI (1555833) [MQTT]: EVENT_PUBLISHED, msg_id: 276[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1560673) [MQTT]: Sent publish successful, msg_id: 277[0m
+[0;32mI (1561553) [MQTT]: EVENT_PUBLISHED, msg_id: 277[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1565673) [MQTT]: Sent publish successful, msg_id: 278[0m
+[0;32mI (1565863) [MQTT]: EVENT_PUBLISHED, msg_id: 278[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1570673) [MQTT]: Sent publish successful, msg_id: 279[0m
+[0;32mI (1570783) [MQTT]: EVENT_PUBLISHED, msg_id: 279[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1575673) [MQTT]: Sent publish successful, msg_id: 280[0m
+[0;32mI (1575903) [MQTT]: EVENT_PUBLISHED, msg_id: 280[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1580673) [MQTT]: Sent publish successful, msg_id: 281[0m
+[0;32mI (1580813) [MQTT]: EVENT_PUBLISHED, msg_id: 281[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1585673) [MQTT]: Sent publish successful, msg_id: 282[0m
+[0;32mI (1585933) [MQTT]: EVENT_PUBLISHED, msg_id: 282[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1590673) [MQTT]: Sent publish successful, msg_id: 283[0m
+[0;32mI (1590853) [MQTT]: EVENT_PUBLISHED, msg_id: 283[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1595673) [MQTT]: Sent publish successful, msg_id: 284[0m
+[0;32mI (1595763) [MQTT]: EVENT_PUBLISHED, msg_id: 284[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1600673) [MQTT]: Sent publish successful, msg_id: 285[0m
+[0;32mI (1600783) [MQTT]: EVENT_PUBLISHED, msg_id: 285[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1605673) [MQTT]: Sent publish successful, msg_id: 286[0m
+[0;32mI (1605793) [MQTT]: EVENT_PUBLISHED, msg_id: 286[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1610673) [MQTT]: Sent publish successful, msg_id: 287[0m
+[0;32mI (1610923) [MQTT]: EVENT_PUBLISHED, msg_id: 287[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1615673) [MQTT]: Sent publish successful, msg_id: 288[0m
+[0;32mI (1615843) [MQTT]: EVENT_PUBLISHED, msg_id: 288[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1620673) [MQTT]: Sent publish successful, msg_id: 289[0m
+[0;32mI (1621553) [MQTT]: EVENT_PUBLISHED, msg_id: 289[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1625673) [MQTT]: Sent publish successful, msg_id: 290[0m
+[0;32mI (1625863) [MQTT]: EVENT_PUBLISHED, msg_id: 290[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1630673) [MQTT]: Sent publish successful, msg_id: 291[0m
+[0;32mI (1630783) [MQTT]: EVENT_PUBLISHED, msg_id: 291[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1635673) [MQTT]: Sent publish successful, msg_id: 292[0m
+[0;32mI (1635903) [MQTT]: EVENT_PUBLISHED, msg_id: 292[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1640673) [MQTT]: Sent publish successful, msg_id: 293[0m
+[0;32mI (1640823) [MQTT]: EVENT_PUBLISHED, msg_id: 293[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1645673) [MQTT]: Sent publish successful, msg_id: 294[0m
+[0;32mI (1645943) [MQTT]: EVENT_PUBLISHED, msg_id: 294[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1650673) [MQTT]: Sent publish successful, msg_id: 295[0m
+[0;32mI (1650853) [MQTT]: EVENT_PUBLISHED, msg_id: 295[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1655673) [MQTT]: Sent publish successful, msg_id: 296[0m
+[0;32mI (1655763) [MQTT]: EVENT_PUBLISHED, msg_id: 296[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1660673) [MQTT]: Sent publish successful, msg_id: 297[0m
+[0;32mI (1660893) [MQTT]: EVENT_PUBLISHED, msg_id: 297[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1665673) [MQTT]: Sent publish successful, msg_id: 298[0m
+[0;32mI (1665803) [MQTT]: EVENT_PUBLISHED, msg_id: 298[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1670673) [MQTT]: Sent publish successful, msg_id: 299[0m
+[0;32mI (1670923) [MQTT]: EVENT_PUBLISHED, msg_id: 299[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1675673) [MQTT]: Sent publish successful, msg_id: 300[0m
+[0;32mI (1675843) [MQTT]: EVENT_PUBLISHED, msg_id: 300[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1680673) [MQTT]: Sent publish successful, msg_id: 301[0m
+[0;32mI (1680743) [MQTT]: EVENT_PUBLISHED, msg_id: 301[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1685673) [MQTT]: Sent publish successful, msg_id: 302[0m
+[0;32mI (1685873) [MQTT]: EVENT_PUBLISHED, msg_id: 302[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1690673) [MQTT]: Sent publish successful, msg_id: 303[0m
+[0;32mI (1690793) [MQTT]: EVENT_PUBLISHED, msg_id: 303[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1695673) [MQTT]: Sent publish successful, msg_id: 304[0m
+[0;32mI (1695913) [MQTT]: EVENT_PUBLISHED, msg_id: 304[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1700673) [MQTT]: Sent publish successful, msg_id: 305[0m
+[0;32mI (1700823) [MQTT]: EVENT_PUBLISHED, msg_id: 305[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1705673) [MQTT]: Sent publish successful, msg_id: 306[0m
+[0;32mI (1705943) [MQTT]: EVENT_PUBLISHED, msg_id: 306[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1710673) [MQTT]: Sent publish successful, msg_id: 307[0m
+[0;32mI (1710863) [MQTT]: EVENT_PUBLISHED, msg_id: 307[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (1715673) [MQTT]: Sent publish successful, msg_id: 308[0m
+[0;32mI (1715773) [MQTT]: EVENT_PUBLISHED, msg_id: 308[0m

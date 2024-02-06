@@ -1,0 +1,182 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Dec 14 2023 19:21:26[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=295c0h (169408) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=000395e8 vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0003ea64 vaddr=40080000 size=015b4h (  5556) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9ce50h (642640) map[0m
+[0;32mI (285) esp_image: segment 4: paddr=000dce78 vaddr=400815b4 size=17220h ( 94752) load[0m
+[0;32mI (322) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (322) boot: Disabling RNG early entropy source...[0m
+[0;32mI (333) cpu_start: Multicore app[0m
+[0;32mI (342) cpu_start: Pro cpu start user code[0m
+[0;32mI (342) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (342) cpu_start: Application information:[0m
+[0;32mI (345) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (352) cpu_start: App version:      821bba1-dirty[0m
+[0;32mI (357) cpu_start: Compile time:     Jan 24 2024 23:21:30[0m
+[0;32mI (364) cpu_start: ELF file SHA256:  dd9920131...[0m
+[0;32mI (369) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (375) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (380) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (385) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (390) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (397) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (403) heap_init: At 3FFC7740 len 000188C0 (98 KiB): DRAM[0m
+[0;32mI (409) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (415) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (422) heap_init: At 400987D4 len 0000782C (30 KiB): IRAM[0m
+[0;32mI (430) spi_flash: detected chip: winbond[0m
+[0;32mI (433) spi_flash: flash io: dio[0m
+[0;33mW (437) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (447) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (456) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (462) main_task: Started on CPU0[0m
+[0;32mI (472) main_task: Calling app_main()[0m
+[0;32mI (502) I2C: Module configuration successful![0m
+[0;32mI (502) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (502) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (512) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (522) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+I (552) wifi:wifi driver task: 3ffb8a9c, prio:23, stack:6656, core=0
+I (562) wifi:wifi firmware version: a194738
+I (572) wifi:wifi certification version: v7.0
+I (572) wifi:config NVS flash: enabled
+I (572) wifi:config nano formating: disabled
+I (572) wifi:Init data frame dynamic rx buffer num: 32
+I (572) wifi:Init static rx mgmt buffer num: 5
+I (582) wifi:Init management short buffer num: 32
+I (582) wifi:Init dynamic tx buffer num: 32
+I (592) wifi:Init static rx buffer size: 1600
+I (592) wifi:Init static rx buffer num: 10
+I (592) wifi:Init dynamic rx buffer num: 32
+[0;32mI (602) wifi_init: rx ba win: 6[0m
+[0;32mI (602) wifi_init: tcpip mbox: 32[0m
+[0;32mI (612) wifi_init: udp mbox: 6[0m
+[0;32mI (612) wifi_init: tcp mbox: 6[0m
+[0;32mI (612) wifi_init: tcp tx win: 5760[0m
+[0;32mI (622) wifi_init: tcp rx win: 5760[0m
+[0;32mI (622) wifi_init: tcp mss: 1440[0m
+[0;32mI (632) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (632) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (642) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (722) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (722) wifi:enable tsf
+[0;32mI (722) [WI-FI]: Wifi started![0m
+I (742) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (742) wifi:state: init -> auth (b0)
+I (752) wifi:state: auth -> init (1c0)
+I (752) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (752) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (3172) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (3182) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (3192) wifi:state: init -> auth (b0)
+I (3192) wifi:state: auth -> assoc (0)
+I (3212) wifi:state: assoc -> run (10)
+I (3252) wifi:connected with supertajnasiec, aid = 3, channel 8, BW20, bssid = ce:3d:89:d0:7d:f5
+I (3252) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (3262) wifi:pm start, type: 1
+
+I (3262) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3322) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3322) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4272) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (4272) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (4272) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (4302) wifi:<ba-add>idx:0 (ifx:0, ce:3d:89:d0:7d:f5), tid:0, ssn:3, winSize:64
+[0;32mI (4412) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (5412) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (5462) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (28202) wifi:state: run -> init (1a0)
+I (28202) wifi:pm stop, total sleep time: 21065031 us / 24939239 us
+
+I (28202) wifi:<ba-del>idx:0, tid:0
+I (28202) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (28212) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (28222) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (28222) [MQTT]: CLIENT STOPPED[0m
+[0;31mE (28232) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (28242) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (30632) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (33052) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (33062) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (33062) wifi:state: init -> auth (b0)
+I (33062) wifi:state: auth -> assoc (0)
+I (33082) wifi:state: assoc -> run (10)
+I (33112) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 52:80:44:e7:cb:23
+I (33112) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+I (33122) wifi:pm start, type: 1
+
+I (33122) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (33122) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (33132) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (34142) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (34142) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (34142) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (34252) wifi:<ba-add>idx:0 (ifx:0, 52:80:44:e7:cb:23), tid:0, ssn:3, winSize:64
+[0;32mI (34302) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (35302) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (35352) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+I (37472) wifi:state: run -> init (1a0)
+I (37472) wifi:pm stop, total sleep time: 2970670 us / 4352710 us
+
+I (37472) wifi:<ba-del>idx:0, tid:0
+I (37472) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (37482) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;31mE (37482) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (37492) [MQTT]: CLIENT STOPPED[0m
+[0;31mE (37492) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (37502) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (39902) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (42312) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (44732) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (47152) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (49562) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (51982) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+[0;32mI (54392) [WI-FI]: Ponowna próba połączenia do sieci ...[0m
+I (54412) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (54412) wifi:state: init -> auth (b0)
+I (54422) wifi:state: auth -> assoc (0)
+I (54432) wifi:state: assoc -> run (10)
+I (54452) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 4e:db:8a:a1:05:e9
+I (54462) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (54462) wifi:pm start, type: 1
+
+I (54462) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (54522) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (54522) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (55472) esp_netif_handlers: sta ip: 192.168.163.8, mask: 255.255.255.0, gw: 192.168.163.57[0m
+[0;32mI (55472) [WI-FI]: CONNECTED TO IP: 192.168.163.8[0m
+[0;32mI (55472) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (55542) wifi:<ba-add>idx:0 (ifx:0, 4e:db:8a:a1:05:e9), tid:0, ssn:3, winSize:64
+[0;32mI (55602) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+Wilgotność: 0.000000%
+Temperatura: 5836.799805°C
+[0;32mI (56602) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (56652) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m

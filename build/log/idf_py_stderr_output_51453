@@ -1,0 +1,93 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dad2e: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:443 (discriminator 1)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400dad2b: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:441
+[0m
+[0;33m0x400d9bff: make_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1975
+[0m
+[0;33m0x400d9c3e: mqtt_client_enqueue_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1990
+[0m
+[0;33m0x400da904: esp_mqtt_client_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:2057
+[0m
+[0;33m0x400d7e1f: mqtt_publish at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:116
+[0m
+[0;33m0x400d87d1: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:146
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dad2e: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:443 (discriminator 1)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400dad2b: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:441
+[0m
+[0;33m0x400d9bff: make_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1975
+[0m
+[0;33m0x400d9c3e: mqtt_client_enqueue_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1990
+[0m
+[0;33m0x400da904: esp_mqtt_client_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:2057
+[0m
+[0;33m0x400d7e1f: mqtt_publish at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:116
+[0m
+[0;33m0x400d87d1: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:146
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dad2e: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:443 (discriminator 1)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400dad2b: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:441
+[0m
+[0;33m0x400d9bff: make_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1975
+[0m
+[0;33m0x400d9c3e: mqtt_client_enqueue_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1990
+[0m
+[0;33m0x400da904: esp_mqtt_client_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:2057
+[0m
+[0;33m0x400d7e1f: mqtt_publish at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:116
+[0m
+[0;33m0x400d87d1: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:146
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400dad2e: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:443 (discriminator 1)
+[0m
+[0;33m0x400014fd: strlen in ROM
+[0m
+[0;33m0x4000150d: strlen in ROM
+[0m
+[0;33m0x400dad2b: mqtt_msg_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c:441
+[0m
+[0;33m0x400d9bff: make_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1975
+[0m
+[0;33m0x400d9c3e: mqtt_client_enqueue_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1990
+[0m
+[0;33m0x400da904: esp_mqtt_client_publish at /Users/marcin/esp/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:2057
+[0m
+[0;33m0x400d7e1f: mqtt_publish at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:116
+[0m
+[0;33m0x400d87d1: mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:146
+[0m
+[0;33m0x4008bbc9: vPortTaskWrapper at /Users/marcin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
