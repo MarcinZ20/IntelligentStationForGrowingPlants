@@ -66,15 +66,15 @@ const CurrentReadings = ({ route, navigation }: CurrentReadingsProps) => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Temperature</Text>
-          <Text style={styles.textBigNumber}>{readings.temperature.toFixed(1)}</Text>
+          <Text style={styles.textBigNumber}>{readings.temperature.toFixed(1)} °C</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Humidity</Text>
-          <Text style={styles.textBigNumber}>{readings.humidity.toFixed(1)}</Text>
+          <Text style={styles.textBigNumber}>{readings.humidity.toFixed(1)} %</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.panel}>
           <Text style={styles.textSmall}>Light Intensity</Text>
-          <Text style={styles.textBigNumber}>{readings.light_intensity.toFixed(1)}</Text>
+          <Text style={styles.textBigNumber}>{readings.light_intensity.toFixed(1)} lx</Text>
         </TouchableOpacity>
       </View>
       <TouchableOpacity style={styles.history} onPress={goToHistoricalData}>
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     color: Config.COLOR_TEXT
   },
   textBigNumber: {
-    fontSize: 50,
+    fontSize: 35,
     color: Config.COLOR_TEXT
   },
   history: {
