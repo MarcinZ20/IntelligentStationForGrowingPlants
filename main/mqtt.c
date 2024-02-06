@@ -48,6 +48,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         case MQTT_EVENT_DISCONNECTED:
             ESP_LOGI(MQTT_TAG, "EVENT_DISCONNECTED");
 		    xEventGroupSetBits(s_mqtt_event_group, MQTT_DISCONNECTED_BIT);
+            client_stopped = true;
             break;
         case MQTT_EVENT_PUBLISHED:
             ESP_LOGI(MQTT_TAG, "EVENT_PUBLISHED, msg_id: %d", event->msg_id);
@@ -150,14 +151,16 @@ void mqtt_publish_task(void *pvParameters) {
 		char *message = convert_measurement_to_json_string(measurement);
 
 		if (message) {
+            xEventGroupSetBits(s_mqtt_event_group, MQTT_PUBLISHED_BIT);
 			mqtt_publish(topic, message);
 			free(message);  // Free the memory allocated by convert_measurement_to_json_string
+            // vTaskDelete(NULL);  
+            // free(mac);
 		}
 
 		vTaskDelayUntil(&xLastWakeTime, pdMS_TO_TICKS(1000 * time_gap));  // 1000 ms = 1 second
 	}
 
-	free(mac);
 }
 
 /*Description:

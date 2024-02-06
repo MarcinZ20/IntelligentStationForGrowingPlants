@@ -43,25 +43,27 @@ float convert_adc_to_light_intensity(uint32_t adc_value) {
 * @Output: [float] Light intensity
 */
 float read_light_intensity() {
-    uint32_t adc_value = read_adc();
-    return convert_adc_to_light_intensity(adc_value);
+    float measurement = pt550_measure_with_mean();
+	return measurement;
 }
 
 /*Description:
-* Task to read the ADC value and print it
+* Function to measure the light intensity with mean
 *
-* @Input: [void*]
+* @Input: [void]
 *
-* @Output: [void] Prints ADC value
+* @Output: [void] Returns the mean of 5 light intensity measurements
 */
-void adc_task(void *pvParameter) {
-	for (;;) {
+float pt550_measure_with_mean(void) {
+	float light_measurements_sum = 0;
+
+	for (size_t i = 0; i < 5; i++) {
 		uint32_t adc_value = read_adc();
-		float voltage = convert_adc_to_voltage(adc_value);
 		float light_intensity = convert_adc_to_light_intensity(adc_value);
-		printf("ADC Value: %ld\n", adc_value);
-		printf("Voltage: %f\n", voltage);
-		printf("Light Intensity: %f\n", light_intensity);
+		light_measurements_sum += light_intensity;
 		vTaskDelay(1000 / portTICK_PERIOD_MS);
 	}
+
+	float light_intensity_mean = light_measurements_sum / 5;
+	return light_intensity_mean;
 }

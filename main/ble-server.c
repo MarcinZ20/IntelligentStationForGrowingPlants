@@ -17,6 +17,10 @@
 
 #define GATTS_TAG "GATTS_SERVER"
 
+#define BLE_CONNECTED_BIT BIT0
+
+static EventGroupHandle_t s_ble_event_group;
+
 //Declare the static function
 static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
 static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_t gatts_if, esp_ble_gatts_cb_param_t *param);
@@ -31,7 +35,7 @@ static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 #define GATTS_DESCR_UUID_TEST_B     0x2222
 #define GATTS_NUM_HANDLE_TEST_B     4
 
-#define DEVICE_NAME            "ISfGP"
+#define DEVICE_NAME            "MarCuz-ESP32"
 #define TEST_MANUFACTURER_DATA_LEN  17
 
 #define GATTS_DEMO_CHAR_VAL_LEN_MAX 0x40
@@ -41,6 +45,10 @@ static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
 static uint8_t char1_str[] = {0x11,0x22,0x33};
 static esp_gatt_char_prop_t a_property = 0;
 static esp_gatt_char_prop_t b_property = 0;
+
+static char user_ssid[50];
+static char user_password[50];
+static char user_token[200];
 
 static esp_attr_value_t gatts_demo_char1_val =
         {
@@ -157,6 +165,27 @@ typedef struct {
 
 static prepare_type_env_t a_prepare_write_env;
 static prepare_type_env_t b_prepare_write_env;
+
+void extract_data(char* data, char* ssid, char* passwd, char* token) {
+
+    // Use strtok to split the data using ';'
+    char *tokenPtr = strtok(data, ";");
+
+    // Copy the values to respective variables
+    if (tokenPtr != NULL) {
+        strcpy(ssid, tokenPtr);
+        tokenPtr = strtok(NULL, ";");
+    }
+
+    if (tokenPtr != NULL) {
+        strcpy(passwd, tokenPtr);
+        tokenPtr = strtok(NULL, ";");
+    }
+
+    if (tokenPtr != NULL) {
+        strcpy(token, tokenPtr);
+    }
+}
 
 void example_write_event_env(esp_gatt_if_t gatts_if, prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param);
 void example_exec_write_event_env(prepare_type_env_t *prepare_write_env, esp_ble_gatts_cb_param_t *param);
@@ -358,7 +387,11 @@ static void gatts_profile_a_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
                 esp_log_buffer_hex(GATTS_TAG, param->write.value, param->write.len);
                 char *data = uint8ToString(param->write.value, param->write.len);
                 ESP_LOGI(GATTS_TAG, "Message: %s", data);
-
+                extract_data(data, user_ssid, user_password, user_token);
+                printf("SSID: %s\n", user_ssid);
+                printf("Password: %s\n", user_password);
+                printf("Token: %s\n", user_token);
+                xEventGroupSetBits(s_ble_event_group, BLE_CONNECTED_BIT);
                 if (gl_profile_tab_server[PROFILE_A_APP_ID].descr_handle == param->write.handle && param->write.len == 2){
                     uint16_t descr_value = param->write.value[1]<<8 | param->write.value[0];
                     if (descr_value == 0x0001){
@@ -531,7 +564,7 @@ static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
             if (!param->write.is_prep){
                 ESP_LOGI(GATTS_TAG, "GATT_WRITE_EVT_B, value len %d, value :", param->write.len);
 //                esp_log_buffer_hex(GATTS_TAG, param->write.value, param->write.len);
-                char *data = uint8ToString(param->write.value, param->write.len);
+                char *data = uint8ToString(param->write.value, (socklen_t)500);
                 ESP_LOGI(GATTS_TAG, "Message: %s", data);
                 if (gl_profile_tab_server[PROFILE_B_APP_ID].descr_handle == param->write.handle && param->write.len == 2){
                     uint16_t descr_value= param->write.value[1]<<8 | param->write.value[0];
@@ -586,6 +619,7 @@ static void gatts_profile_b_event_handler(esp_gatts_cb_event_t event, esp_gatt_i
             gl_profile_tab_server[PROFILE_B_APP_ID].service_handle = param->create.service_handle;
             gl_profile_tab_server[PROFILE_B_APP_ID].char_uuid.len = ESP_UUID_LEN_16;
             gl_profile_tab_server[PROFILE_B_APP_ID].char_uuid.uuid.uuid16 = GATTS_CHAR_UUID_TEST_B;
+            esp_ble_gatt_set_local_mtu(500);
 
             esp_ble_gatts_start_service(gl_profile_tab_server[PROFILE_B_APP_ID].service_handle);
             b_property = ESP_GATT_CHAR_PROP_BIT_READ | ESP_GATT_CHAR_PROP_BIT_WRITE | ESP_GATT_CHAR_PROP_BIT_NOTIFY;
@@ -680,6 +714,8 @@ void ble_server_run(void)
 {
     esp_err_t ret;
 
+    s_ble_event_group = xEventGroupCreate();
+
     // Initialize NVS.
     ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
@@ -749,3 +785,4 @@ void ble_server_run(void)
 
     return;
 }
+

@@ -25,16 +25,16 @@
 #define URL                 "http://example.com/"
 #define ESP_MAXIMUM_RETRY   10000
 #define PORT                80
-#define ESP_WIFI_PASS "supertajnehaslo"
-#define ESP_WIFI_SSID "supertajnasiec"
+
 #define MAX_BUFFER_SIZE      1000
 
 #define WIFI_CONNECTED_BIT      BIT0
 #define WIFI_FAIL_BIT           BIT1
 #define WIFI_DISCONNECTED_BIT   BIT2
 
+static bool wifi_connected = false;
+
 static EventGroupHandle_t s_wifi_event_group;
-// static QueueHandle_t wifi_status_queue;
 
 static const char *TAG = "[WI-FI]";
 static int s_retry_num = 0;
@@ -69,7 +69,8 @@ const char *path = "/";
 #define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WAPI_PSK
 #endif
 
-static void config_wifi(void);
+static void config_wifi();
+static void set_wifi_config(const char *ssid, const char *password);
 void http_get(const char *host, const char *path);
 static void event_handler(void* arg, esp_event_base_t event_base, int32_t event_id, void* event_data);
 #endif //INTELLIGENTSTATIONFORGROWINGPLANTS_WIFI_H
