@@ -14,13 +14,15 @@ static struct measurement get_measurement () {
 
 	uint8_t am2320_data[8];
 
-	if (read_am2320_sensor(am2320_data, sizeof(am2320_data)) == ESP_OK) {
-		measurement.humidity = ((am2320_data[2] << 8) | am2320_data[3]) * 0.1;
-		measurement.temperature = ((am2320_data[0] << 8) | am2320_data[1]) * 0.1;
-	} else {
-		printf("Błąd odczytu danych z czujnika AM2320\n");
-	}
+	// if (read_am2320_sensor(am2320_data, sizeof(am2320_data)) == ESP_OK) {
+	// 	measurement.humidity = ((am2320_data[2] << 8) | am2320_data[3]) * 0.1;
+	// 	measurement.temperature = ((am2320_data[0] << 8) | am2320_data[1]) * 0.1;
+	// } else {
+	// 	printf("Błąd odczytu danych z czujnika AM2320\n");
+	// }
 
+	measurement.temperature = 20;
+	measurement.humidity = 20;
 	measurement.light = read_light_intensity();
 
 	current_measurement = measurement;

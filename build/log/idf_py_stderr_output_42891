@@ -1,0 +1,25 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d525b: syscall_not_implemented_aborts at /Users/marcin/esp/esp-idf/components/newlib/syscalls.c:27
+[0m
+[0;33m0x40081822: panic_abort at /Users/marcin/esp/esp-idf/components/esp_system/panic.c:472
+[0m
+[0;33m0x40092051: esp_system_abort at /Users/marcin/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x400987e6: abort at /Users/marcin/esp/esp-idf/components/newlib/abort.c:38
+[0m
+[0;33m0x400d525b: syscall_not_implemented_aborts at /Users/marcin/esp/esp-idf/components/newlib/syscalls.c:27
+[0m
+[0;33m0x40197641: exit at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdlib/exit.c:65
+[0m
+[0;33m0x400d8015: http_put at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:87
+[0m
+[0;33m0x400d9193: app_main at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:72
+[0m
+[0;33m0x401b2f23: main_task at /Users/marcin/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

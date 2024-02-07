@@ -1,0 +1,419 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  3 2024 12:23:44[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29c10h (171024) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00039c38 vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003f0b4 vaddr=40080000 size=00f64h (  3940) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9da08h (645640) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=000dda30 vaddr=40080f64 size=17a38h ( 96824) load[0m
+[0;32mI (323) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (323) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) cpu_start: Multicore app[0m
+[0;32mI (343) cpu_start: Pro cpu start user code[0m
+[0;32mI (343) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (344) cpu_start: Application information:[0m
+[0;32mI (347) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (354) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (359) cpu_start: Compile time:     Feb  3 2024 12:23:45[0m
+[0;32mI (365) cpu_start: ELF file SHA256:  2fbfe411c...[0m
+[0;32mI (370) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (382) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (386) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (391) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (399) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 3FFC7750 len 000188B0 (98 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 4009899C len 00007664 (29 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (439) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (449) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (458) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (463) main_task: Started on CPU0[0m
+[0;32mI (473) main_task: Calling app_main()[0m
+[0;32mI (473) [WI-FI]: [APP] Startup..[0m
+[0;32mI (473) [WI-FI]: [APP] Free memory: 269692 bytes[0m
+[0;32mI (473) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (513) [I2C]: Module configuration successful![0m
+[0;32mI (513) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) [SWITCH]: Configuration successful![0m
+[0;32mI (543) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (543) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) [LED]: LEDs configured![0m
+I (573) wifi:wifi driver task: 3ffb8aec, prio:23, stack:6656, core=0
+I (583) wifi:wifi firmware version: a194738
+I (593) wifi:wifi certification version: v7.0
+I (593) wifi:config NVS flash: enabled
+I (593) wifi:config nano formating: disabled
+I (593) wifi:Init data frame dynamic rx buffer num: 32
+I (593) wifi:Init static rx mgmt buffer num: 5
+I (603) wifi:Init management short buffer num: 32
+I (603) wifi:Init dynamic tx buffer num: 32
+I (613) wifi:Init static rx buffer size: 1600
+I (613) wifi:Init static rx buffer num: 10
+I (613) wifi:Init dynamic rx buffer num: 32
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (623) wifi_init: tcpip mbox: 32[0m
+[0;32mI (633) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp tx win: 5760[0m
+[0;32mI (643) wifi_init: tcp rx win: 5760[0m
+[0;32mI (643) wifi_init: tcp mss: 1440[0m
+[0;32mI (653) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (653) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+Gpio pin: 33
+[0;32mI (6023) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (6103) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6103) wifi:enable tsf
+[0;32mI (6103) [WI-FI]: Wifi started![0m
+I (6123) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (6123) wifi:state: init -> auth (b0)
+I (7123) wifi:state: auth -> init (200)
+I (7123) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (7123) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (9543) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+I (9613) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (9613) wifi:state: init -> auth (b0)
+I (9623) wifi:state: auth -> init (1c0)
+I (9633) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (9633) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (12043) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (14463) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (16873) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (19293) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (21703) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (24123) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (26533) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (28953) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (31363) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (33783) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (36193) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (38613) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+I (38703) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (38703) wifi:state: init -> auth (b0)
+I (38723) wifi:state: auth -> assoc (0)
+I (38733) wifi:state: assoc -> run (10)
+I (38763) wifi:connected with supertajnasiec, aid = 1, channel 8, BW20, bssid = 9a:14:83:48:d8:cd
+I (38763) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (38763) wifi:pm start, type: 1
+
+I (38773) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (39003) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (39003) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (39773) esp_netif_handlers: sta ip: 192.168.200.8, mask: 255.255.255.0, gw: 192.168.200.113[0m
+[0;32mI (39773) [WI-FI]: Connected to ip: 192.168.200.8[0m
+Wi-Fi connected
+[0;32mI (42963) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (42993) wifi:<ba-add>idx:0 (ifx:0, 9a:14:83:48:d8:cd), tid:0, ssn:3, winSize:64
+[0;32mI (43093) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+Data: 48 0 5 0 0 0 0 0
+[0;31mE (43093) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (43103) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (48103) [MQTT]: Sent publish successful, msg_id: 1[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (48103) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (48113) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (48233) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (53113) [MQTT]: Sent publish successful, msg_id: 2[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (53113) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (53113) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (53183) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;32mI (58123) [MQTT]: Sent publish successful, msg_id: 3[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (58123) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (58123) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (58163) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;32mI (63133) [MQTT]: Sent publish successful, msg_id: 4[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (63133) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (63133) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (63383) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;32mI (68143) [MQTT]: Sent publish successful, msg_id: 5[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (68143) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (68143) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (68303) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;32mI (73153) [MQTT]: Sent publish successful, msg_id: 6[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (73153) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (73153) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (73423) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;32mI (78163) [MQTT]: Sent publish successful, msg_id: 7[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (78163) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (78163) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (78333) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;32mI (83173) [MQTT]: Sent publish successful, msg_id: 8[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (83173) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (83173) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (83453) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;32mI (88183) [MQTT]: Sent publish successful, msg_id: 9[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (88183) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (88183) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (88363) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+[0;32mI (93193) [MQTT]: Sent publish successful, msg_id: 10[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (93193) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (93193) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (93283) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+[0;32mI (98203) [MQTT]: Sent publish successful, msg_id: 11[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (98203) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (98203) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (98713) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+[0;32mI (103213) [MQTT]: Sent publish successful, msg_id: 12[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (103213) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (103223) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (103423) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+[0;32mI (108223) [MQTT]: Sent publish successful, msg_id: 13[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (108223) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (108233) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (108343) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+[0;32mI (113233) [MQTT]: Sent publish successful, msg_id: 14[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (113233) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (113243) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (113453) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+[0;32mI (118243) [MQTT]: Sent publish successful, msg_id: 15[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (118243) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (118253) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (118373) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+[0;32mI (123253) [MQTT]: Sent publish successful, msg_id: 16[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (123253) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (123263) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (123493) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+[0;32mI (128263) [MQTT]: Sent publish successful, msg_id: 17[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (128263) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (128273) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (128403) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+[0;32mI (133273) [MQTT]: Sent publish successful, msg_id: 18[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (133273) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (133283) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (133523) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+[0;32mI (138283) [MQTT]: Sent publish successful, msg_id: 19[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (138283) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (138293) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (138443) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+[0;32mI (143293) [MQTT]: Sent publish successful, msg_id: 20[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (143293) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (143303) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (143763) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+[0;32mI (148303) [MQTT]: Sent publish successful, msg_id: 21[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (148303) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (148313) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (148473) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+[0;32mI (153313) [MQTT]: Sent publish successful, msg_id: 22[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (153313) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (153323) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (153393) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+[0;32mI (158323) [MQTT]: Sent publish successful, msg_id: 23[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (158323) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (158333) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (158513) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+[0;32mI (163333) [MQTT]: Sent publish successful, msg_id: 24[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (163333) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (163343) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (163433) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+[0;32mI (168343) [MQTT]: Sent publish successful, msg_id: 25[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (168343) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (168353) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (168553) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+[0;32mI (173353) [MQTT]: Sent publish successful, msg_id: 26[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (173353) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (173363) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (173463) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+[0;32mI (178363) [MQTT]: Sent publish successful, msg_id: 27[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (178363) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (178373) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (178583) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+[0;32mI (183373) [MQTT]: Sent publish successful, msg_id: 28[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (183373) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (183383) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (183503) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+[0;32mI (188383) [MQTT]: Sent publish successful, msg_id: 29[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (188383) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (188393) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (188623) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+[0;32mI (193393) [MQTT]: Sent publish successful, msg_id: 30[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (193393) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (193403) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (193533) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+[0;32mI (198403) [MQTT]: Sent publish successful, msg_id: 31[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (198403) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (198413) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (198653) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+[0;32mI (203413) [MQTT]: Sent publish successful, msg_id: 32[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (203413) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (203423) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (203573) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+[0;32mI (208423) [MQTT]: Sent publish successful, msg_id: 33[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (208423) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (208433) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (208683) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+[0;32mI (213433) [MQTT]: Sent publish successful, msg_id: 34[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (213433) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (213443) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (213603) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+[0;32mI (218443) [MQTT]: Sent publish successful, msg_id: 35[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (218443) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (218453) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (218493) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+[0;32mI (223453) [MQTT]: Sent publish successful, msg_id: 36[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (223453) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (223463) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (223643) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+[0;32mI (228463) [MQTT]: Sent publish successful, msg_id: 37[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (228463) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (228473) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (228763) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+[0;32mI (233473) [MQTT]: Sent publish successful, msg_id: 38[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (233473) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (233483) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (233673) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+[0;32mI (238483) [MQTT]: Sent publish successful, msg_id: 39[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (238483) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (238493) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (238523) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+[0;32mI (243493) [MQTT]: Sent publish successful, msg_id: 40[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (243493) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (243503) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (243713) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+[0;32mI (248503) [MQTT]: Sent publish successful, msg_id: 41[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (248503) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (248513) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (248593) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+[0;32mI (253513) [MQTT]: Sent publish successful, msg_id: 42[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (253513) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (253523) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (253563) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+[0;32mI (258523) [MQTT]: Sent publish successful, msg_id: 43[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (258523) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (258533) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (258563) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+[0;32mI (263533) [MQTT]: Sent publish successful, msg_id: 44[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (263533) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (263543) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (263673) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+[0;32mI (268543) [MQTT]: Sent publish successful, msg_id: 45[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (268543) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (268553) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (268793) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+[0;32mI (273553) [MQTT]: Sent publish successful, msg_id: 46[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (273553) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (273563) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (273713) [MQTT]: EVENT_PUBLISHED, msg_id: 46[0m
+[0;32mI (278563) [MQTT]: Sent publish successful, msg_id: 47[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (278563) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (278573) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (278833) [MQTT]: EVENT_PUBLISHED, msg_id: 47[0m
+[0;32mI (283573) [MQTT]: Sent publish successful, msg_id: 48[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (283573) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (283583) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (283753) [MQTT]: EVENT_PUBLISHED, msg_id: 48[0m
+[0;32mI (288583) [MQTT]: Sent publish successful, msg_id: 49[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (288583) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (288593) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (288863) [MQTT]: EVENT_PUBLISHED, msg_id: 49[0m
+[0;32mI (293593) [MQTT]: Sent publish successful, msg_id: 50[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (293593) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (293603) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (293783) [MQTT]: EVENT_PUBLISHED, msg_id: 50[0m
+[0;32mI (298603) [MQTT]: Sent publish successful, msg_id: 51[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (298603) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (298613) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (298643) [MQTT]: EVENT_PUBLISHED, msg_id: 51[0m
+[0;32mI (303613) [MQTT]: Sent publish successful, msg_id: 52[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (303613) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (303623) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (303813) [MQTT]: EVENT_PUBLISHED, msg_id: 52[0m
+[0;32mI (308623) [MQTT]: Sent publish successful, msg_id: 53[0m
+Data: 5 0 0 0 0 0 0 0
+[0;31mE (308623) i2c: i2c_master_cmd_begin(1502): i2c driver not installed[0m
+[0;31mE (308633) AM2320: Failed to read data: ESP_ERR_INVALID_STATE[0m
+[0;32mI (308673) [MQTT]: EVENT_PUBLISHED, msg_id: 53[0m

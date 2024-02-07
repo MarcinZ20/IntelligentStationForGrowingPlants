@@ -1,0 +1,153 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Feb  7 2024 00:17:03[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d290h (250512) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d2b8 vaddr=3ffbdb60 size=02d60h ( 11616) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e4258h (934488) map[0m
+[0;32mI (353) esp_image: segment 3: paddr=00134280 vaddr=3ffc08c0 size=02b8ch ( 11148) load[0m
+[0;32mI (356) esp_image: segment 4: paddr=00136e14 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (426) cpu_start: Pro cpu start user code[0m
+[0;32mI (426) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (426) cpu_start: Application information:[0m
+[0;32mI (429) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (436) cpu_start: App version:      355b7ff-dirty[0m
+[0;32mI (442) cpu_start: Compile time:     Feb  7 2024 00:17:10[0m
+[0;32mI (448) cpu_start: ELF file SHA256:  696a570e0...[0m
+[0;32mI (453) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (460) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (464) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (469) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (474) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCBCB0 len 00014350 (80 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (518) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: winbond[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (544) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (553) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+[0;32mI (568) [WI-FI]: [APP] Startup..[0m
+[0;32mI (568) [WI-FI]: [APP] Free memory: 212928 bytes[0m
+[0;32mI (568) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (608) [I2C]: Module configuration successful![0m
+[0;32mI (608) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (618) [SWITCH]: Configuration successful![0m
+[0;32mI (638) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (638) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (648) [LED]: LEDs configured![0m
+[0;32mI (648) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (658) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (668) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (1068) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+[0;33mW (1068) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (1078) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (1078) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+I (1098) wifi:wifi driver task: 3ffd6e58, prio:23, stack:6656, core=0
+[0;31mE (1098) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (1098) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (1108) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (1108) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (1118) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (1128) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (1128) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (1128) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (1148) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (1148) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (1158) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (1168) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+I (1188) wifi:wifi firmware version: a194738
+I (1188) wifi:wifi certification version: v7.0
+I (1188) wifi:config NVS flash: enabled
+I (1188) wifi:config nano formating: disabled
+I (1198) wifi:Init data frame dynamic rx buffer num: 32
+I (1198) wifi:Init static rx mgmt buffer num: 5
+I (1208) wifi:Init management short buffer num: 32
+I (1208) wifi:Init dynamic tx buffer num: 32
+I (1218) wifi:Init static rx buffer size: 1600
+I (1218) wifi:Init static rx buffer num: 10
+I (1218) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1228) wifi_init: rx ba win: 6[0m
+[0;32mI (1228) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1238) wifi_init: udp mbox: 6[0m
+[0;32mI (1238) wifi_init: tcp mbox: 6[0m
+[0;32mI (1238) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1248) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1248) wifi_init: tcp mss: 1440[0m
+[0;32mI (1258) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1258) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+Gpio pin: 33
+Check pressed task started
+[0;31mE (6638) [SWITCH]: Switch reset released[0m
+SSID_len: wifiabc
+Password: abcdef12345
+I (6648) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6648) wifi:enable tsf
+SSID: wifiabc
+Password: abcdef12345
+[0;31mE (6648) [APP]: LOOPING[0m
+Wi-Fi down ...
+[0;32mI (6648) [WI-FI]: Wifi started![0m
+[0;31mE (6758) [APP]: LOOPING[0m
+[0;32mI (10038) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (11638) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (11728) [APP]: LOOPING[0m
+[0;32mI (13428) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (16638) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (16728) [APP]: LOOPING[0m
+[0;32mI (16808) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (20188) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (21638) [SWITCH]: Switch reset pressed[0m
+[0;32mI (21638) [APP]: RESETING DEVICE[0m
+[0;32mI (23578) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (26638) [SWITCH]: Switch reset released[0m
+[0;32mI (26958) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (30338) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (31638) [SWITCH]: Switch reset released[0m
+[0;32mI (33728) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (36638) [SWITCH]: Switch reset released[0m
+[0;32m

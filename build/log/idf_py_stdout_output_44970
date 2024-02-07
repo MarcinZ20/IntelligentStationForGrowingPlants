@@ -1,0 +1,729 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  6 2024 14:09:42[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d5a8h (251304) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d5d0 vaddr=3ffbdb60 size=02a48h ( 10824) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e4b28h (936744) map[0m
+[0;32mI (354) esp_image: segment 3: paddr=00134b50 vaddr=3ffc05a8 size=02ea4h ( 11940) load[0m
+[0;32mI (357) esp_image: segment 4: paddr=001379fc vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (418) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (427) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (427) cpu_start: Application information:[0m
+[0;32mI (430) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (437) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (443) cpu_start: Compile time:     Feb  6 2024 16:55:54[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  872e2b1e9...[0m
+[0;32mI (454) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (460) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (465) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (470) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFCBCE8 len 00014318 (80 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: winbond[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (534) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (544) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (553) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (569) [WI-FI]: [APP] Startup..[0m
+[0;32mI (569) [WI-FI]: [APP] Free memory: 212872 bytes[0m
+[0;32mI (569) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (609) [I2C]: Module configuration successful![0m
+[0;32mI (609) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (619) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (629) [SWITCH]: Configuration successful![0m
+[0;32mI (24629) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24629) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24629) [LED]: LEDs configured![0m
+[0;32mI (24639) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (24649) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (24649) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (25049) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+Booting ...
+[0;33mW (25059) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (25059) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (25059) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+[0;31mE (25079) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (25079) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (25089) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (25099) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (25099) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (25109) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (25109) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (25119) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (25129) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (25129) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (25139) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (25149) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+Hello there!
+Gpio pin: 33
+Check pressed task started
+SSID: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+I (34079) wifi:wifi driver task: 3ffd8a84, prio:23, stack:6656, core=0
+I (34089) wifi:wifi firmware version: a194738
+I (34089) wifi:wifi certification version: v7.0
+I (34089) wifi:config NVS flash: enabled
+I (34089) wifi:config nano formating: disabled
+I (34099) wifi:Init data frame dynamic rx buffer num: 32
+I (34099) wifi:Init static rx mgmt buffer num: 5
+I (34109) wifi:Init management short buffer num: 32
+I (34109) wifi:Init dynamic tx buffer num: 32
+I (34119) wifi:Init static rx buffer size: 1600
+I (34119) wifi:Init static rx buffer num: 10
+I (34119) wifi:Init dynamic rx buffer num: 32
+[0;32mI (34129) wifi_init: rx ba win: 6[0m
+[0;32mI (34129) wifi_init: tcpip mbox: 32[0m
+[0;32mI (34139) wifi_init: udp mbox: 6[0m
+[0;32mI (34139) wifi_init: tcp mbox: 6[0m
+[0;32mI (34139) wifi_init: tcp tx win: 5760[0m
+[0;32mI (34149) wifi_init: tcp rx win: 5760[0m
+[0;32mI (34149) wifi_init: tcp mss: 1440[0m
+[0;32mI (34159) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (34159) wifi_init: WiFi RX IRAM OP enabled[0m
+SSID_len: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+I (34179) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (34179) wifi:enable tsf
+[0;32mI (34179) [WI-FI]: Wifi started![0m
+I (34199) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (34199) wifi:state: init -> auth (b0)
+I (34199) wifi:state: auth -> assoc (0)
+I (34209) wifi:state: assoc -> run (10)
+I (34229) wifi:connected with T-Mobile_Swiatlowod_2.4GHz_3790, aid = 6, channel 8, BW20, bssid = 34:5d:9e:5f:37:94
+I (34229) wifi:security: WPA2-PSK, phy: bgn, rssi: -80
+I (34239) wifi:pm start, type: 1
+
+I (34239) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (34399) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (34409) wifi:<ba-add>idx:0 (ifx:0, 34:5d:9e:5f:37:94), tid:0, ssn:0, winSize:64
+[0;32mI (35749) esp_netif_handlers: sta ip: 192.168.1.248, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (35749) [WI-FI]: Connected to ip: 192.168.1.248[0m
+Wi-Fi connected
+[0;32mI (40749) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (40949) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (40949) i2c: i2c driver install error[0m
+[0;31mE (40949) i2c: i2c driver install error[0m
+[0;31mE (40959) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 0.0°C
+Humidity: 0.0%
+[0;31mE (40959) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (45969) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;31mE (45969) i2c: i2c driver install error[0m
+[0;31mE (45969) i2c: i2c driver install error[0m
+[0;31mE (45979) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (45979) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (46069) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (50989) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;31mE (50989) i2c: i2c driver install error[0m
+[0;31mE (50989) i2c: i2c driver install error[0m
+[0;31mE (50989) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (50999) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (51089) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;32mI (56009) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;31mE (56009) i2c: i2c driver install error[0m
+[0;31mE (56009) i2c: i2c driver install error[0m
+[0;31mE (56009) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (56019) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (56049) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;32mI (61029) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;31mE (61029) i2c: i2c driver install error[0m
+[0;31mE (61029) i2c: i2c driver install error[0m
+[0;31mE (61039) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (61039) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (61129) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;32mI (66049) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;31mE (66049) i2c: i2c driver install error[0m
+[0;31mE (66049) i2c: i2c driver install error[0m
+[0;31mE (66049) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (66059) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (66149) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;32mI (71069) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;31mE (71069) i2c: i2c driver install error[0m
+[0;31mE (71069) i2c: i2c driver install error[0m
+[0;31mE (71069) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (71079) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (71159) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;32mI (76089) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;31mE (76089) i2c: i2c driver install error[0m
+[0;31mE (76089) i2c: i2c driver install error[0m
+[0;31mE (76089) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (76099) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (76179) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;32mI (81109) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;31mE (81109) i2c: i2c driver install error[0m
+[0;31mE (81109) i2c: i2c driver install error[0m
+[0;31mE (81109) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (81119) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (81189) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;32mI (86129) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;31mE (86129) i2c: i2c driver install error[0m
+[0;31mE (86129) i2c: i2c driver install error[0m
+[0;31mE (86129) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (86139) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (86209) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+[0;32mI (91149) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;31mE (91149) i2c: i2c driver install error[0m
+[0;31mE (91149) i2c: i2c driver install error[0m
+[0;31mE (91149) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (91159) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (91229) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+[0;32mI (96169) [MQTT]: Sent publish successful, msg_id: 11[0m
+[0;31mE (96169) i2c: i2c driver install error[0m
+[0;31mE (96169) i2c: i2c driver install error[0m
+[0;31mE (96169) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (96179) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (96349) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+[0;32mI (101189) [MQTT]: Sent publish successful, msg_id: 12[0m
+[0;31mE (101189) i2c: i2c driver install error[0m
+[0;31mE (101189) i2c: i2c driver install error[0m
+[0;31mE (101189) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (101199) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (101259) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+[0;32mI (106209) [MQTT]: Sent publish successful, msg_id: 13[0m
+[0;31mE (106209) i2c: i2c driver install error[0m
+[0;31mE (106209) i2c: i2c driver install error[0m
+[0;31mE (106209) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (106219) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (106289) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+[0;32mI (111229) [MQTT]: Sent publish successful, msg_id: 14[0m
+[0;31mE (111229) i2c: i2c driver install error[0m
+[0;31mE (111229) i2c: i2c driver install error[0m
+[0;31mE (111239) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (111239) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (111299) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+[0;32mI (116249) [MQTT]: Sent publish successful, msg_id: 15[0m
+[0;31mE (116249) i2c: i2c driver install error[0m
+[0;31mE (116249) i2c: i2c driver install error[0m
+[0;31mE (116249) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (116259) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (116329) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+[0;32mI (121269) [MQTT]: Sent publish successful, msg_id: 16[0m
+[0;31mE (121269) i2c: i2c driver install error[0m
+[0;31mE (121269) i2c: i2c driver install error[0m
+[0;31mE (121269) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (121279) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (121379) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+[0;32mI (126289) [MQTT]: Sent publish successful, msg_id: 17[0m
+[0;31mE (126289) i2c: i2c driver install error[0m
+[0;31mE (126289) i2c: i2c driver install error[0m
+[0;31mE (126289) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (126299) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (126399) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+[0;32mI (131309) [MQTT]: Sent publish successful, msg_id: 18[0m
+[0;31mE (131309) i2c: i2c driver install error[0m
+[0;31mE (131309) i2c: i2c driver install error[0m
+[0;31mE (131309) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (131319) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (131419) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+[0;32mI (136329) [MQTT]: Sent publish successful, msg_id: 19[0m
+[0;31mE (136329) i2c: i2c driver install error[0m
+[0;31mE (136329) i2c: i2c driver install error[0m
+[0;31mE (136339) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (136339) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (136489) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+[0;32mI (141349) [MQTT]: Sent publish successful, msg_id: 20[0m
+[0;31mE (141349) i2c: i2c driver install error[0m
+[0;31mE (141349) i2c: i2c driver install error[0m
+[0;31mE (141359) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (141359) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (141509) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+[0;32mI (146369) [MQTT]: Sent publish successful, msg_id: 21[0m
+[0;31mE (146369) i2c: i2c driver install error[0m
+[0;31mE (146369) i2c: i2c driver install error[0m
+[0;31mE (146379) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (146379) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (146519) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+[0;32mI (151389) [MQTT]: Sent publish successful, msg_id: 22[0m
+[0;31mE (151389) i2c: i2c driver install error[0m
+[0;31mE (151389) i2c: i2c driver install error[0m
+[0;31mE (151389) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (151399) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (151549) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+[0;32mI (156409) [MQTT]: Sent publish successful, msg_id: 23[0m
+[0;31mE (156409) i2c: i2c driver install error[0m
+[0;31mE (156409) i2c: i2c driver install error[0m
+[0;31mE (156409) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (156419) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (156569) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+[0;32mI (161429) [MQTT]: Sent publish successful, msg_id: 24[0m
+[0;31mE (161429) i2c: i2c driver install error[0m
+[0;31mE (161429) i2c: i2c driver install error[0m
+[0;31mE (161429) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (161439) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (161579) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+[0;32mI (166449) [MQTT]: Sent publish successful, msg_id: 25[0m
+[0;31mE (166449) i2c: i2c driver install error[0m
+[0;31mE (166449) i2c: i2c driver install error[0m
+[0;31mE (166449) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (166459) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (166619) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+[0;32mI (171469) [MQTT]: Sent publish successful, msg_id: 26[0m
+[0;31mE (171469) i2c: i2c driver install error[0m
+[0;31mE (171469) i2c: i2c driver install error[0m
+[0;31mE (171469) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (171479) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (171619) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+[0;32mI (176489) [MQTT]: Sent publish successful, msg_id: 27[0m
+[0;31mE (176489) i2c: i2c driver install error[0m
+[0;31mE (176489) i2c: i2c driver install error[0m
+[0;31mE (176489) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (176499) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (176569) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+[0;32mI (181509) [MQTT]: Sent publish successful, msg_id: 28[0m
+[0;31mE (181509) i2c: i2c driver install error[0m
+[0;31mE (181509) i2c: i2c driver install error[0m
+[0;31mE (181509) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (181519) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (181589) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+[0;32mI (186529) [MQTT]: Sent publish successful, msg_id: 29[0m
+[0;31mE (186529) i2c: i2c driver install error[0m
+[0;31mE (186529) i2c: i2c driver install error[0m
+[0;31mE (186529) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (186539) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (186669) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+[0;32mI (191549) [MQTT]: Sent publish successful, msg_id: 30[0m
+[0;31mE (191549) i2c: i2c driver install error[0m
+[0;31mE (191549) i2c: i2c driver install error[0m
+[0;31mE (191549) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (191559) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (191689) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+[0;32mI (196569) [MQTT]: Sent publish successful, msg_id: 31[0m
+[0;31mE (196569) i2c: i2c driver install error[0m
+[0;31mE (196569) i2c: i2c driver install error[0m
+[0;31mE (196569) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (196579) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (196639) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+[0;32mI (201589) [MQTT]: Sent publish successful, msg_id: 32[0m
+[0;31mE (201589) i2c: i2c driver install error[0m
+[0;31mE (201589) i2c: i2c driver install error[0m
+[0;31mE (201589) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (201599) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (201719) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+[0;32mI (206609) [MQTT]: Sent publish successful, msg_id: 33[0m
+[0;31mE (206609) i2c: i2c driver install error[0m
+[0;31mE (206609) i2c: i2c driver install error[0m
+[0;31mE (206609) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (206619) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (206739) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+[0;32mI (211629) [MQTT]: Sent publish successful, msg_id: 34[0m
+[0;31mE (211629) i2c: i2c driver install error[0m
+[0;31mE (211629) i2c: i2c driver install error[0m
+[0;31mE (211629) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (211639) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (211749) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+[0;32mI (216649) [MQTT]: Sent publish successful, msg_id: 35[0m
+[0;31mE (216649) i2c: i2c driver install error[0m
+[0;31mE (216649) i2c: i2c driver install error[0m
+[0;31mE (216649) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (216659) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (216709) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+[0;32mI (221669) [MQTT]: Sent publish successful, msg_id: 36[0m
+[0;31mE (221669) i2c: i2c driver install error[0m
+[0;31mE (221669) i2c: i2c driver install error[0m
+[0;31mE (221669) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (221679) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (221729) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+[0;32mI (226689) [MQTT]: Sent publish successful, msg_id: 37[0m
+[0;31mE (226689) i2c: i2c driver install error[0m
+[0;31mE (226689) i2c: i2c driver install error[0m
+[0;31mE (226689) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (226699) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (226749) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+[0;32mI (231709) [MQTT]: Sent publish successful, msg_id: 38[0m
+[0;31mE (231709) i2c: i2c driver install error[0m
+[0;31mE (231709) i2c: i2c driver install error[0m
+[0;31mE (231709) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (231719) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (231769) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+[0;32mI (236729) [MQTT]: Sent publish successful, msg_id: 39[0m
+[0;31mE (236729) i2c: i2c driver install error[0m
+[0;31mE (236729) i2c: i2c driver install error[0m
+[0;31mE (236739) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (236739) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (236779) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+[0;32mI (241749) [MQTT]: Sent publish successful, msg_id: 40[0m
+[0;31mE (241749) i2c: i2c driver install error[0m
+[0;31mE (241759) i2c: i2c driver install error[0m
+[0;31mE (241759) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (241759) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (241799) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+[0;32mI (246769) [MQTT]: Sent publish successful, msg_id: 41[0m
+[0;31mE (246769) i2c: i2c driver install error[0m
+[0;31mE (246769) i2c: i2c driver install error[0m
+[0;31mE (246779) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (246779) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (246819) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+[0;32mI (251789) [MQTT]: Sent publish successful, msg_id: 42[0m
+[0;31mE (251789) i2c: i2c driver install error[0m
+[0;31mE (251789) i2c: i2c driver install error[0m
+[0;31mE (251799) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (251799) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (251829) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+[0;32mI (256809) [MQTT]: Sent publish successful, msg_id: 43[0m
+[0;31mE (256809) i2c: i2c driver install error[0m
+[0;31mE (256809) i2c: i2c driver install error[0m
+[0;31mE (256809) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (256819) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (256919) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+[0;32mI (261829) [MQTT]: Sent publish successful, msg_id: 44[0m
+[0;31mE (261829) i2c: i2c driver install error[0m
+[0;31mE (261829) i2c: i2c driver install error[0m
+[0;31mE (261829) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 0.0°C
+Humidity: 0.0%
+[0;31mE (261839) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (261929) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+[0;31mE (263069) [SWITCH]: Switch reset pressed[0m
+[0;31mE (263569) [SWITCH]: Switch reset pressed[0m
+[0;31mE (264069) [SWITCH]: Switch reset pressed[0m
+[0;31mE (264569) [SWITCH]: Switch reset pressed[0m
+[0;31mE (265069) [SWITCH]: Switch reset pressed[0m
+[0;32mI (266849) [MQTT]: Sent publish successful, msg_id: 45[0m
+[0;31mE (266849) i2c: i2c driver install error[0m
+[0;31mE (266849) i2c: i2c driver install error[0m
+[0;31mE (266849) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (266859) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (266949) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+[0;32mI (271869) [MQTT]: Sent publish successful, msg_id: 46[0m
+[0;31mE (271869) i2c: i2c driver install error[0m
+[0;31mE (271869) i2c: i2c driver install error[0m
+[0;31mE (271869) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (271879) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (271969) [MQTT]: EVENT_PUBLISHED, msg_id: 46[0m
+[0;31mE (272069) [SWITCH]: Switch reset pressed[0m
+[0;31mE (272569) [SWITCH]: Switch reset pressed[0m
+[0;31mE (273069) [SWITCH]: Switch reset pressed[0m
+[0;32mI (276889) [MQTT]: Sent publish successful, msg_id: 47[0m
+[0;31mE (276889) i2c: i2c driver install error[0m
+[0;31mE (276889) i2c: i2c driver install error[0m
+[0;31mE (276899) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (276899) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (276979) [MQTT]: EVENT_PUBLISHED, msg_id: 47[0m
+[0;31mE (278569) [SWITCH]: Switch reset pressed[0m
+[0;31mE (279069) [SWITCH]: Switch reset pressed[0m
+[0;31mE (279569) [SWITCH]: Switch reset pressed[0m
+[0;32mI (281909) [MQTT]: Sent publish successful, msg_id: 48[0m
+[0;31mE (281909) i2c: i2c driver install error[0m
+[0;31mE (281909) i2c: i2c driver install error[0m
+[0;31mE (281909) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (281919) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (282009) [MQTT]: EVENT_PUBLISHED, msg_id: 48[0m
+[0;31mE (285069) [SWITCH]: Switch reset pressed[0m
+[0;31mE (285569) [SWITCH]: Switch reset pressed[0m
+[0;31mE (286069) [SWITCH]: Switch reset pressed[0m
+[0;31mE (286569) [SWITCH]: Switch reset pressed[0m
+[0;32mI (286929) [MQTT]: Sent publish successful, msg_id: 49[0m
+[0;31mE (286929) i2c: i2c driver install error[0m
+[0;31mE (286929) i2c: i2c driver install error[0m
+[0;31mE (286929) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (286939) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (287019) [MQTT]: EVENT_PUBLISHED, msg_id: 49[0m
+[0;31mE (287069) [SWITCH]: Switch reset pressed[0m
+[0;31mE (287569) [SWITCH]: Switch reset pressed[0m
+[0;32mI (291949) [MQTT]: Sent publish successful, msg_id: 50[0m
+[0;31mE (291949) i2c: i2c driver install error[0m
+[0;31mE (291949) i2c: i2c driver install error[0m
+[0;31mE (291959) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (291959) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (292039) [MQTT]: EVENT_PUBLISHED, msg_id: 50[0m
+[0;32mI (296969) [MQTT]: Sent publish successful, msg_id: 51[0m
+[0;31mE (296969) i2c: i2c driver install error[0m
+[0;31mE (296969) i2c: i2c driver install error[0m
+[0;31mE (296969) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (296979) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (297049) [MQTT]: EVENT_PUBLISHED, msg_id: 51[0m
+[0;32mI (301989) [MQTT]: Sent publish successful, msg_id: 52[0m
+[0;31mE (301989) i2c: i2c driver install error[0m
+[0;31mE (301989) i2c: i2c driver install error[0m
+[0;31mE (301999) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (301999) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (302069) [MQTT]: EVENT_PUBLISHED, msg_id: 52[0m
+[0;32mI (307009) [MQTT]: Sent publish successful, msg_id: 53[0m
+[0;31mE (307009) i2c: i2c driver install error[0m
+[0;31mE (307009) i2c: i2c driver install error[0m
+[0;31mE (307009) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (307019) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (307089) [MQTT]: EVENT_PUBLISHED, msg_id: 53[0m
+[0;32mI (312029) [MQTT]: Sent publish successful, msg_id: 54[0m
+[0;31mE (312029) i2c: i2c driver install error[0m
+[0;31mE (312029) i2c: i2c driver install error[0m
+[0;31mE (312039) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (312039) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (312109) [MQTT]: EVENT_PUBLISHED, msg_id: 54[0m
+[0;32mI (317049) [MQTT]: Sent publish successful, msg_id: 55[0m
+[0;31mE (317049) i2c: i2c driver install error[0m
+[0;31mE (317049) i2c: i2c driver install error[0m
+[0;31mE (317049) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (317059) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (317119) [MQTT]: EVENT_PUBLISHED, msg_id: 55[0m
+[0;32mI (322069) [MQTT]: Sent publish successful, msg_id: 56[0m
+[0;31mE (322069) i2c: i2c driver install error[0m
+[0;31mE (322069) i2c: i2c driver install error[0m
+[0;31mE (322069) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (322079) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (322149) [MQTT]: EVENT_PUBLISHED, msg_id: 56[0m
+[0;32mI (327089) [MQTT]: Sent publish successful, msg_id: 57[0m
+[0;31mE (327089) i2c: i2c driver install error[0m
+[0;31mE (327089) i2c: i2c driver install error[0m
+[0;31mE (327099) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (327099) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (327159) [MQTT]: EVENT_PUBLISHED, msg_id: 57[0m
+[0;32mI (332109) [MQTT]: Sent publish successful, msg_id: 58[0m
+[0;31mE (332109) i2c: i2c driver install error[0m
+[0;31mE (332109) i2c: i2c driver install error[0m
+[0;31mE (332109) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (332119) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (332279) [MQTT]: EVENT_PUBLISHED, msg_id: 58[0m
+[0;32mI (337129) [MQTT]: Sent publish successful, msg_id: 59[0m
+[0;31mE (337129) i2c: i2c driver install error[0m
+[0;31mE (337129) i2c: i2c driver install error[0m
+[0;31mE (337129) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (337139) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (337299) [MQTT]: EVENT_PUBLISHED, msg_id: 59[0m
+[0;32mI (342149) [MQTT]: Sent publish successful, msg_id: 60[0m
+[0;31mE (342149) i2c: i2c driver install error[0m
+[0;31mE (342149) i2c: i2c driver install error[0m
+[0;31mE (342159) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (342159) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (342249) [MQTT]: EVENT_PUBLISHED, msg_id: 60[0m
+[0;32mI (347169) [MQTT]: Sent publish successful, msg_id: 61[0m
+[0;31mE (347169) i2c: i2c driver install error[0m
+[0;31mE (347179) i2c: i2c driver install error[0m
+[0;31mE (347179) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (347179) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (347329) [MQTT]: EVENT_PUBLISHED, msg_id: 61[0m
+[0;32mI (352189) [MQTT]: Sent publish successful, msg_id: 62[0m
+[0;31mE (352189) i2c: i2c driver install error[0m
+[0;31mE (352189) i2c: i2c driver install error[0m
+[0;31mE (352199) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (352209) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (352279) [MQTT]: EVENT_PUBLISHED, msg_id: 62[0m
+[0;32mI (357209) [MQTT]: Sent publish successful, msg_id: 63[0m
+[0;31mE (357209) i2c: i2c driver install error[0m
+[0;31mE (357209) i2c: i2c driver install error[0m
+[0;31mE (357219) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (357219) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (357379) [MQTT]: EVENT_PUBLISHED, msg_id: 63[0m
+[0;32mI (362229) [MQTT]: Sent publish successful, msg_id: 64[0m
+[0;31mE (362229) i2c: i2c driver install error[0m
+[0;31mE (362229) i2c: i2c driver install error[0m
+[0;31mE (362239) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (362239) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (362379) [MQTT]: EVENT_PUBLISHED, msg_id: 64[0m
+[0;32mI (367249) [MQTT]: Sent publish successful, msg_id: 65[0m
+[0;31mE (367249) i2c: i2c driver install error[0m
+[0;31mE (367249) i2c: i2c driver install error[0m
+[0;31mE (367249) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (367259) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (367399) [MQTT]: EVENT_PUBLISHED, msg_id: 65[0m
+[0;32mI (372269) [MQTT]: Sent publish successful, msg_id: 66[0m
+[0;31mE (372269) i2c: i2c driver install error[0m
+[0;31mE (372269) i2c: i2c driver install error[0m
+[0;31mE (372269) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (372279) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (372459) [MQTT]: EVENT_PUBLISHED, msg_id: 66[0m
+[0;32mI (377289) [MQTT]: Sent publish successful, msg_id: 67[0m
+[0;31mE (377289) i2c: i2c driver install error[0m
+[0;31mE (377289) i2c: i2c driver install error[0m
+[0;31mE (377289) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (377299) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (377439) [MQTT]: EVENT_PUBLISHED, msg_id: 67[0m
+[0;32mI (382309) [MQTT]: Sent publish successful, msg_id: 68[0m
+[0;31mE (382309) i2c: i2c driver install error[0m
+[0;31mE (382309) i2c: i2c driver install error[0m
+[0;31mE (382319) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (382319) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (382389) [MQTT]: EVENT_PUBLISHED, msg_id: 68[0m
+[0;32mI (387329) [MQTT]: Sent publish successful, msg_id: 69[0m
+[0;31mE (387329) i2c: i2c driver install error[0m
+[0;31mE (387329) i2c: i2c driver install error[0m
+[0;31mE (387329) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (387339) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (387409) [MQTT]: EVENT_PUBLISHED, msg_id: 69[0m
+[0;32mI (392349) [MQTT]: Sent publish successful, msg_id: 70[0m
+[0;31mE (392349) i2c: i2c driver install error[0m
+[0;31mE (392349) i2c: i2c driver install error[0m
+[0;31mE (392349) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 2.0°C
+Humidity: 0.0%
+[0;31mE (392359) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (392429) [MQTT]: EVENT_PUBLISHED, msg_id: 70[0m

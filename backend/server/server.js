@@ -373,7 +373,7 @@ app.listen(8000, () =>
 
 // ------------ MQTT ------------ //
 
-const brokerUrl = "mqtt://localhost";
+const brokerUrl = "mqtt://test.mosquitto.org"; // "mqtt://local
 const clientId = "server-mqtt";
 
 const client = mqtt.connect(brokerUrl, { clientId, port: 1883 });

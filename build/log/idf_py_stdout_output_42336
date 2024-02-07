@@ -1,0 +1,4 @@
+[0/1] Re-running CMake...
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/opt/homebrew/Cellar/cmake/3.27.7/bin/cmake --regenerate-during-build -S/Users/marcin/esp/IntelligentStationForGrowingPlants -B/Users/marcin/esp/IntelligentStationForGrowingPlants/build

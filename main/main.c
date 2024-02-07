@@ -18,37 +18,49 @@
 #include "adc.c"
 #include "ble-server.c"
 #include "nvs_save.c"
+#include "driver/gpio.h"
 
 void send_put() {
 	char res[200];
 	char *mac_addr = get_mac_address();
 	printf("MAC: %s\n", mac_addr);
 	snprintf(res, sizeof(res), "{\"devicesIds\":[\"%s\"]}", mac_addr);
-	http_put("192.168.1.3", "/api/devices", 8000, res, user_token);
+	http_put("192.168.43.81", "/api/devices", 8000, res, user_token);
 }
 
 void reset(EventBits_t wifi_bits, EventBits_t ble_bits, TaskHandle_t handle_mqtt_publish) {
 	ESP_LOGI("[APP]", "RESETING DEVICE");
-
-	vTaskDelete(handle_mqtt_publish);
-	stop_mqtt();
+	display_string("Resetting ...", 0);
+	reset_flag = false;
 
 	if (wifi_connected) {
+		vTaskDelete(handle_mqtt_publish);
+		ESP_LOGI("RESET", "AFTER MQTT DELETE");
+		stop_mqtt();
+		ESP_LOGI("RESET", "AFTER MQTT STOP");
 		esp_wifi_disconnect();
 	}
 
-	ble_bits = xEventGroupWaitBits(s_ble_event_group, BLE_CONNECTED_BIT, pdTRUE, pdFALSE, portMAX_DELAY);
-
+	ESP_LOGI("RESET", "BEFORE BLE BITS");
+	ble_bits = xEventGroupWaitBits(s_ble_event_group, BLE_CONNECTED_BIT, pdTRUE, pdFALSE, 60000 / portTICK_PERIOD_MS);
+	ESP_LOGI("RESET", "AFTER 1 BLE BITS");
 	if (ble_bits & BLE_CONNECTED_BIT) {
+		ESP_LOGI("RESET", "SSID: %s\n", user_ssid);
+		ESP_LOGI("RESET", "Password: %s\n", user_password);
 		save_wifi_credentials(user_ssid, user_password);
+	} else {
+		return;
 	}
-	
+
+	ESP_LOGI("RESET", "AFTER BLE BITS");
 	set_wifi_config(user_ssid, user_password);
 	start_wifi();
 
-	wifi_bits = xEventGroupWaitBits(s_wifi_event_group, WIFI_CONNECTED_BIT, pdTRUE, pdFALSE, portMAX_DELAY);
+	wifi_bits = xEventGroupWaitBits(s_wifi_event_group, WIFI_CONNECTED_BIT, pdTRUE, pdFALSE, 10000 / portTICK_PERIOD_MS);
 	if (wifi_bits & WIFI_CONNECTED_BIT) {
 		send_put();
+	} else {
+		return;
 	}
 	reset_flag = false;
 }
@@ -85,6 +97,7 @@ void app_main (void) {
 	config_led();
 	config_adc();
 	ble_server_run();
+	config_wifi();
 
 // Display startup message
 	display_string("Booting ...", 2);
@@ -111,7 +124,6 @@ void app_main (void) {
 			reset(wifi_bits, ble_bits, handle_mqtt_publish);
 		} 
 	} else {
-		config_wifi();
 		set_wifi_config(user_ssid, user_password);
 		start_wifi();
 	}

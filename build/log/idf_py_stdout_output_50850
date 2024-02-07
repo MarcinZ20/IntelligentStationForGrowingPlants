@@ -1,0 +1,220 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/marcin/esp/IntelligentStationForGrowingPlants/build/bootloader/bootloader.bin
+Bootloader binary size 0x67f0 bytes. 0x810 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:12:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c: In function 'blink_led_task':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:35:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   35 |     int8_t gpio_pin = (int8_t)pvParameters;
+      |                       ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c: In function 'beam_led_task':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:54:23: warning: initialization of 'int8_t' {aka 'signed char'} from 'int8_t *' {aka 'signed char *'} makes integer from pointer without a cast [-Wint-conversion]
+   54 |     int8_t gpio_pin = (int8_t*)pvParameters;
+      |                       ^
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c: In function 'check_led_task':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:72:27: warning: comparison between pointer and integer
+   72 |     if ((int)pvParameters == NULL) {
+      |                           ^~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:15:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c: In function 'http_put':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/wifi.c:75:21: warning: unused variable 'server' [-Wunused-variable]
+   75 |     struct hostent *server;
+      |                     ^~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/pt550.h:4,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/pt550.c:1,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:3,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:2,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:16:
+/Users/marcin/esp/esp-idf/components/driver/deprecated/driver/adc.h: At top level:
+/Users/marcin/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/pt550.h:5:
+/Users/marcin/esp/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h:17:2: warning: #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h" [-Wcpp]
+   17 | #warning "legacy adc calibration driver is deprecated, please migrate to use esp_adc/adc_cali.h and esp_adc/adc_cali_scheme.h"
+      |  ^~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c: In function 'mqtt_event_handler':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:37:9: warning: unused variable 'msg_id' [-Wunused-variable]
+   37 |     int msg_id;
+      |         ^~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:35:30: warning: unused variable 'client' [-Wunused-variable]
+   35 |     esp_mqtt_client_handle_t client = event->client;
+      |                              ^~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c: In function 'mqtt_publish_task':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:138:21: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  138 |         char* mac = get_mac_address();
+      |                     ^~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:150:33: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  150 |                 char *message = convert_measurement_to_json_string(measurement);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:19:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c: In function 'ble_server_run':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c:742:5: warning: 'esp_bluedroid_init' is deprecated: Please use esp_bluedroid_init_with_cfg [-Wdeprecated-declarations]
+  742 |     ret = esp_bluedroid_init();
+      |     ^~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c:13:
+/Users/marcin/esp/esp-idf/components/bt/host/bluedroid/api/include/api/esp_bt_main.h:73:11: note: declared here
+   73 | esp_err_t esp_bluedroid_init(void) __attribute__((deprecated("Please use esp_bluedroid_init_with_cfg")));
+      |           ^~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c: In function 'app_main':
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:62:22: warning: unused variable 'handle_reset' [-Wunused-variable]
+   62 |         TaskHandle_t handle_reset = NULL;
+      |                      ^~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:44:21: warning: unused variable 'switch_bits' [-Wunused-variable]
+   44 |         EventBits_t switch_bits;
+      |                     ^~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:43:21: warning: unused variable 'led_bits' [-Wunused-variable]
+   43 |         EventBits_t led_bits;
+      |                     ^~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/led.h:8,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/led.c:1:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c: In function 'mqtt_publish':
+/Users/marcin/esp/esp-idf/components/log/include/esp_log.h:435:51: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  435 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                   ^
+/Users/marcin/esp/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/marcin/esp/esp-idf/components/log/include/esp_log.h:366:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  366 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:117:25: note: in expansion of macro 'ESP_LOGE'
+  117 |                         ESP_LOGE(MQTT_TAG, "Publish failed");
+      |                         ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:118:17: note: here
+  118 |                 case -2:
+      |                 ^~~~
+/Users/marcin/esp/esp-idf/components/log/include/esp_log.h:435:51: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  435 | #define ESP_LOG_LEVEL(level, tag, format, ...) do {                     \
+      |                                                   ^
+/Users/marcin/esp/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/marcin/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:119:25: note: in expansion of macro 'ESP_LOGI'
+  119 |                         ESP_LOGI(MQTT_TAG, "Something went wrong, msg_id: %d", msg_id);
+      |                         ^~~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:120:17: note: here
+  120 |                 default:
+      |                 ^~~~~~~
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c: At top level:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ble-server.c:85:16: warning: 'test_manufacturer' defined but not used [-Wunused-variable]
+   85 | static uint8_t test_manufacturer[TEST_MANUFACTURER_DATA_LEN] =  {0x12, 0x23, 0x45, 0x56};
+      |                ^~~~~~~~~~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/adc.c:1,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:18:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/adc.h:15:20: warning: 'PT550_TAG' defined but not used [-Wunused-variable]
+   15 | static const char *PT550_TAG = "PT-550";
+      |                    ^~~~~~~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/include/display.h:9,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/display.c:1,
+                 from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:14:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/ssd1306.c:15:17: warning: '_pow' defined but not used [-Wunused-function]
+   15 | static uint32_t _pow(uint8_t m, uint8_t n)
+      |                 ^~~~
+In file included from /Users/marcin/esp/IntelligentStationForGrowingPlants/main/main.c:13:
+/Users/marcin/esp/IntelligentStationForGrowingPlants/main/switch.c:11:13: warning: 'config_switches' defined but not used [-Wunused-function]
+   11 | static void config_switches(void) {
+      |             ^~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable InteligentStationForGrowingPlants.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+[9/10] cd /Users/marcin/esp/IntelligentStationForGrowingPlants/build/esp-idf/esptool_py && /Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python /Users/marcin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/marcin/esp/IntelligentStationForGrowingPlants/build/partition_table/partition-table.bin /Users/marcin/esp/IntelligentStationForGrowingPlants/build/InteligentStationForGrowingPlants.bin
+InteligentStationForGrowingPlants.bin binary size 0x146430 bytes. Smallest app partition is 0x200000 bytes. 0xb9bd0 bytes (36%) free.
+[9/10] cd /Users/marcin/esp/esp-idf/components/esptool_py && /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -D IDF_PATH=/Users/marcin/esp/esp-idf -D "SERIAL_TOOL=/Users/marcin/.espressif/python_env/idf5.3_py3.10_env/bin/python;;/Users/marcin/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/marcin/esp/IntelligentStationForGrowingPlants/build -P /Users/marcin/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-01A178B2 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 InteligentStationForGrowingPlants.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/cu.usbserial-01A178B2
+Connecting.........
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b4:e6:2d:ea:62:f5
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00156fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash params set to 0x0220
+Compressed 26608 bytes to 16301...
+Writing at 0x00001000... (100 %)
+Wrote 26608 bytes (16301 compressed) at 0x00001000 in 0.7 seconds (effective 284.0 kbit/s)...
+Hash of data verified.
+Compressed 1336368 bytes to 853448...
+Writing at 0x00010000... (1 %)
+Writing at 0x0001f43b... (3 %)
+Writing at 0x0002da3e... (5 %)
+Writing at 0x00038d02... (7 %)
+Writing at 0x0003f49f... (9 %)
+Writing at 0x0004465c... (11 %)
+Writing at 0x00050bd2... (13 %)
+Writing at 0x000562c1... (15 %)
+Writing at 0x0005b615... (16 %)
+Writing at 0x00060edb... (18 %)
+Writing at 0x000661f8... (20 %)
+Writing at 0x0006b4fd... (22 %)
+Writing at 0x0007088e... (24 %)
+Writing at 0x0007690b... (26 %)
+Writing at 0x0007c05f... (28 %)
+Writing at 0x00081cc3... (30 %)
+Writing at 0x000877c6... (32 %)
+Writing at 0x0008d189... (33 %)
+Writing at 0x00092f67... (35 %)
+Writing at 0x00098edc... (37 %)
+Writing at 0x0009ea75... (39 %)
+Writing at 0x000a4e73... (41 %)
+Writing at 0x000aaee5... (43 %)
+Writing at 0x000b0a14... (45 %)
+Writing at 0x000b5a12... (47 %)
+Writing at 0x000baee4... (49 %)
+Writing at 0x000c024c... (50 %)
+Writing at 0x000c547e... (52 %)
+Writing at 0x000ca940... (54 %)
+Writing at 0x000cfd43... (56 %)
+Writing at 0x000d575d... (58 %)
+Writing at 0x000dae63... (60 %)
+Writing at 0x000e031b... (62 %)
+Writing at 0x000e561a... (64 %)
+Writing at 0x000ea955... (66 %)
+Writing at 0x000efe83... (67 %)
+Writing at 0x000f51ca... (69 %)
+Writing at 0x000fa86c... (71 %)
+Writing at 0x00100182... (73 %)
+Writing at 0x00105a8c... (75 %)
+Writing at 0x0010aaa0... (77 %)
+Writing at 0x0010fb0c... (79 %)
+Writing at 0x001155f5... (81 %)
+Writing at 0x0011b564... (83 %)
+Writing at 0x00125e73... (84 %)
+Writing at 0x0012d06f... (86 %)
+Writing at 0x00132a6d... (88 %)
+Writing at 0x0013a2ec... (90 %)
+Writing at 0x0013f7f6... (92 %)
+Writing at 0x00145689... (94 %)
+Writing at 0x0014ac70... (96 %)
+Writing at 0x0015046a... (98 %)
+Writing at 0x001559d6... (100 %)
+Wrote 1336368 bytes (853448 compressed) at 0x00010000 in 20.7 seconds (effective 516.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00008000 in 0.1 seconds (effective 464.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

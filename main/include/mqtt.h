@@ -14,12 +14,12 @@
 #include "mqtt_client.h"
 
 // MY DEFINES
-#define MQTT_URI        "mqtt://192.168.1.3:1883"
+#define MQTT_URI        "mqtt://test.mosquitto.org"
 #define MQTT_PORT       1883
 #define MQTT_USERNAME   "iot"
 #define MQTT_PASSWORD   "iot"
 
-#define MQTT_CONNECTED_BIT      BI0T
+#define MQTT_CONNECTED_BIT      BIT0
 #define MQTT_FAIL_BIT           BIT1
 #define MQTT_DISCONNECTED_BIT   BIT2
 #define MQTT_PUBLISHED_BIT      BIT3

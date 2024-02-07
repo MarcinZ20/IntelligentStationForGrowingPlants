@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "InteligentStationForGrowingPlants",
-    "project_version":    "ea6fe41-dirty",
+    "project_version":    "355b7ff-dirty",
     "project_path":       "/Users/marcin/esp/IntelligentStationForGrowingPlants",
     "idf_path":           "/Users/marcin/esp/esp-idf",
     "build_dir":          "/Users/marcin/esp/IntelligentStationForGrowingPlants/build",

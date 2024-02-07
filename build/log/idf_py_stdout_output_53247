@@ -1,0 +1,307 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  6 2024 14:09:42[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d798h (251800) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d7c0 vaddr=3ffbdb60 size=02858h ( 10328) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e514ch (938316) map[0m
+[0;32mI (354) esp_image: segment 3: paddr=00135174 vaddr=3ffc03b8 size=03094h ( 12436) load[0m
+[0;32mI (357) esp_image: segment 4: paddr=00138210 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (438) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (443) cpu_start: Compile time:     Feb  6 2024 16:55:54[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  528005d24...[0m
+[0;32mI (455) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (461) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (466) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (470) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFCBCF8 len 00014308 (80 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: winbond[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (535) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (545) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (554) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (569) [WI-FI]: [APP] Startup..[0m
+[0;32mI (569) [WI-FI]: [APP] Free memory: 212856 bytes[0m
+[0;32mI (569) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (609) [I2C]: Module configuration successful![0m
+[0;32mI (609) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (619) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (629) [SWITCH]: Configuration successful![0m
+[0;32mI (639) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (639) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (649) [LED]: LEDs configured![0m
+[0;32mI (659) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (659) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (669) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (1069) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+Booting ...
+[0;33mW (1069) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (1079) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (1079) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+[0;31mE (1099) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (1099) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (1099) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (1109) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (1119) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (1119) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (1129) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (1129) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (1139) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (1149) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (1149) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (1159) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+Hello there!
+Gpio pin: 33
+Check pressed task started
+[0;31mE (6459) [SWITCH]: Switch reset released[0m
+I (6479) wifi:wifi driver task: 3ffd8aa4, prio:23, stack:6656, core=0
+I (6489) wifi:wifi firmware version: a194738
+I (6489) wifi:wifi certification version: v7.0
+I (6489) wifi:config NVS flash: enabled
+I (6489) wifi:config nano formating: disabled
+I (6499) wifi:Init data frame dynamic rx buffer num: 32
+I (6499) wifi:Init static rx mgmt buffer num: 5
+I (6509) wifi:Init management short buffer num: 32
+I (6509) wifi:Init dynamic tx buffer num: 32
+I (6519) wifi:Init static rx buffer size: 1600
+I (651: tcp tx win: 5760[0m
+[0;32mI (6549) wifi_init: tcp rx win: 5760[0m
+[0;32mI (6549) wifi_init: tcp mss: 1440[0m
+[0;32mI (6559) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (6559) wifi_init: WiFi RX IRAM OP enabled[0m
+SSID_len: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+I (6579) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6579) wifi:enable tsf
+SSID: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+[0;32mI (6579) [WI-FI]: Wifi started![0m
+[0;31mE (6589) [APP]: LOOPING[0m
+Wi-Fi down ...
+I (6599) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (6599) wifi:state: init -> auth (b0)
+I (6609) wifi:state: auth -> assoc (0)
+I (6619) wifi:state: assoc -> run (10)
+I (6639) wifi:connected with T-Mobile_Swiatlowod_2.4GHz_3790, aid = 4, channel 8, BW20, bssid = 34:5d:9e:5f:37:94
+I (6639) wifi:security: WPA2-PSK, phy: bgn, rssi: -74
+I (6649) wifi:pm start, type: 1
+
+I (6649) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (6669) wifi:<ba-add>idx:0 (ifx:0, 34:5d:9e:5f:37:94), tid:0, ssn:0, winSize:64
+[0;31mE (6689) [APP]: LOOPING[0m
+I (6729) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (7659) esp_netif_handlers: sta ip: 192.168.1.248, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (7659) [WI-FI]: Connected to ip: 192.168.1.248[0m
+[0;31mE (11459) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;32mI (14639) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (14829) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (14829) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (14829) mqtt_client: Error transport connect[0m
+[0;32mI (14839) [MQTT]: EVENT_ERROR[0m
+[0;31mE (14839) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (14849) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (14849) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (14859) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (16459) [SWITCH]: Switch reset released[0m
+[0;31mE (21459) [SWITCH]: Switch reset released[0m
+[0;31mE (26459) [SWITCH]: Switch reset released[0m
+[0;32mI (29859) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (29879) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (29879) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (29879) mqtt_client: Error transport connect[0m
+[0;32mI (29889) [MQTT]: EVENT_ERROR[0m
+[0;31mE (29889) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (29899) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (29899) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (29909) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (31459) [SWITCH]: Switch reset released[0m
+[0;31mE (36459) [SWITCH]: Switch reset released[0m
+[0;31mE (41459) [SWITCH]: Switch reset released[0m
+[0;32mI (44909) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (44929) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (44929) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (44939) mqtt_client: Error transport connect[0m
+[0;32mI (44939) [MQTT]: EVENT_ERROR[0m
+[0;31mE (44949) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (44949) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (44959) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (44969) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (46459) [SWITCH]: Switch reset released[0m
+[0;31mE (51459) [SWITCH]: Switch reset released[0m
+[0;31mE (56459) [SWITCH]: Switch reset released[0m
+[0;32mI (59969) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (59979) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (59979) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (59989) mqtt_client: Error transport connect[0m
+[0;32mI (59989) [MQTT]: EVENT_ERROR[0m
+[0;31mE (59989) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (59999) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (60009) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (60019) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (61459) [SWITCH]: Switch reset released[0m
+[0;31mE (66459) [SWITCH]: Switch reset released[0m
+[0;31mE (71459) [SWITCH]: Switch reset released[0m
+[0;32mI (75019) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (75039) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (75039) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (75039) mqtt_client: Error transport connect[0m
+[0;32mI (75049) [MQTT]: EVENT_ERROR[0m
+[0;31mE (75049) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (75059) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (75059) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (75069) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (76459) [SWITCH]: Switch reset released[0m
+[0;31mE (81459) [SWITCH]: Switch reset released[0m
+[0;31mE (86459) [SWITCH]: Switch reset released[0m
+[0;32mI (90069) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (90079) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (90079) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (90089) mqtt_client: Error transport connect[0m
+[0;32mI (90089) [MQTT]: EVENT_ERROR[0m
+[0;31mE (90099) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (90099) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (90109) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (90119) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (91459) [SWITCH]: Switch reset released[0m
+[0;31mE (96459) [SWITCH]: Switch reset released[0m
+[0;31mE (101459) [SWITCH]: Switch reset released[0m
+[0;32mI (105119) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (105139) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (105139) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (105139) mqtt_client: Error transport connect[0m
+[0;32mI (105149) [MQTT]: EVENT_ERROR[0m
+[0;31mE (105149) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (105159) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (105159) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (105169) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (106459) [SWITCH]: Switch reset released[0m
+[0;31mE (111459) [SWITCH]: Switch reset released[0m
+[0;31mE (116459) [SWITCH]: Switch reset released[0m
+[0;32mI (120169) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (120219) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (120219) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (120229) mqtt_client: Error transport connect[0m
+[0;32mI (120229) [MQTT]: EVENT_ERROR[0m
+[0;31mE (120239) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (120239) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (120249) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (120259) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (121459) [SWITCH]: Switch reset released[0m
+[0;31mE (126459) [SWITCH]: Switch reset released[0m
+[0;31mE (131459) [SWITCH]: Switch reset released[0m
+[0;32mI (135259) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (135269) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (135269) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (135279) mqtt_client: Error transport connect[0m
+[0;32mI (135279) [MQTT]: EVENT_ERROR[0m
+[0;31mE (135279) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (135289) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (135299) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (135299) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (136459) [SWITCH]: Switch reset released[0m
+[0;31mE (141459) [SWITCH]: Switch reset released[0m
+[0;32mI (145309) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (145379) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (145379) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (145379) mqtt_client: Error transport connect[0m
+[0;32mI (145389) [MQTT]: EVENT_ERROR[0m
+[0;31mE (145389) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (145399) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (145409) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (145409) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (146459) [SWITCH]: Switch reset released[0m
+[0;31mE (151459) [SWITCH]: Switch reset released[0m
+[0;32mI (155419) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (155429) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (155429) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (155439) mqtt_client: Error transport connect[0m
+[0;32mI (155439) [MQTT]: EVENT_ERROR[0m
+[0;31mE (155449) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (155449) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (155459) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (155469) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (156459) [SWITCH]: Switch reset released[0m
+[0;31mE (161459) [SWITCH]: Switch reset released[0m
+[0;31mE (166459) [SWITCH]: Switch reset released[0m
+[0;32mI (170469) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (170479) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (170479) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (170489) mqtt_client: Error transport connect[0m
+[0;32mI (170489) [MQTT]: EVENT_ERROR[0m
+[0;31mE (170499) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (170499) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (170509) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (170519) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (171459) [SWITCH]: Switch reset released[0m
+[0;31mE (176459) [SWITCH]: Switch reset released[0m
+[0;31mE (181459) [SWITCH]: Switch reset released[0m
+[0;32mI (185519) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (185529) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (185529) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (185529) mqtt_client: Error transport connect[0m
+[0;32mI (185539) [MQTT]: EVENT_ERROR[0m
+[0;31mE (185539) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (185549) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (185549) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (185559) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (186459) [SWITCH]: Switch reset released[0m
+[0;31mE (191459) [SWITCH]: Switch reset released[0m
+[0;32mI (195569) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (195569) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (195579) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (195579) mqtt_client: Error transport connect[0m
+[0;32mI (195579) [MQTT]: EVENT_ERROR[0m
+[0;31mE (195589) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (195589) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (195599) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (195609) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (196459) [SWITCH]: Switch reset released[0m
+[0;31mE (201459) [SWITCH]: Switch reset released[0m
+[0;31mE (206459) [SWITCH]: Switch reset released[0m

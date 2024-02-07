@@ -1,0 +1,290 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  6 2024 14:09:42[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d478h (251000) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d4a0 vaddr=3ffbdb60 size=02b78h ( 11128) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e4c5ch (937052) map[0m
+[0;32mI (353) esp_image: segment 3: paddr=00134c84 vaddr=3ffc06d8 size=02d74h ( 11636) load[0m
+[0;32mI (356) esp_image: segment 4: paddr=00137a00 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (418) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (427) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (427) cpu_start: Application information:[0m
+[0;32mI (430) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (437) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (443) cpu_start: Compile time:     Feb  6 2024 16:55:54[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  f6b4a17a9...[0m
+[0;32mI (454) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (460) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (465) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (470) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFCBCF0 len 00014310 (80 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: winbond[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (534) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (544) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (553) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (569) [WI-FI]: [APP] Startup..[0m
+[0;32mI (569) [WI-FI]: [APP] Free memory: 212864 bytes[0m
+[0;32mI (569) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (609) [I2C]: Module configuration successful![0m
+[0;32mI (24609) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24609) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24609) [LED]: LEDs configured![0m
+[0;32mI (24619) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (24629) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (24629) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (25019) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+Booting ...
+[0;33mW (25029) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (25029) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (25039) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+[0;31mE (25059) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (25059) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (25059) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (25069) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (25079) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (25079) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (25079) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (25089) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (25099) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (25109) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (25109) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (25119) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+Hello there!
+Gpio pin: 33
+[0;32mI (44129) GATTS_SERVER: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 54:b8:fc:bb:dc:1a:[0m
+[0;32mI (44139) GATTS_SERVER: CONNECT_EVT, conn_id 0, remote 54:b8:fc:bb:dc:1a:[0m
+[0;32mI (44759) GATTS_SERVER: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 30,latency = 0, timeout = 400[0m
+[0;32mI (45239) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (45639) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (45639) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (45719) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 30,latency = 0, timeout = 400[0m
+[0;32mI (52859) GATTS_SERVER: GATT_WRITE_EVT_A, conn_id 0, trans_id 1, handle 42[0m
+[0;32mI (52859) GATTS_SERVER: GATT_WRITE_EVT_A, value len 220, value :[0m
+[0;32mI (52869) GATTS_SERVER: 54 2d 4d 6f 62 69 6c 65 5f 53 77 69 61 74 6c 6f [0m
+[0;32mI (52869) GATTS_SERVER: 77 6f 64 5f 32 2e 34 47 48 7a 5f 33 37 39 30 3b [0m
+[0;32mI (52879) GATTS_SERVER: 72 33 66 70 63 6a 67 72 37 6e 33 76 35 36 6e 36 [0m
+[0;32mI (52889) GATTS_SERVER: 3b 65 79 4a 68 62 47 63 69 4f 69 4a 49 55 7a 49 [0m
+[0;32mI (52889) GATTS_SERVER: 31 4e 69 49 73 49 6e 52 35 63 43 49 36 49 6b 70 [0m
+[0;32mI (52899) GATTS_SERVER: 58 56 43 4a 39 2e 65 79 4a 70 5a 43 49 36 49 6a [0m
+[0;32mI (52909) GATTS_SERVER: 59 31 59 7a 49 79 59 57 49 77 5a 57 49 33 4e 44 [0m
+[0;32mI (52919) GATTS_SERVER: 64 69 4d 47 59 79 5a 54 41 31 4d 6d 51 77 5a 53 [0m
+[0;32mI (52919) GATTS_SERVER: 49 73 49 6d 6c 68 64 43 49 36 4d 54 63 77 4e 7a [0m
+[0;32mI (52929) GATTS_SERVER: 49 7a 4f 54 63 31 4d 53 77 69 5a 58 68 77 49 6a [0m
+[0;32mI (52939) GATTS_SERVER: 6f 78 4e 7a 41 33 4d 6a 51 77 4d 7a 55 78 66 51 [0m
+[0;32mI (52949) GATTS_SERVER: 2e 67 45 5a 62 30 6e 51 35 45 7a 6b 54 52 51 52 [0m
+[0;32mI (52949) GATTS_SERVER: 59 48 48 6b 72 59 35 4c 41 42 4f 70 34 63 6a 35 [0m
+[0;32mI (52959) GATTS_SERVER: 58 4a 4c 71 4d 59 66 49 53 47 36 49 [0m
+[0;32mI (52969) GATTS_SERVER: Message: T-Mobile_Swiatlowod_2.4GHz_3790;r3fpcjgr7n3v56n6;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzIzOTc1MSwiZXhwIjoxNzA3MjQwMzUxfQ.gEZb0nQ5EzkTRQRYHHkrY5LABOp4cj5XJLqMYfISG6I[0m
+SSID: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzIzOTc1MSwiZXhwIjoxNzA3MjQwMzUxfQ.gEZb0nQ5EzkTRQRYHHkrY5LABOp4cj5XJLqMYfISG6I
+I (53019) wifi:wifi driver task: 3ffd8e94, prio:23, stack:6656, core=0
+I (53039) wifi:wifi firmware version: a194738
+I (53039) wifi:wifi certification version: v7.0
+I (53039) wifi:config NVS flash: enabled
+I (53039) wifi:config nano formating: disabled
+I (53039) wifi:Init data frame dynamic rx buffer num: 32
+I (53049) wifi:Init static rx mgmt buffer num: 5
+I (53049) wifi:Init management short buffer num: 32
+I (53049) wifi:Init dynamic tx buffer num: 32
+I (53059) wifi:Init static rx buffer size: 1600
+I (53059) wifi:Init static rx buffer num: 10
+I (53069) wifi:Init dynamic rx buffer num: 32
+[0;32mI (53069) wifi_init: rx ba win: 6[0m
+[0;32mI (53079) wifi_init: tcpip mbox: 32[0m
+[0;32mI (53079) wifi_init: udp mbox: 6[0m
+[0;32mI (53079) wifi_init: tcp mbox: 6[0m
+[0;32mI (53089) wifi_init: tcp tx win: 5760[0m
+[0;32mI (53089) wifi_init: tcp rx win: 5760[0m
+[0;32mI (53099) wifi_init: tcp mss: 1440[0m
+[0;32mI (53099) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (53099) wifi_init: WiFi RX IRAM OP enabled[0m
+SSID_len: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+I (53119) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (53119) wifi:enable tsf
+[0;32mI (53129) [WI-FI]: Wifi started![0m
+I (53139) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (53139) wifi:state: init -> auth (b0)
+I (53149) wifi:state: auth -> assoc (0)
+I (53149) wifi:state: assoc -> run (10)
+I (53179) wifi:connected with T-Mobile_Swiatlowod_2.4GHz_3790, aid = 6, channel 8, BW20, bssid = 34:5d:9e:5f:37:94
+I (53179) wifi:security: WPA2-PSK, phy: bgn, rssi: -76
+I (53189) wifi:pm start, type: 1
+
+I (53189) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (53199) wifi:<ba-add>idx:0 (ifx:0, 34:5d:9e:5f:37:94), tid:0, ssn:0, winSize:64
+I (53219) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;33mW (53949) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (53949) GATTS_SERVER: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x0[0m
+[0;31mE (53959) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (54199) esp_netif_handlers: sta ip: 192.168.1.248, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (54199) [WI-FI]: Connected to ip: 192.168.1.248[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4019af64  PS      : 0x00060030  A0      : 0x80197f5c  A1      : 0x3ffbbb90  
+A2      : 0x3ffbbd84  A3      : 0x3ffbbeb0  A4      : 0x000000c8  A5      : 0x000000c8  
+A6      : 0x3ffbbf30  A7      : 0x00000000  A8      : 0x00000000  A9      : 0x00000000  
+A10     : 0x00000000  A11     : 0x00000000  A12     : 0x000000ff  A13     : 0x0000ff00  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x000000c8  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x4019af61:0x3ffbbb90 0x40197f59:0x3ffbbeb0 0x400d9186:0x3ffbbf70 0x401b2ebb:0x3ffbc1f0
+
+
+
+
+ELF file SHA256: f6b4a17a9
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  6 2024 14:09:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d478h (251000) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=0004d4a0 vaddr=3ffbdb60 size=02b78h ( 11128) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e4c5ch (937052) map[0m
+[0;32mI (354) esp_image: segment 3: paddr=00134c84 vaddr=3ffc06d8 size=02d74h ( 11636) load[0m
+[0;32mI (357) esp_image: segment 4: paddr=00137a00 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (438) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (443) cpu_start: Compile time:     Feb  6 2024 16:55:54[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  f6b4a17a9...[0m
+[0;32mI (455) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (461) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (466) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (471) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (483) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (489) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (495) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFCBCF0 len 00014310 (80 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: winbond[0m
+[0;32mI (531) spi_flash: flash io: dio[0m
+[0;33mW (535) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (545) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (554) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (560) main_task: Started on CPU0[0m
+[0;32mI (570) main_task: Calling app_main()[0m
+[0;32mI (570) [WI-FI]: [APP] Startup..[0m
+[0;32mI (570) [WI-FI]: [APP] Free memory: 212864 bytes[0m
+[0;32mI (570) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (610) [I2C]: Module configuration successful![0m
+[0;32mI (23610) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23610) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23610) [LED]: LEDs configured![0m
+[0;32mI (23620) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (23630) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (23630) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (24020) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+Booting ...
+[0;33mW (24030) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (24040) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (24040) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+[0;31mE (24060) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (24060) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (24060) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (24070) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (24080) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (24080) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (24090) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (24090) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (24100) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (24110) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (24110) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (24120) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+Hello there!
+Gpio pin: 33
+[0;32mI (91500) GATTS_SERVER: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 54:b8:fc:bb:dc:1a:[0m
+[0;32mI (91500) GATTS_SERVER: CONNECT_EVT, conn_id 0, remote 54:b8:fc:bb:dc:1a:[0m
+[0;32mI (92120) GATTS_SERVER: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 30,latency = 0, timeout = 400[0m
+[0;32mI (92580) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (92970) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (92970) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (93040) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 30,latency = 0, timeout = 400[0m

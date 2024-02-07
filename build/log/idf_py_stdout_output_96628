@@ -1,0 +1,449 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  3 2024 12:23:44[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29bf0h (170992) map[0m
+[0;32mI (138) esp_image: segment 1: paddr=00039c18 vaddr=3ffbdb60 size=05474h ( 21620) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003f094 vaddr=40080000 size=00f84h (  3972) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9da04h (645636) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=000dda2c vaddr=40080f84 size=17a18h ( 96792) load[0m
+[0;32mI (323) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (323) boot: Disabling RNG early entropy source...[0m
+[0;32mI (335) cpu_start: Multicore app[0m
+[0;32mI (343) cpu_start: Pro cpu start user code[0m
+[0;32mI (343) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (344) cpu_start: Application information:[0m
+[0;32mI (347) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (354) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (359) cpu_start: Compile time:     Feb  3 2024 12:23:45[0m
+[0;32mI (365) cpu_start: ELF file SHA256:  e55d9a796...[0m
+[0;32mI (370) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (377) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (382) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (386) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (391) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (399) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (405) heap_init: At 3FFC7750 len 000188B0 (98 KiB): DRAM[0m
+[0;32mI (411) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (417) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (423) heap_init: At 4009899C len 00007664 (29 KiB): IRAM[0m
+[0;32mI (431) spi_flash: detected chip: winbond[0m
+[0;32mI (434) spi_flash: flash io: dio[0m
+[0;33mW (439) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (449) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (458) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (463) main_task: Started on CPU0[0m
+[0;32mI (473) main_task: Calling app_main()[0m
+[0;32mI (473) [WI-FI]: [APP] Startup..[0m
+[0;32mI (473) [WI-FI]: [APP] Free memory: 269692 bytes[0m
+[0;32mI (473) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (513) [I2C]: Module configuration successful![0m
+[0;32mI (513) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (523) [SWITCH]: Configuration successful![0m
+[0;32mI (543) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (543) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (553) [LED]: LEDs configured![0m
+I (573) wifi:wifi driver task: 3ffb8aec, prio:23, stack:6656, core=0
+I (583) wifi:wifi firmware version: a194738
+I (593) wifi:wifi certification version: v7.0
+I (593) wifi:config NVS flash: enabled
+I (593) wifi:config nano formating: disabled
+I (593) wifi:Init data frame dynamic rx buffer num: 32
+I (593) wifi:Init static rx mgmt buffer num: 5
+I (603) wifi:Init management short buffer num: 32
+I (603) wifi:Init dynamic tx buffer num: 32
+I (613) wifi:Init static rx buffer size: 1600
+I (613) wifi:Init static rx buffer num: 10
+I (613) wifi:Init dynamic rx buffer num: 32
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (623) wifi_init: tcpip mbox: 32[0m
+[0;32mI (633) wifi_init: udp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp mbox: 6[0m
+[0;32mI (633) wifi_init: tcp tx win: 5760[0m
+[0;32mI (643) wifi_init: tcp rx win: 5760[0m
+[0;32mI (643) wifi_init: tcp mss: 1440[0m
+[0;32mI (653) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (653) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+Gpio pin: 33
+[0;32mI (6023) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (6103) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6103) wifi:enable tsf
+[0;32mI (6103) [WI-FI]: Wifi started![0m
+I (6123) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (6123) wifi:state: init -> auth (b0)
+I (6133) wifi:state: auth -> init (1c0)
+I (6133) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (6133) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (8553) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (10963) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+I (11063) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (11063) wifi:state: init -> auth (b0)
+I (11153) wifi:state: auth -> assoc (0)
+I (11163) wifi:state: assoc -> run (10)
+I (11213) wifi:connected with supertajnasiec, aid = 2, channel 8, BW20, bssid = 02:8f:ed:27:61:1d
+I (11213) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+I (11223) wifi:pm start, type: 1
+
+I (11223) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (11463) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (11463) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (12233) esp_netif_handlers: sta ip: 192.168.200.8, mask: 255.255.255.0, gw: 192.168.200.113[0m
+[0;32mI (12233) [WI-FI]: Connected to ip: 192.168.200.8[0m
+Wi-Fi connected
+[0;32mI (15423) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (16113) wifi:<ba-add>idx:0 (ifx:0, 02:8f:ed:27:61:1d), tid:0, ssn:3, winSize:64
+[0;32mI (16213) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+Data: 48
+[0;31mE (16213) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (21223) [MQTT]: Sent publish successful, msg_id: 1[0m
+Data: 5
+[0;31mE (21223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (21273) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (26223) [MQTT]: Sent publish successful, msg_id: 2[0m
+Data: 5
+[0;31mE (26223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (26323) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;32mI (31223) [MQTT]: Sent publish successful, msg_id: 3[0m
+Data: 5
+[0;31mE (31223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (31273) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;32mI (36223) [MQTT]: Sent publish successful, msg_id: 4[0m
+Data: 5
+[0;31mE (36223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (36353) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;32mI (41223) [MQTT]: Sent publish successful, msg_id: 5[0m
+Data: 5
+[0;31mE (41223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (41483) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;32mI (46223) [MQTT]: Sent publish successful, msg_id: 6[0m
+Data: 5
+[0;31mE (46223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (46393) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;32mI (51223) [MQTT]: Sent publish successful, msg_id: 7[0m
+Data: 5
+[0;31mE (51223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (51273) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;32mI (56223) [MQTT]: Sent publish successful, msg_id: 8[0m
+Data: 5
+[0;31mE (56223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (56293) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;32mI (61223) [MQTT]: Sent publish successful, msg_id: 9[0m
+Data: 5
+[0;31mE (61223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (61273) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+[0;32mI (66223) [MQTT]: Sent publish successful, msg_id: 10[0m
+Data: 5
+[0;31mE (66223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (66273) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+[0;32mI (71223) [MQTT]: Sent publish successful, msg_id: 11[0m
+Data: 5
+[0;31mE (71223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (71383) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+[0;32mI (76223) [MQTT]: Sent publish successful, msg_id: 12[0m
+Data: 5
+[0;31mE (76223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (76503) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+[0;32mI (81223) [MQTT]: Sent publish successful, msg_id: 13[0m
+Data: 5
+[0;31mE (81223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (81413) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+[0;32mI (86223) [MQTT]: Sent publish successful, msg_id: 14[0m
+Data: 5
+[0;31mE (86223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (86333) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+[0;32mI (91223) [MQTT]: Sent publish successful, msg_id: 15[0m
+Data: 5
+[0;31mE (91223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (91453) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+[0;32mI (96223) [MQTT]: Sent publish successful, msg_id: 16[0m
+Data: 5
+[0;31mE (96223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (96363) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+[0;32mI (101223) [MQTT]: Sent publish successful, msg_id: 17[0m
+Data: 5
+[0;31mE (101223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (101273) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+[0;32mI (106223) [MQTT]: Sent publish successful, msg_id: 18[0m
+Data: 5
+[0;31mE (106223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (106273) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+[0;32mI (111223) [MQTT]: Sent publish successful, msg_id: 19[0m
+Data: 5
+[0;31mE (111223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (111313) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+[0;32mI (116223) [MQTT]: Sent publish successful, msg_id: 20[0m
+Data: 5
+[0;31mE (116223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (116433) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+[0;32mI (121223) [MQTT]: Sent publish successful, msg_id: 21[0m
+Data: 5
+[0;31mE (121223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (121553) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+[0;32mI (126223) [MQTT]: Sent publish successful, msg_id: 22[0m
+Data: 5
+[0;31mE (126223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (126273) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+[0;32mI (131223) [MQTT]: Sent publish successful, msg_id: 23[0m
+Data: 5
+[0;31mE (131223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (131283) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+[0;32mI (136223) [MQTT]: Sent publish successful, msg_id: 24[0m
+Data: 5
+[0;31mE (136223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (136403) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+[0;32mI (141223) [MQTT]: Sent publish successful, msg_id: 25[0m
+Data: 5
+[0;31mE (141223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (141273) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+[0;32mI (146223) [MQTT]: Sent publish successful, msg_id: 26[0m
+Data: 5
+[0;31mE (146223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (146333) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+[0;32mI (151223) [MQTT]: Sent publish successful, msg_id: 27[0m
+Data: 5
+[0;31mE (151223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (151283) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+[0;32mI (156223) [MQTT]: Sent publish successful, msg_id: 28[0m
+Data: 5
+[0;31mE (156223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (156273) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+[0;32mI (161223) [MQTT]: Sent publish successful, msg_id: 29[0m
+Data: 5
+[0;31mE (161223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (161283) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+[0;32mI (166223) [MQTT]: Sent publish successful, msg_id: 30[0m
+Data: 5
+[0;31mE (166223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (166403) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+[0;32mI (171223) [MQTT]: Sent publish successful, msg_id: 31[0m
+Data: 5
+[0;31mE (171223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (171533) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+[0;32mI (176223) [MQTT]: Sent publish successful, msg_id: 32[0m
+Data: 5
+[0;31mE (176223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (176443) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+[0;32mI (181223) [MQTT]: Sent publish successful, msg_id: 33[0m
+Data: 5
+[0;31mE (181223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (181353) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+[0;32mI (186223) [MQTT]: Sent publish successful, msg_id: 34[0m
+Data: 5
+[0;31mE (186223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (186473) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+[0;32mI (191223) [MQTT]: Sent publish successful, msg_id: 35[0m
+Data: 5
+[0;31mE (191223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (191393) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+[0;32mI (196223) [MQTT]: Sent publish successful, msg_id: 36[0m
+Data: 5
+[0;31mE (196223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (196513) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+[0;32mI (201223) [MQTT]: Sent publish successful, msg_id: 37[0m
+Data: 5
+[0;31mE (201223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (201423) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+[0;32mI (206223) [MQTT]: Sent publish successful, msg_id: 38[0m
+Data: 5
+[0;31mE (206223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (206343) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+[0;32mI (211223) [MQTT]: Sent publish successful, msg_id: 39[0m
+Data: 5
+[0;31mE (211223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (211463) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+[0;32mI (216223) [MQTT]: Sent publish successful, msg_id: 40[0m
+Data: 5
+[0;31mE (216223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (216383) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+[0;32mI (221223) [MQTT]: Sent publish successful, msg_id: 41[0m
+Data: 5
+[0;31mE (221223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (221503) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+[0;32mI (226223) [MQTT]: Sent publish successful, msg_id: 42[0m
+Data: 5
+[0;31mE (226223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (226413) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+[0;32mI (231223) [MQTT]: Sent publish successful, msg_id: 43[0m
+Data: 5
+[0;31mE (231223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (231333) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+[0;32mI (236223) [MQTT]: Sent publish successful, msg_id: 44[0m
+Data: 5
+[0;31mE (236223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (236453) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+[0;32mI (241223) [MQTT]: Sent publish successful, msg_id: 45[0m
+Data: 5
+[0;31mE (241223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (241363) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+[0;32mI (246223) [MQTT]: Sent publish successful, msg_id: 46[0m
+Data: 5
+[0;31mE (246223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (246483) [MQTT]: EVENT_PUBLISHED, msg_id: 46[0m
+[0;32mI (251223) [MQTT]: Sent publish successful, msg_id: 47[0m
+Data: 5
+[0;31mE (251223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (251393) [MQTT]: EVENT_PUBLISHED, msg_id: 47[0m
+[0;32mI (256223) [MQTT]: Sent publish successful, msg_id: 48[0m
+Data: 5
+[0;31mE (256223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (256313) [MQTT]: EVENT_PUBLISHED, msg_id: 48[0m
+[0;32mI (261223) [MQTT]: Sent publish successful, msg_id: 49[0m
+Data: 5
+[0;31mE (261223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (261433) [MQTT]: EVENT_PUBLISHED, msg_id: 49[0m
+[0;32mI (266223) [MQTT]: Sent publish successful, msg_id: 50[0m
+Data: 5
+[0;31mE (266223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (266353) [MQTT]: EVENT_PUBLISHED, msg_id: 50[0m
+[0;32mI (271223) [MQTT]: Sent publish successful, msg_id: 51[0m
+Data: 5
+[0;31mE (271223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (271473) [MQTT]: EVENT_PUBLISHED, msg_id: 51[0m
+[0;32mI (276223) [MQTT]: Sent publish successful, msg_id: 52[0m
+Data: 5
+[0;31mE (276223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (276383) [MQTT]: EVENT_PUBLISHED, msg_id: 52[0m
+[0;32mI (281223) [MQTT]: Sent publish successful, msg_id: 53[0m
+Data: 5
+[0;31mE (281223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (281303) [MQTT]: EVENT_PUBLISHED, msg_id: 53[0m
+[0;32mI (286223) [MQTT]: Sent publish successful, msg_id: 54[0m
+Data: 5
+[0;31mE (286223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (286423) [MQTT]: EVENT_PUBLISHED, msg_id: 54[0m
+[0;32mI (291223) [MQTT]: Sent publish successful, msg_id: 55[0m
+Data: 5
+[0;31mE (291223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (291333) [MQTT]: EVENT_PUBLISHED, msg_id: 55[0m
+[0;32mI (296223) [MQTT]: Sent publish successful, msg_id: 56[0m
+Data: 5
+[0;31mE (296223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (296453) [MQTT]: EVENT_PUBLISHED, msg_id: 56[0m
+[0;32mI (301223) [MQTT]: Sent publish successful, msg_id: 57[0m
+Data: 5
+[0;31mE (301223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (301373) [MQTT]: EVENT_PUBLISHED, msg_id: 57[0m
+[0;32mI (306223) [MQTT]: Sent publish successful, msg_id: 58[0m
+Data: 5
+[0;31mE (306223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (306493) [MQTT]: EVENT_PUBLISHED, msg_id: 58[0m
+[0;32mI (311223) [MQTT]: Sent publish successful, msg_id: 59[0m
+Data: 5
+[0;31mE (311223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (311403) [MQTT]: EVENT_PUBLISHED, msg_id: 59[0m
+[0;32mI (316223) [MQTT]: Sent publish successful, msg_id: 60[0m
+Data: 5
+[0;31mE (316223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (316323) [MQTT]: EVENT_PUBLISHED, msg_id: 60[0m
+[0;32mI (321223) [MQTT]: Sent publish successful, msg_id: 61[0m
+Data: 5
+[0;31mE (321223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (321273) [MQTT]: EVENT_PUBLISHED, msg_id: 61[0m
+[0;32mI (326223) [MQTT]: Sent publish successful, msg_id: 62[0m
+Data: 5
+[0;31mE (326223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (326353) [MQTT]: EVENT_PUBLISHED, msg_id: 62[0m
+[0;32mI (331223) [MQTT]: Sent publish successful, msg_id: 63[0m
+Data: 5
+[0;31mE (331223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (331483) [MQTT]: EVENT_PUBLISHED, msg_id: 63[0m
+[0;32mI (336223) [MQTT]: Sent publish successful, msg_id: 64[0m
+Data: 5
+[0;31mE (336223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (336393) [MQTT]: EVENT_PUBLISHED, msg_id: 64[0m
+[0;32mI (341223) [MQTT]: Sent publish successful, msg_id: 65[0m
+Data: 5
+[0;31mE (341223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (341513) [MQTT]: EVENT_PUBLISHED, msg_id: 65[0m
+[0;32mI (346223) [MQTT]: Sent publish successful, msg_id: 66[0m
+Data: 5
+[0;31mE (346223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (346423) [MQTT]: EVENT_PUBLISHED, msg_id: 66[0m
+[0;32mI (351223) [MQTT]: Sent publish successful, msg_id: 67[0m
+Data: 5
+[0;31mE (351223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (351333) [MQTT]: EVENT_PUBLISHED, msg_id: 67[0m
+[0;32mI (356223) [MQTT]: Sent publish successful, msg_id: 68[0m
+Data: 5
+[0;31mE (356223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (356463) [MQTT]: EVENT_PUBLISHED, msg_id: 68[0m
+[0;32mI (361223) [MQTT]: Sent publish successful, msg_id: 69[0m
+Data: 5
+[0;31mE (361223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (361373) [MQTT]: EVENT_PUBLISHED, msg_id: 69[0m
+[0;32mI (366223) [MQTT]: Sent publish successful, msg_id: 70[0m
+Data: 5
+[0;31mE (366223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (366273) [MQTT]: EVENT_PUBLISHED, msg_id: 70[0m
+[0;32mI (371223) [MQTT]: Sent publish successful, msg_id: 71[0m
+Data: 5
+[0;31mE (371223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (371413) [MQTT]: EVENT_PUBLISHED, msg_id: 71[0m
+[0;32mI (376223) [MQTT]: Sent publish successful, msg_id: 72[0m
+Data: 5
+[0;31mE (376223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (376273) [MQTT]: EVENT_PUBLISHED, msg_id: 72[0m
+[0;32mI (381223) [MQTT]: Sent publish successful, msg_id: 73[0m
+Data: 5
+[0;31mE (381223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (381313) [MQTT]: EVENT_PUBLISHED, msg_id: 73[0m
+[0;32mI (386223) [MQTT]: Sent publish successful, msg_id: 74[0m
+Data: 5
+[0;31mE (386223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (386363) [MQTT]: EVENT_PUBLISHED, msg_id: 74[0m
+[0;32mI (391223) [MQTT]: Sent publish successful, msg_id: 75[0m
+Data: 5
+[0;31mE (391223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (391273) [MQTT]: EVENT_PUBLISHED, msg_id: 75[0m
+[0;32mI (396223) [MQTT]: Sent publish successful, msg_id: 76[0m
+Data: 5
+[0;31mE (396223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (396273) [MQTT]: EVENT_PUBLISHED, msg_id: 76[0m
+[0;32mI (401223) [MQTT]: Sent publish successful, msg_id: 77[0m
+Data: 5
+[0;31mE (401223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (401313) [MQTT]: EVENT_PUBLISHED, msg_id: 77[0m
+[0;32mI (406223) [MQTT]: Sent publish successful, msg_id: 78[0m
+Data: 5
+[0;31mE (406223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (406433) [MQTT]: EVENT_PUBLISHED, msg_id: 78[0m
+[0;32mI (411223) [MQTT]: Sent publish successful, msg_id: 79[0m
+Data: 5
+[0;31mE (411223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (411343) [MQTT]: EVENT_PUBLISHED, msg_id: 79[0m
+[0;32mI (416223) [MQTT]: Sent publish successful, msg_id: 80[0m
+Data: 5
+[0;31mE (416223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (416473) [MQTT]: EVENT_PUBLISHED, msg_id: 80[0m
+[0;32mI (421223) [MQTT]: Sent publish successful, msg_id: 81[0m
+Data: 5
+[0;31mE (421223) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (421383) [MQTT]: EVENT_PUBLISHED, msg_id: 81[0m

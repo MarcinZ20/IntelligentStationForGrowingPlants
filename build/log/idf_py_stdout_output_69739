@@ -1,0 +1,408 @@
+ffc0870 size=02bdch ( 11228) load[0m
+[0;32mI (356) esp_image: segment 4: paddr=00136e9c vaddr=40080000 size=1ea70h (125552) load[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Feb  7 2024 00:17:03[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d2e0h (250592) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d308 vaddr=3ffbdb60 size=02d10h ( 11536) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e4290h (934544) map[0m
+[0;32mI (353) esp_image: segment 3: paddr=001342b8 vaddr=3ffc0870 size=02bdch ( 11228) load[0m
+[0;32mI (356) esp_image: segment 4: paddr=00136e9c vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (418) cpu_start: Multicore app[0m
+[0;32mI (426) cpu_start: Pro cpu start user code[0m
+[0;32mI (426) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (426) cpu_start: Application information:[0m
+[0;32mI (429) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (436) cpu_start: App version:      355b7ff-dirty[0m
+[0;32mI (442) cpu_start: Compile time:     Feb  7 2024 00:17:10[0m
+[0;32mI (448) cpu_start: ELF file SHA256:  5e02eaea9...[0m
+[0;32mI (453) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (460) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (464) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (469) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (474) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCBCB0 len 00014350 (80 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (518) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: winbond[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (544) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (553) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+[0;32mI (568) [WI-FI]: [APP] Startup..[0m
+[0;32mI (568) [WI-FI]: [APP] Free memory: 212928 bytes[0m
+[0;32mI (568) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (608) [I2C]: Module configuration successful![0m
+[0;32mI (608) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (618) [SWITCH]: Configuration successful![0m
+[0;32mI (638) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (638) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (648) [LED]: LEDs configured![0m
+[0;32mI (648) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (658) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (668) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (1068) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+[0;33mW (1078) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (1078) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (1078) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+I (1098) wifi:wifi driver task: 3ffd6e58, prio:23, stack:6656, core=0
+I (1118) wifi:wifi firmware version: a194738
+I (1118) wifi:wifi certification version: v7.0
+I (1118) wifi:config NVS flash: enabled
+I (1118) wifi:config nano formating: disabled
+I (1128) wifi:Init data frame dynamic rx buffer num: 32
+I (1128) wifi:Init static rx mgmt buffer num: 5
+I (1128) wifi:Init management short buffer num: 32
+I (1138) wifi:Init dynamic tx buffer num: 32
+I (1138) wifi:Init static rx buffer size: 1600
+I (1148) wifi:Init static rx buffer num: 10
+I (1148) wifi:Init dynamic rx buffer num: 32
+[0;31mE (1158) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (1158) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (1168) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (1178) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (1178) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (1188) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (1188) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (1198) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (1208) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (1208) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (1218) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (1228) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+[0;32mI (1238) wifi_init: rx ba win: 6[0m
+[0;32mI (1238) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1238) wifi_init: udp mbox: 6[0m
+[0;32mI (1248) wifi_init: tcp mbox: 6[0m
+[0;32mI (1248) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1258) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1258) wifi_init: tcp mss: 1440[0m
+[0;32mI (1258) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1268) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+Gpio pin: 33
+Check pressed task started
+[0;31mE (6648) [SWITCH]: Switch reset released[0m
+SSID_len: wifiabc
+Password: abcdef12345
+I (6658) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6658) wifi:enable tsf
+SSID: wifiabc
+Password: abcdef12345
+[0;31mE (6658) [APP]: LOOPING[0m
+[0;32mI (6658) [WI-FI]: Wifi started![0m
+Wi-Fi down ...
+[0;31mE (6768) [APP]: LOOPING[0m
+[0;32mI (10048) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (11648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (11738) [APP]: LOOPING[0m
+[0;32mI (13438) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (16648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (16738) [APP]: LOOPING[0m
+[0;32mI (16818) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (20198) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (21648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (21738) [APP]: LOOPING[0m
+[0;32mI (23588) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (26648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (26738) [APP]: LOOPING[0m
+[0;32mI (26968) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (30358) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (31648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (31738) [APP]: LOOPING[0m
+[0;32mI (33678) GATTS_SERVER: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 54:37:38:fd:1b:8d:[0m
+[0;32mI (33678) GATTS_SERVER: CONNECT_EVT, conn_id 0, remote 54:37:38:fd:1b:8d:[0m
+[0;32mI (33748) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (34098) GATTS_SERVER: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (34458) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (34868) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (34868) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (34938) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 24,latency = 0, timeout = 400[0m
+[0;31mE (36648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (36738) [APP]: LOOPING[0m
+[0;32mI (37138) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (40518) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (41648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (41738) [APP]: LOOPING[0m
+[0;32mI (42798) GATTS_SERVER: GATT_WRITE_EVT_A, conn_id 0, trans_id 3, handle 42[0m
+[0;32mI (42798) GATTS_SERVER: GATT_WRITE_EVT_A, value len 184, value :[0m
+[0;32mI (42798) GATTS_SERVER: 6b 61 6b 61 6a 3b 6a 73 6a 73 6a 61 3b 65 79 4a [0m
+[0;32mI (42808) GATTS_SERVER: 68 62 47 63 69 4f 69 4a 49 55 7a 49 31 4e 69 49 [0m
+[0;32mI (42818) GATTS_SERVER: 73 49 6e 52 35 63 43 49 36 49 6b 70 58 56 43 4a [0m
+[0;32mI (42828) GATTS_SERVER: 39 2e 65 79 4a 70 5a 43 49 36 49 6a 59 31 59 7a [0m
+[0;32mI (42828) GATTS_SERVER: 49 79 59 57 49 77 5a 57 49 33 4e 44 64 69 4d 47 [0m
+[0;32mI (42838) GATTS_SERVER: 59 79 5a 54 41 31 4d 6d 51 77 5a 53 49 73 49 6d [0m
+[0;32mI (42848) GATTS_SERVER: 6c 68 64 43 49 36 4d 54 63 77 4e 7a 4d 77 4d 7a [0m
+[0;32mI (42858) GATTS_SERVER: 59 31 4f 53 77 69 5a 58 68 77 49 6a 6f 78 4e 7a [0m
+[0;32mI (42858) GATTS_SERVER: 41 33 4d 7a 45 77 4f 44 55 35 66 51 2e 45 4e 76 [0m
+[0;32mI (42868) GATTS_SERVER: 78 6f 62 68 6d 33 71 48 46 5a 30 33 4b 32 34 79 [0m
+[0;32mI (42878) GATTS_SERVER: 74 47 79 6e 2d 77 6a 71 5f 6d 64 54 35 71 65 51 [0m
+[0;32mI (42888) GATTS_SERVER: 77 39 52 61 67 38 55 67 [0m
+[0;32mI (42888) GATTS_SERVER: Message: kakaj;jsjsja;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug[0m
+SSID: kakaj
+Password: jsjsja
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug
+[0;33mW (43848) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (43848) GATTS_SERVER: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x0[0m
+[0;31mE (43858) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (43908) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (46648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (46738) [APP]: LOOPING[0m
+[0;32mI (47288) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (50678) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (51648) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (51738) [APP]: LOOPING[0m
+[0;32mI (54058) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (56648) [SWITCH]: Switch reset pressed[0m
+[0;32mI (56648) [APP]: RESETING DEVICE[0m
+[0;32mI (57448) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (60828) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (61648) [SWITCH]: Switch reset released[0m
+[0;32mI (64208) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (66648) [SWITCH]: Switch reset released[0m
+[0;32mI (67598) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (70978) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (71648) [SWITCH]: Switch reset released[0m
+[0;32mI (71688) GATTS_SERVER: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 54:37:38:fd:1b:8d:[0m
+[0;32mI (71688) GATTS_SERVER: CONNECT_EVT, conn_id 0, remote 54:37:38:fd:1b:8d:[0m
+[0;32mI (72108) GATTS_SERVER: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (72498) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (72868) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (72868) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (72938) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (74368) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (76648) [SWITCH]: Switch reset released[0m
+[0;32mI (77758) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (81138) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (81648) [SWITCH]: Switch reset released[0m
+[0;32mI (84518) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (86648) [SWITCH]: Switch reset released[0m
+[0;32mI (87908) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (91288) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (91648) [SWITCH]: Switch reset released[0m
+[0;32mI (94668) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (96648) [SWITCH]: Switch reset released[0m
+[0;32mI (98058) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (101438) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (101648) [SWITCH]: Switch reset released[0m
+[0;32mI (104828) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (106648) [SWITCH]: Switch reset released[0m
+[0;32mI (108208) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (111588) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (111648) [SWITCH]: Switch reset released[0m
+[0;32mI (114978) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (116648) [SWITCH]: Switch reset released[0m
+[0;32mI (118358) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (121648) [SWITCH]: Switch reset released[0m
+[0;32mI (121738) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (125128) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (126648) [SWITCH]: Switch reset released[0m
+[0;32mI (128508) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (131648) [SWITCH]: Switch reset released[0m
+[0;32mI (131898) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (135278) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (136648) [SWITCH]: Switch reset released[0m
+[0;32mI (138658) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (141648) [SWITCH]: Switch reset released[0m
+[0;32mI (142048) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (145428) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (146648) [SWITCH]: Switch reset released[0m
+[0;32mI (148818) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (151648) [SWITCH]: Switch reset released[0m
+[0;32mI (152198) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (155578) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (156648) [SWITCH]: Switch reset released[0m
+[0;32mI (158968) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (161648) [SWITCH]: Switch reset released[0m
+[0;32mI (162348) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (165738) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (166648) [SWITCH]: Switch reset released[0m
+[0;32mI (169118) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (171648) [SWITCH]: Switch reset released[0m
+[0;32mI (172498) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (175888) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (176648) [SWITCH]: Switch reset released[0m
+[0;32mI (179268) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (181648) [SWITCH]: Switch reset released[0m
+[0;32mI (182658) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (186038) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (186648) [SWITCH]: Switch reset released[0m
+[0;32mI (189418) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (191648) [SWITCH]: Switch reset released[0m
+[0;32mI (192808) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (196188) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (196648) [SWITCH]: Switch reset released[0m
+[0;32mI (199578) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (201648) [SWITCH]: Switch reset released[0m
+[0;32mI (202958) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (206338) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (206648) [SWITCH]: Switch reset released[0m
+[0;32mI (209728) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (211648) [SWITCH]: Switch reset released[0m
+[0;32mI (213108) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (216498) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (216648) [SWITCH]: Switch reset released[0m
+[0;32mI (219878) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (221648) [SWITCH]: Switch reset released[0m
+[0;32mI (223258) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (226648) [SWITCH]: Switch reset released[0m
+[0;32mI (226648) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (230028) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (231648) [SWITCH]: Switch reset released[0m
+[0;32mI (233408) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (236648) [SWITCH]: Switch reset released[0m
+[0;32mI (236798) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (240178) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (241648) [SWITCH]: Switch reset released[0m
+[0;32mI (243568) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (246648) [SWITCH]: Switch reset released[0m
+[0;32mI (246948) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (250328) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (251648) [SWITCH]: Switch reset released[0m
+[0;32mI (252618) GATTS_SERVER: GATT_WRITE_EVT_A, conn_id 0, trans_id 3, handle 42[0m
+[0;32mI (252618) GATTS_SERVER: GATT_WRITE_EVT_A, value len 196, value :[0m
+[0;32mI (252628) GATTS_SERVER: 48 55 41 57 45 49 20 50 31 30 20 6c 69 74 65 3b [0m
+[0;32mI (252628) GATTS_SERVER: 68 61 73 6c 6f 31 32 33 3b 65 79 4a 68 62 47 63 [0m
+[0;32mI (252638) GATTS_SERVER: 69 4f 69 4a 49 55 7a 49 31 4e 69 49 73 49 6e 52 [0m
+[0;32mI (252648) GATTS_SERVER: 35 63 43 49 36 49 6b 70 58 56 43 4a 39 2e 65 79 [0m
+[0;32mI (252658) GATTS_SERVER: 4a 70 5a 43 49 36 49 6a 59 31 59 7a 49 79 59 57 [0m
+[0;32mI (252658) GATTS_SERVER: 49 77 5a 57 49 33 4e 44 64 69 4d 47 59 79 5a 54 [0m
+[0;32mI (252668) GATTS_SERVER: 41 31 4d 6d 51 77 5a 53 49 73 49 6d 6c 68 64 43 [0m
+[0;32mI (252678) GATTS_SERVER: 49 36 4d 54 63 77 4e 7a 4d 77 4d 7a 59 31 4f 53 [0m
+[0;32mI (252688) GATTS_SERVER: 77 69 5a 58 68 77 49 6a 6f 78 4e 7a 41 33 4d 7a [0m
+[0;32mI (252688) GATTS_SERVER: 45 77 4f 44 55 35 66 51 2e 45 4e 76 78 6f 62 68 [0m
+[0;32mI (252698) GATTS_SERVER: 6d 33 71 48 46 5a 30 33 4b 32 34 79 74 47 79 6e [0m
+[0;32mI (252708) GATTS_SERVER: 2d 77 6a 71 5f 6d 64 54 35 71 65 51 77 39 52 61 [0m
+[0;32mI (252718) GATTS_SERVER: 67 38 55 67 [0m
+[0;32mI (252718) GATTS_SERVER: Message: HUAWEI P10 lite;haslo123;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug[0m
+SSID: HUAWEI P10 lite
+Password: haslo123
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug
+[0;33mW (253698) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (253698) GATTS_SERVER: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x0[0m
+[0;31mE (253708) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (253718) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (256648) [SWITCH]: Switch reset released[0m
+[0;32mI (257098) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (260488) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (261648) [SWITCH]: Switch reset released[0m
+[0;32mI (263868) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (266648) [SWITCH]: Switch reset released[0m
+[0;32mI (267248) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (270638) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (271648) [SWITCH]: Switch reset released[0m
+[0;32mI (274018) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (276648) [SWITCH]: Switch reset released[0m
+[0;32mI (277398) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (280788) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (281648) [SWITCH]: Switch reset released[0m
+[0;32mI (284168) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (286648) [SWITCH]: Switch reset pressed[0m
+[0;32mI (287558) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (290478) GATTS_SERVER: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 47:5f:0f:6a:57:6e:[0m
+[0;32mI (290478) GATTS_SERVER: CONNECT_EVT, conn_id 0, remote 47:5f:0f:6a:57:6e:[0m
+[0;32mI (290898) GATTS_SERVER: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (290938) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (291318) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (291628) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (291638) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;31mE (291648) [SWITCH]: Switch reset released[0m
+[0;32mI (291718) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (294328) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (296648) [SWITCH]: Switch reset released[0m
+[0;32mI (297708) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (301098) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (301648) [SWITCH]: Switch reset released[0m
+[0;32mI (304478) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (306648) [SWITCH]: Switch reset released[0m
+[0;32mI (307728) GATTS_SERVER: GATT_WRITE_EVT_A, conn_id 0, trans_id 3, handle 42[0m
+[0;32mI (307728) GATTS_SERVER: GATT_WRITE_EVT_A, value len 196, value :[0m
+[0;32mI (307738) GATTS_SERVER: 48 55 41 57 45 49 20 50 31 30 20 6c 69 74 65 3b [0m
+[0;32mI (307738) GATTS_SERVER: 68 61 73 6c 6f 31 32 33 3b 65 79 4a 68 62 47 63 [0m
+[0;32mI (307748) GATTS_SERVER: 69 4f 69 4a 49 55 7a 49 31 4e 69 49 73 49 6e 52 [0m
+[0;32mI (307758) GATTS_SERVER: 35 63 43 49 36 49 6b 70 58 56 43 4a 39 2e 65 79 [0m
+[0;32mI (307768) GATTS_SERVER: 4a 70 5a 43 49 36 49 6a 59 31 59 7a 49 79 59 57 [0m
+[0;32mI (307768) GATTS_SERVER: 49 77 5a 57 49 33 4e 44 64 69 4d 47 59 79 5a 54 [0m
+[0;32mI (307778) GATTS_SERVER: 41 31 4d 6d 51 77 5a 53 49 73 49 6d 6c 68 64 43 [0m
+[0;32mI (307788) GATTS_SERVER: 49 36 4d 54 63 77 4e 7a 4d 77 4d 7a 59 31 4f 53 [0m
+[0;32mI (307798) GATTS_SERVER: 77 69 5a 58 68 77 49 6a 6f 78 4e 7a 41 33 4d 7a [0m
+[0;32mI (307798) GATTS_SERVER: 45 77 4f 44 55 35 66 51 2e 45 4e 76 78 6f 62 68 [0m
+[0;32mI (307808) GATTS_SERVER: 6d 33 71 48 46 5a 30 33 4b 32 34 79 74 47 79 6e [0m
+[0;32mI (307818) GATTS_SERVER: 2d 77 6a 71 5f 6d 64 54 35 71 65 51 77 39 52 61 [0m
+[0;32mI (307818) GATTS_SERVER: 67 38 55 67 [0m
+[0;32mI (307828) GATTS_SERVER: Message: HUAWEI P10 lite;haslo123;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug[0m
+SSID: HUAWEI P10 lite
+Password: haslo123
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug
+[0;32mI (307858) [WI-FI]: Reconnecting to wifi ...[0m
+[0;33mW (308748) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (308748) GATTS_SERVER: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x0[0m
+[0;31mE (308758) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (311258) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (311648) [SWITCH]: Switch reset released[0m
+[0;32mI (314638) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (316648) [SWITCH]: Switch reset released[0m
+[0;32mI (318028) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (321408) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (321648) [SWITCH]: Switch reset released[0m
+[0;32mI (324788) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (326648) [SWITCH]: Switch reset released[0m
+[0;32mI (328178) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (331558) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (331648) [SWITCH]: Switch reset released[0m
+[0;32mI (334938) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (336648) [SWITCH]: Switch reset released[0m
+[0;32mI (338328) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (341648) [SWITCH]: Switch reset released[0m
+[0;32mI (341708) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (345098) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (346648) [SWITCH]: Switch reset released[0m

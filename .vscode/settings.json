@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "display.h": "c",
+    "utils.h": "c",
+    "am2320.h": "c",
+    "i2c.h": "c",
+    "ssd1306.h": "c",
+    "i2cdev.h": "c",
+    "mqtt.h": "c",
+    "am_2320.h": "c",
+    "wifi.h": "c",
+    "switch.h": "c",
+    "led.h": "c"
+  }
+}

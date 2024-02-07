@@ -67,7 +67,7 @@ const HistoricalData = ({ route, navigation }: HistoricalDataProps) => {
             },
           ],
           legend: ['Temp [°C]', 'Humidity [%]', 'Light [lx]'],
-          labels: data.map(reading => formatDate(new Date(reading.timestamp))).filter((label, index) => index % 10 === 0)
+          labels: data.map(reading => formatDate(new Date(reading.timestamp))).filter((label, index) => index % 20 === 0)
         })
       } catch (error) {
         console.error(error)

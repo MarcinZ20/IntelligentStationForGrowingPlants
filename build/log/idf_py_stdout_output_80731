@@ -1,0 +1,1324 @@
+[0;32mI (353) esp_image: segment 3: paddr=00134340 vaddr=3ffc071436) load[0m
+[0;32mI (356) esp_image: segment 4: paddr=00136ff4 vaddr=40080000 size=1ea70h (125552) load[0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (28) boot: compile time Feb  7 2024 00:17:03[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d3b0h (250800) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d3d8 vaddr=3ffbdb60 size=02c40h ( 11328) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e4318h (934680) map[0m
+[0;32mI (353) esp_image: segment 3: paddr=00134340 vaddr=3ffc07a0 size=02cach ( 11436) load[0m
+[0;32mI (356) esp_image: segment 4: paddr=00136ff4 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (418) cpu_start: Multicore app[0m
+[0;32mI (426) cpu_start: Pro cpu start user code[0m
+[0;32mI (426) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (426) cpu_start: Application information:[0m
+[0;32mI (429) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (436) cpu_start: App version:      355b7ff-dirty[0m
+[0;32mI (442) cpu_start: Compile time:     Feb  7 2024 00:17:10[0m
+[0;32mI (448) cpu_start: ELF file SHA256:  1f75e67f2...[0m
+[0;32mI (453) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (460) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (464) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (469) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (474) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (493) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFCBCB0 len 00014350 (80 KiB): DRAM[0m
+[0;32mI (506) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (512) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (518) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (526) spi_flash: detected chip: winbond[0m
+[0;32mI (529) spi_flash: flash io: dio[0m
+[0;33mW (533) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (544) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (553) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+[0;32mI (568) [WI-FI]: [APP] Startup..[0m
+[0;32mI (568) [WI-FI]: [APP] Free memory: 212928 bytes[0m
+[0;32mI (568) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (608) [I2C]: Module configuration successful![0m
+[0;32mI (608) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (608) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (618) [SWITCH]: Configuration successful![0m
+[0;32mI (638) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (638) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (648) [LED]: LEDs configured![0m
+[0;32mI (648) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (658) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (668) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (1058) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+[0;33mW (1068) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (1068) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (1068) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+[0;31mE (1098) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (1098) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (1098) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (1108) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (1108) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (1118) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (1118) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (1128) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (1138) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (1138) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (1148) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (1158) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+I (1168) wifi:wifi driver task: 3ffd6e58, prio:23, stack:6656, core=0
+I (1188) wifi:wifi firmware version: a194738
+I (1188) wifi:wifi certification version: v7.0
+I (1188) wifi:config NVS flash: enabled
+I (1188) wifi:config nano formating: disabled
+I (1198) wifi:Init data frame dynamic rx buffer num: 32
+I (1198) wifi:Init static rx mgmt buffer num: 5
+I (1208) wifi:Init management short buffer num: 32
+I (1208) wifi:Init dynamic tx buffer num: 32
+I (1218) wifi:Init static rx buffer size: 1600
+I (1218) wifi:Init static rx buffer num: 10
+I (1218) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1228) wifi_init: rx ba win: 6[0m
+[0;32mI (1228) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1238) wifi_init: udp mbox: 6[0m
+[0;32mI (1238) wifi_init: tcp mbox: 6[0m
+[0;32mI (1238) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1248) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1248) wifi_init: tcp mss: 1440[0m
+[0;32mI (1258) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1258) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+Gpio pin: 33
+Check pressed task started
+[0;31mE (6628) [SWITCH]: Switch reset released[0m
+SSID_len: wifiabc
+Password: abcdef12345
+I (6638) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6638) wifi:enable tsf
+SSID: wifiabc
+Password: abcdef12345
+[0;31mE (6638) [APP]: LOOPING[0m
+[0;32mI (6638) [WI-FI]: Wifi started![0m
+Wi-Fi down ...
+[0;31mE (6748) [APP]: LOOPING[0m
+[0;32mI (10028) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (11628) [SWITCH]: Switch reset pressed[0m
+[0;32mI (11628) [APP]: RESETING DEVICE[0m
+[0;32mI (11628) RESET: BEFORE BLE BITS[0m
+[0;32mI (13408) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (16628) [SWITCH]: Switch reset released[0m
+[0;32mI (16758) GATTS_SERVER: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 58:7d:5c:a7:ec:a6:[0m
+[0;32mI (16758) GATTS_SERVER: CONNECT_EVT, conn_id 0, remote 58:7d:5c:a7:ec:a6:[0m
+[0;32mI (16798) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (17168) GATTS_SERVER: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (17528) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (17918) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (17928) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (17998) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (20188) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (21628) [SWITCH]: Switch reset released[0m
+[0;32mI (23568) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (26628) [SWITCH]: Switch reset released[0m
+[0;32mI (26958) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (28508) GATTS_SERVER: GATT_WRITE_EVT_A, conn_id 0, trans_id 3, handle 42[0m
+[0;32mI (28518) GATTS_SERVER: GATT_WRITE_EVT_A, value len 196, value :[0m
+[0;32mI (28518) GATTS_SERVER: 48 55 41 57 45 49 20 50 31 30 20 6c 69 74 65 3b [0m
+[0;32mI (28528) GATTS_SERVER: 68 61 73 6c 6f 31 32 33 3b 65 79 4a 68 62 47 63 [0m
+[0;32mI (28528) GATTS_SERVER: 69 4f 69 4a 49 55 7a 49 31 4e 69 49 73 49 6e 52 [0m
+[0;32mI (28538) GATTS_SERVER: 35 63 43 49 36 49 6b 70 58 56 43 4a 39 2e 65 79 [0m
+[0;32mI (28548) GATTS_SERVER: 4a 70 5a 43 49 36 49 6a 59 31 59 7a 49 79 59 57 [0m
+[0;32mI (28558) GATTS_SERVER: 49 77 5a 57 49 33 4e 44 64 69 4d 47 59 79 5a 54 [0m
+[0;32mI (28558) GATTS_SERVER: 41 31 4d 6d 51 77 5a 53 49 73 49 6d 6c 68 64 43 [0m
+[0;32mI (28568) GATTS_SERVER: 49 36 4d 54 63 77 4e 7a 4d 77 4d 7a 59 31 4f 53 [0m
+[0;32mI (28578) GATTS_SERVER: 77 69 5a 58 68 77 49 6a 6f 78 4e 7a 41 33 4d 7a [0m
+[0;32mI (28578) GATTS_SERVER: 45 77 4f 44 55 35 66 51 2e 45 4e 76 78 6f 62 68 [0m
+[0;32mI (28588) GATTS_SERVER: 6d 33 71 48 46 5a 30 33 4b 32 34 79 74 47 79 6e [0m
+[0;32mI (28598) GATTS_SERVER: 2d 77 6a 71 5f 6d 64 54 35 71 65 51 77 39 52 61 [0m
+[0;32mI (28608) GATTS_SERVER: 67 38 55 67 [0m
+[0;32mI (28608) GATTS_SERVER: Message: HUAWEI P10 lite;haslo123;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug[0m
+SSID: HUAWEI P10 lite
+Password: haslo123
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug
+[0;32mI (28648) RESET: AFTER 1 BLE BITS[0m
+[0;32mI (28658) RESET: SSID: HUAWEI P10 lite
+[0m
+[0;32mI (28658) RESET: Password: haslo123
+[0m
+[0;32mI (28678) RESET: AFTER BLE BITS[0m
+SSID_len: HUAWEI P10 lite
+Password: haslo123
+[0;33mW (29528) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (29528) GATTS_SERVER: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x0[0m
+[0;31mE (29548) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (30338) [WI-FI]: Reconnecting to wifi ...[0m
+I (30588) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (30858) wifi:state: init -> auth (b0)
+I (30868) wifi:state: auth -> assoc (0)
+I (30878) wifi:state: assoc -> run (10)
+I (30898) wifi:connected with HUAWEI P10 lite, aid = 5, channel 1, BW20, bssid = 88:44:77:da:e1:5e
+I (30898) wifi:security: WPA2-PSK, phy: bgn, rssi: -37
+I (30958) wifi:pm start, type: 1
+
+I (30958) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (30968) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (30968) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;31mE (31628) [SWITCH]: Switch reset released[0m
+[0;32mI (34968) esp_netif_handlers: sta ip: 192.168.43.9, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (34968) [WI-FI]: Connected to ip: 192.168.43.9[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+MAC: b4:e6:2d:ea:62:f5
+Request: PUT /api/devices HTTP/1.1
+Host: 192.168.43.81
+Content-Length: 36
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug
+
+{"devicesIds":["b4:e6:2d:ea:62:f5"]}
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 253
+ETag: W/"fd-1P+8Ys444PFX8g09znRangFICKk"
+Date: Wed, 07 Feb 2024 11:14:13 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"Successfuly updated devices","user":{"_id":"65c22ab0eb747b0f2e052d0e","username":"Marcin","email":"marcin@gmail.com","hashedPassword":"$2b$10$rtJkhX9uWzW4k8zJD2vvC.EXOfDbtk6Js7zG.61r3lupSFruLKsf.","devicesIds":["b4:e6:2d:ea:62:f5"],"__v":7}}[0;31mE (36628) [SWITCH]: Switch reset released[0m
+[0;31mE (41618) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (41638) [SWITCH]: Switch reset released[0m
+[0;32mI (44808) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (45708) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (45708) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (45708) [APP]: LOOPING[0m
+[0;31mE (45718) [APP]: LOOPING[0m
+[0;31mE (46638) [SWITCH]: Switch reset released[0m
+[0;31mE (46638) [APP]: LOOPING[0m
+[0;32mI (50708) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (50828) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (51638) [SWITCH]: Switch reset released[0m
+[0;31mE (51638) [APP]: LOOPING[0m
+[0;32mI (55708) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (55848) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (56638) [SWITCH]: Switch reset released[0m
+[0;31mE (56638) [APP]: LOOPING[0m
+[0;32mI (60708) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (60898) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;31mE (61638) [SWITCH]: Switch reset released[0m
+[0;31mE (61638) [APP]: LOOPING[0m
+[0;32mI (65708) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;32mI (65778) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;31mE (66638) [SWITCH]: Switch reset released[0m
+[0;31mE (66638) [APP]: LOOPING[0m
+[0;32mI (70708) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;32mI (70798) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;31mE (71638) [SWITCH]: Switch reset released[0m
+[0;31mE (71638) [APP]: LOOPING[0m
+[0;32mI (75708) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;32mI (75818) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;31mE (76638) [SWITCH]: Switch reset released[0m
+[0;31mE (76638) [APP]: LOOPING[0m
+[0;32mI (80708) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;32mI (80938) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;31mE (81638) [SWITCH]: Switch reset released[0m
+[0;31mE (81638) [APP]: LOOPING[0m
+[0;32mI (85708) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;32mI (85848) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;31mE (86638) [SWITCH]: Switch reset released[0m
+[0;31mE (86638) [APP]: LOOPING[0m
+[0;32mI (90708) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;32mI (90978) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+[0;31mE (91638) [SWITCH]: Switch reset released[0m
+[0;31mE (91638) [APP]: LOOPING[0m
+[0;32mI (95708) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;32mI (95788) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+[0;31mE (96638) [SWITCH]: Switch reset released[0m
+[0;31mE (96638) [APP]: LOOPING[0m
+[0;32mI (100708) [MQTT]: Sent publish successful, msg_id: 11[0m
+[0;32mI (100798) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+[0;31mE (101638) [SWITCH]: Switch reset released[0m
+[0;31mE (101638) [APP]: LOOPING[0m
+[0;32mI (105708) [MQTT]: Sent publish successful, msg_id: 12[0m
+[0;32mI (105818) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+[0;31mE (106638) [SWITCH]: Switch reset released[0m
+[0;31mE (106638) [APP]: LOOPING[0m
+[0;32mI (110708) [MQTT]: Sent publish successful, msg_id: 13[0m
+[0;32mI (110878) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+[0;31mE (111638) [SWITCH]: Switch reset released[0m
+[0;31mE (111638) [APP]: LOOPING[0m
+[0;32mI (115708) [MQTT]: Sent publish successful, msg_id: 14[0m
+[0;32mI (115858) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+[0;31mE (116638) [SWITCH]: Switch reset released[0m
+[0;31mE (116638) [APP]: LOOPING[0m
+[0;32mI (120708) [MQTT]: Sent publish successful, msg_id: 15[0m
+[0;32mI (120868) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+[0;31mE (121638) [SWITCH]: Switch reset released[0m
+[0;31mE (121638) [APP]: LOOPING[0m
+[0;32mI (125708) [MQTT]: Sent publish successful, msg_id: 16[0m
+[0;32mI (125788) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+[0;31mE (126638) [SWITCH]: Switch reset released[0m
+[0;31mE (126638) [APP]: LOOPING[0m
+[0;32mI (130708) [MQTT]: Sent publish successful, msg_id: 17[0m
+[0;32mI (130818) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+[0;31mE (131638) [SWITCH]: Switch reset released[0m
+[0;31mE (131638) [APP]: LOOPING[0m
+[0;32mI (135708) [MQTT]: Sent publish successful, msg_id: 18[0m
+[0;32mI (135818) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+[0;31mE (136638) [SWITCH]: Switch reset released[0m
+[0;31mE (136638) [APP]: LOOPING[0m
+[0;32mI (140708) [MQTT]: Sent publish successful, msg_id: 19[0m
+[0;32mI (140838) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+[0;31mE (141638) [SWITCH]: Switch reset released[0m
+[0;31mE (141638) [APP]: LOOPING[0m
+[0;32mI (145708) [MQTT]: Sent publish successful, msg_id: 20[0m
+[0;32mI (145858) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+[0;31mE (146638) [SWITCH]: Switch reset released[0m
+[0;31mE (146638) [APP]: LOOPING[0m
+[0;32mI (150708) [MQTT]: Sent publish successful, msg_id: 21[0m
+[0;32mI (150878) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+[0;31mE (151638) [SWITCH]: Switch reset released[0m
+[0;31mE (151638) [APP]: LOOPING[0m
+[0;32mI (155708) [MQTT]: Sent publish successful, msg_id: 22[0m
+[0;32mI (155918) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+[0;31mE (156638) [SWITCH]: Switch reset released[0m
+[0;31mE (156638) [APP]: LOOPING[0m
+[0;32mI (160708) [MQTT]: Sent publish successful, msg_id: 23[0m
+[0;32mI (160808) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+[0;31mE (161638) [SWITCH]: Switch reset released[0m
+[0;31mE (161638) [APP]: LOOPING[0m
+[0;32mI (165708) [MQTT]: Sent publish successful, msg_id: 24[0m
+[0;32mI (165828) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+[0;31mE (166638) [SWITCH]: Switch reset released[0m
+[0;31mE (166638) [APP]: LOOPING[0m
+[0;32mI (170708) [MQTT]: Sent publish successful, msg_id: 25[0m
+[0;32mI (170858) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+[0;31mE (171638) [SWITCH]: Switch reset released[0m
+[0;31mE (171638) [APP]: LOOPING[0m
+[0;32mI (175708) [MQTT]: Sent publish successful, msg_id: 26[0m
+[0;32mI (175858) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+[0;31mE (176638) [SWITCH]: Switch reset released[0m
+[0;31mE (176638) [APP]: LOOPING[0m
+[0;32mI (180708) [MQTT]: Sent publish successful, msg_id: 27[0m
+[0;32mI (180798) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+[0;31mE (181638) [SWITCH]: Switch reset released[0m
+[0;31mE (181638) [APP]: LOOPING[0m
+[0;32mI (185708) [MQTT]: Sent publish successful, msg_id: 28[0m
+[0;32mI (185798) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+[0;31mE (186638) [SWITCH]: Switch reset released[0m
+[0;31mE (186638) [APP]: LOOPING[0m
+[0;32mI (190708) [MQTT]: Sent publish successful, msg_id: 29[0m
+[0;32mI (190838) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+[0;31mE (191638) [SWITCH]: Switch reset released[0m
+[0;31mE (191638) [APP]: LOOPING[0m
+[0;32mI (195708) [MQTT]: Sent publish successful, msg_id: 30[0m
+[0;32mI (195828) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+[0;31mE (196638) [SWITCH]: Switch reset released[0m
+[0;31mE (196638) [APP]: LOOPING[0m
+[0;32mI (200708) [MQTT]: Sent publish successful, msg_id: 31[0m
+[0;32mI (200848) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+[0;31mE (201638) [SWITCH]: Switch reset released[0m
+[0;31mE (201638) [APP]: LOOPING[0m
+[0;32mI (205708) [MQTT]: Sent publish successful, msg_id: 32[0m
+[0;32mI (206078) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+[0;31mE (206638) [SWITCH]: Switch reset released[0m
+[0;31mE (206638) [APP]: LOOPING[0m
+[0;32mI (210708) [MQTT]: Sent publish successful, msg_id: 33[0m
+[0;32mI (210778) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+[0;31mE (211638) [SWITCH]: Switch reset released[0m
+[0;31mE (211638) [APP]: LOOPING[0m
+[0;32mI (215708) [MQTT]: Sent publish successful, msg_id: 34[0m
+[0;32mI (215798) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+[0;31mE (216638) [SWITCH]: Switch reset released[0m
+[0;31mE (216638) [APP]: LOOPING[0m
+[0;32mI (220708) [MQTT]: Sent publish successful, msg_id: 35[0m
+[0;32mI (220818) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+[0;31mE (221638) [SWITCH]: Switch reset released[0m
+[0;31mE (221638) [APP]: LOOPING[0m
+[0;32mI (225708) [MQTT]: Sent publish successful, msg_id: 36[0m
+[0;32mI (225828) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+[0;31mE (226638) [SWITCH]: Switch reset released[0m
+[0;31mE (226638) [APP]: LOOPING[0m
+[0;32mI (230708) [MQTT]: Sent publish successful, msg_id: 37[0m
+[0;32mI (230858) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+[0;31mE (231638) [SWITCH]: Switch reset released[0m
+[0;31mE (231638) [APP]: LOOPING[0m
+[0;32mI (235708) [MQTT]: Sent publish successful, msg_id: 38[0m
+[0;32mI (235868) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+[0;31mE (236638) [SWITCH]: Switch reset released[0m
+[0;31mE (236638) [APP]: LOOPING[0m
+[0;32mI (240708) [MQTT]: Sent publish successful, msg_id: 39[0m
+[0;32mI (240798) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+[0;31mE (241638) [SWITCH]: Switch reset released[0m
+[0;31mE (241638) [APP]: LOOPING[0m
+[0;32mI (245708) [MQTT]: Sent publish successful, msg_id: 40[0m
+[0;32mI (245798) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+[0;31mE (246638) [SWITCH]: Switch reset released[0m
+[0;31mE (246638) [APP]: LOOPING[0m
+[0;32mI (250708) [MQTT]: Sent publish successful, msg_id: 41[0m
+[0;32mI (250818) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+[0;31mE (251638) [SWITCH]: Switch reset released[0m
+[0;31mE (251638) [APP]: LOOPING[0m
+[0;32mI (255708) [MQTT]: Sent publish successful, msg_id: 42[0m
+[0;32mI (255838) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+[0;31mE (256638) [SWITCH]: Switch reset released[0m
+[0;31mE (256638) [APP]: LOOPING[0m
+[0;32mI (260708) [MQTT]: Sent publish successful, msg_id: 43[0m
+[0;32mI (260858) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+[0;31mE (261638) [SWITCH]: Switch reset released[0m
+[0;31mE (261638) [APP]: LOOPING[0m
+[0;32mI (265708) [MQTT]: Sent publish successful, msg_id: 44[0m
+[0;32mI (265868) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+[0;31mE (266638) [SWITCH]: Switch reset released[0m
+[0;31mE (266638) [APP]: LOOPING[0m
+[0;32mI (270708) [MQTT]: Sent publish successful, msg_id: 45[0m
+[0;32mI (270918) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+[0;31mE (271638) [SWITCH]: Switch reset released[0m
+[0;31mE (271638) [APP]: LOOPING[0m
+[0;32mI (325708) [MQTT]: Sent publish successful, msg_id: 56[0m
+[0;32mI (325778) [MQTT]: EVENT_PUBLISHED, msg_id: 56[0m
+[0;31mE (326638) [SWITCH]: Switch reset released[0m
+[0;31mE (326638) [APP]: LOOPING[0m
+[0;32mI (330708) [MQTT]: Sent publish successful, msg_id: 57[0m
+[0;32mI (330788) [MQTT]: EVENT_PUBLISHED, msg_id: 57[0m
+[0;31mE (331638) [SWITCH]: Switch reset released[0m
+[0;31mE (331638) [APP]: LOOPING[0m
+[0;32mI (335708) [MQTT]: Sent publish successful, msg_id: 58[0m
+[0;32mI (335808) [MQTT]: EVENT_PUBLISHED, msg_id: 58[0m
+[0;31mE (336638) [SWITCH]: Switch reset released[0m
+[0;31mE (336638) [APP]: LOOPING[0m
+[0;32mI (340708) [MQTT]: Sent publish successful, msg_id: 59[0m
+[0;32mI (340828) [MQTT]: EVENT_PUBLISHED, msg_id: 59[0m
+[0;31mE (341638) [SWITCH]: Switch reset released[0m
+[0;31mE (341638) [APP]: LOOPING[0m
+[0;32mI (345708) [MQTT]: Sent publish successful, msg_id: 60[0m
+[0;32mI (345848) [MQTT]: EVENT_PUBLISHED, msg_id: 60[0m
+[0;31mE (346638) [SWITCH]: Switch reset released[0m
+[0;31mE (346638) [APP]: LOOPING[0m
+[0;32mI (350708) [MQTT]: Sent publish successful, msg_id: 61[0m
+[0;32mI (350858) [MQTT]: EVENT_PUBLISHED, msg_id: 61[0m
+[0;31mE (351638) [SWITCH]: Switch reset released[0m
+[0;31mE (351638) [APP]: LOOPING[0m
+[0;32mI (355708) [MQTT]: Sent publish successful, msg_id: 62[0m
+[0;32mI (355798) [MQTT]: EVENT_PUBLISHED, msg_id: 62[0m
+[0;31mE (356638) [SWITCH]: Switch reset released[0m
+[0;31mE (356638) [APP]: LOOPING[0m
+[0;32mI (360708) [MQTT]: Sent publish successful, msg_id: 63[0m
+[0;32mI (360798) [MQTT]: EVENT_PUBLISHED, msg_id: 63[0m
+[0;31mE (361638) [SWITCH]: Switch reset released[0m
+[0;31mE (361638) [APP]: LOOPING[0m
+[0;32mI (365708) [MQTT]: Sent publish successful, msg_id: 64[0m
+[0;32mI (365818) [MQTT]: EVENT_PUBLISHED, msg_id: 64[0m
+[0;31mE (366638) [SWITCH]: Switch reset released[0m
+[0;31mE (366638) [APP]: LOOPING[0m
+[0;32mI (370708) [MQTT]: Sent publish successful, msg_id: 65[0m
+[0;32mI (370828) [MQTT]: EVENT_PUBLISHED, msg_id: 65[0m
+[0;31mE (371638) [SWITCH]: Switch reset released[0m
+[0;31mE (371638) [APP]: LOOPING[0m
+[0;32mI (375708) [MQTT]: Sent publish successful, msg_id: 66[0m
+[0;32mI (375858) [MQTT]: EVENT_PUBLISHED, msg_id: 66[0m
+[0;31mE (376638) [SWITCH]: Switch reset released[0m
+[0;31mE (376638) [APP]: LOOPING[0m
+[0;32mI (380708) [MQTT]: Sent publish successful, msg_id: 67[0m
+[0;32mI (380868) [MQTT]: EVENT_PUBLISHED, msg_id: 67[0m
+[0;31mE (381638) [SWITCH]: Switch reset released[0m
+[0;31mE (381638) [APP]: LOOPING[0m
+[0;32mI (385708) [MQTT]: Sent publish successful, msg_id: 68[0m
+[0;32mI (385778) [MQTT]: EVENT_PUBLISHED, msg_id: 68[0m
+[0;31mE (386638) [SWITCH]: Switch reset released[0m
+[0;31mE (386638) [APP]: LOOPING[0m
+[0;32mI (390708) [MQTT]: Sent publish successful, msg_id: 69[0m
+[0;32mI (390808) [MQTT]: EVENT_PUBLISHED, msg_id: 69[0m
+[0;31mE (391638) [SWITCH]: Switch reset released[0m
+[0;31mE (391638) [APP]: LOOPING[0m
+[0;32mI (395708) [MQTT]: Sent publish successful, msg_id: 70[0m
+[0;32mI (395818) [MQTT]: EVENT_PUBLISHED, msg_id: 70[0m
+[0;31mE (396638) [SWITCH]: Switch reset released[0m
+[0;31mE (396638) [APP]: LOOPING[0m
+[0;32mI (400708) [MQTT]: Sent publish successful, msg_id: 71[0m
+[0;32mI (400838) [MQTT]: EVENT_PUBLISHED, msg_id: 71[0m
+[0;31mE (401638) [SWITCH]: Switch reset released[0m
+[0;31mE (401638) [APP]: LOOPING[0m
+[0;32mI (405708) [MQTT]: Sent publish successful, msg_id: 72[0m
+[0;32mI (405848) [MQTT]: EVENT_PUBLISHED, msg_id: 72[0m
+[0;31mE (406638) [SWITCH]: Switch reset released[0m
+[0;31mE (406638) [APP]: LOOPING[0m
+[0;32mI (410708) [MQTT]: Sent publish successful, msg_id: 73[0m
+[0;32mI (410868) [MQTT]: EVENT_PUBLISHED, msg_id: 73[0m
+[0;31mE (411638) [SWITCH]: Switch reset released[0m
+[0;31mE (411638) [APP]: LOOPING[0m
+[0;32mI (415708) [MQTT]: Sent publish successful, msg_id: 74[0m
+[0;32mI (415788) [MQTT]: EVENT_PUBLISHED, msg_id: 74[0m
+[0;31mE (416638) [SWITCH]: Switch reset released[0m
+[0;31mE (416638) [APP]: LOOPING[0m
+[0;32mI (420708) [MQTT]: Sent publish successful, msg_id: 75[0m
+[0;32mI (420798) [MQTT]: EVENT_PUBLISHED, msg_id: 75[0m
+[0;31mE (421638) [SWITCH]: Switch reset released[0m
+[0;31mE (421638) [APP]: LOOPING[0m
+[0;32mI (425708) [MQTT]: Sent publish successful, msg_id: 76[0m
+[0;32mI (425818) [MQTT]: EVENT_PUBLISHED, msg_id: 76[0m
+[0;31mE (426638) [SWITCH]: Switch reset released[0m
+[0;31mE (426638) [APP]: LOOPING[0m
+[0;32mI (430708) [MQTT]: Sent publish successful, msg_id: 77[0m
+[0;32mI (430838) [MQTT]: EVENT_PUBLISHED, msg_id: 77[0m
+[0;31mE (431638) [SWITCH]: Switch reset released[0m
+[0;31mE (431638) [APP]: LOOPING[0m
+[0;32mI (435708) [MQTT]: Sent publish successful, msg_id: 78[0m
+[0;32mI (435858) [MQTT]: EVENT_PUBLISHED, msg_id: 78[0m
+[0;31mE (436638) [SWITCH]: Switch reset released[0m
+[0;31mE (436638) [APP]: LOOPING[0m
+[0;32mI (440708) [MQTT]: Sent publish successful, msg_id: 79[0m
+[0;32mI (440878) [MQTT]: EVENT_PUBLISHED, msg_id: 79[0m
+[0;31mE (441638) [SWITCH]: Switch reset released[0m
+[0;31mE (441638) [APP]: LOOPING[0m
+[0;32mI (445708) [MQTT]: Sent publish successful, msg_id: 80[0m
+[0;32mI (445788) [MQTT]: EVENT_PUBLISHED, msg_id: 80[0m
+[0;31mE (446638) [SWITCH]: Switch reset released[0m
+[0;31mE (446638) [APP]: LOOPING[0m
+[0;32mI (450708) [MQTT]: Sent publish successful, msg_id: 81[0m
+[0;32mI (450808) [MQTT]: EVENT_PUBLISHED, msg_id: 81[0m
+[0;31mE (451638) [SWITCH]: Switch reset pressed[0m
+[0;32mI (451638) [APP]: RESETING DEVICE[0m
+[0;32mI (451638) RESET: AFTER MQTT DELETE[0m
+[0;31mE (451638) [MQTT]: CLIENT STOPPED[0m
+[0;32mI (451728) RESET: AFTER MQTT STOP[0m
+I (451728) wifi:state: run -> init (0)
+I (451728) wifi:pm stop, total sleep time: 374377474 us / 420771682 us
+
+I (451728) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (451738) RESET: BEFORE BLE BITS[0m
+[0;32mI (451738) [WI-FI]: Reconnecting to wifi ...[0m
+I (451758) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (451758) wifi:state: init -> auth (b0)
+I (451768) wifi:state: auth -> assoc (0)
+I (451778) wifi:state: assoc -> run (10)
+I (451798) wifi:connected with HUAWEI P10 lite, aid = 6, channel 1, BW20, bssid = 88:44:77:da:e1:5e
+I (451798) wifi:security: WPA2-PSK, phy: bgn, rssi: -34
+I (451808) wifi:pm start, type: 1
+
+I (451808) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (451828) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (451828) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (452818) esp_netif_handlers: sta ip: 192.168.43.9, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (452818) [WI-FI]: Connected to ip: 192.168.43.9[0m
+[0;31mE (456638) [SWITCH]: Switch reset released[0m
+[0;32mI (460378) GATTS_SERVER: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 58:7d:5c:a7:ec:a6:[0m
+[0;32mI (460378) GATTS_SERVER: CONNECT_EVT, conn_id 0, remote 58:7d:5c:a7:ec:a6:[0m
+[0;32mI (460788) GATTS_SERVER: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (461148) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500[0m
+[0;32mI (461368) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (461368) GATTS_SERVER: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (461438) GATTS_SERVER: update connection params status = 0, min_int = 0, max_int = 0,conn_int = 24,latency = 0, timeout = 400[0m
+[0;31mE (461638) [SWITCH]: Switch reset released[0m
+[0;31mE (466638) [SWITCH]: Switch reset released[0m
+[0;31mE (471638) [SWITCH]: Switch reset released[0m
+[0;32mI (474798) GATTS_SERVER: GATT_WRITE_EVT_A, conn_id 0, trans_id 3, handle 42[0m
+[0;32mI (474798) GATTS_SERVER: GATT_WRITE_EVT_A, value len 196, value :[0m
+[0;32mI (474798) GATTS_SERVER: 48 55 41 57 45 49 20 50 31 30 20 6c 69 74 65 3b [0m
+[0;32mI (474808) GATTS_SERVER: 68 61 73 6c 6f 31 32 33 3b 65 79 4a 68 62 47 63 [0m
+[0;32mI (474818) GATTS_SERVER: 69 4f 69 4a 49 55 7a 49 31 4e 69 49 73 49 6e 52 [0m
+[0;32mI (474828) GATTS_SERVER: 35 63 43 49 36 49 6b 70 58 56 43 4a 39 2e 65 79 [0m
+[0;32mI (474828) GATTS_SERVER: 4a 70 5a 43 49 36 49 6a 59 31 59 7a 49 79 59 57 [0m
+[0;32mI (474838) GATTS_SERVER: 49 77 5a 57 49 33 4e 44 64 69 4d 47 59 79 5a 54 [0m
+[0;32mI (474848) GATTS_SERVER: 41 31 4d 6d 51 77 5a 53 49 73 49 6d 6c 68 64 43 [0m
+[0;32mI (474858) GATTS_SERVER: 49 36 4d 54 63 77 4e 7a 4d 77 4d 7a 59 31 4f 53 [0m
+[0;32mI (474858) GATTS_SERVER: 77 69 5a 58 68 77 49 6a 6f 78 4e 7a 41 33 4d 7a [0m
+[0;32mI (474868) GATTS_SERVER: 45 77 4f 44 55 35 66 51 2e 45 4e 76 78 6f 62 68 [0m
+[0;32mI (474878) GATTS_SERVER: 6d 33 71 48 46 5a 30 33 4b 32 34 79 74 47 79 6e [0m
+[0;32mI (474888) GATTS_SERVER: 2d 77 6a 71 5f 6d 64 54 35 71 65 51 77 39 52 61 [0m
+[0;32mI (474888) GATTS_SERVER: 67 38 55 67 [0m
+[0;32mI (474898) GATTS_SERVER: Message: HUAWEI P10 lite;haslo123;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug[0m
+SSID: HUAWEI P10 lite
+Password: haslo123
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug
+[0;32mI (474938) RESET: AFTER 1 BLE BITS[0m
+[0;32mI (474938) RESET: SSID: HUAWEI P10 lite
+[0m
+[0;32mI (474948) RESET: Password: haslo123
+[0m
+[0;32mI (474948) RESET: AFTER BLE BITS[0m
+SSID_len: HUAWEI P10 lite
+Password: haslo123
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+MAC: b4:e6:2d:ea:62:f5
+[0;33mW (475848) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;32mI (475848) GATTS_SERVER: ESP_GATTS_DISCONNECT_EVT, disconnect reason 0x0[0m
+[0;31mE (475858) GATTS_SERVER: Advertisign started successfully![0m
+Request: PUT /api/devices HTTP/1.1
+Host: 192.168.43.81
+Content-Length: 36
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzIyYWIwZWI3NDdiMGYyZTA1MmQwZSIsImlhdCI6MTcwNzMwMzY1OSwiZXhwIjoxNzA3MzEwODU5fQ.ENvxobhm3qHFZ03K24ytGyn-wjq_mdT5qeQw9Rag8Ug
+
+{"devicesIds":["b4:e6:2d:ea:62:f5"]}
+[0;31mE (476638) [SWITCH]: Switch reset released[0m
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Type: application/json; charset=utf-8
+Content-Length: 253
+ETag: W/"fd-NLO7ILdxopVibKt2RxVqZ7bmiOg"
+Date: Wed, 07 Feb 2024 11:21:34 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"Successfuly updated devices","user":{"_id":"65c22ab0eb747b0f2e052d0e","username":"Marcin","email":"marcin@gmail.com","hashedPassword":"$2b$10$rtJkhX9uWzW4k8zJD2vvC.EXOfDbtk6Js7zG.61r3lupSFruLKsf.","devicesIds":["b4:e6:2d:ea:62:f5"],"__v":8}}[0;31mE (481638) [SWITCH]: Switch reset released[0m
+[0;31mE (482458) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (485638) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (485928) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (485928) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (485928) [APP]: LOOPING[0m
+[0;31mE (486638) [SWITCH]: Switch reset released[0m
+[0;31mE (486638) [APP]: LOOPING[0m
+[0;32mI (490928) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (491048) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (491638) [SWITCH]: Switch reset released[0m
+[0;31mE (491638) [APP]: LOOPING[0m
+[0;32mI (495928) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (496008) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (496638) [SWITCH]: Switch reset released[0m
+[0;31mE (496638) [APP]: LOOPING[0m
+[0;32mI (500928) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (501088) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;31mE (501638) [SWITCH]: Switch reset released[0m
+[0;31mE (501638) [APP]: LOOPING[0m
+[0;32mI (505928) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;32mI (506008) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;31mE (506638) [SWITCH]: Switch reset released[0m
+[0;31mE (506638) [APP]: LOOPING[0m
+[0;32mI (510928) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;32mI (511028) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;31mE (511638) [SWITCH]: Switch reset released[0m
+[0;31mE (511638) [APP]: LOOPING[0m
+[0;32mI (515928) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;32mI (516038) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+I (516348) wifi:state: run -> init (4a0)
+I (516348) wifi:pm stop, total sleep time: 57538848 us / 64539681 us
+
+I (516348) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (516358) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (516358) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (516368) mqtt_client: Poll read error: 119, aborting connection[0m
+I (516368) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0;32mI (516368) [MQTT]: EVENT_DISCONNECTED[0m
+
+I (516388) wifi:state: init -> auth (b0)
+[0;31mE (516638) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (516728) [APP]: LOOPING[0m
+I (517388) wifi:state: auth -> init (200)
+I (517388) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (517388) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (520778) [WI-FI]: Reconnecting to wifi ...[0m
+[0;32mI (520928) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (520928) [MQTT]: Publish failed[0m
+[0;32mI (520928) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (520928) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;31mE (521638) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (521728) [APP]: LOOPING[0m
+[0;32mI (524158) [WI-FI]: Reconnecting to wifi ...[0m
+I (524168) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1
+I (524168) wifi:state: init -> auth (b0)
+I (524178) wifi:state: auth -> assoc (0)
+I (524188) wifi:state: assoc -> run (10)
+I (524218) wifi:connected with HUAWEI P10 lite, aid = 10, channel 1, 40U, bssid = 88:44:77:da:e1:5e
+I (524218) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (524228) wifi:pm start, type: 1
+
+I (524228) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (524248) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (524248) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (525938) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (525938) [MQTT]: Publish failed[0m
+[0;32mI (525938) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (525938) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;32mI (526378) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (526378) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (526378) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (526378) mqtt_client: Error transport connect[0m
+[0;32mI (526388) [MQTT]: EVENT_ERROR[0m
+[0;31mE (526388) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (526398) [MQTT]: Last errno string (Success)[0m
+[0;32mI (526398) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (526638) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (526728) [APP]: LOOPING[0m
+[0;32mI (526738) esp_netif_handlers: sta ip: 192.168.43.9, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (526738) [WI-FI]: Connected to ip: 192.168.43.9[0m
+[0;32mI (530948) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (530948) [MQTT]: Publish failed[0m
+[0;32mI (530948) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (530948) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;31mE (531638) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;32mI (534818) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (535008) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (535008) [APP]: MQTT BITS[0m
+[0;31mE (535008) [APP]: LOOPING[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;32mI (535958) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (536128) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (536408) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (536638) [SWITCH]: Switch reset released[0m
+[0;31mE (536638) [APP]: LOOPING[0m
+[0;31mE (536648) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (536648) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (536658) [MQTT]: EVENT_ERROR[0m
+[0;31mE (536658) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (536658) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (536668) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (536678) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (536688) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (536688) [MQTT]: EVENT_DISCONNECTED[0m
+I (536848) wifi:<ba-add>idx:0 (ifx:0, 88:44:77:da:e1:5e), tid:0, ssn:10, winSize:64
+[0;32mI (540008) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (540008) [MQTT]: Publish failed[0m
+[0;32mI (540008) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (540008) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;32mI (540958) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (540958) [MQTT]: Publish failed[0m
+[0;32mI (540958) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (540958) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;31mE (541638) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;32mI (544818) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (545018) [APP]: MQTT BITS[0m
+[0;31mE (545018) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (545018) [APP]: LOOPING[0m
+[0;32mI (545058) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (545068) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (545068) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (545078) [MQTT]: EVENT_ERROR[0m
+[0;31mE (545078) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (545088) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (545088) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (545098) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (545108) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (545108) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (545248) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (545968) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (546368) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (546638) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;32mI (546698) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (546888) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (546888) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (546888) [MQTT]: EVENT_ERROR[0m
+[0;31mE (546898) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (546898) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (546908) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (546918) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (546928) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (546928) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+I (546988) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (549818) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (550058) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (550058) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (550068) [MQTT]: EVENT_ERROR[0m
+[0;31mE (550068) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (550078) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (550088) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (550088) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (550068) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (550108) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (550108) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (550118) [APP]: LOOPING[0m
+[0;32mI (550118) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (550268) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;32mI (550968) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (551078) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (551638) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;32mI (554818) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (555078) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (555078) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (555088) [MQTT]: EVENT_ERROR[0m
+[0;31mE (555088) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (555098) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (555098) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (555108) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (555098) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (555118) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (555128) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (555128) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (555118) [APP]: MQTT BITS[0m
+[0;32mI (555138) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;31mE (555138) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (555148) [APP]: LOOPING[0m
+[0;32mI (555388) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (555478) transport_base: poll_read select error 104, errno = Connection reset by peer, fd = 55[0m
+[0;31mE (555488) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (555488) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (555968) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (555968) [MQTT]: Publish failed[0m
+[0;32mI (555968) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (555968) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;31mE (556638) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;32mI (559818) [MQTT]: ESTABLISHING CONNECTION ...[0m
+W (559878) wifi:m f null
+
+[0;32mI (560118) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (560118) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (560118) transport_base: Failed to open a new connectiGuru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4000c3f5  PS      : 0x00060330  A0      : 0x801a8346  A1      : 0x3fffa7a0  
+A2      : 0x00000000  A3      : 0x3f4032c0  A4      : 0x00000027  A5      : 0x3fdfffff  
+A6      : 0x7ff00000  A7      : 0x3fffd394  A8      : 0x00000000  A9      : 0x00000000  
+A10     : 0x0000007b  A11     : 0x00000000  A12     : 0x3f4233bb  A13     : 0x4009ea70  
+A14     : 0x3fffd394  A15     : 0x3fffad0c  SAR     : 0x0000001f  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x00000000  LBEG    : 0x400029ac  LEND    : 0x400029cb  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4000c3f2:0x3fffa7a0 0x401a8343:0x3fffa7c0 0x4019d309:0x3fffa7f0 0x40197621:0x3fffab10 0x400d8031:0x3fffabd0
+
+
+
+
+ELF file SHA256: 1f75e67f2
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (29) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  7 2024 00:17:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d3b0h (250800) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d3d8 vaddr=3ffbdb60 size=02c40h ( 11328) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e4318h (934680) map[0m
+[0;32mI (354) esp_image: segment 3: paddr=00134340 vaddr=3ffc07a0 size=02cach ( 11436) load[0m
+[0;32mI (357) esp_image: segment 4: paddr=00136ff4 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (418) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (427) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (427) cpu_start: Application information:[0m
+[0;32mI (430) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (437) cpu_start: App version:      355b7ff-dirty[0m
+[0;32mI (443) cpu_start: Compile time:     Feb  7 2024 00:17:10[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  1f75e67f2...[0m
+[0;32mI (454) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (461) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (465) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (470) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFCBCB0 len 00014350 (80 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (519) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: winbond[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (534) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (545) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (554) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (569) [WI-FI]: [APP] Startup..[0m
+[0;32mI (569) [WI-FI]: [APP] Free memory: 212928 bytes[0m
+[0;32mI (569) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (609) [I2C]: Module configuration successful![0m
+[0;32mI (609) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (619) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (619) [SWITCH]: Configuration successful![0m
+[0;32mI (639) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (639) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (649) [LED]: LEDs configured![0m
+[0;32mI (649) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (659) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (669) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (1069) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+[0;33mW (1069) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (1079) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (1079) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+I (1099) wifi:wifi driver task: 3ffd6e58, prio:23, stack:6656, core=0
+[0;31mE (1099) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (1099) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (1109) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (1119) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (1119) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (1129) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (1129) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (1129) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (1139) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (1149) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (1159) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (1169) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+I (1189) wifi:wifi firmware version: a194738
+I (1189) wifi:wifi certification version: v7.0
+I (1189) wifi:config NVS flash: enabled
+I (1189) wifi:config nano formating: disabled
+I (1199) wifi:Init data frame dynamic rx buffer num: 32
+I (1199) wifi:Init static rx mgmt buffer num: 5
+I (1209) wifi:Init management short buffer num: 32
+I (1209) wifi:Init dynamic tx buffer num: 32
+I (1209) wifi:Init static rx buffer size: 1600
+I (1219) wifi:Init static rx buffer num: 10
+I (1219) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1229) wifi_init: rx ba win: 6[0m
+[0;32mI (1229) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1229) wifi_init: udp mbox: 6[0m
+[0;32mI (1239) wifi_init: tcp mbox: 6[0m
+[0;32mI (1239) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1249) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1249) wifi_init: tcp mss: 1440[0m
+[0;32mI (1249) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1259) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+Gpio pin: 33
+Check pressed task started
+[0;31mE (6629) [SWITCH]: Switch reset released[0m
+SSID_len: HUAWEI P10 lite
+Password: haslo123
+I (6639) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6639) wifi:enable tsf
+SSID: HUAWEI P10 lite
+Password: haslo123
+[0;31mE (6639) [APP]: LOOPING[0m
+[0;32mI (6639) [WI-FI]: Wifi started![0m
+Wi-Fi down ...
+I (6659) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (6659) wifi:state: init -> auth (b0)
+I (6659) wifi:state: auth -> assoc (0)
+I (6669) wifi:state: assoc -> run (10)
+[0;31mE (6759) [APP]: LOOPING[0m
+I (10689) wifi:state: run -> init (4a0)
+I (10689) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (10689) [WI-FI]: Reconnecting to wifi ...[0m
+[0;31mE (11629) [SWITCH]: Switch reset released[0m
+Wi-Fi down ...
+[0;31mE (11719) [APP]: LOOPING[0m
+[0;32mI (14079) [WI-FI]: Reconnecting to wifi ...[0m
+I (14089) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (14089) wifi:state: init -> auth (b0)
+I (14089) wifi:state: auth -> assoc (0)
+I (14099) wifi:state: assoc -> run (10)
+I (14119) wifi:connected with HUAWEI P10 lite, aid = 2, channel 1, BW20, bssid = 88:44:77:da:e1:5e
+I (14129) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (14129) wifi:pm start, type: 1
+
+I (14129) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (14219) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (14219) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (15139) esp_netif_handlers: sta ip: 192.168.43.9, mask: 255.255.255.0, gw: 192.168.43.1[0m
+[0;32mI (15139) [WI-FI]: Connected to ip: 192.168.43.9[0m
+[0;31mE (16629) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;32mI (19809) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (20159) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (20159) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (20159) [APP]: LOOPING[0m
+[0;31mE (21629) [SWITCH]: Switch reset released[0m
+[0;31mE (21629) [APP]: LOOPING[0m
+[0;32mI (25159) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (25279) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (26629) [SWITCH]: Switch reset released[0m
+[0;31mE (26629) [APP]: LOOPING[0m
+[0;32mI (30159) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;32mI (30289) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+[0;31mE (31629) [SWITCH]: Switch reset released[0m
+[0;31mE (31629) [APP]: LOOPING[0m
+[0;32mI (35159) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;32mI (35319) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+[0;31mE (36629) [SWITCH]: Switch reset released[0m
+[0;31mE (36629) [APP]: LOOPING[0m
+[0;32mI (40159) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;32mI (40259) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+[0;31mE (41629) [SWITCH]: Switch reset released[0m
+[0;31mE (41629) [APP]: LOOPING[0m
+[0;32mI (45159) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;32mI (45249) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+[0;31mE (46629) [SWITCH]: Switch reset released[0m
+[0;31mE (46629) [APP]: LOOPING[0m
+[0;32mI (50159) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;32mI (50259) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+[0;31mE (51629) [SWITCH]: Switch reset released[0m
+[0;31mE (51629) [APP]: LOOPING[0m
+[0;32mI (55159) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;32mI (55279) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+[0;31mE (56629) [SWITCH]: Switch reset released[0m
+[0;31mE (56629) [APP]: LOOPING[0m
+[0;32mI (60159) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;32mI (60299) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+[0;31mE (61629) [SWITCH]: Switch reset released[0m
+[0;31mE (61629) [APP]: LOOPING[0m
+[0;32mI (65159) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;32mI (65309) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+[0;31mE (66629) [SWITCH]: Switch reset released[0m
+[0;31mE (66629) [APP]: LOOPING[0m
+[0;32mI (70159) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;32mI (70229) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+[0;31mE (71629) [SWITCH]: Switch reset released[0m
+[0;31mE (71629) [APP]: LOOPING[0m
+[0;32mI (75159) [MQTT]: Sent publish successful, msg_id: 11[0m
+[0;32mI (75249) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+[0;31mE (76629) [SWITCH]: Switch reset released[0m
+[0;31mE (76629) [APP]: LOOPING[0m
+[0;32mI (80159) [MQTT]: Sent publish successful, msg_id: 12[0m
+[0;32mI (80299) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+[0;31mE (81629) [SWITCH]: Switch reset released[0m
+[0;31mE (81629) [APP]: LOOPING[0m
+[0;32mI (85159) [MQTT]: Sent publish successful, msg_id: 13[0m
+[0;32mI (85389) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+[0;31mE (86629) [SWITCH]: Switch reset released[0m
+[0;31mE (86629) [APP]: LOOPING[0m
+[0;32mI (90159) [MQTT]: Sent publish successful, msg_id: 14[0m
+[0;32mI (90299) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+[0;31mE (91629) [SWITCH]: Switch reset released[0m
+[0;31mE (91629) [APP]: LOOPING[0m
+[0;32mI (95159) [MQTT]: Sent publish successful, msg_id: 15[0m
+[0;32mI (95319) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+[0;31mE (96629) [SWITCH]: Switch reset released[0m
+[0;31mE (96629) [APP]: LOOPING[0m
+[0;32mI (100159) [MQTT]: Sent publish successful, msg_id: 16[0m
+[0;32mI (100229) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+[0;31mE (101629) [SWITCH]: Switch reset released[0m
+[0;31mE (101629) [APP]: LOOPING[0m
+[0;32mI (105159) [MQTT]: Sent publish successful, msg_id: 17[0m
+[0;32mI (105249) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+[0;31mE (106629) [SWITCH]: Switch reset released[0m
+[0;31mE (106629) [APP]: LOOPING[0m
+[0;32mI (110159) [MQTT]: Sent publish successful, msg_id: 18[0m
+[0;32mI (110269) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+[0;31mE (111629) [SWITCH]: Switch reset released[0m
+[0;31mE (111629) [APP]: LOOPING[0m
+[0;32mI (115159) [MQTT]: Sent publish successful, msg_id: 19[0m
+[0;32mI (115289) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+[0;31mE (116629) [SWITCH]: Switch reset released[0m
+[0;31mE (116629) [APP]: LOOPING[0m
+[0;32mI (120159) [MQTT]: Sent publish successful, msg_id: 20[0m
+[0;32mI (120309) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+[0;31mE (121629) [SWITCH]: Switch reset released[0m
+[0;31mE (121629) [APP]: LOOPING[0m
+[0;32mI (125159) [MQTT]: Sent publish successful, msg_id: 21[0m
+[0;32mI (125329) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+[0;31mE (126629) [SWITCH]: Switch reset released[0m
+[0;31mE (126629) [APP]: LOOPING[0m
+[0;32mI (130159) [MQTT]: Sent publish successful, msg_id: 22[0m
+[0;32mI (130449) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+[0;31mE (131629) [SWITCH]: Switch reset released[0m
+[0;31mE (131629) [APP]: LOOPING[0m
+[0;32mI (135159) [MQTT]: Sent publish successful, msg_id: 23[0m
+[0;32mI (135259) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+[0;31mE (136629) [SWITCH]: Switch reset released[0m
+[0;31mE (136629) [APP]: LOOPING[0m
+[0;32mI (140159) [MQTT]: Sent publish successful, msg_id: 24[0m
+[0;32mI (140289) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+[0;31mE (141629) [SWITCH]: Switch reset released[0m
+[0;31mE (141629) [APP]: LOOPING[0m
+[0;32mI (145159) [MQTT]: Sent publish successful, msg_id: 25[0m
+[0;32mI (145289) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+[0;31mE (146629) [SWITCH]: Switch reset released[0m
+[0;31mE (146629) [APP]: LOOPING[0m
+[0;32mI (150159) [MQTT]: Sent publish successful, msg_id: 26[0m
+[0;32mI (150309) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+[0;31mE (151629) [SWITCH]: Switch reset released[0m
+[0;31mE (151629) [APP]: LOOPING[0m
+[0;32mI (155159) [MQTT]: Sent publish successful, msg_id: 27[0m
+[0;32mI (155329) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+[0;31mE (156629) [SWITCH]: Switch reset released[0m
+[0;31mE (156629) [APP]: LOOPING[0m
+[0;32mI (160159) [MQTT]: Sent publish successful, msg_id: 28[0m
+[0;32mI (160239) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+[0;31mE (161629) [SWITCH]: Switch reset released[0m
+[0;31mE (161629) [APP]: LOOPING[0m
+[0;32mI (165159) [MQTT]: Sent publish successful, msg_id: 29[0m
+[0;32mI (165259) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+[0;31mE (166629) [SWITCH]: Switch reset released[0m
+[0;31mE (166629) [APP]: LOOPING[0m
+[0;32mI (170159) [MQTT]: Sent publish successful, msg_id: 30[0m
+[0;32mI (170279) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+[0;31mE (171629) [SWITCH]: Switch reset released[0m
+[0;31mE (171629) [APP]: LOOPING[0m
+[0;32mI (175159) [MQTT]: Sent publish successful, msg_id: 31[0m
+[0;32mI (175289) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+[0;31mE (176629) [SWITCH]: Switch reset released[0m
+[0;31mE (176629) [APP]: LOOPING[0m
+[0;32mI (180159) [MQTT]: Sent publish successful, msg_id: 32[0m
+[0;32mI (180309) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+[0;31mE (181629) [SWITCH]: Switch reset released[0m
+[0;31mE (181629) [APP]: LOOPING[0m
+[0;32mI (185159) [MQTT]: Sent publish successful, msg_id: 33[0m
+[0;32mI (185229) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+[0;31mE (186629) [SWITCH]: Switch reset released[0m
+[0;31mE (186629) [APP]: LOOPING[0m
+[0;32mI (190159) [MQTT]: Sent publish successful, msg_id: 34[0m
+[0;32mI (190239) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+[0;31mE (191629) [SWITCH]: Switch reset released[0m
+[0;31mE (191629) [APP]: LOOPING[0m
+[0;32mI (195159) [MQTT]: Sent publish successful, msg_id: 35[0m
+[0;32mI (195259) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+[0;31mE (196629) [SWITCH]: Switch reset released[0m
+[0;31mE (196629) [APP]: LOOPING[0m
+[0;32mI (200159) [MQTT]: Sent publish successful, msg_id: 36[0m
+[0;32mI (200489) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+[0;31mE (201629) [SWITCH]: Switch reset released[0m
+[0;31mE (201629) [APP]: LOOPING[0m
+[0;32mI (205159) [MQTT]: Sent publish successful, msg_id: 37[0m
+[0;32mI (205299) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+[0;31mE (206629) [SWITCH]: Switch reset released[0m
+[0;31mE (206629) [APP]: LOOPING[0m
+[0;32mI (210159) [MQTT]: Sent publish successful, msg_id: 38[0m
+[0;32mI (210309) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+[0;31mE (211629) [SWITCH]: Switch reset released[0m
+[0;31mE (211629) [APP]: LOOPING[0m
+[0;32mI (215159) [MQTT]: Sent publish successful, msg_id: 39[0m
+[0;32mI (215229) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+[0;31mE (216629) [SWITCH]: Switch reset released[0m
+[0;31mE (216629) [APP]: LOOPING[0m
+[0;32mI (220159) [MQTT]: Sent publish successful, msg_id: 40[0m
+[0;32mI (220249) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+[0;31mE (221629) [SWITCH]: Switch reset released[0m
+[0;31mE (221629) [APP]: LOOPING[0m
+[0;32mI (225159) [MQTT]: Sent publish successful, msg_id: 41[0m
+[0;32mI (225259) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+[0;31mE (226629) [SWITCH]: Switch reset released[0m
+[0;31mE (226629) [APP]: LOOPING[0m
+[0;32mI (230159) [MQTT]: Sent publish successful, msg_id: 42[0m
+[0;32mI (230279) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+[0;31mE (231629) [SWITCH]: Switch reset released[0m
+[0;31mE (231629) [APP]: LOOPING[0m
+[0;32mI (235159) [MQTT]: Sent publish successful, msg_id: 43[0m
+[0;32mI (235299) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+[0;31mE (236629) [SWITCH]: Switch reset released[0m
+[0;31mE (236629) [APP]: LOOPING[0m
+[0;32mI (240159) [MQTT]: Sent publish successful, msg_id: 44[0m
+[0;32mI (240319) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+[0;31mE (241629) [SWITCH]: Switch reset released[0m
+[0;31mE (241629) [APP]: LOOPING[0m
+[0;32mI (245159) [MQTT]: Sent publish successful, msg_id: 45[0m
+[0;32mI (245239) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+[0;31mE (246629) [SWITCH]: Switch reset released[0m
+[0;31mE (246629) [APP]: LOOPING[0m
+[0;32mI (250159) [MQTT]: Sent publish successful, msg_id: 46[0m
+[0;32mI (250459) [MQTT]: EVENT_PUBLISHED, msg_id: 46[0m
+[0;31mE (251629) [SWITCH]: Switch reset released[0m
+[0;31mE (251629) [APP]: LOOPING[0m
+[0;32mI (255159) [MQTT]: Sent publish successful, msg_id: 47[0m
+[0;32mI (255269) [MQTT]: EVENT_PUBLISHED, msg_id: 47[0m
+[0;31mE (256629) [SWITCH]: Switch reset released[0m
+[0;31mE (256629) [APP]: LOOPING[0m
+[0;32mI (260159) [MQTT]: Sent publish successful, msg_id: 48[0m
+[0;32mI (260289) [MQTT]: EVENT_PUBLISHED, msg_id: 48[0m
+[0;31mE (261629) [SWITCH]: Switch reset released[0m
+[0;31mE (261629) [APP]: LOOPING[0m
+[0;32mI (265159) [MQTT]: Sent publish successful, msg_id: 49[0m
+[0;32mI (265299) [MQTT]: EVENT_PUBLISHED, msg_id: 49[0m
+[0;31mE (266629) [SWITCH]: Switch reset released[0m
+[0;31mE (266629) [APP]: LOOPING[0m
+[0;32mI (270159) [MQTT]: Sent publish successful, msg_id: 50[0m
+[0;32mI (270319) [MQTT]: EVENT_PUBLISHED, msg_id: 50[0m
+[0;31mE (271629) [SWITCH]: Switch reset released[0m
+[0;31mE (271629) [APP]: LOOPING[0m
+[0;32mI (275159) [MQTT]: Sent publish successful, msg_id: 51[0m
+[0;32mI (275239) [MQTT]: EVENT_PUBLISHED, msg_id: 51[0m
+[0;31mE (276629) [SWITCH]: Switch reset released[0m
+[0;31mE (276629) [APP]: LOOPING[0m
+[0;32mI (280159) [MQTT]: Sent publish successful, msg_id: 52[0m
+[0;32mI (280249) [MQTT]: EVENT_PUBLISHED, msg_id: 52[0m
+[0;31mE (281629) [SWITCH]: Switch reset released[0m
+[0;31mE (281629) [APP]: LOOPING[0m
+[0;32mI (285159) [MQTT]: Sent publish successful, msg_id: 53[0m
+[0;32mI (285369) [MQTT]: EVENT_PUBLISHED, msg_id: 53[0m
+[0;31mE (286629) [SWITCH]: Switch reset released[0m
+[0;31mE (286629) [APP]: LOOPING[0m
+[0;32mI (290159) [MQTT]: Sent publish successful, msg_id: 54[0m
+[0;32mI (290289) [MQTT]: EVENT_PUBLISHED, msg_id: 54[0m
+[0;31mE (291629) [SWITCH]: Switch reset released[0m
+[0;31mE (291629) [APP]: LOOPING[0m
+[0;32mI (295159) [MQTT]: Sent publish successful, msg_id: 55[0m
+[0;32mI (295429) [MQTT]: EVENT_PUBLISHED, msg_id: 55[0m
+[0;31mE (296629) [SWITCH]: Switch reset released[0m
+[0;31mE (296629) [APP]: LOOPING[0m
+[0;32mI (300159) [MQTT]: Sent publish successful, msg_id: 56[0m
+[0;32mI (300329) [MQTT]: EVENT_PUBLISHED, msg_id: 56[0m
+[0;31mE (301629) [SWITCH]: Switch reset released[0m
+[0;31mE (301629) [APP]: LOOPING[0m
+[0;32mI (305159) [MQTT]: Sent publish successful, msg_id: 57[0m
+[0;32mI (305239) [MQTT]: EVENT_PUBLISHED, msg_id: 57[0m
+[0;31mE (306629) [SWITCH]: Switch reset released[0m
+[0;31mE (306629) [APP]: LOOPING[0m
+[0;32mI (310159) [MQTT]: Sent publish successful, msg_id: 58[0m
+[0;32mI (310259) [MQTT]: EVENT_PUBLISHED, msg_id: 58[0m
+[0;31mE (311629) [SWITCH]: Switch reset released[0m
+[0;31mE (311629) [APP]: LOOPING[0m
+[0;32mI (315159) [MQTT]: Sent publish successful, msg_id: 59[0m
+[0;32mI (315269) [MQTT]: EVENT_PUBLISHED, msg_id: 59[0m
+[0;31mE (316629) [SWITCH]: Switch reset released[0m
+[0;31mE (316629) [APP]: LOOPING[0m
+[0;32mI (320159) [MQTT]: Sent publish successful, msg_id: 60[0m
+[0;32mI (320289) [MQTT]: EVENT_PUBLISHED, msg_id: 60[0m
+[0;31mE (321629) [SWITCH]: Switch reset released[0m
+[0;31mE (321629) [APP]: LOOPING[0m
+[0;32mI (325159) [MQTT]: Sent publish successful, msg_id: 61[0m
+[0;32mI (325309) [MQTT]: EVENT_PUBLISHED, msg_id: 61[0m
+[0;31mE (326629) [SWITCH]: Switch reset released[0m
+[0;31mE (326629) [APP]: LOOPING[0m
+[0;32mI (330159) [MQTT]: Sent publish successful, msg_id: 62[0m
+[0;32mI (330329) [MQTT]: EVENT_PUBLISHED, msg_id: 62[0m
+[0;31mE (331629) [SWITCH]: Switch reset released[0m
+[0;31mE (331629) [APP]: LOOPING[0m
+[0;32mI (335159) [MQTT]: Sent publish successful, msg_id: 63[0m
+[0;32mI (335239) [MQTT]: EVENT_PUBLISHED, msg_id: 63[0m
+[0;31mE (336629) [SWITCH]: Switch reset released[0m
+[0;31mE (336629) [APP]: LOOPING[0m
+[0;32mI (340159) [MQTT]: Sent publish successful, msg_id: 64[0m
+[0;32mI (340259) [MQTT]: EVENT_PUBLISHED, msg_id: 64[0m
+[0;31mE (341629) [SWITCH]: Switch reset released[0m
+[0;31mE (341629) [APP]: LOOPING[0m
+[0;32mI (345159) [MQTT]: Sent publish successful, msg_id: 65[0m
+[0;32mI (345279) [MQTT]: EVENT_PUBLISHED, msg_id: 65[0m
+[0;31mE (346629) [SWITCH]: Switch reset released[0m
+[0;31mE (346629) [APP]: LOOPING[0m
+[0;32mI (350159) [MQTT]: Sent publish successful, msg_id: 66[0m
+[0;32mI (350299) [MQTT]: EVENT_PUBLISHED, msg_id: 66[0m
+[0;31mE (351629) [SWITCH]: Switch reset released[0m
+[0;31mE (351629) [APP]: LOOPING[0m
+[0;32mI (355159) [MQTT]: Sent publish successful, msg_id: 67[0m
+[0;32mI (355309) [MQTT]: EVENT_PUBLISHED, msg_id: 67[0m
+[0;31mE (356629) [SWITCH]: Switch reset released[0m
+[0;31mE (356629) [APP]: LOOPING[0m
+[0;32mI (360159) [MQTT]: Sent publish successful, msg_id: 68[0m
+[0;32mI (360249) [MQTT]: EVENT_PUBLISHED, msg_id: 68[0m
+[0;31mE (361629) [SWITCH]: Switch reset released[0m
+[0;31mE (361629) [APP]: LOOPING[0m
+[0;32mI (365159) [MQTT]: Sent publish successful, msg_id: 69[0m
+[0;32mI (365249) [MQTT]: EVENT_PUBLISHED, msg_id: 69[0m
+[0;31mE (366629) [SWITCH]: Switch reset released[0m
+[0;31mE (366629) [APP]: LOOPING[0m
+[0;32mI (370159) [MQTT]: Sent publish successful, msg_id: 70[0m
+[0;32mI (370259) [MQTT]: EVENT_PUBLISHED, msg_id: 70[0m
+[0;31mE (371629) [SWITCH]: Switch reset released[0m
+[0;31mE (371629) [APP]: LOOPING[0m
+[0;32mI (375159) [MQTT]: Sent publish successful, msg_id: 71[0m
+[0;32mI (375289) [MQTT]: EVENT_PUBLISHED, msg_id: 71[0m
+[0;31mE (376629) [SWITCH]: Switch reset released[0m
+[0;31mE (376629) [APP]: LOOPING[0m
+[0;32mI (380159) [MQTT]: Sent publish successful, msg_id: 72[0m
+[0;32mI (380309) [MQTT]: EVENT_PUBLISHED, msg_id: 72[0m
+[0;31mE (381629) [SWITCH]: Switch reset released[0m
+[0;31mE (381629) [APP]: LOOPING[0m
+[0;32mI (385159) [MQTT]: Sent publish successful, msg_id: 73[0m
+[0;32mI (385319) [MQTT]: EVENT_PUBLISHED, msg_id: 73[0m
+[0;31mE (386629) [SWITCH]: Switch reset released[0m
+[0;31mE (386629) [APP]: LOOPING[0m
+[0;32mI (390159) [MQTT]: Sent publish successful, msg_id: 74[0m
+[0;32mI (390249) [MQTT]: EVENT_PUBLISHED, msg_id: 74[0m
+[0;31mE (391629) [SWITCH]: Switch reset released[0m
+[0;31mE (391629) [APP]: LOOPING[0m
+[0;32mI (395159) [MQTT]: Sent publish successful, msg_id: 75[0m
+[0;32mI (395249) [MQTT]: EVENT_PUBLISHED, msg_id: 75[0m
+[0;31mE (396629) [SWITCH]: Switch reset released[0m
+[0;31mE (396629) [APP]: LOOPING[0m
+[0;32mI (400159) [MQTT]: Sent publish successful, msg_id: 76[0m
+[0;32mI (400269) [MQTT]: EVENT_PUBLISHED, msg_id: 76[0m
+[0;31mE (401629) [SWITCH]: Switch reset released[0m
+[0;31mE (401629) [APP]: LOOPING[0m
+[0;32mI (405159) [MQTT]: Sent publish successful, msg_id: 77[0m
+[0;32mI (405279) [MQTT]: EVENT_PUBLISHED, msg_id: 77[0m
+[0;31mE (406629) [SWITCH]: Switch reset released[0m
+[0;31mE (406629) [APP]: LOOPING[0m
+[0;32mI (410159) [MQTT]: Sent publish successful, msg_id: 78[0m
+[0;32mI (410309) [MQTT]: EVENT_PUBLISHED, msg_id: 78[0m
+[0;31mE (411629) [SWITCH]: Switch reset released[0m
+[0;31mE (411629) [APP]: LOOPING[0m
+[0;32mI (415159) [MQTT]: Sent publish successful, msg_id: 79[0m
+[0;32mI (415329) [MQTT]: EVENT_PUBLISHED, msg_id: 79[0m
+[0;31mE (416629) [SWITCH]: Switch reset released[0m
+[0;31mE (416629) [APP]: LOOPING[0m
+[0;32mI (420159) [MQTT]: Sent publish successful, msg_id: 80[0m
+[0;32mI (420449) [MQTT]: EVENT_PUBLISHED, msg_id: 80[0m
+[0;31mE (421629) [SWITCH]: Switch reset released[0m
+[0;31mE (421629) [APP]: LOOPING[0m
+[0;32mI (425159) [MQTT]: Sent publish successful, msg_id: 81[0m
+[0;32mI (425259) [MQTT]: EVENT_PUBLISHED, msg_id: 81[0m
+[0;31mE (426629) [SWITCH]: Switch reset released[0m
+[0;31mE (426629) [APP]: LOOPING[0m
+[0;32mI (430159) [MQTT]: Sent publish successful, msg_id: 82[0m
+[0;32mI (430269) [MQTT]: EVENT_PUBLISHED, msg_id: 82[0m
+[0;31mE (431629) [SWITCH]: Switch reset released[0m
+[0;31mE (431629) [APP]: LOOPING[0m
+[0;32mI (435159) [MQTT]: Sent publish successful, msg_id: 83[0m
+[0;32mI (435289) [MQTT]: EVENT_PUBLISHED, msg_id: 83[0m
+[0;31mE (436629) [SWITCH]: Switch reset released[0m
+[0;31mE (436629) [APP]: LOOPING[0m
+[0;32mI (440159) [MQTT]: Sent publish successful, msg_id: 84[0m
+[0;32mI (440309) [MQTT]: EVENT_PUBLISHED, msg_id: 84[0m
+[0;31mE (441629) [SWITCH]: Switch reset released[0m
+[0;31mE (441629) [APP]: LOOPING[0m
+[0;32mI (445159) [MQTT]: Sent publish successful, msg_id: 85[0m
+[0;32mI (445319) [MQTT]: EVENT_PUBLISHED, msg_id: 85[0m
+[0;31mE (446629) [SWITCH]: Switch reset released[0m
+[0;31mE (446629) [APP]: LOOPING[0m
+[0;32mI (450159) [MQTT]: Sent publish successful, msg_id: 86[0m

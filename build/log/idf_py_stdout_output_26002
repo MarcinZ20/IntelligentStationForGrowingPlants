@@ -1,0 +1,1221 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  6 2024 14:09:42[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d798h (251800) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d7c0 vaddr=3ffbdb60 size=02858h ( 10328) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e5124h (938276) map[0m
+[0;32mI (354) esp_image: segment 3: paddr=0013514c vaddr=3ffc03b8 size=03094h ( 12436) load[0m
+[0;32mI (357) esp_image: segment 4: paddr=001381e8 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (427) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (430) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (438) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (443) cpu_start: Compile time:     Feb  6 2024 16:55:54[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  abf2fba4d...[0m
+[0;32mI (454) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (461) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (466) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (470) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFCBCF8 len 00014308 (80 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: winbond[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (535) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (545) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (554) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (569) [WI-FI]: [APP] Startup..[0m
+[0;32mI (569) [WI-FI]: [APP] Free memory: 212856 bytes[0m
+[0;32mI (569) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (609) [I2C]: Module configuration successful![0m
+[0;32mI (609) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (619) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (629) [SWITCH]: Configuration successful![0m
+[0;32mI (24629) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24629) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (24629) [LED]: LEDs configured![0m
+[0;32mI (24639) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (24649) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (24649) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (25049) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+Booting ...
+[0;33mW (25049) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (25059) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (25059) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+[0;31mE (25079) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (25079) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (25079) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (25089) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (25099) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (25099) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (25109) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (25109) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (25119) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (25129) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (25129) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (25139) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+Hello there!
+Gpio pin: 33
+Check pressed task started
+[0;31mE (34069) [SWITCH]: Switch reset released[0m
+I (34079) wifi:wifi driver task: 3ffd8aa4, prio:23, stack:6656, core=0
+I (34089) wifi:wifi firmware version: a194738
+I (34089) wifi:wifi certification version: v7.0
+I (34089) wifi:config NVS flash: enabled
+I (34089) wifi:config nano formating: disabled
+I (34099) wifi:Init data frame dynamic rx buffer num: 32
+I (34099) wifi:Init static rx mgmt buffer num: 5
+I (34109) wifi:Init management short buffer num: 32
+I (34109) wifi:Init dynamic tx buffer num: 32
+I (34119) wifi:Init static rx buffer size: 1600
+I (34119) wifi:Init static rx buffer num: 10
+I (34119) wifi:Init dynamic rx buffer num: 32
+[0;32mI (34129) wifi_init: rx ba win: 6[0m
+[0;32mI (34129) wifi_init: tcpip mbox: 32[0m
+[0;32mI (34139) wifi_init: udp mbox: 6[0m
+[0;32mI (34139) wifi_init: tcp mbox: 6[0m
+[0;32mI (34139) wifi_init: tcp tx win: 5760[0m
+[0;32mI (34149) wifi_init: tcp rx win: 5760[0m
+[0;32mI (34149) wifi_init: tcp mss: 1440[0m
+[0;32mI (34159) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (34159) wifi_init: WiFi RX IRAM OP enabled[0m
+SSID_len: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+I (34179) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (34179) wifi:enable tsf
+SSID: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+[0;32mI (34189) [WI-FI]: Wifi started![0m
+[0;31mE (34189) [APP]: LOOPING[0m
+Wi-Fi down ...
+I (34199) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (34199) wifi:state: init -> auth (b0)
+I (34209) wifi:state: auth -> assoc (0)
+I (34219) wifi:state: assoc -> run (10)
+I (34239) wifi:connected with T-Mobile_Swiatlowod_2.4GHz_3790, aid = 5, channel 8, BW20, bssid = 34:5d:9e:5f:37:94
+I (34239) wifi:security: WPA2-PSK, phy: bgn, rssi: -75
+I (34249) wifi:pm start, type: 1
+
+I (34249) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (34269) wifi:<ba-add>idx:0 (ifx:0, 34:5d:9e:5f:37:94), tid:0, ssn:0, winSize:64
+I (34319) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;31mE (35199) [APP]: LOOPING[0m
+[0;32mI (35759) esp_netif_handlers: sta ip: 192.168.1.248, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (35759) [WI-FI]: Connected to ip: 192.168.1.248[0m
+[0;31mE (39069) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;31mE (44069) [SWITCH]: Switch reset released[0m
+[0;32mI (44069) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (44359) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (44359) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (44359) i2c: i2c driver install error[0m
+[0;31mE (44369) i2c: i2c driver install error[0m
+[0;31mE (44369) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 0.0°C
+Humidity: 0.0%
+[0;31mE (44379) AM2320: Failed to read data: ESP_FAIL[0m
+[0;31mE (44389) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (49069) [SWITCH]: Switch reset released[0m
+[0;32mI (49389) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (49389) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (49489) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (49589) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (49589) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (49589) [MQTT]: EVENT_ERROR[0m
+[0;31mE (49599) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (49599) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (49609) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (49619) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (49629) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (49599) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (49629) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (49639) i2c: i2c driver install error[0m
+[0;31mE (49649) i2c: i2c driver install error[0m
+[0;31mE (49649) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 0.0°C
+[0;31mE (49659) [APP]: LOOPING[0m
+Humidity: 0.0%
+[0;31mE (49659) AM2320: Failed to read data: ESP_FAIL[0m
+Wi-Fi connected
+[0;31mE (54069) [SWITCH]: Switch reset released[0m
+[0;32mI (54669) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (54669) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (54749) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (54849) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (54849) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (54849) [MQTT]: EVENT_ERROR[0m
+[0;31mE (54859) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (54859) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (54869) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (54879) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (54889) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (54909) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (54909) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (54909) i2c: i2c driver install error[0m
+[0;31mE (54919) i2c: i2c driver install error[0m
+[0;31mE (54919) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 0.0°C
+Humidity: 0.0%
+[0;31mE (54929) AM2320: Failed to read data: ESP_FAIL[0m
+[0;31mE (54929) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (59069) [SWITCH]: Switch reset released[0m
+[0;32mI (59929) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;32mI (59939) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (60019) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+[0;31mE (60229) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (60229) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (60239) [MQTT]: EVENT_ERROR[0m
+[0;31mE (60239) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (60249) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (60249) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (60259) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (60259) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (60269) [APP]: MQTT BITS[0m
+[0;32mI (60269) [MQTT]: EVENT_DISCONNECTED[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (60279) i2c: i2c driver install error[0m
+[0;31mE (60289) i2c: i2c driver install error[0m
+[0;31mE (60289) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 0.0°C
+Humidity: 0.0%
+[0;31mE (60299) AM2320: Failed to read data: ESP_FAIL[0m
+[0;31mE (60279) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (64069) [SWITCH]: Switch reset released[0m
+[0;32mI (64629) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (64979) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (64979) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (64989) [MQTT]: EVENT_ERROR[0m
+[0;31mE (64989) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (64999) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (65009) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (65009) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (65009) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (65029) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (65309) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (65309) [MQTT]: Publish failed[0m
+[0;32mI (65309) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (65309) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;32mI (65319) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (65499) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (65499) [APP]: MQTT BITS[0m
+[0;31mE (65499) transport_base: tcp_read error, errno=Socket is not connected[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (65499) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (65509) i2c: i2c driver install error[0m
+[0;32mI (65509) [MQTT]: EVENT_ERROR[0m
+[0;31mE (65519) i2c: i2c driver install error[0m
+[0;31mE (65519) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (65529) am2320: i2c_dev_write(): ESP_FAIL[0m
+[0;31mE (65529) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (65549) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (65549) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+Temperature: 0.0°C
+[0;32mI (65559) [MQTT]: EVENT_DISCONNECTED[0m
+Humidity: 0.0%
+[0;31mE (65569) AM2320: Failed to read data: ESP_FAIL[0m
+[0;31mE (65499) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (69069) [SWITCH]: Switch reset released[0m
+[0;32mI (69889) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (70069) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (70069) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (70069) [MQTT]: EVENT_ERROR[0m
+[0;31mE (70079) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (70079) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (70089) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (70099) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (70099) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (70099) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (70279) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (70479) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (70479) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (70479) [MQTT]: EVENT_ERROR[0m
+[0;31mE (70489) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (70489) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (70499) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (70509) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (70499) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (70519) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (70569) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (70569) [MQTT]: Publish failed[0m
+[0;32mI (70569) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (70569) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;32mI (70579) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (70779) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (70779) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (70789) [MQTT]: EVENT_ERROR[0m
+[0;31mE (70789) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (70799) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (70809) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (70809) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (70809) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (70829) [APP]: MQTT BITS[0m
+[0;32mI (70829) [MQTT]: EVENT_DISCONNECTED[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (70839) i2c: i2c driver install error[0m
+[0;31mE (70839) i2c: i2c driver install error[0m
+[0;31mE (70849) am2320: i2c_dev_write(): ESP_FAIL[0m
+Temperature: 0.0°C
+Humidity: 0.0%
+[0;31mE (70849) AM2320: Failed to read data: ESP_FAIL[0m
+[0;31mE (70829) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (74069) [SWITCH]: Switch reset released[0m
+[0;32mI (75569) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (75729) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (75739) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (75739) [MQTT]: EVENT_ERROR[0m
+[0;31mE (75739) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (75749) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (75759) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (75759) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (75769) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (75799) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (75859) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (75859) [MQTT]: Publish failed[0m
+[0;32mI (75859) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (75859) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;32mI (75869) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (76209) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (76209) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (76219) [MQTT]: EVENT_ERROR[0m
+[0;31mE (76219) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (76229) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (76229) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (76239) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (76249) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (76229) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (76259) [APP]: MQTT BITS[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (76259) i2c: i2c driver install error[0m
+[0;31mE (76269) i2c: i2c driver install error[0m
+[0;31mE (76269) am2320: i2c_dev_write(): ESP_FAIL[0m
+[0;31mE (76279) [APP]: LOOPING[0m
+Temperature: 0.0°C
+Humidity: 0.0%
+[0;31mE (76279) AM2320: Failed to read data: ESP_FAIL[0m
+Wi-Fi connected
+[0;31mE (79069) [SWITCH]: Switch reset released[0m
+[0;32mI (80029) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (80109) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (80239) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (80239) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (80239) [MQTT]: EVENT_ERROR[0m
+[0;31mE (80249) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (80249) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (80259) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (80269) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (80279) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (80309) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (80309) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (80309) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (80319) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (80329) [MQTT]: EVENT_ERROR[0m
+[0;31mE (80329) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (80329) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (80339) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (80349) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (80359) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (81289) mqtt_client: Publishing skipped: client is not connected[0m
+[0;31mE (81289) [MQTT]: Publish failed[0m
+[0;32mI (81289) [MQTT]: Something went wrong, msg_id: -1[0m
+[0;32mI (81289) [MQTT]: Sent publish successful, msg_id: -1[0m
+[0;32mI (81299) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (81459) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (81459) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (81469) [MQTT]: EVENT_ERROR[0m
+[0;31mE (81469) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (81479) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (81489) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (81489) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (81489) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (81509) [APP]: MQTT BITS[0m
+[0;32mI (81509) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (81509) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (84069) [SWITCH]: Switch reset released[0m
+[0;32mI (85519) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (85669) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (85669) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (85669) [MQTT]: EVENT_ERROR[0m
+[0;31mE (85679) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (85679) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (85689) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (85699) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (85709) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (85679) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (85779) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (85829) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (86039) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (86039) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (86049) [MQTT]: EVENT_ERROR[0m
+[0;31mE (86049) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (86059) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (86069) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (86069) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (86059) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (86089) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (86179) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (86179) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (86179) [MQTT]: EVENT_ERROR[0m
+[0;31mE (86189) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (86189) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (86199) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (86209) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (86209) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (86219) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (86519) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (86759) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (86759) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (86759) [MQTT]: EVENT_ERROR[0m
+[0;31mE (86769) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (86769) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (86779) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (86789) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (86779) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (86799) [APP]: MQTT BITS[0m
+[0;32mI (86799) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (86799) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (89069) [SWITCH]: Switch reset released[0m
+[0;32mI (91249) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (91399) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (91399) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (91399) [MQTT]: EVENT_ERROR[0m
+[0;31mE (91409) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (91409) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (91419) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (91429) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (91439) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (91439) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (91809) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (91969) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (91969) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (91979) [MQTT]: EVENT_ERROR[0m
+[0;31mE (91979) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (91989) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (91999) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (91999) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (91999) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (92019) [APP]: MQTT BITS[0m
+[0;32mI (92019) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (92019) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (94069) [SWITCH]: Switch reset released[0m
+[0;32mI (95279) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (95359) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (95459) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (95459) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (95469) [MQTT]: EVENT_ERROR[0m
+[0;31mE (95469) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (95469) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (95479) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (95489) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (95469) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (95499) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (95559) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (95559) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (95559) [MQTT]: EVENT_ERROR[0m
+[0;31mE (95569) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (95569) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (95579) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (95589) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (95589) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (95599) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (96509) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (96689) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (96689) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (96689) [MQTT]: EVENT_ERROR[0m
+[0;31mE (96699) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (96699) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (96709) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (96719) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (96729) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (96719) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (96809) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (96929) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (96929) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (96929) [MQTT]: EVENT_ERROR[0m
+[0;31mE (96939) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (96939) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (96949) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (96959) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (96969) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (96989) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (97029) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (97299) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (97299) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (97299) [MQTT]: EVENT_ERROR[0m
+[0;31mE (97309) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (97309) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (97319) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (97329) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (97319) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (97339) [APP]: MQTT BITS[0m
+[0;32mI (97339) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (97339) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (99069) [SWITCH]: Switch reset released[0m
+[0;32mI (100709) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (100879) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (100879) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (100889) [MQTT]: EVENT_ERROR[0m
+[0;31mE (100889) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (100899) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (100909) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (100909) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (100909) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (100929) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (101089) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (101219) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (101229) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (101229) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (101239) [MQTT]: EVENT_ERROR[0m
+[0;31mE (101239) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (101249) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (101259) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (101259) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (101269) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (101289) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (101499) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (101499) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (101509) [MQTT]: EVENT_ERROR[0m
+[0;31mE (101509) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (101519) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (101519) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (101529) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (101529) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (101549) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (102349) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (102569) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (102569) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (102569) [MQTT]: EVENT_ERROR[0m
+[0;31mE (102579) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (102579) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (102589) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (102599) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (102579) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (102609) [APP]: MQTT BITS[0m
+[0;32mI (102609) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (102619) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (104069) [SWITCH]: Switch reset released[0m
+[0;32mI (105509) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (105609) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (105699) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (105699) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (105709) [MQTT]: EVENT_ERROR[0m
+[0;31mE (105709) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (105719) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (105719) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (105729) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (105729) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (105749) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (105909) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (105909) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (105909) [MQTT]: EVENT_ERROR[0m
+[0;31mE (105919) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (105919) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (105929) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (105939) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (105949) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (105949) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (106439) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (106719) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (106719) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (106729) [MQTT]: EVENT_ERROR[0m
+[0;31mE (106729) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (106739) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (106749) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (106749) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (106739) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;32mI (106749) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (106769) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (106959) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (106959) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (106969) [MQTT]: EVENT_ERROR[0m
+[0;31mE (106969) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (106979) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (106979) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (106989) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (106989) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (106999) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (107019) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (107169) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (107169) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (107179) [MQTT]: EVENT_ERROR[0m
+[0;31mE (107179) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (107189) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (107199) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (107199) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (107209) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (107229) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (107349) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (107549) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (107549) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (107549) [MQTT]: EVENT_ERROR[0m
+[0;31mE (107559) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (107559) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (107569) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (107579) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (107569) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (107589) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (107629) mqtt_client: Error create mqtt task[0m
+[0;31mE (108629) [APP]: MQTT BITS[0m
+[0;31mE (108629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (108629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (109069) [SWITCH]: Switch reset released[0m
+[0;32mI (111549) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (111739) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (111739) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (111739) [MQTT]: EVENT_ERROR[0m
+[0;31mE (111749) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (111749) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (111759) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (111769) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (111779) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (111779) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (111969) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (112299) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (112299) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (112299) [MQTT]: EVENT_ERROR[0m
+[0;31mE (112309) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (112309) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (112319) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (112329) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (112339) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (112349) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;32mI (112619) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (113179) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (113179) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (113179) [MQTT]: EVENT_ERROR[0m
+[0;31mE (113189) [MQTT]: Last error reported from esp-tls: 0x8008[0m
+[0;31mE (113189) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (113199) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;31mE (113209) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (113219) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (113209) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+[0;31mE (113629) mqtt_client: Error create mqtt task[0m
+[0;31mE (114069) [SWITCH]: Switch reset released[0m
+[0;31mE (114629) [APP]: MQTT BITS[0m
+[0;31mE (114629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (114629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (115929) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (115929) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (115929) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (115929) mqtt_client: Error transport connect[0m
+[0;32mI (115939) [MQTT]: EVENT_ERROR[0m
+[0;31mE (115939) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (115949) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (115959) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (115959) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (116269) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (116269) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (116269) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (116269) mqtt_client: Error transport connect[0m
+[0;32mI (116279) [MQTT]: EVENT_ERROR[0m
+[0;31mE (116279) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (116289) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (116299) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (116299) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (116779) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (116779) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (116779) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (116779) mqtt_client: Error transport connect[0m
+[0;32mI (116789) [MQTT]: EVENT_ERROR[0m
+[0;31mE (116789) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (116799) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (116809) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (116809) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (117009) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (117009) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (117009) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (117009) mqtt_client: Error transport connect[0m
+[0;32mI (117019) [MQTT]: EVENT_ERROR[0m
+[0;31mE (117019) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (117029) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (117039) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (117039) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (117219) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (117219) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (117219) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (117219) mqtt_client: Error transport connect[0m
+[0;32mI (117229) [MQTT]: EVENT_ERROR[0m
+[0;31mE (117229) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (117239) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (117249) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (117249) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (117599) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (117599) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (117599) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (117599) mqtt_client: Error transport connect[0m
+[0;32mI (117609) [MQTT]: EVENT_ERROR[0m
+[0;31mE (117609) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (117619) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (117629) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (117629) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (119069) [SWITCH]: Switch reset released[0m
+[0;31mE (119629) mqtt_client: Client was not initialized[0m
+[0;31mE (120629) [APP]: MQTT BITS[0m
+[0;31mE (120629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (120629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (120749) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (120749) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (120749) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (120749) mqtt_client: Error transport connect[0m
+[0;32mI (120759) [MQTT]: EVENT_ERROR[0m
+[0;31mE (120759) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (120769) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (120779) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (120779) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (120949) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (120949) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (120949) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (120949) mqtt_client: Error transport connect[0m
+[0;32mI (120959) [MQTT]: EVENT_ERROR[0m
+[0;31mE (120959) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (120969) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (120979) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (120979) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (122339) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (122339) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (122339) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (122339) mqtt_client: Error transport connect[0m
+[0;32mI (122349) [MQTT]: EVENT_ERROR[0m
+[0;31mE (122349) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (122359) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (122369) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (122369) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (123219) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (123219) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (123219) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (123219) mqtt_client: Error transport connect[0m
+[0;32mI (123229) [MQTT]: EVENT_ERROR[0m
+[0;31mE (123229) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (123239) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (123249) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (123249) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (124069) [SWITCH]: Switch reset released[0m
+[0;31mE (125629) mqtt_client: Client was not initialized[0m
+[0;32mI (125969) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (125969) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (125969) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (125969) mqtt_client: Error transport connect[0m
+[0;32mI (125979) [MQTT]: EVENT_ERROR[0m
+[0;31mE (125979) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (125989) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (125999) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (125999) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (126309) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (126309) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (126309) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (126309) mqtt_client: Error transport connect[0m
+[0;32mI (126319) [MQTT]: EVENT_ERROR[0m
+[0;31mE (126319) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (126329) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (126339) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (126339) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (126629) [APP]: MQTT BITS[0m
+[0;31mE (126629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (126629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (126779) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (126779) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (126779) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (126789) mqtt_client: Error transport connect[0m
+[0;32mI (126789) [MQTT]: EVENT_ERROR[0m
+[0;31mE (126799) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (126799) [MQTT]: Last error captured as transport's socket errno: 0x80[0m
+[0;32mI (126809) [MQTT]: Last errno string (Socket is not connected)[0m
+[0;32mI (126819) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (126819) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (126829) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (126839) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (126839) mqtt_client: Error transport connect[0m
+[0;32mI (126849) [MQTT]: EVENT_ERROR[0m
+[0;31mE (126849) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (126859) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (126869) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (126869) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (127049) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (127049) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (127049) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (127059) mqtt_client: Error transport connect[0m
+[0;32mI (127059) [MQTT]: EVENT_ERROR[0m
+[0;31mE (127069) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (127069) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (127079) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (127089) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (127259) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (127259) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (127259) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (127269) mqtt_client: Error transport connect[0m
+[0;32mI (127269) [MQTT]: EVENT_ERROR[0m
+[0;31mE (127279) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (127279) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (127289) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (127299) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (127639) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (127639) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (127639) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (127639) mqtt_client: Error transport connect[0m
+[0;32mI (127649) [MQTT]: EVENT_ERROR[0m
+[0;31mE (127649) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (127659) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (127669) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (127669) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (129069) [SWITCH]: Switch reset released[0m
+[0;32mI (130789) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (130789) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (130789) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (130799) mqtt_client: Error transport connect[0m
+[0;32mI (130799) [MQTT]: EVENT_ERROR[0m
+[0;31mE (130809) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (130809) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (130819) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (130829) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (130989) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (130989) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (130989) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (130999) mqtt_client: Error transport connect[0m
+[0;32mI (130999) [MQTT]: EVENT_ERROR[0m
+[0;31mE (131009) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (131009) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (131019) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (131029) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (131629) mqtt_client: Client was not initialized[0m
+[0;32mI (132379) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (132379) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (132379) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (132379) mqtt_client: Error transport connect[0m
+[0;32mI (132389) [MQTT]: EVENT_ERROR[0m
+[0;31mE (132389) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (132399) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (132409) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (132409) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (132629) [APP]: MQTT BITS[0m
+[0;31mE (132629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (132629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (133259) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (133259) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (133259) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (133269) mqtt_client: Error transport connect[0m
+[0;32mI (133269) [MQTT]: EVENT_ERROR[0m
+[0;31mE (133279) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (133279) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (133289) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (133299) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (134069) [SWITCH]: Switch reset released[0m
+[0;32mI (136009) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (136009) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (136009) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (136009) mqtt_client: Error transport connect[0m
+[0;32mI (136019) [MQTT]: EVENT_ERROR[0m
+[0;31mE (136019) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (136029) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (136039) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (136039) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (136349) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (136349) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (136349) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (136349) mqtt_client: Error transport connect[0m
+[0;32mI (136359) [MQTT]: EVENT_ERROR[0m
+[0;31mE (136359) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (136369) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (136379) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (136379) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (136879) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (136879) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (136879) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (136889) mqtt_client: Error transport connect[0m
+[0;32mI (136889) [MQTT]: EVENT_ERROR[0m
+[0;31mE (136899) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (136899) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (136909) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (136919) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (137629) mqtt_client: Client was not initialized[0m
+[0;32mI (137679) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (137679) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (137679) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (137679) mqtt_client: Error transport connect[0m
+[0;32mI (137689) [MQTT]: EVENT_ERROR[0m
+[0;31mE (137689) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (137699) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (137709) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (137709) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (138629) [APP]: MQTT BITS[0m
+[0;31mE (138629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (138629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (139069) [SWITCH]: Switch reset released[0m
+[0;32mI (141819) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (141819) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (141819) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (141819) mqtt_client: Error transport connect[0m
+[0;32mI (141829) [MQTT]: EVENT_ERROR[0m
+[0;31mE (141829) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (141839) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (141849) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (141849) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (142089) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (142089) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (142089) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (142089) mqtt_client: Error transport connect[0m
+[0;32mI (142099) [MQTT]: EVENT_ERROR[0m
+[0;31mE (142099) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (142109) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (142119) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (142119) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (142299) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (142299) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (142299) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (142299) mqtt_client: Error transport connect[0m
+[0;32mI (142309) [MQTT]: EVENT_ERROR[0m
+[0;31mE (142309) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (142319) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (142329) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (142329) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (142419) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (142419) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (142419) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (142419) mqtt_client: Error transport connect[0m
+[0;32mI (142429) [MQTT]: EVENT_ERROR[0m
+[0;31mE (142429) [MQTT]: Last error reported from esp-tls: 0x8002[0m
+[0;31mE (142439) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (142449) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (142449) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (143629) mqtt_client: create_client_data(808): Memory exhausted[0m
+[0;31mE (143629) mqtt_client: Client was not initialized[0m
+[0;31mE (144069) [SWITCH]: Switch reset released[0m
+[0;31mE (144629) [APP]: MQTT BITS[0m
+[0;31mE (144629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (144629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (145829) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (145829) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (145829) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (145839) mqtt_client: Error transport connect[0m
+[0;32mI (145839) [MQTT]: EVENT_ERROR[0m
+[0;31mE (145849) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (145849) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (145859) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (145869) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (146029) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (146029) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (146029) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (146039) mqtt_client: Error transport connect[0m
+[0;32mI (146039) [MQTT]: EVENT_ERROR[0m
+[0;31mE (146049) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (146049) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (146059) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (146069) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (146049) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (146079) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (146089) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (146089) mqtt_client: Error transport connect[0m
+[0;32mI (146099) [MQTT]: EVENT_ERROR[0m
+[0;31mE (146099) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (146109) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (146119) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (146119) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (146389) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (146389) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (146389) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (146399) mqtt_client: Error transport connect[0m
+[0;32mI (146399) [MQTT]: EVENT_ERROR[0m
+[0;31mE (146409) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (146409) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (146419) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (146429) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (147719) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (147719) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (147719) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (147729) mqtt_client: Error transport connect[0m
+[0;32mI (147729) [MQTT]: EVENT_ERROR[0m
+[0;31mE (147739) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (147739) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (147749) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (147759) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (148299) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (148299) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (148299) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (148309) mqtt_client: Error transport connect[0m
+[0;32mI (148309) [MQTT]: EVENT_ERROR[0m
+[0;31mE (148319) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (148319) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (148329) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (148339) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (149069) [SWITCH]: Switch reset released[0m
+[0;31mE (149629) mqtt_client: create_client_data(808): Memory exhausted[0m
+[0;31mE (149629) mqtt_client: Client was not initialized[0m
+[0;31mE (150629) [APP]: MQTT BITS[0m
+[0;31mE (150629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (150629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (151859) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (151859) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (151859) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (151869) mqtt_client: Error transport connect[0m
+[0;32mI (151869) [MQTT]: EVENT_ERROR[0m
+[0;31mE (151879) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (151879) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (151889) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (151899) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (151919) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (151919) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (151919) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (151929) mqtt_client: Error transport connect[0m
+[0;32mI (151929) [MQTT]: EVENT_ERROR[0m
+[0;31mE (151939) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (151939) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (151949) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (151959) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (152129) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (152129) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (152129) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (152139) mqtt_client: Error transport connect[0m
+[0;32mI (152139) [MQTT]: EVENT_ERROR[0m
+[0;31mE (152149) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (152149) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (152159) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (152169) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (152339) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (152339) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (152339) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (152349) mqtt_client: Error transport connect[0m
+[0;32mI (152349) [MQTT]: EVENT_ERROR[0m
+[0;31mE (152359) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (152359) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (152369) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (152379) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (152459) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (152459) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (152459) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (152469) mqtt_client: Error transport connect[0m
+[0;32mI (152469) [MQTT]: EVENT_ERROR[0m
+[0;31mE (152479) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (152479) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (152489) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (152499) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (154069) [SWITCH]: Switch reset released[0m
+W (154229) wifi:m f null
+
+[0;31mE (155629) mqtt_client: create_client_data(805): Memory exhausted[0m
+[0;31mE (155629) mqtt_client: Client was not initialized[0m
+[0;32mI (156129) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (156129) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (156129) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (156139) mqtt_client: Error transport connect[0m
+[0;32mI (156139) [MQTT]: EVENT_ERROR[0m
+[0;31mE (156149) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (156149) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (156159) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (156169) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (156629) [APP]: MQTT BITS[0m
+[0;31mE (156629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (156629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (159069) [SWITCH]: Switch reset released[0m
+[0;32mI (160869) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (160869) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (160869) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (160879) mqtt_client: Error transport connect[0m
+[0;32mI (160879) [MQTT]: EVENT_ERROR[0m
+[0;31mE (160889) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (160889) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (160899) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (160909) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (161069) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (161069) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (161069) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (161079) mqtt_client: Error transport connect[0m
+[0;32mI (161079) [MQTT]: EVENT_ERROR[0m
+[0;31mE (161089) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (161089) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (161099) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (161109) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (161429) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (161429) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (161429) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (161439) mqtt_client: Error transport connect[0m
+[0;32mI (161439) [MQTT]: EVENT_ERROR[0m
+[0;31mE (161449) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (161449) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (161459) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (161469) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (161629) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (161629) mqtt_client: Client was not initialized[0m
+[0;31mE (162629) [APP]: MQTT BITS[0m
+[0;31mE (162629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (162629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;32mI (162759) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (162759) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (162759) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (162769) mqtt_client: Error transport connect[0m
+[0;32mI (162769) [MQTT]: EVENT_ERROR[0m
+[0;31mE (162779) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (162779) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (162789) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (162799) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (163339) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (163339) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (163339) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (163349) mqtt_client: Error transport connect[0m
+[0;32mI (163349) [MQTT]: EVENT_ERROR[0m
+[0;31mE (163359) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (163359) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (163369) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (163379) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (164069) [SWITCH]: Switch reset released[0m
+[0;32mI (166899) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (166899) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (166899) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (166909) mqtt_client: Error transport connect[0m
+[0;32mI (166909) [MQTT]: EVENT_ERROR[0m
+[0;31mE (166919) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (166919) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (166929) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (166939) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (166959) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (166959) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (166959) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (166969) mqtt_client: Error transport connect[0m
+[0;32mI (166969) [MQTT]: EVENT_ERROR[0m
+[0;31mE (166979) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (166979) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (166989) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (166999) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (167169) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (167169) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (167169) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (167179) mqtt_client: Error transport connect[0m
+[0;32mI (167179) [MQTT]: EVENT_ERROR[0m
+[0;31mE (167189) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (167189) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (167199) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (167209) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (167379) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (167379) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (167379) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (167389) mqtt_client: Error transport connect[0m
+[0;32mI (167389) [MQTT]: EVENT_ERROR[0m
+[0;31mE (167399) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (167399) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (167409) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (167419) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (167499) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (167499) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (167499) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (167509) mqtt_client: Error transport connect[0m
+[0;32mI (167509) [MQTT]: EVENT_ERROR[0m
+[0;31mE (167519) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (167519) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (167529) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (167539) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (167629) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (167629) mqtt_client: Client was not initialized[0m
+[0;31mE (168629) [APP]: MQTT BITS[0m
+[0;31mE (168629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (168629) [APP]: LOOPING[0m
+Wi-Fi connected
+[0;31mE (169069) [SWITCH]: Switch reset released[0m
+[0;32mI (171169) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (171169) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (171169) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (171179) mqtt_client: Error transport connect[0m
+[0;32mI (171179) [MQTT]: EVENT_ERROR[0m
+[0;31mE (171189) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (171189) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (171199) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (171209) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (173629) mqtt_client: esp_mqtt_client_init(823): Memory exhausted[0m
+[0;31mE (173629) mqtt_client: Client was not initialized[0m
+[0;31mE (174069) [SWITCH]: Switch reset released[0m
+[0;31mE (174629) [APP]: MQTT BITS[0m
+[0;31mE (174629) [APP]: UNKNOWN MQTT ERROR[0m
+[0;31mE (174629) [APP]: LOOPING[0m
+Wi-Fi connected
+W (175429) wifi:m f null
+
+W (175529) wifi:m f null
+
+[0;32mI (175909) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (175909) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (175909) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (175919) mqtt_client: Error transport connect[0m
+[0;32mI (175919) [MQTT]: EVENT_ERROR[0m
+[0;31mE (175929) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (175929) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (175939) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (175949) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (176109) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (176109) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (176109) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (176119) mqtt_client: Error transport connect[0m
+[0;32mI (176119) [MQTT]: EVENT_ERROR[0m
+[0;31mE (176129) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (176129) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (176139) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (176149) [MQTT]: EVENT_DISCONNECTED[0m
+[0;32mI (176469) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (176469) esp-tls: couldn't get hostname for :test.mosquitto.org: getaddrinfo() returns 203, addrinfo=0x0[0m
+[0;31mE (176469) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (176479) mqtt_client: Error transport connect[0m
+[0;32mI (176479) [MQTT]: EVENT_ERROR[0m
+[0;31mE (176489) [MQTT]: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (176489) [MQTT]: Last error captured as transport's socket errno: 0x69[0m
+[0;32mI (176499) [MQTT]: Last errno string (No buffer space available)[0m
+[0;32mI (176509) [MQTT]: EVENT_DISCONNECTED[0m

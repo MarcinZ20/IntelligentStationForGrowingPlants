@@ -1,0 +1,840 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  6 2024 14:09:42[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=3d798h (251800) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=0004d7c0 vaddr=3ffbdb60 size=02858h ( 10328) load[0m
+[0;32mI (158) esp_image: segment 2: paddr=00050020 vaddr=400d0020 size=e514ch (938316) map[0m
+[0;32mI (354) esp_image: segment 3: paddr=00135174 vaddr=3ffc03b8 size=03094h ( 12436) load[0m
+[0;32mI (357) esp_image: segment 4: paddr=00138210 vaddr=40080000 size=1ea70h (125552) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (427) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (427) cpu_start: Application information:[0m
+[0;32mI (430) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (437) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (443) cpu_start: Compile time:     Feb  6 2024 16:55:54[0m
+[0;32mI (449) cpu_start: ELF file SHA256:  528005d24...[0m
+[0;32mI (454) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (461) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (466) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (470) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (501) heap_init: At 3FFCBCF8 len 00014308 (80 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 4009EA70 len 00001590 (5 KiB): IRAM[0m
+[0;32mI (527) spi_flash: detected chip: winbond[0m
+[0;32mI (530) spi_flash: flash io: dio[0m
+[0;33mW (535) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (545) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (554) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (569) [WI-FI]: [APP] Startup..[0m
+[0;32mI (569) [WI-FI]: [APP] Free memory: 212856 bytes[0m
+[0;32mI (569) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (609) [I2C]: Module configuration successful![0m
+[0;32mI (609) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (619) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (629) [SWITCH]: Configuration successful![0m
+[0;32mI (23629) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23629) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (23629) [LED]: LEDs configured![0m
+[0;32mI (23639) BTDM_INIT: BT controller compile version [6458728][0m
+[0;32mI (23649) BTDM_INIT: Bluetooth MAC: b4:e6:2d:ea:62:f7[0m
+[0;32mI (23649) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;32mI (24049) GATTS_SERVER: REGISTER_APP_EVT_A, status 0, app_id 0
+[0m
+Booting ...
+[0;33mW (24049) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV[0m
+[0;32mI (24059) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 40
+[0m
+[0;32mI (24059) GATTS_SERVER: REGISTER_APP_EVT_B, status 0, app_id 1[0m
+[0;31mE (24079) GATTS_SERVER: Advertisign started successfully![0m
+[0;32mI (24079) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 40
+[0m
+[0;32mI (24089) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40
+[0m
+[0;32mI (24089) GATTS_SERVER: the gatts demo char length = 3
+[0m
+[0;32mI (24099) GATTS_SERVER: prf_char[0] =11
+[0m
+[0;32mI (24099) GATTS_SERVER: prf_char[1] =22
+[0m
+[0;32mI (24109) GATTS_SERVER: prf_char[2] =33
+[0m
+[0;32mI (24109) GATTS_SERVER: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (24119) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40
+[0m
+[0;32mI (24129) GATTS_SERVER: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (24139) GATTS_SERVER: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (24149) GATTS_SERVER: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+Hello there!
+Gpio pin: 33
+Check pressed task started
+[0;31mE (33069) [SWITCH]: Switch reset released[0m
+I (33079) wifi:wifi driver task: 3ffd8a98, prio:23, stack:6656, core=0
+I (33099) wifi:wifi firmware version: a194738
+I (33099) wifi:wifi certification version: v7.0
+I (33099) wifi:config NVS flash: enabled
+I (33099) wifi:config nano formating: disabled
+I (33099) wifi:Init data frame dynamic rx buffer num: 32
+I (33109) wifi:Init static rx mgmt buffer num: 5
+I (33109) wifi:Init management short buffer num: 32
+I (33109) wifi:Init dynamic tx buffer num: 32
+I (33119) wifi:Init static rx buffer size: 1600
+I (33119) wifi:Init static rx buffer num: 10
+I (33129) wifi:Init dynamic rx buffer num: 32
+[0;32mI (33129) wifi_init: rx ba win: 6[0m
+[0;32mI (33139) wifi_init: tcpip mbox: 32[0m
+[0;32mI (33139) wifi_init: udp mbox: 6[0m
+[0;32mI (33139) wifi_init: tcp mbox: 6[0m
+[0;32mI (33149) wifi_init: tcp tx win: 5760[0m
+[0;32mI (33149) wifi_init: tcp rx win: 5760[0m
+[0;32mI (33159) wifi_init: tcp mss: 1440[0m
+[0;32mI (33159) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (33159) wifi_init: WiFi RX IRAM OP enabled[0m
+SSID_len: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+I (33179) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (33179) wifi:enable tsf
+SSID: T-Mobile_Swiatlowod_2.4GHz_3790
+Password: r3fpcjgr7n3v56n6
+[0;32mI (33189) [WI-FI]: Wifi started![0m
+[0;31mE (33199) [APP]: LOOPING[0m
+Wi-Fi down ...
+I (33209) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (33209) wifi:state: init -> auth (b0)
+I (33229) wifi:state: auth -> assoc (0)
+I (33239) wifi:state: assoc -> run (10)
+I (33259) wifi:connected with T-Mobile_Swiatlowod_2.4GHz_3790, aid = 4, channel 8, BW20, bssid = 34:5d:9e:5f:37:94
+I (33259) wifi:security: WPA2-PSK, phy: bgn, rssi: -75
+I (33269) wifi:pm start, type: 1
+
+I (33269) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (33279) wifi:<ba-add>idx:0 (ifx:0, 34:5d:9e:5f:37:94), tid:0, ssn:0, winSize:64
+I (33319) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;31mE (34199) [APP]: LOOPING[0m
+[0;32mI (34779) esp_netif_handlers: sta ip: 192.168.1.248, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (34779) [WI-FI]: Connected to ip: 192.168.1.248[0m
+[0;31mE (38069) [SWITCH]: Switch reset released[0m
+Wi-Fi connected
+[0;31mE (43069) [SWITCH]: Switch reset released[0m
+[0;32mI (43069) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (43159) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (43159) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (43169) mqtt_client: Error transport connect[0m
+[0;32mI (43169) [MQTT]: EVENT_ERROR[0m
+[0;31mE (43179) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (43179) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (43189) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (43199) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (48069) [SWITCH]: Switch reset released[0m
+[0;31mE (53069) [SWITCH]: Switch reset released[0m
+[0;31mE (58069) [SWITCH]: Switch reset released[0m
+[0;32mI (58199) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (58209) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (58209) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (58209) mqtt_client: Error transport connect[0m
+[0;32mI (58209) [MQTT]: EVENT_ERROR[0m
+[0;31mE (58219) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (58219) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (58229) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (58239) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (63069) [SWITCH]: Switch reset released[0m
+[0;31mE (68069) [SWITCH]: Switch reset released[0m
+[0;31mE (73069) [SWITCH]: Switch reset released[0m
+[0;32mI (73239) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (73259) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (73259) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (73259) mqtt_client: Error transport connect[0m
+[0;32mI (73269) [MQTT]: EVENT_ERROR[0m
+[0;31mE (73269) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (73279) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (73279) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (73289) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (78069) [SWITCH]: Switch reset released[0m
+[0;31mE (83069) [SWITCH]: Switch reset released[0m
+[0;31mE (88069) [SWITCH]: Switch reset released[0m
+[0;32mI (88289) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (88319) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (88319) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (88319) mqtt_client: Error transport connect[0m
+[0;32mI (88319) [MQTT]: EVENT_ERROR[0m
+[0;31mE (88329) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (88329) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (88339) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (88349) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (93069) [SWITCH]: Switch reset released[0m
+[0;31mE (98069) [SWITCH]: Switch reset released[0m
+[0;31mE (103069) [SWITCH]: Switch reset released[0m
+[0;32mI (103349) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (103369) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (103369) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (103369) mqtt_client: Error transport connect[0m
+[0;32mI (103369) [MQTT]: EVENT_ERROR[0m
+[0;31mE (103379) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (103379) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (103389) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (103399) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (108069) [SWITCH]: Switch reset released[0m
+[0;31mE (113069) [SWITCH]: Switch reset released[0m
+[0;31mE (118069) [SWITCH]: Switch reset released[0m
+[0;32mI (118399) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (118419) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (118419) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (118419) mqtt_client: Error transport connect[0m
+[0;32mI (118429) [MQTT]: EVENT_ERROR[0m
+[0;31mE (118429) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (118439) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (118449) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (118449) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (123069) [SWITCH]: Switch reset released[0m
+[0;31mE (128069) [SWITCH]: Switch reset released[0m
+[0;32mI (128459) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (128469) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (128469) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (128469) mqtt_client: Error transport connect[0m
+[0;32mI (128479) [MQTT]: EVENT_ERROR[0m
+[0;31mE (128479) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (128489) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (128489) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (128499) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (133069) [SWITCH]: Switch reset released[0m
+[0;31mE (138069) [SWITCH]: Switch reset released[0m
+[0;32mI (138509) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (138519) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (138519) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (138529) mqtt_client: Error transport connect[0m
+[0;32mI (138529) [MQTT]: EVENT_ERROR[0m
+[0;31mE (138529) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (138539) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (138549) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (138549) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (143069) [SWITCH]: Switch reset released[0m
+[0;31mE (148069) [SWITCH]: Switch reset released[0m
+[0;32mI (148559) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (148639) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (148639) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (148649) mqtt_client: Error transport connect[0m
+[0;32mI (148649) [MQTT]: EVENT_ERROR[0m
+[0;31mE (148659) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (148659) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (148669) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (148679) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (153069) [SWITCH]: Switch reset released[0m
+[0;31mE (158069) [SWITCH]: Switch reset released[0m
+[0;31mE (163069) [SWITCH]: Switch reset released[0m
+[0;32mI (163679) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (163699) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (163699) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (163699) mqtt_client: Error transport connect[0m
+[0;32mI (163709) [MQTT]: EVENT_ERROR[0m
+[0;31mE (163709) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (163709) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (163719) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (163729) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (168069) [SWITCH]: Switch reset released[0m
+[0;31mE (173069) [SWITCH]: Switch reset released[0m
+[0;31mE (178069) [SWITCH]: Switch reset released[0m
+[0;32mI (178729) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (178739) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (178739) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (178749) mqtt_client: Error transport connect[0m
+[0;32mI (178749) [MQTT]: EVENT_ERROR[0m
+[0;31mE (178749) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (178759) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (178769) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (178779) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (183069) [SWITCH]: Switch reset released[0m
+[0;31mE (188069) [SWITCH]: Switch reset released[0m
+[0;31mE (193069) [SWITCH]: Switch reset released[0m
+[0;32mI (193779) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (193809) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (193809) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (193819) mqtt_client: Error transport connect[0m
+[0;32mI (193819) [MQTT]: EVENT_ERROR[0m
+[0;31mE (193819) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (193829) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (193839) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (193849) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (198069) [SWITCH]: Switch reset released[0m
+[0;31mE (203069) [SWITCH]: Switch reset released[0m
+[0;31mE (208069) [SWITCH]: Switch reset released[0m
+[0;32mI (208849) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (208859) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (208859) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (208859) mqtt_client: Error transport connect[0m
+[0;32mI (208859) [MQTT]: EVENT_ERROR[0m
+[0;31mE (208869) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (208869) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (208879) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (208889) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (213069) [SWITCH]: Switch reset released[0m
+[0;31mE (218069) [SWITCH]: Switch reset released[0m
+[0;31mE (223069) [SWITCH]: Switch reset released[0m
+[0;32mI (223889) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (223899) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (223899) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (223899) mqtt_client: Error transport connect[0m
+[0;32mI (223899) [MQTT]: EVENT_ERROR[0m
+[0;31mE (223909) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (223909) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (223919) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (223929) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (228069) [SWITCH]: Switch reset released[0m
+[0;31mE (233069) [SWITCH]: Switch reset released[0m
+[0;31mE (238069) [SWITCH]: Switch reset released[0m
+[0;32mI (238929) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (238949) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (238949) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (238949) mqtt_client: Error transport connect[0m
+[0;32mI (238959) [MQTT]: EVENT_ERROR[0m
+[0;31mE (238959) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (238969) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (238969) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (238979) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (243069) [SWITCH]: Switch reset released[0m
+[0;31mE (248069) [SWITCH]: Switch reset released[0m
+[0;31mE (253069) [SWITCH]: Switch reset released[0m
+[0;32mI (253979) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (253999) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (253999) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (253999) mqtt_client: Error transport connect[0m
+[0;32mI (254009) [MQTT]: EVENT_ERROR[0m
+[0;31mE (254009) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (254009) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (254019) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (254029) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (258069) [SWITCH]: Switch reset released[0m
+[0;31mE (263069) [SWITCH]: Switch reset released[0m
+[0;31mE (268069) [SWITCH]: Switch reset released[0m
+[0;32mI (269029) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (269049) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (269049) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (269049) mqtt_client: Error transport connect[0m
+[0;32mI (269059) [MQTT]: EVENT_ERROR[0m
+[0;31mE (269059) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (269069) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (269069) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (269079) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (273069) [SWITCH]: Switch reset released[0m
+[0;31mE (278069) [SWITCH]: Switch reset released[0m
+[0;31mE (283069) [SWITCH]: Switch reset released[0m
+[0;32mI (284079) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (284099) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (284099) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (284109) mqtt_client: Error transport connect[0m
+[0;32mI (284109) [MQTT]: EVENT_ERROR[0m
+[0;31mE (284109) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (284119) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (284129) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (284129) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (288069) [SWITCH]: Switch reset released[0m
+[0;31mE (293069) [SWITCH]: Switch reset released[0m
+[0;32mI (294139) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (294149) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (294149) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (294159) mqtt_client: Error transport connect[0m
+[0;32mI (294159) [MQTT]: EVENT_ERROR[0m
+[0;31mE (294169) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (294169) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (294179) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (294189) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (298069) [SWITCH]: Switch reset released[0m
+[0;31mE (303069) [SWITCH]: Switch reset released[0m
+[0;31mE (308069) [SWITCH]: Switch reset released[0m
+[0;32mI (309189) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (309199) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (309199) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (309199) mqtt_client: Error transport connect[0m
+[0;32mI (309209) [MQTT]: EVENT_ERROR[0m
+[0;31mE (309209) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (309219) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (309219) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (309229) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (313069) [SWITCH]: Switch reset released[0m
+[0;31mE (318069) [SWITCH]: Switch reset released[0m
+[0;32mI (319239) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (319249) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (319249) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (319249) mqtt_client: Error transport connect[0m
+[0;32mI (319249) [MQTT]: EVENT_ERROR[0m
+[0;31mE (319259) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (319259) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (319269) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (319279) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (323069) [SWITCH]: Switch reset released[0m
+[0;31mE (328069) [SWITCH]: Switch reset released[0m
+[0;31mE (333069) [SWITCH]: Switch reset released[0m
+[0;32mI (334279) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (334289) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (334289) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (334289) mqtt_client: Error transport connect[0m
+[0;32mI (334299) [MQTT]: EVENT_ERROR[0m
+[0;31mE (334299) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (334309) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (334309) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (334319) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (338069) [SWITCH]: Switch reset released[0m
+[0;31mE (343069) [SWITCH]: Switch reset released[0m
+[0;31mE (348069) [SWITCH]: Switch reset released[0m
+[0;32mI (349319) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (349349) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (349349) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (349349) mqtt_client: Error transport connect[0m
+[0;32mI (349359) [MQTT]: EVENT_ERROR[0m
+[0;31mE (349359) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (349369) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (349369) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (349379) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (353069) [SWITCH]: Switch reset released[0m
+[0;31mE (358069) [SWITCH]: Switch reset released[0m
+[0;31mE (363069) [SWITCH]: Switch reset released[0m
+[0;32mI (364379) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (364389) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (364389) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (364389) mqtt_client: Error transport connect[0m
+[0;32mI (364399) [MQTT]: EVENT_ERROR[0m
+[0;31mE (364399) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (364399) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (364409) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (364419) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (368069) [SWITCH]: Switch reset released[0m
+[0;31mE (373069) [SWITCH]: Switch reset released[0m
+[0;31mE (378069) [SWITCH]: Switch reset released[0m
+[0;32mI (379419) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (379439) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (379439) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (379439) mqtt_client: Error transport connect[0m
+[0;32mI (379439) [MQTT]: EVENT_ERROR[0m
+[0;31mE (379449) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (379449) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (379459) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (379469) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (383069) [SWITCH]: Switch reset released[0m
+[0;31mE (388069) [SWITCH]: Switch reset released[0m
+[0;31mE (393069) [SWITCH]: Switch reset released[0m
+[0;32mI (394469) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (394499) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (394499) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (394499) mqtt_client: Error transport connect[0m
+[0;32mI (394509) [MQTT]: EVENT_ERROR[0m
+[0;31mE (394509) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (394519) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (394519) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (394529) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (398069) [SWITCH]: Switch reset released[0m
+[0;31mE (403069) [SWITCH]: Switch reset released[0m
+[0;32mI (404539) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (404559) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (404559) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (404559) mqtt_client: Error transport connect[0m
+[0;32mI (404559) [MQTT]: EVENT_ERROR[0m
+[0;31mE (404569) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (404569) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (404579) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (404589) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (408069) [SWITCH]: Switch reset released[0m
+[0;31mE (413069) [SWITCH]: Switch reset released[0m
+[0;31mE (418069) [SWITCH]: Switch reset released[0m
+[0;32mI (419589) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (419669) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (419669) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (419669) mqtt_client: Error transport connect[0m
+[0;32mI (419679) [MQTT]: EVENT_ERROR[0m
+[0;31mE (419679) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (419689) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (419699) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (419699) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (423069) [SWITCH]: Switch reset released[0m
+[0;31mE (428069) [SWITCH]: Switch reset released[0m
+[0;32mI (429709) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (429719) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (429719) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (429719) mqtt_client: Error transport connect[0m
+[0;32mI (429729) [MQTT]: EVENT_ERROR[0m
+[0;31mE (429729) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (429739) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (429739) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (429749) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (433069) [SWITCH]: Switch reset released[0m
+[0;31mE (438069) [SWITCH]: Switch reset released[0m
+[0;32mI (439759) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (439779) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (439779) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (439779) mqtt_client: Error transport connect[0m
+[0;32mI (439779) [MQTT]: EVENT_ERROR[0m
+[0;31mE (439789) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (439789) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (439799) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (439809) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (443069) [SWITCH]: Switch reset released[0m
+[0;31mE (448069) [SWITCH]: Switch reset released[0m
+[0;31mE (453069) [SWITCH]: Switch reset released[0m
+[0;32mI (454809) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (454819) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (454819) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (454819) mqtt_client: Error transport connect[0m
+[0;32mI (454829) [MQTT]: EVENT_ERROR[0m
+[0;31mE (454829) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (454829) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (454839) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (454849) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (458069) [SWITCH]: Switch reset released[0m
+[0;31mE (463069) [SWITCH]: Switch reset released[0m
+[0;31mE (468069) [SWITCH]: Switch reset released[0m
+[0;32mI (469849) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (469879) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (469879) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (469879) mqtt_client: Error transport connect[0m
+[0;32mI (469889) [MQTT]: EVENT_ERROR[0m
+[0;31mE (469889) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (469899) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (469909) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (469909) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (473069) [SWITCH]: Switch reset released[0m
+[0;31mE (478069) [SWITCH]: Switch reset released[0m
+[0;32mI (479919) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (479989) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (479989) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (479999) mqtt_client: Error transport connect[0m
+[0;32mI (479999) [MQTT]: EVENT_ERROR[0m
+[0;31mE (480009) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (480009) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (480019) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (480029) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (483069) [SWITCH]: Switch reset released[0m
+[0;31mE (488069) [SWITCH]: Switch reset released[0m
+[0;31mE (493069) [SWITCH]: Switch reset released[0m
+[0;32mI (495029) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (495039) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (495039) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (495049) mqtt_client: Error transport connect[0m
+[0;32mI (495049) [MQTT]: EVENT_ERROR[0m
+[0;31mE (495059) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (495059) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (495069) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (495079) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (498069) [SWITCH]: Switch reset released[0m
+[0;31mE (503069) [SWITCH]: Switch reset released[0m
+[0;31mE (508069) [SWITCH]: Switch reset released[0m
+[0;32mI (510079) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (510099) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (510109) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (510109) mqtt_client: Error transport connect[0m
+[0;32mI (510109) [MQTT]: EVENT_ERROR[0m
+[0;31mE (510119) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (510119) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (510129) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (510139) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (513069) [SWITCH]: Switch reset released[0m
+[0;31mE (518069) [SWITCH]: Switch reset released[0m
+[0;31mE (523069) [SWITCH]: Switch reset released[0m
+[0;32mI (525139) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (525159) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (525159) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (525169) mqtt_client: Error transport connect[0m
+[0;32mI (525169) [MQTT]: EVENT_ERROR[0m
+[0;31mE (525179) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (525179) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (525189) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (525199) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (528069) [SWITCH]: Switch reset released[0m
+[0;31mE (533069) [SWITCH]: Switch reset released[0m
+[0;31mE (538069) [SWITCH]: Switch reset released[0m
+[0;32mI (540199) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (540219) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (540219) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (540219) mqtt_client: Error transport connect[0m
+[0;32mI (540229) [MQTT]: EVENT_ERROR[0m
+[0;31mE (540229) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (540239) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (540239) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (540249) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (543069) [SWITCH]: Switch reset released[0m
+[0;31mE (548069) [SWITCH]: Switch reset released[0m
+[0;31mE (553069) [SWITCH]: Switch reset released[0m
+[0;32mI (555249) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (555259) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (555259) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (555269) mqtt_client: Error transport connect[0m
+[0;32mI (555269) [MQTT]: EVENT_ERROR[0m
+[0;31mE (555269) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (555279) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (555289) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (555289) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (558069) [SWITCH]: Switch reset released[0m
+[0;31mE (563069) [SWITCH]: Switch reset released[0m
+[0;31mE (568069) [SWITCH]: Switch reset released[0m
+[0;32mI (570299) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (570309) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (570309) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (570309) mqtt_client: Error transport connect[0m
+[0;32mI (570319) [MQTT]: EVENT_ERROR[0m
+[0;31mE (570319) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (570329) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (570329) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (570339) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (573069) [SWITCH]: Switch reset released[0m
+[0;31mE (578069) [SWITCH]: Switch reset released[0m
+[0;32mI (580349) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (580439) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (580439) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (580449) mqtt_client: Error transport connect[0m
+[0;32mI (580449) [MQTT]: EVENT_ERROR[0m
+[0;31mE (580459) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (580459) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (580469) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (580479) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (583069) [SWITCH]: Switch reset released[0m
+[0;31mE (588069) [SWITCH]: Switch reset released[0m
+[0;31mE (593069) [SWITCH]: Switch reset released[0m
+[0;32mI (595479) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (595499) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (595499) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (595509) mqtt_client: Error transport connect[0m
+[0;32mI (595509) [MQTT]: EVENT_ERROR[0m
+[0;31mE (595519) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (595519) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (595529) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (595539) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (598069) [SWITCH]: Switch reset released[0m
+[0;31mE (603069) [SWITCH]: Switch reset released[0m
+[0;31mE (608069) [SWITCH]: Switch reset released[0m
+[0;32mI (610539) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (610549) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (610549) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (610559) mqtt_client: Error transport connect[0m
+[0;32mI (610559) [MQTT]: EVENT_ERROR[0m
+[0;31mE (610569) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (610569) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (610579) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (610589) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (613069) [SWITCH]: Switch reset released[0m
+[0;31mE (618069) [SWITCH]: Switch reset released[0m
+[0;31mE (623069) [SWITCH]: Switch reset released[0m
+[0;32mI (625589) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (625599) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (625599) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (625609) mqtt_client: Error transport connect[0m
+[0;32mI (625609) [MQTT]: EVENT_ERROR[0m
+[0;31mE (625609) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (625619) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (625629) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (625629) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (628069) [SWITCH]: Switch reset released[0m
+[0;31mE (633069) [SWITCH]: Switch reset released[0m
+[0;32mI (635639) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (635649) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (635649) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (635649) mqtt_client: Error transport connect[0m
+[0;32mI (635659) [MQTT]: EVENT_ERROR[0m
+[0;31mE (635659) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (635669) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (635669) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (635679) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (638069) [SWITCH]: Switch reset released[0m
+[0;31mE (643069) [SWITCH]: Switch reset released[0m
+[0;31mE (648069) [SWITCH]: Switch reset released[0m
+[0;32mI (650679) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (650689) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (650689) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (650699) mqtt_client: Error transport connect[0m
+[0;32mI (650699) [MQTT]: EVENT_ERROR[0m
+[0;31mE (650699) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (650709) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (650719) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (650719) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (653069) [SWITCH]: Switch reset released[0m
+[0;31mE (658069) [SWITCH]: Switch reset released[0m
+[0;31mE (663069) [SWITCH]: Switch reset released[0m
+[0;32mI (665729) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (665739) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (665739) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (665749) mqtt_client: Error transport connect[0m
+[0;32mI (665749) [MQTT]: EVENT_ERROR[0m
+[0;31mE (665759) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (665759) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (665769) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (665779) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (668069) [SWITCH]: Switch reset released[0m
+[0;31mE (673069) [SWITCH]: Switch reset released[0m
+[0;31mE (678069) [SWITCH]: Switch reset released[0m
+[0;32mI (680779) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (680799) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (680799) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (680799) mqtt_client: Error transport connect[0m
+[0;32mI (680809) [MQTT]: EVENT_ERROR[0m
+[0;31mE (680809) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (680819) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (680819) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (680829) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (683069) [SWITCH]: Switch reset released[0m
+[0;31mE (688069) [SWITCH]: Switch reset released[0m
+[0;31mE (693069) [SWITCH]: Switch reset released[0m
+[0;32mI (695829) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (695849) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (695849) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (695859) mqtt_client: Error transport connect[0m
+[0;32mI (695859) [MQTT]: EVENT_ERROR[0m
+[0;31mE (695869) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (695869) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (695879) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (695889) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (698069) [SWITCH]: Switch reset released[0m
+[0;31mE (703069) [SWITCH]: Switch reset released[0m
+[0;31mE (708069) [SWITCH]: Switch reset released[0m
+[0;32mI (710889) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (710909) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (710909) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (710919) mqtt_client: Error transport connect[0m
+[0;32mI (710919) [MQTT]: EVENT_ERROR[0m
+[0;31mE (710919) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (710929) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (710939) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (710949) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (713069) [SWITCH]: Switch reset released[0m
+[0;31mE (718069) [SWITCH]: Switch reset released[0m
+[0;31mE (723069) [SWITCH]: Switch reset released[0m
+[0;32mI (725949) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (725969) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (725969) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (725979) mqtt_client: Error transport connect[0m
+[0;32mI (725979) [MQTT]: EVENT_ERROR[0m
+[0;31mE (725979) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (725989) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (725999) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (725999) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (728069) [SWITCH]: Switch reset released[0m
+[0;31mE (733069) [SWITCH]: Switch reset released[0m
+[0;31mE (738069) [SWITCH]: Switch reset released[0m
+[0;32mI (741009) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (741019) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (741019) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (741019) mqtt_client: Error transport connect[0m
+[0;32mI (741029) [MQTT]: EVENT_ERROR[0m
+[0;31mE (741029) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (741039) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (741049) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (741049) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (743069) [SWITCH]: Switch reset released[0m
+[0;31mE (748069) [SWITCH]: Switch reset released[0m
+[0;32mI (751059) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (751069) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (751069) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (751069) mqtt_client: Error transport connect[0m
+[0;32mI (751079) [MQTT]: EVENT_ERROR[0m
+[0;31mE (751079) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (751089) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (751099) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (751099) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (753069) [SWITCH]: Switch reset released[0m
+[0;31mE (758069) [SWITCH]: Switch reset released[0m
+[0;32mI (761109) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (761179) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (761179) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (761189) mqtt_client: Error transport connect[0m
+[0;32mI (761189) [MQTT]: EVENT_ERROR[0m
+[0;31mE (761189) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (761199) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (761209) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (761209) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (763069) [SWITCH]: Switch reset released[0m
+[0;31mE (768069) [SWITCH]: Switch reset released[0m
+[0;31mE (773069) [SWITCH]: Switch reset released[0m
+[0;32mI (776219) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (776229) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (776239) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (776239) mqtt_client: Error transport connect[0m
+[0;32mI (776239) [MQTT]: EVENT_ERROR[0m
+[0;31mE (776249) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (776249) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (776259) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (776269) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (778069) [SWITCH]: Switch reset released[0m
+[0;31mE (783069) [SWITCH]: Switch reset released[0m
+[0;31mE (788069) [SWITCH]: Switch reset released[0m
+[0;32mI (791269) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (791279) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (791289) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (791289) mqtt_client: Error transport connect[0m
+[0;32mI (791289) [MQTT]: EVENT_ERROR[0m
+[0;31mE (791299) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (791299) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (791309) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (791319) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (793069) [SWITCH]: Switch reset released[0m
+[0;31mE (798069) [SWITCH]: Switch reset released[0m
+[0;31mE (803069) [SWITCH]: Switch reset released[0m
+[0;32mI (806319) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (806339) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (806339) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (806339) mqtt_client: Error transport connect[0m
+[0;32mI (806349) [MQTT]: EVENT_ERROR[0m
+[0;31mE (806349) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (806359) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (806359) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (806369) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (808069) [SWITCH]: Switch reset released[0m
+[0;31mE (813069) [SWITCH]: Switch reset released[0m
+[0;32mI (816379) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (816389) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (816389) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (816389) mqtt_client: Error transport connect[0m
+[0;32mI (816399) [MQTT]: EVENT_ERROR[0m
+[0;31mE (816399) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (816409) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (816409) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (816419) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (818069) [SWITCH]: Switch reset released[0m
+[0;31mE (823069) [SWITCH]: Switch reset released[0m
+[0;31mE (828069) [SWITCH]: Switch reset released[0m
+[0;32mI (831419) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (831429) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (831429) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (831429) mqtt_client: Error transport connect[0m
+[0;32mI (831439) [MQTT]: EVENT_ERROR[0m
+[0;31mE (831439) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (831449) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (831449) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (831459) [MQTT]: EVENT_DISCONNECTED[0m
+[0;31mE (833069) [SWITCH]: Switch reset released[0m
+[0;31mE (838069) [SWITCH]: Switch reset released[0m
+[0;31mE (843069) [SWITCH]: Switch reset released[0m
+[0;32mI (846459) [MQTT]: ESTABLISHING CONNECTION ...[0m
+[0;31mE (846489) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (846489) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (846489) mqtt_client: Error transport connect[0m
+[0;32mI (846499) [MQTT]: EVENT_ERROR[0m
+[0;31mE (846499) [MQTT]: Last error reported from esp-tls: 0x8004[0m
+[0;31mE (846499) [MQTT]: Last error captured as transport's socket errno: 0x68[0m
+[0;32mI (846509) [MQTT]: Last errno string (Connection reset by peer)[0m
+[0;32mI (846519) [MQTT]: EVENT_DISCONNECTED[0m

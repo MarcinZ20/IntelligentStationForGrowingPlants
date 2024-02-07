@@ -1,0 +1,818 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7140
+load:0x40078000,len:15500
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (28) boot: ESP-IDF v5.3-dev-262-g294c2bd70d 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Feb  3 2024 12:23:44[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29eb0h (171696) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=00039ed8 vaddr=3ffbdb60 size=05484h ( 21636) load[0m
+[0;32mI (144) esp_image: segment 2: paddr=0003f364 vaddr=40080000 size=00cb4h (  3252) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9de3ch (646716) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=000dde64 vaddr=40080cb4 size=1841ch ( 99356) load[0m
+[0;32mI (324) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (324) boot: Disabling RNG early entropy source...[0m
+[0;32mI (336) cpu_start: Multicore app[0m
+[0;32mI (345) cpu_start: Pro cpu start user code[0m
+[0;32mI (345) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (345) cpu_start: Application information:[0m
+[0;32mI (348) cpu_start: Project name:     InteligentStationForGrowingPlan[0m
+[0;32mI (355) cpu_start: App version:      c0c6b71-dirty[0m
+[0;32mI (360) cpu_start: Compile time:     Feb  3 2024 12:23:45[0m
+[0;32mI (366) cpu_start: ELF file SHA256:  7a8607517...[0m
+[0;32mI (372) cpu_start: ESP-IDF:          v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (378) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (383) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (388) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (393) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (400) heap_init: At 3FFAE6E0 len 0000F480 (61 KiB): DRAM[0m
+[0;32mI (406) heap_init: At 3FFC7890 len 00018770 (97 KiB): DRAM[0m
+[0;32mI (412) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (418) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (425) heap_init: At 400990D0 len 00006F30 (27 KiB): IRAM[0m
+[0;32mI (432) spi_flash: detected chip: winbond[0m
+[0;32mI (436) spi_flash: flash io: dio[0m
+[0;33mW (440) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (450) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (459) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (464) main_task: Started on CPU0[0m
+[0;32mI (474) main_task: Calling app_main()[0m
+[0;32mI (474) [WI-FI]: [APP] Startup..[0m
+[0;32mI (474) [WI-FI]: [APP] Free memory: 266976 bytes[0m
+[0;32mI (474) [WI-FI]: [APP] IDF version: v5.3-dev-262-g294c2bd70d[0m
+[0;32mI (514) [I2C]: Module configuration successful![0m
+[0;32mI (514) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (524) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (524) [SWITCH]: Configuration successful![0m
+[0;32mI (544) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (544) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (554) [LED]: LEDs configured![0m
+I (574) wifi:wifi driver task: 3ffb95ac, prio:23, stack:6656, core=0
+I (584) wifi:wifi firmware version: a194738
+I (594) wifi:wifi certification version: v7.0
+I (594) wifi:config NVS flash: enabled
+I (594) wifi:config nano formating: disabled
+I (594) wifi:Init data frame dynamic rx buffer num: 32
+I (594) wifi:Init static rx mgmt buffer num: 5
+I (604) wifi:Init management short buffer num: 32
+I (604) wifi:Init dynamic tx buffer num: 32
+I (614) wifi:Init static rx buffer size: 1600
+I (614) wifi:Init static rx buffer num: 10
+I (614) wifi:Init dynamic rx buffer num: 32
+[0;32mI (624) wifi_init: rx ba win: 6[0m
+[0;32mI (624) wifi_init: tcpip mbox: 32[0m
+[0;32mI (634) wifi_init: udp mbox: 6[0m
+[0;32mI (634) wifi_init: tcp mbox: 6[0m
+[0;32mI (634) wifi_init: tcp tx win: 5760[0m
+[0;32mI (644) wifi_init: tcp rx win: 5760[0m
+[0;32mI (644) wifi_init: tcp mss: 1440[0m
+[0;32mI (654) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (654) wifi_init: WiFi RX IRAM OP enabled[0m
+Booting ...
+Hello there!
+Gpio pin: 33
+[0;32mI (6024) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+I (6104) wifi:mode : sta (b4:e6:2d:ea:62:f5)
+I (6104) wifi:enable tsf
+[0;32mI (6104) [WI-FI]: Wifi started![0m
+I (6124) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (6134) wifi:state: init -> auth (b0)
+I (6134) wifi:state: auth -> init (1c0)
+I (6134) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+[0;32mI (6134) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+[0;32mI (8554) [WI-FI]: Reconnecting to wifi ...[0m
+Wi-Fi down ...
+I (8564) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (8574) wifi:state: init -> auth (b0)
+I (8574) wifi:state: auth -> assoc (0)
+I (8594) wifi:state: assoc -> run (10)
+I (8624) wifi:connected with supertajnasiec, aid = 4, channel 8, BW20, bssid = 3e:c9:bb:dd:fc:d4
+I (8624) wifi:security: WPA2-PSK, phy: bgn, rssi: -60
+I (8634) wifi:pm start, type: 1
+
+I (8634) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (8674) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (8674) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (9644) esp_netif_handlers: sta ip: 192.168.200.8, mask: 255.255.255.0, gw: 192.168.200.113[0m
+[0;32mI (9644) [WI-FI]: Connected to ip: 192.168.200.8[0m
+Wi-Fi connected
+[0;32mI (12834) [MQTT]: ESTABLISHING CONNECTION ...[0m
+I (12864) wifi:<ba-add>idx:0 (ifx:0, 3e:c9:bb:dd:fc:d4), tid:0, ssn:3, winSize:64
+[0;32mI (12994) [MQTT]: CONNECTION TO SERVER SUCCESSFUL[0m
+MAC address of ESP32: b4:e6:2d:ea:62:f5
+[0;31mE (12994) AM2320: Failed to read data: ESP_FAIL[0m
+Temperature: 4240.50, Humidity: 4240.50, Light: 259.51
+[0;32mI (18004) [MQTT]: Sent publish successful, msg_id: 1[0m
+[0;31mE (18004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (18304) [MQTT]: EVENT_PUBLISHED, msg_id: 1[0m
+Temperature: 128.00, Humidity: 0.00, Light: 201.78
+[0;32mI (23004) [MQTT]: Sent publish successful, msg_id: 2[0m
+[0;31mE (23004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (23064) [MQTT]: EVENT_PUBLISHED, msg_id: 2[0m
+Temperature: 128.00, Humidity: 0.00, Light: 215.71
+[0;32mI (28004) [MQTT]: Sent publish successful, msg_id: 3[0m
+[0;31mE (28004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (28054) [MQTT]: EVENT_PUBLISHED, msg_id: 3[0m
+Temperature: 128.00, Humidity: 0.00, Light: 192.73
+[0;32mI (33004) [MQTT]: Sent publish successful, msg_id: 4[0m
+[0;31mE (33004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (33254) [MQTT]: EVENT_PUBLISHED, msg_id: 4[0m
+Temperature: 128.00, Humidity: 0.00, Light: 202.00
+[0;32mI (38004) [MQTT]: Sent publish successful, msg_id: 5[0m
+[0;31mE (38004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (38054) [MQTT]: EVENT_PUBLISHED, msg_id: 5[0m
+Temperature: 128.00, Humidity: 0.00, Light: 216.69
+[0;32mI (43004) [MQTT]: Sent publish successful, msg_id: 6[0m
+[0;31mE (43004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (43424) [MQTT]: EVENT_PUBLISHED, msg_id: 6[0m
+Temperature: 128.00, Humidity: 0.00, Light: 200.10
+[0;32mI (48004) [MQTT]: Sent publish successful, msg_id: 7[0m
+[0;31mE (48004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (48054) [MQTT]: EVENT_PUBLISHED, msg_id: 7[0m
+Temperature: 128.00, Humidity: 0.00, Light: 241.63
+[0;32mI (53004) [MQTT]: Sent publish successful, msg_id: 8[0m
+[0;31mE (53004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (53054) [MQTT]: EVENT_PUBLISHED, msg_id: 8[0m
+Temperature: 128.00, Humidity: 0.00, Light: 229.49
+[0;32mI (58004) [MQTT]: Sent publish successful, msg_id: 9[0m
+[0;31mE (58004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (58244) [MQTT]: EVENT_PUBLISHED, msg_id: 9[0m
+Temperature: 128.00, Humidity: 0.00, Light: 240.35
+[0;32mI (63004) [MQTT]: Sent publish successful, msg_id: 10[0m
+[0;31mE (63004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (63264) [MQTT]: EVENT_PUBLISHED, msg_id: 10[0m
+Temperature: 128.00, Humidity: 0.00, Light: 215.06
+[0;32mI (68004) [MQTT]: Sent publish successful, msg_id: 11[0m
+[0;31mE (68004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (68044) [MQTT]: EVENT_PUBLISHED, msg_id: 11[0m
+Temperature: 128.00, Humidity: 0.00, Light: 202.57
+[0;32mI (73004) [MQTT]: Sent publish successful, msg_id: 12[0m
+[0;31mE (73004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (73194) [MQTT]: EVENT_PUBLISHED, msg_id: 12[0m
+Temperature: 128.00, Humidity: 0.00, Light: 175.06
+[0;32mI (78004) [MQTT]: Sent publish successful, msg_id: 13[0m
+[0;31mE (78004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (78044) [MQTT]: EVENT_PUBLISHED, msg_id: 13[0m
+Temperature: 128.00, Humidity: 0.00, Light: 150.96
+[0;32mI (83004) [MQTT]: Sent publish successful, msg_id: 14[0m
+[0;31mE (83004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (83054) [MQTT]: EVENT_PUBLISHED, msg_id: 14[0m
+Temperature: 128.00, Humidity: 0.00, Light: 205.47
+[0;32mI (88004) [MQTT]: Sent publish successful, msg_id: 15[0m
+[0;31mE (88004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (88054) [MQTT]: EVENT_PUBLISHED, msg_id: 15[0m
+Temperature: 128.00, Humidity: 0.00, Light: 175.43
+[0;32mI (93004) [MQTT]: Sent publish successful, msg_id: 16[0m
+[0;31mE (93004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (93054) [MQTT]: EVENT_PUBLISHED, msg_id: 16[0m
+Temperature: 128.00, Humidity: 0.00, Light: 187.33
+[0;32mI (98004) [MQTT]: Sent publish successful, msg_id: 17[0m
+[0;31mE (98004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (98064) [MQTT]: EVENT_PUBLISHED, msg_id: 17[0m
+Temperature: 128.00, Humidity: 0.00, Light: 173.29
+[0;32mI (103004) [MQTT]: Sent publish successful, msg_id: 18[0m
+[0;31mE (103004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (103054) [MQTT]: EVENT_PUBLISHED, msg_id: 18[0m
+Temperature: 128.00, Humidity: 0.00, Light: 177.27
+[0;32mI (108004) [MQTT]: Sent publish successful, msg_id: 19[0m
+[0;31mE (108004) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (108054) [MQTT]: EVENT_PUBLISHED, msg_id: 19[0m
+Temperature: 128.00, Humidity: 0.00, Light: 184.90
+[0;32mI (113014) [MQTT]: Sent publish successful, msg_id: 20[0m
+[0;31mE (113014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (113094) [MQTT]: EVENT_PUBLISHED, msg_id: 20[0m
+Temperature: 128.00, Humidity: 0.00, Light: 164.84
+[0;32mI (118014) [MQTT]: Sent publish successful, msg_id: 21[0m
+[0;31mE (118014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (118454) [MQTT]: EVENT_PUBLISHED, msg_id: 21[0m
+Temperature: 128.00, Humidity: 0.00, Light: 151.76
+[0;32mI (123014) [MQTT]: Sent publish successful, msg_id: 22[0m
+[0;31mE (123014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (123084) [MQTT]: EVENT_PUBLISHED, msg_id: 22[0m
+Temperature: 128.00, Humidity: 0.00, Light: 139.98
+[0;32mI (128014) [MQTT]: Sent publish successful, msg_id: 23[0m
+[0;31mE (128014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (128064) [MQTT]: EVENT_PUBLISHED, msg_id: 23[0m
+Temperature: 128.00, Humidity: 0.00, Light: 181.76
+[0;32mI (133014) [MQTT]: Sent publish successful, msg_id: 24[0m
+[0;31mE (133014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (133254) [MQTT]: EVENT_PUBLISHED, msg_id: 24[0m
+Temperature: 128.00, Humidity: 0.00, Light: 191.90
+[0;32mI (138014) [MQTT]: Sent publish successful, msg_id: 25[0m
+[0;31mE (138014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (138064) [MQTT]: EVENT_PUBLISHED, msg_id: 25[0m
+Temperature: 128.00, Humidity: 0.00, Light: 196.47
+[0;32mI (143014) [MQTT]: Sent publish successful, msg_id: 26[0m
+[0;31mE (143014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (143064) [MQTT]: EVENT_PUBLISHED, msg_id: 26[0m
+Temperature: 128.00, Humidity: 0.00, Light: 219.94
+[0;32mI (148014) [MQTT]: Sent publish successful, msg_id: 27[0m
+[0;31mE (148014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (148054) [MQTT]: EVENT_PUBLISHED, msg_id: 27[0m
+Temperature: 128.00, Humidity: 0.00, Light: 204.76
+[0;32mI (153014) [MQTT]: Sent publish successful, msg_id: 28[0m
+[0;31mE (153014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (153204) [MQTT]: EVENT_PUBLISHED, msg_id: 28[0m
+Temperature: 128.00, Humidity: 0.00, Light: 187.80
+[0;32mI (158014) [MQTT]: Sent publish successful, msg_id: 29[0m
+[0;31mE (158014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (158064) [MQTT]: EVENT_PUBLISHED, msg_id: 29[0m
+Temperature: 128.00, Humidity: 0.00, Light: 142.49
+[0;32mI (163014) [MQTT]: Sent publish successful, msg_id: 30[0m
+[0;31mE (163014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (163064) [MQTT]: EVENT_PUBLISHED, msg_id: 30[0m
+Temperature: 128.00, Humidity: 0.00, Light: 162.82
+[0;32mI (168014) [MQTT]: Sent publish successful, msg_id: 31[0m
+[0;31mE (168014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (168114) [MQTT]: EVENT_PUBLISHED, msg_id: 31[0m
+Temperature: 128.00, Humidity: 0.00, Light: 148.14
+[0;32mI (173014) [MQTT]: Sent publish successful, msg_id: 32[0m
+[0;31mE (173014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (173144) [MQTT]: EVENT_PUBLISHED, msg_id: 32[0m
+Temperature: 128.00, Humidity: 0.00, Light: 119.37
+[0;32mI (178014) [MQTT]: Sent publish successful, msg_id: 33[0m
+[0;31mE (178014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (178054) [MQTT]: EVENT_PUBLISHED, msg_id: 33[0m
+Temperature: 128.00, Humidity: 0.00, Light: 142.45
+[0;32mI (183014) [MQTT]: Sent publish successful, msg_id: 34[0m
+[0;31mE (183014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (183054) [MQTT]: EVENT_PUBLISHED, msg_id: 34[0m
+Temperature: 128.00, Humidity: 0.00, Light: 167.37
+[0;32mI (188014) [MQTT]: Sent publish successful, msg_id: 35[0m
+[0;31mE (188014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (188064) [MQTT]: EVENT_PUBLISHED, msg_id: 35[0m
+Temperature: 128.00, Humidity: 0.00, Light: 180.04
+[0;32mI (193014) [MQTT]: Sent publish successful, msg_id: 36[0m
+[0;31mE (193014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (193064) [MQTT]: EVENT_PUBLISHED, msg_id: 36[0m
+Temperature: 128.00, Humidity: 0.00, Light: 194.24
+[0;32mI (198014) [MQTT]: Sent publish successful, msg_id: 37[0m
+[0;31mE (198014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (198064) [MQTT]: EVENT_PUBLISHED, msg_id: 37[0m
+Temperature: 128.00, Humidity: 0.00, Light: 207.25
+[0;32mI (203014) [MQTT]: Sent publish successful, msg_id: 38[0m
+[0;31mE (203014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (203064) [MQTT]: EVENT_PUBLISHED, msg_id: 38[0m
+Temperature: 128.00, Humidity: 0.00, Light: 239.43
+[0;32mI (208014) [MQTT]: Sent publish successful, msg_id: 39[0m
+[0;31mE (208014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (208064) [MQTT]: EVENT_PUBLISHED, msg_id: 39[0m
+Temperature: 128.00, Humidity: 0.00, Light: 201.94
+[0;32mI (213014) [MQTT]: Sent publish successful, msg_id: 40[0m
+[0;31mE (213014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (213344) [MQTT]: EVENT_PUBLISHED, msg_id: 40[0m
+Temperature: 128.00, Humidity: 0.00, Light: 210.65
+[0;32mI (218014) [MQTT]: Sent publish successful, msg_id: 41[0m
+[0;31mE (218014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (218194) [MQTT]: EVENT_PUBLISHED, msg_id: 41[0m
+Temperature: 128.00, Humidity: 0.00, Light: 172.16
+[0;32mI (223014) [MQTT]: Sent publish successful, msg_id: 42[0m
+[0;31mE (223014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (223084) [MQTT]: EVENT_PUBLISHED, msg_id: 42[0m
+Temperature: 128.00, Humidity: 0.00, Light: 141.16
+[0;32mI (228014) [MQTT]: Sent publish successful, msg_id: 43[0m
+[0;31mE (228014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (228064) [MQTT]: EVENT_PUBLISHED, msg_id: 43[0m
+Temperature: 128.00, Humidity: 0.00, Light: 146.31
+[0;32mI (233014) [MQTT]: Sent publish successful, msg_id: 44[0m
+[0;31mE (233014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (233064) [MQTT]: EVENT_PUBLISHED, msg_id: 44[0m
+Temperature: 128.00, Humidity: 0.00, Light: 128.98
+[0;32mI (238014) [MQTT]: Sent publish successful, msg_id: 45[0m
+[0;31mE (238014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (238094) [MQTT]: EVENT_PUBLISHED, msg_id: 45[0m
+Temperature: 128.00, Humidity: 0.00, Light: 142.71
+[0;32mI (243014) [MQTT]: Sent publish successful, msg_id: 46[0m
+[0;31mE (243014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (243384) [MQTT]: EVENT_PUBLISHED, msg_id: 46[0m
+Temperature: 128.00, Humidity: 0.00, Light: 144.78
+[0;32mI (248014) [MQTT]: Sent publish successful, msg_id: 47[0m
+[0;31mE (248014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (248094) [MQTT]: EVENT_PUBLISHED, msg_id: 47[0m
+Temperature: 128.00, Humidity: 0.00, Light: 126.33
+[0;32mI (253014) [MQTT]: Sent publish successful, msg_id: 48[0m
+[0;31mE (253014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (253064) [MQTT]: EVENT_PUBLISHED, msg_id: 48[0m
+Temperature: 128.00, Humidity: 0.00, Light: 178.51
+[0;32mI (258014) [MQTT]: Sent publish successful, msg_id: 49[0m
+[0;31mE (258014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (258334) [MQTT]: EVENT_PUBLISHED, msg_id: 49[0m
+Temperature: 128.00, Humidity: 0.00, Light: 156.35
+[0;32mI (263014) [MQTT]: Sent publish successful, msg_id: 50[0m
+[0;31mE (263014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (263554) [MQTT]: EVENT_PUBLISHED, msg_id: 50[0m
+Temperature: 128.00, Humidity: 0.00, Light: 213.37
+[0;32mI (268014) [MQTT]: Sent publish successful, msg_id: 51[0m
+[0;31mE (268014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (268264) [MQTT]: EVENT_PUBLISHED, msg_id: 51[0m
+Temperature: 128.00, Humidity: 0.00, Light: 202.96
+[0;32mI (273014) [MQTT]: Sent publish successful, msg_id: 52[0m
+[0;31mE (273014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (273284) [MQTT]: EVENT_PUBLISHED, msg_id: 52[0m
+Temperature: 128.00, Humidity: 0.00, Light: 212.90
+[0;32mI (278014) [MQTT]: Sent publish successful, msg_id: 53[0m
+[0;31mE (278014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (278064) [MQTT]: EVENT_PUBLISHED, msg_id: 53[0m
+Temperature: 128.00, Humidity: 0.00, Light: 220.27
+[0;32mI (283014) [MQTT]: Sent publish successful, msg_id: 54[0m
+[0;31mE (283014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (283064) [MQTT]: EVENT_PUBLISHED, msg_id: 54[0m
+Temperature: 128.00, Humidity: 0.00, Light: 173.51
+[0;32mI (288014) [MQTT]: Sent publish successful, msg_id: 55[0m
+[0;31mE (288014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (288064) [MQTT]: EVENT_PUBLISHED, msg_id: 55[0m
+Temperature: 128.00, Humidity: 0.00, Light: 211.06
+[0;32mI (293014) [MQTT]: Sent publish successful, msg_id: 56[0m
+[0;31mE (293014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (293104) [MQTT]: EVENT_PUBLISHED, msg_id: 56[0m
+Temperature: 128.00, Humidity: 0.00, Light: 194.10
+[0;32mI (298014) [MQTT]: Sent publish successful, msg_id: 57[0m
+[0;31mE (298014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (298064) [MQTT]: EVENT_PUBLISHED, msg_id: 57[0m
+Temperature: 128.00, Humidity: 0.00, Light: 183.51
+[0;32mI (303014) [MQTT]: Sent publish successful, msg_id: 58[0m
+[0;31mE (303014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (303054) [MQTT]: EVENT_PUBLISHED, msg_id: 58[0m
+Temperature: 128.00, Humidity: 0.00, Light: 165.53
+[0;32mI (308014) [MQTT]: Sent publish successful, msg_id: 59[0m
+[0;31mE (308014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (308344) [MQTT]: EVENT_PUBLISHED, msg_id: 59[0m
+Temperature: 128.00, Humidity: 0.00, Light: 197.33
+[0;32mI (318014) [MQTT]: Sent publish successful, msg_id: 61[0m
+[0;31mE (318014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (318054) [MQTT]: EVENT_PUBLISHED, msg_id: 61[0m
+Temperature: 128.00, Humidity: 0.00, Light: 271.08
+[0;32mI (323014) [MQTT]: Sent publish successful, msg_id: 62[0m
+[0;31mE (323014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (323254) [MQTT]: EVENT_PUBLISHED, msg_id: 62[0m
+Temperature: 128.00, Humidity: 0.00, Light: 274.43
+[0;32mI (328014) [MQTT]: Sent publish successful, msg_id: 63[0m
+[0;31mE (328014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (328164) [MQTT]: EVENT_PUBLISHED, msg_id: 63[0m
+Temperature: 128.00, Humidity: 0.00, Light: 273.22
+[0;32mI (333014) [MQTT]: Sent publish successful, msg_id: 64[0m
+[0;31mE (333014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (333284) [MQTT]: EVENT_PUBLISHED, msg_id: 64[0m
+Temperature: 128.00, Humidity: 0.00, Light: 275.65
+[0;32mI (338014) [MQTT]: Sent publish successful, msg_id: 65[0m
+[0;31mE (338014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (338064) [MQTT]: EVENT_PUBLISHED, msg_id: 65[0m
+Temperature: 128.00, Humidity: 0.00, Light: 267.71
+[0;32mI (343014) [MQTT]: Sent publish successful, msg_id: 66[0m
+[0;31mE (343014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (343144) [MQTT]: EVENT_PUBLISHED, msg_id: 66[0m
+Temperature: 128.00, Humidity: 0.00, Light: 246.84
+[0;32mI (348014) [MQTT]: Sent publish successful, msg_id: 67[0m
+[0;31mE (348014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (348064) [MQTT]: EVENT_PUBLISHED, msg_id: 67[0m
+Temperature: 128.00, Humidity: 0.00, Light: 230.49
+[0;32mI (353014) [MQTT]: Sent publish successful, msg_id: 68[0m
+[0;31mE (353014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (353154) [MQTT]: EVENT_PUBLISHED, msg_id: 68[0m
+Temperature: 128.00, Humidity: 0.00, Light: 228.51
+[0;32mI (358014) [MQTT]: Sent publish successful, msg_id: 69[0m
+[0;31mE (358014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (358274) [MQTT]: EVENT_PUBLISHED, msg_id: 69[0m
+Temperature: 128.00, Humidity: 0.00, Light: 255.14
+[0;32mI (363014) [MQTT]: Sent publish successful, msg_id: 70[0m
+[0;31mE (363014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (363184) [MQTT]: EVENT_PUBLISHED, msg_id: 70[0m
+Temperature: 128.00, Humidity: 0.00, Light: 273.12
+[0;32mI (368014) [MQTT]: Sent publish successful, msg_id: 71[0m
+[0;31mE (368014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (368304) [MQTT]: EVENT_PUBLISHED, msg_id: 71[0m
+Temperature: 128.00, Humidity: 0.00, Light: 277.14
+[0;32mI (373014) [MQTT]: Sent publish successful, msg_id: 72[0m
+[0;31mE (373014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (373224) [MQTT]: EVENT_PUBLISHED, msg_id: 72[0m
+Temperature: 128.00, Humidity: 0.00, Light: 240.06
+[0;32mI (378014) [MQTT]: Sent publish successful, msg_id: 73[0m
+[0;31mE (378014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (378144) [MQTT]: EVENT_PUBLISHED, msg_id: 73[0m
+Temperature: 128.00, Humidity: 0.00, Light: 183.90
+[0;32mI (383014) [MQTT]: Sent publish successful, msg_id: 74[0m
+[0;31mE (383014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (383254) [MQTT]: EVENT_PUBLISHED, msg_id: 74[0m
+Temperature: 128.00, Humidity: 0.00, Light: 163.90
+[0;32mI (388014) [MQTT]: Sent publish successful, msg_id: 75[0m
+[0;31mE (388014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (388174) [MQTT]: EVENT_PUBLISHED, msg_id: 75[0m
+Temperature: 128.00, Humidity: 0.00, Light: 98.45
+[0;32mI (393014) [MQTT]: Sent publish successful, msg_id: 76[0m
+[0;31mE (393014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (393294) [MQTT]: EVENT_PUBLISHED, msg_id: 76[0m
+Temperature: 128.00, Humidity: 0.00, Light: 102.02
+[0;32mI (398014) [MQTT]: Sent publish successful, msg_id: 77[0m
+[0;31mE (398014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (398214) [MQTT]: EVENT_PUBLISHED, msg_id: 77[0m
+Temperature: 128.00, Humidity: 0.00, Light: 101.69
+[0;32mI (403014) [MQTT]: Sent publish successful, msg_id: 78[0m
+[0;31mE (403014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (403124) [MQTT]: EVENT_PUBLISHED, msg_id: 78[0m
+Temperature: 128.00, Humidity: 0.00, Light: 106.55
+[0;32mI (408014) [MQTT]: Sent publish successful, msg_id: 79[0m
+[0;31mE (408014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (408244) [MQTT]: EVENT_PUBLISHED, msg_id: 79[0m
+Temperature: 128.00, Humidity: 0.00, Light: 182.98
+[0;32mI (413014) [MQTT]: Sent publish successful, msg_id: 80[0m
+[0;31mE (413014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (413164) [MQTT]: EVENT_PUBLISHED, msg_id: 80[0m
+Temperature: 128.00, Humidity: 0.00, Light: 234.12
+[0;32mI (418014) [MQTT]: Sent publish successful, msg_id: 81[0m
+[0;31mE (418014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (418284) [MQTT]: EVENT_PUBLISHED, msg_id: 81[0m
+Temperature: 128.00, Humidity: 0.00, Light: 263.10
+[0;32mI (423014) [MQTT]: Sent publish successful, msg_id: 82[0m
+[0;31mE (423014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (423194) [MQTT]: EVENT_PUBLISHED, msg_id: 82[0m
+Temperature: 128.00, Humidity: 0.00, Light: 267.90
+[0;32mI (428014) [MQTT]: Sent publish successful, msg_id: 83[0m
+[0;31mE (428014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (428114) [MQTT]: EVENT_PUBLISHED, msg_id: 83[0m
+Temperature: 128.00, Humidity: 0.00, Light: 269.73
+[0;32mI (433014) [MQTT]: Sent publish successful, msg_id: 84[0m
+[0;31mE (433014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (433234) [MQTT]: EVENT_PUBLISHED, msg_id: 84[0m
+Temperature: 128.00, Humidity: 0.00, Light: 230.10
+[0;32mI (438014) [MQTT]: Sent publish successful, msg_id: 85[0m
+[0;31mE (438014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (438144) [MQTT]: EVENT_PUBLISHED, msg_id: 85[0m
+Temperature: 128.00, Humidity: 0.00, Light: 206.18
+[0;32mI (443014) [MQTT]: Sent publish successful, msg_id: 86[0m
+[0;31mE (443014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (443264) [MQTT]: EVENT_PUBLISHED, msg_id: 86[0m
+Temperature: 128.00, Humidity: 0.00, Light: 187.59
+[0;32mI (448014) [MQTT]: Sent publish successful, msg_id: 87[0m
+[0;31mE (448014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (448184) [MQTT]: EVENT_PUBLISHED, msg_id: 87[0m
+Temperature: 128.00, Humidity: 0.00, Light: 236.82
+[0;32mI (453014) [MQTT]: Sent publish successful, msg_id: 88[0m
+[0;31mE (453014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (453094) [MQTT]: EVENT_PUBLISHED, msg_id: 88[0m
+Temperature: 128.00, Humidity: 0.00, Light: 138.69
+[0;32mI (458014) [MQTT]: Sent publish successful, msg_id: 89[0m
+[0;31mE (458014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (458214) [MQTT]: EVENT_PUBLISHED, msg_id: 89[0m
+Temperature: 128.00, Humidity: 0.00, Light: 116.02
+[0;32mI (463014) [MQTT]: Sent publish successful, msg_id: 90[0m
+[0;31mE (463014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (463334) [MQTT]: EVENT_PUBLISHED, msg_id: 90[0m
+Temperature: 128.00, Humidity: 0.00, Light: 98.02
+[0;32mI (468014) [MQTT]: Sent publish successful, msg_id: 91[0m
+[0;31mE (468014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (468254) [MQTT]: EVENT_PUBLISHED, msg_id: 91[0m
+Temperature: 128.00, Humidity: 0.00, Light: 85.63
+[0;32mI (473014) [MQTT]: Sent publish successful, msg_id: 92[0m
+[0;31mE (473014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (473064) [MQTT]: EVENT_PUBLISHED, msg_id: 92[0m
+Temperature: 128.00, Humidity: 0.00, Light: 101.27
+[0;32mI (478014) [MQTT]: Sent publish successful, msg_id: 93[0m
+[0;31mE (478014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (478184) [MQTT]: EVENT_PUBLISHED, msg_id: 93[0m
+Temperature: 128.00, Humidity: 0.00, Light: 105.65
+[0;32mI (483014) [MQTT]: Sent publish successful, msg_id: 94[0m
+[0;31mE (483014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (483104) [MQTT]: EVENT_PUBLISHED, msg_id: 94[0m
+Temperature: 128.00, Humidity: 0.00, Light: 116.90
+[0;32mI (488014) [MQTT]: Sent publish successful, msg_id: 95[0m
+[0;31mE (488014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (488214) [MQTT]: EVENT_PUBLISHED, msg_id: 95[0m
+Temperature: 128.00, Humidity: 0.00, Light: 120.90
+[0;32mI (493014) [MQTT]: Sent publish successful, msg_id: 96[0m
+[0;31mE (493014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (493094) [MQTT]: EVENT_PUBLISHED, msg_id: 96[0m
+Temperature: 128.00, Humidity: 0.00, Light: 135.18
+[0;32mI (498014) [MQTT]: Sent publish successful, msg_id: 97[0m
+[0;31mE (498014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (498254) [MQTT]: EVENT_PUBLISHED, msg_id: 97[0m
+Temperature: 128.00, Humidity: 0.00, Light: 80.69
+[0;32mI (503014) [MQTT]: Sent publish successful, msg_id: 98[0m
+[0;31mE (503014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (503164) [MQTT]: EVENT_PUBLISHED, msg_id: 98[0m
+Temperature: 128.00, Humidity: 0.00, Light: 93.63
+[0;32mI (508014) [MQTT]: Sent publish successful, msg_id: 99[0m
+[0;31mE (508014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (508294) [MQTT]: EVENT_PUBLISHED, msg_id: 99[0m
+Temperature: 128.00, Humidity: 0.00, Light: 113.12
+[0;32mI (513014) [MQTT]: Sent publish successful, msg_id: 100[0m
+[0;31mE (513014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (513204) [MQTT]: EVENT_PUBLISHED, msg_id: 100[0m
+Temperature: 128.00, Humidity: 0.00, Light: 107.41
+[0;32mI (518014) [MQTT]: Sent publish successful, msg_id: 101[0m
+[0;31mE (518014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (518124) [MQTT]: EVENT_PUBLISHED, msg_id: 101[0m
+Temperature: 128.00, Humidity: 0.00, Light: 103.08
+[0;32mI (523014) [MQTT]: Sent publish successful, msg_id: 102[0m
+[0;31mE (523014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (523244) [MQTT]: EVENT_PUBLISHED, msg_id: 102[0m
+Temperature: 128.00, Humidity: 0.00, Light: 107.92
+[0;32mI (528014) [MQTT]: Sent publish successful, msg_id: 103[0m
+[0;31mE (528014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (528154) [MQTT]: EVENT_PUBLISHED, msg_id: 103[0m
+Temperature: 128.00, Humidity: 0.00, Light: 101.04
+[0;32mI (533014) [MQTT]: Sent publish successful, msg_id: 104[0m
+[0;31mE (533014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (533274) [MQTT]: EVENT_PUBLISHED, msg_id: 104[0m
+Temperature: 128.00, Humidity: 0.00, Light: 130.45
+[0;32mI (538014) [MQTT]: Sent publish successful, msg_id: 105[0m
+[0;31mE (538014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (538194) [MQTT]: EVENT_PUBLISHED, msg_id: 105[0m
+Temperature: 128.00, Humidity: 0.00, Light: 184.37
+[0;32mI (543014) [MQTT]: Sent publish successful, msg_id: 106[0m
+[0;31mE (543014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (543314) [MQTT]: EVENT_PUBLISHED, msg_id: 106[0m
+Temperature: 128.00, Humidity: 0.00, Light: 211.76
+[0;32mI (548014) [MQTT]: Sent publish successful, msg_id: 107[0m
+[0;31mE (548014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (548224) [MQTT]: EVENT_PUBLISHED, msg_id: 107[0m
+Temperature: 128.00, Humidity: 0.00, Light: 239.43
+[0;32mI (553014) [MQTT]: Sent publish successful, msg_id: 108[0m
+[0;31mE (553014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (553064) [MQTT]: EVENT_PUBLISHED, msg_id: 108[0m
+Temperature: 128.00, Humidity: 0.00, Light: 248.84
+[0;32mI (558014) [MQTT]: Sent publish successful, msg_id: 109[0m
+[0;31mE (558014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (558064) [MQTT]: EVENT_PUBLISHED, msg_id: 109[0m
+Temperature: 128.00, Humidity: 0.00, Light: 276.92
+[0;32mI (563014) [MQTT]: Sent publish successful, msg_id: 110[0m
+[0;31mE (563014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (563064) [MQTT]: EVENT_PUBLISHED, msg_id: 110[0m
+Temperature: 128.00, Humidity: 0.00, Light: 300.06
+[0;32mI (568014) [MQTT]: Sent publish successful, msg_id: 111[0m
+[0;31mE (568014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (568064) [MQTT]: EVENT_PUBLISHED, msg_id: 111[0m
+Temperature: 128.00, Humidity: 0.00, Light: 256.84
+[0;32mI (573014) [MQTT]: Sent publish successful, msg_id: 112[0m
+[0;31mE (573014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (573064) [MQTT]: EVENT_PUBLISHED, msg_id: 112[0m
+Temperature: 128.00, Humidity: 0.00, Light: 268.37
+[0;32mI (578014) [MQTT]: Sent publish successful, msg_id: 113[0m
+[0;31mE (578014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (578064) [MQTT]: EVENT_PUBLISHED, msg_id: 113[0m
+Temperature: 128.00, Humidity: 0.00, Light: 201.59
+[0;32mI (583014) [MQTT]: Sent publish successful, msg_id: 114[0m
+[0;31mE (583014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (583074) [MQTT]: EVENT_PUBLISHED, msg_id: 114[0m
+Temperature: 128.00, Humidity: 0.00, Light: 145.43
+[0;32mI (588014) [MQTT]: Sent publish successful, msg_id: 115[0m
+[0;31mE (588014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (588154) [MQTT]: EVENT_PUBLISHED, msg_id: 115[0m
+Temperature: 128.00, Humidity: 0.00, Light: 103.10
+[0;32mI (593014) [MQTT]: Sent publish successful, msg_id: 116[0m
+[0;31mE (593014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (593284) [MQTT]: EVENT_PUBLISHED, msg_id: 116[0m
+Temperature: 128.00, Humidity: 0.00, Light: 97.39
+[0;32mI (598014) [MQTT]: Sent publish successful, msg_id: 117[0m
+[0;31mE (598014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (598194) [MQTT]: EVENT_PUBLISHED, msg_id: 117[0m
+Temperature: 128.00, Humidity: 0.00, Light: 92.14
+[0;32mI (603014) [MQTT]: Sent publish successful, msg_id: 118[0m
+[0;31mE (603014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (603114) [MQTT]: EVENT_PUBLISHED, msg_id: 118[0m
+Temperature: 128.00, Humidity: 0.00, Light: 122.65
+[0;32mI (608014) [MQTT]: Sent publish successful, msg_id: 119[0m
+[0;31mE (608014) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (608084) [MQTT]: EVENT_PUBLISHED, msg_id: 119[0m
+Temperature: 128.00, Humidity: 0.00, Light: 306.47
+[0;32mI (613024) [MQTT]: Sent publish successful, msg_id: 120[0m
+[0;31mE (613024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (613164) [MQTT]: EVENT_PUBLISHED, msg_id: 120[0m
+Temperature: 128.00, Humidity: 0.00, Light: 260.10
+[0;32mI (618024) [MQTT]: Sent publish successful, msg_id: 121[0m
+[0;31mE (618024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (618064) [MQTT]: EVENT_PUBLISHED, msg_id: 121[0m
+Temperature: 128.00, Humidity: 0.00, Light: 252.73
+[0;32mI (623024) [MQTT]: Sent publish successful, msg_id: 122[0m
+[0;31mE (623024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (623184) [MQTT]: EVENT_PUBLISHED, msg_id: 122[0m
+Temperature: 128.00, Humidity: 0.00, Light: 215.84
+[0;32mI (628024) [MQTT]: Sent publish successful, msg_id: 123[0m
+[0;31mE (628024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (628304) [MQTT]: EVENT_PUBLISHED, msg_id: 123[0m
+Temperature: 128.00, Humidity: 0.00, Light: 261.73
+[0;32mI (633024) [MQTT]: Sent publish successful, msg_id: 124[0m
+[0;31mE (633024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (633224) [MQTT]: EVENT_PUBLISHED, msg_id: 124[0m
+Temperature: 128.00, Humidity: 0.00, Light: 263.47
+[0;32mI (638024) [MQTT]: Sent publish successful, msg_id: 125[0m
+[0;31mE (638024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (638134) [MQTT]: EVENT_PUBLISHED, msg_id: 125[0m
+Temperature: 128.00, Humidity: 0.00, Light: 246.67
+[0;32mI (643024) [MQTT]: Sent publish successful, msg_id: 126[0m
+[0;31mE (643024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (643254) [MQTT]: EVENT_PUBLISHED, msg_id: 126[0m
+Temperature: 128.00, Humidity: 0.00, Light: 202.65
+[0;32mI (648024) [MQTT]: Sent publish successful, msg_id: 127[0m
+[0;31mE (648024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (648164) [MQTT]: EVENT_PUBLISHED, msg_id: 127[0m
+Temperature: 128.00, Humidity: 0.00, Light: 134.86
+[0;32mI (653024) [MQTT]: Sent publish successful, msg_id: 128[0m
+[0;31mE (653024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (653284) [MQTT]: EVENT_PUBLISHED, msg_id: 128[0m
+Temperature: 128.00, Humidity: 0.00, Light: 96.86
+[0;32mI (658024) [MQTT]: Sent publish successful, msg_id: 129[0m
+[0;31mE (658024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (658204) [MQTT]: EVENT_PUBLISHED, msg_id: 129[0m
+Temperature: 128.00, Humidity: 0.00, Light: 85.76
+[0;32mI (663024) [MQTT]: Sent publish successful, msg_id: 130[0m
+[0;31mE (663024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (663114) [MQTT]: EVENT_PUBLISHED, msg_id: 130[0m
+Temperature: 128.00, Humidity: 0.00, Light: 97.24
+[0;32mI (668024) [MQTT]: Sent publish successful, msg_id: 131[0m
+[0;31mE (668024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (668244) [MQTT]: EVENT_PUBLISHED, msg_id: 131[0m
+Temperature: 128.00, Humidity: 0.00, Light: 152.61
+[0;32mI (673024) [MQTT]: Sent publish successful, msg_id: 132[0m
+[0;31mE (673024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (673154) [MQTT]: EVENT_PUBLISHED, msg_id: 132[0m
+Temperature: 128.00, Humidity: 0.00, Light: 194.69
+[0;32mI (678024) [MQTT]: Sent publish successful, msg_id: 133[0m
+[0;31mE (678024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (678274) [MQTT]: EVENT_PUBLISHED, msg_id: 133[0m
+Temperature: 128.00, Humidity: 0.00, Light: 248.61
+[0;32mI (683024) [MQTT]: Sent publish successful, msg_id: 134[0m
+[0;31mE (683024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (683184) [MQTT]: EVENT_PUBLISHED, msg_id: 134[0m
+Temperature: 128.00, Humidity: 0.00, Light: 265.78
+[0;32mI (688024) [MQTT]: Sent publish successful, msg_id: 135[0m
+[0;31mE (688024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (688104) [MQTT]: EVENT_PUBLISHED, msg_id: 135[0m
+Temperature: 128.00, Humidity: 0.00, Light: 277.82
+[0;32mI (693024) [MQTT]: Sent publish successful, msg_id: 136[0m
+[0;31mE (693024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (693064) [MQTT]: EVENT_PUBLISHED, msg_id: 136[0m
+Temperature: 128.00, Humidity: 0.00, Light: 265.00
+[0;32mI (698024) [MQTT]: Sent publish successful, msg_id: 137[0m
+[0;31mE (698024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (698074) [MQTT]: EVENT_PUBLISHED, msg_id: 137[0m
+Temperature: 128.00, Humidity: 0.00, Light: 251.39
+[0;32mI (703024) [MQTT]: Sent publish successful, msg_id: 138[0m
+[0;31mE (703024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (703074) [MQTT]: EVENT_PUBLISHED, msg_id: 138[0m
+Temperature: 128.00, Humidity: 0.00, Light: 251.25
+[0;32mI (708024) [MQTT]: Sent publish successful, msg_id: 139[0m
+[0;31mE (708024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (708074) [MQTT]: EVENT_PUBLISHED, msg_id: 139[0m
+Temperature: 128.00, Humidity: 0.00, Light: 216.53
+[0;32mI (713024) [MQTT]: Sent publish successful, msg_id: 140[0m
+[0;31mE (713024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (713294) [MQTT]: EVENT_PUBLISHED, msg_id: 140[0m
+Temperature: 128.00, Humidity: 0.00, Light: 217.96
+[0;32mI (718024) [MQTT]: Sent publish successful, msg_id: 141[0m
+[0;31mE (718024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (718064) [MQTT]: EVENT_PUBLISHED, msg_id: 141[0m
+Temperature: 128.00, Humidity: 0.00, Light: 226.51
+[0;32mI (723024) [MQTT]: Sent publish successful, msg_id: 142[0m
+[0;31mE (723024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (723324) [MQTT]: EVENT_PUBLISHED, msg_id: 142[0m
+Temperature: 128.00, Humidity: 0.00, Light: 211.53
+[0;32mI (728024) [MQTT]: Sent publish successful, msg_id: 143[0m
+[0;31mE (728024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (728244) [MQTT]: EVENT_PUBLISHED, msg_id: 143[0m
+Temperature: 128.00, Humidity: 0.00, Light: 230.61
+[0;32mI (733024) [MQTT]: Sent publish successful, msg_id: 144[0m
+[0;31mE (733024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (733164) [MQTT]: EVENT_PUBLISHED, msg_id: 144[0m
+Temperature: 128.00, Humidity: 0.00, Light: 277.29
+[0;32mI (738024) [MQTT]: Sent publish successful, msg_id: 145[0m
+[0;31mE (738024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (738274) [MQTT]: EVENT_PUBLISHED, msg_id: 145[0m
+Temperature: 128.00, Humidity: 0.00, Light: 301.33
+[0;32mI (743024) [MQTT]: Sent publish successful, msg_id: 146[0m
+[0;31mE (743024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (743074) [MQTT]: EVENT_PUBLISHED, msg_id: 146[0m
+Temperature: 128.00, Humidity: 0.00, Light: 288.73
+[0;32mI (748024) [MQTT]: Sent publish successful, msg_id: 147[0m
+[0;31mE (748024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (748314) [MQTT]: EVENT_PUBLISHED, msg_id: 147[0m
+Temperature: 128.00, Humidity: 0.00, Light: 286.04
+[0;32mI (753024) [MQTT]: Sent publish successful, msg_id: 148[0m
+[0;31mE (753024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (753234) [MQTT]: EVENT_PUBLISHED, msg_id: 148[0m
+Temperature: 128.00, Humidity: 0.00, Light: 264.18
+[0;32mI (758024) [MQTT]: Sent publish successful, msg_id: 149[0m
+[0;31mE (758024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (758144) [MQTT]: EVENT_PUBLISHED, msg_id: 149[0m
+Temperature: 128.00, Humidity: 0.00, Light: 260.39
+[0;32mI (763024) [MQTT]: Sent publish successful, msg_id: 150[0m
+[0;31mE (763024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (763264) [MQTT]: EVENT_PUBLISHED, msg_id: 150[0m
+Temperature: 128.00, Humidity: 0.00, Light: 271.47
+[0;32mI (768024) [MQTT]: Sent publish successful, msg_id: 151[0m
+[0;31mE (768024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (768184) [MQTT]: EVENT_PUBLISHED, msg_id: 151[0m
+Temperature: 128.00, Humidity: 0.00, Light: 269.55
+[0;32mI (773024) [MQTT]: Sent publish successful, msg_id: 152[0m
+[0;31mE (773024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (773294) [MQTT]: EVENT_PUBLISHED, msg_id: 152[0m
+Temperature: 128.00, Humidity: 0.00, Light: 158.84
+[0;32mI (778024) [MQTT]: Sent publish successful, msg_id: 153[0m
+[0;31mE (778024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (778084) [MQTT]: EVENT_PUBLISHED, msg_id: 153[0m
+Temperature: 128.00, Humidity: 0.00, Light: 252.04
+[0;32mI (783024) [MQTT]: Sent publish successful, msg_id: 154[0m
+[0;31mE (783024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (783074) [MQTT]: EVENT_PUBLISHED, msg_id: 154[0m
+Temperature: 128.00, Humidity: 0.00, Light: 246.06
+[0;32mI (788024) [MQTT]: Sent publish successful, msg_id: 155[0m
+[0;31mE (788024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (788074) [MQTT]: EVENT_PUBLISHED, msg_id: 155[0m
+Temperature: 128.00, Humidity: 0.00, Light: 252.12
+[0;32mI (793024) [MQTT]: Sent publish successful, msg_id: 156[0m
+[0;31mE (793024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (793164) [MQTT]: EVENT_PUBLISHED, msg_id: 156[0m
+Temperature: 128.00, Humidity: 0.00, Light: 251.61
+[0;32mI (798024) [MQTT]: Sent publish successful, msg_id: 157[0m
+[0;31mE (798024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (798064) [MQTT]: EVENT_PUBLISHED, msg_id: 157[0m
+Temperature: 128.00, Humidity: 0.00, Light: 238.94
+[0;32mI (803024) [MQTT]: Sent publish successful, msg_id: 158[0m
+[0;31mE (803024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (803114) [MQTT]: EVENT_PUBLISHED, msg_id: 158[0m
+Temperature: 128.00, Humidity: 0.00, Light: 244.69
+[0;32mI (808024) [MQTT]: Sent publish successful, msg_id: 159[0m
+[0;31mE (808024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (808154) [MQTT]: EVENT_PUBLISHED, msg_id: 159[0m
+Temperature: 128.00, Humidity: 0.00, Light: 233.47
+[0;32mI (813024) [MQTT]: Sent publish successful, msg_id: 160[0m
+[0;31mE (813024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (813074) [MQTT]: EVENT_PUBLISHED, msg_id: 160[0m
+Temperature: 128.00, Humidity: 0.00, Light: 241.18
+[0;32mI (818024) [MQTT]: Sent publish successful, msg_id: 161[0m
+[0;31mE (818024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (818074) [MQTT]: EVENT_PUBLISHED, msg_id: 161[0m
+Temperature: 128.00, Humidity: 0.00, Light: 194.75
+[0;32mI (823024) [MQTT]: Sent publish successful, msg_id: 162[0m
+[0;31mE (823024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (823074) [MQTT]: EVENT_PUBLISHED, msg_id: 162[0m
+Temperature: 128.00, Humidity: 0.00, Light: 143.43
+[0;32mI (828024) [MQTT]: Sent publish successful, msg_id: 163[0m
+[0;31mE (828024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (828184) [MQTT]: EVENT_PUBLISHED, msg_id: 163[0m
+Temperature: 128.00, Humidity: 0.00, Light: 91.14
+[0;32mI (833024) [MQTT]: Sent publish successful, msg_id: 164[0m
+[0;31mE (833024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (833074) [MQTT]: EVENT_PUBLISHED, msg_id: 164[0m
+Temperature: 128.00, Humidity: 0.00, Light: 98.57
+[0;32mI (838024) [MQTT]: Sent publish successful, msg_id: 165[0m
+[0;31mE (838024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (838424) [MQTT]: EVENT_PUBLISHED, msg_id: 165[0m
+Temperature: 128.00, Humidity: 0.00, Light: 84.25
+[0;32mI (843024) [MQTT]: Sent publish successful, msg_id: 166[0m
+[0;31mE (843024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (843144) [MQTT]: EVENT_PUBLISHED, msg_id: 166[0m
+Temperature: 128.00, Humidity: 0.00, Light: 80.86
+[0;32mI (848024) [MQTT]: Sent publish successful, msg_id: 167[0m
+[0;31mE (848024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (848424) [MQTT]: EVENT_PUBLISHED, msg_id: 167[0m
+Temperature: 128.00, Humidity: 0.00, Light: 86.90
+[0;32mI (853024) [MQTT]: Sent publish successful, msg_id: 168[0m
+[0;31mE (853024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (853074) [MQTT]: EVENT_PUBLISHED, msg_id: 168[0m
+Temperature: 128.00, Humidity: 0.00, Light: 123.12
+[0;32mI (858024) [MQTT]: Sent publish successful, msg_id: 169[0m
+[0;31mE (858024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (858074) [MQTT]: EVENT_PUBLISHED, msg_id: 169[0m
+Temperature: 128.00, Humidity: 0.00, Light: 142.04
+[0;32mI (863024) [MQTT]: Sent publish successful, msg_id: 170[0m
+[0;31mE (863024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (863134) [MQTT]: EVENT_PUBLISHED, msg_id: 170[0m
+Temperature: 128.00, Humidity: 0.00, Light: 156.69
+[0;32mI (868024) [MQTT]: Sent publish successful, msg_id: 171[0m
+[0;31mE (868024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (868224) [MQTT]: EVENT_PUBLISHED, msg_id: 171[0m
+Temperature: 128.00, Humidity: 0.00, Light: 171.18
+[0;32mI (873024) [MQTT]: Sent publish successful, msg_id: 172[0m
+[0;31mE (873024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (873144) [MQTT]: EVENT_PUBLISHED, msg_id: 172[0m
+Temperature: 128.00, Humidity: 0.00, Light: 166.14
+[0;32mI (878024) [MQTT]: Sent publish successful, msg_id: 173[0m
+[0;31mE (878024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (878264) [MQTT]: EVENT_PUBLISHED, msg_id: 173[0m
+Temperature: 128.00, Humidity: 0.00, Light: 151.16
+[0;32mI (883024) [MQTT]: Sent publish successful, msg_id: 174[0m
+[0;31mE (883024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (883174) [MQTT]: EVENT_PUBLISHED, msg_id: 174[0m
+Temperature: 128.00, Humidity: 0.00, Light: 147.86
+[0;32mI (888024) [MQTT]: Sent publish successful, msg_id: 175[0m
+[0;31mE (888024) AM2320: Failed to read data: ESP_FAIL[0m
+[0;32mI (888304) [MQTT]: EVENT_PUBLISHED, msg_id: 175[0m

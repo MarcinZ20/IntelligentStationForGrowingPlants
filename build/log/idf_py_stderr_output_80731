@@ -1,0 +1,24 @@
+[0;33m--- esp-idf-monitor 1.3.4 on /dev/cu.usbserial-01A178B2 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4000c3f5: memmove in ROM
+[0m
+[0;33m0x400029ac: __divdf3 in ROM
+[0m
+[0;33m0x400029cb: __divdf3 in ROM
+[0m
+[0;33m0x4000c3f2: memmove in ROM
+[0m
+[0;33m0x401a8343: __ssprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfiprintf.c:336
+[0m
+[0;33m0x4019d309: _svfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:1766 (discriminator 1)
+[0m
+[0;33m0x40197621: sprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-apple-darwin21.1/xtensa-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:618 (discriminator 1)
+[0m
+[0;33m0x400d8031: convert_measurement_to_json_string at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/utils.c:43
+ (inlined by) mqtt_publish_task at /Users/marcin/esp/IntelligentStationForGrowingPlants/main/mqtt.c:151
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m
